@@ -1,0 +1,25 @@
+config.js
+ebuki.js
+db.js
+main.js
+carriers.js
+
+Phase 1
+0.1 Create container
+0.2 Create all files
+1. Test if callback is pending then application closes or not
+1.1 Axios check if it works well with Observable
+2. Check Sql server DB connections
+3. Download huge object
+4. Iterate object and call carrierDecode
+5. carrierDecode to individual carrier transfer
+6. Carrier callback update database
+7. Track errors
+8. Track working
+
+Phase 2
+1. Database design
+2. Implement database attributes in code
+3. Optimize
+4. Deploy
+5. 
