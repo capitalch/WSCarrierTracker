@@ -7,7 +7,7 @@ carriers.js
 Pre
 1. Test if callback is pending then application closes or not
 2. Study DB connector in depth
-3. Test the flow
+3. Test the complete flow
 4. Understand node.js export mecanism
 
 Phase 1
