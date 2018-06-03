@@ -9,7 +9,9 @@
   "author": "Sushant Agrawal",
   "license": "ISC",
   "dependencies": {
-    "http": "0.0.0"
+    "http": "0.0.0",
+    "mssql": "^4.1.0",
+    "rxjs": "^6.2.0"
   },
   "devDependencies": {
     "jslint": "^0.12.0"

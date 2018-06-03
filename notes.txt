@@ -6,9 +6,14 @@ carriers.js
 
 Pre
 1. Test if callback is pending then application closes or not
-2. Study DB connector in depth
 3. Test the complete flow
-4. Understand node.js export mecanism
+                                        3.5 Include rxjs in node.js
+                                        4. Implement node.js export mechanism
+                                        5. Load modules in node.js
+                                        6. Create Azure DB and load database
+                                7. Do hands on practise with azure database and node.js using mssql driver
+8. Test Axios with rxjs
+9. Check forkjoin or Q.all for taking care of multiple observables or promises after parallel http calls.
 
 Phase 1
 0.1 Create container
@@ -18,6 +23,7 @@ Phase 1
 3. Download huge object
 4. Iterate object and call carrierDecode
 5. carrierDecode to individual carrier transfer
+5.5 Use templating to create header XML's for carriers
 6. Carrier callback update database
 7. Track errors
 8. Track working
