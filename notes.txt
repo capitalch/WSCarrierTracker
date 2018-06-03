@@ -4,10 +4,15 @@ db.js
 main.js
 carriers.js
 
+Pre
+1. Test if callback is pending then application closes or not
+2. Study DB connector in depth
+3. Test the flow
+4. Understand node.js export mecanism
+
 Phase 1
 0.1 Create container
 0.2 Create all files
-1. Test if callback is pending then application closes or not
 1.1 Axios check if it works well with Observable
 2. Check Sql server DB connections
 3. Download huge object
