@@ -9,8 +9,10 @@
   "author": "Sushant Agrawal",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.18.0",
     "http": "0.0.0",
     "mssql": "^4.1.0",
+    "q": "^1.5.1",
     "rxjs": "^6.2.0"
   },
   "devDependencies": {
