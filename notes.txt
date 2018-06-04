@@ -11,9 +11,12 @@ Pre
                                         4. Implement node.js export mechanism
                                         5. Load modules in node.js
                                         6. Create Azure DB and load database
-                                7. Do hands on practise with azure database and node.js using mssql driver
+                                        7. Do hands on practise with azure database and node.js using mssql driver
 8. Test Axios with rxjs
-9. Check forkjoin or Q.all for taking care of multiple observables or promises after parallel http calls.
+                                        9. Check forkjoin or Q.all for taking care of multiple observables or promises after parallel http calls.
+10. Implement node.js router
+11. Error handling
+12. Confirm in forkjoin or Q.all that it continues even if one call fails in error
 
 Phase 1
 0.1 Create container

@@ -10,7 +10,10 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.18.0",
+    "express": "^4.16.3",
     "http": "0.0.0",
+    "lodash": "^4.17.10",
+    "minimist": "^1.2.0",
     "mssql": "^4.1.0",
     "q": "^1.5.1",
     "rxjs": "^6.2.0"
