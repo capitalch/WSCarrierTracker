@@ -14,15 +14,17 @@ const app = require('./artifacts/app');
 // }).listen(8080);
 
 ibuki.filterOn('initialize').subscribe(d => {
-    console.log(d.data);
+    // console.log(d.data);
     let obsArray = [];
     let promiseArray = [];
-    for (i = 0; i < 10000; i++) {
+    for (i = 0; i < 100000; i++) {
         // obsArray[i] = workbench.getObs();
         promiseArray[i] = workbench.getPromise();
-    }
+    };
+    // let x = workbench.getPromise();
     // ibuki.emit('parallel:obs:index:workbench', obsArray);
-    ibuki.emit('parallel:promise:index:workbench', promiseArray);
+    // ibuki.emit('parallel:promise:index:workbench', promiseArray);
+    ibuki.emit('test-promise:index:workbench', promiseArray);
 });
 
 ibuki.emit('initialize', {

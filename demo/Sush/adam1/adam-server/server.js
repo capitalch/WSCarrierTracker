@@ -1,11 +1,21 @@
 'use strict';
 const path = require('path');
+const rx = require('rxjs');
+const operators = require('rxjs/operators');
 const express = require('express');
-const ibuki = require('./ibuki');
 
 const app = express();
 
 const argv = require('minimist')(process.argv.slice(2));
+
+//random generator
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+function getRandom() {
+    const rnd = getRandomInt(0, 1000);
+    return (rx.of(rnd).pipe(operators.delay(rnd)));
+}
 
 // CORS
 app.use((req, res, next) => {
@@ -18,31 +28,18 @@ app.use((req, res, next) => {
 var __publicFolder = __dirname + '/dist';
 app.use(express.static(__publicFolder));
 
-// API
-// app.get('/', function (req, res) {
-//     res.sendFile(path.join(__publicFolder + '/index.html'));
-// });
-
-// app.get('/*', (req, res) => {
-//     res.end('hello smoke test');
-// })
-
 app.get('/test', function (req, res) {
-    // res.writeHead(200, {
-    //     'Content-Type': 'text/plain'
-    // });
-    ibuki.getRandom().subscribe(d => {
-        if (d <= 1000) {
+
+    getRandom().subscribe(d => {
+        console.log(d);
+        if (d <= 300) {
             res.status(400).send('Bad Request');
         } else {
             res.end('Hello Random number: ' + d);
         }
-        // res.status(400).send('Bad Request');
-        // res.end('Hello Random number: ' + d);
     });
-    // res.end('hello smoke test');
 });
 
 // Running the server 
 // app.listen(argv.p, _ => console.log('Running on port ' +  argv.p));
-app.listen(8080, _ => console.log('Running on port ' + 8080));
+app.listen(8081, _ => console.log('Running on port ' + 8081));
