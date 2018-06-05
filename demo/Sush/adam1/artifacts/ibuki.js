@@ -1,3 +1,4 @@
+'use strict';
 var ibuki = {};
 const rx = require('rxjs');
 const operators = require('rxjs/operators');
@@ -37,6 +38,4 @@ ibuki.getRandom = () =>{
     return(rx.of(rnd).pipe(operators.delay(rnd)));
 }
 
-
-// exports.obj = ibuki;
 module.exports = ibuki;

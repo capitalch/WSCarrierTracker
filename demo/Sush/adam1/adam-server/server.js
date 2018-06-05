@@ -29,15 +29,16 @@ var __publicFolder = __dirname + '/dist';
 app.use(express.static(__publicFolder));
 
 app.get('/test', function (req, res) {
-
-    getRandom().subscribe(d => {
-        console.log(d);
-        if (d <= 300) {
-            res.status(400).send('Bad Request');
-        } else {
-            res.end('Hello Random number: ' + d);
-        }
-    });
+    res.end('Hello Random number: ' + getRandomInt(1,100000));
+    // getRandom().subscribe(d => {
+    //     console.log(d);
+        
+    //     if (d <= 300) {
+    //         res.status(400).send('Bad Request');
+    //     } else {
+    //         res.end('Hello Random number: ' + d);
+    //     }
+    // });
 });
 
 // Running the server 

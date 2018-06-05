@@ -1,7 +1,7 @@
 const mssql = require('mssql');
 const ibuki = require('./ibuki');
 const config = require('../config');
-
+'use strict';
 const dbConfig = config.dbConfig;
 const pool = new mssql.ConnectionPool(dbConfig);
 
