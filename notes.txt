@@ -5,18 +5,19 @@ main.js
 carriers.js
 
 Pre
-										1. Test if callback is pending then application closes or not
 			3. Test the complete flow
                                         3.5 Include rxjs in node.js
                                         4. Implement node.js export mechanism
                                         5. Load modules in node.js
                                         6. Create Azure DB and load database
                                         7. Do hands on practise with azure database and node.js using mssql driver
-			8. Test Axios with rxjs
+			                            8. Test Axios with rxjs
                                         9. Check forkjoin or Q.all for taking care of multiple observables or promises after parallel http calls.
-10. Implement node.js router
-11. Error handling
+                                        10. Implement node.js router
+11. Node.js Error handling
 										12. Confirm in forkjoin or Q.all that it continues even if one call fails in error
+13. Generate Carrier info and test with actual carrier
+14. Test with as many as 50000 per carrier data
 
 Phase 1
 0.1 Create container
