@@ -31,7 +31,7 @@ app.get('/test', function (req, res) {
     // res.writeHead(200, {
     //     'Content-Type': 'text/plain'
     // });
-    ibuki.getRandom().subscribe(d => {
+    util.getRandomDelay().subscribe(d => {
         if (d <= 1000) {
             res.status(400).send('Bad Request');
         } else {

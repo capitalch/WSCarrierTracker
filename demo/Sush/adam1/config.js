@@ -13,5 +13,5 @@ config.dbConfig = {
         idleTimeoutMillis: 30000
     }
 }
-config.promiseCounter = 100000;
+config.promiseCounter = 10;
 module.exports = config;

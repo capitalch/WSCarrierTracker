@@ -1,49 +1,118 @@
 'use strict';
 const ibuki = require('./ibuki');
-const rx = require('rxjs');
-const axios = require('axios');
-const _ = require('lodash');
-const operators = require('rxjs/operators');
-const Q = require('q');
+// const rx = require('rxjs');
+// const axios = require('axios');
+// const _ = require('lodash');
+// const operators = require('rxjs/operators');
+// const Q = require('q');
 const util = require('./util');
 var config = require('../config');
 
 var workbench = {};
 var counter = 0;
-let sub1 = ibuki.filterOn('test-seq-promises-start:index:workbench').subscribe(
-    d => {
-        // 
-        if (counter <= config.promiseCounter) {
-            ibuki.emit('next-promise')
-        }
-        sub1.unsubscribe();
-    }
-);
 
-let sub2 = ibuki.filterOn('next-promise').subscribe(
+let sub2 = ibuki.filterOn('next-carrier:util:workbench').subscribe(
     d => {
-        // 
-        util.execPromise(counter);
-        counter++;
-        // sub2.unsubscribe();
+        const carrierObject = d.data;
+        const carrierInfo = carrierObject.carrierInfo;
+        const index = carrierObject.index;
+        if (index < carrierInfo.length) {
+            util.processCarrier({
+                carrierInfo: carrierInfo,
+                index: index
+            })
+        }
     }
 )
 
-
-let sub3 = ibuki.filterOn('parallel:obs:index:workbench').subscribe(
+let sub3 = ibuki.filterOn('start-processing-carrier:index:workbench').subscribe(
     d => {
-        sub3.unsubscribe();
-        let obsArray = d.data;
-        let fork = rx.forkJoin(obsArray).pipe(operators.catchError(error => {
-            let err1 = rx.of(error);
-            console.log(err1);
-            return (err1);
-        }));
-        fork.subscribe(d => {
-            console.log('Parallel execution completed: ', d);
-        }, err => console.log(err));
+        let carrierInfo1 = util.getCarrierInfo('Fedex', 50000);
+        ibuki.emit('next-carrier:util:workbench', {
+            carrierInfo: carrierInfo1,
+            index: 0
+        });
+        
+        let carrierInfo2 = util.getCarrierInfo('DHL', 2000);
+        ibuki.emit('next-carrier:util:workbench', {
+            carrierInfo: carrierInfo2,
+            index: 0
+        });
+
+        let carrierInfo3 = util.getCarrierInfo('ABhl', 15000);
+        ibuki.emit('next-carrier:util:workbench', {
+            carrierInfo: carrierInfo3,
+            index: 0
+        });
+
+        let carrierInfo4 = util.getCarrierInfo('Robaco', 5000);
+        ibuki.emit('next-carrier:util:workbench', {
+            carrierInfo: carrierInfo4,
+            index: 0
+        });
     }
 );
+
+module.exports = workbench;
+// let sub0 = ibuki.filterOn('next-promise').subscribe(
+//     d => {
+//         (counter <= config.promiseCounter) && util.execPromise(counter);
+//         counter++;
+//     }
+// )
+
+// let sub1 = ibuki.filterOn('test-seq-promises-start:index:workbench').subscribe(
+//     d => {
+//         // 
+//         if (counter <= config.promiseCounter) {
+//             ibuki.emit('next-promise')
+//         }
+//         sub1.unsubscribe();
+//     }
+// );
+// let sub2 = ibuki.filterOn('parallel:obs:index:workbench').subscribe(
+//     d => {
+//         sub3.unsubscribe();
+//         let obsArray = d.data;
+//         let fork = rx.forkJoin(obsArray).pipe(operators.catchError(error => {
+//             let err1 = rx.of(error);
+//             console.log(err1);
+//             return (err1);
+//         }));
+//         fork.subscribe(d => {
+//             console.log('Parallel execution completed: ', d);
+//         }, err => console.log(err));
+//     }
+// );
+
+// let sub3 = ibuki.filterOn('test-promise:index:workbench').subscribe(
+//     d => {
+//         sub5.unsubscribe();
+//         console.log('Promise execution started...');
+//         let promiseArray = d.data;
+//         Q.allSettled(promiseArray).then(
+//             (results) => {
+//                 console.log(results);
+//             }, (rejects) => {
+//                 console.log(rejects);
+//             }
+//         ).catch(e => {
+//             console.log('Q Catch error');
+//         });
+//     }
+// )
+
+// workbench.getPromise = () => {
+//     return (axios.get('http://localhost:8081/test'));
+// };
+
+// workbench.getObs = () => {
+//     const pr = axios.get('http://localhost:8080/test');
+//     const obs = rx.from(pr);
+//     return (obs);
+// };
+
+/*
 
 // let sub4 = ibuki.filterOn('parallel:promise:index:workbench').subscribe(
 //     d => {
@@ -72,37 +141,6 @@ let sub3 = ibuki.filterOn('parallel:obs:index:workbench').subscribe(
 //             .then(r => console.log(r1));
 //     }
 // )
-
-let sub5 = ibuki.filterOn('test-promise:index:workbench').subscribe(
-    d => {
-        sub5.unsubscribe();
-        console.log('Promise execution started...');
-        let promiseArray = d.data;
-        Q.allSettled(promiseArray).then(
-            (results) => {
-                console.log(results);
-            }, (rejects) => {
-                console.log(rejects);
-            }
-        ).catch(e => {
-            console.log('Q Catch error');
-        });
-    }
-)
-
-workbench.getObs = () => {
-    const pr = axios.get('http://localhost:8080/test');
-    const obs = rx.from(pr);
-    return (obs);
-};
-
-workbench.getPromise = () => {
-    return (axios.get('http://localhost:8081/test'));
-};
-
-module.exports = workbench;
-
-/*
 // Q.allSettled(promiseArray).then((results) => {
         //     // results.forEach(result => {
         //     //     console.log(result.value && result.value.data || result.value);
