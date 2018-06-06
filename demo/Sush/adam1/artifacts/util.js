@@ -35,13 +35,15 @@ util.getRandomDelay = () => {
     const rnd = getRandomInt(0, 100);
     return (rx.of(rnd).pipe(operators.delay(rnd)));
 }
-
+// sabyasachi 
 util.getCarrierInfo = (name, count) => {
     let arr = [];
+
     for (let i = 0; i < count; i++) {
         let obj = {
             trackingNumber: getRandomInt(1000, 10000),
             url: 'http://localhost:8081/test',
+
             name: name
         }
         arr.push(obj);
