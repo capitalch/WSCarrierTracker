@@ -29,13 +29,4 @@ ibuki.hotFilterOn = (id) => {
     return (hotSubject.pipe(operators.filter(d => (d.id === id))));
 }
 
-//test area
-// function getRandomInt (min, max) {
-//     return Math.floor(Math.random() * (max - min + 1)) + min;
-// }
-// ibuki.getRandom = () =>{
-//     const rnd = getRandomInt(0, 100);
-//     return(rx.of(rnd).pipe(operators.delay(rnd)));
-// }
-
 module.exports = ibuki;
