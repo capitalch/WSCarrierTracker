@@ -27,27 +27,27 @@ let sub2 = ibuki.filterOn('next-carrier:util:workbench').subscribe(
 
 let sub3 = ibuki.filterOn('start-processing-carrier:index:workbench').subscribe(
     d => {
-        let carrierInfo1 = util.getCarrierInfo('Fedex', 50000);
+        let carrierInfo = util.getCarrierInfo('Fedex', 50000);
         ibuki.emit('next-carrier:util:workbench', {
-            carrierInfo: carrierInfo1,
+            carrierInfo: carrierInfo,
             index: 0
         });
         
-        let carrierInfo2 = util.getCarrierInfo('DHL', 2000);
+        carrierInfo = util.getCarrierInfo('DHL', 200);
         ibuki.emit('next-carrier:util:workbench', {
-            carrierInfo: carrierInfo2,
+            carrierInfo: carrierInfo,
             index: 0
         });
 
-        let carrierInfo3 = util.getCarrierInfo('ABhl', 15000);
+        carrierInfo = util.getCarrierInfo('ABhl', 15000);
         ibuki.emit('next-carrier:util:workbench', {
-            carrierInfo: carrierInfo3,
+            carrierInfo: carrierInfo,
             index: 0
         });
 
-        let carrierInfo4 = util.getCarrierInfo('Robaco', 5000);
+        carrierInfo = util.getCarrierInfo('Robaco', 5000);
         ibuki.emit('next-carrier:util:workbench', {
-            carrierInfo: carrierInfo4,
+            carrierInfo: carrierInfo,
             index: 0
         });
     }
