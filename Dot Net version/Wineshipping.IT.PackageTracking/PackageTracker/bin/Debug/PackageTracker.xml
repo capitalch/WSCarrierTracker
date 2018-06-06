@@ -1,0 +1,3928 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+PackageTracker
+</name>
+</assembly>
+<members>
+<member name="T:PackageTracker.gso.trackshipment.GSOWebService">
+<remarks/>
+</member>
+<member name="M:PackageTracker.gso.trackshipment.GSOWebService.#ctor">
+<remarks/>
+</member>
+<member name="E:PackageTracker.gso.trackshipment.GSOWebService.SubmitShipmentCompleted">
+<remarks/>
+</member>
+<member name="E:PackageTracker.gso.trackshipment.GSOWebService.VoidShipmentCompleted">
+<remarks/>
+</member>
+<member name="E:PackageTracker.gso.trackshipment.GSOWebService.TrackShipmentCompleted">
+<remarks/>
+</member>
+<member name="E:PackageTracker.gso.trackshipment.GSOWebService.GetShippingActivityCompleted">
+<remarks/>
+</member>
+<member name="E:PackageTracker.gso.trackshipment.GSOWebService.GetDeliveryTimesCompleted">
+<remarks/>
+</member>
+<member name="E:PackageTracker.gso.trackshipment.GSOWebService.GetServiceTypesCompleted">
+<remarks/>
+</member>
+<member name="E:PackageTracker.gso.trackshipment.GSOWebService.GetShippingRateCompleted">
+<remarks/>
+</member>
+<member name="E:PackageTracker.gso.trackshipment.GSOWebService.GetShippingRatesAndTimesCompleted">
+<remarks/>
+</member>
+<member name="E:PackageTracker.gso.trackshipment.GSOWebService.GetDropBoxInfoCompleted">
+<remarks/>
+</member>
+<member name="E:PackageTracker.gso.trackshipment.GSOWebService.SubmitOnCallPickupCompleted">
+<remarks/>
+</member>
+<member name="E:PackageTracker.gso.trackshipment.GSOWebService.TrackOnCallPickupCompleted">
+<remarks/>
+</member>
+<member name="E:PackageTracker.gso.trackshipment.GSOWebService.GetShippingSupplyListCompleted">
+<remarks/>
+</member>
+<member name="E:PackageTracker.gso.trackshipment.GSOWebService.SubmitShippingSupplyOrderCompleted">
+<remarks/>
+</member>
+<member name="E:PackageTracker.gso.trackshipment.GSOWebService.TrackShippingSupplyOrderCompleted">
+<remarks/>
+</member>
+<member name="M:PackageTracker.gso.trackshipment.GSOWebService.SubmitShipment(PackageTracker.gso.trackshipment.SubmitShipmentRequest)">
+<remarks/>
+</member>
+<member name="M:PackageTracker.gso.trackshipment.GSOWebService.SubmitShipmentAsync(PackageTracker.gso.trackshipment.SubmitShipmentRequest)">
+<remarks/>
+</member>
+<member name="M:PackageTracker.gso.trackshipment.GSOWebService.SubmitShipmentAsync(PackageTracker.gso.trackshipment.SubmitShipmentRequest,System.Object)">
+<remarks/>
+</member>
+<member name="M:PackageTracker.gso.trackshipment.GSOWebService.VoidShipment(PackageTracker.gso.trackshipment.VoidShipmentRequest)">
+<remarks/>
+</member>
+<member name="M:PackageTracker.gso.trackshipment.GSOWebService.VoidShipmentAsync(PackageTracker.gso.trackshipment.VoidShipmentRequest)">
+<remarks/>
+</member>
+<member name="M:PackageTracker.gso.trackshipment.GSOWebService.VoidShipmentAsync(PackageTracker.gso.trackshipment.VoidShipmentRequest,System.Object)">
+<remarks/>
+</member>
+<member name="M:PackageTracker.gso.trackshipment.GSOWebService.TrackShipment(PackageTracker.gso.trackshipment.TrackShipmentRequest)">
+<remarks/>
+</member>
+<member name="M:PackageTracker.gso.trackshipment.GSOWebService.TrackShipmentAsync(PackageTracker.gso.trackshipment.TrackShipmentRequest)">
+<remarks/>
+</member>
+<member name="M:PackageTracker.gso.trackshipment.GSOWebService.TrackShipmentAsync(PackageTracker.gso.trackshipment.TrackShipmentRequest,System.Object)">
+<remarks/>
+</member>
+<member name="M:PackageTracker.gso.trackshipment.GSOWebService.GetShippingActivity(PackageTracker.gso.trackshipment.GetShippingActivityRequest)">
+<remarks/>
+</member>
+<member name="M:PackageTracker.gso.trackshipment.GSOWebService.GetShippingActivityAsync(PackageTracker.gso.trackshipment.GetShippingActivityRequest)">
+<remarks/>
+</member>
+<member name="M:PackageTracker.gso.trackshipment.GSOWebService.GetShippingActivityAsync(PackageTracker.gso.trackshipment.GetShippingActivityRequest,System.Object)">
+<remarks/>
+</member>
+<member name="M:PackageTracker.gso.trackshipment.GSOWebService.GetDeliveryTimes(PackageTracker.gso.trackshipment.GetDeliveryTimesRequest)">
+<remarks/>
+</member>
+<member name="M:PackageTracker.gso.trackshipment.GSOWebService.GetDeliveryTimesAsync(PackageTracker.gso.trackshipment.GetDeliveryTimesRequest)">
+<remarks/>
+</member>
+<member name="M:PackageTracker.gso.trackshipment.GSOWebService.GetDeliveryTimesAsync(PackageTracker.gso.trackshipment.GetDeliveryTimesRequest,System.Object)">
+<remarks/>
+</member>
+<member name="M:PackageTracker.gso.trackshipment.GSOWebService.GetServiceTypes(PackageTracker.gso.trackshipment.GetServiceTypesRequest)">
+<remarks/>
+</member>
+<member name="M:PackageTracker.gso.trackshipment.GSOWebService.GetServiceTypesAsync(PackageTracker.gso.trackshipment.GetServiceTypesRequest)">
+<remarks/>
+</member>
+<member name="M:PackageTracker.gso.trackshipment.GSOWebService.GetServiceTypesAsync(PackageTracker.gso.trackshipment.GetServiceTypesRequest,System.Object)">
+<remarks/>
+</member>
+<member name="M:PackageTracker.gso.trackshipment.GSOWebService.GetShippingRate(PackageTracker.gso.trackshipment.GetShippingRateRequest)">
+<remarks/>
+</member>
+<member name="M:PackageTracker.gso.trackshipment.GSOWebService.GetShippingRateAsync(PackageTracker.gso.trackshipment.GetShippingRateRequest)">
+<remarks/>
+</member>
+<member name="M:PackageTracker.gso.trackshipment.GSOWebService.GetShippingRateAsync(PackageTracker.gso.trackshipment.GetShippingRateRequest,System.Object)">
+<remarks/>
+</member>
+<member name="M:PackageTracker.gso.trackshipment.GSOWebService.GetShippingRatesAndTimes(PackageTracker.gso.trackshipment.GetShippingRatesAndTimesRequest)">
+<remarks/>
+</member>
+<member name="M:PackageTracker.gso.trackshipment.GSOWebService.GetShippingRatesAndTimesAsync(PackageTracker.gso.trackshipment.GetShippingRatesAndTimesRequest)">
+<remarks/>
+</member>
+<member name="M:PackageTracker.gso.trackshipment.GSOWebService.GetShippingRatesAndTimesAsync(PackageTracker.gso.trackshipment.GetShippingRatesAndTimesRequest,System.Object)">
+<remarks/>
+</member>
+<member name="M:PackageTracker.gso.trackshipment.GSOWebService.GetDropBoxInfo(PackageTracker.gso.trackshipment.GetDropBoxInfoRequest)">
+<remarks/>
+</member>
+<member name="M:PackageTracker.gso.trackshipment.GSOWebService.GetDropBoxInfoAsync(PackageTracker.gso.trackshipment.GetDropBoxInfoRequest)">
+<remarks/>
+</member>
+<member name="M:PackageTracker.gso.trackshipment.GSOWebService.GetDropBoxInfoAsync(PackageTracker.gso.trackshipment.GetDropBoxInfoRequest,System.Object)">
+<remarks/>
+</member>
+<member name="M:PackageTracker.gso.trackshipment.GSOWebService.SubmitOnCallPickup(PackageTracker.gso.trackshipment.SubmitOnCallPickupRequest)">
+<remarks/>
+</member>
+<member name="M:PackageTracker.gso.trackshipment.GSOWebService.SubmitOnCallPickupAsync(PackageTracker.gso.trackshipment.SubmitOnCallPickupRequest)">
+<remarks/>
+</member>
+<member name="M:PackageTracker.gso.trackshipment.GSOWebService.SubmitOnCallPickupAsync(PackageTracker.gso.trackshipment.SubmitOnCallPickupRequest,System.Object)">
+<remarks/>
+</member>
+<member name="M:PackageTracker.gso.trackshipment.GSOWebService.TrackOnCallPickup(PackageTracker.gso.trackshipment.TrackOnCallPickupRequest)">
+<remarks/>
+</member>
+<member name="M:PackageTracker.gso.trackshipment.GSOWebService.TrackOnCallPickupAsync(PackageTracker.gso.trackshipment.TrackOnCallPickupRequest)">
+<remarks/>
+</member>
+<member name="M:PackageTracker.gso.trackshipment.GSOWebService.TrackOnCallPickupAsync(PackageTracker.gso.trackshipment.TrackOnCallPickupRequest,System.Object)">
+<remarks/>
+</member>
+<member name="M:PackageTracker.gso.trackshipment.GSOWebService.GetShippingSupplyList">
+<remarks/>
+</member>
+<member name="M:PackageTracker.gso.trackshipment.GSOWebService.GetShippingSupplyListAsync">
+<remarks/>
+</member>
+<member name="M:PackageTracker.gso.trackshipment.GSOWebService.GetShippingSupplyListAsync(System.Object)">
+<remarks/>
+</member>
+<member name="M:PackageTracker.gso.trackshipment.GSOWebService.SubmitShippingSupplyOrder(PackageTracker.gso.trackshipment.SubmitShippingSupplyOrderRequest)">
+<remarks/>
+</member>
+<member name="M:PackageTracker.gso.trackshipment.GSOWebService.SubmitShippingSupplyOrderAsync(PackageTracker.gso.trackshipment.SubmitShippingSupplyOrderRequest)">
+<remarks/>
+</member>
+<member name="M:PackageTracker.gso.trackshipment.GSOWebService.SubmitShippingSupplyOrderAsync(PackageTracker.gso.trackshipment.SubmitShippingSupplyOrderRequest,System.Object)">
+<remarks/>
+</member>
+<member name="M:PackageTracker.gso.trackshipment.GSOWebService.TrackShippingSupplyOrder(PackageTracker.gso.trackshipment.TrackShippingSupplyOrderRequest)">
+<remarks/>
+</member>
+<member name="M:PackageTracker.gso.trackshipment.GSOWebService.TrackShippingSupplyOrderAsync(PackageTracker.gso.trackshipment.TrackShippingSupplyOrderRequest)">
+<remarks/>
+</member>
+<member name="M:PackageTracker.gso.trackshipment.GSOWebService.TrackShippingSupplyOrderAsync(PackageTracker.gso.trackshipment.TrackShippingSupplyOrderRequest,System.Object)">
+<remarks/>
+</member>
+<member name="M:PackageTracker.gso.trackshipment.GSOWebService.CancelAsync(System.Object)">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.AuthenticationHeader">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.AuthenticationHeader.UserName">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.AuthenticationHeader.Password">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.AuthenticationHeader.AnyAttr">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.TrackingInfo">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.TrackingInfo.OrderId">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.TrackingInfo.OrderDate">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.TrackingInfo.OrderStatus">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.TrackingInfo.ShipDate">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.TrackingInfo.TrackingNumber">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.SupplyOrderItem">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.SupplyOrderItem.Number">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.SupplyOrderItem.Description">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.SupplyOrderItem.Quantity">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.SupplyOrderInfo">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.SupplyOrderInfo.SupplyOrder">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.SupplyOrderInfo.SupplyOrderItems">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.SupplyOrderInfo.TrackingInfo">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.SupplyOrder">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.SupplyOrder.AccountNumber">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.SupplyOrder.ShipToCompany">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.SupplyOrder.ShipToAttention">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.SupplyOrder.ShipToPhone">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.SupplyOrder.ShipToEmail">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.SupplyOrder.DeliveryAddress1">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.SupplyOrder.DeliveryAddress2">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.SupplyOrder.DeliveryCity">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.SupplyOrder.DeliveryState">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.SupplyOrder.DeliveryZip">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.SupplyOrder.OrderNotes">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.SupplyOrder.DeliveryNotes">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.TrackShippingSupplyOrderResult">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.TrackShippingSupplyOrderResult.SupplyOrderInfo">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.TrackShippingSupplyOrderResult.Result">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.Result">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Result.Code">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Result.Message">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.TrackShippingSupplyOrderRequest">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.TrackShippingSupplyOrderRequest.AccountNumber">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.TrackShippingSupplyOrderRequest.SearchType">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.TrackShippingSupplyOrderRequest.SearchValue">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.SupplyOrderSearchType">
+<remarks/>
+</member>
+<member name="F:PackageTracker.gso.trackshipment.SupplyOrderSearchType.ORDERID">
+<remarks/>
+</member>
+<member name="F:PackageTracker.gso.trackshipment.SupplyOrderSearchType.ORDERDATE">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.SubmitShippingSupplyOrderInfo">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.SubmitShippingSupplyOrderInfo.OrderId">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.SubmitShippingSupplyOrderResult">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.SubmitShippingSupplyOrderResult.SubmitShippingSupplyOrderInfo">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.SubmitShippingSupplyOrderResult.Result">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.SubmitShippingSupplyOrderRequest">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.SubmitShippingSupplyOrderRequest.SupplyOrder">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.SubmitShippingSupplyOrderRequest.SupplyItems">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.SupplyItem">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.SupplyItem.Number">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.SupplyItem.Description">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.GetShippingSupplyListResult">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.GetShippingSupplyListResult.SupplyItem">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.GetShippingSupplyListResult.Result">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.TrackPickupResult">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.TrackPickupResult.ConfirmationNumber">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.TrackPickupResult.AccountNumber">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.TrackPickupResult.ShipperCompany">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.TrackPickupResult.ShipperContact">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.TrackPickupResult.ShipperPhone">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.TrackPickupResult.ShipperEmail">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.TrackPickupResult.PickupAddress1">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.TrackPickupResult.PickupAddress2">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.TrackPickupResult.PickupCity">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.TrackPickupResult.PickupState">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.TrackPickupResult.PickupZip">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.TrackPickupResult.PickupInstructions">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.TrackPickupResult.EarliestPickupTime">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.TrackPickupResult.LatestPickupTime">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.TrackPickupResult.PickupDate">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.TrackPickupResult.PickupNotification">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.TrackPickupResult.NumPackages">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.TrackPickupResult.TotalWeight">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.TrackPickupResult.Status">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.TrackPickupResult.StatusReason">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.TrackOnCallPickupResult">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.TrackOnCallPickupResult.Pickups">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.TrackOnCallPickupResult.Result">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.TrackOnCallPickupRequest">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.TrackOnCallPickupRequest.AccountNumber">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.TrackOnCallPickupRequest.SearchType">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.TrackOnCallPickupRequest.SearchValue">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.PickupSearchType">
+<remarks/>
+</member>
+<member name="F:PackageTracker.gso.trackshipment.PickupSearchType.CONFIRMATIONNUM">
+<remarks/>
+</member>
+<member name="F:PackageTracker.gso.trackshipment.PickupSearchType.PICKUPDATE">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.OnCallPickupInfo">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.OnCallPickupInfo.ConfirmationNumber">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.SubmitOnCallPickupResult">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.SubmitOnCallPickupResult.OnCallPickupInfo">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.SubmitOnCallPickupResult.Result">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.Pickup">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Pickup.AccountNumber">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Pickup.ShipperCompany">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Pickup.ShipperContact">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Pickup.ShipperPhone">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Pickup.ShipperEmail">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Pickup.PickupAddress1">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Pickup.PickupAddress2">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Pickup.PickupCity">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Pickup.PickupState">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Pickup.PickupZip">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Pickup.PickupInstructions">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Pickup.EarliestPickupTime">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Pickup.LatestPickupTime">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Pickup.PickupDate">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Pickup.PickupNotification">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Pickup.NumPackages">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Pickup.TotalWeight">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.SubmitOnCallPickupRequest">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.SubmitOnCallPickupRequest.Pickup">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.SubmitOnCallPickupRequest.AllowDuplicateRequest">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.DropBoxInfo">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.DropBoxInfo.Address">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.DropBoxInfo.City">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.DropBoxInfo.Zip">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.DropBoxInfo.Notes">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.DropBoxInfo.EstimatedPickupTime">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.GetDropBoxInfoResult">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.GetDropBoxInfoResult.DropBoxInfo">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.GetDropBoxInfoResult.Result">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.GetDropBoxInfoRequest">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.GetDropBoxInfoRequest.Address">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.GetDropBoxInfoRequest.City">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.GetDropBoxInfoRequest.State">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.GetDropBoxInfoRequest.Zip">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.DeliveryService">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.DeliveryService.ServiceCode">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.DeliveryService.ServiceDescription">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.DeliveryService.GuaranteedDeliveryDateTime">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.DeliveryService.ShipmentCharges">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.ShipmentCharges">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.ShipmentCharges.TransportationCharge">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.ShipmentCharges.CODCharge">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.ShipmentCharges.InsuranceCharge">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.ShipmentCharges.OtherCharge">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.ShipmentCharges.FuelSurcharge">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.ShipmentCharges.TotalCharge">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.GetShippingRatesAndTimesResult">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.GetShippingRatesAndTimesResult.OriginZip">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.GetShippingRatesAndTimesResult.OriginCity">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.GetShippingRatesAndTimesResult.DestinationZip">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.GetShippingRatesAndTimesResult.DestinationCity">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.GetShippingRatesAndTimesResult.DeliveryServices">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.GetShippingRatesAndTimesResult.Result">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.GetShippingRatesAndTimesRequest">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.GetShippingRatesAndTimesRequest.AccountNumber">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.GetShippingRatesAndTimesRequest.OriginZip">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.GetShippingRatesAndTimesRequest.DestinationZip">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.GetShippingRatesAndTimesRequest.PackageWeight">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.GetShippingRatesAndTimesRequest.DeclaredValue">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.GetShippingRatesAndTimesRequest.CODValue">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.GetShippingRatesAndTimesRequest.ShipDate">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.GetShippingRatesAndTimesRequest.PickupService">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.GetShippingRateResult">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.GetShippingRateResult.ShipmentCharges">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.GetShippingRateResult.Result">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.GetShippingRateRequest">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.GetShippingRateRequest.AccountNumber">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.GetShippingRateRequest.OriginZip">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.GetShippingRateRequest.DestinationZip">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.GetShippingRateRequest.PackageWeight">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.GetShippingRateRequest.ServiceCode">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.GetShippingRateRequest.DeclaredValue">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.GetShippingRateRequest.CODValue">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.Service">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Service.Code">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Service.Description">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.GetServiceTypesResult">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.GetServiceTypesResult.Service">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.GetServiceTypesResult.Result">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.GetServiceTypesRequest">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.GetServiceTypesRequest.AccountNumber">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.DeliveryTime">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.DeliveryTime.ServiceCode">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.DeliveryTime.ServiceDescription">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.DeliveryTime.GuaranteedDeliveryTime">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.DeliveryLocation">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.DeliveryLocation.City">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.DeliveryLocation.ZipCode">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.DeliveryTimesInfo">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.DeliveryTimesInfo.DeliveryLocation">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.DeliveryTimesInfo.DeliveryTimes">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.GetDeliveryTimesResult">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.GetDeliveryTimesResult.DeliveryTimesInfo">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.GetDeliveryTimesResult.Result">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.GetDeliveryTimesRequest">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.GetDeliveryTimesRequest.SearchType">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.GetDeliveryTimesRequest.SearchValue">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.DeliveryTimesSearchType">
+<remarks/>
+</member>
+<member name="F:PackageTracker.gso.trackshipment.DeliveryTimesSearchType.ZIPCODE">
+<remarks/>
+</member>
+<member name="F:PackageTracker.gso.trackshipment.DeliveryTimesSearchType.CITY_STATE">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.ShipmentInfo">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.ShipmentInfo.Package">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.ShipmentInfo.Delivery">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.ShipmentInfo.ShipmentCharges">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.ShipmentInfo.TransitNotes">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.Package">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Package.AccountNumber">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Package.TrackingNumber">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Package.ShipperCompany">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Package.ShipperContact">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Package.ShipperPhone">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Package.ShipperEmail">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Package.PickupAddress1">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Package.PickupAddress2">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Package.PickupCity">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Package.PickupState">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Package.PickupZip">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Package.ShipToCompany">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Package.ShipToAttention">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Package.ShipToPhone">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Package.ShipToEmail">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Package.DeliveryAddress1">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Package.DeliveryAddress2">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Package.DeliveryCity">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Package.DeliveryState">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Package.DeliveryZip">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Package.ServiceCode">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Package.ShipmentReference">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Package.DeclaredValue">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Package.CODValue">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Package.SpecialInstructions">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Package.Weight">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Package.SignatureCode">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Package.AddnShipperReference1">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Package.AddnShipperReference2">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.SignatureType">
+<remarks/>
+</member>
+<member name="F:PackageTracker.gso.trackshipment.SignatureType.SIG_REQD">
+<remarks/>
+</member>
+<member name="F:PackageTracker.gso.trackshipment.SignatureType.SIG_NOT_REQD">
+<remarks/>
+</member>
+<member name="F:PackageTracker.gso.trackshipment.SignatureType.ADULT_SIG_REQD">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.Delivery">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Delivery.ShipDate">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Delivery.ScheduledDate">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Delivery.DeliveryDate">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Delivery.TransitStatus">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Delivery.DeliveryTime">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Delivery.SignedBy">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Delivery.Signature">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.TransitNote">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.TransitNote.EventDate">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.TransitNote.Comments">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.GetShippingActivityResult">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.GetShippingActivityResult.ShipmentInfo">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.GetShippingActivityResult.Result">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.GetShippingActivityRequest">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.GetShippingActivityRequest.AccountNumber">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.GetShippingActivityRequest.SearchType">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.GetShippingActivityRequest.SearchValue">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.ShippingActivitySearchType">
+<remarks/>
+</member>
+<member name="F:PackageTracker.gso.trackshipment.ShippingActivitySearchType.TRACKINGNUM">
+<remarks/>
+</member>
+<member name="F:PackageTracker.gso.trackshipment.ShippingActivitySearchType.REFERENCENUM">
+<remarks/>
+</member>
+<member name="F:PackageTracker.gso.trackshipment.ShippingActivitySearchType.SHIPDATE">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.TrackShipmentInfo">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.TrackShipmentInfo.TrackingNumber">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.TrackShipmentInfo.ShipToCompany">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.TrackShipmentInfo.DeliveryCity">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.TrackShipmentInfo.DeliveryState">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.TrackShipmentInfo.DeliveryZip">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.TrackShipmentInfo.ServiceCode">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.TrackShipmentInfo.ShipmentReference">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.TrackShipmentInfo.Weight">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.TrackShipmentResult">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.TrackShipmentResult.TrackShipmentInfo">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.TrackShipmentResult.Delivery">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.TrackShipmentResult.TransitNotes">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.TrackShipmentResult.Result">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.TrackShipmentRequest">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.TrackShipmentRequest.AccountNumber">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.TrackShipmentRequest.SearchType">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.TrackShipmentRequest.SearchValue">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.ShipmentSearchType">
+<remarks/>
+</member>
+<member name="F:PackageTracker.gso.trackshipment.ShipmentSearchType.TRACKINGNUM">
+<remarks/>
+</member>
+<member name="F:PackageTracker.gso.trackshipment.ShipmentSearchType.REFERENCENUM">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.VoidShipmentInfo">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.VoidShipmentInfo.AccountNumber">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.VoidShipmentInfo.TrackingNumber">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.VoidShipmentResult">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.VoidShipmentResult.VoidShipmentInfo">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.VoidShipmentResult.Result">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.VoidShipmentRequest">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.VoidShipmentRequest.AccountNumber">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.VoidShipmentRequest.TrackingNumber">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.Label">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Label.Paper">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Label.Thermal">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.SubmitShipmentInfo">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.SubmitShipmentInfo.AccountNumber">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.SubmitShipmentInfo.TrackingNumber">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.SubmitShipmentResult">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.SubmitShipmentResult.SubmitShipmentInfo">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.SubmitShipmentResult.ShipmentCharges">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.SubmitShipmentResult.Label">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.SubmitShipmentResult.Result">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.ShipmentLabel">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.ShipmentLabel.Type">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.LabelType">
+<remarks/>
+</member>
+<member name="F:PackageTracker.gso.trackshipment.LabelType.NO_LABEL">
+<remarks/>
+</member>
+<member name="F:PackageTracker.gso.trackshipment.LabelType.PAPER_LABEL">
+<remarks/>
+</member>
+<member name="F:PackageTracker.gso.trackshipment.LabelType.SHORT_LABEL">
+<remarks/>
+</member>
+<member name="F:PackageTracker.gso.trackshipment.LabelType.LONG_LABEL">
+<remarks/>
+</member>
+<member name="F:PackageTracker.gso.trackshipment.LabelType.ZPL_SHORT_LABEL">
+<remarks/>
+</member>
+<member name="F:PackageTracker.gso.trackshipment.LabelType.ZPL_LONG_LABEL">
+<remarks/>
+</member>
+<member name="F:PackageTracker.gso.trackshipment.LabelType.ZPL2_SHORT_LABEL">
+<remarks/>
+</member>
+<member name="F:PackageTracker.gso.trackshipment.LabelType.ZPL2_LONG_LABEL">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.Notification">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Notification.ShipmentNotification">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Notification.ExceptionNotification">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Notification.DeliveryNotification">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Notification.ReceiptNotification">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Notification.ShipmentNotificationComments">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Notification.ExceptionNotificationComments">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Notification.DeliveryNotificationComments">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.Notification.ReceiptNotificationComments">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.SubmitShipmentRequest">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.SubmitShipmentRequest.Package">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.SubmitShipmentRequest.Notification">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.SubmitShipmentRequest.ShipmentLabel">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.SubmitShipmentCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.SubmitShipmentCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.SubmitShipmentCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.VoidShipmentCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.VoidShipmentCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.VoidShipmentCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.TrackShipmentCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.TrackShipmentCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.TrackShipmentCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.GetShippingActivityCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.GetShippingActivityCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.GetShippingActivityCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.GetDeliveryTimesCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.GetDeliveryTimesCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.GetDeliveryTimesCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.GetServiceTypesCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.GetServiceTypesCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.GetServiceTypesCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.GetShippingRateCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.GetShippingRateCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.GetShippingRateCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.GetShippingRatesAndTimesCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.GetShippingRatesAndTimesCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.GetShippingRatesAndTimesCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.GetDropBoxInfoCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.GetDropBoxInfoCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.GetDropBoxInfoCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.SubmitOnCallPickupCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.SubmitOnCallPickupCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.SubmitOnCallPickupCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.TrackOnCallPickupCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.TrackOnCallPickupCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.TrackOnCallPickupCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.GetShippingSupplyListCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.GetShippingSupplyListCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.GetShippingSupplyListCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.SubmitShippingSupplyOrderCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.SubmitShippingSupplyOrderCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.SubmitShippingSupplyOrderCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.TrackShippingSupplyOrderCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:PackageTracker.gso.trackshipment.TrackShippingSupplyOrderCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:PackageTracker.gso.trackshipment.TrackShippingSupplyOrderCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.TrackService">
+<remarks/>
+</member>
+<member name="M:PackageTracker.TrackServiceWebReference.TrackService.#ctor">
+<remarks/>
+</member>
+<member name="E:PackageTracker.TrackServiceWebReference.TrackService.retrieveSignatureProofOfDeliveryLetterCompleted">
+<remarks/>
+</member>
+<member name="E:PackageTracker.TrackServiceWebReference.TrackService.trackCompleted">
+<remarks/>
+</member>
+<member name="E:PackageTracker.TrackServiceWebReference.TrackService.sendSignatureProofOfDeliveryFaxCompleted">
+<remarks/>
+</member>
+<member name="E:PackageTracker.TrackServiceWebReference.TrackService.sendNotificationsCompleted">
+<remarks/>
+</member>
+<member name="M:PackageTracker.TrackServiceWebReference.TrackService.retrieveSignatureProofOfDeliveryLetter(PackageTracker.TrackServiceWebReference.SignatureProofOfDeliveryLetterRequest)">
+<remarks/>
+</member>
+<member name="M:PackageTracker.TrackServiceWebReference.TrackService.retrieveSignatureProofOfDeliveryLetterAsync(PackageTracker.TrackServiceWebReference.SignatureProofOfDeliveryLetterRequest)">
+<remarks/>
+</member>
+<member name="M:PackageTracker.TrackServiceWebReference.TrackService.retrieveSignatureProofOfDeliveryLetterAsync(PackageTracker.TrackServiceWebReference.SignatureProofOfDeliveryLetterRequest,System.Object)">
+<remarks/>
+</member>
+<member name="M:PackageTracker.TrackServiceWebReference.TrackService.track(PackageTracker.TrackServiceWebReference.TrackRequest)">
+<remarks/>
+</member>
+<member name="M:PackageTracker.TrackServiceWebReference.TrackService.trackAsync(PackageTracker.TrackServiceWebReference.TrackRequest)">
+<remarks/>
+</member>
+<member name="M:PackageTracker.TrackServiceWebReference.TrackService.trackAsync(PackageTracker.TrackServiceWebReference.TrackRequest,System.Object)">
+<remarks/>
+</member>
+<member name="M:PackageTracker.TrackServiceWebReference.TrackService.sendSignatureProofOfDeliveryFax(PackageTracker.TrackServiceWebReference.SignatureProofOfDeliveryFaxRequest)">
+<remarks/>
+</member>
+<member name="M:PackageTracker.TrackServiceWebReference.TrackService.sendSignatureProofOfDeliveryFaxAsync(PackageTracker.TrackServiceWebReference.SignatureProofOfDeliveryFaxRequest)">
+<remarks/>
+</member>
+<member name="M:PackageTracker.TrackServiceWebReference.TrackService.sendSignatureProofOfDeliveryFaxAsync(PackageTracker.TrackServiceWebReference.SignatureProofOfDeliveryFaxRequest,System.Object)">
+<remarks/>
+</member>
+<member name="M:PackageTracker.TrackServiceWebReference.TrackService.sendNotifications(PackageTracker.TrackServiceWebReference.SendNotificationsRequest)">
+<remarks/>
+</member>
+<member name="M:PackageTracker.TrackServiceWebReference.TrackService.sendNotificationsAsync(PackageTracker.TrackServiceWebReference.SendNotificationsRequest)">
+<remarks/>
+</member>
+<member name="M:PackageTracker.TrackServiceWebReference.TrackService.sendNotificationsAsync(PackageTracker.TrackServiceWebReference.SendNotificationsRequest,System.Object)">
+<remarks/>
+</member>
+<member name="M:PackageTracker.TrackServiceWebReference.TrackService.CancelAsync(System.Object)">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.SignatureProofOfDeliveryLetterRequest">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.SignatureProofOfDeliveryLetterRequest.WebAuthenticationDetail">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.SignatureProofOfDeliveryLetterRequest.ClientDetail">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.SignatureProofOfDeliveryLetterRequest.TransactionDetail">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.SignatureProofOfDeliveryLetterRequest.Version">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.SignatureProofOfDeliveryLetterRequest.QualifiedTrackingNumber">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.SignatureProofOfDeliveryLetterRequest.AdditionalComments">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.SignatureProofOfDeliveryLetterRequest.LetterFormat">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.SignatureProofOfDeliveryLetterRequest.LetterFormatSpecified">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.SignatureProofOfDeliveryLetterRequest.Consignee">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.WebAuthenticationDetail">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.WebAuthenticationDetail.UserCredential">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.WebAuthenticationCredential">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.WebAuthenticationCredential.Key">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.WebAuthenticationCredential.Password">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.TrackNotificationPackage">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackNotificationPackage.TrackingNumber">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackNotificationPackage.TrackingNumberUniqueIdentifiers">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackNotificationPackage.CarrierCode">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackNotificationPackage.CarrierCodeSpecified">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackNotificationPackage.ShipDate">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackNotificationPackage.ShipDateSpecified">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackNotificationPackage.Destination">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackNotificationPackage.RecipientDetails">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.CarrierCodeType">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.CarrierCodeType.FDXC">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.CarrierCodeType.FDXE">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.CarrierCodeType.FDXG">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.CarrierCodeType.FXCC">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.CarrierCodeType.FXFR">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.CarrierCodeType.FXSP">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.Address">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Address.StreetLines">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Address.City">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Address.StateOrProvinceCode">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Address.PostalCode">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Address.UrbanizationCode">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Address.CountryCode">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Address.CountryName">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Address.Residential">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Address.ResidentialSpecified">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.EMailNotificationEventType">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.EMailNotificationEventType.ON_DELIVERY">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.EMailNotificationEventType.ON_EXCEPTION">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.EMailNotificationEventType.ON_SHIPMENT">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.EMailNotificationEventType.ON_TENDER">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.SendNotificationsReply">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.SendNotificationsReply.HighestSeverity">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.SendNotificationsReply.Notifications">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.SendNotificationsReply.TransactionDetail">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.SendNotificationsReply.Version">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.SendNotificationsReply.DuplicateWaybill">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.SendNotificationsReply.DuplicateWaybillSpecified">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.SendNotificationsReply.MoreDataAvailable">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.SendNotificationsReply.MoreDataAvailableSpecified">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.SendNotificationsReply.PagingToken">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.SendNotificationsReply.Packages">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.NotificationSeverityType">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.NotificationSeverityType.ERROR">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.NotificationSeverityType.FAILURE">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.NotificationSeverityType.NOTE">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.NotificationSeverityType.SUCCESS">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.NotificationSeverityType.WARNING">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.Notification">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Notification.Severity">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Notification.Source">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Notification.Code">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Notification.Message">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Notification.LocalizedMessage">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Notification.MessageParameters">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.NotificationParameter">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.NotificationParameter.Id">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.NotificationParameter.Value">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.TransactionDetail">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TransactionDetail.CustomerTransactionId">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TransactionDetail.Localization">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.Localization">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Localization.LanguageCode">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Localization.LocaleCode">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.VersionId">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.VersionId.ServiceId">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.VersionId.Major">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.VersionId.Intermediate">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.VersionId.Minor">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.EMailNotificationRecipient">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.EMailNotificationRecipient.EMailNotificationRecipientType">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.EMailNotificationRecipient.EMailNotificationRecipientTypeSpecified">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.EMailNotificationRecipient.EMailAddress">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.EMailNotificationRecipient.NotificationEventsRequested">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.EMailNotificationRecipient.Format">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.EMailNotificationRecipient.Localization">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.EMailNotificationRecipientType">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.EMailNotificationRecipientType.BROKER">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.EMailNotificationRecipientType.OTHER">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.EMailNotificationRecipientType.RECIPIENT">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.EMailNotificationRecipientType.SHIPPER">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.EMailNotificationFormatType">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.EMailNotificationFormatType.HTML">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.EMailNotificationFormatType.TEXT">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.EMailNotificationFormatType.WIRELESS">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.EMailNotificationDetail">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.EMailNotificationDetail.PersonalMessage">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.EMailNotificationDetail.Recipients">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.SendNotificationsRequest">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.SendNotificationsRequest.WebAuthenticationDetail">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.SendNotificationsRequest.ClientDetail">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.SendNotificationsRequest.TransactionDetail">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.SendNotificationsRequest.Version">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.SendNotificationsRequest.TrackingNumber">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.SendNotificationsRequest.MultiPiece">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.SendNotificationsRequest.MultiPieceSpecified">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.SendNotificationsRequest.PagingToken">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.SendNotificationsRequest.TrackingNumberUniqueId">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.SendNotificationsRequest.ShipDateRangeBegin">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.SendNotificationsRequest.ShipDateRangeBeginSpecified">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.SendNotificationsRequest.ShipDateRangeEnd">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.SendNotificationsRequest.ShipDateRangeEndSpecified">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.SendNotificationsRequest.SenderEMailAddress">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.SendNotificationsRequest.SenderContactName">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.SendNotificationsRequest.NotificationDetail">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.ClientDetail">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.ClientDetail.AccountNumber">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.ClientDetail.MeterNumber">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.ClientDetail.IntegratorId">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.ClientDetail.Localization">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.SignatureProofOfDeliveryFaxReply">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.SignatureProofOfDeliveryFaxReply.HighestSeverity">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.SignatureProofOfDeliveryFaxReply.Notifications">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.SignatureProofOfDeliveryFaxReply.TransactionDetail">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.SignatureProofOfDeliveryFaxReply.Version">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.SignatureProofOfDeliveryFaxReply.FaxConfirmationNumber">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.SignatureProofOfDeliveryFaxRequest">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.SignatureProofOfDeliveryFaxRequest.WebAuthenticationDetail">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.SignatureProofOfDeliveryFaxRequest.ClientDetail">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.SignatureProofOfDeliveryFaxRequest.TransactionDetail">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.SignatureProofOfDeliveryFaxRequest.Version">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.SignatureProofOfDeliveryFaxRequest.QualifiedTrackingNumber">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.SignatureProofOfDeliveryFaxRequest.AdditionalComments">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.SignatureProofOfDeliveryFaxRequest.FaxSender">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.SignatureProofOfDeliveryFaxRequest.FaxRecipient">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.QualifiedTrackingNumber">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.QualifiedTrackingNumber.TrackingNumber">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.QualifiedTrackingNumber.ShipDate">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.QualifiedTrackingNumber.ShipDateSpecified">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.QualifiedTrackingNumber.AccountNumber">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.QualifiedTrackingNumber.Carrier">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.QualifiedTrackingNumber.CarrierSpecified">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.QualifiedTrackingNumber.Destination">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.ContactAndAddress">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.ContactAndAddress.Contact">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.ContactAndAddress.Address">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.Contact">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Contact.PersonName">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Contact.Title">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Contact.CompanyName">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Contact.PhoneNumber">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Contact.PhoneExtension">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Contact.TollFreePhoneNumber">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Contact.PagerNumber">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Contact.FaxNumber">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Contact.EMailAddress">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.TrackEvent">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackEvent.Timestamp">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackEvent.TimestampSpecified">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackEvent.EventType">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackEvent.EventDescription">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackEvent.StatusExceptionCode">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackEvent.StatusExceptionDescription">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackEvent.Address">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackEvent.StationId">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackEvent.ArrivalLocation">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackEvent.ArrivalLocationSpecified">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.ArrivalLocationType">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ArrivalLocationType.AIRPORT">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ArrivalLocationType.CUSTOMER">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ArrivalLocationType.CUSTOMS_BROKER">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ArrivalLocationType.DELIVERY_LOCATION">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ArrivalLocationType.DESTINATION_AIRPORT">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ArrivalLocationType.DESTINATION_FEDEX_FACILITY">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ArrivalLocationType.DROP_BOX">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ArrivalLocationType.ENROUTE">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ArrivalLocationType.FEDEX_FACILITY">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ArrivalLocationType.FEDEX_OFFICE_LOCATION">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ArrivalLocationType.INTERLINE_CARRIER">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ArrivalLocationType.NON_FEDEX_FACILITY">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ArrivalLocationType.ORIGIN_AIRPORT">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ArrivalLocationType.ORIGIN_FEDEX_FACILITY">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ArrivalLocationType.PICKUP_LOCATION">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ArrivalLocationType.PLANE">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ArrivalLocationType.PORT_OF_ENTRY">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ArrivalLocationType.SORT_FACILITY">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ArrivalLocationType.TURNPOINT">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ArrivalLocationType.VEHICLE">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.DeliveryOptionEligibilityDetail">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.DeliveryOptionEligibilityDetail.Option">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.DeliveryOptionEligibilityDetail.OptionSpecified">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.DeliveryOptionEligibilityDetail.Eligibility">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.DeliveryOptionEligibilityDetail.EligibilitySpecified">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.DeliveryOptionType">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.DeliveryOptionType.INDIRECT_SIGNATURE_RELEASE">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.DeliveryOptionType.REDIRECT_TO_HOLD_AT_LOCATION">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.DeliveryOptionType.REROUTE">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.DeliveryOptionType.RESCHEDULE">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.EligibilityType">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.EligibilityType.ELIGIBLE">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.EligibilityType.INELIGIBLE">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.EligibilityType.POSSIBLY_ELIGIBLE">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.TrackSplitShipmentPart">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackSplitShipmentPart.PieceCount">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackSplitShipmentPart.Timestamp">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackSplitShipmentPart.TimestampSpecified">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackSplitShipmentPart.StatusCode">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackSplitShipmentPart.StatusDescription">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.SignatureImageDetail">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.SignatureImageDetail.Image">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.SignatureImageDetail.Notifications">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.PieceCountVerificationDetail">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.PieceCountVerificationDetail.CountLocationType">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.PieceCountVerificationDetail.CountLocationTypeSpecified">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.PieceCountVerificationDetail.Count">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.PieceCountVerificationDetail.Description">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.PieceCountLocationType">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.PieceCountLocationType.DESTINATION">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.PieceCountLocationType.ORIGIN">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.LocalTimeRange">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.LocalTimeRange.Begins">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.LocalTimeRange.Ends">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.AppointmentTimeDetail">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.AppointmentTimeDetail.Type">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.AppointmentTimeDetail.TypeSpecified">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.AppointmentTimeDetail.Window">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.AppointmentTimeDetail.Description">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.AppointmentWindowType">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.AppointmentWindowType.AFTERNOON">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.AppointmentWindowType.LATE_AFTERNOON">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.AppointmentWindowType.MID_DAY">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.AppointmentWindowType.MORNING">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.AppointmentDetail">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.AppointmentDetail.Date">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.AppointmentDetail.DateSpecified">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.AppointmentDetail.WindowDetails">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.SpecialInstructionStatusDetail">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.SpecialInstructionStatusDetail.Status">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.SpecialInstructionStatusDetail.StatusSpecified">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.SpecialInstructionStatusDetail.StatusCreateTime">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.SpecialInstructionStatusDetail.StatusCreateTimeSpecified">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.SpecialInstructionsStatusCode">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.SpecialInstructionsStatusCode.ACCEPTED">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.SpecialInstructionsStatusCode.CANCELLED">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.SpecialInstructionsStatusCode.DENIED">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.SpecialInstructionsStatusCode.HELD">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.SpecialInstructionsStatusCode.MODIFIED">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.SpecialInstructionsStatusCode.RELINQUISHED">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.SpecialInstructionsStatusCode.REQUESTED">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.SpecialInstructionsStatusCode.SET">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.TrackSpecialInstruction">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackSpecialInstruction.Description">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackSpecialInstruction.DeliveryOption">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackSpecialInstruction.DeliveryOptionSpecified">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackSpecialInstruction.StatusDetail">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackSpecialInstruction.OriginalEstimatedDeliveryTimestamp">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackSpecialInstruction.OriginalEstimatedDeliveryTimestampSpecified">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackSpecialInstruction.OriginalRequestTime">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackSpecialInstruction.OriginalRequestTimeSpecified">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackSpecialInstruction.RequestedAppointmentTime">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.TrackDeliveryOptionType">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackDeliveryOptionType.APPOINTMENT">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackDeliveryOptionType.DATE_CERTAIN">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackDeliveryOptionType.ELECTRONIC_SIGNATURE_RELEASE">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackDeliveryOptionType.EVENING">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackDeliveryOptionType.REDIRECT_TO_HOLD_AT_LOCATION">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackDeliveryOptionType.REROUTE">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.Distance">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Distance.Value">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Distance.ValueSpecified">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Distance.Units">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Distance.UnitsSpecified">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.DistanceUnits">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.DistanceUnits.KM">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.DistanceUnits.MI">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.TrackSpecialHandling">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackSpecialHandling.Type">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackSpecialHandling.TypeSpecified">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackSpecialHandling.Description">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackSpecialHandling.PaymentType">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackSpecialHandling.PaymentTypeSpecified">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.ACCESSIBLE_DANGEROUS_GOODS">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.ADULT_SIGNATURE_OPTION">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.AIRBILL_AUTOMATION">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.AIRBILL_DELIVERY">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.AM_DELIVERY_GUARANTEE">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.APPOINTMENT_DELIVERY">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.BILL_RECIPIENT">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.BROKER_SELECT_OPTION">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.CALL_BEFORE_DELIVERY">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.CALL_TAG">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.CALL_TAG_DAMAGE">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.CHARGEABLE_CODE">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.COD">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.COLLECT">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.CONSOLIDATION">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.CONSOLIDATION_SMALLS_BAG">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.CURRENCY">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.CUT_FLOWERS">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.DATE_CERTAIN_DELIVERY">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.DELIVERY_ON_INVOICE_ACCEPTANCE">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.DELIVERY_REATTEMPT">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.DELIVERY_RECEIPT">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.DELIVER_WEEKDAY">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.DIRECT_SIGNATURE_OPTION">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.DOMESTIC">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.DO_NOT_BREAK_DOWN_PALLETS">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.DO_NOT_STACK_PALLETS">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.DRY_ICE">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.DRY_ICE_ADDED">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.EAST_COAST_SPECIAL">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.ELECTRONIC_COD">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.ELECTRONIC_SIGNATURE_SERVICE">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.EVENING_DELIVERY">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.EXCLUSIVE_USE">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.EXTENDED_DELIVERY">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.EXTENDED_PICKUP">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.EXTRA_LABOR">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.EXTREME_LENGTH">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.FOOD">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.FREIGHT_ON_VALUE_CARRIER_RISK">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.FREIGHT_ON_VALUE_OWN_RISK">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.FREIGHT_TO_COLLECT">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.FULLY_REGULATED_DANGEROUS_GOODS">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.GEL_PACKS_ADDED_OR_REPLACED">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.GROUND_SUPPORT_FOR_SMARTPOST">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.GUARANTEED_FUNDS">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.HAZMAT">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.HIGH_FLOOR">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.HOLD_AT_LOCATION">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.HOLIDAY_DELIVERY">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.INACCESSIBLE_DANGEROUS_GOODS">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.INDIRECT_SIGNATURE_OPTION">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.INSIDE_DELIVERY">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.INSIDE_PICKUP">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.INTERNATIONAL">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.INTERNATIONAL_CONTROLLED_EXPORT">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.INTERNATIONAL_MAIL_SERVICE">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.INTERNATIONAL_TRAFFIC_IN_ARMS_REGULATIONS">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.LIFTGATE">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.LIFTGATE_DELIVERY">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.LIFTGATE_PICKUP">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.LIMITED_ACCESS_DELIVERY">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.LIMITED_ACCESS_PICKUP">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.LIMITED_QUANTITIES_DANGEROUS_GOODS">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.MARKING_OR_TAGGING">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.NET_RETURN">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.NON_BUSINESS_TIME">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.NON_STANDARD_CONTAINER">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.ORDER_NOTIFY">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.OTHER">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.OTHER_REGULATED_MATERIAL_DOMESTIC">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.PACKAGE_RETURN_PROGRAM">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.PIECE_COUNT_VERIFICATION">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.POISON">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.PREPAID">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.PRIORITY_ALERT">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.PRIORITY_ALERT_PLUS">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.PROTECTION_FROM_FREEZING">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.RAIL_MODE">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.RECONSIGNMENT_CHARGES">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.REROUTE_CROSS_COUNTRY_DEFERRED">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.REROUTE_CROSS_COUNTRY_EXPEDITED">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.REROUTE_LOCAL">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.RESIDENTIAL_DELIVERY">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.RESIDENTIAL_PICKUP">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.RETURNS_CLEARANCE">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.RETURNS_CLEARANCE_SPECIAL_ROUTING_REQUIRED">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.RETURN_MANAGER">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.SATURDAY_DELIVERY">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.SHIPMENT_PLACED_IN_COLD_STORAGE">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.SINGLE_SHIPMENT">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.SMALL_QUANTITY_EXCEPTION">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.SORT_AND_SEGREGATE">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.SPECIAL_DELIVERY">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.SPECIAL_EQUIPMENT">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.STANDARD_GROUND_SERVICE">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.STORAGE">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.SUNDAY_DELIVERY">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.THIRD_PARTY_BILLING">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.THIRD_PARTY_CONSIGNEE">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.TOP_LOAD">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.WEEKEND_DELIVERY">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackSpecialHandlingType.WEEKEND_PICKUP">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.TrackPaymentType">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackPaymentType.CASH_OR_CHECK_AT_DESTINATION">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackPaymentType.CASH_OR_CHECK_AT_ORIGIN">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackPaymentType.CREDIT_CARD_AT_DESTINATION">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackPaymentType.CREDIT_CARD_AT_ORIGIN">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackPaymentType.OTHER">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackPaymentType.RECIPIENT_ACCOUNT">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackPaymentType.SHIPPER_ACCOUNT">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackPaymentType.THIRD_PARTY_ACCOUNT">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.TrackAdvanceNotificationDetail">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackAdvanceNotificationDetail.EstimatedTimeOfArrival">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackAdvanceNotificationDetail.EstimatedTimeOfArrivalSpecified">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackAdvanceNotificationDetail.Reason">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackAdvanceNotificationDetail.Status">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackAdvanceNotificationDetail.StatusSpecified">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackAdvanceNotificationDetail.StatusDescription">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackAdvanceNotificationDetail.StatusTime">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackAdvanceNotificationDetail.StatusTimeSpecified">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.TrackAdvanceNotificationStatusType">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackAdvanceNotificationStatusType.BACK_ON_TRACK">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackAdvanceNotificationStatusType.FAIL">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.CustomsOptionDetail">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.CustomsOptionDetail.Type">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.CustomsOptionDetail.TypeSpecified">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.CustomsOptionDetail.Description">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.CustomsOptionType">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.CustomsOptionType.COURTESY_RETURN_LABEL">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.CustomsOptionType.EXHIBITION_TRADE_SHOW">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.CustomsOptionType.FAULTY_ITEM">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.CustomsOptionType.FOLLOWING_REPAIR">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.CustomsOptionType.FOR_REPAIR">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.CustomsOptionType.ITEM_FOR_LOAN">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.CustomsOptionType.OTHER">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.CustomsOptionType.REJECTED">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.CustomsOptionType.REPLACEMENT">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.CustomsOptionType.TRIAL">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.TrackReturnDetail">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackReturnDetail.MovementStatus">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackReturnDetail.MovementStatusSpecified">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackReturnDetail.LabelType">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackReturnDetail.LabelTypeSpecified">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackReturnDetail.Description">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackReturnDetail.AuthorizationName">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.TrackReturnMovementStatusType">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackReturnMovementStatusType.MOVEMENT_OCCURRED">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackReturnMovementStatusType.NO_MOVEMENT">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.TrackReturnLabelType">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackReturnLabelType.EMAIL">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackReturnLabelType.PRINT">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.DateRange">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.DateRange.Begins">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.DateRange.BeginsSpecified">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.DateRange.Ends">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.DateRange.EndsSpecified">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.NaftaCommodityDetail">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.NaftaCommodityDetail.PreferenceCriterion">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.NaftaCommodityDetail.PreferenceCriterionSpecified">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.NaftaCommodityDetail.ProducerDetermination">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.NaftaCommodityDetail.ProducerDeterminationSpecified">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.NaftaCommodityDetail.ProducerId">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.NaftaCommodityDetail.NetCostMethod">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.NaftaCommodityDetail.NetCostMethodSpecified">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.NaftaCommodityDetail.NetCostDateRange">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.NaftaPreferenceCriterionCode">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.NaftaPreferenceCriterionCode.A">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.NaftaPreferenceCriterionCode.B">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.NaftaPreferenceCriterionCode.C">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.NaftaPreferenceCriterionCode.D">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.NaftaPreferenceCriterionCode.E">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.NaftaPreferenceCriterionCode.F">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.NaftaProducerDeterminationCode">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.NaftaProducerDeterminationCode.NO_1">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.NaftaProducerDeterminationCode.NO_2">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.NaftaProducerDeterminationCode.NO_3">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.NaftaProducerDeterminationCode.YES">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.NaftaNetCostMethodCode">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.NaftaNetCostMethodCode.NC">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.NaftaNetCostMethodCode.NO">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.EdtExciseCondition">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.EdtExciseCondition.Category">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.EdtExciseCondition.Value">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.Measure">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Measure.Quantity">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Measure.QuantitySpecified">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Measure.Units">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.Commodity">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Commodity.CommodityId">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Commodity.Name">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Commodity.NumberOfPieces">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Commodity.Description">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Commodity.CountryOfManufacture">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Commodity.HarmonizedCode">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Commodity.Weight">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Commodity.Quantity">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Commodity.QuantityWithFraction">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Commodity.QuantityWithFractionSpecified">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Commodity.QuantityUnits">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Commodity.AdditionalMeasures">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Commodity.UnitPrice">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Commodity.CustomsValue">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Commodity.ExciseConditions">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Commodity.ExportLicenseNumber">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Commodity.ExportLicenseExpirationDate">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Commodity.ExportLicenseExpirationDateSpecified">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Commodity.CIMarksAndNumbers">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Commodity.PartNumber">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Commodity.NaftaDetail">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.Weight">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Weight.Units">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Weight.UnitsSpecified">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Weight.Value">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Weight.ValueSpecified">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.WeightUnits">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.WeightUnits.KG">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.WeightUnits.LB">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.Money">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Money.Currency">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Money.Amount">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Money.AmountSpecified">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.ContentRecord">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.ContentRecord.PartNumber">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.ContentRecord.ItemNumber">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.ContentRecord.ReceivedQuantity">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.ContentRecord.Description">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.TrackChargeDetail">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackChargeDetail.Type">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackChargeDetail.TypeSpecified">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackChargeDetail.ChargeAmount">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.TrackChargeDetailType">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackChargeDetailType.ORIGINAL_CHARGES">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.Dimensions">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Dimensions.Length">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Dimensions.Width">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Dimensions.Height">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Dimensions.Units">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.Dimensions.UnitsSpecified">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.LinearUnits">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.LinearUnits.CM">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.LinearUnits.IN">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.TrackServiceDescriptionDetail">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackServiceDescriptionDetail.Type">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackServiceDescriptionDetail.TypeSpecified">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackServiceDescriptionDetail.Description">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackServiceDescriptionDetail.ShortDescription">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.ServiceType">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ServiceType.EUROPE_FIRST_INTERNATIONAL_PRIORITY">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ServiceType.FEDEX_1_DAY_FREIGHT">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ServiceType.FEDEX_2_DAY">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ServiceType.FEDEX_2_DAY_AM">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ServiceType.FEDEX_2_DAY_FREIGHT">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ServiceType.FEDEX_3_DAY_FREIGHT">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ServiceType.FEDEX_CARGO_AIRPORT_TO_AIRPORT">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ServiceType.FEDEX_CARGO_FREIGHT_FORWARDING">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ServiceType.FEDEX_CARGO_INTERNATIONAL_EXPRESS_FREIGHT">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ServiceType.FEDEX_CARGO_INTERNATIONAL_PREMIUM">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ServiceType.FEDEX_CARGO_MAIL">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ServiceType.FEDEX_CARGO_REGISTERED_MAIL">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ServiceType.FEDEX_CARGO_SURFACE_MAIL">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ServiceType.FEDEX_CUSTOM_CRITICAL_AIR_EXPEDITE">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ServiceType.FEDEX_CUSTOM_CRITICAL_AIR_EXPEDITE_EXCLUSIVE_USE">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ServiceType.FEDEX_CUSTOM_CRITICAL_AIR_EXPEDITE_NETWORK">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ServiceType.FEDEX_CUSTOM_CRITICAL_CHARTER_AIR">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ServiceType.FEDEX_CUSTOM_CRITICAL_POINT_TO_POINT">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ServiceType.FEDEX_CUSTOM_CRITICAL_SURFACE_EXPEDITE">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ServiceType.FEDEX_CUSTOM_CRITICAL_SURFACE_EXPEDITE_EXCLUSIVE_USE">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ServiceType.FEDEX_CUSTOM_CRITICAL_TEMP_ASSURE_AIR">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ServiceType.FEDEX_CUSTOM_CRITICAL_TEMP_ASSURE_VALIDATED_AIR">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ServiceType.FEDEX_CUSTOM_CRITICAL_WHITE_GLOVE_SERVICES">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ServiceType.FEDEX_DISTANCE_DEFERRED">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ServiceType.FEDEX_EXPRESS_SAVER">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ServiceType.FEDEX_FIRST_FREIGHT">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ServiceType.FEDEX_FREIGHT_ECONOMY">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ServiceType.FEDEX_FREIGHT_PRIORITY">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ServiceType.FEDEX_GROUND">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ServiceType.FEDEX_NEXT_DAY_AFTERNOON">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ServiceType.FEDEX_NEXT_DAY_EARLY_MORNING">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ServiceType.FEDEX_NEXT_DAY_END_OF_DAY">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ServiceType.FEDEX_NEXT_DAY_FREIGHT">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ServiceType.FEDEX_NEXT_DAY_MID_MORNING">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ServiceType.FIRST_OVERNIGHT">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ServiceType.GROUND_HOME_DELIVERY">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ServiceType.INTERNATIONAL_DISTRIBUTION_FREIGHT">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ServiceType.INTERNATIONAL_ECONOMY">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ServiceType.INTERNATIONAL_ECONOMY_DISTRIBUTION">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ServiceType.INTERNATIONAL_ECONOMY_FREIGHT">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ServiceType.INTERNATIONAL_FIRST">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ServiceType.INTERNATIONAL_PRIORITY">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ServiceType.INTERNATIONAL_PRIORITY_DISTRIBUTION">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ServiceType.INTERNATIONAL_PRIORITY_FREIGHT">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ServiceType.PRIORITY_OVERNIGHT">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ServiceType.SAME_DAY">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ServiceType.SAME_DAY_CITY">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ServiceType.SMART_POST">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ServiceType.STANDARD_OVERNIGHT">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.ServiceType.TRANSBORDER_DISTRIBUTION_CONSOLIDATION">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.TrackOtherIdentifierDetail">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackOtherIdentifierDetail.PackageIdentifier">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackOtherIdentifierDetail.TrackingNumberUniqueIdentifier">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackOtherIdentifierDetail.CarrierCode">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackOtherIdentifierDetail.CarrierCodeSpecified">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.TrackPackageIdentifier">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackPackageIdentifier.Type">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackPackageIdentifier.Value">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.TrackIdentifierType">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackIdentifierType.BILL_OF_LADING">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackIdentifierType.COD_RETURN_TRACKING_NUMBER">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackIdentifierType.CUSTOMER_AUTHORIZATION_NUMBER">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackIdentifierType.CUSTOMER_REFERENCE">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackIdentifierType.DEPARTMENT">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackIdentifierType.DOCUMENT_AIRWAY_BILL">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackIdentifierType.FREE_FORM_REFERENCE">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackIdentifierType.GROUND_INTERNATIONAL">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackIdentifierType.GROUND_SHIPMENT_ID">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackIdentifierType.GROUP_MPS">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackIdentifierType.INVOICE">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackIdentifierType.JOB_GLOBAL_TRACKING_NUMBER">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackIdentifierType.ORDER_GLOBAL_TRACKING_NUMBER">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackIdentifierType.ORDER_TO_PAY_NUMBER">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackIdentifierType.OUTBOUND_LINK_TO_RETURN">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackIdentifierType.PARTNER_CARRIER_NUMBER">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackIdentifierType.PART_NUMBER">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackIdentifierType.PURCHASE_ORDER">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackIdentifierType.REROUTE_TRACKING_NUMBER">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackIdentifierType.RETURNED_TO_SHIPPER_TRACKING_NUMBER">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackIdentifierType.RETURN_MATERIALS_AUTHORIZATION">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackIdentifierType.SHIPPER_REFERENCE">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackIdentifierType.STANDARD_MPS">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackIdentifierType.TRACKING_NUMBER_OR_DOORTAG">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackIdentifierType.TRANSPORTATION_CONTROL_NUMBER">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.TrackReconciliation">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackReconciliation.Status">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackReconciliation.Description">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.CustomerExceptionRequestDetail">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.CustomerExceptionRequestDetail.Id">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.CustomerExceptionRequestDetail.StatusCode">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.CustomerExceptionRequestDetail.StatusDescription">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.CustomerExceptionRequestDetail.CreateTime">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.CustomerExceptionRequestDetail.CreateTimeSpecified">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.TrackStatusAncillaryDetail">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackStatusAncillaryDetail.Reason">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackStatusAncillaryDetail.ReasonDescription">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackStatusAncillaryDetail.Action">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackStatusAncillaryDetail.ActionDescription">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.TrackStatusDetail">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackStatusDetail.CreationTime">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackStatusDetail.CreationTimeSpecified">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackStatusDetail.Code">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackStatusDetail.Description">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackStatusDetail.Location">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackStatusDetail.AncillaryDetails">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.StringBarcode">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.StringBarcode.Type">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.StringBarcode.TypeSpecified">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.StringBarcode.Value">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.StringBarcodeType">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.StringBarcodeType.ADDRESS">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.StringBarcodeType.ASTRA">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.StringBarcodeType.FEDEX_1D">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.StringBarcodeType.GROUND">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.StringBarcodeType.POSTAL">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.StringBarcodeType.USPS">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.TrackDetail">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.Notification">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.TrackingNumber">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.Barcode">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.TrackingNumberUniqueIdentifier">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.StatusDetail">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.CustomerExceptionRequests">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.Reconciliation">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.ServiceCommitMessage">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.DestinationServiceArea">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.DestinationServiceAreaDescription">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.CarrierCode">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.CarrierCodeSpecified">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.OperatingCompany">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.OperatingCompanySpecified">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.OperatingCompanyOrCarrierDescription">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.CartageAgentCompanyName">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.ProductionLocationContactAndAddress">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.OtherIdentifiers">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.FormId">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.Service">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.PackageWeight">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.PackageDimensions">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.PackageDimensionalWeight">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.ShipmentWeight">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.Packaging">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.PackagingType">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.PackagingTypeSpecified">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.PackageSequenceNumber">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.PackageCount">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.Charges">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.NickName">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.Notes">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.Attributes">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.ShipmentContents">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.PackageContents">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.ClearanceLocationCode">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.Commodities">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.ReturnDetail">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.CustomsOptionDetails">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.AdvanceNotificationDetail">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.SpecialHandlings">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.Shipper">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.PossessionStatus">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.PossessionStatusSpecified">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.ShipperAddress">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.OriginLocationAddress">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.OriginStationId">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.EstimatedPickupTimestamp">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.EstimatedPickupTimestampSpecified">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.ShipTimestamp">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.ShipTimestampSpecified">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.TotalTransitDistance">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.DistanceToDestination">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.SpecialInstructions">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.Recipient">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.LastUpdatedDestinationAddress">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.DestinationAddress">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.HoldAtLocationContact">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.HoldAtLocationAddress">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.DestinationStationId">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.DestinationLocationAddress">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.DestinationLocationType">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.DestinationLocationTypeSpecified">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.DestinationLocationTimeZoneOffset">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.CommitmentTimestamp">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.CommitmentTimestampSpecified">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.AppointmentDeliveryTimestamp">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.AppointmentDeliveryTimestampSpecified">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.EstimatedDeliveryTimestamp">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.EstimatedDeliveryTimestampSpecified">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.ActualDeliveryTimestamp">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.ActualDeliveryTimestampSpecified">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.ActualDeliveryAddress">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.OfficeOrderDeliveryMethod">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.OfficeOrderDeliveryMethodSpecified">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.DeliveryLocationType">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.DeliveryLocationTypeSpecified">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.DeliveryLocationDescription">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.DeliveryAttempts">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.DeliverySignatureName">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.PieceCountVerificationDetails">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.TotalUniqueAddressCountInConsolidation">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.AvailableImages">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.Signature">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.NotificationEventsAvailable">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.SplitShipmentParts">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.DeliveryOptionEligibilityDetails">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackDetail.Events">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.OperatingCompanyType">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.OperatingCompanyType.FEDEX_CARGO">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.OperatingCompanyType.FEDEX_CORPORATE_SERVICES">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.OperatingCompanyType.FEDEX_CORPORATION">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.OperatingCompanyType.FEDEX_CUSTOMER_INFORMATION_SYSTEMS">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.OperatingCompanyType.FEDEX_CUSTOM_CRITICAL">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.OperatingCompanyType.FEDEX_EXPRESS">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.OperatingCompanyType.FEDEX_FREIGHT">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.OperatingCompanyType.FEDEX_GROUND">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.OperatingCompanyType.FEDEX_KINKOS">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.OperatingCompanyType.FEDEX_OFFICE">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.OperatingCompanyType.FEDEX_SERVICES">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.OperatingCompanyType.FEDEX_TRADE_NETWORKS">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.PackagingType">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.PackagingType.FEDEX_10KG_BOX">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.PackagingType.FEDEX_25KG_BOX">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.PackagingType.FEDEX_BOX">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.PackagingType.FEDEX_ENVELOPE">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.PackagingType.FEDEX_PAK">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.PackagingType.FEDEX_TUBE">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.PackagingType.YOUR_PACKAGING">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.TrackDetailAttributeType">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackDetailAttributeType.INCLUDED_IN_WATCHLIST">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.TrackPossessionStatusType">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackPossessionStatusType.BROKER">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackPossessionStatusType.CARRIER">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackPossessionStatusType.CUSTOMS">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackPossessionStatusType.RECIPIENT">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackPossessionStatusType.SHIPPER">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackPossessionStatusType.SPLIT_STATUS">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackPossessionStatusType.TRANSFER_PARTNER">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.FedExLocationType">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.FedExLocationType.FEDEX_FACILITY">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.FedExLocationType.FEDEX_SHIPSITE">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.OfficeOrderDeliveryMethodType">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.OfficeOrderDeliveryMethodType.COURIER">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.OfficeOrderDeliveryMethodType.OTHER">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.OfficeOrderDeliveryMethodType.PICKUP">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.OfficeOrderDeliveryMethodType.SHIPMENT">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.TrackDeliveryLocationType">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackDeliveryLocationType.APARTMENT_OFFICE">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackDeliveryLocationType.FEDEX_LOCATION">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackDeliveryLocationType.GATE_HOUSE">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackDeliveryLocationType.GUARD_OR_SECURITY_STATION">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackDeliveryLocationType.IN_BOND_OR_CAGE">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackDeliveryLocationType.LEASING_OFFICE">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackDeliveryLocationType.MAILROOM">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackDeliveryLocationType.MAIN_OFFICE">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackDeliveryLocationType.MANAGER_OFFICE">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackDeliveryLocationType.OTHER">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackDeliveryLocationType.PHARMACY">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackDeliveryLocationType.RECEPTIONIST_OR_FRONT_DESK">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackDeliveryLocationType.RENTAL_OFFICE">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackDeliveryLocationType.RESIDENCE">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackDeliveryLocationType.SHIPPING_RECEIVING">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.AvailableImageType">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.AvailableImageType.BILL_OF_LADING">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.AvailableImageType.SIGNATURE_PROOF_OF_DELIVERY">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.CompletedTrackDetail">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.CompletedTrackDetail.HighestSeverity">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.CompletedTrackDetail.HighestSeveritySpecified">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.CompletedTrackDetail.Notifications">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.CompletedTrackDetail.DuplicateWaybill">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.CompletedTrackDetail.DuplicateWaybillSpecified">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.CompletedTrackDetail.MoreData">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.CompletedTrackDetail.MoreDataSpecified">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.CompletedTrackDetail.PagingToken">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.CompletedTrackDetail.TrackDetailsCount">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.CompletedTrackDetail.TrackDetails">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.TrackReply">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackReply.HighestSeverity">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackReply.Notifications">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackReply.TransactionDetail">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackReply.Version">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackReply.CompletedTrackDetails">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.PagingDetail">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.PagingDetail.PagingToken">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.PagingDetail.NumberOfResultsPerPage">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.TrackSelectionDetail">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackSelectionDetail.CarrierCode">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackSelectionDetail.CarrierCodeSpecified">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackSelectionDetail.OperatingCompany">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackSelectionDetail.OperatingCompanySpecified">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackSelectionDetail.PackageIdentifier">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackSelectionDetail.TrackingNumberUniqueIdentifier">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackSelectionDetail.ShipDateRangeBegin">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackSelectionDetail.ShipDateRangeBeginSpecified">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackSelectionDetail.ShipDateRangeEnd">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackSelectionDetail.ShipDateRangeEndSpecified">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackSelectionDetail.ShipmentAccountNumber">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackSelectionDetail.SecureSpodAccount">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackSelectionDetail.Destination">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackSelectionDetail.PagingDetail">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackSelectionDetail.CustomerSpecifiedTimeOutValueInMilliseconds">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.TrackRequest">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackRequest.WebAuthenticationDetail">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackRequest.ClientDetail">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackRequest.TransactionDetail">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackRequest.Version">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackRequest.SelectionDetails">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackRequest.TransactionTimeOutValueInMilliseconds">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.TrackRequest.ProcessingOptions">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.TrackRequestProcessingOptionType">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.TrackRequestProcessingOptionType.INCLUDE_DETAILED_SCANS">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.SignatureProofOfDeliveryLetterReply">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.SignatureProofOfDeliveryLetterReply.HighestSeverity">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.SignatureProofOfDeliveryLetterReply.Notifications">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.SignatureProofOfDeliveryLetterReply.TransactionDetail">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.SignatureProofOfDeliveryLetterReply.Version">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.SignatureProofOfDeliveryLetterReply.Letter">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.SignatureProofOfDeliveryImageType">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.SignatureProofOfDeliveryImageType.PDF">
+<remarks/>
+</member>
+<member name="F:PackageTracker.TrackServiceWebReference.SignatureProofOfDeliveryImageType.PNG">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.retrieveSignatureProofOfDeliveryLetterCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.retrieveSignatureProofOfDeliveryLetterCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.retrieveSignatureProofOfDeliveryLetterCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.trackCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.trackCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.trackCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.sendSignatureProofOfDeliveryFaxCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.sendSignatureProofOfDeliveryFaxCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.sendSignatureProofOfDeliveryFaxCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.sendNotificationsCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:PackageTracker.TrackServiceWebReference.sendNotificationsCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:PackageTracker.TrackServiceWebReference.sendNotificationsCompletedEventArgs.Result">
+<remarks/>
+</member>
+</members>
+</doc>

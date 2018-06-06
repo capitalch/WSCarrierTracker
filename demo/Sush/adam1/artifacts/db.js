@@ -13,6 +13,5 @@ ibuki.filterOn('sql1:index:db').subscribe(
                 console.log(result.recordset);
             });
         })
-
     }
 );
