@@ -1,6 +1,7 @@
 'use strict';
 const ibuki = require('./ibuki');
-// const rx = require('rxjs');
+const rx = require('rxjs');
+const operators = require('rxjs/operators');
 // const axios = require('axios');
 // const _ = require('lodash');
 // const operators = require('rxjs/operators');
@@ -11,47 +12,78 @@ var config = require('../config');
 var workbench = {};
 var counter = 0;
 
-let sub2 = ibuki.filterOn('next-carrier:util:workbench').subscribe(
+let sub0 = ibuki.filterOn('serial-process-delayed:index:workbench').subscribe(
     d => {
-        const carrierObject = d.data;
-        const carrierInfo = carrierObject.carrierInfo;
-        const index = carrierObject.index;
-        if (index < carrierInfo.length) {
-            util.processCarrier({
-                carrierInfo: carrierInfo,
-                index: index
-            })
-        }
-    }
-)
-
-let sub3 = ibuki.filterOn('start-processing-carrier:index:workbench').subscribe(
-    d => {
-        let carrierInfo = util.getCarrierInfo('Fedex', 50000);
-        ibuki.emit('next-carrier:util:workbench', {
-            carrierInfo: carrierInfo,
-            index: 0
-        });
-        
-        carrierInfo = util.getCarrierInfo('DHL', 200);
-        ibuki.emit('next-carrier:util:workbench', {
-            carrierInfo: carrierInfo,
-            index: 0
-        });
-
-        carrierInfo = util.getCarrierInfo('ABhl', 15000);
-        ibuki.emit('next-carrier:util:workbench', {
-            carrierInfo: carrierInfo,
-            index: 0
-        });
-
-        carrierInfo = util.getCarrierInfo('Robaco', 5000);
-        ibuki.emit('next-carrier:util:workbench', {
-            carrierInfo: carrierInfo,
-            index: 0
-        });
+        let carrierInfos = util.getCarrierInfos('Fedex', 1000000);
+        config.carrierCount = carrierInfos.length;
+        rx.interval(config.piston)
+            .pipe(
+                operators.take(carrierInfos.length),
+                operators.map(i => carrierInfos[i])
+            )
+            .subscribe(
+                x => {
+                    util.processCarrierSerially(x);
+                }
+            );
     }
 );
+
+// let sub1 = ibuki.filterOn('serial-process:index:workbench').subscribe(
+//     d => {
+//         let carrierInfos = util.getCarrierInfos('Fedex', 10000);
+//         config.carrierCount = carrierInfos.length;
+//         carrierInfos.forEach(
+//             x => {
+//                 setTimeout(() => {
+//                     util.processCarrierSerially(x);
+//                 }, 2000);
+//             }
+//         )
+//     }
+// )
+
+// let sub2 = ibuki.filterOn('next-carrier:util:workbench').subscribe(
+//     d => {
+//         const carrierObject = d.data;
+//         const carrierInfo = carrierObject.carrierInfo;
+//         const index = carrierObject.index;
+//         if (index < carrierInfo.length) {
+//             util.processCarrier({
+//                 carrierInfo: carrierInfo,
+//                 index: index
+//             })
+//         }
+//     }
+// )
+
+// let sub3 = ibuki.filterOn('start-processing-carrier:index:workbench').subscribe(
+//     d => {
+//         let carrierInfo = util.getCarrierInfos('Fedex', 50000);
+//         ibuki.emit('next-carrier:util:workbench', {
+//             carrierInfo: carrierInfo,
+//             index: 0
+//         });
+
+//         carrierInfo = util.getCarrierInfos('DHL', 200);
+//         ibuki.emit('next-carrier:util:workbench', {
+//             carrierInfo: carrierInfo,
+//             index: 0
+//         });
+
+//         carrierInfo = util.getCarrierInfos('ABhl', 15000);
+//         ibuki.emit('next-carrier:util:workbench', {
+//             carrierInfo: carrierInfo,
+//             index: 0
+//         });
+
+//         carrierInfo = util.getCarrierInfos('Robaco', 5000);
+//         ibuki.emit('next-carrier:util:workbench', {
+//             carrierInfo: carrierInfo,
+//             index: 0
+//         });
+//     }
+// );
 
 module.exports = workbench;
 // let sub0 = ibuki.filterOn('next-promise').subscribe(

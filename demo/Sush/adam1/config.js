@@ -14,4 +14,7 @@ config.dbConfig = {
     }
 }
 // config.promiseCounter = 10;
+config.piston = 0;
+config.carrierCount = 0;
+config.errorCount = 0;
 module.exports = config;

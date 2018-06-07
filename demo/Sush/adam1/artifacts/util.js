@@ -5,27 +5,53 @@ const config = require('../config');
 
 let util = {};
 
-util.processCarrier = (carrierObject) => {
-    const carrierInfo = carrierObject.carrierInfo;
-    let index = carrierObject.index;
-    axios.get(carrierInfo[index].url)
+util.processCarrierSerially = (carrierInfo) => {
+    axios.get(carrierInfo.url)
         .then(res => {
             //Save in database
-            console.log(carrierInfo[index].trackingNumber,'name:',carrierInfo[index].name, ', index: ', index);
-            ibuki.emit('next-carrier:util:workbench', {
-                carrierInfo: carrierInfo,
-                index: ++index
-            });
+            config.carrierCount--;
+            console.log(carrierInfo.trackingNumber, 'name:', carrierInfo.name, 'Count: ', config.carrierCount);
+
+            // ibuki.emit('next-carrier:util:workbench', {
+            //     carrierInfo: carrierInfo,
+            //     index: ++index
+            // });
         })
-        .catch(err => {
+        .catch(err => { 
             //log in database
-            console.log('Error processing carrier data', 'index: ', index);
-            ibuki.emit('next-carrier:util:workbench', {
-                carrierInfo: carrierInfo,
-                index: ++index
-            });
+            config.carrierCount--;
+            config.errorCount++;
+            console.log('Error:', 'Count:', config.carrierCount, 'Error:', config.errorCount);
+            
+            // ibuki.emit('next-carrier:util:workbench', {
+            //     carrierInfo: carrierInfo,
+            //     index: ++index
+            // });
         });
 }
+
+
+// util.processCarrier = (carrierObject) => {
+//     const carrierInfo = carrierObject.carrierInfo;
+//     let index = carrierObject.index;
+//     axios.get(carrierInfo[index].url)
+//         .then(res => {
+//             //Save in database
+//             console.log(carrierInfo[index].trackingNumber, 'name:', carrierInfo[index].name, ', index: ', index);
+//             ibuki.emit('next-carrier:util:workbench', {
+//                 carrierInfo: carrierInfo,
+//                 index: ++index
+//             });
+//         })
+//         .catch(err => {
+//             //log in database
+//             console.log('Error processing carrier data', 'index: ', index);
+//             ibuki.emit('next-carrier:util:workbench', {
+//                 carrierInfo: carrierInfo,
+//                 index: ++index
+//             });
+//         });
+// }
 
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -36,7 +62,7 @@ util.getRandomDelay = () => {
     return (rx.of(rnd).pipe(operators.delay(rnd)));
 }
 
-util.getCarrierInfo = (name, count) => {
+util.getCarrierInfos = (name, count) => {
     let arr = [];
     for (let i = 0; i < count; i++) {
         let obj = {
@@ -50,7 +76,7 @@ util.getCarrierInfo = (name, count) => {
 }
 
 module.exports = util;
-
+// exports.test = "Sushant";
 // util.execPromise = (counter) => {
 //     axios.get('http://localhost:8081/test')
 //         .then(res => {
