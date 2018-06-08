@@ -27,8 +27,19 @@ let sub0 = ibuki.filterOn('serial-process-delayed:index:workbench').subscribe(
                     util.processCarrierSerially(x);
                 }
             );
+        ibuki.emit('adjust-piston:self');
     }
 );
+
+let sub1 = ibuki.filterOn('adjust-piston:self').subscribe(
+    d => {
+        const myInterval = rx.interval(1000);
+        myInterval.subscribe((x) => {
+            this.printX = x;
+        });
+    }
+)
+
 
 // let sub1 = ibuki.filterOn('serial-process:index:workbench').subscribe(
 //     d => {
