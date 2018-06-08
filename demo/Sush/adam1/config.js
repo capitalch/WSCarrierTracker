@@ -14,7 +14,8 @@ config.dbConfig = {
     }
 }
 // config.promiseCounter = 10;
-config.piston = 100;
+config.piston = 20;
+config.autoPilotPiston = true;
 config.carrierCount = 0;
 config.errorCount = 0;
 config.requestCount = 0;

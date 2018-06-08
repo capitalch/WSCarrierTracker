@@ -14,28 +14,50 @@ var counter = 0;
 
 let sub0 = ibuki.filterOn('serial-process-delayed:index:workbench').subscribe(
     d => {
-        let carrierInfos = util.getCarrierInfos('Fedex', 100000);
+        let carrierInfos = util.getCarrierInfos('Fedex', 100);
         config.carrierCount = carrierInfos.length;
-        rx.interval(config.piston)
+        console.log('started');
+        rx.from(carrierInfos)
             .pipe(
-                operators.take(carrierInfos.length),
-                operators.map(i => carrierInfos[i])
+                operators.delay(2000),
+                // operators.take(carrierInfos.length),
+                // operators.map(i => carrierInfos[i]),
+                operators.repeat()
             )
             .subscribe(
                 x => {
                     config.requestCount++;
-                    util.processCarrierSerially(x);
+                    console.log(x);
+                    // util.processCarrierSerially(x);
                 }
             );
-        ibuki.emit('adjust-piston:self');
+        // rx.interval(config.piston)
+        //     .pipe(
+        //         operators.take(carrierInfos.length),
+        //         operators.map(i => carrierInfos[i])
+        //     )
+        //     .subscribe(
+        //         x => {
+        //             config.requestCount++;
+        //             util.processCarrierSerially(x);
+        //         }
+        //     );
+        
+            // ibuki.emit('adjust-piston:self');
     }
 );
 
 let sub1 = ibuki.filterOn('adjust-piston:self').subscribe(
     d => {
-        const myInterval = rx.interval(1000);
+        const myInterval = rx.interval(500);
         myInterval.subscribe((x) => {
-            this.printX = x;
+            const queue = config.requestCount - config.responseCount - config.errorCount;
+            if (queue > 15) {
+                config.autoPilotPiston && (config.piston = config.piston + 10);
+            } else {
+                config.autoPilotPiston && (config.piston = config.piston - 5);
+            }
+            // console.log('Piston adjusted:');
         });
     }
 )
