@@ -14,7 +14,7 @@ var counter = 0;
 
 let sub0 = ibuki.filterOn('serial-process-delayed:index:workbench').subscribe(
     d => {
-        let carrierInfos = util.getCarrierInfos('Fedex', 1000000);
+        let carrierInfos = util.getCarrierInfos('Fedex', 100000);
         config.carrierCount = carrierInfos.length;
         rx.interval(config.piston)
             .pipe(
@@ -23,6 +23,7 @@ let sub0 = ibuki.filterOn('serial-process-delayed:index:workbench').subscribe(
             )
             .subscribe(
                 x => {
+                    config.requestCount++;
                     util.processCarrierSerially(x);
                 }
             );
