@@ -16,32 +16,32 @@ let sub0 = ibuki.filterOn('serial-process-delayed:index:workbench').subscribe(
     d => {
         let carrierInfos = util.getCarrierInfos('Fedex', 100);
         config.carrierCount = carrierInfos.length;
-        console.log('started');
-        rx.from(carrierInfos)
-            .pipe(
-                operators.delay(2000),
-                // operators.take(carrierInfos.length),
-                // operators.map(i => carrierInfos[i]),
-                operators.repeat()
-            )
-            .subscribe(
-                x => {
-                    config.requestCount++;
-                    console.log(x);
-                    // util.processCarrierSerially(x);
-                }
-            );
-        // rx.interval(config.piston)
+        // console.log('started');
+        // rx.from(carrierInfos)
         //     .pipe(
-        //         operators.take(carrierInfos.length),
-        //         operators.map(i => carrierInfos[i])
+        //         operators.delay(2000),
+        //         // operators.take(carrierInfos.length),
+        //         // operators.map(i => carrierInfos[i]),
+        //         operators.repeat()
         //     )
         //     .subscribe(
         //         x => {
         //             config.requestCount++;
-        //             util.processCarrierSerially(x);
+        //             console.log(x);
+        //             // util.processCarrierSerially(x);
         //         }
         //     );
+        rx.interval(config.piston)
+            .pipe(
+                operators.take(carrierInfos.length),
+                operators.map(i => carrierInfos[i])
+            )
+            .subscribe(
+                x => {
+                    config.requestCount++;
+                    util.processCarrierSerially(x);
+                }
+            );
         
             // ibuki.emit('adjust-piston:self');
     }
