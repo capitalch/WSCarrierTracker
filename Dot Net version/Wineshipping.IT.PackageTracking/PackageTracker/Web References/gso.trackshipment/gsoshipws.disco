@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
-  <contractRef ref="http://wsa.gso.com/gsoshipws1.0/gsoshipws.asmx?wsdl" docRef="http://wsa.gso.com/gsoshipws1.0/gsoshipws.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
-  <soap address="http://wsa.gso.com/gsoshipws1.0/gsoshipws.asmx" xmlns:q1="http://gso.com/GsoShipWS" binding="q1:GSOWebServiceSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
-  <soap address="http://wsa.gso.com/gsoshipws1.0/gsoshipws.asmx" xmlns:q2="http://gso.com/GsoShipWS" binding="q2:GSOWebServiceSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
-</discovery>
