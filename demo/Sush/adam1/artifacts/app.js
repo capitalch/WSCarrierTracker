@@ -2,7 +2,7 @@
 const path = require('path');
 const express = require('express');
 const ibuki = require('./ibuki');
-
+const config = require('../config');
 const app = express();
 
 const argv = require('minimist')(process.argv.slice(2));
@@ -26,21 +26,20 @@ app.use(express.static(__publicFolder));
 // app.get('/*', (req, res) => {
 //     res.end('hello smoke test');
 // })
-
-app.get('/test', function (req, res) {
-    // res.writeHead(200, {
-    //     'Content-Type': 'text/plain'
-    // });
-    util.getRandomDelay().subscribe(d => {
-        if (d <= 1000) {
-            res.status(400).send('Bad Request');
-        } else {
-            res.end('Hello Random number: ' + d);
-        }
-        // res.status(400).send('Bad Request');
-        // res.end('Hello Random number: ' + d);
-    });
-    // res.end('hello smoke test');
+config.carrierCount = 0;
+config.errorCount = 0;
+config.requestCount = 0;
+config.responseCount = 0;
+app.get('/status', function (req, res) {
+    let status = {
+        piston: config.piston
+        , "Carrier Count": config.carrierCount
+        , "Total requests": config.requestCount
+        , "Total responses": config.responseCount
+        , "Errors": config.errorCount
+        , "In Queue": config.requestCount - config.responseCount - config.errorCount
+    };
+    res.json(status);
 });
 
 // Running the server 

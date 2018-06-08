@@ -10,7 +10,8 @@ util.processCarrierSerially = (carrierInfo) => {
         .then(res => {
             //Save in database
             config.carrierCount--;
-            console.log(carrierInfo.trackingNumber, 'name:', carrierInfo.name, 'Count: ', config.carrierCount);
+            config.responseCount++;
+            console.log(carrierInfo.trackingNumber, 'name:', carrierInfo.name, 'Count: ', config.carrierCount, 'Queued:', (config.requestCount - config.responseCount - config.errorCount));
 
             // ibuki.emit('next-carrier:util:workbench', {
             //     carrierInfo: carrierInfo,
@@ -21,7 +22,7 @@ util.processCarrierSerially = (carrierInfo) => {
             //log in database
             config.carrierCount--;
             config.errorCount++;
-            console.log('Error:', 'Count:', config.carrierCount, 'Error:', config.errorCount);
+            console.log('Error:', 'Count:', config.carrierCount, 'Error:', config.errorCount, 'Queued:', (config.requestCount - config.responseCount - config.errorCount));
             
             // ibuki.emit('next-carrier:util:workbench', {
             //     carrierInfo: carrierInfo,
