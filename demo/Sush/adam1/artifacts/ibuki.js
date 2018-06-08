@@ -29,4 +29,5 @@ ibuki.hotFilterOn = (id) => {
     return (hotSubject.pipe(operators.filter(d => (d.id === id))));
 }
 
+
 module.exports = ibuki;
