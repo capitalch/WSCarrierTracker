@@ -11,6 +11,49 @@ var config = require('../config');
 
 var workbench = {};
 var counter = 0;
+var subject = new rx.Subject();
+
+// Rx.Observable.from([1,2,3])
+//    .concatMap(x => Observable.of(x).delay(1000)) // or Observable.timer(1000).mapTo(x)
+//    .subscribe((e) => console.log(e));
+
+let sub2 = ibuki.filterOn('serial-process:index:workbench').subscribe(
+    d => {
+        let carrierInfos = util.getCarrierInfos('Fedex', 10000);
+        config.carrierCount = carrierInfos.length;
+        rx.from(carrierInfos)
+            .pipe(
+                operators.concatMap(x => rx.of(x).pipe(operators.delay(config.piston)))
+            )
+            .subscribe(
+                x => {
+                    config.requestCount++;
+                    util.processCarrierSerially(x);
+                }
+            );
+        ibuki.emit('adjust-piston:self');
+        // rx.from('a')
+        //     .pipe(
+        //         operators.map(i => rx.interval(100))
+        //         , operators.map(j => rx.interval(500))
+        //         , operators.switchMap(j => rx.interval(2000))
+        //         // , operators.switchAll()
+        //     ).pipe(
+        //         operators.take(carrierInfos.length),
+        //         operators.map(i => carrierInfos[i])
+        //     )
+        //     .subscribe(
+        //         x => {
+        //             console.log(x);
+        //         }
+        //     )
+        // rx.from(carrierInfos).subscribe(
+        //     x => {
+        //         console.log(x);
+        //     }
+        // )
+    }
+);
 
 let sub0 = ibuki.filterOn('serial-process-delayed:index:workbench').subscribe(
     d => {
@@ -35,6 +78,7 @@ let sub0 = ibuki.filterOn('serial-process-delayed:index:workbench').subscribe(
             .pipe(
                 operators.take(carrierInfos.length),
                 operators.map(i => carrierInfos[i])
+                // operators.delay(1000)
             )
             .subscribe(
                 x => {
@@ -42,8 +86,8 @@ let sub0 = ibuki.filterOn('serial-process-delayed:index:workbench').subscribe(
                     util.processCarrierSerially(x);
                 }
             );
-        
-            // ibuki.emit('adjust-piston:self');
+        // sub01.unsubscribe();
+        // ibuki.emit('adjust-piston:self');
     }
 );
 
@@ -52,7 +96,7 @@ let sub1 = ibuki.filterOn('adjust-piston:self').subscribe(
         const myInterval = rx.interval(500);
         myInterval.subscribe((x) => {
             const queue = config.requestCount - config.responseCount - config.errorCount;
-            if (queue > 15) {
+            if (queue > 5) {
                 config.autoPilotPiston && (config.piston = config.piston + 10);
             } else {
                 config.autoPilotPiston && (config.piston = config.piston - 5);

@@ -11,7 +11,10 @@ util.processCarrierSerially = (carrierInfo) => {
             //Save in database
             config.carrierCount--;
             config.responseCount++;
-            console.log(carrierInfo.trackingNumber, 'name:', carrierInfo.name, 'Count: ', config.carrierCount, 'Queued:', (config.requestCount - config.responseCount - config.errorCount));
+            console.log(carrierInfo.trackingNumber, 'name:', carrierInfo.name, 
+            'Count: ', config.carrierCount, 'Queued:', (config.requestCount - config.responseCount - config.errorCount)
+            , ' delay: ',config.piston
+        );
 
             // ibuki.emit('next-carrier:util:workbench', {
             //     carrierInfo: carrierInfo,
