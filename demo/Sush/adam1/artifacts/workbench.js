@@ -96,10 +96,13 @@ let sub1 = ibuki.filterOn('adjust-piston:self').subscribe(
         const myInterval = rx.interval(500);
         myInterval.subscribe((x) => {
             const queue = config.requestCount - config.responseCount - config.errorCount;
-            if (queue > 5) {
+            if (queue === 0) {
+                config.autoPilotPiston && (config.piston = 0);
+            }
+            else if (queue > 100) {
                 config.autoPilotPiston && (config.piston = config.piston + 10);
             } else {
-                config.autoPilotPiston && (config.piston = config.piston - 5);
+                config.autoPilotPiston && (config.piston = (config.piston > 5) ? (config.piston = config.piston - 5) : (config.piston = config.piston));
             }
             // console.log('Piston adjusted:');
         });
