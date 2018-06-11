@@ -1,6 +1,7 @@
 'use strict';
 const ibuki = require('./ibuki');
-// const rx = require('rxjs');
+const rx = require('rxjs');
+const operators = require('rxjs/operators');
 // const axios = require('axios');
 // const _ = require('lodash');
 // const operators = require('rxjs/operators');
@@ -10,48 +11,162 @@ var config = require('../config');
 
 var workbench = {};
 var counter = 0;
+var subject = new rx.Subject();
 
-let sub2 = ibuki.filterOn('next-carrier:util:workbench').subscribe(
+// Rx.Observable.from([1,2,3])
+//    .concatMap(x => Observable.of(x).delay(1000)) // or Observable.timer(1000).mapTo(x)
+//    .subscribe((e) => console.log(e));
+//serial-process:db:workbench
+//let sub2 = ibuki.filterOn('serial-process:index:workbench').subscribe(
+    let sub2 = ibuki.filterOn('serial-process:db:workbench').subscribe(
     d => {
-        const carrierObject = d.data;
-        const carrierInfo = carrierObject.carrierInfo;
-        const index = carrierObject.index;
-        if (index < carrierInfo.length) {
-            util.processCarrier({
-                carrierInfo: carrierInfo,
-                index: index
-            })
-        }
+        let bigObject = d.data.bigObject;
+        let carrierInfos = util.getCarrierInfos(bigObject, bigObject.length);
+        config.carrierCount = carrierInfos.length;
+        rx.from(carrierInfos)
+            .pipe(
+                operators.concatMap(x => rx.of(x).pipe(operators.delay(config.piston)))
+            )
+            .subscribe(
+                x => {
+                    config.requestCount++;
+                    util.processCarrierSerially(x);
+                }
+            );
+        ibuki.emit('adjust-piston:self');
+        // rx.from('a')
+        //     .pipe(
+        //         operators.map(i => rx.interval(100))
+        //         , operators.map(j => rx.interval(500))
+        //         , operators.switchMap(j => rx.interval(2000))
+        //         // , operators.switchAll()
+        //     ).pipe(
+        //         operators.take(carrierInfos.length),
+        //         operators.map(i => carrierInfos[i])
+        //     )
+        //     .subscribe(
+        //         x => {
+        //             console.log(x);
+        //         }
+        //     )
+        // rx.from(carrierInfos).subscribe(
+        //     x => {
+        //         console.log(x);
+        //     }
+        // )
+    }
+);
+
+let sub0 = ibuki.filterOn('serial-process-delayed:index:workbench').subscribe(
+    d => {
+        let carrierInfos = util.getCarrierInfos('Fedex', 10000);
+        config.carrierCount = carrierInfos.length;
+        // console.log('started');
+        // rx.from(carrierInfos)
+        //     .pipe(
+        //         operators.delay(2000),
+        //         // operators.take(carrierInfos.length),
+        //         // operators.map(i => carrierInfos[i]),
+        //         operators.repeat()
+        //     )
+        //     .subscribe(
+        //         x => {
+        //             config.requestCount++;
+        //             console.log(x);
+        //             // util.processCarrierSerially(x);
+        //         }
+        //     );
+        rx.interval(config.piston)
+            .pipe(
+                operators.take(carrierInfos.length),
+                operators.map(i => carrierInfos[i])
+                // operators.delay(1000)
+            )
+            .subscribe(
+                x => {
+                    config.requestCount++;
+                    util.processCarrierSerially(x);
+                }
+            );
+        // sub01.unsubscribe();
+        // ibuki.emit('adjust-piston:self');
+    }
+);
+
+let sub1 = ibuki.filterOn('adjust-piston:self').subscribe(
+    d => {
+        const myInterval = rx.interval(500);
+        myInterval.subscribe((x) => {
+            const queue = config.requestCount - config.responseCount - config.errorCount;
+            if (queue === 0) {
+                config.autoPilotPiston && (config.piston = 0);
+            }
+            else if (queue > 100) {
+                config.autoPilotPiston && (config.piston = config.piston + 10);
+            } else {
+                config.autoPilotPiston && (config.piston = (config.piston > 5) ? (config.piston = config.piston - 5) : (config.piston = config.piston));
+            }
+            // console.log('Piston adjusted:');
+        });
     }
 )
 
-let sub3 = ibuki.filterOn('start-processing-carrier:index:workbench').subscribe(
-    d => {
-        let carrierInfo = util.getCarrierInfo('Fedex', 50000);
-        ibuki.emit('next-carrier:util:workbench', {
-            carrierInfo: carrierInfo,
-            index: 0
-        });
-        
-        carrierInfo = util.getCarrierInfo('DHL', 200);
-        ibuki.emit('next-carrier:util:workbench', {
-            carrierInfo: carrierInfo,
-            index: 0
-        });
 
-        carrierInfo = util.getCarrierInfo('ABhl', 15000);
-        ibuki.emit('next-carrier:util:workbench', {
-            carrierInfo: carrierInfo,
-            index: 0
-        });
+// let sub1 = ibuki.filterOn('serial-process:index:workbench').subscribe(
+//     d => {
+//         let carrierInfos = util.getCarrierInfos('Fedex', 10000);
+//         config.carrierCount = carrierInfos.length;
+//         carrierInfos.forEach(
+//             x => {
+//                 setTimeout(() => {
+//                     util.processCarrierSerially(x);
+//                 }, 2000);
+//             }
+//         )
+//     }
+// )
 
-        carrierInfo = util.getCarrierInfo('Robaco', 5000);
-        ibuki.emit('next-carrier:util:workbench', {
-            carrierInfo: carrierInfo,
-            index: 0
-        });
-    }
-);
+// let sub2 = ibuki.filterOn('next-carrier:util:workbench').subscribe(
+//     d => {
+//         const carrierObject = d.data;
+//         const carrierInfo = carrierObject.carrierInfo;
+//         const index = carrierObject.index;
+//         if (index < carrierInfo.length) {
+//             util.processCarrier({
+//                 carrierInfo: carrierInfo,
+//                 index: index
+//             })
+//         }
+//     }
+// )
+
+// let sub3 = ibuki.filterOn('start-processing-carrier:index:workbench').subscribe(
+//     d => {
+//         let carrierInfo = util.getCarrierInfos('Fedex', 50000);
+//         ibuki.emit('next-carrier:util:workbench', {
+//             carrierInfo: carrierInfo,
+//             index: 0
+//         });
+
+//         carrierInfo = util.getCarrierInfos('DHL', 200);
+//         ibuki.emit('next-carrier:util:workbench', {
+//             carrierInfo: carrierInfo,
+//             index: 0
+//         });
+
+//         carrierInfo = util.getCarrierInfos('ABhl', 15000);
+//         ibuki.emit('next-carrier:util:workbench', {
+//             carrierInfo: carrierInfo,
+//             index: 0
+//         });
+
+//         carrierInfo = util.getCarrierInfos('Robaco', 5000);
+//         ibuki.emit('next-carrier:util:workbench', {
+//             carrierInfo: carrierInfo,
+//             index: 0
+//         });
+//     }
+// );
 
 module.exports = workbench;
 // let sub0 = ibuki.filterOn('next-promise').subscribe(
