@@ -11,51 +11,18 @@ util.processCarrierSerially = (carrierInfo) => {
             //Save in database
             config.carrierCount--;
             config.responseCount++;
-            console.log(carrierInfo.trackingNumber, 'name:', carrierInfo.name, 
-            'Count: ', config.carrierCount, 'Queued:', (config.requestCount - config.responseCount - config.errorCount)
-            , ' delay: ',config.piston
-        );
-
-            // ibuki.emit('next-carrier:util:workbench', {
-            //     carrierInfo: carrierInfo,
-            //     index: ++index
-            // });
+            console.log(carrierInfo.trackingNumber, 'name:', carrierInfo.name,
+                'Count: ', config.carrierCount, 'Queued:', (config.requestCount - config.responseCount - config.errorCount)
+                , ' delay: ', config.piston
+            );
         })
-        .catch(err => { 
+        .catch(err => {
             //log in database
             config.carrierCount--;
             config.errorCount++;
             console.log('Error:', 'Count:', config.carrierCount, 'Error:', config.errorCount, 'Queued:', (config.requestCount - config.responseCount - config.errorCount));
-            
-            // ibuki.emit('next-carrier:util:workbench', {
-            //     carrierInfo: carrierInfo,
-            //     index: ++index
-            // });
         });
 }
-
-
-// util.processCarrier = (carrierObject) => {
-//     const carrierInfo = carrierObject.carrierInfo;
-//     let index = carrierObject.index;
-//     axios.get(carrierInfo[index].url)
-//         .then(res => {
-//             //Save in database
-//             console.log(carrierInfo[index].trackingNumber, 'name:', carrierInfo[index].name, ', index: ', index);
-//             ibuki.emit('next-carrier:util:workbench', {
-//                 carrierInfo: carrierInfo,
-//                 index: ++index
-//             });
-//         })
-//         .catch(err => {
-//             //log in database
-//             console.log('Error processing carrier data', 'index: ', index);
-//             ibuki.emit('next-carrier:util:workbench', {
-//                 carrierInfo: carrierInfo,
-//                 index: ++index
-//             });
-//         });
-// }
 
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -80,6 +47,27 @@ util.getCarrierInfos = (name, count) => {
 }
 
 module.exports = util;
+// util.processCarrier = (carrierObject) => {
+//     const carrierInfo = carrierObject.carrierInfo;
+//     let index = carrierObject.index;
+//     axios.get(carrierInfo[index].url)
+//         .then(res => {
+//             //Save in database
+//             console.log(carrierInfo[index].trackingNumber, 'name:', carrierInfo[index].name, ', index: ', index);
+//             ibuki.emit('next-carrier:util:workbench', {
+//                 carrierInfo: carrierInfo,
+//                 index: ++index
+//             });
+//         })
+//         .catch(err => {
+//             //log in database
+//             console.log('Error processing carrier data', 'index: ', index);
+//             ibuki.emit('next-carrier:util:workbench', {
+//                 carrierInfo: carrierInfo,
+//                 index: ++index
+//             });
+//         });
+// }
 // exports.test = "Sushant";
 // util.execPromise = (counter) => {
 //     axios.get('http://localhost:8081/test')

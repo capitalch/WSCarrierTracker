@@ -13,10 +13,6 @@ var workbench = {};
 var counter = 0;
 var subject = new rx.Subject();
 
-// Rx.Observable.from([1,2,3])
-//    .concatMap(x => Observable.of(x).delay(1000)) // or Observable.timer(1000).mapTo(x)
-//    .subscribe((e) => console.log(e));
-
 let sub2 = ibuki.filterOn('serial-process:index:workbench').subscribe(
     d => {
         let carrierInfos = util.getCarrierInfos('Fedex', 10000);
@@ -31,27 +27,7 @@ let sub2 = ibuki.filterOn('serial-process:index:workbench').subscribe(
                     util.processCarrierSerially(x);
                 }
             );
-        ibuki.emit('adjust-piston:self');
-        // rx.from('a')
-        //     .pipe(
-        //         operators.map(i => rx.interval(100))
-        //         , operators.map(j => rx.interval(500))
-        //         , operators.switchMap(j => rx.interval(2000))
-        //         // , operators.switchAll()
-        //     ).pipe(
-        //         operators.take(carrierInfos.length),
-        //         operators.map(i => carrierInfos[i])
-        //     )
-        //     .subscribe(
-        //         x => {
-        //             console.log(x);
-        //         }
-        //     )
-        // rx.from(carrierInfos).subscribe(
-        //     x => {
-        //         console.log(x);
-        //     }
-        // )
+        ibuki.emit('adjust-piston:self');        
     }
 );
 
@@ -59,21 +35,7 @@ let sub0 = ibuki.filterOn('serial-process-delayed:index:workbench').subscribe(
     d => {
         let carrierInfos = util.getCarrierInfos('Fedex', 10000);
         config.carrierCount = carrierInfos.length;
-        // console.log('started');
-        // rx.from(carrierInfos)
-        //     .pipe(
-        //         operators.delay(2000),
-        //         // operators.take(carrierInfos.length),
-        //         // operators.map(i => carrierInfos[i]),
-        //         operators.repeat()
-        //     )
-        //     .subscribe(
-        //         x => {
-        //             config.requestCount++;
-        //             console.log(x);
-        //             // util.processCarrierSerially(x);
-        //         }
-        //     );
+        
         rx.interval(config.piston)
             .pipe(
                 operators.take(carrierInfos.length),
@@ -108,8 +70,44 @@ let sub1 = ibuki.filterOn('adjust-piston:self').subscribe(
         });
     }
 )
+module.exports = workbench;
 
-
+// console.log('started');
+        // rx.from(carrierInfos)
+        //     .pipe(
+        //         operators.delay(2000),
+        //         // operators.take(carrierInfos.length),
+        //         // operators.map(i => carrierInfos[i]),
+        //         operators.repeat()
+        //     )
+        //     .subscribe(
+        //         x => {
+        //             config.requestCount++;
+        //             console.log(x);
+        //             // util.processCarrierSerially(x);
+        //         }
+        //     );
+        
+// rx.from('a')
+        //     .pipe(
+        //         operators.map(i => rx.interval(100))
+        //         , operators.map(j => rx.interval(500))
+        //         , operators.switchMap(j => rx.interval(2000))
+        //         // , operators.switchAll()
+        //     ).pipe(
+        //         operators.take(carrierInfos.length),
+        //         operators.map(i => carrierInfos[i])
+        //     )
+        //     .subscribe(
+        //         x => {
+        //             console.log(x);
+        //         }
+        //     )
+        // rx.from(carrierInfos).subscribe(
+        //     x => {
+        //         console.log(x);
+        //     }
+        // )
 // let sub1 = ibuki.filterOn('serial-process:index:workbench').subscribe(
 //     d => {
 //         let carrierInfos = util.getCarrierInfos('Fedex', 10000);
@@ -166,7 +164,6 @@ let sub1 = ibuki.filterOn('adjust-piston:self').subscribe(
 //     }
 // );
 
-module.exports = workbench;
 // let sub0 = ibuki.filterOn('next-promise').subscribe(
 //     d => {
 //         (counter <= config.promiseCounter) && util.execPromise(counter);
