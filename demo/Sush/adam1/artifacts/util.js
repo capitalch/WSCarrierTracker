@@ -9,6 +9,7 @@ util.processCarrierSerially = (carrierInfo) => {
     axios.get(carrierInfo.url)
         .then(res => {
             //Save in database
+            ibuki.emit('sql1-update:util>db');
             config.carrierCount--;
             config.responseCount++;
             console.log(carrierInfo.trackingNumber, 'name:', carrierInfo.name,

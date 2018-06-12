@@ -20,5 +20,5 @@ ibuki.filterOn('initialize').subscribe(d => {
 // ibuki.emit('start-processing-carrier:index:workbench');
 // ibuki.emit('serial-process:index:workbench');
 // ibuki.emit('serial-process-delayed:index:workbench');
-ibuki.emit('serial-process:index:workbench');
-ibuki.emit('sql1:index:db');
+// ibuki.emit('serial-process:index:workbench');
+ibuki.emit('sql1-init:index:db');
