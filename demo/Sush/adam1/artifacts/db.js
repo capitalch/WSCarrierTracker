@@ -41,46 +41,44 @@ ibuki.filterOn('sql1-init:index:db').subscribe(
     }
 );
 
+// ibuki.filterOn('sql1-update:util>db').subscribe(
+//     d => {
+//         const ps = new sql.PreparedStatement(pool);
+//         ps.input('id', sql.Int);
 
+//         let stmt = ps.prepare('update product set UnitPrice = UnitPrice + 1 where id = @id', err => {
+//             // ... error checks
+//             if (err) {
+//                 console.log('0 ', err);
+//             } else {
 
-ibuki.filterOn('sql1-update:util>db').subscribe(
-    d => {
-        const ps = new sql.PreparedStatement(pool);
-        ps.input('id', sql.Int);
+//                 config.prepared.next(1);
+//                 config.zip.subscribe(d => execute(ps));
+//                 // ps.execute({ id: 1 }, (err, result) => {
+//                 //     // ... error checks
+//                 //     if (err) {
+//                 //         console.log('1 ', err);
+//                 //     } else {
+//                 //         let x = 1;
+//                 //     }
+//                 //                         // ps.execute({id:1}, (err,result)=>{
+//                 //                         //     if(err){
+//                 //                         //         console.log('3 ', err);
+//                 //                         //     } else{
+//                 //                         //         let x =3;
+//                 //                         //     }
+//                 //                         // });
+//                 //                         // ps.unprepare(err => {
+//                 //                         //     if (err) {
+//                 //                         //         console.log('2 ', err)
+//                 //                         //     } else {
+//                 //                         //         let x = 2;
+//                 //                         //     }
+//                 //                         // })
+//                 // });
 
-        let stmt = ps.prepare('update product set UnitPrice = UnitPrice + 1 where id = @id', err => {
-            // ... error checks
-            if (err) {
-                console.log('0 ', err);
-            } else {
+//             }
 
-                config.prepared.next(1);
-                config.zip.subscribe(d => execute(ps));
-                // ps.execute({ id: 1 }, (err, result) => {
-                //     // ... error checks
-                //     if (err) {
-                //         console.log('1 ', err);
-                //     } else {
-                //         let x = 1;
-                //     }
-                //                         // ps.execute({id:1}, (err,result)=>{
-                //                         //     if(err){
-                //                         //         console.log('3 ', err);
-                //                         //     } else{
-                //                         //         let x =3;
-                //                         //     }
-                //                         // });
-                //                         // ps.unprepare(err => {
-                //                         //     if (err) {
-                //                         //         console.log('2 ', err)
-                //                         //     } else {
-                //                         //         let x = 2;
-                //                         //     }
-                //                         // })
-                // });
-
-            }
-
-        })
-    }
-)
+//         })
+//     }
+// )
