@@ -15,7 +15,7 @@ var subject = new rx.Subject();
 
 let sub2 = ibuki.filterOn('serial-process:index:workbench').subscribe(
     d => {
-        let carrierInfos = util.getCarrierInfos('Fedex', 1);
+        let carrierInfos = util.getCarrierInfos('Fedex', 10000);
         config.carrierCount = carrierInfos.length;
         rx.from(carrierInfos)
             .pipe(

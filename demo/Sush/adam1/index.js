@@ -6,6 +6,7 @@ const db = require('./artifacts/db');
 const workbench = require('./artifacts/workbench');
 const app = require('./artifacts/app');
 const util = require('./artifacts/util');
+const research = require('./artifacts/research');
 // const test = require('./artifacts/util').test;
 // const numCPUs = require('os').cpus().length;
 
@@ -22,3 +23,4 @@ ibuki.filterOn('initialize').subscribe(d => {
 // ibuki.emit('serial-process-delayed:index:workbench');
 // ibuki.emit('serial-process:index:workbench');
 ibuki.emit('sql1-init:index:db');
+// ibuki.emit('test-zip:index>research');
