@@ -33,7 +33,7 @@ let sub2 = ibuki.filterOn('serial-process:index:workbench').subscribe(
 
 let sub0 = ibuki.filterOn('serial-process-delayed:index:workbench').subscribe(
     d => {
-        let carrierInfos = util.getCarrierInfos('Fedex', 100);
+        let carrierInfos = util.getCarrierInfos('Fedex', 10);
         config.carrierCount = carrierInfos.length;
         
         rx.interval(config.piston)

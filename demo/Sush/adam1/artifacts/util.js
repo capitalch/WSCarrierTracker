@@ -9,8 +9,9 @@ util.processCarrierSerially = (carrierInfo) => {
     axios.get(carrierInfo.url)
         .then(res => {
             //Save in database
-            // ibuki.emit('sql1-update:util>db');
+            
             config.buffer.next({ trackingNumber: carrierInfo.trackingNumber, name: carrierInfo.name });
+            ibuki.emit('sql1-update:util>db1');
             // flag && 
             config.prepared.next(1);
             flag=false;
