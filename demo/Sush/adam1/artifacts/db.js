@@ -4,22 +4,21 @@ const ibuki = require('./ibuki');
 const config = require('../config');
 const dbConfig = config.dbConfig;
 const pool = new sql.ConnectionPool(dbConfig);
-// const ps1 = null;
 
-function preparePS() {
-    var ps1 = new sql.PreparedStatement(pool);
-    ps1.input('id', sql.Int);
-    ps1.prepare('update product set UnitPrice = UnitPrice + 1 where id = @id', err => {
+function preparePS(ps) {
+    ps = new sql.PreparedStatement(pool);
+    ps.input('id', sql.Int);
+    ps.prepare('update product set UnitPrice = UnitPrice + 1 where id = @id', err => {
         if (err) {
             console.log('0 ', err);
         } else {
-            config.zip.subscribe(d => executePS(ps1));
+            config.zip.subscribe(d => executePS(ps));
         }
     });
 }
 
-function executePS(ps1) {
-    ps1.execute({ id: 1 }, (err, result) => {
+function executePS(ps) {
+    ps.execute({ id: 1 }, (err, result) => {
         // ... error checks
         if (err) {
             console.log('1 ', err);
@@ -35,9 +34,34 @@ ibuki.filterOn('sql1-init:index:db').subscribe(
         pool.connect(err => {
             if (!err) {
                 ibuki.emit('serial-process:index:workbench');
-                preparePS();
+                let ps1 = {};
+                preparePS(ps1);
             }
         });
+
+        // pool.connect(err => {
+        //     if (!err) {
+        //         // ibuki.emit('serial-process:index:workbench');
+        //         let ps2={};
+        //         preparePS(ps2);
+        //     }
+        // });
+
+        // pool.connect(err => {
+        //     if (!err) {
+        //         // ibuki.emit('serial-process:index:workbench');
+        //         let ps3={};
+        //         preparePS(ps3);
+        //     }
+        // });
+
+        // pool.connect(err => {
+        //     if (!err) {
+        //         // ibuki.emit('serial-process:index:workbench');
+        //         let ps4 = {};
+        //         preparePS(ps4);
+        //     }
+        // });
     }
 );
 

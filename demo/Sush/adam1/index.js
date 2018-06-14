@@ -2,7 +2,8 @@
 const http = require('http');
 const ibuki = require('./artifacts/ibuki');
 const config = require('./config');
-const db = require('./artifacts/db');
+// const db = require('./artifacts/db');
+const db1 = require('./artifacts/db1');
 const workbench = require('./artifacts/workbench');
 const app = require('./artifacts/app');
 const util = require('./artifacts/util');

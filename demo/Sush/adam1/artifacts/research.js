@@ -7,11 +7,15 @@ ibuki.filterOn('test-zip:index>research').subscribe(d => {
     const obsB = rx.from(['a', 'b', 'c']);
     const mySubA = new rx.Subject();
     const mySubB = new rx.Subject();
-    const result = rx.zip(mySubA, mySubB, (v1, v2) => v1);
-    result.subscribe(x => console.log(x));
+    const mySubC = new rx.Subject();
+    const result = rx.zip(mySubA, mySubB, mySubC, (v1, v2, v3) => v1);
+    result.subscribe(x => {
+        console.log(x)
+    });
     mySubA.next('a');
     mySubA.next('b');
     mySubA.next('c');
     mySubB.next(1);
     mySubB.next(2);
+    // mySubC.next(1);
 });
