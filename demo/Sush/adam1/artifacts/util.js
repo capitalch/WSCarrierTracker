@@ -11,7 +11,8 @@ util.processCarrierSerially = (carrierInfo) => {
             //Save in database
             // ibuki.emit('sql1-update:util>db');
             config.buffer.next({ trackingNumber: carrierInfo.trackingNumber, name: carrierInfo.name });
-            flag && config.prepared.next(1);
+            // flag && 
+            config.prepared.next(1);
             flag=false;
             config.carrierCount--;
             config.responseCount++;
