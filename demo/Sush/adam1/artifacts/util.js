@@ -2,14 +2,18 @@
 const axios = require('axios');
 const ibuki = require('./ibuki');
 const config = require('../config');
-
+let flag = true;
 let util = {};
 
 util.processCarrierSerially = (carrierInfo) => {
     axios.get(carrierInfo.url)
         .then(res => {
             //Save in database
-            ibuki.emit('sql1-update:util>db');
+            // ibuki.emit('sql1-update:util>db');
+            config.buffer.next({ trackingNumber: carrierInfo.trackingNumber, name: carrierInfo.name });
+            // flag && 
+            config.prepared.next(1);
+            flag=false;
             config.carrierCount--;
             config.responseCount++;
             console.log(carrierInfo.trackingNumber, 'name:', carrierInfo.name,
