@@ -2,10 +2,10 @@
 const axios = require('axios');
 const ibuki = require('./ibuki');
 const config = require('../config');
-const xml2js = require('xml2js');
-
+const logger = require('./logger');
+const parseXML = require('./xml-parse');
 let util = {};
-let parser  = new xml2js.Parser();
+
 util.processCarrierSerially = (carrierInfo) => {
     carrierInfo.method == 'axiosGetWithHeader' && util.axiosGetWithHeader(carrierInfo);
     carrierInfo.method == 'post' && util.axiosPost(carrierInfo);
@@ -73,6 +73,7 @@ util.getRandomDelay = () => {
 
 util.getCarrierInfos = (carrierData, count) => {
     let arr = [];
+    logger.info("count :" + carrierData.length)
     for (let i = 0; i < count; i++) {
         let obj = {};
         switch (carrierData[i].Shipping) {
@@ -107,7 +108,7 @@ util.getCarrierInfos = (carrierData, count) => {
                     name: carrierData[i].Shipping,
                     method: 'axiosGetWithHeader',
                     rn: carrierData[i].rn,
-                    token: 'YX5dIhnUYm4xSwgFj28RsUJDfVn/PmEEOhbNmg7DWJMZk5ljunL5DWkgrBDsdLFt/rUCdi96l41cUucadd/GlYGmHDSIE/jOZ5vr9GbslrQ='
+                    token: 'YX5dIhnUYm4xSwgFj28RsQdL1TJ/AiFno5ITdk3v6Sq98/207w/mYv1o/45qc41jnpQNVPfUxtJqC2t9KHeObmB12oWa44pDwgv0FDpE0SI='
                 }
                 arr.push(obj);
                 break;
@@ -138,21 +139,18 @@ util.getCarrierInfos = (carrierData, count) => {
 util.axiosGet = (carrierInfo) => {
     axios.get(carrierInfo.url)
         .then(res => {
-           
-            parser.parseString(res.data, function (err, result) {
-                console.dir(result);
-            });
+            ibuki.emit('parseXml:util:xmlParse', { response: res.data, carrierInfo:carrierInfo});
             //Save in database
             config.carrierCount--;
             config.responseCount++;
-            console.log(carrierInfo.trackingNumber, 'name:', carrierInfo.name,
+            logger.info(carrierInfo.trackingNumber, 'name:', carrierInfo.name,
                 'Count: ', config.carrierCount, 'Queued:', (config.requestCount - config.responseCount - config.errorCount)
-                , ' delay: ', config.piston, ' dbCount: ',( config.dbRequestCount-config.dbResponseCount) 
+                , ' delay: ', config.piston, ' dbCount: ', (config.dbRequestCount - config.dbResponseCount)
             );
-            ibuki.emit('sql2:util:db', {
-                status: res.status,
-                rn: carrierInfo.rn
-            })
+            // ibuki.emit('sql2:util:db', {
+            //     status: res.status,
+            //     rn: carrierInfo.rn
+            // })
 
             // ibuki.emit('next-carrier:util:workbench', {
             //     carrierInfo: carrierInfo,
@@ -163,7 +161,7 @@ util.axiosGet = (carrierInfo) => {
             //log in database
             config.carrierCount--;
             config.errorCount++;
-            console.log('Error:', 'Count:', config.carrierCount, 'Error:', config.errorCount, 'Queued:', (config.requestCount - config.responseCount - config.errorCount));
+            logger.error('Error:', err.message, 'Count:', config.carrierCount, 'Error:', config.errorCount, 'Queued:', (config.requestCount - config.responseCount - config.errorCount));
 
             // ibuki.emit('next-carrier:util:workbench', {
             //     carrierInfo: carrierInfo,
@@ -176,18 +174,17 @@ util.axiosPost = (carrierInfo) => {
         .then(res => {
             //Save in database
             config.carrierCount--;
-            config.responseCount++;            
-            parser.parseString(res.data, function (err, result) {
-                console.dir(result);
-            });
-            console.log(carrierInfo.trackingNumber, 'name:', carrierInfo.name,
+            config.responseCount++;
+            ibuki.emit('parseXml:util:xmlParse', { response: res.data, carrierInfo:carrierInfo});
+            logger.info(carrierInfo.trackingNumber, 'name:', carrierInfo.name,
                 'Count: ', config.carrierCount, 'Queued:', (config.requestCount - config.responseCount - config.errorCount)
-                , ' delay: ', config.piston, ' dbCount: ',( config.dbRequestCount-config.dbResponseCount)
+                , ' delay: ', config.piston, ' dbCount: ', (config.dbRequestCount - config.dbResponseCount)
             );
-            ibuki.emit('sql2:util:db', {
-                status: res.status,
-                rn: carrierInfo.rn
-            })
+
+            // ibuki.emit('sql2:util:db', {
+            //     status: res.status,
+            //     rn: carrierInfo.rn
+            // })
 
             // ibuki.emit('next-carrier:util:workbench', {
             //     carrierInfo: carrierInfo,
@@ -198,7 +195,7 @@ util.axiosPost = (carrierInfo) => {
             //log in database
             config.carrierCount--;
             config.errorCount++;
-            console.log('Error:', 'Count:', config.carrierCount, 'Error:', config.errorCount, 'Queued:', (config.requestCount - config.responseCount - config.errorCount));
+            logger.error('Error:', err.message, 'Count:', config.carrierCount, 'Error:', config.errorCount, 'Queued:', (config.requestCount - config.responseCount - config.errorCount));
 
             // ibuki.emit('next-carrier:util:workbench', {
             //     carrierInfo: carrierInfo,
@@ -214,19 +211,17 @@ util.axiosGetWithHeader = (carrierInfo) => {
     axios.get(carrierInfo.url, { headers: { Token: carrierInfo.token, 'Content-Type': 'application/json' } })
         .then(res => {
             //Save in database
-            parser.parseString(res.data, function (err, result) {
-                console.dir(result);
-            });
+            ibuki.emit('parseXml:util:xmlParse', { response: res.data, carrierInfo:carrierInfo});            
             config.carrierCount--;
             config.responseCount++;
-            console.log(carrierInfo.trackingNumber, 'name:', carrierInfo.name,
+            logger.info(carrierInfo.trackingNumber, 'name:', carrierInfo.name,
                 'Count: ', config.carrierCount, 'Queued:', (config.requestCount - config.responseCount - config.errorCount)
-                , ' delay: ', config.piston, ' dbCount: ',( config.dbRequestCount-config.dbResponseCount)
+                , ' delay: ', config.piston, ' dbCount: ', (config.dbRequestCount - config.dbResponseCount)
             );
-            ibuki.emit('sql2:util:db', {
-                status: res.status,
-                rn: carrierInfo.rn
-            })
+            // ibuki.emit('sql2:util:db', {
+            //     status: res.status,
+            //     rn: carrierInfo.rn
+            // })
 
             // ibuki.emit('next-carrier:util:workbench', {
             //     carrierInfo: carrierInfo,
@@ -237,7 +232,7 @@ util.axiosGetWithHeader = (carrierInfo) => {
             //log in database
             config.carrierCount--;
             config.errorCount++;
-            console.log('Error:', 'Count:', config.carrierCount, 'Error:', config.errorCount, 'Queued:', (config.requestCount - config.responseCount - config.errorCount));
+            logger.error('Error:', err.message, 'Count:', config.carrierCount, 'Error:', config.errorCount, 'Queued:', (config.requestCount - config.responseCount - config.errorCount));
 
             // ibuki.emit('next-carrier:util:workbench', {
             //     carrierInfo: carrierInfo,
