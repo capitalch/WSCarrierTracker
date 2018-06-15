@@ -19,3 +19,17 @@ ibuki.filterOn('test-zip:index>research').subscribe(d => {
     mySubB.next(2);
     // mySubC.next(1);
 });
+
+ibuki.filterOn('test-merge:index>research').subscribe(d => {
+    const mySubA = new rx.Subject();
+    const mySubB = new rx.Subject();
+    const mySubC = new rx.Subject();
+    const mySubD = rx.from(['x','y','z']);
+    const result = rx.merge(mySubA, mySubB, mySubC, mySubD);
+    result.subscribe(x => {
+        console.log(x);
+    });
+    mySubA.next('a');
+    mySubB.next('b');
+    mySubC.next('c');
+});

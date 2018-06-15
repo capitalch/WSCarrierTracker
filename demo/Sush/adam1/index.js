@@ -25,3 +25,4 @@ ibuki.filterOn('initialize').subscribe(d => {
 // ibuki.emit('serial-process:index:workbench');
 ibuki.emit('sql1-init:index:db');
 // ibuki.emit('test-zip:index>research');
+// ibuki.emit('test-merge:index>research');
