@@ -22,18 +22,3 @@ ibuki.filterOn('sql1:index:db').subscribe(
         })
     }
 );
-
-// ibuki.filterOn('sql2:util:db').subscribe(
-//     d => {
-//         console.log(`updatePackagesToTrack ${d.data.status},${d.data.rn}`);
-//         console.log(pool.connected);
-//         pool.request().query(`updatePackagesToTrack ${d.data.status},${d.data.rn}`,
-//             (err1, result) => {
-//                 result && console.log('success');
-//                 result && config.dbResponseCount++;
-//                 err1 && (console.log(err1));
-
-//             });
-//             config.dbRequestCount++;
-
-//     });

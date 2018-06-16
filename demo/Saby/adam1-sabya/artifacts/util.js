@@ -10,57 +10,7 @@ util.processCarrierSerially = (carrierInfo) => {
     carrierInfo.method == 'axiosGetWithHeader' && util.axiosGetWithHeader(carrierInfo);
     carrierInfo.method == 'post' && util.axiosPost(carrierInfo);
     carrierInfo.method == 'axiosGet' && util.axiosGet(carrierInfo);
-
-    // axios.get(carrierInfo.url)
-    //     .then(res => {
-    //         //Save in database
-    //         config.carrierCount--;
-    //         config.responseCount++;
-    //         console.log(carrierInfo.trackingNumber, 'name:', carrierInfo.name,
-    //             'Count: ', config.carrierCount, 'Queued:', (config.requestCount - config.responseCount - config.errorCount)
-    //             , ' delay: ', config.piston
-    //         );
-
-    //         // ibuki.emit('next-carrier:util:workbench', {
-    //         //     carrierInfo: carrierInfo,
-    //         //     index: ++index
-    //         // });
-    //     })
-    //     .catch(err => {
-    //         //log in database
-    //         config.carrierCount--;
-    //         config.errorCount++;
-    //         console.log('Error:', 'Count:', config.carrierCount, 'Error:', config.errorCount, 'Queued:', (config.requestCount - config.responseCount - config.errorCount));
-
-    //         // ibuki.emit('next-carrier:util:workbench', {
-    //         //     carrierInfo: carrierInfo,
-    //         //     index: ++index
-    //         // });
-    //     });
 }
-
-
-// util.processCarrier = (carrierObject) => {
-//     const carrierInfo = carrierObject.carrierInfo;
-//     let index = carrierObject.index;
-//     axios.get(carrierInfo[index].url)
-//         .then(res => {
-//             //Save in database
-//             console.log(carrierInfo[index].trackingNumber, 'name:', carrierInfo[index].name, ', index: ', index);
-//             ibuki.emit('next-carrier:util:workbench', {
-//                 carrierInfo: carrierInfo,
-//                 index: ++index
-//             });
-//         })
-//         .catch(err => {
-//             //log in database
-//             console.log('Error processing carrier data', 'index: ', index);
-//             ibuki.emit('next-carrier:util:workbench', {
-//                 carrierInfo: carrierInfo,
-//                 index: ++index
-//             });
-//         });
-// }
 
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -125,14 +75,6 @@ util.getCarrierInfos = (carrierData, count) => {
                 break;
         }
     }
-    // for (let i = 0; i < count; i++) {
-    //     let obj = {
-    //         trackingNumber: getRandomInt(1000, 10000),
-    //         url: 'http://production.shippingapis.com/ShippingAPI.dll?API=TrackV2&XML=%3CTrackFieldRequest%20USERID=%22487WINES7756%22%3E%3CTrackID%20ID=%229400110200829650000000%22%3E%3C/TrackID%3E%3C/TrackFieldRequest%3E',
-    //         name: name
-    //     }
-    //     arr.push(obj);
-    // }
     return (arr);
 }
 
@@ -147,15 +89,7 @@ util.axiosGet = (carrierInfo) => {
                 'Count: ', config.carrierCount, 'Queued:', (config.requestCount - config.responseCount - config.errorCount)
                 , ' delay: ', config.piston, ' dbCount: ', (config.dbRequestCount - config.dbResponseCount)
             );
-            // ibuki.emit('sql2:util:db', {
-            //     status: res.status,
-            //     rn: carrierInfo.rn
-            // })
-
-            // ibuki.emit('next-carrier:util:workbench', {
-            //     carrierInfo: carrierInfo,
-            //     index: ++index
-            // });
+            
         })
         .catch(err => {
             //log in database
@@ -163,10 +97,6 @@ util.axiosGet = (carrierInfo) => {
             config.errorCount++;
             logger.error('Error:', err.message, 'Count:', config.carrierCount, 'Error:', config.errorCount, 'Queued:', (config.requestCount - config.responseCount - config.errorCount));
 
-            // ibuki.emit('next-carrier:util:workbench', {
-            //     carrierInfo: carrierInfo,
-            //     index: ++index
-            // });
         });
 }
 util.axiosPost = (carrierInfo) => {
@@ -180,27 +110,12 @@ util.axiosPost = (carrierInfo) => {
                 'Count: ', config.carrierCount, 'Queued:', (config.requestCount - config.responseCount - config.errorCount)
                 , ' delay: ', config.piston, ' dbCount: ', (config.dbRequestCount - config.dbResponseCount)
             );
-
-            // ibuki.emit('sql2:util:db', {
-            //     status: res.status,
-            //     rn: carrierInfo.rn
-            // })
-
-            // ibuki.emit('next-carrier:util:workbench', {
-            //     carrierInfo: carrierInfo,
-            //     index: ++index
-            // });
         })
         .catch(err => {
             //log in database
             config.carrierCount--;
             config.errorCount++;
             logger.error('Error:', err.message, 'Count:', config.carrierCount, 'Error:', config.errorCount, 'Queued:', (config.requestCount - config.responseCount - config.errorCount));
-
-            // ibuki.emit('next-carrier:util:workbench', {
-            //     carrierInfo: carrierInfo,
-            //     index: ++index
-            // });
         });
 
 }
@@ -217,32 +132,18 @@ util.axiosGetWithHeader = (carrierInfo) => {
             logger.info(carrierInfo.trackingNumber, 'name:', carrierInfo.name,
                 'Count: ', config.carrierCount, 'Queued:', (config.requestCount - config.responseCount - config.errorCount)
                 , ' delay: ', config.piston, ' dbCount: ', (config.dbRequestCount - config.dbResponseCount)
-            );
-            // ibuki.emit('sql2:util:db', {
-            //     status: res.status,
-            //     rn: carrierInfo.rn
-            // })
-
-            // ibuki.emit('next-carrier:util:workbench', {
-            //     carrierInfo: carrierInfo,
-            //     index: ++index
-            // });
+            );            
         })
         .catch(err => {
             //log in database
             config.carrierCount--;
             config.errorCount++;
             logger.error('Error:', err.message, 'Count:', config.carrierCount, 'Error:', config.errorCount, 'Queued:', (config.requestCount - config.responseCount - config.errorCount));
-
-            // ibuki.emit('next-carrier:util:workbench', {
-            //     carrierInfo: carrierInfo,
-            //     index: ++index
-            // });
         });
 
 }
-
 module.exports = util;
+
 // exports.test = "Sushant";
 // util.execPromise = (counter) => {
 //     axios.get('http://localhost:8081/test')
@@ -255,5 +156,113 @@ module.exports = util;
 //             //log in database
 //             console.log('Error in promise', 'counter: ', counter);
 //             ibuki.emit('next-promise');
+//         });
+// }
+
+// ibuki.emit('next-carrier:util:workbench', {
+            //     carrierInfo: carrierInfo,
+            //     index: ++index
+            // });
+// ibuki.emit('sql2:util:db', {
+            //     status: res.status,
+            //     rn: carrierInfo.rn
+            // })
+
+            // ibuki.emit('next-carrier:util:workbench', {
+            //     carrierInfo: carrierInfo,
+            //     index: ++index
+            // });
+
+            // ibuki.emit('next-carrier:util:workbench', {
+            //     carrierInfo: carrierInfo,
+            //     index: ++index
+            // });
+
+            
+            // ibuki.emit('sql2:util:db', {
+            //     status: res.status,
+            //     rn: carrierInfo.rn
+            // })
+
+            // ibuki.emit('next-carrier:util:workbench', {
+            //     carrierInfo: carrierInfo,
+            //     index: ++index
+            // });
+
+
+            // ibuki.emit('next-carrier:util:workbench', {
+            //     carrierInfo: carrierInfo,
+            //     index: ++index
+            // });
+
+            // ibuki.emit('sql2:util:db', {
+            //     status: res.status,
+            //     rn: carrierInfo.rn
+            // })
+
+            // ibuki.emit('next-carrier:util:workbench', {
+            //     carrierInfo: carrierInfo,
+            //     index: ++index
+            // });
+
+            
+    // for (let i = 0; i < count; i++) {
+    //     let obj = {
+    //         trackingNumber: getRandomInt(1000, 10000),
+    //         url: 'http://production.shippingapis.com/ShippingAPI.dll?API=TrackV2&XML=%3CTrackFieldRequest%20USERID=%22487WINES7756%22%3E%3CTrackID%20ID=%229400110200829650000000%22%3E%3C/TrackID%3E%3C/TrackFieldRequest%3E',
+    //         name: name
+    //     }
+    //     arr.push(obj);
+    // }
+
+    
+    // axios.get(carrierInfo.url)
+    //     .then(res => {
+    //         //Save in database
+    //         config.carrierCount--;
+    //         config.responseCount++;
+    //         console.log(carrierInfo.trackingNumber, 'name:', carrierInfo.name,
+    //             'Count: ', config.carrierCount, 'Queued:', (config.requestCount - config.responseCount - config.errorCount)
+    //             , ' delay: ', config.piston
+    //         );
+
+    //         // ibuki.emit('next-carrier:util:workbench', {
+    //         //     carrierInfo: carrierInfo,
+    //         //     index: ++index
+    //         // });
+    //     })
+    //     .catch(err => {
+    //         //log in database
+    //         config.carrierCount--;
+    //         config.errorCount++;
+    //         console.log('Error:', 'Count:', config.carrierCount, 'Error:', config.errorCount, 'Queued:', (config.requestCount - config.responseCount - config.errorCount));
+
+    //         // ibuki.emit('next-carrier:util:workbench', {
+    //         //     carrierInfo: carrierInfo,
+    //         //     index: ++index
+    //         // });
+    //     });
+
+    
+
+// util.processCarrier = (carrierObject) => {
+//     const carrierInfo = carrierObject.carrierInfo;
+//     let index = carrierObject.index;
+//     axios.get(carrierInfo[index].url)
+//         .then(res => {
+//             //Save in database
+//             console.log(carrierInfo[index].trackingNumber, 'name:', carrierInfo[index].name, ', index: ', index);
+//             ibuki.emit('next-carrier:util:workbench', {
+//                 carrierInfo: carrierInfo,
+//                 index: ++index
+//             });
+//         })
+//         .catch(err => {
+//             //log in database
+//             console.log('Error processing carrier data', 'index: ', index);
+//             ibuki.emit('next-carrier:util:workbench', {
+//                 carrierInfo: carrierInfo,
+//                 index: ++index
+//             });
 //         });
 // }
