@@ -10,7 +10,7 @@ ibuki.filterOn('sql1:index:db').subscribe(
     d => {
         pool.connect(err => {
             err || pool.request().query(`select top 1000 rn,[External Tracking No_] 'External',[Shipping Agent Code] 'Shipping'
-            from [dbo].[FinalPackageTrackStaging]`,
+            from [dbo].[FinalPackageTrackStaging] where [Shipping Agent Code] ='UPS'`,
                 (err1, result) => {
                     logger.info('result.rowsAffected :',result.rowsAffected);
                     ibuki.emit('serial-process:db:workbench', {
