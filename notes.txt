@@ -17,5 +17,6 @@
 14. Complete logs may be using azure telemetry
 
 //Saby
+0.1 Send me script for creating 50,000 rows info table, so that I can create the table.
 1. Deploy to azure the complete solution and test
 2. As per meeting complete the solution, deploy and test in Azure usin Telemetry for logging
