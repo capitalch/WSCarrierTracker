@@ -15,7 +15,7 @@ function disburse() {
     const req = reqs.find((e) => e.isAvailable);
     if (req) {
         req.isAvailable = false;
-        req.query('update product set UnitPrice = UnitPrice+1', (err, result) => {
+        req.query('update product set UnitPrice = UnitPrice+1 where id = 1', (err, result) => {
             req.isAvailable = true;
             if (err) {
                 console.log(err);
