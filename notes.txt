@@ -3,20 +3,22 @@
 2. Get Big object
 3. Create 4 object arrays one for each carrier
 4. Provide settings.json file for app wide settings
-5. Config.js for global configurations
+5. Config.js for global configurations and global variables
 6. For each carrier set logic for get, get with header, post request call
 7. Provide settings for all carriers in settings.json file
 8. In parallel do api calls for all 4 carriers.
 9. Use piston for queue control. Piston setting for each carrier is in settings.json.
 10. At return from each carrier get return object which may be XML. Convert this XML to unified JSON object. 
-    Push this unified JSON object to queue. Use a module for XML to json convert.
+    Push this unified JSON object to queue. Use a separate node.js module for XML to json conversion.
 11. Process objects from queue. Create set of sql's which update info table, add in history and inserts in log table. Use 
-    connection channels.
+    multiple connection channels.
 12. At end of each api call and database call mark the job as ended and log to database.
 13. Full node.js error handling
 14. Complete logs may be using azure telemetry
+15. Clean up memory
+16. Provide domain level and module level error handling
 
 //Saby
 0.1 Send me script for creating 50,000 rows info table, so that I can create the table.
 1. Deploy to azure the complete solution and test
-2. As per meeting complete the solution, deploy and test in Azure usin Telemetry for logging
+2. As per our meeting with Viraj, do complete the solution, deploy and test in Azure using Telemetry for logging
