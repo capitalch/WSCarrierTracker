@@ -15,6 +15,7 @@
 12. At end of each api call and database call mark the job as ended and log to database.
 13. Full node.js error handling
 14. Complete logs may be using azure telemetry
+15. Clean up memory
 
 //Saby
 0.1 Send me script for creating 50,000 rows info table, so that I can create the table.
