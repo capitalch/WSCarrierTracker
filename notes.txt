@@ -1,40 +1,22 @@
-config.js
-ebuki.js
-db.js
-main.js
-carriers.js
+//adam2
+1. Create test database
+2. Get Big object
+3. Create 4 object arrays one for each carrier
+4. Provide settings.json file for app wide settings
+5. Config.js for global configurations
+6. For each carrier set logic for get, get with header, post request call
+7. Provide settings for all carriers in settings.json file
+8. In parallel do api calls for all 4 carriers.
+9. Use piston for queue control. Piston setting for each carrier is in settings.json.
+10. At return from each carrier get return object which may be XML. Convert this XML to unified JSON object. 
+    Push this unified JSON object to queue. Use a module for XML to json convert.
+11. Process objects from queue. Create set of sql's which update info table, add in history and inserts in log table. Use 
+    connection channels.
+12. At end of each api call and database call mark the job as ended and log to database.
+13. Full node.js error handling
+14. Complete logs may be using azure telemetry
 
-Pre
-			3. Test the complete flow
-                                        3.5 Include rxjs in node.js
-                                        4. Implement node.js export mechanism
-                                        5. Load modules in node.js
-                                        6. Create Azure DB and load database
-                                        7. Do hands on practise with azure database and node.js using mssql driver
-			                            8. Test Axios with rxjs
-                                        9. Check forkjoin or Q.all for taking care of multiple observables or promises after parallel http calls.
-                                        10. Implement node.js router
-11. Node.js Error handling
-										12. Confirm in forkjoin or Q.all that it continues even if one call fails in error
-13. Generate Carrier info and test with actual carrier
-14. Test with as many as 50000 per carrier data
-
-Phase 1
-0.1 Create container
-0.2 Create all files
-1.1 Axios check if it works well with Observable
-2. Check Sql server DB connections
-3. Download huge object
-4. Iterate object and call carrierDecode
-5. carrierDecode to individual carrier transfer
-5.5 Use templating to create header XML's for carriers
-6. Carrier callback update database
-7. Track errors
-8. Track working
-
-Phase 2
-1. Database design
-2. Implement database attributes in code
-3. Optimize
-4. Deploy
-5. 
+//Saby
+0.1 Send me script for creating 50,000 rows info table, so that I can create the table.
+1. Deploy to azure the complete solution and test
+2. As per meeting complete the solution, deploy and test in Azure usin Telemetry for logging
