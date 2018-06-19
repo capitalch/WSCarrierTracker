@@ -33,3 +33,8 @@ ibuki.filterOn('test-merge:index>research').subscribe(d => {
     mySubB.next('b');
     mySubC.next('c');
 });
+
+// process.on('uncaughtException', function(err) {
+// 	// handle the error safely
+// 	console.log(err.name);
+// });

@@ -37,22 +37,38 @@ ibuki.filterOn('sql1-update:util>db1').subscribe(d => {
     disburse();
 });
 
-ibuki.filterOn('sql1-init:index:db').subscribe(
-    d => {
-        pool.connect(err => {
-            if (err) {
-                console.log('1:', err)
-            } else {
-                ibuki.emit('serial-process:index:workbench');
-                for (let i = 0; i < 10; i++) {
-                    const req = new sql.Request(pool);
-                    req.isAvailable = true;
-                    req.index = i;
-                    reqs.push(req);
-                }
-            }
-        })
-    });
+try {
+    ibuki.filterOn('sql1-init:index:db').subscribe(
+        d => {
+            // try {
+                //throw 'test error';
+               
+                pool.connect(err => {
+
+                    if (err) {
+                        console.log('1:', err)
+                    } else {
+                        ibuki.emit('serial-process:index:workbench');
+                        for (let i = 0; i < 10; i++) {
+                            const req = new sql.Request(pool);
+                            req.isAvailable = true;
+                            req.index = i;
+                            reqs.push(req);
+                        }
+                    }
+                });
+            // } catch (err) {
+            //     console.log(err);
+            //     ibuki.emit('global-errors:any>any', err);
+            // }
+        }, err => { 
+            console.log(err); 
+        }
+
+    );
+} catch (err) {
+    console.log(err.message);
+}
 
 
 // if (req1.pending) {

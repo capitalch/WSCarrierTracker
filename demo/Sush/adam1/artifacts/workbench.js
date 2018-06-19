@@ -17,6 +17,7 @@ let sub2 = ibuki.filterOn('serial-process:index:workbench').subscribe(
     d => {
         let carrierInfos = util.getCarrierInfos('Fedex', 10000);
         config.carrierCount = carrierInfos.length;
+        // console.log(undef.config);
         rx.from(carrierInfos)
             .pipe(
                 operators.concatMap(x => rx.of(x).pipe(operators.delay(config.piston)))
