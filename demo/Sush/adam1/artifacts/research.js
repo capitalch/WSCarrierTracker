@@ -1,6 +1,8 @@
+'use strict';
 const ibuki = require('./ibuki');
 const rx = require('rxjs');
 const operators = require('rxjs/operators');
+const responses = require('./xml-responses');
 
 ibuki.filterOn('test-zip:index>research').subscribe(d => {
     const obsA = rx.from([1, 2, 3, 4, 5, 6, 7]);
@@ -34,7 +36,32 @@ ibuki.filterOn('test-merge:index>research').subscribe(d => {
     mySubC.next('c');
 });
 
+const fedexResponse = responses.fedexResponse;
+
+var parseString = require('xml2js').parseString;
+parseString(fedexResponse,{trim: true, explicitArray:false}, function (err, result) {
+    console.dir(result);
+    const details = result.TrackReply.TrackDetails;
+    result = null;
+    console.log(details);
+});
+// const xpath = require('xpath')
+//   , dom = require('xmldom').DOMParser;
+
+//   var xml = "<book><title><book>Harry Potter</book><book>Harry Potter 1</book></title></book>";
+//   const doc = new dom().parseFromString(fedexResponse);
+//   let title = xpath.select("//HighestSeverity", doc);
+//   console.log(title);
+
 // process.on('uncaughtException', function(err) {
 // 	// handle the error safely
 // 	console.log(err.name);
 // });
+/*
+'<?xml version="1.0" encoding="utf-8"?>' +
+'<note importance="high" logged="true">' +
+'    <title>Happy</title>' +
+'    <todo>Work</todo>' +
+'    <todo>Play</todo>' +
+'</note>';
+*/
