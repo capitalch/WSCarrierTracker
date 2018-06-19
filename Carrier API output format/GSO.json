@@ -1,0 +1,81 @@
+{
+  "ShipmentInfo": [
+    {
+      "AccountNumber": 50874,
+      "TrackingNumber": "508741111116172",
+      "ShipperCompany": "WineShipping.com/SANTA MARIA",
+      "ShipperContact": "Customer Service",
+      "ShipperPhone": "805-922-4011",
+      "ShipperEmail": "",
+      "PickupAddress1": "1235 W MCCOY LANE",
+      "PickupAddress2": "SUITE 3",
+      "PickupCity": "SANTA MARIA",
+      "PickupState": "CA",
+      "PickupZip": "93455",
+      "ShipToCompany": "WDAS",
+      "ShipToAttention": "Brett Achorn",
+      "ShipToPhone": "818-642-7845",
+      "ShipToEmail": "brett@cinemaanime.org",
+      "DeliveryAddress1": "2100 Riverside Drive",
+      "DeliveryAddress2": "",
+      "DeliveryCity": "Burbank",
+      "DeliveryState": "CA",
+      "DeliveryZip": "91506",
+      "DeliveryZone": 2,
+      "ServiceCode": "CPS",
+      "ShipmentReference": "",
+      "DeclaredValue": 0,
+      "CODValue": 0,
+      "SpecialInstructions": "",
+      "Weight": 18,
+      "SignatureCode": "ADULT_SIG_REQD",
+      "AddnShipperReference1": "",
+      "AddnShipperReference2": "",
+      "Delivery": {
+        "ShipDate": "02/26/2018",
+        "ScheduledDeliveryDate": "02/27/2018",
+        "ScheduledDeliveryTime": "5:00 PM",
+        "DeliveryDate": "02/27/2018",
+        "TransitStatus": "DELIVERED",
+        "DeliveryTime": "12:25 PM",
+        "SignedBy": "T.Knosp",
+        "Signature": "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aYuVaN26dWZ8GxoamqrkuqKiQj7++OOm7/K5+Pzzz+Xoo4+WLVu2RC7mrLPOkoULF0bOn5yxWfIHvS4NBHbt2mUexFWrVkVuEGWccMIJcs8994Qqgx9w3759Q+UJkviXX36Rd999V5544gkZPny4VFdXy4033pjxj/tDhw6VESNGyJQpU2Tz5s1BqgmU5qWXXpIWLVrInDlzAqUnUSkSVv/+/Q2WqZ246qqrZNSoUalfR/o8bNgwoZ585OKLL5bnnnsunyKa8iphNUFROhd333239OjRI3KDfvzxRznjjDPkhhtukH/++SdUOY899pjwwMchf/75p6xZs8YQT/v27aVTp04ycOBAuf322+Wuu+7K+Tdy5Ei59dZbpVevXnLkkUfKhg0b8m7W008/bcjqtddeC1VWqREWM6g2bdqkJfIVK1bIMcccI99//32oPqYm3rp1q8F9/fr1qbdCfR40aJA8+uijofJkSqyElQkZS99//fXX5iFZu3ZtpBb8+uuvctFFF0nv3r0FwggrDz30kCGVsPmS0/Og33fffXL66aeb5clNN90ky5cvl99++y05Wajr2267Ta6++upQeVITM9uE+KLMXEuNsK644gq55ZZbUrtoPqNG6N69u/Diy0euvfbavDGn/gceeEAoKw5RwvoPxW+++Ub+/vvvOPDMuwym8swooshff/0lPMjnn3++sASLIujOeCNGka+++so8mLz5+/XrJ0uWLJE9e/ZEKeqgPB988IGcdNJJ8vvvvx90L9cX5KFPJ554oqCTiSKlRFjvvfeeIV5ebpkE/VarVq1k06ZNmZJk/Z4XTOvWrWXbtm1Z0wW5uWzZMmnXrp3s27cvSPKsabwnLJSJp512mqDzsS2J2dWHH34YqSnXX3+96cvu3bsj5ScTM6NrrrkmdP7a2lrzI4IYPv3009D5c2XYsWOHWQL9/PPPuZIecJ9lUdeuXeW8886TxsbGA+6F+VAqhMUslZnrk08+mbP5N998s5lp50yYkgCMWb5PmDAh5U60j7QZ/O+4445oBSTl8p6wZs+eLeecc05JzLDQ2USdXaEXYgaRL/FCWIMHD056RHJfvv7660YvtGDBgtyJI6agX4cffrj89NNPgUv44osvzKwMpXHUGWeislIhLDZFKisrhaV/LmHlwA7fW2+9lSvpAffvvPNO6dKlSySVwgEFJX1g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"
+      },
+      "TransitNotes": [
+        {
+          "EventDate": "2/26/2018 11:03:54 PM",
+          "Comments": "ARRIVAL SCAN  DELIVERY SCHED  FOR 02/27/2018"
+        },
+        {
+          "EventDate": "2/27/2018 8:36:19 AM",
+          "Comments": "ON ROUTE FOR DELIVERY "
+        },
+        {
+          "EventDate": "2/27/2018 12:25:08 PM",
+          "Comments": "SHIPMENT DELIVERED "
+        }
+      ],
+      "ShipmentCharges": {
+        "TransportationCharge": 5.78,
+        "CODCharge": 0,
+        "InsuranceCharge": 0,
+        "FuelSurcharge": 0.45,
+        "OtherCharge": [
+          {
+            "code": "ASR",
+            "description": "Adult Signature Required Fee",
+            "fee": 1.5
+          }
+        ],
+        "TotalCharge": 7.73
+      }
+    }
+  ],
+  "StatusCode": 200,
+  "StatusDescription": "OK",
+  "AuthenticationResultCode": 0,
+  "RequestDateTime": "2018-06-19T00:03:12.1913903-07:00",
+  "ResponseDateTime": "2018-06-19T00:03:12.2851412-07:00",
+  "ErrorCount": 0,
+  "ErrorDetail": null
+}
