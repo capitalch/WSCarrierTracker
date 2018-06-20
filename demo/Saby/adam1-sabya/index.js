@@ -2,6 +2,7 @@
 const http = require('http');
 const ibuki = require('./artifacts/ibuki');
 const config = require('./config');
+// const settings = require('./artifacts/settings.json');
 const db = require('./artifacts/db');
 const workbench = require('./artifacts/workbench');
 const app = require('./artifacts/app');

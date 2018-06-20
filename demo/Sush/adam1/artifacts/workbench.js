@@ -13,11 +13,12 @@ var workbench = {};
 var counter = 0;
 var subject = new rx.Subject();
 
-let sub2 = ibuki.filterOn('serial-process:index:workbench').subscribe(
+let sub2 = ibuki.filterOn('serial-process:db1:workbench').subscribe(
     d => {
-        let carrierInfos = util.getCarrierInfos('Fedex', 10000);
+        let carrierInfos = util.getCarrierInfos('Fedex', 10);
+        // const carrierInfos = d.data;
         config.carrierCount = carrierInfos.length;
-        // console.log(undef.config);
+        
         rx.from(carrierInfos)
             .pipe(
                 operators.concatMap(x => rx.of(x).pipe(operators.delay(config.piston)))

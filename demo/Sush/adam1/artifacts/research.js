@@ -40,10 +40,10 @@ const fedexResponse = responses.fedexResponse;
 
 var parseString = require('xml2js').parseString;
 parseString(fedexResponse,{trim: true, explicitArray:false}, function (err, result) {
-    console.dir(result);
+    // console.dir(result);
     const details = result.TrackReply.TrackDetails;
     result = null;
-    console.log(details);
+    // console.log(details);
 });
 // const xpath = require('xpath')
 //   , dom = require('xmldom').DOMParser;

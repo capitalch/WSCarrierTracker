@@ -1,11 +1,12 @@
 'use strict';
-const http = require('http');
+// const http = require('http');
 const ibuki = require('./artifacts/ibuki');
 const config = require('./config');
+const settings = require('./artifacts/settings.json');
 // const db = require('./artifacts/db');
 const db1 = require('./artifacts/db1');
 const workbench = require('./artifacts/workbench');
-const app = require('./artifacts/app');
+// const app = require('./artifacts/app');
 const util = require('./artifacts/util');
 const research = require('./artifacts/research');
 // const test = require('./artifacts/util').test;
@@ -48,6 +49,10 @@ ibuki.filterOn('initialize').subscribe(d => {
 // ibuki.emit('test-zip:index>research');
 // ibuki.emit('test-merge:index>research');
 
-d.run(function() {
-    ibuki.emit('sql1-init:index:db');
-  });
+// d.run(function() {
+//     ibuki.emit('sql1-init:index:db1');
+//   });
+  ibuki.emit('sql1-init:index:db1');
+process.on('exit',(code)=>{
+    console.log('exit code:',code);
+})

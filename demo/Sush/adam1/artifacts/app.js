@@ -44,4 +44,5 @@ app.get('/status', function (req, res) {
 
 // Running the server 
 // app.listen(argv.p, _ => console.log('Running on port ' +  argv.p));
-app.listen(8080, _ => console.log('Running on port ' + 8080));
+
+// app.listen(8080, _ => console.log('Running on port ' + 8080));

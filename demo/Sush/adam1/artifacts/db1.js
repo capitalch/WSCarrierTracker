@@ -1,15 +1,17 @@
 'use strict';
 const sql = require('mssql');
-// const _ = require('lodash');
-const rx = require('rxjs');
-const operators = require('rxjs/operators');
+// const rx = require('rxjs');
+// const operators = require('rxjs/operators');
 const ibuki = require('./ibuki');
-const config = require('../config');
-const dbConfig = config.dbConfig;
-const pool = new sql.ConnectionPool(dbConfig);
+const settings = require('./settings.json');
+// const sqlCommands = require('./sql');
+// const config = require('../config');
+// const dbConfig = config.dbConfig;
+const pool = new sql.ConnectionPool(settings.db.config);
+
 let reqs = [];
-let req1 = null,
-    req2 = null;
+// let req1 = null,
+//     req2 = null;
 
 function disburse() {
     const req = reqs.find((e) => e.isAvailable);
@@ -37,32 +39,45 @@ ibuki.filterOn('sql1-update:util>db1').subscribe(d => {
     disburse();
 });
 
+ibuki.filterOn('get-big-object:self').subscribe(d => {
+    const req = new sql.Request(pool);
+    req.query(sqlCommands.getInfos, (err, result) => {
+        if (err) throw err;
+        console.log(result);
+        ibuki.emit('serial-process:db1:workbench',result.recordset);
+    });
+});
+
 try {
-    ibuki.filterOn('sql1-init:index:db').subscribe(
+    ibuki.filterOn('sql1-init:index:db1').subscribe(
         d => {
             // try {
-                //throw 'test error';
-               
-                pool.connect(err => {
+            //throw 'test error';
+            pool.connect(err=>{
+                console.log('Inside pool');
+                pool.close();
+            });
+            // pool.connect(err => {
 
-                    if (err) {
-                        console.log('1:', err)
-                    } else {
-                        ibuki.emit('serial-process:index:workbench');
-                        for (let i = 0; i < 10; i++) {
-                            const req = new sql.Request(pool);
-                            req.isAvailable = true;
-                            req.index = i;
-                            reqs.push(req);
-                        }
-                    }
-                });
+            //     if (err) {
+            //         console.log('1:', err)
+            //     } else {
+            //         // ibuki.emit('serial-process:db1:workbench');
+            //         // for (let i = 0; i < 10; i++) {
+            //         //     const req = new sql.Request(pool);
+            //         //     req.isAvailable = true;
+            //         //     req.index = i;
+            //         //     reqs.push(req);
+            //         // }
+            //         // ibuki.emit('get-big-object:self');
+            //     }
+            // });
             // } catch (err) {
             //     console.log(err);
             //     ibuki.emit('global-errors:any>any', err);
             // }
-        }, err => { 
-            console.log(err); 
+        }, err => {
+            console.log(err);
         }
 
     );
