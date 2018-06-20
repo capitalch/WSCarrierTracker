@@ -16,7 +16,8 @@
     "minimist": "^1.2.0",
     "mssql": "^4.1.0",
     "q": "^1.5.1",
-    "rxjs": "^6.2.0"
+    "rxjs": "^6.2.0",
+    "xml2js": "^0.4.19"
   },
   "devDependencies": {
     "jslint": "^0.12.0"

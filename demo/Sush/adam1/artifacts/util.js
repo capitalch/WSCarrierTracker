@@ -10,15 +10,18 @@ util.processCarrierSerially = (carrierInfo) => {
         .then(res => {
             //Save in database
             
-            config.buffer.next({ trackingNumber: carrierInfo.trackingNumber, name: carrierInfo.name });
-            ibuki.emit('sql1-update:util>db1');
+            
+           
             // flag && 
             config.prepared.next(1);
             flag=false;
             config.carrierCount--;
             config.responseCount++;
+            const unifiedInfo = { trackingNumber: carrierInfo.trackingNumber, name: carrierInfo.name, carrierCount: config.carrierCount };
+            config.buffer.next(unifiedInfo);
+            ibuki.emit('sql1-update:util>db1', unifiedInfo);
             console.log(carrierInfo.trackingNumber, 'name:', carrierInfo.name,
-                'Count: ', config.carrierCount, 'Queued:', (config.requestCount - config.responseCount - config.errorCount)
+                'carrier Count: ', config.carrierCount, 'Queued:', (config.requestCount - config.responseCount - config.errorCount)
                 , ' delay: ', config.piston
             );
         })

@@ -1,14 +1,41 @@
 'use strict';
 const sql = require('mssql');
+const rx = require('rxjs');
 const ibuki = require('./ibuki');
-
-
+const handler = require('./handler');
+const settings = require('../settings.json');
+const sqlCommands = require('./sql-commands');
 const config = require('./config');
 const dbConfig = config.dbConfig;
-// const pool = new sql.ConnectionPool(dbConfig);
+
+let db = {};
+handler.pool = new sql.ConnectionPool(settings.db);
 ibuki.filterOn('get-big-object:run>db').subscribe(d => {
-    throw { message: 'custom error', severity: 'fatal' };
+    handler.pool.connect(
+        err => {
+            if (err) {
+                ibuki.emit('app-error:any', handler.frameError(err, 'db', 'fatal', 1));
+            } else {
+                const req = new sql.Request(handler.pool);
+                req.query(sqlCommands.getInfos, (err, result) => {
+                    if (err) {
+                        ibuki.emit('app-error:any', handler.frameError(err, 'db', 'fatal', 2));
+                    } else {
+                        console.log(result.recordset);
+                    }
+                    // ibuki.emit('serial-process:db1:workbench', result.recordset);
+                });
+            }
+        }
+    )
 });
+module.exports = db;
+
+// const myInterval = rx.interval(5);
+//     handler.sub1  = myInterval.subscribe(x=>{
+//         console.log(x);
+//     });
+//     setTimeout(()=>handler.cleanup(), 100);
 // function preparePS(ps) {
 //     ps = new sql.PreparedStatement(pool);
 //     ps.input('id', sql.Int);
