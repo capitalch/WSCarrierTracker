@@ -15,10 +15,14 @@
         }
     },
     "carriers": {
-        "fedex": {
+        "fedEx": {
             "queue": 10,
-            "url": "",
-            "method": ""
+            "url": "https://gateway.fedex.com:443/xml",
+            "method": "",
+            "key":"JfSbK7tkzfRBMf8G",
+            "password":"dbc2GzV8LXPIcc7BQ4NPTMdUE",
+            "accountNumber":"510087348",
+            "meterNumber":"5690072"
         }
     }
 }

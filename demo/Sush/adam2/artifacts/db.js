@@ -1,12 +1,11 @@
 'use strict';
 const sql = require('mssql');
-const rx = require('rxjs');
+// const rx = require('rxjs');
 const ibuki = require('./ibuki');
 const handler = require('./handler');
 const settings = require('../settings.json');
 const sqlCommands = require('./sql-commands');
-const config = require('./config');
-const dbConfig = config.dbConfig;
+const workbench = require('./workbench');
 
 let db = {};
 handler.pool = new sql.ConnectionPool(settings.db);
@@ -21,9 +20,9 @@ ibuki.filterOn('get-big-object:run>db').subscribe(d => {
                     if (err) {
                         ibuki.emit('app-error:any', handler.frameError(err, 'db', 'fatal', 2));
                     } else {
-                        console.log(result.recordset);
+                        ibuki.emit('handle-big-object:db>workbench', result.recordset);
+                        // console.log(result.recordset);
                     }
-                    // ibuki.emit('serial-process:db1:workbench', result.recordset);
                 });
             }
         }
