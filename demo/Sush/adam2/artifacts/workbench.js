@@ -34,7 +34,7 @@ handler.sub1 = ibuki.filterOn('handle-big-object:db>workbench').subscribe(
 );
 
 function processCarrier(carrierInfos) {
-    const methodMap = {
+    const carrierMap = {
         fedEx: (x) => api.axiosPost(x)
         , gso: ""
     }
@@ -47,7 +47,7 @@ function processCarrier(carrierInfos) {
         )
         .subscribe(
             x => {
-                methodMap[x.carrierName](x);
+                carrierMap[x.carrierName](x);
                 // config.requestCount++;
                 // util.processCarrier(x);
                 // api.bind axiosPost(x);

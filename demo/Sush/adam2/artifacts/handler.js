@@ -3,6 +3,7 @@ const ibuki = require('./ibuki');
 const domain = require('domain');
 const rx = require('rxjs');
 let handler = {};
+handler.buffer = new rx.Subject();
 //process is global variable. Let the domain error ride over process variable
 // so that it is available everywhere. Domain error is unhandled error anywhere in application
 process.domainError = domain.create();
@@ -47,6 +48,7 @@ handler.cleanup = () => {
     handler.sub2 && handler.sub2.unsubscribe();
     handler.sub3 && handler.sub3.unsubscribe();
     handler.sub4 && handler.sub4.unsubscribe();
+    handler.sub5 && handler.sub5.unsubscribe();
     handler.pool && handler.pool.close();
 }
 

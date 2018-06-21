@@ -21,8 +21,9 @@ util.processCarrierResponse = (carrierInfo) => {
                         , 'util', 'info', 4))
                 } else {
                     //things are fine. Create unified json object and push it to buffer to be updated in database
-                    console.log(carrierInfo.trackingNumber, ' ', result.TrackReply);
+                    // console.log(carrierInfo.trackingNumber, ' ', result.TrackReply);
                     carrierInfo.parsedResponse = result.TrackReply;
+                    pushUnifiedJson(carrierInfo);
                 }
             }
             // const details = result.TrackReply.TrackDetails;
@@ -30,8 +31,22 @@ util.processCarrierResponse = (carrierInfo) => {
         });
 }
 
-function createUnifiedJson(carrierInfo) {
-    
+function pushUnifiedJson(carrierInfo) {
+    const carrierMap = {
+        fedEx: (x) => {
+            const unifiedJson = {
+                name: 'fedEx'
+                , trackingNumber: x.trackingNumber
+                , status: 'delivered'
+                , dateTime: Date.now()
+            };
+            return (unifiedJson);
+        }
+        , ups: (x) => { }
+        , gso: (x) => { }
+        , tps: (x) => { }
+    }
+    handler.buffer.next(carrierMap[carrierInfo.carrierName](carrierInfo));
 }
 
 
