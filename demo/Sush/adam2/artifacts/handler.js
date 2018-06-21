@@ -20,7 +20,7 @@ process.domainError.on('error', function (err) {
 });
 
 process.on('uncaughtException', function (err) {
-    console.log('Caught exception: ', err);
+    console.log('Caught exception: ', err.stack);
 });
 
 process.on('exit', function (code) {
@@ -43,7 +43,7 @@ ibuki.filterOn('app-error:any').subscribe(d => {
         handler.cleanup();
         process.exit(100);
     } else {
-        // console.log(err);
+        console.log(err);
     }
     // Use telemetry to log error
 });

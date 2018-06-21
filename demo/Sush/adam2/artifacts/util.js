@@ -8,7 +8,17 @@ const parseString = require('xml2js').parseString;
 let util = {};
 
 util.processCarrierResponse = (carrierInfo) => {
-    parseString(carrierInfo.response
+
+    const carriermap = {
+        fedEx: processFedEx
+        , ups: processUps
+    }
+
+    carriermap[carrierInfo.carrierName](carrierInfo);
+}
+
+function processFedEx(xml) {
+    parseString(x.response
         , { trim: true, explicitArray: false }
         , function (err, result) {
             if (err) {
@@ -17,73 +27,105 @@ util.processCarrierResponse = (carrierInfo) => {
                 const notifications = result.TrackReply.Notifications;
                 if (notifications.Severity === 'ERROR') {
                     ibuki.emit('app-error:any', handler.frameError(
-                        { name: 'apiCallError', message: carrierInfo.trackingNumber + ' ' + notifications.LocalizedMessage }
+                        { name: 'apiCallError', message: x.trackingNumber + ' ' + notifications.LocalizedMessage }
                         , 'util', 'info', 4))
                 } else {
                     //things are fine. Create unified json object and push it to buffer to be updated in database
-                    // console.log(carrierInfo.trackingNumber, ' ', result.TrackReply);
-                    carrierInfo.parsedResponse = result.TrackReply;
-                    pushUnifiedJson(carrierInfo);
+                    const unifiedJson = {
+                        name: 'fedEx'
+                        , trackingNumber: x.trackingNumber
+                        , status: 'delivered'
+                        , dateTime: Date.now()
+                    };
+                    handler.buffer.next(unifiedJson);
+                    // carrierInfo.parsedResponse = result.TrackReply;
+                    // pushUnifiedJson(carrierInfo);
                 }
             }
-            // const details = result.TrackReply.TrackDetails;
-            // console.log(details);
         });
-}
+};
 
-function pushUnifiedJson(carrierInfo) {
-    const carrierMap = {
-        fedEx: (x) => {
-            const unifiedJson = {
-                name: 'fedEx'
-                , trackingNumber: x.trackingNumber
-                , status: 'delivered'
-                , dateTime: Date.now()
-            };
-            return (unifiedJson);
+function processUps(x) {
+    parseString(x.response
+        , { trim: true, explicitArray: false }
+        , function (err, result) {
+            if (err) {
+                ibuki.emit('app-error:any', handler.frameError(err, 'util', 'info', 5))
+            } else {
+                const response = result.TrackResponse.Response;
+                if (response.ResponseStatusCode === '0') {
+                    const errorDescription = response.Error.ErrorDescription
+                    ibuki.emit('app-error:any', handler.frameError(
+                        { name: 'apiCallError', message: x.trackingNumber + ' ' + errorDescription }
+                        , 'util', 'info', 4))
+                } else {
+                    const unifiedJson = {
+                        name: 'fedEx'
+                        , trackingNumber: x.trackingNumber
+                        , status: 'delivered'
+                        , dateTime: Date.now()
+                    };
+                    handler.buffer.next(unifiedJson);
+                    // carrierInfo.parsedResponse = response;
+                }
+            }
         }
-        , ups: (x) => { }
-        , gso: (x) => { }
-        , tps: (x) => { }
-    }
-    handler.buffer.next(carrierMap[carrierInfo.carrierName](carrierInfo));
+    )
 }
 
+// function pushUnifiedJson(carrierInfo) {
+//     const carrierMap = {
+//         fedEx: (x) => {
+//             const unifiedJson = {
+//                 name: 'fedEx'
+//                 , trackingNumber: x.trackingNumber
+//                 , status: 'delivered'
+//                 , dateTime: Date.now()
+//             };
+//             return (unifiedJson);
+//         }
+//         , ups: (x) => { }
+//         , gso: (x) => { }
+//         , tps: (x) => { }
+//     }
+//     handler.buffer.next(carrierMap[carrierInfo.carrierName](carrierInfo));
+// }
 
 
-util.xmlToJson = (xml) => {
-    parseString(fedexResponse, { trim: true, explicitArray: false }, function (err, result) {
-        // console.dir(result);
-        const details = result.TrackReply.TrackDetails;
-        result = null;
-        // console.log(details);
-    });
-}
 
-util.processCarrierSerially = (carrierInfo) => {
-    axios.get(carrierInfo.url)
-        .then(res => {
-            //Save in database
+// util.xmlToJson = (xml) => {
+//     parseString(fedexResponse, { trim: true, explicitArray: false }, function (err, result) {
+//         // console.dir(result);
+//         const details = result.TrackReply.TrackDetails;
+//         result = null;
+//         // console.log(details);
+//     });
+// }
 
-            config.buffer.next({ trackingNumber: carrierInfo.trackingNumber, name: carrierInfo.name });
-            ibuki.emit('sql1-update:util>db1');
-            // flag && 
-            // config.prepared.next(1);
-            // flag=false;
-            // config.carrierCount--;
-            // config.responseCount++;
-            // console.log(carrierInfo.trackingNumber, 'name:', carrierInfo.name,
-            //     'Count: ', config.carrierCount, 'Queued:', (config.requestCount - config.responseCount - config.errorCount)
-            //     , ' delay: ', config.piston
-            // );
-        })
-        .catch(err => {
-            //log in database
-            // config.carrierCount--;
-            // config.errorCount++;
-            // console.log('Error:', 'Count:', config.carrierCount, 'Error:', config.errorCount, 'Queued:', (config.requestCount - config.responseCount - config.errorCount));
-        });
-}
+// util.processCarrierSerially = (carrierInfo) => {
+//     axios.get(carrierInfo.url)
+//         .then(res => {
+//             //Save in database
+
+//             config.buffer.next({ trackingNumber: carrierInfo.trackingNumber, name: carrierInfo.name });
+//             ibuki.emit('sql1-update:util>db1');
+//             // flag && 
+//             // config.prepared.next(1);
+//             // flag=false;
+//             // config.carrierCount--;
+//             // config.responseCount++;
+//             // console.log(carrierInfo.trackingNumber, 'name:', carrierInfo.name,
+//             //     'Count: ', config.carrierCount, 'Queued:', (config.requestCount - config.responseCount - config.errorCount)
+//             //     , ' delay: ', config.piston
+//             // );
+//         })
+//         .catch(err => {
+//             //log in database
+//             // config.carrierCount--;
+//             // config.errorCount++;
+//             // console.log('Error:', 'Count:', config.carrierCount, 'Error:', config.errorCount, 'Queued:', (config.requestCount - config.responseCount - config.errorCount));
+//         });
+// }
 
 
 module.exports = util;
