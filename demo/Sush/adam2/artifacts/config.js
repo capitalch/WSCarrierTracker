@@ -14,6 +14,6 @@ config.dbConfig = {
         min: 0,
         idleTimeoutMillis: 30000
     }
-}
-
+};
+config.piston = 10;
 module.exports = config;

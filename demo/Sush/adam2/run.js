@@ -7,5 +7,3 @@ const db = require('./artifacts/db');
 process.domainError.run(function () {
     ibuki.emit('get-big-object:run>db');
 });
-
-

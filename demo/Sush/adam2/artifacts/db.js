@@ -1,6 +1,5 @@
 'use strict';
 const sql = require('mssql');
-// const rx = require('rxjs');
 const ibuki = require('./ibuki');
 const handler = require('./handler');
 const settings = require('../settings.json');
@@ -9,7 +8,7 @@ const workbench = require('./workbench');
 
 let db = {};
 handler.pool = new sql.ConnectionPool(settings.db);
-ibuki.filterOn('get-big-object:run>db').subscribe(d => {
+handler.sub0 = ibuki.filterOn('get-big-object:run>db').subscribe(d => {
     handler.pool.connect(
         err => {
             if (err) {
@@ -22,6 +21,7 @@ ibuki.filterOn('get-big-object:run>db').subscribe(d => {
                     } else {
                         ibuki.emit('handle-big-object:db>workbench', result.recordset);
                         // console.log(result.recordset);
+                        // handler.cleanup();
                     }
                 });
             }

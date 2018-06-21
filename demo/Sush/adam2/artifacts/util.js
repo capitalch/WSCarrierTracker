@@ -1,58 +1,115 @@
 'use strict';
 const axios = require('axios');
 const ibuki = require('./ibuki');
-const config = require('../config');
-let flag = true;
+const handler = require('./handler');
+const config = require('./config');
+const parseString = require('xml2js').parseString;
+
 let util = {};
+
+util.processCarrierResponse = (carrierInfo) => {
+    parseString(carrierInfo.response
+        , { trim: true, explicitArray: false }
+        , function (err, result) {
+            if (err) {
+                ibuki.emit('app-error:any', handler.frameError(err, 'util', 'info', 3))
+            } else {
+                const notifications = result.TrackReply.Notifications;
+                if (notifications.Severity === 'ERROR') {
+                    ibuki.emit('app-error:any', handler.frameError(
+                        { name: 'apiCallError', message: carrierInfo.trackingNumber + ' ' + notifications.LocalizedMessage }
+                        , 'util', 'info', 4))
+                } else {
+                    //things are fine. Create unified json object and push it to buffer to be updated in database
+                    console.log(carrierInfo.trackingNumber, ' ', result.TrackReply);
+                    carrierInfo.parsedResponse = result.TrackReply;
+                }
+            }
+            // const details = result.TrackReply.TrackDetails;
+            // console.log(details);
+        });
+}
+
+function createUnifiedJson(carrierInfo) {
+    
+}
+
+
+
+util.xmlToJson = (xml) => {
+    parseString(fedexResponse, { trim: true, explicitArray: false }, function (err, result) {
+        // console.dir(result);
+        const details = result.TrackReply.TrackDetails;
+        result = null;
+        // console.log(details);
+    });
+}
 
 util.processCarrierSerially = (carrierInfo) => {
     axios.get(carrierInfo.url)
         .then(res => {
             //Save in database
-            
+
             config.buffer.next({ trackingNumber: carrierInfo.trackingNumber, name: carrierInfo.name });
             ibuki.emit('sql1-update:util>db1');
             // flag && 
-            config.prepared.next(1);
-            flag=false;
-            config.carrierCount--;
-            config.responseCount++;
-            console.log(carrierInfo.trackingNumber, 'name:', carrierInfo.name,
-                'Count: ', config.carrierCount, 'Queued:', (config.requestCount - config.responseCount - config.errorCount)
-                , ' delay: ', config.piston
-            );
+            // config.prepared.next(1);
+            // flag=false;
+            // config.carrierCount--;
+            // config.responseCount++;
+            // console.log(carrierInfo.trackingNumber, 'name:', carrierInfo.name,
+            //     'Count: ', config.carrierCount, 'Queued:', (config.requestCount - config.responseCount - config.errorCount)
+            //     , ' delay: ', config.piston
+            // );
         })
         .catch(err => {
             //log in database
-            config.carrierCount--;
-            config.errorCount++;
-            console.log('Error:', 'Count:', config.carrierCount, 'Error:', config.errorCount, 'Queued:', (config.requestCount - config.responseCount - config.errorCount));
+            // config.carrierCount--;
+            // config.errorCount++;
+            // console.log('Error:', 'Count:', config.carrierCount, 'Error:', config.errorCount, 'Queued:', (config.requestCount - config.responseCount - config.errorCount));
         });
 }
 
-function getRandomInt(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
-util.getRandomDelay = () => {
-    const rnd = getRandomInt(0, 100);
-    return (rx.of(rnd).pipe(operators.delay(rnd)));
-}
-
-util.getCarrierInfos = (name, count) => {
-    let arr = [];
-    for (let i = 0; i < count; i++) {
-        let obj = {
-            trackingNumber: getRandomInt(1000, 10000),
-            url: 'http://localhost:8081/test',
-            name: name
-        }
-        arr.push(obj);
-    }
-    return (arr);
-}
 
 module.exports = util;
+
+// handler.sub3 = ibuki.filterOn('parse-api-response:api>util').subscribe(d => {
+//     let carrierInfo = d.data;
+//     parseString(carrierInfo.response
+//         , { trim: true, explicitArray: false }
+//         , function (err, result) {
+//             if (err) {
+//                 ibuki.emit('app-error:any', handler.frameError(err, 'util', 'info', 3))
+//             } else {
+//                 const notifications = result.TrackReply.Notifications;
+//                 if (notifications.Severity === 'ERROR') {
+//                     ibuki.emit('app-error:any', handler.frameError(
+//                         { name: 'apiCallError', message: carrierInfo.trackingNumber + ' ' + notifications.LocalizedMessage }
+//                         , 'util', 'info', 4))
+//                 } else {
+//                     //things are fine. Create unified json object and push it to buffer to be updated in database
+//                     console.log(carrierInfo.trackingNumber, ' ', result.TrackReply);
+//                     carrierInfo.parsedResponse = result.TrackReply;
+//                 }
+//             }
+//             // const details = result.TrackReply.TrackDetails;
+//             // console.log(details);
+//         });
+// });
+
+// util.getCarrierInfos = (name, count) => {
+//     let arr = [];
+//     for (let i = 0; i < count; i++) {
+//         let obj = {
+//             trackingNumber: getRandomInt(1000, 10000),
+//             url: 'http://localhost:8081/test',
+//             name: name
+//         }
+//         arr.push(obj);
+//     }
+//     return (arr);
+// }
+
 // util.processCarrier = (carrierObject) => {
 //     const carrierInfo = carrierObject.carrierInfo;
 //     let index = carrierObject.index;

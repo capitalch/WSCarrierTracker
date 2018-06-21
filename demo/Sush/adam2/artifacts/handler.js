@@ -28,6 +28,8 @@ ibuki.filterOn('app-error:any').subscribe(d => {
         console.log(err);
         handler.cleanup();
         process.exit(100);
+    } else {
+        // console.log(err);
     }
     // Use telemetry to log error
 });
@@ -40,7 +42,11 @@ handler.frameError = (err, location, severity, index) => {
 }
 handler.cleanup = () => {
     console.log('cleaning up');
+    handler.sub0 && handler.sub0.unsubscribe();
     handler.sub1 && handler.sub1.unsubscribe();
+    handler.sub2 && handler.sub2.unsubscribe();
+    handler.sub3 && handler.sub3.unsubscribe();
+    handler.sub4 && handler.sub4.unsubscribe();
     handler.pool && handler.pool.close();
 }
 

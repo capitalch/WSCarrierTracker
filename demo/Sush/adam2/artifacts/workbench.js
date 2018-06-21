@@ -4,8 +4,9 @@ const handler = require('./handler');
 const settings = require('../settings.json');
 const rx = require('rxjs');
 const operators = require('rxjs/operators');
+const api = require('./api');
 // const util = require('./util');
-// var config = require('../config');
+var config = require('./config');
 
 var workbench = {};
 var counter = 0;
@@ -21,20 +22,44 @@ handler.sub1 = ibuki.filterOn('handle-big-object:db>workbench').subscribe(
             x.url = settings.carriers.fedEx.url;
             x.param = `<TrackRequest xmlns='http://fedex.com/ws/track/v3'><WebAuthenticationDetail><UserCredential><Key>${settings.carriers.fedEx.key}</Key><Password>${settings.carriers.fedEx.password}</Password></UserCredential></WebAuthenticationDetail><ClientDetail><AccountNumber>${settings.carriers.fedEx.accountNumber}</AccountNumber><MeterNumber>${settings.carriers.fedEx.meterNumber}</MeterNumber></ClientDetail><TransactionDetail><CustomerTransactionId>***Track v8 Request using VB.NET***</CustomerTransactionId></TransactionDetail><Version><ServiceId>trck</ServiceId><Major>3</Major><Intermediate>0</Intermediate><Minor>0</Minor></Version><PackageIdentifier><Value>${x.trackingNumber}</Value><Type>TRACKING_NUMBER_OR_DOORTAG</Type></PackageIdentifier><IncludeDetailedScans>1</IncludeDetailedScans></TrackRequest>`;
             x.method = 'axiosPost';
+            x.carrierName = 'fedEx';
             return (x);
         });
+        processCarrier(fedEx);
         const ups = bigObject
             .filter(x => (x.shipping === 'TMC') || (x.shipping === 'UPS'));
         const gso = bigObject.filter(x => (x.shipping === 'GSO'));
         const tps = bigObject.filter(x => (x.shipping === 'TPS'));
     }
 );
+
+function processCarrier(carrierInfos) {
+    const methodMap = {
+        fedEx: (x) => api.axiosPost(x)
+        , gso: ""
+    }
+    handler.sub2 = rx.from(carrierInfos)
+        .pipe(
+            operators
+                .concatMap(x => rx.of(x)
+                    .pipe(operators
+                        .delay(config.piston)))
+        )
+        .subscribe(
+            x => {
+                methodMap[x.carrierName](x);
+                // config.requestCount++;
+                // util.processCarrier(x);
+                // api.bind axiosPost(x);
+            }
+        );
+}
 //${carrierData[i].External}
-        // const fedExPacket = {
-        //     url: settings.carriers.fedEx.url,
-        //     param: `<TrackRequest xmlns='http://fedex.com/ws/track/v3'><WebAuthenticationDetail><UserCredential><Key>${settings.carriers.fedEx.key}</Key><Password>${settings.carriers.fedEx.password}</Password></UserCredential></WebAuthenticationDetail><ClientDetail><AccountNumber>${settings.carriers.fedEx.accountNumber}</AccountNumber><MeterNumber>${settings.carriers.fedEx.meterNumber}</MeterNumber></ClientDetail><TransactionDetail><CustomerTransactionId>***Track v8 Request using VB.NET***</CustomerTransactionId></TransactionDetail><Version><ServiceId>trck</ServiceId><Major>3</Major><Intermediate>0</Intermediate><Minor>0</Minor></Version><PackageIdentifier><Value></Value><Type>TRACKING_NUMBER_OR_DOORTAG</Type></PackageIdentifier><IncludeDetailedScans>1</IncludeDetailedScans></TrackRequest>`,
-        //     method: ''
-        // }
+// const fedExPacket = {
+//     url: settings.carriers.fedEx.url,
+//     param: `<TrackRequest xmlns='http://fedex.com/ws/track/v3'><WebAuthenticationDetail><UserCredential><Key>${settings.carriers.fedEx.key}</Key><Password>${settings.carriers.fedEx.password}</Password></UserCredential></WebAuthenticationDetail><ClientDetail><AccountNumber>${settings.carriers.fedEx.accountNumber}</AccountNumber><MeterNumber>${settings.carriers.fedEx.meterNumber}</MeterNumber></ClientDetail><TransactionDetail><CustomerTransactionId>***Track v8 Request using VB.NET***</CustomerTransactionId></TransactionDetail><Version><ServiceId>trck</ServiceId><Major>3</Major><Intermediate>0</Intermediate><Minor>0</Minor></Version><PackageIdentifier><Value></Value><Type>TRACKING_NUMBER_OR_DOORTAG</Type></PackageIdentifier><IncludeDetailedScans>1</IncludeDetailedScans></TrackRequest>`,
+//     method: ''
+// }
 // let sub2 = ibuki.filterOn('serial-process:index:workbench').subscribe(
 //     d => {
 //         let carrierInfos = util.getCarrierInfos('Fedex', 10000);
