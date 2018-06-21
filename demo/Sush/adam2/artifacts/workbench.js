@@ -5,41 +5,67 @@ const settings = require('../settings.json');
 const rx = require('rxjs');
 const operators = require('rxjs/operators');
 const api = require('./api');
-// const util = require('./util');
-// var config = require('./config');
 
-var workbench = {};
-// var counter = 0;
-// var subject = new rx.Subject();
+let workbench = {};
 
 handler.sub1 = ibuki.filterOn('handle-big-object:db>workbench').subscribe(
     d => {
         const bigObject = d.data;
-        const fedEx = bigObject.filter(x =>
-            (x.shipping === 'FEX') ||
-            (x.shipping === 'FCC')
-        ).map(x => {
-            x.url = settings.carriers.fedEx.url;
-            x.param = `<TrackRequest xmlns='http://fedex.com/ws/track/v3'><WebAuthenticationDetail><UserCredential><Key>${settings.carriers.fedEx.key}</Key><Password>${settings.carriers.fedEx.password}</Password></UserCredential></WebAuthenticationDetail><ClientDetail><AccountNumber>${settings.carriers.fedEx.accountNumber}</AccountNumber><MeterNumber>${settings.carriers.fedEx.meterNumber}</MeterNumber></ClientDetail><TransactionDetail><CustomerTransactionId>***Track v8 Request using VB.NET***</CustomerTransactionId></TransactionDetail><Version><ServiceId>trck</ServiceId><Major>3</Major><Intermediate>0</Intermediate><Minor>0</Minor></Version><PackageIdentifier><Value>${x.trackingNumber}</Value><Type>TRACKING_NUMBER_OR_DOORTAG</Type></PackageIdentifier><IncludeDetailedScans>1</IncludeDetailedScans></TrackRequest>`;
-            x.method = 'axiosPost';
-            x.carrierName = 'fedEx';
-            return (x);
-        });
-        processCarrier(fedEx);
+        const fedEx = bigObject
+            .filter(x =>
+                (x.shipping === 'FEX') ||
+                (x.shipping === 'FCC')
+            ).map(x => {
+                x.url = settings.carriers.fedEx.url;
+                x.param = `<TrackRequest xmlns='http://fedex.com/ws/track/v3'><WebAuthenticationDetail><UserCredential><Key>${settings.carriers.fedEx.key}</Key><Password>${settings.carriers.fedEx.password}</Password></UserCredential></WebAuthenticationDetail><ClientDetail><AccountNumber>${settings.carriers.fedEx.accountNumber}</AccountNumber><MeterNumber>${settings.carriers.fedEx.meterNumber}</MeterNumber></ClientDetail><TransactionDetail><CustomerTransactionId>***Track v8 Request using VB.NET***</CustomerTransactionId></TransactionDetail><Version><ServiceId>trck</ServiceId><Major>3</Major><Intermediate>0</Intermediate><Minor>0</Minor></Version><PackageIdentifier><Value>${x.trackingNumber}</Value><Type>TRACKING_NUMBER_OR_DOORTAG</Type></PackageIdentifier><IncludeDetailedScans>1</IncludeDetailedScans></TrackRequest>`;
+                x.method = 'axiosPost';
+                x.carrierName = 'fedEx';
+                return (x);
+            });
+
         const ups = bigObject
-            .filter(x => (x.shipping === 'TMC') || (x.shipping === 'UPS'));
-        const gso = bigObject.filter(x => (x.shipping === 'GSO'));
-        const tps = bigObject.filter(x => (x.shipping === 'TPS'));
+            .filter(x =>
+                (x.shipping === 'TMC') ||
+                (x.shipping === 'UPS'))
+            .map(x => {
+                x.url = settings.carriers.ups.url;
+                x.param = `<?xml version="1.0"?><AccessRequest xml:lang="en-US"><AccessLicenseNumber>${settings.carriers.ups.accessLicenseNumber}</AccessLicenseNumber><UserId>${settings.carriers.ups.userId}</UserId><Password>${settings.carriers.ups.password}</Password></AccessRequest><?xml version="1.0"?><TrackRequest xml:lang="en-US"><Request><TransactionReference><XpciVersion>1.0001</XpciVersion></TransactionReference><RequestAction>Track</RequestAction><RequestOption>1</RequestOption></Request><TrackingNumber>${x.trackingNumber}</TrackingNumber></TrackRequest>`;
+                x.method = 'axiosPost';
+                x.carrierName = 'ups';
+                return (x);
+            });
+
+        const gso = bigObject
+            .filter(
+                x => (
+                    x.shipping === 'GSO'
+                ))
+        // .map(x => {
+        //     x.url = `https://api.gso.com/Rest/v1/TrackShipment?TrackingNumber=${carrierData[i].External}&AccountNumber=50874`
+        // })
+        ;
+
+        const tps = bigObject
+            .filter(x => (
+                x.shipping === 'TPS'
+            ))
+            .map(x => {
+                x.url = `${settings.carriers.tps.url}?API=TrackV2&XML=<TrackFieldRequest USERID="${settings.carriers.tps.userId}"><TrackID ID="${x.trackingNumber}"></TrackID></TrackFieldRequest>`;
+                x.method = 'axiosGet';
+                x.carrierName = 'tps';
+                return (x);
+            });
+
+        // ibuki.emit('process-carrier:self', fedEx);
+        ibuki.emit('process-carrier:self', ups);
+        // ibuki.emit('process-carrier:self',gso);
+        // ibuki.emit('process-carrier:self', tps);
         handler.closeIfIdle();
     }
 );
 
-
-function processCarrier(carrierInfos) {
-    const carrierMap = {
-        fedEx: (x) => api.axiosPost(x),
-        gso: ""
-    }
+handler.sub8 = ibuki.filterOn('process-carrier:self').subscribe(d => {
+    const carrierInfos = d.data;
     handler.carrierCount = handler.carrierCount + carrierInfos.length;
     console.log('db requests:', handler.dbRequests, ' carrier count:', handler.carrierCount);
     handler.sub2 = rx.from(carrierInfos)
@@ -51,14 +77,42 @@ function processCarrier(carrierInfos) {
         )
         .subscribe(
             x => {
-                carrierMap[x.carrierName](x);
+                api[x.method](x);
+                // carrierMap[x.carrierName](x);
                 // config.requestCount++;
                 // util.processCarrier(x);
                 // api.bind axiosPost(x);
             }
         );
-}
+});
+
 module.exports = workbench;
+// function processCarrier(carrierInfos) {
+
+//     handler.carrierCount = handler.carrierCount + carrierInfos.length;
+//     console.log('db requests:', handler.dbRequests, ' carrier count:', handler.carrierCount);
+//     handler.sub2 = rx.from(carrierInfos)
+//         .pipe(
+//             operators
+//             .concatMap(x => rx.of(x)
+//                 .pipe(operators
+//                     .delay(settings.carriers[x.carrierName].piston)))
+//         )
+//         .subscribe(
+//             x => {
+//                 api[x.method](x);
+//                 // carrierMap[x.carrierName](x);
+//                 // config.requestCount++;
+//                 // util.processCarrier(x);
+//                 // api.bind axiosPost(x);
+//             }
+//         );
+// }
+// const carrierMap = {
+//     fedEx: (x) => api[x.method](x)
+//     // gso: ""
+//     , ups: (x) => api[x.method](x)
+// }
 //${carrierData[i].External}
 // const fedExPacket = {
 //     url: settings.carriers.fedEx.url,

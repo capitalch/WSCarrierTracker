@@ -1,3 +1,43 @@
+//Adam2
+1. Carrier specific changes in workbench, db
+2. Database update
+3. Info and error logging
+4. Error handling test
+
+Process
+1. Get first 5 digits of tracking no. That is account no. Get user name, password as per following logic
+2. Get token by calling http get request with header. Token will be available in Token header of response. Body will have "authorized". https://api.gso.com/Rest/v1/token, Headers will be: AccountNumber,UserName, Password
+3. Tracking info url is: https://api.gso.com/Rest/v1/TrackShipment?TrackingNumber=508741111116172&AccountNumber=50874. Two headers: 1) Token 2) Content-Type: application/json
+
+
+
+
+UPS
+If AccountNo = "50308" Then
+            gsotrackrequest.AccountNumber = AccountNo
+            userinfo.UserName = "Wineshipping"
+            userinfo.Password = "WS50308"
+        ElseIf AccountNo = "50874" Then
+            gsotrackrequest.AccountNumber = AccountNo
+            userinfo.UserName = "VintageLogistics"
+            userinfo.Password = "VL50874"
+        ElseIf AccountNo = "60278" Then
+            gsotrackrequest.AccountNumber = AccountNo
+            userinfo.UserName = "Wineshipping"
+            userinfo.Password = "WS60278"
+        ElseIf AccountNo = "11111" Then
+            gsotrackrequest.AccountNumber = "50874"
+            userinfo.UserName = "VintageLogistics"
+            userinfo.Password = "VL50874"
+        End If
+
+
+https://api.gso.com/Rest/v1/token
+
+
+
+
+
 //adam2
 1. Create test database
 2. Get Big object

@@ -16,14 +16,31 @@
     },
     "carriers": {
         "fedEx": {
-            "piston":20,
+            "piston": 20,
             "queue": 10,
             "url": "https://gateway.fedex.com:443/xml",
             "method": "",
-            "key":"JfSbK7tkzfRBMf8G",
-            "password":"dbc2GzV8LXPIcc7BQ4NPTMdUE",
-            "accountNumber":"510087348",
-            "meterNumber":"5690072"
+            "key": "JfSbK7tkzfRBMf8G",
+            "password": "dbc2GzV8LXPIcc7BQ4NPTMdUE",
+            "accountNumber": "510087348",
+            "meterNumber": "5690072"
+        },
+        "ups": {
+            "url": "https://onlinetools.ups.com/ups.app/xml/Track",
+            "accessLicenseNumber": "FC312F9BE62AFF90",
+            "userId": "UPSwineshipping",
+            "password": "easyship",
+            "piston": 20
+        },
+        "gso": {
+            "url": "https://api.gso.com/Rest/v1/TrackShipment",
+            "accountNumber": "",
+            "userName": "",
+            "password": ""
+        },
+        "tps": {
+            "url":"http://production.shippingapis.com/ShippingAPI.dll",
+            "userId":"487WINES7756"
         }
     }
 }
