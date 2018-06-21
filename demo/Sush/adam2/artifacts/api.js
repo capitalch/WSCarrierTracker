@@ -2,6 +2,7 @@
 const axios = require('axios');
 const ibuki = require('./ibuki');
 const util = require('./util');
+const handler = require('./handler');
 
 let api = {};
 api.axiosPost = (carrierInfo) => {
@@ -9,6 +10,7 @@ api.axiosPost = (carrierInfo) => {
         .then(res => {
             //Save in database
             carrierInfo.response = res.data;
+            handler.carrierCount--;
             util.processCarrierResponse(carrierInfo);
             // ibuki.emit('parse-api-response:api>util', carrierInfo);
             // config.buffer.next({ trackingNumber: carrierInfo.trackingNumber, name: carrierInfo.carrierName });
@@ -25,6 +27,7 @@ api.axiosPost = (carrierInfo) => {
             // );
         })
         .catch(err => {
+            handler.carrierCount--;
             //log in database
             // config.carrierCount--;
             // config.errorCount++;

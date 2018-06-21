@@ -9,13 +9,14 @@
             "encrypt": true
         },
         "pool": {
-            "max": 10,
+            "max": 30,
             "min": 0,
             "idleTimeoutMillis": 30000
         }
     },
     "carriers": {
         "fedEx": {
+            "piston":20,
             "queue": 10,
             "url": "https://gateway.fedex.com:443/xml",
             "method": "",

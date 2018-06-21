@@ -2,8 +2,12 @@
 const ibuki = require('./ibuki');
 const domain = require('domain');
 const rx = require('rxjs');
+
 let handler = {};
 handler.buffer = new rx.Subject();
+handler.dbRequests = 0;
+handler.apiRequests = 0;
+handler.carrierCount = 0;
 //process is global variable. Let the domain error ride over process variable
 // so that it is available everywhere. Domain error is unhandled error anywhere in application
 process.domainError = domain.create();
@@ -22,6 +26,15 @@ process.on('uncaughtException', function (err) {
 process.on('exit', function (code) {
     console.log('Exiting WSCarrierTracker:', code);
 });
+
+handler.closeIfIdle = () => {
+    const myInterval = rx.interval(2000);
+    handler.sub6 = myInterval.subscribe(x => {
+        (handler.dbRequests === 0) &&
+        (handler.carrierCount === 0) &&
+        (handler.cleanup());
+    });
+}
 
 ibuki.filterOn('app-error:any').subscribe(d => {
     const err = d.data;
@@ -49,6 +62,8 @@ handler.cleanup = () => {
     handler.sub3 && handler.sub3.unsubscribe();
     handler.sub4 && handler.sub4.unsubscribe();
     handler.sub5 && handler.sub5.unsubscribe();
+    handler.sub6 && handler.sub6.unsubscribe();
+    handler.sub7 && handler.sub7.unsubscribe();
     handler.pool && handler.pool.close();
 }
 

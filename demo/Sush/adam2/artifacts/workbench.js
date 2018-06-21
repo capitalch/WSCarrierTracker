@@ -6,11 +6,11 @@ const rx = require('rxjs');
 const operators = require('rxjs/operators');
 const api = require('./api');
 // const util = require('./util');
-var config = require('./config');
+// var config = require('./config');
 
 var workbench = {};
-var counter = 0;
-var subject = new rx.Subject();
+// var counter = 0;
+// var subject = new rx.Subject();
 
 handler.sub1 = ibuki.filterOn('handle-big-object:db>workbench').subscribe(
     d => {
@@ -30,20 +30,24 @@ handler.sub1 = ibuki.filterOn('handle-big-object:db>workbench').subscribe(
             .filter(x => (x.shipping === 'TMC') || (x.shipping === 'UPS'));
         const gso = bigObject.filter(x => (x.shipping === 'GSO'));
         const tps = bigObject.filter(x => (x.shipping === 'TPS'));
+        handler.closeIfIdle();
     }
 );
 
+
 function processCarrier(carrierInfos) {
     const carrierMap = {
-        fedEx: (x) => api.axiosPost(x)
-        , gso: ""
+        fedEx: (x) => api.axiosPost(x),
+        gso: ""
     }
+    handler.carrierCount = handler.carrierCount + carrierInfos.length;
+    console.log('db requests:', handler.dbRequests, ' carrier count:', handler.carrierCount);
     handler.sub2 = rx.from(carrierInfos)
         .pipe(
             operators
-                .concatMap(x => rx.of(x)
-                    .pipe(operators
-                        .delay(config.piston)))
+            .concatMap(x => rx.of(x)
+                .pipe(operators
+                    .delay(settings.carriers[x.carrierName].piston)))
         )
         .subscribe(
             x => {
@@ -54,6 +58,7 @@ function processCarrier(carrierInfos) {
             }
         );
 }
+module.exports = workbench;
 //${carrierData[i].External}
 // const fedExPacket = {
 //     url: settings.carriers.fedEx.url,
@@ -116,7 +121,6 @@ function processCarrier(carrierInfos) {
 //         });
 //     }
 // )
-module.exports = workbench;
 
 // console.log('started');
 // rx.from(carrierInfos)

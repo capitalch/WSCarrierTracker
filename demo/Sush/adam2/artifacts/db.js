@@ -1,12 +1,13 @@
 'use strict';
 const sql = require('mssql');
+const rx = require('rxjs');
 const ibuki = require('./ibuki');
 const handler = require('./handler');
 const settings = require('../settings.json');
 const sqlCommands = require('./sql-commands');
 const workbench = require('./workbench');
 
-let dbRequests = 0;
+// let dbRequests = 0;
 let db = {};
 let reqs = [];
 
@@ -52,19 +53,13 @@ handler.sub5 = handler.buffer.subscribe(d => {
 
 const disburse = (info) => {
     const req = reqs.find((e) => e.isAvailable);
-    
     if (req) {
         req.isAvailable = false;
-        dbRequests++;
-        console.log('db requests:',dbRequests);
+        handler.dbRequests++;
+        console.log('db requests:', handler.dbRequests, ' carrier count:', handler.carrierCount);
         req.query('update product set UnitPrice = UnitPrice+1 where id = 1', (err, result) => {
-            dbRequests--;
-            if(info && (info.carrierCount===0) && (dbRequests===0)) {
-                console.log('Actual end');
-                workbench.sub3.unsubscribe();
-                pool.close();
-            }
-            console.log('db requests:',dbRequests);
+            handler.dbRequests--;
+            console.log('db requests:', handler.dbRequests, ' carrier count:', handler.carrierCount);
             req.isAvailable = true;
             if (err) {
                 console.log(err);
@@ -73,17 +68,48 @@ const disburse = (info) => {
             }
         })
     } else {
-        let sub1 = rx.interval(30).subscribe(d => {
-            if (reqs.some(e => e.isAvailable)) {
-                ibuki.emit('sql1-update:util>db1');
-                sub1.unsubscribe();
-            };
-        })
+        setTimeout(() => {
+            disburse(info);
+            // console.log('waiting for db channel to be freed up');
+        }, 50);
     }
 }
 
 module.exports = db;
 
+// ibuki.filterOn('handle-buffer-data:self').subscribe(d=>{
+//     const info = d.data;
+//     const req = reqs.find((e) => e.isAvailable);
+
+//     if (req) {
+//         req.isAvailable = false;
+//         handler.dbRequests++;
+//         console.log('db requests:', handler.dbRequests, ' carrier count:', handler.carrierCount);
+//         req.query('update product set UnitPrice = UnitPrice+1 where id = 1', (err, result) => {
+//             handler.dbRequests--;
+//             if (info && (info.carrierCount === 0) && (dbRequests === 0)) {
+//                 console.log('Actual end');
+//                 workbench.sub3.unsubscribe();
+//                 pool.close();
+//             }
+//             console.log('db requests:', handler.dbRequests, ' carrier count:', handler.carrierCount);
+//             req.isAvailable = true;
+//             if (err) {
+//                 console.log(err);
+//             } else {
+//                 // console.log('req fulfilled: ', req.index);
+//             }
+//         })
+//     } else {
+//         handler.sub7 = rx.interval(30).subscribe(d => {
+//             if (reqs.some(e => e.isAvailable)) {
+//                 // ibuki.emit('sql1-update:util>db1');
+//                 handler.sub7.unsubscribe();
+//                 ibuki.emit('handle-buffer-data:self',info);                
+//             };
+//         })
+//     }
+// });
 // const myInterval = rx.interval(5);
 //     handler.sub1  = myInterval.subscribe(x=>{
 //         console.log(x);
