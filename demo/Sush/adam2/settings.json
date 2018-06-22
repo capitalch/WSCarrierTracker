@@ -33,14 +33,29 @@
             "piston": 20
         },
         "gso": {
+            "tokenUrl": "https://api.gso.com/Rest/v1/token",
             "url": "https://api.gso.com/Rest/v1/TrackShipment",
-            "accountNumber": "",
-            "userName": "",
-            "password": ""
+            "accounts": [
+                {
+                    "accountNumber": "50308",
+                    "userName": "Wineshipping",
+                    "password": "WS50308"
+                },
+                {
+                    "accountNumber": "50874",
+                    "userName": "VintageLogistics",
+                    "password": "VL50874"
+                },
+                {
+                    "accountNumber": "60278",
+                    "userName": "Wineshipping",
+                    "password": "WS60278"
+                }
+            ]
         },
         "tps": {
-            "url":"http://production.shippingapis.com/ShippingAPI.dll",
-            "userId":"487WINES7756"
+            "url": "http://production.shippingapis.com/ShippingAPI.dll",
+            "userId": "487WINES7756"
         }
     }
 }

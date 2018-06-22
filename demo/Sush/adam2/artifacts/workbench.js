@@ -40,10 +40,10 @@ handler.sub1 = ibuki.filterOn('handle-big-object:db>workbench').subscribe(
                 x => (
                     x.shipping === 'GSO'
                 ))
-        // .map(x => {
-        //     x.url = `https://api.gso.com/Rest/v1/TrackShipment?TrackingNumber=${carrierData[i].External}&AccountNumber=50874`
-        // })
-        ;
+            // .map(x => {
+            //     x.url = `https://api.gso.com/Rest/v1/TrackShipment?TrackingNumber=${carrierData[i].External}&AccountNumber=50874`
+            // })
+            ;
 
         const tps = bigObject
             .filter(x => (
@@ -71,9 +71,9 @@ handler.sub8 = ibuki.filterOn('process-carrier:self').subscribe(d => {
     handler.sub2 = rx.from(carrierInfos)
         .pipe(
             operators
-            .concatMap(x => rx.of(x)
-                .pipe(operators
-                    .delay(settings.carriers[x.carrierName].piston)))
+                .concatMap(x => rx.of(x)
+                    .pipe(operators
+                        .delay(settings.carriers[x.carrierName].piston)))
         )
         .subscribe(
             x => {
@@ -84,6 +84,11 @@ handler.sub8 = ibuki.filterOn('process-carrier:self').subscribe(d => {
                 // api.bind axiosPost(x);
             }
         );
+});
+
+handler.sub9 = ibuki.filterOn('get-gso-carrier-token:run>workbench').subscribe(d => {
+    const gso = settings.carriers.gso;
+    
 });
 
 module.exports = workbench;

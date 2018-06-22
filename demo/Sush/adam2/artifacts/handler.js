@@ -67,6 +67,7 @@ handler.cleanup = () => {
     handler.sub6 && handler.sub6.unsubscribe();
     handler.sub7 && handler.sub7.unsubscribe();
     handler.sub8 && handler.sub8.unsubscribe();
+    handler.sub9 && handler.sub9.unsubscribe();
     handler.pool && handler.pool.close();
 }
 
