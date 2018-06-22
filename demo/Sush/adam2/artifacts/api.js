@@ -7,13 +7,46 @@ const handler = require('./handler');
 
 let api = {};
 
+api.getGsoTokenPromises = (info) => {
+    const accounts = info.accounts;
+    const promises = accounts.map(x => {
+        const config = {
+            headers: {
+                'AccountNumber': x.accountNumber,
+                'UserName': x.userName,
+                'Password': x.password
+            }
+        };
+        const promise = axios.get(info.tokenUrl, config);
+        return (promise);
+    });
+    // const axiosPromise = axios.get(x.tokenUrl, x.config);
+    // .then(res => {
+    //     console.log(res);
+    // }).catch(err => {
+    //     console.log(err);
+    // })
+    return (axios.all(promises));
+}
+
 api.axiosGetWithHeader = (x) => {
-    axios.get(carrierInfo.url, { headers: { Token: carrierInfo.token, 'Content-Type': 'application/json' } })
+    axios.get(carrierInfo.url, {
+            headers: {
+                Token: carrierInfo.token,
+                'Content-Type': 'application/json'
+            }
+        })
         .then(res => {
             //Save in database
 
-            config.buffer.next({ trackingNumber: carrierInfo.trackingNumber, name: carrierInfo.name });
-            ibuki.emit('parseXml:util:xmlParse', { response: res.data, carrierInfo: carrierInfo });
+            config.buffer.next({
+                trackingNumber: carrierInfo.trackingNumber,
+                name: carrierInfo.name
+            });
+            ibuki.emit('parseXml:util:xmlParse', {
+                response: res.data,
+                carrierInfo: carrierInfo
+            });
             //ibuki.emit('sql1-update:util>db1',{rn:1});
             // flag && 
             config.prepared.next(1);
@@ -21,8 +54,7 @@ api.axiosGetWithHeader = (x) => {
             config.carrierCount--;
             config.responseCount++;
             console.log(carrierInfo.trackingNumber, 'name:', carrierInfo.name,
-                'Count: ', config.carrierCount, 'Queued:', (config.requestCount - config.responseCount - config.errorCount)
-                , ' delay: ', config.piston
+                'Count: ', config.carrierCount, 'Queued:', (config.requestCount - config.responseCount - config.errorCount), ' delay: ', config.piston
             );
         })
         .catch(err => {
@@ -58,8 +90,7 @@ api.axiosPost = (carrierInfo) => {
         .catch(err => {
             handler.carrierCount--;
             ibuki.emit('app-error:any', handler.frameError(
-                err
-                , 'util', 'fatal', 5));
+                err, 'util', 'fatal', 5));
             //log in database
             // config.carrierCount--;
             // config.errorCount++;

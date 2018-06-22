@@ -5,6 +5,7 @@ const settings = require('../settings.json');
 const rx = require('rxjs');
 const operators = require('rxjs/operators');
 const api = require('./api');
+const Q = require('q');
 
 let workbench = {};
 
@@ -39,11 +40,11 @@ handler.sub1 = ibuki.filterOn('handle-big-object:db>workbench').subscribe(
             .filter(
                 x => (
                     x.shipping === 'GSO'
-                ))
-            // .map(x => {
-            //     x.url = `https://api.gso.com/Rest/v1/TrackShipment?TrackingNumber=${carrierData[i].External}&AccountNumber=50874`
-            // })
-            ;
+                ));
+        (gso.length > 0) && (ibuki.emit('pre-process-gso-carrier:self', gso));
+        // .map(x => {
+        //     x.url = `https://api.gso.com/Rest/v1/TrackShipment?TrackingNumber=${carrierData[i].External}&AccountNumber=50874`
+        // })
 
         const tps = bigObject
             .filter(x => (
@@ -56,8 +57,8 @@ handler.sub1 = ibuki.filterOn('handle-big-object:db>workbench').subscribe(
                 return (x);
             });
 
-        ibuki.emit('process-carrier:self', fedEx);
-        ibuki.emit('process-carrier:self', ups);
+        // ibuki.emit('process-carrier:self', fedEx);
+        // ibuki.emit('process-carrier:self', ups);
         // ibuki.emit('process-carrier:self',gso);
         // ibuki.emit('process-carrier:self', tps);
         handler.closeIfIdle();
@@ -71,9 +72,9 @@ handler.sub8 = ibuki.filterOn('process-carrier:self').subscribe(d => {
     handler.sub2 = rx.from(carrierInfos)
         .pipe(
             operators
-                .concatMap(x => rx.of(x)
-                    .pipe(operators
-                        .delay(settings.carriers[x.carrierName].piston)))
+            .concatMap(x => rx.of(x)
+                .pipe(operators
+                    .delay(settings.carriers[x.carrierName].piston)))
         )
         .subscribe(
             x => {
@@ -86,9 +87,28 @@ handler.sub8 = ibuki.filterOn('process-carrier:self').subscribe(d => {
         );
 });
 
-handler.sub9 = ibuki.filterOn('get-gso-carrier-token:run>workbench').subscribe(d => {
-    const gso = settings.carriers.gso;
-    
+handler.sub9 = ibuki.filterOn('pre-process-gso-carrier:self').subscribe(d => {
+    //get GSO tokens for multiple accounts and store store them in handles.gsoAccounts
+    const gso = d.data;
+    const gsoConfig = settings.carriers.gso;
+    const gsoAccounts = gsoConfig.accounts;
+    const tokenPromises = api.getGsoTokenPromises({
+        tokenUrl: gsoConfig.tokenUrl
+            // config: {
+            //     headers: {
+            //         'AccountNumber': '50308',
+            //         'UserName': 'Wineshipping',
+            //         'Password': 'WS50308'
+            //     }
+            // }
+            ,
+        accounts: gsoAccounts
+    });
+    tokenPromises.then(res => {
+        console.log(res);
+    }).catch(err => {
+        console.log(err);
+    })
 });
 
 module.exports = workbench;
