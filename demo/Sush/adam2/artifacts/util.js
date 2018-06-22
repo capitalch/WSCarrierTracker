@@ -17,7 +17,7 @@ util.processCarrierResponse = (carrierInfo) => {
     carriermap[carrierInfo.carrierName](carrierInfo);
 }
 
-function processFedEx(xml) {
+function processFedEx(x) {
     parseString(x.response
         , { trim: true, explicitArray: false }
         , function (err, result) {
@@ -27,7 +27,7 @@ function processFedEx(xml) {
                 const notifications = result.TrackReply.Notifications;
                 if (notifications.Severity === 'ERROR') {
                     ibuki.emit('app-error:any', handler.frameError(
-                        { name: 'apiCallError', message: x.trackingNumber + ' ' + notifications.LocalizedMessage }
+                        { name: 'apiCallError', message: 'FedEx:' + x.trackingNumber + ' ' + notifications.LocalizedMessage }
                         , 'util', 'info', 4))
                 } else {
                     //things are fine. Create unified json object and push it to buffer to be updated in database
@@ -56,8 +56,8 @@ function processUps(x) {
                 if (response.ResponseStatusCode === '0') {
                     const errorDescription = response.Error.ErrorDescription
                     ibuki.emit('app-error:any', handler.frameError(
-                        { name: 'apiCallError', message: x.trackingNumber + ' ' + errorDescription }
-                        , 'util', 'info', 4))
+                        { name: 'apiCallError', message: 'UPS:' + x.trackingNumber + ' ' + errorDescription }
+                        , 'util', 'info', 4));
                 } else {
                     const unifiedJson = {
                         name: 'fedEx'

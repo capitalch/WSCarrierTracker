@@ -28,6 +28,9 @@ api.axiosPost = (carrierInfo) => {
         })
         .catch(err => {
             handler.carrierCount--;
+            ibuki.emit('app-error:any', handler.frameError(
+                err
+                , 'util', 'fatal', 5));
             //log in database
             // config.carrierCount--;
             // config.errorCount++;

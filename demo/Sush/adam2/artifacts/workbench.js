@@ -56,7 +56,7 @@ handler.sub1 = ibuki.filterOn('handle-big-object:db>workbench').subscribe(
                 return (x);
             });
 
-        // ibuki.emit('process-carrier:self', fedEx);
+        ibuki.emit('process-carrier:self', fedEx);
         ibuki.emit('process-carrier:self', ups);
         // ibuki.emit('process-carrier:self',gso);
         // ibuki.emit('process-carrier:self', tps);

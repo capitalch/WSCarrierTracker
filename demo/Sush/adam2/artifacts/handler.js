@@ -20,7 +20,9 @@ process.domainError.on('error', function (err) {
 });
 
 process.on('uncaughtException', function (err) {
+    handler.cleanup();
     console.log('Caught exception: ', err.stack);
+    process.exit(101);
 });
 
 process.on('exit', function (code) {
@@ -39,7 +41,7 @@ handler.closeIfIdle = () => {
 ibuki.filterOn('app-error:any').subscribe(d => {
     const err = d.data;
     if (err.severity === 'fatal') {
-        console.log(err);
+        console.log(err.stack);
         handler.cleanup();
         process.exit(100);
     } else {
