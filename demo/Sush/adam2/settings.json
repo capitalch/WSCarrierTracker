@@ -26,17 +26,17 @@
             "meterNumber": "5690072"
         },
         "ups": {
+            "piston": 20,
             "url": "https://onlinetools.ups.com/ups.app/xml/Track",
             "accessLicenseNumber": "FC312F9BE62AFF90",
             "userId": "UPSwineshipping",
-            "password": "easyship",
-            "piston": 20
+            "password": "easyship"
         },
         "gso": {
+            "piston": 20,
             "tokenUrl": "https://api.gso.com/Rest/v1/token",
             "url": "https://api.gso.com/Rest/v1/TrackShipment",
-            "accounts": [
-                {
+            "accounts": [{
                     "accountNumber": "50308",
                     "userName": "Wineshipping",
                     "password": "WS50308"

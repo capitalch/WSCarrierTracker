@@ -3,6 +3,7 @@ const axios = require('axios');
 const ibuki = require('./ibuki');
 const util = require('./util');
 const handler = require('./handler');
+const Q = require('q');
 // const settings = require('../settings.json');
 
 let api = {};
@@ -20,13 +21,8 @@ api.getGsoTokenPromises = (info) => {
         const promise = axios.get(info.tokenUrl, config);
         return (promise);
     });
-    // const axiosPromise = axios.get(x.tokenUrl, x.config);
-    // .then(res => {
-    //     console.log(res);
-    // }).catch(err => {
-    //     console.log(err);
-    // })
-    return (axios.all(promises));
+    return (Q.allSettled(promises));
+    // return (axios.all(promises));
 }
 
 api.axiosGetWithHeader = (x) => {
@@ -90,7 +86,7 @@ api.axiosPost = (carrierInfo) => {
         .catch(err => {
             handler.carrierCount--;
             ibuki.emit('app-error:any', handler.frameError(
-                err, 'util', 'fatal', 5));
+                err, 'api', 'fatal', 5));
             //log in database
             // config.carrierCount--;
             // config.errorCount++;
@@ -99,33 +95,26 @@ api.axiosPost = (carrierInfo) => {
 };
 
 api.axiosGet = (carrierInfo) => {
-    axios.get(carrierInfo.url)
+    axios.get(carrierInfo.url, carrierInfo.config)
         .then(res => {
             //Save in database
 
-            config.buffer.next({
-                trackingNumber: carrierInfo.trackingNumber,
-                name: carrierInfo.name
-            });
-            ibuki.emit('parseXml:util:xmlParse', {
-                response: res.data,
-                carrierInfo: carrierInfo
-            });
-            //ibuki.emit('sql1-update:util>db1',{rn:1});
-            // flag && 
-            config.prepared.next(1);
-            flag = false;
-            config.carrierCount--;
-            config.responseCount++;
-            console.log(carrierInfo.trackingNumber, 'name:', carrierInfo.name,
-                'Count: ', config.carrierCount, 'Queued:', (config.requestCount - config.responseCount - config.errorCount), ' delay: ', config.piston
-            );
+            carrierInfo.response = res.data;
+            handler.carrierCount--;
+            util.processCarrierResponse(carrierInfo);
         })
         .catch(err => {
             //log in database
-            config.carrierCount--;
-            config.errorCount++;
-            console.log('Error:', 'Count:', config.carrierCount, 'Error:', config.errorCount, 'Queued:', (config.requestCount - config.responseCount - config.errorCount));
+            handler.carrierCount--;
+            ibuki.emit('app-error:any', handler.frameError(
+                err, 'api', 'fatal', 6));
         });
 }
 module.exports = api;
+
+// const axiosPromise = axios.get(x.tokenUrl, x.config);
+// .then(res => {
+//     console.log(res);
+// }).catch(err => {
+//     console.log(err);
+// })
