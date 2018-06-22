@@ -12,9 +12,20 @@ util.processCarrierResponse = (carrierInfo) => {
     const carriermap = {
         fedEx: processFedEx
         , ups: processUps
+        , gso: processGso
     }
 
     carriermap[carrierInfo.carrierName](carrierInfo);
+}
+
+function processGso(x){
+    const unifiedJson = {
+        name: 'fedEx'
+        , trackingNumber: x.trackingNumber
+        , status: 'delivered'
+        , dateTime: Date.now()
+    };
+    handler.buffer.next(unifiedJson);
 }
 
 function processFedEx(x) {

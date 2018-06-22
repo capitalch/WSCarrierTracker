@@ -5,7 +5,7 @@ const settings = require('../settings.json');
 const rx = require('rxjs');
 const operators = require('rxjs/operators');
 const api = require('./api');
-const Q = require('q');
+// const Q = require('q');
 
 let workbench = {};
 
@@ -47,11 +47,6 @@ handler.sub1 = ibuki.filterOn('handle-big-object:db>workbench').subscribe(
                 x.carrierName = 'gso';
                 return (x);
             });
-        (gso.length > 0) &&
-        (ibuki.emit('pre-process-gso-carrier:self', gso));
-        // .map(x => {
-        //     x.url = `https://api.gso.com/Rest/v1/TrackShipment?TrackingNumber=${carrierData[i].External}&AccountNumber=50874`
-        // })
 
         const tps = bigObject
             .filter(x => (
@@ -64,10 +59,14 @@ handler.sub1 = ibuki.filterOn('handle-big-object:db>workbench').subscribe(
                 return (x);
             });
 
-        // ibuki.emit('process-carrier:self', fedEx);
-        // ibuki.emit('process-carrier:self', ups);
-        // ibuki.emit('process-carrier:self',gso);
-        // ibuki.emit('process-carrier:self', tps);
+        (gso.length > 0) &&
+            (ibuki.emit('pre-process-gso-carrier:self', gso));
+        (fedEx.length > 0) &&
+            (ibuki.emit('process-carrier:self', fedEx));
+        (ups.length > 0) &&
+            (ibuki.emit('process-carrier:self', ups));
+        (tps.length > 0) &&
+            (ibuki.emit('process-carrier:self', tps));
         handler.closeIfIdle();
     }
 );
@@ -79,17 +78,13 @@ handler.sub8 = ibuki.filterOn('process-carrier:self').subscribe(d => {
     handler.sub2 = rx.from(carrierInfos)
         .pipe(
             operators
-            .concatMap(x => rx.of(x)
-                .pipe(operators
-                    .delay(settings.carriers[x.carrierName].piston || 20)))
+                .concatMap(x => rx.of(x)
+                    .pipe(operators
+                        .delay(settings.carriers[x.carrierName].piston || 20)))
         )
         .subscribe(
             x => {
                 api[x.method](x);
-                // carrierMap[x.carrierName](x);
-                // config.requestCount++;
-                // util.processCarrier(x);
-                // api.bind axiosPost(x);
             }
         );
 });
@@ -104,15 +99,7 @@ handler.sub9 = ibuki.filterOn('pre-process-gso-carrier:self').subscribe(d => {
         accounts: gsoAccounts
     });
     tokenPromises.then(res => {
-        // console.log(res);
-        // handler.gsoAccountTokens = res.map((x, i) => {
-        //     const accountToken = {
-        //         accountNumber: gsoAccounts[i].accountNumber,
-        //         token: x.state === 'fulfilled' ? x.value.headers.token : null
-        //     };
-        //     return (accountToken);
-        // });
-        //ket value pairs. Key is accountNumber and value is token. Error token is null;
+        //key value pairs. Key is accountNumber and value is token. Error token is null;
         const accountWithTokens = {};
         res.forEach((x, i) => {
             accountWithTokens[gsoAccounts[i].accountNumber] = x.state === 'fulfilled' ?
@@ -123,7 +110,7 @@ handler.sub9 = ibuki.filterOn('pre-process-gso-carrier:self').subscribe(d => {
             x.accountNumber = x.trackingNumber ? x.trackingNumber.substr(0, 5) : null;
             (x.accountNumber === '11111') && (x.accountNumber = '50874');
             x.token = x.accountNumber ? accountWithTokens[x.accountNumber] : '';
-            x.url = settings.carriers.gso.url.concat(`TrackingNumber=${x.trackingNumber}&AccountNumber=${x.accountNumber}`)
+            x.url = settings.carriers.gso.url.concat(`?TrackingNumber=${x.trackingNumber}&AccountNumber=${x.accountNumber}`)
             x.config = {
                 headers: {
                     "Token": x.token,
