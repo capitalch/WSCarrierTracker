@@ -5,7 +5,6 @@ const settings = require('../settings.json');
 const rx = require('rxjs');
 const operators = require('rxjs/operators');
 const api = require('./api');
-// const Q = require('q');
 
 let workbench = {};
 
@@ -42,9 +41,11 @@ handler.sub1 = ibuki.filterOn('handle-big-object:db>workbench').subscribe(
                     x.shipping === 'GSO'
                 ))
             .map(x => {
-                // x.url = settings.carriers.gso.url;
                 x.method = 'axiosGet';
                 x.carrierName = 'gso';
+                x.accountNumber = x.trackingNumber ? x.trackingNumber.substr(0, 5) : null;
+                (x.accountNumber === '11111') && (x.accountNumber = '50874');
+                x.url = settings.carriers.gso.url.concat(`?TrackingNumber=${x.trackingNumber}&AccountNumber=${x.accountNumber}`);
                 return (x);
             });
 
@@ -90,7 +91,7 @@ handler.sub8 = ibuki.filterOn('process-carrier:self').subscribe(d => {
 });
 
 handler.sub9 = ibuki.filterOn('pre-process-gso-carrier:self').subscribe(d => {
-    //get GSO tokens for multiple accounts and store store them in handles.gsoAccounts
+    //get GSO tokens for multiple accounts and store store token in each gso element
     const gso = d.data;
     const gsoConfig = settings.carriers.gso;
     const gsoAccounts = gsoConfig.accounts;
@@ -107,10 +108,7 @@ handler.sub9 = ibuki.filterOn('pre-process-gso-carrier:self').subscribe(d => {
                 null;
         })
         gso.forEach(x => {
-            x.accountNumber = x.trackingNumber ? x.trackingNumber.substr(0, 5) : null;
-            (x.accountNumber === '11111') && (x.accountNumber = '50874');
-            x.token = x.accountNumber ? accountWithTokens[x.accountNumber] : '';
-            x.url = settings.carriers.gso.url.concat(`?TrackingNumber=${x.trackingNumber}&AccountNumber=${x.accountNumber}`)
+            x.token = x.accountNumber ? accountWithTokens[x.accountNumber] : '';            
             x.config = {
                 headers: {
                     "Token": x.token,

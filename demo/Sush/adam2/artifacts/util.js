@@ -8,13 +8,11 @@ const parseString = require('xml2js').parseString;
 let util = {};
 
 util.processCarrierResponse = (carrierInfo) => {
-
     const carriermap = {
         fedEx: processFedEx
         , ups: processUps
         , gso: processGso
     }
-
     carriermap[carrierInfo.carrierName](carrierInfo);
 }
 
@@ -84,6 +82,9 @@ function processUps(x) {
     )
 }
 
+module.exports = util;
+
+
 // function pushUnifiedJson(carrierInfo) {
 //     const carrierMap = {
 //         fedEx: (x) => {
@@ -137,9 +138,6 @@ function processUps(x) {
 //             // console.log('Error:', 'Count:', config.carrierCount, 'Error:', config.errorCount, 'Queued:', (config.requestCount - config.responseCount - config.errorCount));
 //         });
 // }
-
-
-module.exports = util;
 
 // handler.sub3 = ibuki.filterOn('parse-api-response:api>util').subscribe(d => {
 //     let carrierInfo = d.data;
