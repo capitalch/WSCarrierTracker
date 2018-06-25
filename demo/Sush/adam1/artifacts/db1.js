@@ -38,7 +38,7 @@ function disburse(info) {
             if (reqs.some(e => e.isAvailable)) {
                 ibuki.emit('sql1-update:util>db1');
                 sub1.unsubscribe();
-            };
+            }
         })
     }
 }

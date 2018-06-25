@@ -1,6 +1,6 @@
 {
     "env": {
-        "browser": true,
+        "browser": false,
         "commonjs": true,
         "es6": true
     },
@@ -9,6 +9,7 @@
         "ecmaVersion": 2015
     },
     "rules": {
+    	"no-console": "off",
         "accessor-pairs": "error",
         "array-bracket-newline": "error",
         "array-bracket-spacing": [
