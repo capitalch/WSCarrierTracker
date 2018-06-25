@@ -9,7 +9,8 @@
         "ecmaVersion": 2015
     },
     "rules": {
-    	"no-console": "off",
+    	"no-console": 0,
+        "no-process-env":0,
         "accessor-pairs": "error",
         "array-bracket-newline": "error",
         "array-bracket-spacing": [
