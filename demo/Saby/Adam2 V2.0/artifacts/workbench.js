@@ -1,114 +1,253 @@
 'use strict';
 const ibuki = require('./ibuki');
+const handler = require('./handler');
+const settings = require('../settings.json');
 const rx = require('rxjs');
 const operators = require('rxjs/operators');
-// const axios = require('axios');
-// const _ = require('lodash');
-// const operators = require('rxjs/operators');
-// const Q = require('q');
-const util = require('./util');
-var config = require('./config');
+const api = require('./api');
 
-var workbench = {};
-var counter = 0;
-var subject = new rx.Subject();
+let workbench = {};
 
-let sub2 = ibuki.filterOn('serial-process:index:workbench').subscribe(
+handler.sub1 = ibuki.filterOn('handle-big-object:db>workbench').subscribe(
     d => {
-        let bigObject = d.data.bigObject;
-        let carrierInfos = util.getCarrierInfos(bigObject, bigObject.length);
-        config.carrierCount = carrierInfos.length;
-        rx.from(carrierInfos)
-            .pipe(
-                operators.concatMap(x => rx.of(x).pipe(operators.delay(config.piston)))
-            )
-            .subscribe(
-                x => {
-                    config.requestCount++;
-                    util.processCarrierSerially(x);
-                }
-            );
-        ibuki.emit('adjust-piston:self');        
+        const bigObject = d.data;
+        const fedEx = bigObject
+            .filter(x =>
+                (x.shipping === 'FEX') ||
+                (x.shipping === 'FCC')
+            ).map(x => {
+                x.url = settings.carriers.fedEx.url;
+                x.param = `<TrackRequest xmlns='http://fedex.com/ws/track/v3'><WebAuthenticationDetail><UserCredential><Key>${settings.carriers.fedEx.key}</Key><Password>${settings.carriers.fedEx.password}</Password></UserCredential></WebAuthenticationDetail><ClientDetail><AccountNumber>${settings.carriers.fedEx.accountNumber}</AccountNumber><MeterNumber>${settings.carriers.fedEx.meterNumber}</MeterNumber></ClientDetail><TransactionDetail><CustomerTransactionId>***Track v8 Request using VB.NET***</CustomerTransactionId></TransactionDetail><Version><ServiceId>trck</ServiceId><Major>3</Major><Intermediate>0</Intermediate><Minor>0</Minor></Version><PackageIdentifier><Value>${x.trackingNumber}</Value><Type>TRACKING_NUMBER_OR_DOORTAG</Type></PackageIdentifier><IncludeDetailedScans>1</IncludeDetailedScans></TrackRequest>`;
+                x.method = 'axiosPost';
+                x.carrierName = 'fedEx';
+                return (x);
+            });
+
+        const ups = bigObject
+            .filter(x =>
+                (x.shipping === 'TMC') ||
+                (x.shipping === 'UPS'))
+            .map(x => {
+                x.url = settings.carriers.ups.url;
+                x.param = `<?xml version="1.0"?><AccessRequest xml:lang="en-US"><AccessLicenseNumber>${settings.carriers.ups.accessLicenseNumber}</AccessLicenseNumber><UserId>${settings.carriers.ups.userId}</UserId><Password>${settings.carriers.ups.password}</Password></AccessRequest><?xml version="1.0"?><TrackRequest xml:lang="en-US"><Request><TransactionReference><XpciVersion>1.0001</XpciVersion></TransactionReference><RequestAction>Track</RequestAction><RequestOption>1</RequestOption></Request><TrackingNumber>${x.trackingNumber}</TrackingNumber></TrackRequest>`;
+                x.method = 'axiosPost';
+                x.carrierName = 'ups';
+                return (x);
+            });
+
+        const gso = bigObject
+            .filter(
+                x => (
+                    x.shipping === 'GSO'
+                ))
+            .map(x => {
+                x.method = 'axiosGet';
+                x.carrierName = 'gso';
+                x.accountNumber = x.trackingNumber ? x.trackingNumber.substr(0, 5) : null;
+                (x.accountNumber === '11111') && (x.accountNumber = '50874');
+                x.url = settings.carriers.gso.url.concat(`?TrackingNumber=${x.trackingNumber}&AccountNumber=${x.accountNumber}`);
+                return (x);
+            });
+
+        const tps = bigObject
+            .filter(x => (
+                x.shipping === 'TPS'
+            ))
+            .map(x => {
+                x.url = `${settings.carriers.tps.url}?API=TrackV2&XML=<TrackFieldRequest USERID="${settings.carriers.tps.userId}"><TrackID ID="${x.trackingNumber}"></TrackID></TrackFieldRequest>`;
+                x.method = 'axiosGet';
+                x.carrierName = 'tps';
+                return (x);
+            });
+
+        (gso.length > 0) &&
+            (ibuki.emit('pre-process-gso-carrier:self', gso));
+        (fedEx.length > 0) &&
+            (ibuki.emit('process-carrier:self', fedEx));
+        (ups.length > 0) &&
+            (ibuki.emit('process-carrier:self', ups));
+        (tps.length > 0) &&
+            (ibuki.emit('process-carrier:self', tps));
+        handler.closeIfIdle();
     }
 );
 
-let sub0 = ibuki.filterOn('serial-process-delayed:index:workbench').subscribe(
-    d => {
-        let carrierInfos = util.getCarrierInfos('Fedex', 10);
-        config.carrierCount = carrierInfos.length;
-        
-        rx.interval(config.piston)
-            .pipe(
-                operators.take(carrierInfos.length),
-                operators.map(i => carrierInfos[i])
-                // operators.delay(1000)
-            )
-            .subscribe(
-                x => {
-                    config.requestCount++;
-                    util.processCarrierSerially(x);
-                }
-            );
-        // sub01.unsubscribe();
-        // ibuki.emit('adjust-piston:self');
-    }
-);
+handler.sub8 = ibuki.filterOn('process-carrier:self').subscribe(d => {
+    const carrierInfos = d.data;
+    handler.carrierCount = handler.carrierCount + carrierInfos.length;
+    console.log('db requests:', handler.dbRequests, ' carrier count:', handler.carrierCount);
+    handler.sub2 = rx.from(carrierInfos)
+        .pipe(
+            operators
+                .concatMap(x => rx.of(x)
+                    .pipe(operators
+                        .delay(settings.carriers[x.carrierName].piston || 20)))
+        )
+        .subscribe(
+            x => {
+                api[x.method](x);
+            }
+        );
+});
 
-let sub1 = ibuki.filterOn('adjust-piston:self').subscribe(
-    d => {
-        const myInterval = rx.interval(500);
-        myInterval.subscribe((x) => {
-            const queue = config.requestCount - config.responseCount - config.errorCount;
-            if (queue === 0) {
-                config.autoPilotPiston && (config.piston = 0);
-            }
-            else if (queue > 100) {
-                config.autoPilotPiston && (config.piston = config.piston + 10);
-            } else {
-                config.autoPilotPiston && (config.piston = (config.piston > 5) ? (config.piston = config.piston - 5) : (config.piston = config.piston));
-            }
-            // console.log('Piston adjusted:');
+handler.sub9 = ibuki.filterOn('pre-process-gso-carrier:self').subscribe(d => {
+    //get GSO tokens for multiple accounts and store store token in each gso element
+    const gso = d.data;
+    const gsoConfig = settings.carriers.gso;
+    const gsoAccounts = gsoConfig.accounts;
+    const tokenPromises = api.getGsoTokenPromises({
+        tokenUrl: gsoConfig.tokenUrl,
+        accounts: gsoAccounts
+    });
+    tokenPromises.then(res => {
+        //key value pairs. Key is accountNumber and value is token. Error token is null;
+        const accountWithTokens = {};
+        res.forEach((x, i) => {
+            accountWithTokens[gsoAccounts[i].accountNumber] = x.state === 'fulfilled' ?
+                x.value.headers.token :
+                null;
+        })
+        gso.forEach(x => {
+            x.token = x.accountNumber ? accountWithTokens[x.accountNumber] : '';            
+            x.config = {
+                headers: {
+                    "Token": x.token,
+                    "Content-Type": "application/json"
+                }
+            };
         });
-    }
-)
+        ibuki.emit('process-carrier:self', gso);
+    }).catch(err => {
+        console.log(err);
+    });
+});
+
 module.exports = workbench;
+// function processCarrier(carrierInfos) {
+
+//     handler.carrierCount = handler.carrierCount + carrierInfos.length;
+//     console.log('db requests:', handler.dbRequests, ' carrier count:', handler.carrierCount);
+//     handler.sub2 = rx.from(carrierInfos)
+//         .pipe(
+//             operators
+//             .concatMap(x => rx.of(x)
+//                 .pipe(operators
+//                     .delay(settings.carriers[x.carrierName].piston)))
+//         )
+//         .subscribe(
+//             x => {
+//                 api[x.method](x);
+//                 // carrierMap[x.carrierName](x);
+//                 // config.requestCount++;
+//                 // util.processCarrier(x);
+//                 // api.bind axiosPost(x);
+//             }
+//         );
+// }
+// const carrierMap = {
+//     fedEx: (x) => api[x.method](x)
+//     // gso: ""
+//     , ups: (x) => api[x.method](x)
+// }
+//${carrierData[i].External}
+// const fedExPacket = {
+//     url: settings.carriers.fedEx.url,
+//     param: `<TrackRequest xmlns='http://fedex.com/ws/track/v3'><WebAuthenticationDetail><UserCredential><Key>${settings.carriers.fedEx.key}</Key><Password>${settings.carriers.fedEx.password}</Password></UserCredential></WebAuthenticationDetail><ClientDetail><AccountNumber>${settings.carriers.fedEx.accountNumber}</AccountNumber><MeterNumber>${settings.carriers.fedEx.meterNumber}</MeterNumber></ClientDetail><TransactionDetail><CustomerTransactionId>***Track v8 Request using VB.NET***</CustomerTransactionId></TransactionDetail><Version><ServiceId>trck</ServiceId><Major>3</Major><Intermediate>0</Intermediate><Minor>0</Minor></Version><PackageIdentifier><Value></Value><Type>TRACKING_NUMBER_OR_DOORTAG</Type></PackageIdentifier><IncludeDetailedScans>1</IncludeDetailedScans></TrackRequest>`,
+//     method: ''
+// }
+// let sub2 = ibuki.filterOn('serial-process:index:workbench').subscribe(
+//     d => {
+//         let carrierInfos = util.getCarrierInfos('Fedex', 10000);
+//         config.carrierCount = carrierInfos.length;
+//         rx.from(carrierInfos)
+//             .pipe(
+//                 operators.concatMap(x => rx.of(x).pipe(operators.delay(config.piston)))
+//             )
+//             .subscribe(
+//                 x => {
+//                     config.requestCount++;
+//                     util.processCarrierSerially(x);
+//                 }
+//             );
+//         ibuki.emit('adjust-piston:self');
+//     }
+// );
+
+// let sub0 = ibuki.filterOn('serial-process-delayed:index:workbench').subscribe(
+//     d => {
+//         let carrierInfos = util.getCarrierInfos('Fedex', 10);
+//         config.carrierCount = carrierInfos.length;
+
+//         rx.interval(config.piston)
+//             .pipe(
+//                 operators.take(carrierInfos.length),
+//                 operators.map(i => carrierInfos[i])
+//                 // operators.delay(1000)
+//             )
+//             .subscribe(
+//                 x => {
+//                     config.requestCount++;
+//                     util.processCarrierSerially(x);
+//                 }
+//             );
+//         // sub01.unsubscribe();
+//         // ibuki.emit('adjust-piston:self');
+//     }
+// );
+
+// let sub1 = ibuki.filterOn('adjust-piston:self').subscribe(
+//     d => {
+//         const myInterval = rx.interval(500);
+//         myInterval.subscribe((x) => {
+//             const queue = config.requestCount - config.responseCount - config.errorCount;
+//             if (queue === 0) {
+//                 config.autoPilotPiston && (config.piston = 0);
+//             } else if (queue > 100) {
+//                 config.autoPilotPiston && (config.piston = config.piston + 10);
+//             } else {
+//                 config.autoPilotPiston && (config.piston = (config.piston > 5) ? (config.piston = config.piston - 5) : (config.piston = config.piston));
+//             }
+//             // console.log('Piston adjusted:');
+//         });
+//     }
+// )
 
 // console.log('started');
-        // rx.from(carrierInfos)
-        //     .pipe(
-        //         operators.delay(2000),
-        //         // operators.take(carrierInfos.length),
-        //         // operators.map(i => carrierInfos[i]),
-        //         operators.repeat()
-        //     )
-        //     .subscribe(
-        //         x => {
-        //             config.requestCount++;
-        //             console.log(x);
-        //             // util.processCarrierSerially(x);
-        //         }
-        //     );
+// rx.from(carrierInfos)
+//     .pipe(
+//         operators.delay(2000),
+//         // operators.take(carrierInfos.length),
+//         // operators.map(i => carrierInfos[i]),
+//         operators.repeat()
+//     )
+//     .subscribe(
+//         x => {
+//             config.requestCount++;
+//             console.log(x);
+//             // util.processCarrierSerially(x);
+//         }
+//     );
 
 // rx.from('a')
-        //     .pipe(
-        //         operators.map(i => rx.interval(100))
-        //         , operators.map(j => rx.interval(500))
-        //         , operators.switchMap(j => rx.interval(2000))
-        //         // , operators.switchAll()
-        //     ).pipe(
-        //         operators.take(carrierInfos.length),
-        //         operators.map(i => carrierInfos[i])
-        //     )
-        //     .subscribe(
-        //         x => {
-        //             console.log(x);
-        //         }
-        //     )
-        // rx.from(carrierInfos).subscribe(
-        //     x => {
-        //         console.log(x);
-        //     }
-        // )
+//     .pipe(
+//         operators.map(i => rx.interval(100))
+//         , operators.map(j => rx.interval(500))
+//         , operators.switchMap(j => rx.interval(2000))
+//         // , operators.switchAll()
+//     ).pipe(
+//         operators.take(carrierInfos.length),
+//         operators.map(i => carrierInfos[i])
+//     )
+//     .subscribe(
+//         x => {
+//             console.log(x);
+//         }
+//     )
+// rx.from(carrierInfos).subscribe(
+//     x => {
+//         console.log(x);
+//     }
+// )
 // let sub1 = ibuki.filterOn('serial-process:index:workbench').subscribe(
 //     d => {
 //         let carrierInfos = util.getCarrierInfos('Fedex', 10000);

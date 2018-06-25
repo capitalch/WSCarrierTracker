@@ -1,26 +1,61 @@
 {
     "name": "sushant",
     "db": {
-        "config": {
-            "user": "sagarwal",
-            "password": "su$hant123",
-            "server": "wineshipping.database.windows.net",
-            "database": "WSCarrierTracker",
-            "options": {
-                "encrypt": true
-            },
-            "pool": {
-                "max": 10,
-                "min": 0,
-                "idleTimeoutMillis": 30000
-            }
+        "user": "nwuser",
+        "password": "user123%",
+        "server": "nwazdb01.database.windows.net",
+        "database": "PackageTracker",
+        "options": {
+            "encrypt": true
+        },
+        "pool": {
+            "max": 30,
+            "min": 0,
+            "idleTimeoutMillis": 30000
         }
     },
     "carriers": {
-        "fedex": {
+        "fedEx": {
+            "piston": 20,
             "queue": 10,
-            "url": "",
-            "method": ""
+            "url": "https://gateway.fedex.com:443/xml",
+            "method": "",
+            "key": "JfSbK7tkzfRBMf8G",
+            "password": "dbc2GzV8LXPIcc7BQ4NPTMdUE",
+            "accountNumber": "510087348",
+            "meterNumber": "5690072"
+        },
+        "ups": {
+            "piston": 20,
+            "url": "https://onlinetools.ups.com/ups.app/xml/Track",
+            "accessLicenseNumber": "FC312F9BE62AFF90",
+            "userId": "UPSwineshipping",
+            "password": "easyship"
+        },
+        "gso": {
+            "piston": 20,
+            "tokenUrl": "https://api.gso.com/Rest/v1/token",
+            "url": "https://api.gso.com/Rest/v1/TrackShipment",
+            "accounts": [{
+                    "accountNumber": "50308",
+                    "userName": "Wineshipping",
+                    "password": "WS50308"
+                },
+                {
+                    "accountNumber": "50874",
+                    "userName": "VintageLogistics",
+                    "password": "VL50874"
+                },
+                {
+                    "accountNumber": "60278",
+                    "userName": "Wineshipping",
+                    "password": "WS60278"
+                }
+            ]
+        },
+        "tps": {
+            "url": "http://production.shippingapis.com/ShippingAPI.dll",
+            "userId": "487WINES7756"
         }
     }
 }

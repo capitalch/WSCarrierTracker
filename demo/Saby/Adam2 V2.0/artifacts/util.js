@@ -1,192 +1,183 @@
 'use strict';
-const axios = require('axios');
+// const axios = require('axios');
 const ibuki = require('./ibuki');
-const config = require('./config');
-let flag = true;
+const handler = require('./handler');
+// const config = require('./config');
+const parseString = require('xml2js').parseString;
+const logger = require('./logger');
+
 let util = {};
 
-util.processCarrierSerially = (carrierInfo) => {
-    carrierInfo.method == 'axiosGetWithHeader' && util.axiosGetWithHeader(carrierInfo);
-    carrierInfo.method == 'post' && util.axiosPost(carrierInfo);
-    carrierInfo.method == 'axiosGet' && util.axiosGet(carrierInfo);
-    // axios.get(carrierInfo.url)
-    //     .then(res => {
-    //         //Save in database
-
-    //         config.buffer.next({ trackingNumber: carrierInfo.trackingNumber, name: carrierInfo.name });
-    //         ibuki.emit('parseXml:util:xmlParse', { response: res.data, carrierInfo: carrierInfo });
-    //         //ibuki.emit('sql1-update:util>db1',{rn:1});
-    //         // flag && 
-    //         config.prepared.next(1);
-    //         flag=false;
-    //         config.carrierCount--;
-    //         config.responseCount++;
-    //         console.log(carrierInfo.trackingNumber, 'name:', carrierInfo.name,
-    //             'Count: ', config.carrierCount, 'Queued:', (config.requestCount - config.responseCount - config.errorCount)
-    //             , ' delay: ', config.piston
-    //         );
-    //     })
-    //     .catch(err => {
-    //         //log in database
-    //         config.carrierCount--;
-    //         config.errorCount++;
-    //         console.log('Error:', 'Count:', config.carrierCount, 'Error:', config.errorCount, 'Queued:', (config.requestCount - config.responseCount - config.errorCount));
-    //     });
-}
-
-function getRandomInt(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
-util.getRandomDelay = () => {
-    const rnd = getRandomInt(0, 100);
-    return (rx.of(rnd).pipe(operators.delay(rnd)));
-}
-
-util.getCarrierInfos = (carrierData, count) => {
-    let arr = [];
-  //  logger.info("count :" + carrierData.length)
-    for (let i = 0; i < count; i++) {
-        let obj = {};
-        switch (carrierData[i].Shipping) {
-            case ("FEX"):
-            case ("FCC"):
-                obj = {
-                    trackingNumber: carrierData[i].External,
-                    url: 'https://gateway.fedex.com:443/xml',
-                    name: carrierData[i].Shipping,
-                    method: 'post',
-                    rn: carrierData[i].rn,
-                    param: `<TrackRequest xmlns='http://fedex.com/ws/track/v3'><WebAuthenticationDetail><UserCredential><Key>JfSbK7tkzfRBMf8G</Key><Password>dbc2GzV8LXPIcc7BQ4NPTMdUE</Password></UserCredential></WebAuthenticationDetail><ClientDetail><AccountNumber>510087348</AccountNumber><MeterNumber>5690072</MeterNumber></ClientDetail><TransactionDetail><CustomerTransactionId>***Track v8 Request using VB.NET***</CustomerTransactionId></TransactionDetail><Version><ServiceId>trck</ServiceId><Major>3</Major><Intermediate>0</Intermediate><Minor>0</Minor></Version><PackageIdentifier><Value>${carrierData[i].External}</Value><Type>TRACKING_NUMBER_OR_DOORTAG</Type></PackageIdentifier><IncludeDetailedScans>1</IncludeDetailedScans></TrackRequest>`
-                }
-                arr.push(obj);
-                break;
-            case ("TMC"):
-            case ("UPS"):
-                obj = {
-                    trackingNumber: carrierData[i].External,
-                    url: 'https://onlinetools.ups.com/ups.app/xml/Track',
-                    name: carrierData[i].Shipping,
-                    method: 'post',
-                    rn: carrierData[i].rn,
-                    param: `<?xml version="1.0"?><AccessRequest xml:lang="en-US"><AccessLicenseNumber>FC312F9BE62AFF90</AccessLicenseNumber><UserId>UPSwineshipping</UserId><Password>easyship</Password></AccessRequest><?xml version="1.0"?><TrackRequest xml:lang="en-US"><Request><TransactionReference><XpciVersion>1.0001</XpciVersion></TransactionReference><RequestAction>Track</RequestAction><RequestOption>1</RequestOption></Request><TrackingNumber>${carrierData[i].External}</TrackingNumber></TrackRequest>`
-                }
-                arr.push(obj);
-                break;
-            case ("GSO"):
-                obj = {
-                    trackingNumber: carrierData[i].External,
-                    url: `https://api.gso.com/Rest/v1/TrackShipment?TrackingNumber=${carrierData[i].External}&AccountNumber=50874`,
-                    name: carrierData[i].Shipping,
-                    method: 'axiosGetWithHeader',
-                    rn: carrierData[i].rn,
-                    token: 'YX5dIhnUYm4xSwgFj28RsTCsuJffJWVXSi4dJKUw+RXUMVtjC6lhDP3c9hc+5asK3M3ycKUangIE5uRASD+YsXYmwRCDet5zxPqv9/f8ZLA='
-                }
-                arr.push(obj);
-                break;
-            case ("TPS"):
-                obj = {
-                    trackingNumber: carrierData[i].External,
-                    url: `http://production.shippingapis.com/ShippingAPI.dll?API=TrackV2&XML=<TrackFieldRequest USERID="487WINES7756"><TrackID ID="${carrierData[i].External}"></TrackID></TrackFieldRequest>`,
-                    name: carrierData[i].Shipping,
-                    rn: carrierData[i].rn,
-                    method: 'axiosGet',
-                    param: ''
-                }
-                arr.push(obj);
-                break;
-        }
+util.processCarrierResponse = (carrierInfo) => {
+    const carriermap = {
+        fedEx: processFedEx
+        , ups: processUps
+        , gso: processGso
     }
-    return (arr);
+    carriermap[carrierInfo.carrierName](carrierInfo);
 }
 
-util.axiosGet = (carrierInfo) => {
-    axios.get(carrierInfo.url)
-        .then(res => {
-            //Save in database
+function processGso(x){
+    const unifiedJson = {
+        name: x.shipping
+        , trackingNumber: x.trackingNumber
+        , status: x.response.StatusCode == 200?'delivered' : 'error'
+        , dateTime: Date.now()
+    };
+    handler.buffer.next(unifiedJson);
+}
 
-            config.buffer.next({ trackingNumber: carrierInfo.trackingNumber, name: carrierInfo.name });
-            ibuki.emit('parseXml:util:xmlParse', { response: res.data, carrierInfo: carrierInfo });
-            //ibuki.emit('sql1-update:util>db1',{rn:1});
-            // flag && 
-            config.prepared.next(1);
-            flag = false;
-            config.carrierCount--;
-            config.responseCount++;
-            console.log(carrierInfo.trackingNumber, 'name:', carrierInfo.name,
-                'Count: ', config.carrierCount, 'Queued:', (config.requestCount - config.responseCount - config.errorCount)
-                , ' delay: ', config.piston
-            );
-        })
-        .catch(err => {
-            //log in database
-            config.carrierCount--;
-            config.errorCount++;
-            console.log('Error:', 'Count:', config.carrierCount, 'Error:', config.errorCount, 'Queued:', (config.requestCount - config.responseCount - config.errorCount));
+function processFedEx(x) {
+    parseString(x.response
+        , { trim: true, explicitArray: false }
+        , function (err, result) {
+            if (err) {
+                ibuki.emit('app-error:any', handler.frameError(err, 'util', 'info', 3))
+            } else {
+                const notifications = result.TrackReply.Notifications;
+                if (notifications.Severity === 'ERROR') {
+                    ibuki.emit('app-error:any', handler.frameError(
+                        { name: 'apiCallError', message: 'FedEx:' + x.trackingNumber + ' ' + notifications.LocalizedMessage }
+                        , 'util', 'info', 4))
+                } else {
+                    (typeof result.TrackReply.TrackDetails.Events!== 'undefined')&& (typeof result.TrackReply.TrackDetails.Events.length !== 'undefined') &&  result.TrackReply.TrackDetails.Events.forEach(activity=>{
+                        logger.info(activity.EventType +';'+activity.EventDescription);
+                    })
+                    
+                   
+                    //things are fine. Create unified json object and push it to buffer to be updated in database
+                    const unifiedJson = {
+                        name: 'fedEx'
+                        , trackingNumber: x.trackingNumber
+                        , status: 'delivered'
+                        , dateTime: Date.now()
+                    };
+                    handler.buffer.next(unifiedJson);
+                    // carrierInfo.parsedResponse = result.TrackReply;
+                    // pushUnifiedJson(carrierInfo);
+                }
+            }
         });
 }
-util.axiosPost = (carrierInfo) => {
-    axios.post(carrierInfo.url, carrierInfo.param)
-        .then(res => {
-            //Save in database
 
-            config.buffer.next({ trackingNumber: carrierInfo.trackingNumber, name: carrierInfo.name });
-            ibuki.emit('parseXml:util:xmlParse', { response: res.data, carrierInfo: carrierInfo });
-            //ibuki.emit('sql1-update:util>db1',{rn:1});
-            // flag && 
-            config.prepared.next(1);
-            flag = false;
-            config.carrierCount--;
-            config.responseCount++;
-            console.log(carrierInfo.trackingNumber, 'name:', carrierInfo.name,
-                'Count: ', config.carrierCount, 'Queued:', (config.requestCount - config.responseCount - config.errorCount)
-                , ' delay: ', config.piston
-            );
-        })
-        .catch(err => {
-            //log in database
-            config.carrierCount--;
-            config.errorCount++;
-            console.log('Error:', 'Count:', config.carrierCount, 'Error:', config.errorCount, 'Queued:', (config.requestCount - config.responseCount - config.errorCount));
-        });
-
+function processUps(x) {
+    parseString(x.response
+        , { trim: true, explicitArray: false }
+        , function (err, result) {
+            if (err) {
+                ibuki.emit('app-error:any', handler.frameError(err, 'util', 'info', 5))
+            } else {
+                const response = result.TrackResponse.Response;
+                if (response.ResponseStatusCode === '0') {
+                    const errorDescription = response.Error.ErrorDescription
+                    ibuki.emit('app-error:any', handler.frameError(
+                        { name: 'apiCallError', message: 'UPS:' + x.trackingNumber + ' ' + errorDescription }
+                        , 'util', 'info', 4));
+                } else {
+                    (result.TrackResponse.Shipment.Package.Activity) && result.TrackResponse.Shipment.Package.Activity.forEach(activity=>{
+                        logger.info(activity.Status.StatusType.Code +';'+activity.Status.StatusType.Description);
+                    })
+                    const unifiedJson = {
+                        name: 'fedEx'
+                        , trackingNumber: x.trackingNumber
+                        , status: 'delivered'
+                        , dateTime: Date.now()
+                    };
+                    handler.buffer.next(unifiedJson);
+                    // carrierInfo.parsedResponse = response;
+                }
+            }
+        }
+    )
 }
 
+module.exports = util;
 
-util.axiosGetWithHeader = (carrierInfo) => {
 
-    axios.get(carrierInfo.url, { headers: { Token: carrierInfo.token, 'Content-Type': 'application/json' } })
-        .then(res => {
-            //Save in database
+// function pushUnifiedJson(carrierInfo) {
+//     const carrierMap = {
+//         fedEx: (x) => {
+//             const unifiedJson = {
+//                 name: 'fedEx'
+//                 , trackingNumber: x.trackingNumber
+//                 , status: 'delivered'
+//                 , dateTime: Date.now()
+//             };
+//             return (unifiedJson);
+//         }
+//         , ups: (x) => { }
+//         , gso: (x) => { }
+//         , tps: (x) => { }
+//     }
+//     handler.buffer.next(carrierMap[carrierInfo.carrierName](carrierInfo));
+// }
 
-            config.buffer.next({ trackingNumber: carrierInfo.trackingNumber, name: carrierInfo.name });
-            ibuki.emit('parseXml:util:xmlParse', { response: res.data, carrierInfo: carrierInfo });
-            //ibuki.emit('sql1-update:util>db1',{rn:1});
-            // flag && 
-            config.prepared.next(1);
-            flag = false;
-            config.carrierCount--;
-            config.responseCount++;
-            console.log(carrierInfo.trackingNumber, 'name:', carrierInfo.name,
-                'Count: ', config.carrierCount, 'Queued:', (config.requestCount - config.responseCount - config.errorCount)
-                , ' delay: ', config.piston
-            );
-        })
-        .catch(err => {
-            //log in database
-            config.carrierCount--;
-            config.errorCount++;
-            console.log('Error:', 'Count:', config.carrierCount, 'Error:', config.errorCount, 'Queued:', (config.requestCount - config.responseCount - config.errorCount));
-        });
 
-}
+
+// util.xmlToJson = (xml) => {
+//     parseString(fedexResponse, { trim: true, explicitArray: false }, function (err, result) {
+//         // console.dir(result);
+//         const details = result.TrackReply.TrackDetails;
+//         result = null;
+//         // console.log(details);
+//     });
+// }
+
+// util.processCarrierSerially = (carrierInfo) => {
+//     axios.get(carrierInfo.url)
+//         .then(res => {
+//             //Save in database
+
+//             config.buffer.next({ trackingNumber: carrierInfo.trackingNumber, name: carrierInfo.name });
+//             ibuki.emit('sql1-update:util>db1');
+//             // flag && 
+//             // config.prepared.next(1);
+//             // flag=false;
+//             // config.carrierCount--;
+//             // config.responseCount++;
+//             // console.log(carrierInfo.trackingNumber, 'name:', carrierInfo.name,
+//             //     'Count: ', config.carrierCount, 'Queued:', (config.requestCount - config.responseCount - config.errorCount)
+//             //     , ' delay: ', config.piston
+//             // );
+//         })
+//         .catch(err => {
+//             //log in database
+//             // config.carrierCount--;
+//             // config.errorCount++;
+//             // console.log('Error:', 'Count:', config.carrierCount, 'Error:', config.errorCount, 'Queued:', (config.requestCount - config.responseCount - config.errorCount));
+//         });
+// }
+
+// handler.sub3 = ibuki.filterOn('parse-api-response:api>util').subscribe(d => {
+//     let carrierInfo = d.data;
+//     parseString(carrierInfo.response
+//         , { trim: true, explicitArray: false }
+//         , function (err, result) {
+//             if (err) {
+//                 ibuki.emit('app-error:any', handler.frameError(err, 'util', 'info', 3))
+//             } else {
+//                 const notifications = result.TrackReply.Notifications;
+//                 if (notifications.Severity === 'ERROR') {
+//                     ibuki.emit('app-error:any', handler.frameError(
+//                         { name: 'apiCallError', message: carrierInfo.trackingNumber + ' ' + notifications.LocalizedMessage }
+//                         , 'util', 'info', 4))
+//                 } else {
+//                     //things are fine. Create unified json object and push it to buffer to be updated in database
+//                     console.log(carrierInfo.trackingNumber, ' ', result.TrackReply);
+//                     carrierInfo.parsedResponse = result.TrackReply;
+//                 }
+//             }
+//             // const details = result.TrackReply.TrackDetails;
+//             // console.log(details);
+//         });
+// });
 
 // util.getCarrierInfos = (name, count) => {
 //     let arr = [];
 //     for (let i = 0; i < count; i++) {
 //         let obj = {
 //             trackingNumber: getRandomInt(1000, 10000),
-//             url: 'http://production.shippingapis.com/ShippingAPI.dll?API=TrackV2&XML=<TrackFieldRequest USERID="487WINES7756"><TrackID ID="9400110200881653513733"></TrackID></TrackFieldRequest>',
+//             url: 'http://localhost:8081/test',
 //             name: name
 //         }
 //         arr.push(obj);
@@ -194,7 +185,6 @@ util.axiosGetWithHeader = (carrierInfo) => {
 //     return (arr);
 // }
 
-module.exports = util;
 // util.processCarrier = (carrierObject) => {
 //     const carrierInfo = carrierObject.carrierInfo;
 //     let index = carrierObject.index;
