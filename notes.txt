@@ -127,3 +127,40 @@ https://api.gso.com/Rest/v1/token
 0.1 Send me script for creating 50,000 rows info table, so that I can create the table.
 1. Deploy to azure the complete solution and test
 2. As per our meeting with Viraj, do complete the solution, deploy and test in Azure using Telemetry for logging
+
+
+Status Message of GSO:
+Delivery Status, options are:
+IN TRANSIT
+DELAYED
+DELIVERED
+RETURNED
+
+Status Message of GSO:
+Code       Desc
+M	   Order Processed
+D	   Delivered
+I	   In Transit
+X	   Any issue [e.g. The receiver was not available at the time of the final delivery attempt/ A delivery change for this package is in progress. / The receiver will pick up the package at a UPS facility. etc]
+P	  Pickup Scan
+
+
+Status Message of Fedex:
+AF:  At local FedEx facility
+AR: At local FedEx facility
+CA: Shipment cancelled by sender
+DE: Delivery exception
+DL: Delivered
+DP: Departed FedEx location
+HA: Hold at location request accepted
+HP: Ready for recipient pickup
+IT: In transit
+OC: Shipment information sent to FedEx
+OD: On FedEx vehicle for delivery
+PU: Picked up
+RR: Delivery option requested
+RS: Returning package to shipper
+
+
+
+
