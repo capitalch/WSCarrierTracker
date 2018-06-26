@@ -11,7 +11,8 @@
     History table: Formation of JSON and push
     log table
 9. Azure email research and implementation
-10 Manage better cleanup
+10. Manage better cleanup
+11. Create flowchart of entire process
 
 Carrier specific changes in workbench, db
 2. Database update

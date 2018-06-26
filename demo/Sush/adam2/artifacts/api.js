@@ -4,6 +4,7 @@ const ibuki = require('./ibuki');
 const util = require('./util');
 const handler = require('./handler');
 const Q = require('q');
+const notify = require('./notify');
 
 let api = {};
 
@@ -20,7 +21,7 @@ api.getGsoTokenPromises = (info) => {
         const promise = axios.get(info.tokenUrl, config);
         return (promise);
     });
-    return (Q.allSettled(promises));
+    return (Q.allSettled(promises)); //Even if error is encountered in a promise still other promises are handled
     // return (axios.all(promises));
 }
 
@@ -29,6 +30,7 @@ api.axiosPost = (carrierInfo) => {
         .then(res => {
             //Save in database
             carrierInfo.response = res.data;
+            notify.addCarrierResponse(carrierInfo);
             handler.carrierCount--;
             util.processCarrierResponse(carrierInfo);
             // ibuki.emit('parse-api-response:api>util', carrierInfo);
@@ -47,8 +49,9 @@ api.axiosPost = (carrierInfo) => {
         })
         .catch(err => {
             handler.carrierCount--;
+            notify.addCarrierError(carrierInfo);
             ibuki.emit('app-error:any', handler.frameError(
-                err, 'api', 'fatal', 5));
+                err, 'api', 'info', 5));
             //log in database
             // config.carrierCount--;
             // config.errorCount++;

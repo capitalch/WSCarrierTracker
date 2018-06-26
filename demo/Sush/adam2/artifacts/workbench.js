@@ -5,6 +5,7 @@ const settings = require('../settings.json');
 const rx = require('rxjs');
 const operators = require('rxjs/operators');
 const api = require('./api');
+const notify = require('./notify');
 
 let workbench = {};
 
@@ -48,8 +49,6 @@ handler.sub1 = ibuki.filterOn('handle-big-object:db>workbench').subscribe(
                 x.url = settings.carriers.gso.url.concat(`?TrackingNumber=${x.trackingNumber}&AccountNumber=${x.accountNumber}`);
                 return (x);
             });
-        (gso.length > 0) &&
-        (ibuki.emit('pre-process-gso-carrier:self', gso));
 
         const tps = bigObject
             .filter(x => (
@@ -61,32 +60,35 @@ handler.sub1 = ibuki.filterOn('handle-big-object:db>workbench').subscribe(
                 x.carrierName = 'tps';
                 return (x);
             });
-
-        (gso.length > 0) &&
-            (ibuki.emit('pre-process-gso-carrier:self', gso));
-        (fedEx.length > 0) &&
-            (ibuki.emit('process-carrier:self', fedEx));
-        (ups.length > 0) &&
-            (ibuki.emit('process-carrier:self', ups));
-        (tps.length > 0) &&
-            (ibuki.emit('process-carrier:self', tps));
-        handler.closeIfIdle();
+        // notify module is used to notify errors and progress
+        (gso.length > 0) && (notify.initCarrier('gso',gso)) &&
+        (ibuki.emit('pre-process-gso-carrier:self', gso)); // Pre processing GSO object to get token information
+        (fedEx.length > 0) && (notify.initCarrier('fedEx', fedEx)) &&
+        (ibuki.emit('process-carrier:self',fedEx));
+        (ups.length > 0) && (notify.initCarrier('ups', ups)) &&
+        (ibuki.emit('process-carrier:self', ups));
+        (tps.length > 0) && (notify.initCarrier('tps', tps)) &&
+        (ibuki.emit('process-carrier:self', tps));
+        // handler.closeIfIdle();
     }
 );
 
 handler.sub8 = ibuki.filterOn('process-carrier:self').subscribe(d => {
     const carrierInfos = d.data;
-    handler.carrierCount = handler.carrierCount + carrierInfos.length;
-    console.log('db requests:', handler.dbRequests, ' carrier count:', handler.carrierCount);
+    // handler.carrierCount = handler.carrierCount + carrierInfos.length;
+    // handler.notifyProgress();
+
+    // console.log('db requests:', handler.dbRequests, ' carrier count:', handler.carrierCount);
     handler.sub2 = rx.from(carrierInfos)
         .pipe(
             operators
-                .concatMap(x => rx.of(x)
-                    .pipe(operators
-                        .delay(settings.carriers[x.carrierName].piston || 20)))
+            .concatMap(x => rx.of(x)
+                .pipe(operators
+                    .delay(settings.carriers[x.carrierName].piston || 20)))
         )
         .subscribe(
             x => {
+                notify.addCarrierRequest(x);
                 api[x.method](x);
             }
         );
@@ -110,7 +112,7 @@ handler.sub9 = ibuki.filterOn('pre-process-gso-carrier:self').subscribe(d => {
                 null;
         })
         gso.forEach(x => {
-            x.token = x.accountNumber ? accountWithTokens[x.accountNumber] : '';            
+            x.token = x.accountNumber ? accountWithTokens[x.accountNumber] : '';
             x.config = {
                 headers: {
                     "Token": x.token,
