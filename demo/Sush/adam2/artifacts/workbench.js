@@ -60,7 +60,7 @@ handler.sub1 = ibuki.filterOn('handle-big-object:db>workbench').subscribe(
                 x.carrierName = 'tps';
                 return (x);
             });
-        // notify module is used to notify errors and progress
+        // notify module is used to notify errors and status
         (gso.length > 0) && (notify.initCarrier('gso',gso)) &&
         (ibuki.emit('pre-process-gso-carrier:self', gso)); // Pre processing GSO object to get token information
         (fedEx.length > 0) && (notify.initCarrier('fedEx', fedEx)) &&
@@ -69,7 +69,7 @@ handler.sub1 = ibuki.filterOn('handle-big-object:db>workbench').subscribe(
         (ibuki.emit('process-carrier:self', ups));
         (tps.length > 0) && (notify.initCarrier('tps', tps)) &&
         (ibuki.emit('process-carrier:self', tps));
-        // handler.closeIfIdle();
+        handler.closeIfIdle();
     }
 );
 
@@ -88,7 +88,7 @@ handler.sub8 = ibuki.filterOn('process-carrier:self').subscribe(d => {
         )
         .subscribe(
             x => {
-                notify.addCarrierRequest(x);
+                notify.addApiRequest(x);
                 api[x.method](x);
             }
         );

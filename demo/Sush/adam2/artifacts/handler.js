@@ -2,6 +2,7 @@
 const ibuki = require('./ibuki');
 const domain = require('domain');
 const rx = require('rxjs');
+const notify = require('./notify');
 
 let handler = {};
 handler.buffer = new rx.Subject();
@@ -9,29 +10,6 @@ handler.dbRequests = 0;
 handler.apiRequests = 0;
 handler.carrierCount = 0;
 
-
-// {
-//     fedEx: {
-//         requestCount: 0,
-//         responseCount: 0,
-//         queue: handler.carrierProgress.fedEx.requestCount - handler.carrierProgress.fedEx.responseCount
-//     },
-//     ups: {
-//         requestCount: 0,
-//         responseCount: 0,
-//         queue: handler.carrierProgress.ups.requestCount - handler.carrierProgress.ups.responseCount
-//     },
-//     gso: {
-//         requestCount: 0,
-//         responseCount: 0,
-//         queue: handler.carrierProgress.gso.requestCount - handler.carrierProgress.gso.responseCount
-//     },
-//     tps: {
-//         requestCount: 0,
-//         responseCount: 0,
-//         queue: handler.carrierProgress.tps.requestCount - handler.carrierProgress.tps.responseCount
-//     }
-// }
 //process is global variable. Let the domain error ride over process variable
 // so that it is available everywhere. Domain error is unhandled error anywhere in application
 process.domainError = domain.create();
@@ -53,13 +31,23 @@ process.on('exit', function (code) {
     console.log('Exiting WSCarrierTracker:', code);
 });
 
+const isIdle = () => {
+    const apiStatus = notify.getApiStatus();
+    const carriers = Object.keys(apiStatus);
+    let apiQueue = 0;
+    carriers.forEach(x => { apiQueue = apiQueue + apiStatus[x].queue });
+    const dbQueue = notify.getDbStatus().dbQueue();
+    const ret = ((dbQueue === 0) && (apiQueue === 0));
+    return (ret);
+}
+
 handler.closeIfIdle = () => {
     const myInterval = rx.interval(2000);
     handler.sub6 = myInterval.subscribe(() => {
         // (handler.dbRequests === 0) &&
         // (handler.carrierCount === 0) &&
         // (handler.cleanup());
-        
+        isIdle() && handler.cleanup();
     });
 }
 
@@ -75,9 +63,9 @@ ibuki.filterOn('app-error:any').subscribe(d => {
     // Use telemetry to log error
 });
 
-handler.notifyProgress = () => {
-    console.log('db requests:', handler.dbRequests, ' carrier count:', handler.carrierCount);
-}
+// handler.notifyProgress = () => {
+//     console.log('db requests:', handler.dbRequests, ' carrier count:', handler.carrierCount);
+// }
 
 handler.frameError = (err, location, severity, index) => {
     err.location = location;
@@ -85,6 +73,7 @@ handler.frameError = (err, location, severity, index) => {
     err.index = index;
     return (err);
 }
+
 handler.cleanup = () => {
     console.log('cleaning up');
     handler.sub0 && handler.sub0.unsubscribe();

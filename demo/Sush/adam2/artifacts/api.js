@@ -30,7 +30,7 @@ api.axiosPost = (carrierInfo) => {
         .then(res => {
             //Save in database
             carrierInfo.response = res.data;
-            notify.addCarrierResponse(carrierInfo);
+            notify.addApiResponse(carrierInfo);
             handler.carrierCount--;
             util.processCarrierResponse(carrierInfo);
             // ibuki.emit('parse-api-response:api>util', carrierInfo);
@@ -49,7 +49,7 @@ api.axiosPost = (carrierInfo) => {
         })
         .catch(err => {
             handler.carrierCount--;
-            notify.addCarrierError(carrierInfo);
+            notify.addApiError(carrierInfo);
             ibuki.emit('app-error:any', handler.frameError(
                 err, 'api', 'info', 5));
             //log in database
@@ -63,14 +63,15 @@ api.axiosGet = (carrierInfo) => {
     axios.get(carrierInfo.url, carrierInfo.config)
         .then(res => {
             //Save in database
-
+            notify.addApiResponse(carrierInfo);
             carrierInfo.response = res.data;
-            handler.carrierCount--;
+            // handler.carrierCount--;
             util.processCarrierResponse(carrierInfo);
         })
         .catch(err => {
             //log in database
-            handler.carrierCount--;
+            // handler.carrierCount--;
+            notify.addApiError(carrierInfo);
             ibuki.emit('app-error:any', handler.frameError(
                 err, 'api', 'info', 6));
         });

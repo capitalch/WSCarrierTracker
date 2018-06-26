@@ -29,6 +29,7 @@
         },
         "ups": {
             "piston": 20,
+            "queue":10,
             "url": "https://onlinetools.ups.com/ups.app/xml/Track",
             "accessLicenseNumber": "FC312F9BE62AFF90",
             "userId": "UPSwineshipping",
@@ -36,6 +37,7 @@
         },
         "gso": {
             "piston": 20,
+            "queue":10,
             "tokenUrl": "https://api.gso.com/Rest/v1/token",
             "url": "https://api.gso.com/Rest/v1/TrackShipment",
             "accounts": [{
@@ -56,6 +58,8 @@
             ]
         },
         "tps": {
+            "piston":20,
+            "queue":10,
             "url": "http://production.shippingapis.com/ShippingAPI.dll",
             "userId": "487WINES7756"
         }
