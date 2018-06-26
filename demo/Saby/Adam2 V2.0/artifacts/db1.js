@@ -4,26 +4,18 @@ const sql = require('mssql');
 const rx = require('rxjs');
 const operators = require('rxjs/operators');
 const ibuki = require('./ibuki');
-const config = require('./config');
+const config = require('../config');
 const dbConfig = config.dbConfig;
 const pool = new sql.ConnectionPool(dbConfig);
 let reqs = [];
 let req1 = null,
     req2 = null;
 
-function disburse(d) {
-    let rn = d.data.rn;
-    let trackingNumber=d.data.trackingNumber;
-    let packageStatus= d.data.packageStatus;
+function disburse() {
     const req = reqs.find((e) => e.isAvailable);
     if (req) {
         req.isAvailable = false;
-        let sql =`insert into [dbo].[PackageActivityHistory] (PackageID,[ActivityTimestamp],[Location],[ActivityCode],[ActivityDetails])
-        values ('${rn}',getdate(),'India','${packageStatus.ResponseStatus}','${packageStatus.ResponseStatusCode}');
-        update [Wineshipping$Package Info] set [Status]='${packageStatus.ResponseStatusCode}', [Status_Date]=getdate(),
-        [Status_Time]='5:14:47 PM' ,[EstimatedDeliveryDate]=getdate() where No_='${rn}'`;
-       
-        req.query(sql , (err, result) => {
+        req.query('update product set UnitPrice = UnitPrice+1', (err, result) => {
             req.isAvailable = true;
             if (err) {
                 console.log(err);
@@ -34,7 +26,7 @@ function disburse(d) {
     } else {
         let sub1 = rx.interval(30).subscribe(d => {
             if (reqs.some(e => e.isAvailable)) {
-                ibuki.emit('sql1-update:util>db1',{rn:rn,trackingNumber: trackingNumber,packageStatus:packageStatus});
+                ibuki.emit('sql1-update:util>db1');
                 sub1.unsubscribe();
             };
         })
@@ -42,8 +34,7 @@ function disburse(d) {
 }
 
 ibuki.filterOn('sql1-update:util>db1').subscribe(d => {
-   
-    disburse(d);
+    disburse();
 });
 
 ibuki.filterOn('sql1-init:index:db').subscribe(
@@ -52,40 +43,16 @@ ibuki.filterOn('sql1-init:index:db').subscribe(
             if (err) {
                 console.log('1:', err)
             } else {
-                // ibuki.emit('serial-process:index:workbench');
+                ibuki.emit('serial-process:index:workbench');
                 for (let i = 0; i < 10; i++) {
                     const req = new sql.Request(pool);
                     req.isAvailable = true;
                     req.index = i;
                     reqs.push(req);
                 }
-                getBigObject() ;
             }
         })
     });
-
-function getBigObject() {
-    const req = reqs.find((e) => e.isAvailable);
-    if (req) {
-        req.isAvailable = false;
-        req.query(`SELECT top 15 NO_ rn,[Shipping Agent Code] 'Shipping',[External Tracking No_] 'External' 
-        FROM [Wineshipping$Package Info] 
-        where [Shipping Agent Code] in ('UPS') and [External Tracking No_] !=''`, (err, result) => {
-            req.isAvailable = true;
-            if (err) {
-                console.log(err);
-            } else {
-                console.log('req fulfilled: ', req.index);
-                ibuki.emit('serial-process:index:workbench', {
-                    bigObject: result.recordset
-                });
-
-            }
-        })
-    } else {
-        console.log('in else part');
-    }
-}
 
 
 // if (req1.pending) {

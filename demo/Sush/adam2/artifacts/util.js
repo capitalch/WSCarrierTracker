@@ -1,20 +1,29 @@
 'use strict';
-const axios = require('axios');
+// const axios = require('axios');
 const ibuki = require('./ibuki');
 const handler = require('./handler');
-const config = require('./config');
+// const config = require('./config');
 const parseString = require('xml2js').parseString;
 
 let util = {};
 
 util.processCarrierResponse = (carrierInfo) => {
-
     const carriermap = {
         fedEx: processFedEx
         , ups: processUps
+        , gso: processGso
     }
-
     carriermap[carrierInfo.carrierName](carrierInfo);
+}
+
+function processGso(x){
+    const unifiedJson = {
+        name: 'fedEx'
+        , trackingNumber: x.trackingNumber
+        , status: 'delivered'
+        , dateTime: Date.now()
+    };
+    handler.buffer.next(unifiedJson);
 }
 
 function processFedEx(x) {
@@ -43,7 +52,7 @@ function processFedEx(x) {
                 }
             }
         });
-};
+}
 
 function processUps(x) {
     parseString(x.response
@@ -72,6 +81,9 @@ function processUps(x) {
         }
     )
 }
+
+module.exports = util;
+
 
 // function pushUnifiedJson(carrierInfo) {
 //     const carrierMap = {
@@ -126,9 +138,6 @@ function processUps(x) {
 //             // console.log('Error:', 'Count:', config.carrierCount, 'Error:', config.errorCount, 'Queued:', (config.requestCount - config.responseCount - config.errorCount));
 //         });
 // }
-
-
-module.exports = util;
 
 // handler.sub3 = ibuki.filterOn('parse-api-response:api>util').subscribe(d => {
 //     let carrierInfo = d.data;

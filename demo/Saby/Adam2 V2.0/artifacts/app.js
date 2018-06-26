@@ -2,7 +2,7 @@
 const path = require('path');
 const express = require('express');
 const ibuki = require('./ibuki');
-const config = require('./config');
+const config = require('../config');
 const app = express();
 
 const argv = require('minimist')(process.argv.slice(2));

@@ -10,6 +10,7 @@ let api = {};
 api.getGsoTokenPromises = (info) => {
     const accounts = info.accounts;
     const promises = accounts.map(x => {
+        console.log('i am here');
         const config = {
             headers: {
                 'AccountNumber': x.accountNumber,
@@ -19,7 +20,7 @@ api.getGsoTokenPromises = (info) => {
         };
         const promise = axios.get(info.tokenUrl, config);
         return (promise);
-    });
+    });   
     return (Q.allSettled(promises));
     // return (axios.all(promises));
 }
