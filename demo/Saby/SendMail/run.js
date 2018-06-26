@@ -1,5 +1,5 @@
 const sgMail = require('@sendgrid/mail');
-sgMail.setApiKey('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');
+sgMail.setApiKey('key');
 const msg = {
     to: ['sbal@netwoven.com'],
     from: 'noreply@example.org',
