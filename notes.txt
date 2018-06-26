@@ -1,8 +1,72 @@
 //Adam2
-1. Carrier specific changes in workbench, db
+1.  detect error with GSO -ve
+2. Piston activation
+3. GSO token error handlings
+4. TPS implementation
+5. John mail: a) Azure account setup, b) TPS strategy, c) GSO token not found
+6. Vomit final error and mail IT
+7. Robust check with error handling
+8. Database 3 tables final strategy and implementation
+    Info table
+    History table: Formation of JSON and push
+    log table
+9. Azure email research and implementation
+10 Manage better cleanup
+
+Carrier specific changes in workbench, db
 2. Database update
 3. Info and error logging
 4. Error handling test
+
+Status Message of GSO:
+
+Delivery Status, options are:
+IN TRANSIT
+DELAYED
+DELIVERED
+RETURNED
+
+Status Message of UPS:
+Code       Desc
+M               Order Processed
+D                Delivered
+I                  In Transit
+X                Any issue [e.g. The receiver was not available at the time of the final delivery attempt/ A delivery change for this package is in progress. / The receiver will pick up the package at a UPS facility. etc]
+P               Pickup Scan
+
+Status Message of Fedex:
+AF:  At local FedEx facility
+AR: At local FedEx facility
+CA: Shipment cancelled by sender
+DE: Delivery exception
+DL: Delivered
+DP: Departed FedEx location
+HA: Hold at location request accepted
+HP: Ready for recipient pickup
+IT: In transit
+OC: Shipment information sent to FedEx
+OD: On FedEx vehicle for delivery
+PU: Picked up
+RR: Delivery option requested
+RS: Returning package to shipper
+ 
+
+-------------------- Enable Application Insights----------
+
+1. Go to Azure portal
+2. Create a resource > Monitoring + Management > Application Insights.
+3. Provide Name,Application Type,Resource Group,Location
+4. Click Create
+5. Select Overview> Essentials > copy Instrumentation Key
+6. npm install applicationinsights --save
+Code :
+const appInsights = require("applicationinsights");
+appInsights.setup("7c370e26-7a3b-4483-9bae-a0164986dbcf");
+appInsights.start();
+var telemetry = appInsights.defaultClient;
+Logger.info = function (msg) {
+    telemetry.trackTrace({message: 'Wineshiping message : '+ msg});
+};
 
 Process
 1. Get first 5 digits of tracking no. That is account no. Get user name, password as per following logic

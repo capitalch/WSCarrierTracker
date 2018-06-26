@@ -48,6 +48,8 @@ handler.sub1 = ibuki.filterOn('handle-big-object:db>workbench').subscribe(
                 x.url = settings.carriers.gso.url.concat(`?TrackingNumber=${x.trackingNumber}&AccountNumber=${x.accountNumber}`);
                 return (x);
             });
+        (gso.length > 0) &&
+        (ibuki.emit('pre-process-gso-carrier:self', gso));
 
         const tps = bigObject
             .filter(x => (
@@ -123,6 +125,8 @@ handler.sub9 = ibuki.filterOn('pre-process-gso-carrier:self').subscribe(d => {
 });
 
 module.exports = workbench;
+
+//deprecated code
 // function processCarrier(carrierInfos) {
 
 //     handler.carrierCount = handler.carrierCount + carrierInfos.length;
