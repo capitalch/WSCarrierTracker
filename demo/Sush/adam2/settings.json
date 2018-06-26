@@ -1,5 +1,7 @@
 {
-    "name": "sushant",
+    "config": {
+        "verbose": true
+    },
     "db": {
         "user": "sagarwal",
         "password": "su$hant123",
@@ -16,7 +18,7 @@
     },
     "carriers": {
         "fedEx": {
-            "piston": 20,
+            "piston": 100,
             "queue": 10,
             "url": "https://gateway.fedex.com:443/xml",
             "method": "",

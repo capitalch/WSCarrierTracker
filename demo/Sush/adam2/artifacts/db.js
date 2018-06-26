@@ -1,6 +1,6 @@
 'use strict';
 const sql = require('mssql');
-const rx = require('rxjs');
+// const rx = require('rxjs');
 const ibuki = require('./ibuki');
 const handler = require('./handler');
 const settings = require('../settings.json');
@@ -56,13 +56,13 @@ const disburse = (info) => {
     if (req) {
         req.isAvailable = false;
         handler.dbRequests++;
-        console.log('db requests:', handler.dbRequests, ' carrier count:', handler.carrierCount);
+        // console.log('db requests:', handler.dbRequests, ' carrier count:', handler.carrierCount);
         req.query('update product set UnitPrice = UnitPrice+1 where id = 1', (err, result) => {
             handler.dbRequests--;
-            console.log('db requests:', handler.dbRequests, ' carrier count:', handler.carrierCount);
+            // console.log('db requests:', handler.dbRequests, ' carrier count:', handler.carrierCount);
             req.isAvailable = true;
             if (err) {
-                console.log(err);
+                // console.log(err);
             } else {
                 // console.log('req fulfilled: ', req.index);
             }

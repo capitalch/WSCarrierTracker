@@ -8,6 +8,30 @@ handler.buffer = new rx.Subject();
 handler.dbRequests = 0;
 handler.apiRequests = 0;
 handler.carrierCount = 0;
+
+
+// {
+//     fedEx: {
+//         requestCount: 0,
+//         responseCount: 0,
+//         queue: handler.carrierProgress.fedEx.requestCount - handler.carrierProgress.fedEx.responseCount
+//     },
+//     ups: {
+//         requestCount: 0,
+//         responseCount: 0,
+//         queue: handler.carrierProgress.ups.requestCount - handler.carrierProgress.ups.responseCount
+//     },
+//     gso: {
+//         requestCount: 0,
+//         responseCount: 0,
+//         queue: handler.carrierProgress.gso.requestCount - handler.carrierProgress.gso.responseCount
+//     },
+//     tps: {
+//         requestCount: 0,
+//         responseCount: 0,
+//         queue: handler.carrierProgress.tps.requestCount - handler.carrierProgress.tps.responseCount
+//     }
+// }
 //process is global variable. Let the domain error ride over process variable
 // so that it is available everywhere. Domain error is unhandled error anywhere in application
 process.domainError = domain.create();
@@ -31,10 +55,11 @@ process.on('exit', function (code) {
 
 handler.closeIfIdle = () => {
     const myInterval = rx.interval(2000);
-    handler.sub6 = myInterval.subscribe(x => {
-        (handler.dbRequests === 0) &&
-        (handler.carrierCount === 0) &&
-        (handler.cleanup());
+    handler.sub6 = myInterval.subscribe(() => {
+        // (handler.dbRequests === 0) &&
+        // (handler.carrierCount === 0) &&
+        // (handler.cleanup());
+        
     });
 }
 
@@ -49,6 +74,10 @@ ibuki.filterOn('app-error:any').subscribe(d => {
     }
     // Use telemetry to log error
 });
+
+handler.notifyProgress = () => {
+    console.log('db requests:', handler.dbRequests, ' carrier count:', handler.carrierCount);
+}
 
 handler.frameError = (err, location, severity, index) => {
     err.location = location;
