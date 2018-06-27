@@ -1,8 +1,6 @@
 'use strict';
-// const axios = require('axios');
 const ibuki = require('./ibuki');
 const handler = require('./handler');
-// const config = require('./config');
 const parseString = require('xml2js').parseString;
 
 let util = {};
@@ -47,8 +45,6 @@ function processFedEx(x) {
                         , dateTime: Date.now()
                     };
                     handler.buffer.next(unifiedJson);
-                    // carrierInfo.parsedResponse = result.TrackReply;
-                    // pushUnifiedJson(carrierInfo);
                 }
             }
         });
@@ -75,7 +71,6 @@ function processUps(x) {
                         , dateTime: Date.now()
                     };
                     handler.buffer.next(unifiedJson);
-                    // carrierInfo.parsedResponse = response;
                 }
             }
         }

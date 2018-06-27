@@ -44,9 +44,6 @@ const isIdle = () => {
 handler.closeIfIdle = () => {
     const myInterval = rx.interval(2000);
     handler.sub6 = myInterval.subscribe(() => {
-        // (handler.dbRequests === 0) &&
-        // (handler.carrierCount === 0) &&
-        // (handler.cleanup());
         isIdle() && handler.cleanup();
     });
 }
@@ -62,10 +59,6 @@ ibuki.filterOn('app-error:any').subscribe(d => {
     }
     // Use telemetry to log error
 });
-
-// handler.notifyProgress = () => {
-//     console.log('db requests:', handler.dbRequests, ' carrier count:', handler.carrierCount);
-// }
 
 handler.frameError = (err, location, severity, index) => {
     err.location = location;
