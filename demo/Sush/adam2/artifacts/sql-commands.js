@@ -1,6 +1,6 @@
 let sqlCommands = {
 	getInfos: `
-SELECT top 1000 NO_ rn,[Shipping Agent Code] shipping,[External Tracking No_] trackingNumber,status
+SELECT top 10 NO_ rn,[Shipping Agent Code] shipping,[External Tracking No_] trackingNumber,status
 	FROM [Wineshipping$PackageinfoNew] 
 	WHERE 
 			NOT [Status] = 'Package returned to shipper' and 
@@ -18,7 +18,10 @@ SELECT top 1000 NO_ rn,[Shipping Agent Code] shipping,[External Tracking No_] tr
 		CarrierStatusMessage = 'ddd',
 		CarrierStatusCode = 'aaa'
 	where No_ = '';
-	
+	insert into PackageHistory(rn, TrackingNumber, ShippingAgentCode, ActivityJson)
+	values(
+		rn,'','',''
+)
 	`
 };
 // sqlCommands.getInfos = `

@@ -34,34 +34,43 @@ json data: nvarchar(4000)
 5. Provide logic for INFO table update and sql / pseudo code
 
 GSO Delivery Status, options are:
-IN TRANSIT
-DELAYED
-DELIVERED
-RETURNED
+IN TRANSIT                              inTransit
+DELAYED                                 inTransit
+DELIVERED                               delivered
+RETURNED                                returned
 
 Status Message of UPS:
 Code       Desc
-M               Order Processed
-D                Delivered
-I                  In Transit
-X                Any issue [e.g. The receiver was not available at the time of the final delivery attempt/ A delivery change for this package is in progress. / The receiver will pick up the package at a UPS facility. etc]
-P               Pickup Scan
+M          Order Processed                  orderProcessed
+D          Delivered                        delivered
+I          In Transit                       inTransit
+X          Any issue [e.g. The receiver was not available at the time of the final delivery attempt/ A delivery change for this package is in progress. / The receiver will pick up the package at a UPS facility. etc]
+                                            exception
+P          Pickup Scan                      pickedUp
 
 Status Message of Fedex:
-AF:  At local FedEx facility
-AR: At local FedEx facility
-CA: Shipment cancelled by sender
-DE: Delivery exception
-DL: Delivered
-DP: Departed FedEx location
-HA: Hold at location request accepted
-HP: Ready for recipient pickup
-IT: In transit
-OC: Shipment information sent to FedEx
-OD: On FedEx vehicle for delivery
-PU: Picked up
-RR: Delivery option requested
-RS: Returning package to shipper
+AF:  At local FedEx facility                orderProcessed
+AR: At local FedEx facility                 orderProcessed
+CA: Shipment cancelled by sender            exception
+DE: Delivery exception                      exception
+DL: Delivered                               delivered
+DP: Departed FedEx location                 inTransit
+HA: Hold at location request accepted       inTransit
+HP: Ready for recipient pickup              inTransit
+IT: In transit                              inTransit
+OC: Shipment information sent to FedEx      inTransit
+OD: On FedEx vehicle for delivery           inTransit
+PU: Picked up                               pickedUp
+RR: Delivery option requested               inTransit
+RS: Returning package to shipper            returned
+
+//unified code
+delivered
+exception
+inTransit
+pickedUp
+returned
+orderProcessed
  
 
 -------------------- Enable Application Insights----------
@@ -121,13 +130,18 @@ A status update is not yet available on your package. It will be available when 
 
 URL is: http://production.shippingapis.com/ShippingAPI.dll?API=TrackV2&XML=%3CTrackFieldRequest%20USERID=%22487WINES7756%22%3E%3CTrackID%20ID=%229400110200881650000000%22%3E%3C/TrackID%3E%3C/TrackFieldRequest%3E
 
-
-CREATE TABLE [dbo].[PackageActivityHistory](
+// script for PackageHistory table
+CREATE TABLE [dbo].[PackageHistory](
 	[ID] [bigint] IDENTITY(1,1) NOT NULL,
-	[rn] [varchar](50) NULL,
-	[TrackingNo] [varchar](50) NULL,
-	[ShippingAgentCode] [varchar](50) NULL,
-	[ActivityJson] [nvarchar](max) NULL,
-	[IsDeleted] [bit] NULL)
+	[rn] [varchar](50) NOT NULL,
+	[TrackingNo] [varchar](50) NOT NULL,
+	[ShippingAgentCode] [varchar](50) NOT NULL,
+	[ActivityJson] [nvarchar](4000) NULL,
+	[IsDeleted] [bit] NOT NULL,
+ CONSTRAINT [PK_PackageHistory] PRIMARY KEY CLUSTERED 
+(
+	[ID] ASC
+)WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
 
 
