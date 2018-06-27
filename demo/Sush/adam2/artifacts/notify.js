@@ -1,16 +1,27 @@
+'use strict';
 let verbose = require('../settings.json').config.verbose;
 verbose = verbose || true;
 
 let notify = {};
 let errors = [];
-let progress = {};
+const apiStatus = {};
+notify.getApiStatus = () => apiStatus;
+const dbStatus = {
+    dbRequests: 0, dbResponses: 0, dbErrors: 0
+    , dbQueue: () => {
+        return (dbStatus.dbRequests - dbStatus.dbResponses - dbStatus.dbErrors);
+    }
+};
+notify.getDbStatus = () => dbStatus;
 
 
 notify.pushError = (x) => {
     verbose && console.log(x);
     errors.push(x)
 };
+
 notify.getAllErrors = () => notify.errors;
+
 notify.showAllErrors = () => {
     errors.forEach((x) => {
         console.log(x);
@@ -18,52 +29,85 @@ notify.showAllErrors = () => {
 };
 
 notify.initCarrier = (carrierName, infos) => {
-    progress[carrierName] || (progress[carrierName] = {});
-    progress[carrierName].requests || (progress[carrierName].requests = 0);
-    progress[carrierName].responses || (progress[carrierName].responses = 0);
-    progress[carrierName].queue || (progress[carrierName].queue = 0);
-    progress[carrierName].errors || (progress[carrierName].errors = 0);
-    progress[carrierName].count = infos.length;
-    verbose && (console.log(carrierName, 'Item Count :', progress[carrierName].count));
-    return(true);
+    apiStatus[carrierName] || (apiStatus[carrierName] = {});
+    apiStatus[carrierName].requests || (apiStatus[carrierName].requests = 0);
+    apiStatus[carrierName].responses || (apiStatus[carrierName].responses = 0);
+    apiStatus[carrierName].queue || (apiStatus[carrierName].queue = () =>
+        notify.apiStatus[carrierName].requests - notify.apiStatus[carrierName].dbResponses - notify.apiStatus[carrierName].errors);
+    apiStatus[carrierName].errors || (apiStatus[carrierName].errors = 0);
+    apiStatus[carrierName].count = infos.length;
+    verbose && (console.log(carrierName, 'Item Count :', apiStatus[carrierName].count));
+    return (true);
 }
 
-notify.addCarrierRequest = (info) => {
-    progress[info.carrierName].requests++;
-    progress[info.carrierName].queue = progress[info.carrierName].requests - (progress[info.carrierName].responses) - progress[info.carrierName].errors;
-};
-
-notify.addCarrierResponse = (info) => {
-    progress[info.carrierName].responses++;
-    progress[info.carrierName].queue = (progress[info.carrierName].requests) - progress[info.carrierName].responses - progress[info.carrierName].errors;
-    verbose && notify.showProgress(info);
-};
-
-notify.addCarrierError = (info) => {
-    progress[info.carrierName].errors++;
-    progress[info.carrierName].queue = (progress[info.carrierName].requests) - progress[info.carrierName].responses - progress[info.carrierName].errors;
-    verbose && notify.showProgress(info);
+notify.addDbRequest = () => {
+    dbStatus.dbRequests++;
+    // notify.dbStatus.queue = notify.dbStatus.dbRequests - notify.dbStatus.dbResponses - notify.dbStatus.errors;
 }
 
-notify.showCarrierStatus = (info) => {
-    console.log(
-        info.carrierName, ' Requests:', progress[info.carrierName].requests, ' Responses:', progress[info.carrierName].responses, ' Errors:', progress[info.carrierName].errors, ' Queue:', progress[info.carrierName].queue
+notify.addDbResponse = () => {
+    dbStatus.dbResponses++;
+    // notify.dbStatus.queue = notify.dbStatus.dbRequests - notify.dbStatus.dbResponses - notify.dbStatus.errors;
+}
+
+notify.addDbError = () => {
+    dbStatus.dbErrors++;
+}
+
+notify.addApiRequest = (info) => {
+    apiStatus[info.carrierName].requests++;
+    apiStatus[info.carrierName].queue = apiStatus[info.carrierName].requests - (apiStatus[info.carrierName].responses) - apiStatus[info.carrierName].errors;
+};
+
+notify.addApiResponse = (info) => {
+    apiStatus[info.carrierName].responses++;
+    apiStatus[info.carrierName].queue = (apiStatus[info.carrierName].requests) - apiStatus[info.carrierName].responses - apiStatus[info.carrierName].errors;
+    verbose && notify.showapiStatus(info);
+};
+
+notify.addApiError = (info) => {
+    apiStatus[info.carrierName].errors++;
+    apiStatus[info.carrierName].queue = (apiStatus[info.carrierName].requests) - apiStatus[info.carrierName].responses - apiStatus[info.carrierName].errors;
+    verbose && notify.showapiStatus(info);
+}
+
+// notify.showCarrierStatus = (info) => {
+//     console.log(
+//         info.carrierName, ' Requests:', apiStatus[info.carrierName].requests, ' Responses:', apiStatus[info.carrierName].responses, ' Errors:', apiStatus[info.carrierName].errors, ' Queue:', apiStatus[info.carrierName].queue
+//     );
+// }
+
+// notify.showCarrierStatus = (carrierName) => {
+//     console.log(carrierName, ' Requests:', apiStatus[carrierName].requests, ' Responses:', apiStatus[carrierName].responses, ' Errors:', apiStatus[carrierName].errors, ' Queue:', apiStatus[carrierName].queue);
+// }
+
+notify.showapiStatus = (info) => {
+    console.log(info.carrierName,
+        ' ApiRequests:'
+        , apiStatus[info.carrierName].requests
+        , ' ApiResponses:'
+        , apiStatus[info.carrierName].responses
+        , ' ApiErrors:'
+        , apiStatus[info.carrierName].errors
+        , ' ApiQueue:'
+        , apiStatus[info.carrierName].queue
+        , ' DbRequests:'
+        , dbStatus.dbRequests
+        , ' DbResponses:'
+        , dbStatus.dbResponses
+        , ' DbErrors:'
+        , dbStatus.dbErrors
+        , ' DbQueue:'
+        , dbStatus.dbQueue()
     );
-}
 
-notify.showCarrierStatus = (carrierName) => {
-    console.log(carrierName, ' Requests:', progress[carrierName].requests, ' Responses:', progress[carrierName].responses, ' Errors:', progress[carrierName].errors, ' Queue:', progress[carrierName].queue);
-}
-
-notify.showProgress = (info) => {
-    console.log(info.carrierName, ' Requests:', progress[info.carrierName].requests, ' Responses:', progress[info.carrierName].responses, ' Errors:', progress[info.carrierName].errors, ' Queue:', progress[info.carrierName].queue);
-    // Object.keys(progress).forEach(x => {
-    //     console.log(x, "->", "Requests:", progress[x].requests, ' Responses:', progress[x].responses, ' Queue:', progress[x].queue);
+    // Object.keys(apiStatus).forEach(x => {
+    //     console.log(x, "->", "Requests:", apiStatus[x].requests, ' Responses:', apiStatus[x].responses, ' Queue:', apiStatus[x].queue);
     // })
 }
 
-notify.getProgressInfo = () => {
-    return (progress);
+notify.getapiStatusInfo = () => {
+    return (apiStatus);
 }
 
 
