@@ -1,11 +1,14 @@
 //Adam2
-1.  detect error with GSO -ve
-2. Piston activation
+1.  Detect error with GSO -ve
+                                        2. Piston activation
 3. GSO token error handlings
 4. TPS implementation
-5. John mail: a) Azure account setup, b) TPS strategy, c) GSO token not found
+5. John mail: 
+    a) Azure account setup, 
+    b) TPS strategy, 
+    c) GSO token not found
 6. Vomit final error and mail IT
-7. Robust check with error handling
+    7. Robust check with error handling
 8. Database 3 tables final strategy and implementation
     Info table
     History table: Formation of JSON and push
