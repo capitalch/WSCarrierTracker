@@ -3,14 +3,15 @@
                                         2. Piston activation
 3. GSO token error handlings
 4. TPS implementation
-5. John mail: 
-    a) Azure account setup, Db + resources + our credentials
-    b) TPS strategy, 
-    c) GSO token not found and GSO error
-    d) Production data refresh
+                                        5. John mail: 
+                                            a) Azure account setup, Db + resources + our credentials
+                                            b) TPS strategy, 
+                                            c) GSO token not found and GSO error
+                                            d) Production data refresh
 6. Vomit final error and mail IT
     7. Robust check with error handling
 8. Database 3 tables final strategy and implementation
+json data: nvarchar(4000)
     Info table
         Identify columns, create sql, Identify in our program where to get this info
     History table: Formation of JSON and push
@@ -33,34 +34,43 @@
 5. Provide logic for INFO table update and sql / pseudo code
 
 GSO Delivery Status, options are:
-IN TRANSIT
-DELAYED
-DELIVERED
-RETURNED
+IN TRANSIT                              inTransit
+DELAYED                                 inTransit
+DELIVERED                               delivered
+RETURNED                                returned
 
 Status Message of UPS:
 Code       Desc
-M               Order Processed
-D                Delivered
-I                  In Transit
-X                Any issue [e.g. The receiver was not available at the time of the final delivery attempt/ A delivery change for this package is in progress. / The receiver will pick up the package at a UPS facility. etc]
-P               Pickup Scan
+M          Order Processed                  orderProcessed
+D          Delivered                        delivered
+I          In Transit                       inTransit
+X          Any issue [e.g. The receiver was not available at the time of the final delivery attempt/ A delivery change for this package is in progress. / The receiver will pick up the package at a UPS facility. etc]
+                                            exception
+P          Pickup Scan                      pickedUp
 
 Status Message of Fedex:
-AF:  At local FedEx facility
-AR: At local FedEx facility
-CA: Shipment cancelled by sender
-DE: Delivery exception
-DL: Delivered
-DP: Departed FedEx location
-HA: Hold at location request accepted
-HP: Ready for recipient pickup
-IT: In transit
-OC: Shipment information sent to FedEx
-OD: On FedEx vehicle for delivery
-PU: Picked up
-RR: Delivery option requested
-RS: Returning package to shipper
+AF:  At local FedEx facility                orderProcessed
+AR: At local FedEx facility                 orderProcessed
+CA: Shipment cancelled by sender            exception
+DE: Delivery exception                      exception
+DL: Delivered                               delivered
+DP: Departed FedEx location                 inTransit
+HA: Hold at location request accepted       inTransit
+HP: Ready for recipient pickup              inTransit
+IT: In transit                              inTransit
+OC: Shipment information sent to FedEx      inTransit
+OD: On FedEx vehicle for delivery           inTransit
+PU: Picked up                               pickedUp
+RR: Delivery option requested               inTransit
+RS: Returning package to shipper            returned
+
+//unified code
+delivered
+exception
+inTransit
+pickedUp
+returned
+orderProcessed
  
 
 -------------------- Enable Application Insights----------
@@ -110,6 +120,28 @@ If AccountNo = "50308" Then
 
 https://api.gso.com/Rest/v1/token
 
+USPS error:
 
+
+For each and ever USPS tracking number, I am getting same error message. Previously we got data but now we are not able to get any data. Is it possible to check from your side and let us know.
+Error message is:
+A status update is not yet available on your package. It will be available when the shipper provides an update or the package is delivered to USPS. Check back soon. Sign up for Informed Delivery<SUP>&reg;</SUP> to receive notifications for packages addressed to you.
+
+
+URL is: http://production.shippingapis.com/ShippingAPI.dll?API=TrackV2&XML=%3CTrackFieldRequest%20USERID=%22487WINES7756%22%3E%3CTrackID%20ID=%229400110200881650000000%22%3E%3C/TrackID%3E%3C/TrackFieldRequest%3E
+
+// script for PackageHistory table
+CREATE TABLE [dbo].[PackageHistory](
+	[ID] [bigint] IDENTITY(1,1) NOT NULL,
+	[rn] [varchar](50) NOT NULL,
+	[TrackingNo] [varchar](50) NOT NULL,
+	[ShippingAgentCode] [varchar](50) NOT NULL,
+	[ActivityJson] [nvarchar](4000) NULL,
+	[IsDeleted] [bit] NOT NULL,
+ CONSTRAINT [PK_PackageHistory] PRIMARY KEY CLUSTERED 
+(
+	[ID] ASC
+)WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
 
 

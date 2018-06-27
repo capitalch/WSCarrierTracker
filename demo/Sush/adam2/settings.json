@@ -19,8 +19,8 @@
     },
     "carriers": {
         "fedEx": {
-            "piston": 100,
-            "queue": 10,
+            "piston": 10,
+            "queue": 50,
             "url": "https://gateway.fedex.com:443/xml",
             "method": "",
             "key": "JfSbK7tkzfRBMf8G",

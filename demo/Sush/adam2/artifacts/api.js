@@ -31,31 +31,13 @@ api.axiosPost = (carrierInfo) => {
             //Save in database
             carrierInfo.response = res.data;
             notify.addApiResponse(carrierInfo);
-            // handler.carrierCount--;
             util.processCarrierResponse(carrierInfo);
-            // ibuki.emit('parse-api-response:api>util', carrierInfo);
-            // config.buffer.next({ trackingNumber: carrierInfo.trackingNumber, name: carrierInfo.carrierName });
-            // ibuki.emit('parseXml:util:xmlParse', { response: res.data, carrierInfo: carrierInfo });
-            //ibuki.emit('sql1-update:util>db1',{rn:1});
-            // flag && 
-            // config.prepared.next(1);
-            // flag = false;
-            // config.carrierCount--;
-            // config.responseCount++;
-            // console.log(carrierInfo.trackingNumber, 'name:', carrierInfo.name,
-            //     'Count: ', config.carrierCount, 'Queued:', (config.requestCount - config.responseCount - config.errorCount)
-            //     , ' delay: ', config.piston
-            // );
         })
         .catch(err => {
-            handler.carrierCount--;
+            // handler.carrierCount--;
             notify.addApiError(carrierInfo);
             ibuki.emit('app-error:any', handler.frameError(
                 err, 'api', 'info', 5));
-            //log in database
-            // config.carrierCount--;
-            // config.errorCount++;
-            // console.log('Error:', 'Count:', config.carrierCount, 'Error:', config.errorCount, 'Queued:', (config.requestCount - config.responseCount - config.errorCount));
         });
 };
 
@@ -65,12 +47,10 @@ api.axiosGet = (carrierInfo) => {
             //Save in database
             notify.addApiResponse(carrierInfo);
             carrierInfo.response = res.data;
-            // handler.carrierCount--;
             util.processCarrierResponse(carrierInfo);
         })
         .catch(err => {
             //log in database
-            // handler.carrierCount--;
             notify.addApiError(carrierInfo);
             ibuki.emit('app-error:any', handler.frameError(
                 err, 'api', 'info', 6));
