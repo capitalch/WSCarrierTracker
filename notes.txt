@@ -1,30 +1,38 @@
 //Adam2
-1.  Detect error with GSO -ve
+1. Detect error with GSO -ve
                                         2. Piston activation
 3. GSO token error handlings
 4. TPS implementation
 5. John mail: 
-    a) Azure account setup, 
+    a) Azure account setup, Db + resources + our credentials
     b) TPS strategy, 
-    c) GSO token not found
+    c) GSO token not found and GSO error
+    d) Production data refresh
 6. Vomit final error and mail IT
     7. Robust check with error handling
 8. Database 3 tables final strategy and implementation
     Info table
+        Identify columns, create sql, Identify in our program where to get this info
     History table: Formation of JSON and push
     log table
 9. Azure email research and implementation
 10. Manage better cleanup
 11. Create flowchart of entire process
+12. Email Formation: For every carrier
+    No of records Processed
+    DELIVERED
+    Not Delivered: Which has no delivered Status
+    Exception: Api / database error, 
+13. Deployment
 
-Carrier specific changes in workbench, db
-2. Database update
-3. Info and error logging
-4. Error handling test
+//Saby
+1. node.js email
+2. TPS
+3. GSO error check
+4. Create additional columns and tables and provide sql / pseudo code
+5. Provide logic for INFO table update and sql / pseudo code
 
-Status Message of GSO:
-
-Delivery Status, options are:
+GSO Delivery Status, options are:
 IN TRANSIT
 DELAYED
 DELIVERED
@@ -101,68 +109,6 @@ If AccountNo = "50308" Then
 
 
 https://api.gso.com/Rest/v1/token
-
-
-
-
-
-//adam2
-1. Create test database
-2. Get Big object
-3. Create 4 object arrays one for each carrier
-4. Provide settings.json file for app wide settings
-5. Config.js for global configurations and global variables
-6. For each carrier set logic for get, get with header, post request call
-7. Provide settings for all carriers in settings.json file
-8. In parallel do api calls for all 4 carriers.
-9. Use piston for queue control. Piston setting for each carrier is in settings.json.
-10. At return from each carrier get return object which may be XML. Convert this XML to unified JSON object. 
-    Push this unified JSON object to queue. Use a separate node.js module for XML to json conversion.
-11. Process objects from queue. Create set of sql's which update info table, add in history and inserts in log table. Use 
-    multiple connection channels.
-12. At end of each api call and database call mark the job as ended and log to database.
-13. Full node.js error handling
-14. Complete logs may be using azure telemetry
-15. Clean up memory
-16. Provide domain level and module level error handling
-
-//Saby
-0.1 Send me script for creating 50,000 rows info table, so that I can create the table.
-1. Deploy to azure the complete solution and test
-2. As per our meeting with Viraj, do complete the solution, deploy and test in Azure using Telemetry for logging
-
-
-Status Message of GSO:
-Delivery Status, options are:
-IN TRANSIT
-DELAYED
-DELIVERED
-RETURNED
-
-Status Message of GSO:
-Code       Desc
-M	   Order Processed
-D	   Delivered
-I	   In Transit
-X	   Any issue [e.g. The receiver was not available at the time of the final delivery attempt/ A delivery change for this package is in progress. / The receiver will pick up the package at a UPS facility. etc]
-P	  Pickup Scan
-
-
-Status Message of Fedex:
-AF:  At local FedEx facility
-AR: At local FedEx facility
-CA: Shipment cancelled by sender
-DE: Delivery exception
-DL: Delivered
-DP: Departed FedEx location
-HA: Hold at location request accepted
-HP: Ready for recipient pickup
-IT: In transit
-OC: Shipment information sent to FedEx
-OD: On FedEx vehicle for delivery
-PU: Picked up
-RR: Delivery option requested
-RS: Returning package to shipper
 
 
 
