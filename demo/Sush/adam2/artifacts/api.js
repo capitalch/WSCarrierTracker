@@ -31,7 +31,7 @@ api.axiosPost = (carrierInfo) => {
             //Save in database
             carrierInfo.response = res.data;
             notify.addApiResponse(carrierInfo);
-            handler.carrierCount--;
+            // handler.carrierCount--;
             util.processCarrierResponse(carrierInfo);
             // ibuki.emit('parse-api-response:api>util', carrierInfo);
             // config.buffer.next({ trackingNumber: carrierInfo.trackingNumber, name: carrierInfo.carrierName });

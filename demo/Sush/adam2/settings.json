@@ -1,6 +1,7 @@
 {
     "config": {
         "verbose": true
+        ,"autoPilotPiston":true
     },
     "db": {
         "user": "sagarwal",
@@ -19,7 +20,7 @@
     "carriers": {
         "fedEx": {
             "piston": 100,
-            "queue": 10,
+            "queue": 80,
             "url": "https://gateway.fedex.com:443/xml",
             "method": "",
             "key": "JfSbK7tkzfRBMf8G",

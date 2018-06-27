@@ -35,7 +35,7 @@ const isIdle = () => {
     const apiStatus = notify.getApiStatus();
     const carriers = Object.keys(apiStatus);
     let apiQueue = 0;
-    carriers.forEach(x => { apiQueue = apiQueue + apiStatus[x].queue });
+    carriers.forEach(x => { apiQueue = apiQueue + apiStatus[x].queue() });
     const dbQueue = notify.getDbStatus().dbQueue();
     const ret = ((dbQueue === 0) && (apiQueue === 0));
     return (ret);
@@ -86,6 +86,8 @@ handler.cleanup = () => {
     handler.sub7 && handler.sub7.unsubscribe();
     handler.sub8 && handler.sub8.unsubscribe();
     handler.sub9 && handler.sub9.unsubscribe();
+    handler.sub10 && handler.sub10.unsubscribe();
+    handler.sub11 && handler.sub11.unsubscribe();
     handler.pool && handler.pool.close();
 }
 
