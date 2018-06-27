@@ -1,12 +1,12 @@
 let sqlCommands={};
 sqlCommands.getInfos = `
-SELECT top 100 NO_ rn,[Shipping Agent Code] shipping,[External Tracking No_] trackingNumber,status
+SELECT top 1000 NO_ rn,[Shipping Agent Code] shipping,[External Tracking No_] trackingNumber,status
 	FROM [Wineshipping$PackageinfoNew] 
 	WHERE 
 			NOT [Status] = 'Package returned to shipper' and 
 			NOT [Status] = 'Delivered' and 
 			NOT [Status] = 'Returned' and			
-			[Shipping Agent Code] in ('UPS', 'FEX') 
+			[Shipping Agent Code] in ('FEX') 
 			AND NOT [External Tracking No_] = ''
 `;
 module.exports = sqlCommands;
