@@ -122,6 +122,12 @@ A status update is not yet available on your package. It will be available when 
 URL is: http://production.shippingapis.com/ShippingAPI.dll?API=TrackV2&XML=%3CTrackFieldRequest%20USERID=%22487WINES7756%22%3E%3CTrackID%20ID=%229400110200881650000000%22%3E%3C/TrackID%3E%3C/TrackFieldRequest%3E
 
 
-
+CREATE TABLE [dbo].[PackageActivityHistory](
+	[ID] [bigint] IDENTITY(1,1) NOT NULL,
+	[rn] [varchar](50) NULL,
+	[TrackingNo] [varchar](50) NULL,
+	[ShippingAgentCode] [varchar](50) NULL,
+	[ActivityJson] [nvarchar](max) NULL,
+	[IsDeleted] [bit] NULL)
 
 
