@@ -110,6 +110,17 @@ If AccountNo = "50308" Then
 
 https://api.gso.com/Rest/v1/token
 
+USPS error:
+
+
+For each and ever USPS tracking number, I am getting same error message. Previously we got data but now we are not able to get any data. Is it possible to check from your side and let us know.
+Error message is:
+A status update is not yet available on your package. It will be available when the shipper provides an update or the package is delivered to USPS. Check back soon. Sign up for Informed Delivery<SUP>&reg;</SUP> to receive notifications for packages addressed to you.
+
+
+URL is: http://production.shippingapis.com/ShippingAPI.dll?API=TrackV2&XML=%3CTrackFieldRequest%20USERID=%22487WINES7756%22%3E%3CTrackID%20ID=%229400110200881650000000%22%3E%3C/TrackID%3E%3C/TrackFieldRequest%3E
+
+
 
 
 
