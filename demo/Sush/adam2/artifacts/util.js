@@ -110,7 +110,7 @@ function processFex(x) {
                         notify.incrDelivery(x.carrierName);
                     } else {
                         // if(events){
-                        const damageEvent = events && events.find((x) =>
+                        const damageEvent = events && Array.isArray(events) && events.find((x) =>
                             x.EventDescription && x.EventDescription.toLowerCase().includes('damage')
                         );
                         damageEvent && (
