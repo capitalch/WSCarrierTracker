@@ -7,7 +7,7 @@ let util = {};
 
 util.processCarrierResponse = (carrierInfo) => {
     const carriermap = {
-        fedEx: processFedEx,
+        fex: processFex,
         ups: processUps,
         gso: processGso
     }
@@ -16,7 +16,7 @@ util.processCarrierResponse = (carrierInfo) => {
 
 function processGso(x) {
     const unifiedJson = {
-        name: 'fedEx',
+        name: 'fex',
         trackingNumber: x.trackingNumber,
         status: 'delivered',
         dateTime: Date.now()
@@ -24,7 +24,7 @@ function processGso(x) {
     handler.buffer.next(unifiedJson);
 }
 
-function processFedEx(x) {
+function processFex(x) {
     parseString(x.response, {
         trim: true,
         explicitArray: false
@@ -36,7 +36,7 @@ function processFedEx(x) {
             if (notifications.Severity === 'ERROR') {
                 ibuki.emit('app-error:any', handler.frameError({
                     name: 'apiCallError',
-                    message: 'FedEx:' + x.trackingNumber + ' ' + notifications.LocalizedMessage
+                    message: 'Fex:' + x.trackingNumber + ' ' + notifications.LocalizedMessage
                 }, 'util', 'info', 4))
             } else {
                 //things are fine. Create unified json object and push it to buffer to be updated in database
@@ -69,11 +69,19 @@ function processFedEx(x) {
                 // timeStamp = events && Array.isArray(events) ? events[0].Timestamp : events.Timestamp
                 const statusCode = result.TrackReply.TrackDetails.StatusCode;
                 const unifiedJson = {
+                    signedForByName:result.TrackReply.TrackDetails.DeliverySignatureName || '',
+                    exceptionStatus:0,
+                    rts:0,
+                    rtsTrackingNo:'',
+                    damage:0,
+                    damageMsg:'',
+                    statusUpdated:'',
+                    
                     shippingAgentCode: x.carrierName,
                     trackingNumber: x.trackingNumber,
                     carrierStatusMessage: result.TrackReply.TrackDetails.StatusDescription || 'No Status',
                     carrierStatusCode: result.TrackReply.TrackDetails.StatusCode || null,
-                    signedForByName:result.TrackReply.TrackDetails.DeliverySignatureName || null,
+                    
                     rn:x.rn,
                     timeStamp: timeStamp
                         // , date:
@@ -105,7 +113,7 @@ function processUps(x) {
                 }, 'util', 'info', 4));
             } else {
                 const unifiedJson = {
-                    name: 'fedEx',
+                    name: 'fex',
                     trackingNumber: x.trackingNumber,
                     status: 'delivered',
                     dateTime: Date.now()
@@ -121,9 +129,9 @@ module.exports = util;
 
 // function pushUnifiedJson(carrierInfo) {
 //     const carrierMap = {
-//         fedEx: (x) => {
+//         fex: (x) => {
 //             const unifiedJson = {
-//                 name: 'fedEx'
+//                 name: 'fex'
 //                 , trackingNumber: x.trackingNumber
 //                 , status: 'delivered'
 //                 , dateTime: Date.now()
