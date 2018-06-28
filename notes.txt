@@ -24,6 +24,7 @@ json data: nvarchar(4000)
     DELIVERED
     Not Delivered: Which has no delivered Status
     Exception: Api / database error, 
+13. Correct shippingAgentCode in the codeBase. Ex fedEx-->FEX
 13. Deployment
 
 //Saby
@@ -63,6 +64,7 @@ OD: On FedEx vehicle for delivery           inTransit
 PU: Picked up                               pickedUp
 RR: Delivery option requested               inTransit
 RS: Returning package to shipper            returned
+HL: Ready for pickup                        readyForPickup
 
 //unified code
 delivered
@@ -71,6 +73,7 @@ inTransit
 pickedUp
 returned
 orderProcessed
+readyForPickup
  
 
 -------------------- Enable Application Insights----------

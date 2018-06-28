@@ -56,7 +56,8 @@ function processFedEx(x) {
                     OD: 'inTransit',
                     PU: 'PickedUp',
                     RR: 'inTransit',
-                    RS: 'returned'
+                    RS: 'returned',
+                    HL:'readyForPickup'
                 }
                 if(events){
                     if(Array.isArray(events)){
