@@ -95,26 +95,45 @@ function processFex(x) {
                 //things are fine. Create unified json object and push it to buffer to be updated in database
                 const trackDetails = result.TrackReply.TrackDetails;
                 const statusCode = trackDetails.StatusCode;
-                const fexStatusCodes = tools.fex.fexStatusCodes();                
+                const fexStatusCodes = tools.fex.fexStatusCodes();
                 const events = trackDetails.Events;
-                let statusDescription = trackDetails.StatusDescription;
 
-                if(statusDescription){
+                let damage = 0,
+                    damageMsg = '',
+                    exceptionStatus = 0,
+                    rts = 0,
+                    rtsTrackingNo = '',
+                    statusDescription = trackDetails.StatusDescription;
+
+                if (statusDescription) {
                     if (statusDescription.toLowerCase().includes('delivery')) {
-                        notify.carrierStatus.delivery++;
+                        notify.incrDelivery(x.carrierName);
                     } else {
+                        // if(events){
+                        const damageEvent = events && Array.isArray(events) && events.find((x) =>
+                            x.EventDescription && x.EventDescription.toLowerCase().includes('damage')
+                        );
+                        damageEvent && (
+                            notify.incrDamage++,
+                            notify.incrException++,
+                            exceptionStatus = 1,
+                            damageMsg = damageEvent.EventDescription
+                        );
+                        // }
                         //
                         //return in other identifier
                         //damage in eventdescription then increase count and exception count
                         // exceptionstatus = 1 if damage or return
                         // 
                     }
+                } else {
+                    notify.incrException(x.carrierName);
                 }
-                
+
                 const timeStamp = tools.fex.timeStamp(events);
-                const mTimeStamp = moment(timeStamp);
-                const mDate = mTimeStamp.format("MMM. DD, YYYY") || '';
-                const mTime = mTimeStamp.format("h:mm A") || '';
+                const mTimeStamp = timeStamp ? moment(timeStamp) : null;
+                const mDate = mTimeStamp ? mTimeStamp.format("MMM. DD, YYYY") : '';
+                const mTime = mTimeStamp ? mTimeStamp.format("h:mm A") : '';
                 let unifiedJson = tools.unifiedJson();
                 const fexJson = {
                     statusDate: mDate, //from timeStamp
@@ -124,12 +143,12 @@ function processFex(x) {
                     carrierStatusCode: statusCode || '',
                     carrierStatusMessage: statusDescription || 'No Status',
                     signedForByName: trackDetails.DeliverySignatureName || '',
-                    
-                    exceptionStatus: 0,
-                    rts: 0,
-                    rtsTrackingNo: '',
-                    damage: 0,
-                    damageMsg: '',
+
+                    exceptionStatus: exceptionStatus,
+                    rts: rts,
+                    rtsTrackingNo: rtsTrackingNo,
+                    damage: damage,
+                    damageMsg: damageMsg,
 
                     shippingAgentCode: x.carrierName,
                     trackingNumber: x.trackingNumber,
@@ -137,7 +156,7 @@ function processFex(x) {
                     activityJson: events || null,
                     unifiedStatus: statusCode ? fexStatusCodes[statusCode] || 'noStatus' : 'noStatus'
                 }
-                 const final = Object.assign(unifiedJson,fexJson);
+                const final = Object.assign(unifiedJson, fexJson);
                 handler.buffer.next(final);
             }
         }

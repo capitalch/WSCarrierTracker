@@ -79,6 +79,18 @@ const notify = {
         apiStatus[info.carrierName].responses++;
         verbose && notify.showStatus(info);
     },
+    incrDelivery: (carrierName) => {
+        carrierStatus[carrierName].delivery++;
+    },
+    incrDamage:(carrierName)=>{
+        carrierStatus[carrierName].damage++;
+    },
+    incrReturn:(carrierName)=>{
+        carrierStatus[carrierName].return++;
+    },
+    incrException:(carrierName)=>{
+        carrierStatus[carrierName].exception++;
+    },
     addApiError: (info) => {
         apiStatus[info.carrierName].errors++;
         verbose && notify.showStatus(info);
