@@ -17,6 +17,7 @@ util.processCarrierResponse = (carrierInfo) => {
 }
 
 function processGso(x) {
+   (x.response.StatusCode==200)&& logger.info(x.trackingNumber + ':' +x.response.ShipmentInfo[0].Delivery.TransitStatus)
     const unifiedJson = {
         name: 'fedEx',
         trackingNumber: x.trackingNumber,

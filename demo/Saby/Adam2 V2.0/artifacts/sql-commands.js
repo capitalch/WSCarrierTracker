@@ -6,7 +6,7 @@ SELECT top 1000 NO_ rn,[Shipping Agent Code] shipping,[External Tracking No_] tr
 			NOT [Status] = 'Package returned to shipper' and 
 			NOT [Status] = 'Delivered' and 
 			NOT [Status] = 'Returned' and			
-			[Shipping Agent Code] in ('FEX') 
+			[Shipping Agent Code] in ('GSO') 
 			AND NOT [External Tracking No_] = ''
 			`,
 	updateAndInsertStatus: `

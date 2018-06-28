@@ -1,0 +1,109 @@
+{
+    "ShipmentInfo": [
+        {
+            "AccountNumber": 50874,
+            "TrackingNumber": "508741111115874",
+            "ShipperCompany": "WINESHIPPING.COM/SANTA MARIA-79788861",
+            "ShipperContact": "Customer Service",
+            "ShipperPhone": "805-922-4011",
+            "ShipperEmail": "",
+            "PickupAddress1": "1235 W MCCOY LANE",
+            "PickupAddress2": "SUITE 3",
+            "PickupCity": "SANTA MARIA",
+            "PickupState": "CA",
+            "PickupZip": "93455",
+            "ShipToCompany": "Recipient",
+            "ShipToAttention": "Audrey Massoni",
+            "ShipToPhone": "9252160953",
+            "ShipToEmail": "amassoni@sbcglobal.net",
+            "DeliveryAddress1": "647 Eliot Drive",
+            "DeliveryAddress2": "",
+            "DeliveryCity": "Livermore",
+            "DeliveryState": "CA",
+            "DeliveryZip": "94551",
+            "DeliveryZone": 3,
+            "ServiceCode": "CPS",
+            "ShipmentReference": "",
+            "DeclaredValue": 0,
+            "CODValue": 0,
+            "SpecialInstructions": "",
+            "Weight": 7,
+            "SignatureCode": "ADULT_SIG_REQD",
+            "AddnShipperReference1": "",
+            "AddnShipperReference2": "",
+            "Delivery": {
+                "ShipDate": "02/20/2018",
+                "ScheduledDeliveryDate": "02/21/2018",
+                "ScheduledDeliveryTime": "5:00 PM",
+                "DeliveryDate": "02/26/2018",
+                "TransitStatus": "IN TRANSIT",
+                "DeliveryTime": null,
+                "SignedBy": "",
+                "Signature": null
+            },
+            "TransitNotes": [
+                {
+                    "EventDate": "2/20/2018 11:00:18 PM",
+                    "Comments": "ARRIVAL SCAN  DELIVERY SCHED  FOR 02/21/2018"
+                },
+                {
+                    "EventDate": "2/21/2018 8:17:37 AM",
+                    "Comments": "ON ROUTE FOR DELIVERY "
+                },
+                {
+                    "EventDate": "2/21/2018 10:07:36 AM",
+                    "Comments": "DEL ATTEMPTED - RCPNT NOT HOME DH# 107812984 - SINGLE STOREY TAN  BUILDING"
+                },
+                {
+                    "EventDate": "2/21/2018 10:07:53 AM",
+                    "Comments": "DEL ATTEMPT NOTIFICATION SENT DH# 107812984 - AWAITING RESPONSE"
+                },
+                {
+                    "EventDate": "2/21/2018 5:17:07 PM",
+                    "Comments": "DEL RESCHED - RCPNT NOT HOME FROM 02/21/2018 TO 02/26/2018"
+                },
+                {
+                    "EventDate": "2/22/2018 3:02:48 PM",
+                    "Comments": "DEL RESCHED - RCPNT NOT HOME FROM 02/26/2018 TO 02/24/2018"
+                },
+                {
+                    "EventDate": "2/24/2018 9:44:21 AM",
+                    "Comments": "ON ROUTE FOR DELIVERY "
+                },
+                {
+                    "EventDate": "2/24/2018 11:24:51 AM",
+                    "Comments": "RECIPIENT RESPONSE CUST RESPONSE-RESCHED-DEL APPT WINDOW 02/26/2018 04:00 PM - 08:00 PM"
+                },
+                {
+                    "EventDate": "2/24/2018 11:24:51 AM",
+                    "Comments": "RECIPIENT RESPONSE REQ DELIVERY WINDOW"
+                },
+                {
+                    "EventDate": "2/26/2018 8:18:15 AM",
+                    "Comments": "ON ROUTE FOR DELIVERY "
+                }
+            ],
+            "ShipmentCharges": {
+                "TransportationCharge": 6.16,
+                "CODCharge": 0,
+                "InsuranceCharge": 0,
+                "FuelSurcharge": 0.48,
+                "OtherCharge": [
+                    {
+                        "code": "ASR",
+                        "description": "Adult Signature Required Fee",
+                        "fee": 1.5
+                    }
+                ],
+                "TotalCharge": 8.14
+            }
+        }
+    ],
+    "StatusCode": 200,
+    "StatusDescription": "OK",
+    "AuthenticationResultCode": 0,
+    "RequestDateTime": "2018-06-28T09:38:16.8359087-07:00",
+    "ResponseDateTime": "2018-06-28T09:38:16.8515273-07:00",
+    "ErrorCount": 0,
+    "ErrorDetail": null
+}
