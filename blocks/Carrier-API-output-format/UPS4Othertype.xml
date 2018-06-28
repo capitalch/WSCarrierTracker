@@ -1,0 +1,406 @@
+<?xml version="1.0"?>
+<TrackResponse>
+    <Response>
+        <TransactionReference>
+            <XpciVersion>1.0001</XpciVersion>
+        </TransactionReference>
+        <ResponseStatusCode>1</ResponseStatusCode>
+        <ResponseStatusDescription>Success</ResponseStatusDescription>
+    </Response>
+    <Shipment>
+        <Shipper>
+            <ShipperNumber>91V467</ShipperNumber>
+            <Address>
+                <AddressLine1>NE 2803 ORCHARD AVE</AddressLine1>
+                <City>MCMINNVILLE</City>
+                <StateProvinceCode>OR</StateProvinceCode>
+                <PostalCode>971289378</PostalCode>
+                <CountryCode>US</CountryCode>
+            </Address>
+        </Shipper>
+        <ShipTo>
+            <Address>
+                <City>SAN DIEGO</City>
+                <StateProvinceCode>CA</StateProvinceCode>
+                <PostalCode>92103</PostalCode>
+                <CountryCode>US</CountryCode>
+            </Address>
+        </ShipTo>
+        <ShipmentWeight>
+            <UnitOfMeasurement>
+                <Code>LBS</Code>
+            </UnitOfMeasurement>
+            <Weight>15.80</Weight>
+        </ShipmentWeight>
+        <Service>
+            <Code>003</Code>
+            <Description>UPS Ground</Description>
+        </Service>
+        <ReferenceNumber>
+            <Code>01</Code>
+            <Value>AT2154339</Value>
+        </ReferenceNumber>
+        <ShipmentIdentificationNumber>1Z91V467A822237821</ShipmentIdentificationNumber>
+        <PickupDate>20180319</PickupDate>
+        <DeliveryDateUnavailable>
+            <Type>Scheduled Delivery</Type>
+            <Description>Scheduled Delivery Date is not currently available, please try back later</Description>
+        </DeliveryDateUnavailable>
+        <Package>
+            <TrackingNumber>1Z91V467A822237821</TrackingNumber>
+            <DeliveryIndicator>N</DeliveryIndicator>
+            <PackageServiceOptions>
+                <SignatureRequired>
+                    <Code>A</Code>
+                </SignatureRequired>
+            </PackageServiceOptions>
+            <Activity>
+                <ActivityLocation>
+                    <Address>
+                        <City>SAN DIEGO</City>
+                        <StateProvinceCode>CA</StateProvinceCode>
+                        <PostalCode>92103</PostalCode>
+                        <CountryCode>US</CountryCode>
+                    </Address>
+                    <Description>Other - released</Description>
+                </ActivityLocation>
+                <Status>
+                    <StatusType>
+                        <Code>X</Code>
+                        <Description>As requested, the UPS My Choice delivery change was completed. / The receiver has picked up their package.</Description>
+                    </StatusType>
+                    <StatusCode>
+                        <Code>ZC</Code>
+                    </StatusCode>
+                </Status>
+                <Date>20180326</Date>
+                <Time>143427</Time>
+            </Activity>
+            <Activity>
+                <ActivityLocation>
+                    <Address>
+                        <City>SAN DIEGO</City>
+                        <PostalCode>92111</PostalCode>
+                        <CountryCode>US</CountryCode>
+                    </Address>
+                    <Code>MX</Code>
+                    <Description>Other - released</Description>
+                    <SignedForByName>TRIMBLE</SignedForByName>
+                </ActivityLocation>
+                <Status>
+                    <StatusType>
+                        <Code>D</Code>
+                        <Description>Delivered</Description>
+                    </StatusType>
+                    <StatusCode>
+                        <Code>KB</Code>
+                    </StatusCode>
+                </Status>
+                <Date>20180326</Date>
+                <Time>143405</Time>
+            </Activity>
+            <Activity>
+                <ActivityLocation>
+                    <Address>
+                        <City>SAN DIEGO</City>
+                        <StateProvinceCode>CA</StateProvinceCode>
+                        <PostalCode>92103</PostalCode>
+                        <CountryCode>US</CountryCode>
+                    </Address>
+                    <Description>Other - released</Description>
+                </ActivityLocation>
+                <Status>
+                    <StatusType>
+                        <Code>X</Code>
+                        <Description>As requested, the UPS My Choice delivery change was completed. / The receiver arranged to pick up the package at a UPS facility. Pickup must be made within 5 business days.</Description>
+                    </StatusType>
+                    <StatusCode>
+                        <Code>ZC</Code>
+                    </StatusCode>
+                </Status>
+                <Date>20180322</Date>
+                <Time>080009</Time>
+            </Activity>
+            <Activity>
+                <ActivityLocation>
+                    <Address>
+                        <City>San Diego</City>
+                        <StateProvinceCode>CA</StateProvinceCode>
+                        <CountryCode>US</CountryCode>
+                    </Address>
+                    <Description>Other - released</Description>
+                </ActivityLocation>
+                <Status>
+                    <StatusType>
+                        <Code>I</Code>
+                        <Description>Arrival Scan</Description>
+                    </StatusType>
+                    <StatusCode>
+                        <Code>AR</Code>
+                    </StatusCode>
+                </Status>
+                <Date>20180322</Date>
+                <Time>054500</Time>
+            </Activity>
+            <Activity>
+                <ActivityLocation>
+                    <Address>
+                        <City>Vernon</City>
+                        <StateProvinceCode>CA</StateProvinceCode>
+                        <CountryCode>US</CountryCode>
+                    </Address>
+                    <Description>Other - released</Description>
+                </ActivityLocation>
+                <Status>
+                    <StatusType>
+                        <Code>I</Code>
+                        <Description>Departure Scan</Description>
+                    </StatusType>
+                    <StatusCode>
+                        <Code>DP</Code>
+                    </StatusCode>
+                </Status>
+                <Date>20180322</Date>
+                <Time>031500</Time>
+            </Activity>
+            <Activity>
+                <ActivityLocation>
+                    <Address>
+                        <City>Vernon</City>
+                        <StateProvinceCode>CA</StateProvinceCode>
+                        <CountryCode>US</CountryCode>
+                    </Address>
+                    <Description>Other - released</Description>
+                </ActivityLocation>
+                <Status>
+                    <StatusType>
+                        <Code>I</Code>
+                        <Description>Arrival Scan</Description>
+                    </StatusType>
+                    <StatusCode>
+                        <Code>AR</Code>
+                    </StatusCode>
+                </Status>
+                <Date>20180321</Date>
+                <Time>203900</Time>
+            </Activity>
+            <Activity>
+                <ActivityLocation>
+                    <Address>
+                        <City>Visalia</City>
+                        <StateProvinceCode>CA</StateProvinceCode>
+                        <CountryCode>US</CountryCode>
+                    </Address>
+                    <Description>Other - released</Description>
+                </ActivityLocation>
+                <Status>
+                    <StatusType>
+                        <Code>I</Code>
+                        <Description>Departure Scan</Description>
+                    </StatusType>
+                    <StatusCode>
+                        <Code>DP</Code>
+                    </StatusCode>
+                </Status>
+                <Date>20180321</Date>
+                <Time>110400</Time>
+            </Activity>
+            <Activity>
+                <ActivityLocation>
+                    <Address>
+                        <City>Visalia</City>
+                        <StateProvinceCode>CA</StateProvinceCode>
+                        <CountryCode>US</CountryCode>
+                    </Address>
+                    <Description>Other - released</Description>
+                </ActivityLocation>
+                <Status>
+                    <StatusType>
+                        <Code>I</Code>
+                        <Description>Arrival Scan</Description>
+                    </StatusType>
+                    <StatusCode>
+                        <Code>AR</Code>
+                    </StatusCode>
+                </Status>
+                <Date>20180321</Date>
+                <Time>045500</Time>
+            </Activity>
+            <Activity>
+                <ActivityLocation>
+                    <Address>
+                        <City>West Sacramento</City>
+                        <StateProvinceCode>CA</StateProvinceCode>
+                        <CountryCode>US</CountryCode>
+                    </Address>
+                    <Description>Other - released</Description>
+                </ActivityLocation>
+                <Status>
+                    <StatusType>
+                        <Code>I</Code>
+                        <Description>Departure Scan</Description>
+                    </StatusType>
+                    <StatusCode>
+                        <Code>DP</Code>
+                    </StatusCode>
+                </Status>
+                <Date>20180320</Date>
+                <Time>234400</Time>
+            </Activity>
+            <Activity>
+                <ActivityLocation>
+                    <Address>
+                        <City>West Sacramento</City>
+                        <StateProvinceCode>CA</StateProvinceCode>
+                        <CountryCode>US</CountryCode>
+                    </Address>
+                    <Description>Other - released</Description>
+                </ActivityLocation>
+                <Status>
+                    <StatusType>
+                        <Code>I</Code>
+                        <Description>Arrival Scan</Description>
+                    </StatusType>
+                    <StatusCode>
+                        <Code>AR</Code>
+                    </StatusCode>
+                </Status>
+                <Date>20180320</Date>
+                <Time>160000</Time>
+            </Activity>
+            <Activity>
+                <ActivityLocation>
+                    <Description>Other - released</Description>
+                </ActivityLocation>
+                <Status>
+                    <StatusType>
+                        <Code>X</Code>
+                        <Description>A UPS My Choice delivery change was requested for this package. / The receiver will pick up the package at a UPS facility.</Description>
+                    </StatusType>
+                    <StatusCode>
+                        <Code>ZA</Code>
+                    </StatusCode>
+                </Status>
+                <Date>20180320</Date>
+                <Time>080819</Time>
+            </Activity>
+            <Activity>
+                <ActivityLocation>
+                    <Address>
+                        <City>Roseburg</City>
+                        <StateProvinceCode>OR</StateProvinceCode>
+                        <CountryCode>US</CountryCode>
+                    </Address>
+                    <Description>Other - released</Description>
+                </ActivityLocation>
+                <Status>
+                    <StatusType>
+                        <Code>I</Code>
+                        <Description>Departure Scan</Description>
+                    </StatusType>
+                    <StatusCode>
+                        <Code>DP</Code>
+                    </StatusCode>
+                </Status>
+                <Date>20180320</Date>
+                <Time>051300</Time>
+            </Activity>
+            <Activity>
+                <ActivityLocation>
+                    <Address>
+                        <City>Roseburg</City>
+                        <StateProvinceCode>OR</StateProvinceCode>
+                        <CountryCode>US</CountryCode>
+                    </Address>
+                    <Description>Other - released</Description>
+                </ActivityLocation>
+                <Status>
+                    <StatusType>
+                        <Code>I</Code>
+                        <Description>Arrival Scan</Description>
+                    </StatusType>
+                    <StatusCode>
+                        <Code>AR</Code>
+                    </StatusCode>
+                </Status>
+                <Date>20180320</Date>
+                <Time>033200</Time>
+            </Activity>
+            <Activity>
+                <ActivityLocation>
+                    <Address>
+                        <City>Tualatin</City>
+                        <StateProvinceCode>OR</StateProvinceCode>
+                        <CountryCode>US</CountryCode>
+                    </Address>
+                    <Description>Other - released</Description>
+                </ActivityLocation>
+                <Status>
+                    <StatusType>
+                        <Code>I</Code>
+                        <Description>Departure Scan</Description>
+                    </StatusType>
+                    <StatusCode>
+                        <Code>DP</Code>
+                    </StatusCode>
+                </Status>
+                <Date>20180319</Date>
+                <Time>223400</Time>
+            </Activity>
+            <Activity>
+                <ActivityLocation>
+                    <Address>
+                        <City>Tualatin</City>
+                        <StateProvinceCode>OR</StateProvinceCode>
+                        <CountryCode>US</CountryCode>
+                    </Address>
+                    <Description>Other - released</Description>
+                </ActivityLocation>
+                <Status>
+                    <StatusType>
+                        <Code>I</Code>
+                        <Description>Origin Scan</Description>
+                    </StatusType>
+                    <StatusCode>
+                        <Code>OR</Code>
+                    </StatusCode>
+                </Status>
+                <Date>20180319</Date>
+                <Time>215135</Time>
+            </Activity>
+            <Activity>
+                <ActivityLocation>
+                    <Address>
+                        <CountryCode>US</CountryCode>
+                    </Address>
+                    <Description>Other - released</Description>
+                </ActivityLocation>
+                <Status>
+                    <StatusType>
+                        <Code>M</Code>
+                        <Description>Order Processed: Ready for UPS</Description>
+                    </StatusType>
+                    <StatusCode>
+                        <Code>MP</Code>
+                    </StatusCode>
+                </Status>
+                <Date>20180319</Date>
+                <Time>232835</Time>
+            </Activity>
+            <PackageWeight>
+                <UnitOfMeasurement>
+                    <Code>LBS</Code>
+                </UnitOfMeasurement>
+                <Weight>15.80</Weight>
+            </PackageWeight>
+            <ReferenceNumber>
+                <Code>01</Code>
+                <Value>AT2154339</Value>
+            </ReferenceNumber>
+            <Accessorial>
+                <Code>043</Code>
+                <Description>Customized Delivery Confirmation</Description>
+            </Accessorial>
+        </Package>
+    </Shipment>
+</TrackResponse>

@@ -68,7 +68,10 @@ function processFedEx(x) {
                     }
                 }
                 // timeStamp = events && Array.isArray(events) ? events[0].Timestamp : events.Timestamp
+                
+                
                 const statusCode = result.TrackReply.TrackDetails.StatusCode;
+                events && logger.info(x.trackingNumber + ':' +result.TrackReply.TrackDetails.StatusDescription)
                 const unifiedJson = {
                     shippingAgentCode: x.carrierName,
                     trackingNumber: x.trackingNumber,

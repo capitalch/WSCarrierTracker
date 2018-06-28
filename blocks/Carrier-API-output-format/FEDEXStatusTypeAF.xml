@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TrackReply xmlns="http://fedex.com/ws/track/v3">
+    <HighestSeverity>SUCCESS</HighestSeverity>
+    <Notifications>
+        <Severity>SUCCESS</Severity>
+        <Source>trck</Source>
+        <Code>0</Code>
+        <Message>Request was successfully processed.</Message>
+        <LocalizedMessage>Request was successfully processed.</LocalizedMessage>
+    </Notifications>
+    <TransactionDetail>
+        <CustomerTransactionId>***Track v8 Request using VB.NET***</CustomerTransactionId>
+    </TransactionDetail>
+    <Version>
+        <ServiceId>trck</ServiceId>
+        <Major>3</Major>
+        <Intermediate>0</Intermediate>
+        <Minor>0</Minor>
+    </Version>
+    <DuplicateWaybill>false</DuplicateWaybill>
+    <MoreData>false</MoreData>
+    <TrackDetails>
+        <Notification>
+            <Severity>SUCCESS</Severity>
+            <Source>trck</Source>
+            <Code>0</Code>
+            <Message>Request was successfully processed.</Message>
+            <LocalizedMessage>Request was successfully processed.</LocalizedMessage>
+        </Notification>
+        <TrackingNumber>415205507250</TrackingNumber>
+        <TrackingNumberUniqueIdentifier>12018~415205507250~FDEG</TrackingNumberUniqueIdentifier>
+        <StatusCode>AF</StatusCode>
+        <StatusDescription>At local FedEx facility</StatusDescription>
+        <ServiceCommitMessage>Package is not yet available for pickup.</ServiceCommitMessage>
+        <CarrierCode>FDXG</CarrierCode>
+        <OtherIdentifiers>
+            <Value>415205507250</Value>
+            <Type>GROUND_SHIPMENT_ID</Type>
+        </OtherIdentifiers>
+        <OtherIdentifiers>
+            <Value>DT724246417022</Value>
+            <Type>TRACKING_NUMBER_OR_DOORTAG</Type>
+        </OtherIdentifiers>
+        <OtherIdentifiers>
+            <Value>DT724246417467</Value>
+            <Type>TRACKING_NUMBER_OR_DOORTAG</Type>
+        </OtherIdentifiers>
+        <OtherIdentifiers>
+            <Value>DT724246417949</Value>
+            <Type>TRACKING_NUMBER_OR_DOORTAG</Type>
+        </OtherIdentifiers>
+        <OtherIdentifiers>
+            <Value>40329</Value>
+            <Type>INVOICE</Type>
+        </OtherIdentifiers>
+        <OtherIdentifiers>
+            <Value>40329</Value>
+            <Type>CUSTOMER_REFERENCE</Type>
+        </OtherIdentifiers>
+        <ServiceInfo>FedEx Ground</ServiceInfo>
+        <ServiceType>FEDEX_GROUND</ServiceType>
+        <PackageWeight>
+            <Units>LB</Units>
+            <Value>19.4</Value>
+        </PackageWeight>
+        <Packaging>Package</Packaging>
+        <PackagingType>YOUR_PACKAGING</PackagingType>
+        <PackageSequenceNumber>1</PackageSequenceNumber>
+        <PackageCount>1</PackageCount>
+        <ShipperAddress>
+            <City>SANTA MARIA</City>
+            <StateOrProvinceCode>CA</StateOrProvinceCode>
+            <CountryCode>US</CountryCode>
+            <Residential>false</Residential>
+        </ShipperAddress>
+        <OriginLocationAddress>
+            <City>SANTA MARIA</City>
+            <StateOrProvinceCode>CA</StateOrProvinceCode>
+            <CountryCode>US</CountryCode>
+            <Residential>false</Residential>
+        </OriginLocationAddress>
+        <ShipTimestamp>2018-02-20T00:00:00</ShipTimestamp>
+        <DestinationAddress>
+            <City>Pasadena</City>
+            <StateOrProvinceCode>CA</StateOrProvinceCode>
+            <CountryCode>US</CountryCode>
+            <Residential>false</Residential>
+        </DestinationAddress>
+        <SignatureProofOfDeliveryAvailable>false</SignatureProofOfDeliveryAvailable>
+        <Events>
+            <Timestamp>2018-02-28T10:56:22-08:00</Timestamp>
+            <EventType>AF</EventType>
+            <EventDescription>At local FedEx facility</EventDescription>
+            <StatusExceptionCode>A3</StatusExceptionCode>
+            <StatusExceptionDescription>Tendered at FedEx OnSite</StatusExceptionDescription>
+            <Address>
+                <PostalCode>93455</PostalCode>
+                <Residential>false</Residential>
+            </Address>
+        </Events>
+        <Events>
+            <Timestamp>2018-02-28T07:46:00-08:00</Timestamp>
+            <EventType>OD</EventType>
+            <EventDescription>On FedEx vehicle for delivery</EventDescription>
+            <Address>
+                <City>SANTA MARIA</City>
+                <StateOrProvinceCode>CA</StateOrProvinceCode>
+                <PostalCode>93455</PostalCode>
+                <CountryCode>US</CountryCode>
+                <Residential>false</Residential>
+            </Address>
+        </Events>
+        <Events>
+            <Timestamp>2018-02-28T07:07:00-08:00</Timestamp>
+            <EventType>AR</EventType>
+            <EventDescription>At local FedEx facility</EventDescription>
+            <Address>
+                <City>SANTA MARIA</City>
+                <StateOrProvinceCode>CA</StateOrProvinceCode>
+                <PostalCode>93455</PostalCode>
+                <CountryCode>US</CountryCode>
+                <Residential>false</Residential>
+            </Address>
+        </Events>
+        <Events>
+            <Timestamp>2018-02-28T03:23:49-08:00</Timestamp>
+            <EventType>DP</EventType>
+            <EventDescription>Departed FedEx location</EventDescription>
+            <Address>
+                <City>PACOIMA</City>
+                <StateOrProvinceCode>CA</StateOrProvinceCode>
+                <PostalCode>91331</PostalCode>
+                <CountryCode>US</CountryCode>
+                <Residential>false</Residential>
+            </Address>
+        </Events>
+        <Events>
+            <Timestamp>2018-02-27T12:41:14-08:00</Timestamp>
+            <EventType>RS</EventType>
+            <EventDescription>Returning package to shipper</EventDescription>
+            <StatusExceptionCode>060A</StatusExceptionCode>
+            <StatusExceptionDescription>Delivery refused - Unable to deliver shipment - Returning to shipper</StatusExceptionDescription>
+            <Address>
+                <City>PACOIMA</City>
+                <StateOrProvinceCode>CA</StateOrProvinceCode>
+                <PostalCode>91331</PostalCode>
+                <CountryCode>US</CountryCode>
+                <Residential>false</Residential>
+            </Address>
+        </Events>
+        <Events>
+            <Timestamp>2018-02-27T12:41:00-08:00</Timestamp>
+            <EventType>AR</EventType>
+            <EventDescription>Arrived at FedEx location</EventDescription>
+            <Address>
+                <City>PACOIMA</City>
+                <StateOrProvinceCode>CA</StateOrProvinceCode>
+                <PostalCode>91331</PostalCode>
+                <CountryCode>US</CountryCode>
+                <Residential>false</Residential>
+            </Address>
+        </Events>
+        <Events>
+            <Timestamp>2018-02-27T08:42:00-08:00</Timestamp>
+            <EventType>AR</EventType>
+            <EventDescription>At local FedEx facility</EventDescription>
+            <Address>
+                <City>PACOIMA</City>
+                <StateOrProvinceCode>CA</StateOrProvinceCode>
+                <PostalCode>91331</PostalCode>
+                <CountryCode>US</CountryCode>
+                <Residential>false</Residential>
+            </Address>
+        </Events>
+        <Events>
+            <Timestamp>2018-02-26T12:33:04-08:00</Timestamp>
+            <EventType>DE</EventType>
+            <EventDescription>Delivery exception</EventDescription>
+            <StatusExceptionCode>034</StatusExceptionCode>
+            <StatusExceptionDescription>Future delivery requested</StatusExceptionDescription>
+            <Address>
+                <City>PACOIMA</City>
+                <StateOrProvinceCode>CA</StateOrProvinceCode>
+                <PostalCode>91331</PostalCode>
+                <CountryCode>US</CountryCode>
+                <Residential>false</Residential>
+            </Address>
+        </Events>
+        <Events>
+            <Timestamp>2018-02-26T04:05:00-08:00</Timestamp>
+            <EventType>OD</EventType>
+            <EventDescription>On FedEx vehicle for delivery</EventDescription>
+            <Address>
+                <City>PACOIMA</City>
+                <StateOrProvinceCode>CA</StateOrProvinceCode>
+                <PostalCode>91331</PostalCode>
+                <CountryCode>US</CountryCode>
+                <Residential>false</Residential>
+            </Address>
+        </Events>
+        <Events>
+            <Timestamp>2018-02-26T04:00:00-08:00</Timestamp>
+            <EventType>AR</EventType>
+            <EventDescription>At local FedEx facility</EventDescription>
+            <Address>
+                <City>PACOIMA</City>
+                <StateOrProvinceCode>CA</StateOrProvinceCode>
+                <PostalCode>91331</PostalCode>
+                <CountryCode>US</CountryCode>
+                <Residential>false</Residential>
+            </Address>
+        </Events>
+        <Events>
+            <Timestamp>2018-02-23T23:43:16-08:00</Timestamp>
+            <EventType>HA</EventType>
+            <EventDescription>Hold at location request accepted</EventDescription>
+            <StatusExceptionCode>A13</StatusExceptionCode>
+            <StatusExceptionDescription>Shipment is being redirected as requested to FedEx OnSite</StatusExceptionDescription>
+            <Address>
+                <City>PACOIMA</City>
+                <StateOrProvinceCode>CA</StateOrProvinceCode>
+                <PostalCode>91331</PostalCode>
+                <CountryCode>US</CountryCode>
+                <Residential>false</Residential>
+            </Address>
+        </Events>
+        <Events>
+            <Timestamp>2018-02-23T23:43:00-08:00</Timestamp>
+            <EventType>AR</EventType>
+            <EventDescription>Arrived at FedEx location</EventDescription>
+            <Address>
+                <City>PACOIMA</City>
+                <StateOrProvinceCode>CA</StateOrProvinceCode>
+                <PostalCode>91331</PostalCode>
+                <CountryCode>US</CountryCode>
+                <Residential>false</Residential>
+            </Address>
+        </Events>
+        <Events>
+            <Timestamp>2018-02-23T17:48:12-08:00</Timestamp>
+            <EventType>RR</EventType>
+            <EventDescription>Delivery option requested</EventDescription>
+            <StatusExceptionCode>A12</StatusExceptionCode>
+            <StatusExceptionDescription>Hold at FedEx OnSite request received - Check back later for shipment status</StatusExceptionDescription>
+            <Address>
+                <PostalCode>91101</PostalCode>
+                <Residential>false</Residential>
+            </Address>
+        </Events>
+        <Events>
+            <Timestamp>2018-02-23T11:57:55-08:00</Timestamp>
+            <EventType>DE</EventType>
+            <EventDescription>Delivery exception</EventDescription>
+            <StatusExceptionCode>007</StatusExceptionCode>
+            <StatusExceptionDescription>Customer not available or business closed</StatusExceptionDescription>
+            <Address>
+                <City>PACOIMA</City>
+                <StateOrProvinceCode>CA</StateOrProvinceCode>
+                <PostalCode>91331</PostalCode>
+                <CountryCode>US</CountryCode>
+                <Residential>false</Residential>
+            </Address>
+        </Events>
+        <Events>
+            <Timestamp>2018-02-23T05:19:00-08:00</Timestamp>
+            <EventType>OD</EventType>
+            <EventDescription>On FedEx vehicle for delivery</EventDescription>
+            <Address>
+                <City>PACOIMA</City>
+                <StateOrProvinceCode>CA</StateOrProvinceCode>
+                <PostalCode>91331</PostalCode>
+                <CountryCode>US</CountryCode>
+                <Residential>false</Residential>
+            </Address>
+        </Events>
+        <Events>
+            <Timestamp>2018-02-23T05:09:00-08:00</Timestamp>
+            <EventType>AR</EventType>
+            <EventDescription>At local FedEx facility</EventDescription>
+            <Address>
+                <City>PACOIMA</City>
+                <StateOrProvinceCode>CA</StateOrProvinceCode>
+                <PostalCode>91331</PostalCode>
+                <CountryCode>US</CountryCode>
+                <Residential>false</Residential>
+            </Address>
+        </Events>
+        <Events>
+            <Timestamp>2018-02-22T11:49:51-08:00</Timestamp>
+            <EventType>DE</EventType>
+            <EventDescription>Delivery exception</EventDescription>
+            <StatusExceptionCode>007</StatusExceptionCode>
+            <StatusExceptionDescription>Customer not available or business closed</StatusExceptionDescription>
+            <Address>
+                <City>PACOIMA</City>
+                <StateOrProvinceCode>CA</StateOrProvinceCode>
+                <PostalCode>91331</PostalCode>
+                <CountryCode>US</CountryCode>
+                <Residential>false</Residential>
+            </Address>
+        </Events>
+        <Events>
+            <Timestamp>2018-02-22T05:18:00-08:00</Timestamp>
+            <EventType>OD</EventType>
+            <EventDescription>On FedEx vehicle for delivery</EventDescription>
+            <Address>
+                <City>PACOIMA</City>
+                <StateOrProvinceCode>CA</StateOrProvinceCode>
+                <PostalCode>91331</PostalCode>
+                <CountryCode>US</CountryCode>
+                <Residential>false</Residential>
+            </Address>
+        </Events>
+        <Events>
+            <Timestamp>2018-02-22T05:11:00-08:00</Timestamp>
+            <EventType>AR</EventType>
+            <EventDescription>At local FedEx facility</EventDescription>
+            <Address>
+                <City>PACOIMA</City>
+                <StateOrProvinceCode>CA</StateOrProvinceCode>
+                <PostalCode>91331</PostalCode>
+                <CountryCode>US</CountryCode>
+                <Residential>false</Residential>
+            </Address>
+        </Events>
+        <Events>
+            <Timestamp>2018-02-21T11:51:28-08:00</Timestamp>
+            <EventType>DE</EventType>
+            <EventDescription>Delivery exception</EventDescription>
+            <StatusExceptionCode>007</StatusExceptionCode>
+            <StatusExceptionDescription>Customer not available or business closed</StatusExceptionDescription>
+            <Address>
+                <City>PACOIMA</City>
+                <StateOrProvinceCode>CA</StateOrProvinceCode>
+                <PostalCode>91331</PostalCode>
+                <CountryCode>US</CountryCode>
+                <Residential>false</Residential>
+            </Address>
+        </Events>
+        <Events>
+            <Timestamp>2018-02-21T06:10:00-08:00</Timestamp>
+            <EventType>OD</EventType>
+            <EventDescription>On FedEx vehicle for delivery</EventDescription>
+            <Address>
+                <City>PACOIMA</City>
+                <StateOrProvinceCode>CA</StateOrProvinceCode>
+                <PostalCode>91331</PostalCode>
+                <CountryCode>US</CountryCode>
+                <Residential>false</Residential>
+            </Address>
+        </Events>
+        <Events>
+            <Timestamp>2018-02-21T06:03:00-08:00</Timestamp>
+            <EventType>AR</EventType>
+            <EventDescription>At local FedEx facility</EventDescription>
+            <Address>
+                <City>PACOIMA</City>
+                <StateOrProvinceCode>CA</StateOrProvinceCode>
+                <PostalCode>91331</PostalCode>
+                <CountryCode>US</CountryCode>
+                <Residential>false</Residential>
+            </Address>
+        </Events>
+        <Events>
+            <Timestamp>2018-02-21T01:42:00-08:00</Timestamp>
+            <EventType>AR</EventType>
+            <EventDescription>Arrived at FedEx location</EventDescription>
+            <Address>
+                <City>PACOIMA</City>
+                <StateOrProvinceCode>CA</StateOrProvinceCode>
+                <PostalCode>91331</PostalCode>
+                <CountryCode>US</CountryCode>
+                <Residential>false</Residential>
+            </Address>
+        </Events>
+        <Events>
+            <Timestamp>2018-02-20T21:00:11-08:00</Timestamp>
+            <EventType>DP</EventType>
+            <EventDescription>Left FedEx origin facility</EventDescription>
+            <Address>
+                <City>SANTA MARIA</City>
+                <StateOrProvinceCode>CA</StateOrProvinceCode>
+                <PostalCode>93455</PostalCode>
+                <CountryCode>US</CountryCode>
+                <Residential>false</Residential>
+            </Address>
+        </Events>
+        <Events>
+            <Timestamp>2018-02-20T16:52:00-08:00</Timestamp>
+            <EventType>AR</EventType>
+            <EventDescription>Arrived at FedEx location</EventDescription>
+            <Address>
+                <City>SANTA MARIA</City>
+                <StateOrProvinceCode>CA</StateOrProvinceCode>
+                <PostalCode>93455</PostalCode>
+                <CountryCode>US</CountryCode>
+                <Residential>false</Residential>
+            </Address>
+        </Events>
+        <Events>
+            <Timestamp>2018-02-20T11:49:00-08:00</Timestamp>
+            <EventType>OC</EventType>
+            <EventDescription>Shipment information sent to FedEx</EventDescription>
+            <Address>
+                <PostalCode>93455</PostalCode>
+                <CountryCode>US</CountryCode>
+                <Residential>false</Residential>
+            </Address>
+        </Events>
+        <Events>
+            <Timestamp>2018-02-20T00:00:00</Timestamp>
+            <EventType>PU</EventType>
+            <EventDescription>Picked up</EventDescription>
+            <Address>
+                <City>SANTA MARIA</City>
+                <StateOrProvinceCode>CA</StateOrProvinceCode>
+                <PostalCode>93455</PostalCode>
+                <CountryCode>US</CountryCode>
+                <Residential>false</Residential>
+            </Address>
+        </Events>
+    </TrackDetails>
+</TrackReply>
