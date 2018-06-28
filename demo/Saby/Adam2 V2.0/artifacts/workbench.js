@@ -5,6 +5,7 @@ const settings = require('../settings.json');
 const rx = require('rxjs');
 const operators = require('rxjs/operators');
 const api = require('./api');
+const notify = require('./notify');
 
 let workbench = {};
 
@@ -59,14 +60,14 @@ handler.sub1 = ibuki.filterOn('handle-big-object:db>workbench').subscribe(
                 x.carrierName = 'tps';
                 return (x);
             });
-
-        (gso.length > 0) &&
-            (ibuki.emit('pre-process-gso-carrier:self', gso));
-        (fedEx.length > 0) &&
+        // notify module is used to notify errors and status
+        (gso.length > 0) && (notify.initCarrier('gso', gso)) &&
+            (ibuki.emit('pre-process-gso-carrier:self', gso)); // Pre processing GSO object to get token information
+        (fedEx.length > 0) && (notify.initCarrier('fedEx', fedEx)) &&
             (ibuki.emit('process-carrier:self', fedEx));
-        (ups.length > 0) &&
+        (ups.length > 0) && (notify.initCarrier('ups', ups)) &&
             (ibuki.emit('process-carrier:self', ups));
-        (tps.length > 0) &&
+        (tps.length > 0) && (notify.initCarrier('tps', tps)) &&
             (ibuki.emit('process-carrier:self', tps));
         handler.closeIfIdle();
     }
@@ -74,17 +75,19 @@ handler.sub1 = ibuki.filterOn('handle-big-object:db>workbench').subscribe(
 
 handler.sub8 = ibuki.filterOn('process-carrier:self').subscribe(d => {
     const carrierInfos = d.data;
-    handler.carrierCount = handler.carrierCount + carrierInfos.length;
-    console.log('db requests:', handler.dbRequests, ' carrier count:', handler.carrierCount);
+    settings.config.autoPilotPiston && ibuki.emit('adjust-piston:self',carrierInfos[0].carrierName);
     handler.sub2 = rx.from(carrierInfos)
         .pipe(
             operators
                 .concatMap(x => rx.of(x)
                     .pipe(operators
-                        .delay(settings.carriers[x.carrierName].piston || 20)))
-        )
+                        .delay(
+                            // settings.carriers[x.carrierName].piston || 20
+                            settings.config.autoPilotPiston ? (notify.getPiston(x.carrierName) || 10) : 10
+                        ))))
         .subscribe(
             x => {
+                notify.addApiRequest(x);
                 api[x.method](x);
             }
         );
@@ -108,7 +111,7 @@ handler.sub9 = ibuki.filterOn('pre-process-gso-carrier:self').subscribe(d => {
                 null;
         })
         gso.forEach(x => {
-            x.token = x.accountNumber ? accountWithTokens[x.accountNumber] : '';            
+            x.token = x.accountNumber ? accountWithTokens[x.accountNumber] : '';
             x.config = {
                 headers: {
                     "Token": x.token,
@@ -122,7 +125,25 @@ handler.sub9 = ibuki.filterOn('pre-process-gso-carrier:self').subscribe(d => {
     });
 });
 
+handler.sub10 = ibuki.filterOn('adjust-piston:self').subscribe(
+    d => {
+        const carrierName = d.data;
+        const queueSettings = settings.carriers[carrierName].queue;
+        const myInterval = rx.interval(500);
+        handler.sub11 = myInterval.subscribe((x) => {
+            const queue = notify.getQueue(carrierName);
+            if (queue > queueSettings) { //reduce queue so increase piston
+                 notify.varyPiston(carrierName,5);
+            } else {
+                notify.varyPiston(carrierName,-5);
+            } 
+        });
+    }
+)
+
 module.exports = workbench;
+
+//deprecated code
 // function processCarrier(carrierInfos) {
 
 //     handler.carrierCount = handler.carrierCount + carrierInfos.length;

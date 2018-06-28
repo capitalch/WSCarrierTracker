@@ -4,13 +4,13 @@ const ibuki = require('./ibuki');
 const util = require('./util');
 const handler = require('./handler');
 const Q = require('q');
+const notify = require('./notify');
 
 let api = {};
 
 api.getGsoTokenPromises = (info) => {
     const accounts = info.accounts;
     const promises = accounts.map(x => {
-        console.log('i am here');
         const config = {
             headers: {
                 'AccountNumber': x.accountNumber,
@@ -20,8 +20,8 @@ api.getGsoTokenPromises = (info) => {
         };
         const promise = axios.get(info.tokenUrl, config);
         return (promise);
-    });   
-    return (Q.allSettled(promises));
+    });
+    return (Q.allSettled(promises)); //Even if error is encountered in a promise still other promises are handled
     // return (axios.all(promises));
 }
 
@@ -30,30 +30,14 @@ api.axiosPost = (carrierInfo) => {
         .then(res => {
             //Save in database
             carrierInfo.response = res.data;
-            handler.carrierCount--;
+            notify.addApiResponse(carrierInfo);
             util.processCarrierResponse(carrierInfo);
-            // ibuki.emit('parse-api-response:api>util', carrierInfo);
-            // config.buffer.next({ trackingNumber: carrierInfo.trackingNumber, name: carrierInfo.carrierName });
-            // ibuki.emit('parseXml:util:xmlParse', { response: res.data, carrierInfo: carrierInfo });
-            //ibuki.emit('sql1-update:util>db1',{rn:1});
-            // flag && 
-            // config.prepared.next(1);
-            // flag = false;
-            // config.carrierCount--;
-            // config.responseCount++;
-            // console.log(carrierInfo.trackingNumber, 'name:', carrierInfo.name,
-            //     'Count: ', config.carrierCount, 'Queued:', (config.requestCount - config.responseCount - config.errorCount)
-            //     , ' delay: ', config.piston
-            // );
         })
         .catch(err => {
-            handler.carrierCount--;
+            // handler.carrierCount--;
+            notify.addApiError(carrierInfo);
             ibuki.emit('app-error:any', handler.frameError(
                 err, 'api', 'info', 5));
-            //log in database
-            // config.carrierCount--;
-            // config.errorCount++;
-            // console.log('Error:', 'Count:', config.carrierCount, 'Error:', config.errorCount, 'Queued:', (config.requestCount - config.responseCount - config.errorCount));
         });
 };
 
@@ -61,14 +45,13 @@ api.axiosGet = (carrierInfo) => {
     axios.get(carrierInfo.url, carrierInfo.config)
         .then(res => {
             //Save in database
-
+            notify.addApiResponse(carrierInfo);
             carrierInfo.response = res.data;
-            handler.carrierCount--;
             util.processCarrierResponse(carrierInfo);
         })
         .catch(err => {
             //log in database
-            handler.carrierCount--;
+            notify.addApiError(carrierInfo);
             ibuki.emit('app-error:any', handler.frameError(
                 err, 'api', 'info', 6));
         });

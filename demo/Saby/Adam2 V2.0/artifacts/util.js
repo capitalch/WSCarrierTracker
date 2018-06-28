@@ -1,94 +1,131 @@
 'use strict';
-// const axios = require('axios');
 const ibuki = require('./ibuki');
 const handler = require('./handler');
-// const config = require('./config');
 const parseString = require('xml2js').parseString;
 const logger = require('./logger');
+
 
 let util = {};
 
 util.processCarrierResponse = (carrierInfo) => {
     const carriermap = {
-        fedEx: processFedEx
-        , ups: processUps
-        , gso: processGso
+        fedEx: processFedEx,
+        ups: processUps,
+        gso: processGso
     }
     carriermap[carrierInfo.carrierName](carrierInfo);
 }
 
-function processGso(x){
+function processGso(x) {
     const unifiedJson = {
-        name: x.shipping
-        , trackingNumber: x.trackingNumber
-        , status: x.response.StatusCode == 200?'delivered' : 'error'
-        , dateTime: Date.now()
+        name: 'fedEx',
+        trackingNumber: x.trackingNumber,
+        status: 'delivered',
+        dateTime: Date.now()
     };
     handler.buffer.next(unifiedJson);
 }
 
 function processFedEx(x) {
-    parseString(x.response
-        , { trim: true, explicitArray: false }
-        , function (err, result) {
-            if (err) {
-                ibuki.emit('app-error:any', handler.frameError(err, 'util', 'info', 3))
+    parseString(x.response, {
+        trim: true,
+        explicitArray: false
+    }, function (err, result) {
+        if (err) {
+            ibuki.emit('app-error:any', handler.frameError(err, 'util', 'info', 3))
+        } else {
+            const notifications = result.TrackReply.Notifications;
+            if (notifications.Severity === 'ERROR') {
+                ibuki.emit('app-error:any', handler.frameError({
+                    name: 'apiCallError',
+                    message: 'FedEx:' + x.trackingNumber + ' ' + notifications.LocalizedMessage
+                }, 'util', 'info', 4))
             } else {
-                const notifications = result.TrackReply.Notifications;
-                if (notifications.Severity === 'ERROR') {
-                    ibuki.emit('app-error:any', handler.frameError(
-                        { name: 'apiCallError', message: 'FedEx:' + x.trackingNumber + ' ' + notifications.LocalizedMessage }
-                        , 'util', 'info', 4))
-                } else {
-                    (typeof result.TrackReply.TrackDetails.Events!== 'undefined')&& (typeof result.TrackReply.TrackDetails.Events.length !== 'undefined') &&  result.TrackReply.TrackDetails.Events.forEach(activity=>{
-                        logger.info(activity.EventType +';'+activity.EventDescription);
-                    })
-                    
-                   
-                    //things are fine. Create unified json object and push it to buffer to be updated in database
-                    const unifiedJson = {
-                        name: 'fedEx'
-                        , trackingNumber: x.trackingNumber
-                        , status: 'delivered'
-                        , dateTime: Date.now()
-                    };
-                    handler.buffer.next(unifiedJson);
-                    // carrierInfo.parsedResponse = result.TrackReply;
-                    // pushUnifiedJson(carrierInfo);
+                //things are fine. Create unified json object and push it to buffer to be updated in database
+                const events = result.TrackReply.TrackDetails.Events;
+                let timeStamp = null;
+                const statusCodes = {
+                    AF: 'orderProcessed',
+                    AR: 'orderProcessed',
+                    CA: 'exception',
+                    DE: 'exception',
+                    DL: 'delivered',
+                    DP: 'inTransit',
+                    HA: 'inTransit',
+                    HP: 'inTransit',
+                    IT: 'inTransit',
+                    OC: 'inTransit',
+                    OD: 'inTransit',
+                    PU: 'PickedUp',
+                    RR: 'inTransit',
+                    RS: 'returned'
                 }
+                if (events) {
+                    if (Array.isArray(events)) {
+                        timeStamp = events[0].Timestamp;
+                    } else {
+                        timeStamp = events.Timestamp;
+                    }
+                }
+                // timeStamp = events && Array.isArray(events) ? events[0].Timestamp : events.Timestamp
+                const statusCode = result.TrackReply.TrackDetails.StatusCode;
+                const unifiedJson = {
+                    shippingAgentCode: x.carrierName,
+                    trackingNumber: x.trackingNumber,
+                    carrierStatusMessage: result.TrackReply.TrackDetails.StatusDescription || 'No Status',
+                    carrierStatusCode: result.TrackReply.TrackDetails.StatusCode || null,
+                    signedForByName: result.TrackReply.TrackDetails.DeliverySignatureName || null,
+                    rn: x.rn,
+                    timeStamp: timeStamp
+                    // , date:
+                    // , time:
+                    ,
+                    activityJson: events,
+                    unifiedStatus: statusCode ? statusCodes[statusCode] || 'noStatus' : 'noStatus'
+                };
+                handler.buffer.next(unifiedJson);
             }
-        });
+        }
+    });
 }
 
 function processUps(x) {
-    parseString(x.response
-        , { trim: true, explicitArray: false }
-        , function (err, result) {
-            if (err) {
-                ibuki.emit('app-error:any', handler.frameError(err, 'util', 'info', 5))
+    parseString(x.response, {
+        trim: true,
+        explicitArray: false
+    }, function (err, result) {
+        if (err) {
+            ibuki.emit('app-error:any', handler.frameError(err, 'util', 'info', 5))
+        } else {
+            const response = result.TrackResponse.Response;
+            if (response.ResponseStatusCode === '0') {
+                const errorDescription = response.Error.ErrorDescription
+                ibuki.emit('app-error:any', handler.frameError({
+                    name: 'apiCallError',
+                    message: 'UPS:' + x.trackingNumber + ' ' + errorDescription
+                }, 'util', 'info', 4));
             } else {
-                const response = result.TrackResponse.Response;
-                if (response.ResponseStatusCode === '0') {
-                    const errorDescription = response.Error.ErrorDescription
-                    ibuki.emit('app-error:any', handler.frameError(
-                        { name: 'apiCallError', message: 'UPS:' + x.trackingNumber + ' ' + errorDescription }
-                        , 'util', 'info', 4));
-                } else {
-                    (result.TrackResponse.Shipment.Package.Activity) && result.TrackResponse.Shipment.Package.Activity.forEach(activity=>{
-                        logger.info(activity.Status.StatusType.Code +';'+activity.Status.StatusType.Description);
-                    })
-                    const unifiedJson = {
-                        name: 'fedEx'
-                        , trackingNumber: x.trackingNumber
-                        , status: 'delivered'
-                        , dateTime: Date.now()
-                    };
-                    handler.buffer.next(unifiedJson);
-                    // carrierInfo.parsedResponse = response;
-                }
+
+                const activity = result.TrackResponse.Shipment.Package.Activity;
+                activity && logger.info(x.trackingNumber + ':' + activity[0].Status.StatusType.Description)
+                const unifiedJson = {
+                    shippingAgentCode: x.carrierName,
+                    trackingNumber: x.trackingNumber,
+                    //carrierStatusMessage: result.TrackReply.TrackDetails.StatusDescription || 'No Status',
+                    // carrierStatusCode: result.TrackReply.TrackDetails.StatusCode || null,
+                    //signedForByName: result.TrackReply.TrackDetails.DeliverySignatureName || null,
+                    //rn: x.rn,
+                    //timeStamp: timeStamp
+                    // , date:
+                    // , time:
+                    //,
+                    activityJson: activity,
+                    unifiedStatus: ''
+                };
+                handler.buffer.next(unifiedJson);
             }
         }
-    )
+    })
 }
 
 module.exports = util;

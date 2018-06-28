@@ -1,0 +1,14 @@
+<TrackResponse>
+    <Response>
+        <TransactionReference>
+            <XpciVersion>1.0001</XpciVersion>
+        </TransactionReference>
+        <ResponseStatusCode>0</ResponseStatusCode>
+        <ResponseStatusDescription>Failure</ResponseStatusDescription>
+        <Error>
+            <ErrorSeverity>Hard</ErrorSeverity>
+            <ErrorCode>151044</ErrorCode>
+            <ErrorDescription>No tracking information available</ErrorDescription>
+        </Error>
+    </Response>
+</TrackResponse>

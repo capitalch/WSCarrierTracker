@@ -1,10 +1,11 @@
 'use strict';
 const sql = require('mssql');
-const rx = require('rxjs');
+// const rx = require('rxjs');
 const ibuki = require('./ibuki');
 const handler = require('./handler');
 const settings = require('../settings.json');
 const sqlCommands = require('./sql-commands');
+const notify = require('./notify');
 const workbench = require('./workbench');
 
 // let dbRequests = 0;
@@ -20,16 +21,15 @@ handler.sub0 = ibuki.filterOn('get-big-object:run>db').subscribe(d => {
             } else {
                 createRequests();
                 const req = reqs.find((e) => e.isAvailable);
-                // const req = new sql.Request(handler.pool);
                 req.isAvailable = false;
+                notify.addDbRequest();
                 req.query(sqlCommands.getInfos, (err, result) => {
                     if (err) {
+                        notify.addDbError();
                         ibuki.emit('app-error:any', handler.frameError(err, 'db', 'fatal', 2));
                     } else {
-
+                        notify.addDbResponse();
                         ibuki.emit('handle-big-object:db>workbench', result.recordset);
-                        // console.log(result.recordset);
-                        // handler.cleanup();
                     }
                     req.isAvailable = true;
                 });
@@ -55,18 +55,16 @@ const disburse = (info) => {
     const req = reqs.find((e) => e.isAvailable);
     if (req) {
         req.isAvailable = false;
-        handler.dbRequests++;
-        console.log('db requests:', handler.dbRequests, ' carrier count:', handler.carrierCount);
+        notify.addDbRequest();        
         req.query('update product set UnitPrice = UnitPrice+1 where id = 1', (err, result) => {
-            handler.dbRequests--;
-            console.log('db requests:', handler.dbRequests, ' carrier count:', handler.carrierCount);
+            // handler.dbRequests--;            
             req.isAvailable = true;
             if (err) {
-                console.log(err);
+                notify.addDbError();
             } else {
-                // console.log('req fulfilled: ', req.index);
+                notify.addDbResponse();
             }
-        })
+        });
     } else {
         setTimeout(() => {
             disburse(info);

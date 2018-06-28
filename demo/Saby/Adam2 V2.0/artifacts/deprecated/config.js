@@ -1,0 +1,19 @@
+//const rx = require('rxjs');
+//const operators = require('rxjs/operators');
+let config = {};
+config.dbConfig = {
+    user: 'sagarwal',
+    password: 'su$hant123',
+    server: 'wineshipping.database.windows.net',
+    database: 'WSCarrierTracker',
+    options: {
+        encrypt: true // Use this if you're on Windows Azure
+    },
+    pool: {
+        max: 10,
+        min: 0,
+        idleTimeoutMillis: 30000
+    }
+};
+config.piston = 10;
+module.exports = config;
