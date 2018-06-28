@@ -14,8 +14,8 @@ handler.sub1 = ibuki.filterOn('handle-big-object:db>workbench').subscribe(
         const bigObject = d.data;
         const fedEx = bigObject
             .filter(x =>
-                (x.shipping === 'FEX') ||
-                (x.shipping === 'FCC')
+                (x.shippingAgentCode === 'FEX') ||
+                (x.shippingAgentCode === 'FCC')
             ).map(x => {
                 x.url = settings.carriers.fedEx.url;
                 x.param = `<TrackRequest xmlns='http://fedex.com/ws/track/v3'><WebAuthenticationDetail><UserCredential><Key>${settings.carriers.fedEx.key}</Key><Password>${settings.carriers.fedEx.password}</Password></UserCredential></WebAuthenticationDetail><ClientDetail><AccountNumber>${settings.carriers.fedEx.accountNumber}</AccountNumber><MeterNumber>${settings.carriers.fedEx.meterNumber}</MeterNumber></ClientDetail><TransactionDetail><CustomerTransactionId>***Track v8 Request using VB.NET***</CustomerTransactionId></TransactionDetail><Version><ServiceId>trck</ServiceId><Major>3</Major><Intermediate>0</Intermediate><Minor>0</Minor></Version><PackageIdentifier><Value>${x.trackingNumber}</Value><Type>TRACKING_NUMBER_OR_DOORTAG</Type></PackageIdentifier><IncludeDetailedScans>1</IncludeDetailedScans></TrackRequest>`;
@@ -26,8 +26,8 @@ handler.sub1 = ibuki.filterOn('handle-big-object:db>workbench').subscribe(
 
         const ups = bigObject
             .filter(x =>
-                (x.shipping === 'TMC') ||
-                (x.shipping === 'UPS'))
+                (x.shippingAgentCode === 'TMC') ||
+                (x.shippingAgentCode === 'UPS'))
             .map(x => {
                 x.url = settings.carriers.ups.url;
                 x.param = `<?xml version="1.0"?><AccessRequest xml:lang="en-US"><AccessLicenseNumber>${settings.carriers.ups.accessLicenseNumber}</AccessLicenseNumber><UserId>${settings.carriers.ups.userId}</UserId><Password>${settings.carriers.ups.password}</Password></AccessRequest><?xml version="1.0"?><TrackRequest xml:lang="en-US"><Request><TransactionReference><XpciVersion>1.0001</XpciVersion></TransactionReference><RequestAction>Track</RequestAction><RequestOption>1</RequestOption></Request><TrackingNumber>${x.trackingNumber}</TrackingNumber></TrackRequest>`;
@@ -39,7 +39,7 @@ handler.sub1 = ibuki.filterOn('handle-big-object:db>workbench').subscribe(
         const gso = bigObject
             .filter(
                 x => (
-                    x.shipping === 'GSO'
+                    x.shippingAgentCode === 'GSO'
                 ))
             .map(x => {
                 x.method = 'axiosGet';
@@ -52,7 +52,7 @@ handler.sub1 = ibuki.filterOn('handle-big-object:db>workbench').subscribe(
 
         const tps = bigObject
             .filter(x => (
-                x.shipping === 'TPS'
+                x.shippingAgentCode === 'TPS'
             ))
             .map(x => {
                 x.url = `${settings.carriers.tps.url}?API=TrackV2&XML=<TrackFieldRequest USERID="${settings.carriers.tps.userId}"><TrackID ID="${x.trackingNumber}"></TrackID></TrackFieldRequest>`;
