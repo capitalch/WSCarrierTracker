@@ -52,6 +52,32 @@ const tools = {
                 }
             }
             return (timeStamp);
+        },
+        getDamageEvent: (events) => {
+            let event = null;
+            if (events) {
+                if (Array.isArray(events)) {
+                    event = events.find((x) =>
+                        x.EventDescription && x.EventDescription.toLowerCase().includes('damage'))
+                }
+                else {
+                    event = events.EventDescription && events.EventDescription.toLowerCase().includes('damage')
+                }
+            }
+            return (event);
+        },
+        getReturnIdentifier: (identifiers) => {
+            let identifier = null;
+            if (identifiers) {
+                if (Array.isArray(identifiers)) {
+                    identifier = identifiers.find(x =>
+                        x.Type === "RETURNED_TO_SHIPPER_TRACKING_NUMBER"
+                    );
+                } else { // identifiers is an object
+                    identifier = identifiers.Type === "RETURNED_TO_SHIPPER_TRACKING_NUMBER" ? identifiers : null;
+                }
+            }
+            return (identifier);
         }
     }
 
@@ -97,7 +123,8 @@ function processFex(x) {
                 const statusCode = trackDetails.StatusCode;
                 const fexStatusCodes = tools.fex.fexStatusCodes();
                 const events = trackDetails.Events;
-
+                const otherIdentifiers = trackDetails.OtherIdentifiers;
+                const timeStamp = tools.fex.timeStamp(events);
                 let damage = 0,
                     damageMsg = '',
                     exceptionStatus = 0,
@@ -106,31 +133,34 @@ function processFex(x) {
                     statusDescription = trackDetails.StatusDescription;
 
                 if (statusDescription) {
-                    if (statusDescription.toLowerCase().includes('delivery')) {
+                    if (statusDescription.toLowerCase().includes('delivered')) {
                         notify.incrDelivery(x.carrierName);
                     } else {
-                        // if(events){
-                        const damageEvent = events && Array.isArray(events) && events.find((x) =>
-                            x.EventDescription && x.EventDescription.toLowerCase().includes('damage')
-                        );
+                        // check damage
+                        const damageEvent = tools.fex.getDamageEvent(events);
                         damageEvent && (
-                            notify.incrDamage++,
-                            notify.incrException++,
+                            notify.incrDamage(x.carrierName),
+                            notify.incrException(x.carrierName),
                             exceptionStatus = 1,
-                            damageMsg = damageEvent.EventDescription
+                            damage = 1,
+                            damageMsg = damageEvent.EventDescription //,
+                            // timeStamp = damageEvent.TimeStamp
                         );
-                        // }
-                        //
-                        //return in other identifier
-                        //damage in eventdescription then increase count and exception count
-                        // exceptionstatus = 1 if damage or return
-                        // 
+                        // check return
+                        const returnIdentifier = tools.fex.getReturnIdentifier(otherIdentifiers);
+                        returnIdentifier && (
+                            notify.incrReturn(x.carrierName),
+                            notify.incrException(x.carrierName),
+                            exceptionStatus = 1,
+                            rts = 1,
+                            rtsTrackingNo = returnIdentifier.Value,
+                            statusDescription = "Package returned to shipper: ".concat(rtsTrackingNo) //carrierStatusMessage
+                        );
                     }
                 } else {
                     notify.incrException(x.carrierName);
                 }
 
-                const timeStamp = tools.fex.timeStamp(events);
                 const mTimeStamp = timeStamp ? moment(timeStamp) : null;
                 const mDate = mTimeStamp ? mTimeStamp.format("MMM. DD, YYYY") : '';
                 const mTime = mTimeStamp ? mTimeStamp.format("h:mm A") : '';
