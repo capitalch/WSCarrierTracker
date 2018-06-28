@@ -1,5 +1,8 @@
 {
-    "name": "sushant",
+    "config": {
+        "verbose": true
+        ,"autoPilotPiston":true
+    },
     "db": {
         "user": "nwuser",
         "password": "user123%",
@@ -16,8 +19,8 @@
     },
     "carriers": {
         "fedEx": {
-            "piston": 20,
-            "queue": 10,
+            "piston": 10,
+            "queue": 50,
             "url": "https://gateway.fedex.com:443/xml",
             "method": "",
             "key": "JfSbK7tkzfRBMf8G",
@@ -27,6 +30,7 @@
         },
         "ups": {
             "piston": 20,
+            "queue":10,
             "url": "https://onlinetools.ups.com/ups.app/xml/Track",
             "accessLicenseNumber": "FC312F9BE62AFF90",
             "userId": "UPSwineshipping",
@@ -34,6 +38,7 @@
         },
         "gso": {
             "piston": 20,
+            "queue":10,
             "tokenUrl": "https://api.gso.com/Rest/v1/token",
             "url": "https://api.gso.com/Rest/v1/TrackShipment",
             "accounts": [{
@@ -54,6 +59,8 @@
             ]
         },
         "tps": {
+            "piston":20,
+            "queue":10,
             "url": "http://production.shippingapis.com/ShippingAPI.dll",
             "userId": "487WINES7756"
         }
