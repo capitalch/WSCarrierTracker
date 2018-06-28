@@ -198,8 +198,14 @@ Dim DAMAGEMSG As String
 Dim RTSTrackingNo As String
 Dim Retry As Integer
 
+Status_Date:            OK
+Status_Time:            OK
+EstimatedDeliveryDate:
+CarrierStatusCode:
+CarrierStatusMessage:
 SignedForByName:        OK
 ExceptionStatus:        Find logic: 0,1:int
+
 RTS:                    Search in events message for return
 RTSTrackingNo:          Find out
 DAMAGE:                 Search damage word
