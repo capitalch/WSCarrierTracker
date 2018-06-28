@@ -13,6 +13,34 @@ const dbStatus = {
         return (dbStatus.dbRequests - dbStatus.dbResponses - dbStatus.dbErrors);
     }
 };
+
+const carrierStatus = {
+    fex: {
+        delivery: 0,
+        return: 0,
+        damage: 0,
+        exception:0
+    },
+    ups: {
+        delivery: 0,
+        return: 0,
+        damage: 0,
+        exception:0
+    },
+    gso: {
+        delivery: 0,
+        return: 0,
+        damage: 0,
+        exception:0
+    },
+    tps: {
+        delivery: 0,
+        return: 0,
+        damage: 0,
+        exception:0
+    }
+};
+
 const notify = {
     getDbStatus: () => dbStatus,
     getApiStatus: () => apiStatus,

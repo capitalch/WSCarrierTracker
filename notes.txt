@@ -24,6 +24,7 @@ json data: nvarchar(4000)
     DELIVERED
     Not Delivered: Which has no delivered Status
     Exception: Api / database error, 
+13. Correct shippingAgentCode in the codeBase. Ex fedEx-->FEX
 13. Deployment
 
 //Saby
@@ -63,6 +64,7 @@ OD: On FedEx vehicle for delivery           inTransit
 PU: Picked up                               pickedUp
 RR: Delivery option requested               inTransit
 RS: Returning package to shipper            returned
+HL: Ready for pickup                        readyForPickup
 
 //unified code
 delivered
@@ -71,6 +73,7 @@ inTransit
 pickedUp
 returned
 orderProcessed
+readyForPickup
  
 
 -------------------- Enable Application Insights----------
@@ -168,3 +171,132 @@ CREATE TABLE [dbo].[Packagelog](
 	[JobID] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)
 )
+
+///// columns
+                            ThreadNo As Integer
+                            TrackingNumber As String
+                            Dim PackageNo As String
+Status:             ResponseStatus:         OK
+CarrierStatusCode:  ResponseStatusCode:     OK
+Status_Date:        ResponseStatusDate:     Ok
+Status_time:        ResponseStatusTime:     Ok
+                            Exception email:ResponseError As String
+Dim ResponseException As Integer
+Dim TrackingError As String
+Dim NoResponseStatus As String
+Dim NoResponseTracking As String
+Dim ExceptionStatus As String
+Dim ExceptionTracking As String
+Dim ReturnStatus As String
+Dim ReturnTracking As String
+Dim SignedForByName As String
+Dim EstimatedDeliveryDate As Date
+Dim CarrierStatusMessage As String
+Dim RTS As Integer
+Dim DAMAGE As Integer
+Dim DAMAGEMSG As String
+Dim RTSTrackingNo As String
+Dim Retry As Integer
+
+Status_Date:            OK
+Status_Time:            OK
+EstimatedDeliveryDate:
+CarrierStatusCode:
+CarrierStatusMessage:
+SignedForByName:        OK
+ExceptionStatus:        Find logic: 0,1:int
+
+RTS:                    Search in events message for return
+RTSTrackingNo:          Find out
+DAMAGE:                 Search damage word
+DAMAGEMSG:              In the activity
+StatusUpdated:          current date time
+
+CREATE PROCEDURE [dbo].[UpdateTrackingStatus] 
+      @ThreadNo INT
+AS
+BEGIN
+      -- SET NOCOUNT ON added to prevent extra result sets from
+      -- interfering with SELECT statements.
+      SET NOCOUNT ON;
+
+    -- Insert statements for procedure here
+      --INSERT INTO dbo.PackageTrackStagingBackup
+      --SELECT * FROM PackageTrackStaging
+
+UPDATE T2
+Set T2.[Status] = T1.[Status],
+            T2.[Status_Date] = T1.[Status_Date],
+            T2.[Status_Time] = T1.[Status_Time],
+            T2.[EstimatedDeliveryDate] = T1.[EstimatedDeliveryDate],
+            T2.[CarrierStatusCode] = T1.[CarrierStatusCode],
+            T2.[CarrierStatusMessage] = T1.[CarrierStatusMessage],
+            T2.[SignedForByName] = T1.[SignedForByName],
+            T2.[ExceptionStatus] = 
+            (
+                  CASE 
+                        WHEN T1.[ExceptionStatus] = 1 THEN 1
+                        WHEN T2.[ExceptionStatus] = 0 THEN 0
+                        WHEN T2.[ExceptionStatus] = 1 THEN 1
+                  END
+            ),
+            T2.[RTS] =
+            (
+                  CASE
+                        WHEN T1.[RTS] = 1 THEN 1
+                        WHEN T2.[RTS] = 1 THEN 1
+                        WHEN T2.[RTS] = 0 THEN 0
+                  END
+            ),
+            T2.[RTSTrackingNo] = 
+            (
+                  CASE
+                        WHEN T1.[RTSTrackingNo] <> '' THEN T1.[RTSTrackingNo]
+                        WHEN T2.[RTSTrackingNo] <> '' THEN T2.[RTSTrackingNo]
+                  ELSE ''
+                  END
+            ),
+            T2.[DAMAGE] = 
+            (
+                  CASE
+                        WHEN T1.[DAMAGE] = 1 THEN 1
+                        WHEN T2.[DAMAGE] = 1 THEN 1
+                        WHEN T2.[DAMAGE] = 0 THEN 0
+                  END
+            ),
+            T2.[DAMAGEMSG] = 
+            (
+                  CASE
+                        WHEN T1.[DAMAGEMSG] <> '' THEN T1.[DAMAGEMSG]
+                        WHEN T2.[DAMAGEMSG] <> '' THEN T2.[DAMAGEMSG]
+                  ELSE ''
+                  END
+            ),
+            T2.[StatusUpdated] = getdate()
+FROM [PackageTrackStaging] as T1
+      JOIN [Wineshipping$Package Info] as T2
+      ON T1.[External Tracking No_] = T2.[External Tracking No_]
+      AND T1.[PackageNo] = T2.[No_]
+      AND (UPPER(T1.[Status]) <> UPPER(T2.[Status])
+      OR (T1.[EstimatedDeliveryDate] <> T2.[EstimatedDeliveryDate] AND
+                  T1.[EstimatedDeliveryDate] <> '1900-01-01 00:00:00.000'
+            )
+      OR T1.[CarrierStatusCode] <> T2.[CarrierStatusCode]
+      OR T1.[Status_Date] <> T2.[Status_Date]
+      OR T1.[Status_Time] <> T2.[Status_Time]
+      OR T1.[CarrierStatusMessage] <> T2.[CarrierStatusMessage]
+      OR (T1.[ExceptionStatus] = 1 AND T2.[ExceptionStatus] = 0)
+      OR (T1.[RTS] = 1 AND T2.[RTS] = 0)
+      OR (T1.[DAMAGE] = 1 AND T2.[DAMAGE] = 0)  
+            )
+WHERE T1.[Company] = 'WS' AND T1.[ThreadNo] = @ThreadNo
+RETURN @@ROWCOUNT
+
+
+END
+
+
+GO
+
+
+           

@@ -12,22 +12,22 @@ let workbench = {};
 handler.sub1 = ibuki.filterOn('handle-big-object:db>workbench').subscribe(
     d => {
         const bigObject = d.data;
-        const fedEx = bigObject
+        const fex = bigObject
             .filter(x =>
-                (x.shipping === 'FEX') ||
-                (x.shipping === 'FCC')
+                (x.shippingAgentCode === 'FEX') ||
+                (x.shippingAgentCode === 'FCC')
             ).map(x => {
-                x.url = settings.carriers.fedEx.url;
-                x.param = `<TrackRequest xmlns='http://fedex.com/ws/track/v3'><WebAuthenticationDetail><UserCredential><Key>${settings.carriers.fedEx.key}</Key><Password>${settings.carriers.fedEx.password}</Password></UserCredential></WebAuthenticationDetail><ClientDetail><AccountNumber>${settings.carriers.fedEx.accountNumber}</AccountNumber><MeterNumber>${settings.carriers.fedEx.meterNumber}</MeterNumber></ClientDetail><TransactionDetail><CustomerTransactionId>***Track v8 Request using VB.NET***</CustomerTransactionId></TransactionDetail><Version><ServiceId>trck</ServiceId><Major>3</Major><Intermediate>0</Intermediate><Minor>0</Minor></Version><PackageIdentifier><Value>${x.trackingNumber}</Value><Type>TRACKING_NUMBER_OR_DOORTAG</Type></PackageIdentifier><IncludeDetailedScans>1</IncludeDetailedScans></TrackRequest>`;
+                x.url = settings.carriers.fex.url;
+                x.param = `<TrackRequest xmlns='http://fedex.com/ws/track/v3'><WebAuthenticationDetail><UserCredential><Key>${settings.carriers.fex.key}</Key><Password>${settings.carriers.fex.password}</Password></UserCredential></WebAuthenticationDetail><ClientDetail><AccountNumber>${settings.carriers.fex.accountNumber}</AccountNumber><MeterNumber>${settings.carriers.fex.meterNumber}</MeterNumber></ClientDetail><TransactionDetail><CustomerTransactionId>***Track v8 Request using VB.NET***</CustomerTransactionId></TransactionDetail><Version><ServiceId>trck</ServiceId><Major>3</Major><Intermediate>0</Intermediate><Minor>0</Minor></Version><PackageIdentifier><Value>${x.trackingNumber}</Value><Type>TRACKING_NUMBER_OR_DOORTAG</Type></PackageIdentifier><IncludeDetailedScans>1</IncludeDetailedScans></TrackRequest>`;
                 x.method = 'axiosPost';
-                x.carrierName = 'fedEx';
+                x.carrierName = 'fex';
                 return (x);
             });
 
         const ups = bigObject
             .filter(x =>
-                (x.shipping === 'TMC') ||
-                (x.shipping === 'UPS'))
+                (x.shippingAgentCode === 'TMC') ||
+                (x.shippingAgentCode === 'UPS'))
             .map(x => {
                 x.url = settings.carriers.ups.url;
                 x.param = `<?xml version="1.0"?><AccessRequest xml:lang="en-US"><AccessLicenseNumber>${settings.carriers.ups.accessLicenseNumber}</AccessLicenseNumber><UserId>${settings.carriers.ups.userId}</UserId><Password>${settings.carriers.ups.password}</Password></AccessRequest><?xml version="1.0"?><TrackRequest xml:lang="en-US"><Request><TransactionReference><XpciVersion>1.0001</XpciVersion></TransactionReference><RequestAction>Track</RequestAction><RequestOption>1</RequestOption></Request><TrackingNumber>${x.trackingNumber}</TrackingNumber></TrackRequest>`;
@@ -39,7 +39,7 @@ handler.sub1 = ibuki.filterOn('handle-big-object:db>workbench').subscribe(
         const gso = bigObject
             .filter(
                 x => (
-                    x.shipping === 'GSO'
+                    x.shippingAgentCode === 'GSO'
                 ))
             .map(x => {
                 x.method = 'axiosGet';
@@ -52,7 +52,7 @@ handler.sub1 = ibuki.filterOn('handle-big-object:db>workbench').subscribe(
 
         const tps = bigObject
             .filter(x => (
-                x.shipping === 'TPS'
+                x.shippingAgentCode === 'TPS'
             ))
             .map(x => {
                 x.url = `${settings.carriers.tps.url}?API=TrackV2&XML=<TrackFieldRequest USERID="${settings.carriers.tps.userId}"><TrackID ID="${x.trackingNumber}"></TrackID></TrackFieldRequest>`;
@@ -63,8 +63,8 @@ handler.sub1 = ibuki.filterOn('handle-big-object:db>workbench').subscribe(
         // notify module is used to notify errors and status
         (gso.length > 0) && (notify.initCarrier('gso', gso)) &&
             (ibuki.emit('pre-process-gso-carrier:self', gso)); // Pre processing GSO object to get token information
-        (fedEx.length > 0) && (notify.initCarrier('fedEx', fedEx)) &&
-            (ibuki.emit('process-carrier:self', fedEx));
+        (fex.length > 0) && (notify.initCarrier('fex', fex)) &&
+            (ibuki.emit('process-carrier:self', fex));
         (ups.length > 0) && (notify.initCarrier('ups', ups)) &&
             (ibuki.emit('process-carrier:self', ups));
         (tps.length > 0) && (notify.initCarrier('tps', tps)) &&
@@ -166,14 +166,14 @@ module.exports = workbench;
 //         );
 // }
 // const carrierMap = {
-//     fedEx: (x) => api[x.method](x)
+//     fex: (x) => api[x.method](x)
 //     // gso: ""
 //     , ups: (x) => api[x.method](x)
 // }
 //${carrierData[i].External}
 // const fedExPacket = {
-//     url: settings.carriers.fedEx.url,
-//     param: `<TrackRequest xmlns='http://fedex.com/ws/track/v3'><WebAuthenticationDetail><UserCredential><Key>${settings.carriers.fedEx.key}</Key><Password>${settings.carriers.fedEx.password}</Password></UserCredential></WebAuthenticationDetail><ClientDetail><AccountNumber>${settings.carriers.fedEx.accountNumber}</AccountNumber><MeterNumber>${settings.carriers.fedEx.meterNumber}</MeterNumber></ClientDetail><TransactionDetail><CustomerTransactionId>***Track v8 Request using VB.NET***</CustomerTransactionId></TransactionDetail><Version><ServiceId>trck</ServiceId><Major>3</Major><Intermediate>0</Intermediate><Minor>0</Minor></Version><PackageIdentifier><Value></Value><Type>TRACKING_NUMBER_OR_DOORTAG</Type></PackageIdentifier><IncludeDetailedScans>1</IncludeDetailedScans></TrackRequest>`,
+//     url: settings.carriers.fex.url,
+//     param: `<TrackRequest xmlns='http://fedex.com/ws/track/v3'><WebAuthenticationDetail><UserCredential><Key>${settings.carriers.fex.key}</Key><Password>${settings.carriers.fex.password}</Password></UserCredential></WebAuthenticationDetail><ClientDetail><AccountNumber>${settings.carriers.fex.accountNumber}</AccountNumber><MeterNumber>${settings.carriers.fex.meterNumber}</MeterNumber></ClientDetail><TransactionDetail><CustomerTransactionId>***Track v8 Request using VB.NET***</CustomerTransactionId></TransactionDetail><Version><ServiceId>trck</ServiceId><Major>3</Major><Intermediate>0</Intermediate><Minor>0</Minor></Version><PackageIdentifier><Value></Value><Type>TRACKING_NUMBER_OR_DOORTAG</Type></PackageIdentifier><IncludeDetailedScans>1</IncludeDetailedScans></TrackRequest>`,
 //     method: ''
 // }
 // let sub2 = ibuki.filterOn('serial-process:index:workbench').subscribe(
