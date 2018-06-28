@@ -197,3 +197,67 @@ Dim DAMAGE As Integer
 Dim DAMAGEMSG As String
 Dim RTSTrackingNo As String
 Dim Retry As Integer
+
+
+
+
+            T2.[SignedForByName] = T1.[SignedForByName],
+            T2.[ExceptionStatus] = 
+            (
+                  CASE 
+                        WHEN T1.[ExceptionStatus] = 1 THEN 1
+                        WHEN T2.[ExceptionStatus] = 0 THEN 0
+                        WHEN T2.[ExceptionStatus] = 1 THEN 1
+                  END
+            ),
+            T2.[RTS] =
+            (
+                  CASE
+                        WHEN T1.[RTS] = 1 THEN 1
+                        WHEN T2.[RTS] = 1 THEN 1
+                        WHEN T2.[RTS] = 0 THEN 0
+                  END
+            ),
+            T2.[RTSTrackingNo] = 
+            (
+                  CASE
+                        WHEN T1.[RTSTrackingNo] <> '' THEN T1.[RTSTrackingNo]
+                        WHEN T2.[RTSTrackingNo] <> '' THEN T2.[RTSTrackingNo]
+                  ELSE ''
+                  END
+            ),
+            T2.[DAMAGE] = 
+            (
+                  CASE
+                        WHEN T1.[DAMAGE] = 1 THEN 1
+                        WHEN T2.[DAMAGE] = 1 THEN 1
+                        WHEN T2.[DAMAGE] = 0 THEN 0
+                  END
+            ),
+            T2.[DAMAGEMSG] = 
+            (
+                  CASE
+                        WHEN T1.[DAMAGEMSG] <> '' THEN T1.[DAMAGEMSG]
+                        WHEN T2.[DAMAGEMSG] <> '' THEN T2.[DAMAGEMSG]
+                  ELSE ''
+                  END
+            ),
+            T2.[StatusUpdated] = getdate()
+FROM [PackageTrackStaging] as T1
+      JOIN [Wineshipping$Package Info] as T2
+      ON T1.[External Tracking No_] = T2.[External Tracking No_]
+      AND T1.[PackageNo] = T2.[No_]
+      AND (UPPER(T1.[Status]) <> UPPER(T2.[Status])
+      OR (T1.[EstimatedDeliveryDate] <> T2.[EstimatedDeliveryDate] AND
+                  T1.[EstimatedDeliveryDate] <> '1900-01-01 00:00:00.000'
+            )
+      OR T1.[CarrierStatusCode] <> T2.[CarrierStatusCode]
+      OR T1.[Status_Date] <> T2.[Status_Date]
+      OR T1.[Status_Time] <> T2.[Status_Time]
+      OR T1.[CarrierStatusMessage] <> T2.[CarrierStatusMessage]
+      OR (T1.[ExceptionStatus] = 1 AND T2.[ExceptionStatus] = 0)
+      OR (T1.[RTS] = 1 AND T2.[RTS] = 0)
+      OR (T1.[DAMAGE] = 1 AND T2.[DAMAGE] = 0)  
+            )
+WHERE T1.[Company] = 'WS' AND T1.[ThreadNo] = @ThreadNo
+RETURN @@ROWCOUNT
