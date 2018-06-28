@@ -148,3 +148,26 @@ CREATE TABLE [dbo].[PackageHistory](
 ) ON [PRIMARY]
 
 
+CREATE TABLE [dbo].[Packagelog](
+	[JobID] [bigint] NOT NULL,
+	[StartDatetime] [datetime] NOT NULL,
+	[EndDatetime] [datetime] NOT NULL,
+	[TotalRecordProcess] [bigint] NOT NULL,
+	[FedexPackageDelivered] [bigint] NULL,
+	[FedExPackagesNotDelivered] [bigint] NULL,
+	[UPSPackagesDelivered] [bigint] NULL,
+	[UPSPackagesNotDelivered] [bigint] NULL,
+	[GSOPackagesDelivered] [bigint] NULL,
+	[GSOPackagesNotDelivered] [bigint] NULL,
+	[USPSPackagesDelivered] [bigint] NULL,
+	[USPSPackagesNotDelivered] [bigint] NULL,
+	[PackageExceptions] [bigint] NULL,
+	[NoStatusPackages] [bigint] NOT NULL,
+	[ErrorsCount] [bigint] NULL,
+	[TotalPackagesInserted] [bigint] NULL,
+	[TotalFedExPackagesReturned] [bigint] NULL,
+ CONSTRAINT [PK_Packagelog] PRIMARY KEY CLUSTERED 
+(
+	[JobID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)
+)
