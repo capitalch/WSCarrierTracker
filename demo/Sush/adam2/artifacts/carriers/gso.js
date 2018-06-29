@@ -15,6 +15,12 @@ gso.processGso = (x) => {
 }
 
 function handleGso(x) {
-
+    const unifiedJson = {
+        name: 'fex',
+        trackingNumber: x.trackingNumber,
+        status: 'delivered',
+        dateTime: Date.now()
+    };
+    handler.buffer.next(unifiedJson);
 }
 module.exports = gso;

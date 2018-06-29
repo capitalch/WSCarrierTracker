@@ -1,19 +1,21 @@
 'use strict';
 const axios = require('axios');
 const ibuki = require('./ibuki');
-const util = require('./util');
+// const util = require('./util');
 const handler = require('./handler');
 const Q = require('q');
 const notify = require('./notify');
 const fex = require('./carriers/fex');
+const gso = require('./carriers/gso');
+const ups = require('./carriers/ups');
 
 let api = {};
 
 function processCarrierResponse(carrierInfo) {
     const carriermap = {
         fex: (x) => fex.processFex(x),
-        ups: (x) => util.processUps(x),
-        gso: (x) => util.processGso(x)
+        ups: (x) => ups.processUps(x),
+        gso: (x) => gso.processGso(x)
     }
     carriermap[carrierInfo.carrierName](carrierInfo);
 }
