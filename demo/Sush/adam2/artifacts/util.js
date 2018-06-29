@@ -210,6 +210,7 @@ function handleFex(x, result) {
     const mTime = mTimeStamp ? mTimeStamp.format("h:mm A") : '';
 
     const fexJson = {
+        status: '',
         statusDate: mDate, //from timeStamp
         statusTime: mTime, //from timestamp
 
