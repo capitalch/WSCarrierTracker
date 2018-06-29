@@ -5,9 +5,18 @@ const util = require('./util');
 const handler = require('./handler');
 const Q = require('q');
 const notify = require('./notify');
+const fex = require('./carriers/fex');
 
 let api = {};
 
+function processCarrierResponse(carrierInfo) {
+    const carriermap = {
+        fex: (x) => fex.processFex(x),
+        ups: (x) => util.processUps(x),
+        gso: (x) => util.processGso(x)
+    }
+    carriermap[carrierInfo.carrierName](carrierInfo);
+}
 api.getGsoTokenPromises = (info) => {
     const accounts = info.accounts;
     const promises = accounts.map(x => {
@@ -31,7 +40,7 @@ api.axiosPost = (carrierInfo) => {
             //Save in database
             carrierInfo.response = res.data;
             notify.addApiResponse(carrierInfo);
-            util.processCarrierResponse(carrierInfo);
+            processCarrierResponse(carrierInfo);
         })
         .catch(err => {
             // handler.carrierCount--;
@@ -47,7 +56,7 @@ api.axiosGet = (carrierInfo) => {
             //Save in database
             notify.addApiResponse(carrierInfo);
             carrierInfo.response = res.data;
-            util.processCarrierResponse(carrierInfo);
+            processCarrierResponse(carrierInfo);
         })
         .catch(err => {
             //log in database
@@ -56,6 +65,7 @@ api.axiosGet = (carrierInfo) => {
                 err, 'api', 'info', 6));
         });
 }
+
 module.exports = api;
 
 // const axiosPromise = axios.get(x.tokenUrl, x.config);
