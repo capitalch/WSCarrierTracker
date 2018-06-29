@@ -6,82 +6,103 @@ const parseString = require('xml2js').parseString;
 const notify = require('./notify');
 
 let util = {};
-const tools = {
-    unifiedJson: () => {
-        return {
-            statusDate: '',
-            statusTime: '',
-            estimatedDeliveryDate: '1900-01-01',
-            carrierStatusCode: '',
-            carrierStatusMessage: '',
-            signedForByName: '',
-            exceptionStatus: 0,
-            rts: 0,
-            rtsTrackingNo: '',
-            damage: 0,
-            damageMsg: ''
-        }
+const fexTools = {
+    // fex: {
+    fexStatusCodes: () => {
+        return ({
+            AF: 'orderProcessed',
+            AR: 'orderProcessed',
+            CA: 'exception',
+            DE: 'exception',
+            DL: 'delivered',
+            DP: 'inTransit',
+            HA: 'inTransit',
+            HP: 'inTransit',
+            IT: 'inTransit',
+            OC: 'inTransit',
+            OD: 'inTransit',
+            PU: 'PickedUp',
+            RR: 'inTransit',
+            RS: 'returned',
+            HL: 'readyForPickup'
+        });
     },
-    fex: {
-        fexStatusCodes: () => {
-            return ({
-                AF: 'orderProcessed',
-                AR: 'orderProcessed',
-                CA: 'exception',
-                DE: 'exception',
-                DL: 'delivered',
-                DP: 'inTransit',
-                HA: 'inTransit',
-                HP: 'inTransit',
-                IT: 'inTransit',
-                OC: 'inTransit',
-                OD: 'inTransit',
-                PU: 'PickedUp',
-                RR: 'inTransit',
-                RS: 'returned',
-                HL: 'readyForPickup'
-            });
-        },
-        timeStamp: (events) => {
-            let timeStamp = null;
-            if (events) {
-                if (Array.isArray(events)) {
-                    timeStamp = events[0].Timestamp;
-                } else {
-                    timeStamp = events.Timestamp;
-                }
+    timeStamp: (events) => {
+        let timeStamp = null;
+        if (events) {
+            if (Array.isArray(events)) {
+                timeStamp = events[0].Timestamp;
+            } else {
+                timeStamp = events.Timestamp;
             }
-            return (timeStamp);
-        },
-        getDamageEvent: (events) => {
-            let event = null;
-            if (events) {
-                if (Array.isArray(events)) {
-                    event = events.find((x) =>
-                        x.EventDescription && x.EventDescription.toLowerCase().includes('damage'))
-                }
-                else {
-                    event = events.EventDescription && events.EventDescription.toLowerCase().includes('damage')
-                }
-            }
-            return (event);
-        },
-        getReturnIdentifier: (identifiers) => {
-            let identifier = null;
-            if (identifiers) {
-                if (Array.isArray(identifiers)) {
-                    identifier = identifiers.find(x =>
-                        x.Type === "RETURNED_TO_SHIPPER_TRACKING_NUMBER"
-                    );
-                } else { // identifiers is an object
-                    identifier = identifiers.Type === "RETURNED_TO_SHIPPER_TRACKING_NUMBER" ? identifiers : null;
-                }
-            }
-            return (identifier);
         }
+        return (timeStamp);
+    },
+    getDamageEvent: (events) => {
+        let event = null;
+        if (events) {
+            if (Array.isArray(events)) {
+                event = events.find((x) =>
+                    x.EventDescription && x.EventDescription.toLowerCase().includes('damage'))
+            }
+            else {
+                event = events.EventDescription && events.EventDescription.toLowerCase().includes('damage') ? events : null;
+            }
+        }
+        return (event);
+    },
+    getReturnIdentifier: (identifiers) => {
+        let identifier = null;
+        if (identifiers) {
+            if (Array.isArray(identifiers)) {
+                identifier = identifiers.find(x =>
+                    x.Type === "RETURNED_TO_SHIPPER_TRACKING_NUMBER"
+                );
+            } else { // identifiers is an object
+                identifier = identifiers.Type === "RETURNED_TO_SHIPPER_TRACKING_NUMBER" ? identifiers : null;
+            }
+        }
+        return (identifier);
+    },
+    getReturnEvent: (events) => {
+        let event = null;
+        if (events) {
+            if (Array.isArray(events)) {
+                event = events.find(x =>
+                    x.EventType === 'RS'
+                )
+            } else { //events is an object
+                event = events.EventType && events.EventType === 'RS' ? events : null;
+            }
+        }
+        return (event);
+    },
+    getException71Event: (events) => {
+        let event = null;
+        if (events) {
+            if (Array.isArray(events)) {
+                event = events.find(x => {
+                    let ret = false;
+                    if (x.StatusExceptionDescription) {
+                        if ((x.StatusExceptionCode !== '71') && (!(x.StatusExceptionDescription.toLowerCase().includes('next scheduled tracking update')))) {
+                            ret = true;
+                        }
+                    }
+                    return (ret);
+                });
+            } else { // events is an object
+                const isNot71 = events.StatusExceptionCode !== '71';
+                const isNotScheduled = !events.StatusExceptionDescription.toLowerCase().includes('next scheduled tracking update');
+                if (events.StatusExceptionDescription) {
+                    if (isNot71 && isNotScheduled) {
+                        event = events;
+                    }
+                }
+            }
+        }
+        return (event);
     }
-
-
+    // }
 }
 util.processCarrierResponse = (carrierInfo) => {
     const carriermap = {
@@ -118,79 +139,98 @@ function processFex(x) {
                     message: 'Fex:' + x.trackingNumber + ' ' + notifications.LocalizedMessage
                 }, 'util', 'info', 4))
             } else {
-                //things are fine. Create unified json object and push it to buffer to be updated in database
-                const trackDetails = result.TrackReply.TrackDetails;
-                const statusCode = trackDetails.StatusCode;
-                const fexStatusCodes = tools.fex.fexStatusCodes();
-                const events = trackDetails.Events;
-                const otherIdentifiers = trackDetails.OtherIdentifiers;
-                const timeStamp = tools.fex.timeStamp(events);
-                let damage = 0,
-                    damageMsg = '',
-                    exceptionStatus = 0,
-                    rts = 0,
-                    rtsTrackingNo = '',
-                    statusDescription = trackDetails.StatusDescription;
-
-                if (statusDescription) {
-                    if (statusDescription.toLowerCase().includes('delivered')) {
-                        notify.incrDelivery(x.carrierName);
-                    } else {
-                        // check damage
-                        const damageEvent = tools.fex.getDamageEvent(events);
-                        damageEvent && (
-                            notify.incrDamage(x.carrierName),
-                            notify.incrException(x.carrierName),
-                            exceptionStatus = 1,
-                            damage = 1,
-                            damageMsg = damageEvent.EventDescription //,
-                            // timeStamp = damageEvent.TimeStamp
-                        );
-                        // check return
-                        const returnIdentifier = tools.fex.getReturnIdentifier(otherIdentifiers);
-                        returnIdentifier && (
-                            notify.incrReturn(x.carrierName),
-                            notify.incrException(x.carrierName),
-                            exceptionStatus = 1,
-                            rts = 1,
-                            rtsTrackingNo = returnIdentifier.Value,
-                            statusDescription = "Package returned to shipper: ".concat(rtsTrackingNo) //carrierStatusMessage
-                        );
-                    }
-                } else {
-                    notify.incrException(x.carrierName);
-                }
-
-                const mTimeStamp = timeStamp ? moment(timeStamp) : null;
-                const mDate = mTimeStamp ? mTimeStamp.format("MMM. DD, YYYY") : '';
-                const mTime = mTimeStamp ? mTimeStamp.format("h:mm A") : '';
-                let unifiedJson = tools.unifiedJson();
-                const fexJson = {
-                    statusDate: mDate, //from timeStamp
-                    statusTime: mTime, //from timestamp
-
-                    estimatedDeliveryDate: trackDetails.estimatedDeliveryDate || unifiedJson.estimatedDeliveryDate,
-                    carrierStatusCode: statusCode || '',
-                    carrierStatusMessage: statusDescription || 'No Status',
-                    signedForByName: trackDetails.DeliverySignatureName || '',
-
-                    exceptionStatus: exceptionStatus,
-                    rts: rts,
-                    rtsTrackingNo: rtsTrackingNo,
-                    damage: damage,
-                    damageMsg: damageMsg,
-
-                    shippingAgentCode: x.carrierName,
-                    trackingNumber: x.trackingNumber,
-                    rn: x.rn,
-                    activityJson: events || null,
-                    unifiedStatus: statusCode ? fexStatusCodes[statusCode] || 'noStatus' : 'noStatus'
-                }
-                const final = Object.assign(unifiedJson, fexJson);
-                handler.buffer.next(final);
+                handleFex(x, result);
             }
         }
     });
+}
+
+function handleFex(x, result) {
+    //things are fine. Create unified json object and push it to buffer to be updated in database
+    const trackDetails = result.TrackReply.TrackDetails;
+    const fexStatusCodes = fexTools.fexStatusCodes();
+    const events = trackDetails.Events;
+    const otherIdentifiers = trackDetails.OtherIdentifiers;
+    let statusCode = trackDetails.StatusCode;
+    let timeStamp = fexTools.timeStamp(events);
+    let damage = 0,
+        damageMsg = '',
+        exceptionStatus = 0,
+        returnEvent = null,
+        rts = 0,
+        rtsTrackingNo = '',
+        statusDescription = trackDetails.StatusDescription;
+
+    if (statusDescription) {
+        if (statusDescription.toLowerCase().includes('delivered')) {
+            notify.incrDelivery(x.carrierName);
+        } else {
+            // check damage
+            const damageEvent = fexTools.getDamageEvent(events);
+            damageEvent && (
+                notify.incrDamage(x.carrierName),
+                notify.incrException(x.carrierName),
+                exceptionStatus = 1,
+                damage = 1,
+                timeStamp = damageEvent.Timestamp,
+                damageMsg = damageEvent.EventDescription //,
+                // timeStamp = damageEvent.TimeStamp
+            );
+            // check return
+            const returnIdentifier = fexTools.getReturnIdentifier(otherIdentifiers);
+            returnIdentifier && (
+                notify.incrReturn(x.carrierName),
+                notify.incrException(x.carrierName),
+                exceptionStatus = 1,
+                rts = 1,
+                rtsTrackingNo = returnIdentifier.Value,
+                statusDescription = "Package returned to shipper: ".concat(rtsTrackingNo), //carrierStatusMessage
+                returnEvent = fexTools.getReturnEvent(events),
+                timeStamp = returnEvent && returnEvent.Timestamp ? returnEvent.Timestamp : timeStamp,
+                statusCode = returnEvent.StatusExceptionCode
+            );
+            //check exception 71
+            const exception71Event = fexTools.getException71Event(events);
+            exception71Event && (
+                notify.incrException(x.carrierName),
+                statusDescription = exception71Event.StatusExceptionDescription || statusDescription,
+                exceptionStatus = 1,
+                timeStamp = exception71Event.Timestamp
+            );
+            exception71Event && (
+                notify.incrException(x.carrierName)
+            );
+        }
+    } else {
+        notify.incrException(x.carrierName);
+    }
+
+    const mTimeStamp = timeStamp ? moment(timeStamp) : null;
+    const mDate = mTimeStamp ? mTimeStamp.format("MMM. DD, YYYY") : '';
+    const mTime = mTimeStamp ? mTimeStamp.format("h:mm A") : '';
+
+    const fexJson = {
+        statusDate: mDate, //from timeStamp
+        statusTime: mTime, //from timestamp
+
+        estimatedDeliveryDate: trackDetails.estimatedDeliveryDate || '1900-01-01',
+        carrierStatusCode: statusCode || '',
+        carrierStatusMessage: statusDescription || 'No Status',
+        signedForByName: trackDetails.DeliverySignatureName || '',
+
+        exceptionStatus: exceptionStatus,
+        rts: rts,
+        rtsTrackingNo: rtsTrackingNo,
+        damage: damage,
+        damageMsg: damageMsg,
+
+        shippingAgentCode: x.carrierName,
+        trackingNumber: x.trackingNumber,
+        rn: x.rn,
+        activityJson: events || null,
+        unifiedStatus: statusCode ? fexStatusCodes[statusCode] || 'noStatus' : 'noStatus'
+    }
+    handler.buffer.next(fexJson);
 }
 
 function processUps(x) {
