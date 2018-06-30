@@ -61,9 +61,6 @@ Process
 2. Get token by calling http get request with header. Token will be available in Token header of response. Body will have "authorized". https://api.gso.com/Rest/v1/token, Headers will be: AccountNumber,UserName, Password
 3. Tracking info url is: https://api.gso.com/Rest/v1/TrackShipment?TrackingNumber=508741111116172&AccountNumber=50874. Two headers: 1) Token 2) Content-Type: application/json
 
-
-
-
 UPS
 If AccountNo = "50308" Then
             gsotrackrequest.AccountNumber = AccountNo
