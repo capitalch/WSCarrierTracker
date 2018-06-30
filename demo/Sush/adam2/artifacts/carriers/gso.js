@@ -21,7 +21,7 @@ const tools = {
             'DELIVERED': 'Delivered'
         });
     },
-    shipmentInfo: (shipment) => {
+    getShipmentInfo: (shipment) => {
         let ret = shipment;
         shipment && Array.isArray(shipment) && (ret = shipment[0]);
         return (ret);
@@ -65,7 +65,7 @@ gso.processGso = (x) => {
     if (x.response.StatusCode === 200) {
         handleGso(x);
     } else {
-        ibuki.emit('app-error:any', handler.frameError(x.response.StatusDescription, 'util', 'info', 3));
+        ibuki.emit('app-error:any', handler.frameError(x.response.StatusDescription, 'gso', 'info', 3));
     }
 }
 
@@ -76,7 +76,7 @@ function handleGso(x) {
         rts = 0,
         rtsTrackingNo = '',
         statusDescription = '';
-    const shipmentInfo = tools.shipmentInfo(x.response.ShipmentInfo)
+    const shipmentInfo = tools.getShipmentInfo(x.response.ShipmentInfo)
     const gsoStatusCodes = tools.gsoStatusCodes();
     const gsoExistingStatusCodes = tools.gsoExistingStatusCodes();
     const transitNotes = shipmentInfo.TransitNotes;

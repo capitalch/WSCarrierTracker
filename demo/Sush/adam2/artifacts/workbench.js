@@ -75,7 +75,7 @@ handler.sub1 = ibuki.filterOn('handle-big-object:db>workbench').subscribe(
 
 handler.sub8 = ibuki.filterOn('process-carrier:self').subscribe(d => {
     const carrierInfos = d.data;
-    settings.config.autoPilotPiston && ibuki.emit('adjust-piston:self',carrierInfos[0].carrierName);
+    settings.config.autoPilotPiston && ibuki.emit('adjust-piston:self', carrierInfos[0].carrierName);
     handler.sub2 = rx.from(carrierInfos)
         .pipe(
             operators
@@ -106,9 +106,9 @@ handler.sub9 = ibuki.filterOn('pre-process-gso-carrier:self').subscribe(d => {
         //key value pairs. Key is accountNumber and value is token. Error token is null;
         const accountWithTokens = {};
         res.forEach((x, i) => {
-            accountWithTokens[gsoAccounts[i].accountNumber] = x.state === 'fulfilled' ?
+            accountWithTokens[gsoAccounts[i].accountNumber] = (x.state === 'fulfilled' ?
                 x.value.headers.token :
-                null;
+                null);
         })
         gso.forEach(x => {
             x.token = x.accountNumber ? accountWithTokens[x.accountNumber] : '';
@@ -132,11 +132,11 @@ handler.sub10 = ibuki.filterOn('adjust-piston:self').subscribe(
         const myInterval = rx.interval(500);
         handler.sub11 = myInterval.subscribe((x) => {
             const queue = notify.getQueue(carrierName);
-            if (queue > queueSettings) { //reduce queue so increase piston
-                 notify.varyPiston(carrierName,5);
+            if (queue > queueSettings) { //increase piston to reduce queue
+                notify.varyPiston(carrierName, 5);
             } else {
-                notify.varyPiston(carrierName,-5);
-            } 
+                notify.varyPiston(carrierName, -5);
+            }
         });
     }
 )
