@@ -6,19 +6,11 @@ const notify = require('../notify');
 
 const gso = {};
 const tools = {
-    gsoStatusCodes: () => {
+    getGsoStatusCodes: () => {
         return ({
             'IN TRANSIT': 'inTransit',
             'DELAYED': 'inTransit',
-            'DELIVERED': 'delivered',
-            'RETURNED': 'returned'
-        });
-    },
-    gsoExistingStatusCodes: () => {
-        return ({
-            'IN TRANSIT': 'In Transit',
-            'DELAYED': 'Delayed',
-            'DELIVERED': 'Delivered'
+            'DELIVERED': 'delivered'
         });
     },
     getShipmentInfo: (shipment) => {
@@ -30,11 +22,6 @@ const tools = {
         let ret = '';
         transitNotes && Array.isArray(transitNotes) && (ret = transitNotes[transitNotes.length - 1].Comments);
         return (ret);
-        // if (transitNotes && Array.isArray(transitNotes)) {
-        //     return transitNotes[transitNotes.length - 1].Comments;
-        // } else {
-        //     return '';
-        // }
     },
     getRts: (transitNotes) => {
         let rts = 0;
@@ -65,79 +52,60 @@ gso.processGso = (x) => {
 }
 
 function handleGso(x) {
-    let damage = 0,
-        damageMsg = '',
-        exceptionStatus = 0,
-        rts = 0,
-        rtsTrackingNo = '',
-        statusDescription = '';
-        // const gsoStatusCodes = tools.gsoStatusCodes();
-        // const gsoExistingStatusCodes = tools.gsoExistingStatusCodes();
-
-    const shipmentInfo = tools.getShipmentInfo(x.response.ShipmentInfo)
+    const gsoTemp = {};
+    const shipmentInfo = tools.getShipmentInfo(x.response.ShipmentInfo);
+    const delivery = shipmentInfo.Delivery;
     const transitNotes = shipmentInfo.TransitNotes;
+    const status = delivery.TransitStatus.toUpperCase();
+    const deliveryDate = delivery.DeliveryDate;
+    const deliveryTime = delivery.DeliveryTime;
     
-    const status = shipmentInfo.Delivery.TransitStatus;
-    const deliveryDate = shipmentInfo.Delivery.DeliveryDate;
-    const deliveryTime = shipmentInfo.Delivery.DeliveryTime;
-    const mDate = deliveryDate ? moment(deliveryDate).format("MMM. DD, YYYY") : '';
-    // const deliveryTime = shipmentInfo.Delivery.DeliveryTime;
-    const mTime = deliveryTime ? moment(deliveryTime).format("h:mm A") : '';
-    //ScheduledDeliveryDate and ScheduledDeliveryTime create date time and from that create estimatedDeliveryDate
-    const estimatedDeliveryDate = '';
-
-    // const mTimeStamp = deliveryTime ? moment(deliveryTime, "MM/DD/YYYY") : null;
-    // const mDate = mTimeStamp ? mTimeStamp.format("MMM. DD, YYYY") : '';
-    // const mTime = mTimeStamp ? mTimeStamp.format("h:mm A") : '';
-    if (status.toUpperCase().includes('DELIVERED')) {
+    gsoTemp.statusDate = deliveryDate ? moment(deliveryDate, 'MM/DD/YYYY').format("MMM. DD, YYYY") : '';
+    gsoTemp.statusTime = deliveryTime ? moment(deliveryTime, 'h:mm A').format("h:mm A") : '';
+    const scheduledDeliveryDate = delivery.ScheduledDeliveryDate;
+    gsoTemp.estimatedDeliveryDate = scheduledDeliveryDate ? moment(scheduledDeliveryDate, 'MM/DD/YYYY').format("MMM. DD, YYYY") : '1900-01-01';
+    gsoTemp.signedBy = delivery.SignedBy;
+    gsoTemp.lastComments = tools.getLastComments(transitNotes);
+    
+    if (status.includes('DELIVERED')) {
         notify.incrDelivery(x.carrierName);
-    } else if (status.toUpperCase().includes('IN TRANSIT')) {
-    //
-    } else if (status.toUpperCase().includes('DELAYED')) {
-        const expNote = tools.getException(transitNotes);
+        gsoTemp.status = 'Delivered';
+    } else if (status.includes('IN_TRANSIT')) {
+        notify.incrNotDelivered(x.carrierName);
+        gsoTemp.status = 'In Transit';
+    } else if (status.includes('DELAYED')) {
+        gsoTemp.status = 'Delayed';
+        notify.incrNotDelivered(x.carrierName);
+        if (gsoTemp.lastComments.toUpperCase().includes('DEL ATTEMPTED')) {
+            gsoTemp.exceptionStatus = 1;
+            notify.incrException(x.carrierName);
+        }
     } else {
-        //
+        gsoTemp.exceptionStatus = 1;
+        notify.incrException(x.carrierName);
     }
 
     const gsoJson = {
-        status: statusDescription || 'No Status',
-        statusDate: mDate, //from timeStamp
-        statusTime: mTime, //from timestamp
+        status: gsoTemp.status || 'No Status',
+        statusDate: gsoTemp.statusDate || '',
+        statusTime: gsoTemp.statusTime || '',
+        estimatedDeliveryDate: gsoTemp.estimatedDeliveryDate || '1900-01-01',
+        carrierStatusCode: gsoTemp.status || 'No Status',
+        carrierStatusMessage: gsoTemp.lastComments || '',
+        signedForByName: gsoTemp.signedBy || '',
 
-        estimatedDeliveryDate: trackDetails.estimatedDeliveryDate || '1900-01-01',
-        carrierStatusCode: statusCode || '',
-        carrierStatusMessage: statusDescription || 'No Status',
-        signedForByName: trackDetails.DeliverySignatureName || '',
-
-        exceptionStatus: exceptionStatus,
-        rts: rts,
-        rtsTrackingNo: rtsTrackingNo,
-        damage: damage,
-        damageMsg: damageMsg,
+        exceptionStatus: gsoTemp.exceptionStatus || 0,
+        rts: tools.getRts(),
+        rtsTrackingNo:'' ,
+        damage: 0,
+        damageMsg: '',
 
         shippingAgentCode: x.carrierName,
         trackingNumber: x.trackingNumber,
         rn: x.rn,
-        activityJson: events || null,
-        unifiedStatus: statusCode ? fexStatusCodes[statusCode] || 'noStatus' : 'noStatus'
+        activityJson: transitNotes || null,
+        unifiedStatus: gsoTemp.status ? tools.getGsoStatusCodes[gsoTemp.status] || 'noStatus' : 'noStatus'
     }
-
-    // const gsoJson1 = {
-    //     status: statusCode ? gsoExistingStatusCodes[statusCode] || statusCode : 'noStatus',
-    //     statusDate: mDate,
-    //     statusTime: mTime, //from timestamp
-    //     estimatedDeliveryDate: shipmentInfo.Delivery.ScheduledDeliveryDate || '1900-01-01',
-    //     carrierStatusMessage: tools.getLastComments(transitNotes) || 'No Status',
-    //     signedForByName: shipmentInfo.Delivery.SignedBy || '',
-    //     exceptionStatus: exceptionStatus,
-    //     rts: tools.getRts(transitNotes) || '',
-    //     excepTrackingNo: rtsTrackingNo,
-    //     shippingAgentCode: x.carrierName,
-    //     trackingNumber: x.trackingNumber,
-    //     rn: x.rn,
-    //     activityJson: transitNotes || null,
-    //     unifiedStatus: statusCode ? gsoStatusCodes[statusCode] || 'noStatus' : 'noStatus'
-    // };
     handler.buffer.next(gsoJson);
 }
 module.exports = gso;
