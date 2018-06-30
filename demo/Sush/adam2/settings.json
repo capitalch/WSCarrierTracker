@@ -29,16 +29,16 @@
             "meterNumber": "5690072"
         },
         "ups": {
-            "piston": 20,
-            "queue":10,
+            "piston": 10,
+            "queue":50,
             "url": "https://onlinetools.ups.com/ups.app/xml/Track",
             "accessLicenseNumber": "FC312F9BE62AFF90",
             "userId": "UPSwineshipping",
             "password": "easyship"
         },
         "gso": {
-            "piston": 20,
-            "queue":10,
+            "piston": 10,
+            "queue":50,
             "tokenUrl": "https://api.gso.com/Rest/v1/token",
             "url": "https://api.gso.com/Rest/v1/TrackShipment",
             "accounts": [{

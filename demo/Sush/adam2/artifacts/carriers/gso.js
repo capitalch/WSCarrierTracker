@@ -6,12 +6,15 @@ const notify = require('../notify');
 
 const gso = {};
 const tools = {
-    getGsoStatusCodes: () => {
-        return ({
+    getUnifiedStatus: (status) => {
+        const unifiedObj = {
             'IN TRANSIT': 'inTransit',
             'DELAYED': 'inTransit',
             'DELIVERED': 'delivered'
-        });
+        };
+        let ret = unifiedObj[status.toUpperCase()];
+        ret || (ret = 'noStatus');
+        return(ret);
     },
     getShipmentInfo: (shipment) => {
         let ret = shipment;
@@ -43,6 +46,7 @@ const tools = {
         return note;
     }
 }
+
 gso.processGso = (x) => {
     if (x.response.StatusCode === 200) {
         handleGso(x);
@@ -63,12 +67,12 @@ function handleGso(x) {
     gsoTemp.statusDate = deliveryDate ? moment(deliveryDate, 'MM/DD/YYYY').format("MMM. DD, YYYY") : '';
     gsoTemp.statusTime = deliveryTime ? moment(deliveryTime, 'h:mm A').format("h:mm A") : '';
     const scheduledDeliveryDate = delivery.ScheduledDeliveryDate;
-    gsoTemp.estimatedDeliveryDate = scheduledDeliveryDate ? moment(scheduledDeliveryDate, 'MM/DD/YYYY').format("MMM. DD, YYYY") : '1900-01-01';
+    gsoTemp.estimatedDeliveryDate = scheduledDeliveryDate ? moment(scheduledDeliveryDate, 'MM/DD/YYYY').format("YYYY-MM-DD") : '1900-01-01';
     gsoTemp.signedBy = delivery.SignedBy;
     gsoTemp.lastComments = tools.getLastComments(transitNotes);
     
     if (status.includes('DELIVERED')) {
-        notify.incrDelivery(x.carrierName);
+        notify.incrDelivered(x.carrierName);
         gsoTemp.status = 'Delivered';
     } else if (status.includes('IN_TRANSIT')) {
         notify.incrNotDelivered(x.carrierName);
@@ -84,7 +88,8 @@ function handleGso(x) {
         gsoTemp.exceptionStatus = 1;
         notify.incrException(x.carrierName);
     }
-
+    gsoTemp.rts = tools.getRts();
+    gsoTemp.rts && (notify.incrReturn(x.carrierName));
     const gsoJson = {
         status: gsoTemp.status || 'No Status',
         statusDate: gsoTemp.statusDate || '',
@@ -95,7 +100,7 @@ function handleGso(x) {
         signedForByName: gsoTemp.signedBy || '',
 
         exceptionStatus: gsoTemp.exceptionStatus || 0,
-        rts: tools.getRts(),
+        rts: gsoTemp.rts,
         rtsTrackingNo:'' ,
         damage: 0,
         damageMsg: '',
@@ -104,8 +109,9 @@ function handleGso(x) {
         trackingNumber: x.trackingNumber,
         rn: x.rn,
         activityJson: transitNotes || null,
-        unifiedStatus: gsoTemp.status ? tools.getGsoStatusCodes[gsoTemp.status] || 'noStatus' : 'noStatus'
+        unifiedStatus: gsoTemp.status ? tools.getUnifiedStatus(gsoTemp.status) : 'noStatus'
     }
     handler.buffer.next(gsoJson);
 }
+
 module.exports = gso;
