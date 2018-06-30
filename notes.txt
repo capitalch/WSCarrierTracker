@@ -1,40 +1,10 @@
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.js"></script>
-
 //Adam2
-1. Detect error with GSO -ve
-                                        2. Piston activation
-3. GSO token error handlings
-4. TPS implementation
-                                        5. John mail: 
-                                            a) Azure account setup, Db + resources + our credentials
-                                            b) TPS strategy, 
-                                            c) GSO token not found and GSO error
-                                            d) Production data refresh
-6. Vomit final error and mail IT
-    7. Robust check with error handling
-8. Database 3 tables final strategy and implementation
-json data: nvarchar(4000)
-    Info table
-        Identify columns, create sql, Identify in our program where to get this info
-    History table: Formation of JSON and push
-    log table
-9. Azure email research and implementation
-10. Manage better cleanup
-11. Create flowchart of entire process
-12. Email Formation: For every carrier
-    No of records Processed
-    DELIVERED
-    Not Delivered: Which has no delivered Status
-    Exception: Api / database error, 
-13. Correct shippingAgentCode in the codeBase. Ex fedEx-->FEX
-13. Deployment
-
-//Saby
-1. node.js email
-2. TPS
-3. GSO error check
-4. Create additional columns and tables and provide sql / pseudo code
-5. Provide logic for INFO table update and sql / pseudo code
+1. Complete UPS and TPS
+2. Update Info table. Insert history. insert log.
+3. Email fire
+4. Global error handling
+5. Testing with special data
+6. Deployment
 
 GSO Delivery Status, options are:
 IN TRANSIT                              inTransit
@@ -68,15 +38,6 @@ RR: Delivery option requested               inTransit
 RS: Returning package to shipper            returned
 HL: Ready for pickup                        readyForPickup
 
-//unified code
-delivered
-exception
-inTransit
-pickedUp
-returned
-orderProcessed
-readyForPickup
- 
 
 -------------------- Enable Application Insights----------
 
@@ -270,10 +231,7 @@ FROM [PackageTrackStaging] as T1
 WHERE T1.[Company] = 'WS' AND T1.[ThreadNo] = @ThreadNo
 RETURN @@ROWCOUNT
 
-
 END
-
-
 GO
 
 

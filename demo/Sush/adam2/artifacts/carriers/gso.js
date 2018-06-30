@@ -10,7 +10,8 @@ const tools = {
         const unifiedObj = {
             'IN TRANSIT': 'inTransit',
             'DELAYED': 'inTransit',
-            'DELIVERED': 'delivered'
+            'DELIVERED': 'delivered',
+            'RETURNED':'returned'
         };
         let ret = unifiedObj[status.toUpperCase()];
         ret || (ret = 'noStatus');
