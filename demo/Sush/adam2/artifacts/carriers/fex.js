@@ -176,7 +176,7 @@ function handleFex(x, result) {
 
     if (statusDescription) {
         if (statusDescription.toLowerCase().includes('delivered')) {
-            notify.incrDelivery(x.carrierName);
+            notify.incrDelivered(x.carrierName);
         } else {
             checkExceptions();
         }

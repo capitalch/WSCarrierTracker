@@ -16,28 +16,32 @@ const dbStatus = {
 
 const carrierStatus = {
     fex: {
-        delivery: 0,
+        delivered: 0,
         return: 0,
         damage: 0,
-        exception:0
+        exception:0,
+        notDelivered:0
     },
     ups: {
-        delivery: 0,
+        delivered: 0,
         return: 0,
         damage: 0,
-        exception:0
+        exception:0,
+        notDelivered:0
     },
     gso: {
-        delivery: 0,
+        delivered: 0,
         return: 0,
         damage: 0,
-        exception:0
+        exception:0,
+        notDelivered:0
     },
     tps: {
-        delivery: 0,
+        delivered: 0,
         return: 0,
         damage: 0,
-        exception:0
+        exception:0,
+        notDelivered:0
     }
 };
 
@@ -79,8 +83,8 @@ const notify = {
         apiStatus[info.carrierName].responses++;
         verbose && notify.showStatus(info);
     },
-    incrDelivery: (carrierName) => {
-        carrierStatus[carrierName].delivery++;
+    incrDelivered: (carrierName) => {
+        carrierStatus[carrierName].delivered++;
     },
     incrDamage:(carrierName)=>{
         carrierStatus[carrierName].damage++;
@@ -90,6 +94,9 @@ const notify = {
     },
     incrException:(carrierName)=>{
         carrierStatus[carrierName].exception++;
+    },
+    incrNotDelivered:(carrierName)=>{
+        carrierStatus[carrierName].notDelivered++;
     },
     addApiError: (info) => {
         apiStatus[info.carrierName].errors++;
