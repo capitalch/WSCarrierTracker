@@ -89,6 +89,7 @@ function handleGso(x) {
         gsoTemp.exceptionStatus = 1;
         notify.incrException(x.carrierName);
     }
+
     gsoTemp.rts = tools.getRts();
     gsoTemp.rts && (notify.incrReturn(x.carrierName));
     const gsoJson = {
