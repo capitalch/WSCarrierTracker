@@ -75,7 +75,7 @@ function handleGso(x) {
     if (status.includes('DELIVERED')) {
         notify.incrDelivered(x.carrierName);
         gsoTemp.status = 'Delivered';
-    } else if (status.includes('IN_TRANSIT')) {
+    } else if (status.includes('IN TRANSIT')) {
         notify.incrNotDelivered(x.carrierName);
         gsoTemp.status = 'In Transit';
     } else if (status.includes('DELAYED')) {
