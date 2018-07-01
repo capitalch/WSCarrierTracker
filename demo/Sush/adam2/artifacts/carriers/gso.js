@@ -104,7 +104,7 @@ function handleGso(x) {
         statusDate: gsoTemp.statusDate || '',
         statusTime: gsoTemp.statusTime || '',
         estimatedDeliveryDate: gsoTemp.estimatedDeliveryDate || '1900-01-01',
-        carrierStatusCode: gsoTemp.status || 'No Status',
+        carrierStatusCode: '', //gsoTemp.status || 'No Status'
         carrierStatusMessage: gsoTemp.lastComments || '',
         signedForByName: gsoTemp.signedBy || '',
 

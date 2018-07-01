@@ -1,5 +1,6 @@
 'use strict';
 const sql = require('mssql');
+const moment = require('moment');
 // const rx = require('rxjs');
 const ibuki = require('./ibuki');
 const handler = require('./handler');
@@ -11,7 +12,23 @@ const workbench = require('./workbench');
 // let dbRequests = 0;
 let db = {};
 let reqs = [];
-
+const tools = {
+    setInputParams: (req, json) => {
+        req.input('Status', sql.VarChar, json.status || 'No Status');
+        req.input('Status_date', sql.VarChar,json.statusDate || '');        
+        req.input('Status_Time', sql.VarChar, json.statusTime || '');
+        req.input('EstimatedDeliveryDate', sql.DateTime, json.estimatedDeliveryDate ? new Date(json.estimatedDeliveryDate): new Date('1900-01-01'));
+        req.input('CarrierStatusCode', sql.VarChar, json.carrierStatusCode || '');
+        req.input('CarrierStatusMessage', sql.VarChar, json.carrierStatusMessage || 'No Status');
+        // req.input('SignedForByName', sql.VarChar, json.signedForByName || '');
+        // req.input('ExceptionStatus', sql.Int, json.exceptionStatus || 0);
+        // req.input('RTS', sql.Int, json.rts || 0);
+        // req.input('RTSTrackingNo', sql.VarChar, json.rtsTrackingNo || '');
+        // req.input('DAMAGE', sql.Int, json.damage || 0);
+        // req.input('DAMAGEMSG', sql.VarChar, json.damageMsg || '');
+        req.input('No_', sql.VarChar, json.rn);
+    }
+};
 handler.pool = new sql.ConnectionPool(settings.db);
 handler.sub0 = ibuki.filterOn('get-big-object:run>db').subscribe(d => {
     handler.pool.connect(
@@ -35,7 +52,7 @@ handler.sub0 = ibuki.filterOn('get-big-object:run>db').subscribe(d => {
                 });
             }
         }
-    )
+    );
 });
 
 const createRequests = () => {
@@ -51,13 +68,17 @@ handler.sub5 = handler.buffer.subscribe(d => {
     disburse(d);
 });
 
-const disburse = (info) => {
+const disburse = (data) => {
     const req = reqs.find((e) => e.isAvailable);
     if (req) {
         req.isAvailable = false;
-        notify.addDbRequest();        
-        req.query('update product set UnitPrice = UnitPrice+1 where id = 1', (err, result) => {
-            // handler.dbRequests--;            
+        req.multiple = true;
+
+        tools.setInputParams(req, data);
+        notify.addDbRequest();
+        console.log('rn:', data.rn);
+        req.query(sqlCommands.updateInfoAndInsertInPackageHistory, (err, result) => {
+
             req.isAvailable = true;
             if (err) {
                 notify.addDbError();
@@ -67,7 +88,7 @@ const disburse = (info) => {
         });
     } else {
         setTimeout(() => {
-            disburse(info);
+            disburse(data);
             // console.log('waiting for db channel to be freed up');
         }, 50);
     }
