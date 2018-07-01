@@ -105,6 +105,7 @@ function handleUps(x, result) {
     const upsTemp = {};
     const activities = result.TrackResponse.Shipment.Package.Activity;
     upsTemp.exceptionStatus = 0;
+    
     //damage
     const damageActivity = tools.getDamageActivity(activities);
     upsTemp.damage = 0;
