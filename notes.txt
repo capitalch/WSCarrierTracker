@@ -1,7 +1,8 @@
 //Adam2
-1. Complete UPS and TPS
+                                          1. Complete UPS 
+1.5 Complete TPS
 2. Update Info table. Insert history. insert log.
-3. Email fire
+      3. Email fire
 4. Global error handling
 5. Testing with special data
 6. Deployment
