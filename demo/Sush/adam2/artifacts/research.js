@@ -10,15 +10,26 @@ var nodemailer = require('nodemailer');
 //   }
 // });
 
+// let smtpConfig = {
+//     host: 'smtp.gmail.com',
+//     port: 587,
+//     secure: false, // upgrade later with STARTTLS
+//     auth: {
+//         user: 'kushinfotech@gmail.com',
+//         pass: 'su$hant1234'
+//     }
+// };
+
 let smtpConfig = {
-    host: 'smtp.gmail.com',
-    port: 587,
+    host: '10.10.1.40',
+    // port: 587,
     secure: false, // upgrade later with STARTTLS
     auth: {
-        user: 'kushinfotech@gmail.com',
-        pass: 'su$hant1234'
+        user: 'WSIIS01@wineshipping.com'//,
+        // pass: 'su$hant1234'
     }
 };
+
 
 let transporter = nodemailer.createTransport(smtpConfig);
 
