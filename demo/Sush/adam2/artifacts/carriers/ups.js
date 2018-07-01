@@ -7,7 +7,7 @@ const notify = require('../notify');
 
 const ups = {};
 const tools = {
-    getUnifiedStatus:(status)=>{
+    getUnifiedStatus: (status) => {
         const unifiedObj = {
             M: 'orderProcessed',
             D: 'delivered',
@@ -16,7 +16,7 @@ const tools = {
         };
         let ret = unifiedObj[status.toUpperCase()];
         ret || (ret = 'noStatus');
-        return(ret);
+        return (ret);
     },
     getDamageActivity: (activities) => {
         let activity = null;
@@ -61,11 +61,6 @@ const tools = {
         }
         return (activity);
     },
-    // getDelevaryActivity: (activity) => {
-    //     return _.find(activity, function (o) {
-    //         return o.Status.StatusType.Code === 'D';
-    //     })
-    // },
     getDate: (activity) => {
         let dateFormated = null;
         if (activity) {
@@ -184,7 +179,7 @@ function handleUps(x, result) {
         exceptionStatus: upsTemp.exceptionStatus,
         rts: upsTemp.rts,
         rtsTrackingNo: '',
-        damage: upsTemp.damage ,
+        damage: upsTemp.damage,
         damageMsg: upsTemp.damageMsg || '',
 
         shippingAgentCode: x.carrierName,
@@ -226,3 +221,8 @@ module.exports = ups;
 // _.find(activity, function (o) {
 //     return o.Status.StatusType.Description.toLowerCase().includes('returned to');
 // })
+// getDelevaryActivity: (activity) => {
+//     return _.find(activity, function (o) {
+//         return o.Status.StatusType.Code === 'D';
+//     })
+// },
