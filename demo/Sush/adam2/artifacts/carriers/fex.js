@@ -107,14 +107,21 @@ fex.processFex = (x) => {
         explicitArray: false
     }, function (err, result) {
         if (err) {
+            notify.incrException(x.carrierName);
+            const errorJson = notify.getErrorJson(err,x);
+            handler.buffer.next(errorJson);
             ibuki.emit('app-error:any', handler.frameError(err, 'util', 'info', 3))
         } else {
             const notifications = result.TrackReply.Notifications;
             if ((notifications.Severity === 'ERROR') || (notifications.Severity === 'FAILURE')) {
-                ibuki.emit('app-error:any', handler.frameError({
+                const error = {
                     name: 'apiCallError',
                     message: 'Fex:' + x.trackingNumber + ' ' + notifications.LocalizedMessage
-                }, 'util', 'info', 4))
+                };
+                notify.incrException(x.carrierName);
+                const errorJson = notify.getErrorJson(error, x);
+                handler.buffer.next(errorJson);
+                ibuki.emit('app-error:any', handler.frameError(err, 'util', 'info', 4))
             } else {
                 handleFex(x, result);
             }

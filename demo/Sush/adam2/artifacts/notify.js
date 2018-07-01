@@ -19,33 +19,56 @@ const carrierStatus = {
         delivered: 0,
         return: 0,
         damage: 0,
-        exception:0,
-        notDelivered:0
+        exception: 0,
+        notDelivered: 0
     },
     ups: {
         delivered: 0,
         return: 0,
         damage: 0,
-        exception:0,
-        notDelivered:0
+        exception: 0,
+        notDelivered: 0
     },
     gso: {
         delivered: 0,
         return: 0,
         damage: 0,
-        exception:0,
-        notDelivered:0
+        exception: 0,
+        notDelivered: 0
     },
     tps: {
         delivered: 0,
         return: 0,
         damage: 0,
-        exception:0,
-        notDelivered:0
+        exception: 0,
+        notDelivered: 0
     }
 };
 
 const notify = {
+    getErrorJson: (error, info) => {
+        const errorJson = {
+            status: 'No Status',
+            statusDate: '',
+            statusTime: '',
+            estimatedDeliveryDate: '1900-01-01',
+            carrierStatusCode: '',
+            carrierStatusMessage: error.message,
+            signedForByName: '',
+            exceptionStatus: 1,
+            rts: 0,
+            rtsTrackingNo: '',
+            damage: 0,
+            damageMsg: '',
+
+            shippingAgentCode: info.carrierName,
+            trackingNumber: info.trackingNumber,
+            rn: info.rn,
+            activityJson: null,
+            unifiedStatus: 'noStatus'
+        }
+        return (errorJson);
+    },
     getDbStatus: () => dbStatus,
     getApiStatus: () => apiStatus,
     initCarrier: (carrierName, infos) => {
@@ -86,16 +109,16 @@ const notify = {
     incrDelivered: (carrierName) => {
         carrierStatus[carrierName].delivered++;
     },
-    incrDamage:(carrierName)=>{
+    incrDamage: (carrierName) => {
         carrierStatus[carrierName].damage++;
     },
-    incrReturn:(carrierName)=>{
+    incrReturn: (carrierName) => {
         carrierStatus[carrierName].return++;
     },
-    incrException:(carrierName)=>{
+    incrException: (carrierName) => {
         carrierStatus[carrierName].exception++;
     },
-    incrNotDelivered:(carrierName)=>{
+    incrNotDelivered: (carrierName) => {
         carrierStatus[carrierName].notDelivered++;
     },
     addApiError: (info) => {

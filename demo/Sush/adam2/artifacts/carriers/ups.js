@@ -80,20 +80,28 @@ const tools = {
 }
 
 ups.processUps = (x) => {
+
     parseString(x.response, {
         trim: true,
         explicitArray: false
     }, function (err, result) {
         if (err) {
-            ibuki.emit('app-error:any', handler.frameError(err, 'util', 'info', 6))
+            const errorJson = notify.getErrorJson(err);
+            handler.buffer.next(errorJson);
+            notify.incrException(x.carrierName);
+            ibuki.emit('app-error:any', handler.frameError(err, 'ups', 'info', 6));
         } else {
             const response = result.TrackResponse.Response;
             if (response.ResponseStatusCode === '0') {
-                const errorDescription = response.Error.ErrorDescription
-                ibuki.emit('app-error:any', handler.frameError({
+                const errorDescription = response.Error.ErrorDescription;
+                notify.incrException(x.carrierName);
+                const error = {
                     name: 'apiCallError',
                     message: 'UPS:' + x.trackingNumber + ' ' + errorDescription
-                }, 'util', 'info', 7));
+                };
+                const errorJson = notify.getErrorJson(err);
+                handler.buffer.next(errorJson);
+                ibuki.emit('app-error:any', handler.frameError(error, 'util', 'info', 7));
             } else {
                 handleUps(x, result);
             }
@@ -105,7 +113,7 @@ function handleUps(x, result) {
     const upsTemp = {};
     const activities = result.TrackResponse.Shipment.Package.Activity;
     upsTemp.exceptionStatus = 0;
-    
+
     //damage
     const damageActivity = tools.getDamageActivity(activities);
     upsTemp.damage = 0;

@@ -11,11 +11,11 @@ const tools = {
             'IN TRANSIT': 'inTransit',
             'DELAYED': 'inTransit',
             'DELIVERED': 'delivered',
-            'RETURNED':'returned'
+            'RETURNED': 'returned'
         };
         let ret = unifiedObj[status.toUpperCase()];
         ret || (ret = 'noStatus');
-        return(ret);
+        return (ret);
     },
     getShipmentInfo: (shipment) => {
         let ret = shipment;
@@ -52,7 +52,14 @@ gso.processGso = (x) => {
     if (x.response.StatusCode === 200) {
         handleGso(x);
     } else {
-        ibuki.emit('app-error:any', handler.frameError(x.response.StatusDescription, 'gso', 'info', 3));
+        notify.incrException(x.carrierName);
+        const error = handler.frameError({
+            message: x.response.StatusDescription,
+            name: 'apiCallError'
+        }, 'gso', 'info', 3);
+        const errorJson = notify.getErrorJson(error, x);
+        handler.buffer.next(errorJson);
+        ibuki.emit('app-error:any', error);
     }
 }
 
@@ -64,14 +71,14 @@ function handleGso(x) {
     const status = delivery.TransitStatus.toUpperCase();
     const deliveryDate = delivery.DeliveryDate;
     const deliveryTime = delivery.DeliveryTime;
-    
+
     gsoTemp.statusDate = deliveryDate ? moment(deliveryDate, 'MM/DD/YYYY').format("MMM. DD, YYYY") : '';
     gsoTemp.statusTime = deliveryTime ? moment(deliveryTime, 'h:mm A').format("h:mm A") : '';
     const scheduledDeliveryDate = delivery.ScheduledDeliveryDate;
     gsoTemp.estimatedDeliveryDate = scheduledDeliveryDate ? moment(scheduledDeliveryDate, 'MM/DD/YYYY').format("YYYY-MM-DD") : '1900-01-01';
     gsoTemp.signedBy = delivery.SignedBy;
     gsoTemp.lastComments = tools.getLastComments(transitNotes);
-    
+
     if (status.includes('DELIVERED')) {
         notify.incrDelivered(x.carrierName);
         gsoTemp.status = 'Delivered';
@@ -103,7 +110,7 @@ function handleGso(x) {
 
         exceptionStatus: gsoTemp.exceptionStatus || 0,
         rts: gsoTemp.rts,
-        rtsTrackingNo:'' ,
+        rtsTrackingNo: '',
         damage: 0,
         damageMsg: '',
 

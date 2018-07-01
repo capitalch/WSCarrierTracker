@@ -60,11 +60,11 @@ ibuki.filterOn('app-error:any').subscribe(d => {
     // Use telemetry to log error
 });
 
-handler.frameError = (err, location, severity, index) => {
-    err.location = location;
-    err.severity = severity;
-    err.index = index;
-    return (err);
+handler.frameError = (error, location, severity, index) => {
+    error.location = location;
+    error.severity=severity;
+    error.index=index;
+    return (error);
 }
 
 handler.cleanup = () => {
