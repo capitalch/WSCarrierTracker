@@ -1,6 +1,6 @@
 let sqlCommands = {
 	getInfos: `
-		SELECT top 100 NO_ rn,[Shipping Agent Code] shippingAgentCode,[External Tracking No_] trackingNumber,status
+		SELECT top 1000 NO_ rn,[Shipping Agent Code] shippingAgentCode,[External Tracking No_] trackingNumber,status
 		FROM [Wineshipping$PackageinfoNew] 
 		WHERE 
 				NOT [Status] = 'Package returned to shipper' and 
@@ -29,11 +29,26 @@ let sqlCommands = {
 	insertPackageHistory: `
 		insert into PackageHistory(rn, TrackingNumber, ShippingAgentCode, ActivityJson, IsDeleted)
 		values (@rn, @trackingNumber, @shippingAgentCode,@activityJson, 0);
+	`,
+	updateTest: `
+	update Wineshipping$PackageInfoNew
+	set Status = ''
+	where No_ = 'CONT-000005331'
+	`,
+	updateTest1:`
+	update Product set unitPrice = 0 where id = 1;
 	`
 };
 
 /*
-set 
+,
+		Status_Date = '',
+		Status_Time = '',
+		EstimatedDeliveryDate = '',
+		CarrierStatusCode = '',
+		CarrierStatusMessage = '',
+		SignedForByName = '',
+		ExceptionStatus= '' 
 	
 		
 */

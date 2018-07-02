@@ -232,5 +232,31 @@ RETURN @@ROWCOUNT
 END
 GO
 
+select Status,
+	Status_Date,
+	Status_Time,
+	EstimatedDeliveryDate,
+	CarrierStatusCode,
+	CarrierStatusMessage,
+	SignedForByName,
+	ExceptionStatus,
+	RTS,
+	RTSTrackingNo,
+	DAMAGE,
+	DAMAGEMSG
+from Wineshipping$PackageInfoNew
+where No_ = 'CONT-000005331'
+
+update Wineshipping$PackageInfoNew
+set Status = '',
+	Status_Date = '',
+	Status_Time = '',
+	EstimatedDeliveryDate = '',
+	CarrierStatusCode = '',
+	CarrierStatusMessage = '',
+	SignedForByName = '',
+	ExceptionStatus= ''
+where No_ = 'CONT-000005331'
+
 
            
