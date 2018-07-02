@@ -1,6 +1,6 @@
 'use strict';
 const sql = require('mssql');
-const moment = require('moment');
+// const moment = require('moment');
 // const rx = require('rxjs');
 const ibuki = require('./ibuki');
 const handler = require('./handler');
@@ -20,13 +20,19 @@ const tools = {
         req.input('EstimatedDeliveryDate', sql.DateTime, json.estimatedDeliveryDate ? new Date(json.estimatedDeliveryDate): new Date('1900-01-01'));
         req.input('CarrierStatusCode', sql.VarChar, json.carrierStatusCode || '');
         req.input('CarrierStatusMessage', sql.VarChar, json.carrierStatusMessage || 'No Status');
-        // req.input('SignedForByName', sql.VarChar, json.signedForByName || '');
-        // req.input('ExceptionStatus', sql.Int, json.exceptionStatus || 0);
-        // req.input('RTS', sql.Int, json.rts || 0);
-        // req.input('RTSTrackingNo', sql.VarChar, json.rtsTrackingNo || '');
-        // req.input('DAMAGE', sql.Int, json.damage || 0);
-        // req.input('DAMAGEMSG', sql.VarChar, json.damageMsg || '');
+        req.input('SignedForByName', sql.VarChar, json.signedForByName || '');
+        req.input('ExceptionStatus', sql.Int, json.exceptionStatus || 0);
+        req.input('RTS', sql.Int, json.rts || 0);
+        req.input('RTSTrackingNo', sql.VarChar, json.rtsTrackingNo || '');
+        req.input('DAMAGE', sql.Int, json.damage || 0);
+        req.input('DAMAGEMSG', sql.VarChar, json.damageMsg || '');
         req.input('No_', sql.VarChar, json.rn);
+        if(json.activityJson){
+            req.input('rn', sql.VarChar, json.rn);
+            req.input('TrackingNumber', sql.VarChar, json.trackingNumber);
+            req.input('ShippingAgentCode', sql.VarChar, json.shippingAgentCode);
+            req.input('ActivityJson', sql.VarChar, JSON.stringify(json.activityJson));
+        }
     }
 };
 handler.pool = new sql.ConnectionPool(settings.db);
@@ -69,23 +75,30 @@ handler.sub5 = handler.buffer.subscribe(d => {
 });
 
 const disburse = (data) => {
-    const req = reqs.find((e) => e.isAvailable);
+    let req = reqs.find((e) => e.isAvailable);
     if (req) {
         req.isAvailable = false;
         req.multiple = true;
-
+        // req.addParameter('name',sql.VarChar,'test');
         tools.setInputParams(req, data);
         notify.addDbRequest();
         console.log('rn:', data.rn);
-        req.query(sqlCommands.updateInfoAndInsertInPackageHistory, (err, result) => {
-
+        const packageHistorySql = sqlCommands.insertPackageHistory;
+        let sqlCommand = sqlCommands.updateInfoAndInsertInPackageHistory;
+        //.concat(data.activityJson ? `${packageHistorySql}` : '');
+        
+        req.query(sqlCommand, (err, result) => {
             req.isAvailable = true;
+            
+            // req.isAvailable = true;
             if (err) {
                 notify.addDbError();
             } else {
                 notify.addDbResponse();
             }
         });
+        // req = new sql.Request(handler.pool);
+        
     } else {
         setTimeout(() => {
             disburse(data);

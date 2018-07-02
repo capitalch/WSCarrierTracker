@@ -68,6 +68,7 @@ handler.frameError = (error, location, severity, index) => {
 }
 
 handler.cleanup = () => {
+    notify.showStatus({carrierName:'gso'});
     console.log('cleaning up');
     handler.sub0 && handler.sub0.unsubscribe();
     handler.sub1 && handler.sub1.unsubscribe();
