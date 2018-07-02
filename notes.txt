@@ -6,12 +6,16 @@ Carrier Code      Delivered   Returned      damaged     exception Not Delivered
 //Azure error logs
 create final error object and publish
 
-//Adam2
-                                          1. Complete UPS 
-1.5 Complete TPS
-2. Update Info table. Insert history. insert log.
-      3. Email fire
-      4. Global error handling
+//Adam2 
+1. Complete TPS
+2. Implement Saby correction
+3. Insert in package log table before exit. Provide start, end time and exit log code.
+4. Fire email report
+5. Check and implement all api errors 
+      to be treated as exceptions updated to DB as exceptionStatus as 1
+6. Check all errors not tracking number specific errors go to error array
+7. Azure log errors from error array
+8. Debug why sometimes app is not closing generously
 5. Testing with special data
 6. Deployment
 
