@@ -1,10 +1,10 @@
 let sqlCommands = {
 	getInfos: `
-		SELECT top 1000 NO_ rn,[Shipping Agent Code] shippingAgentCode,[External Tracking No_] trackingNumber,status
+		SELECT top 10000 NO_ rn,[Shipping Agent Code] shippingAgentCode,[External Tracking No_] trackingNumber,status
 		FROM [Wineshipping$PackageinfoNew] 
 		WHERE 
 				NOT [Status] = 'Package returned to shipper' and 
-				NOT [Status] = 'Delivered' and 
+				--NOT [Status] = 'Delivered' and 
 				NOT [Status] = 'Returned' and			
 				[Shipping Agent Code] in ('GSO') 
 				AND NOT [External Tracking No_] = ''
@@ -24,7 +24,6 @@ let sqlCommands = {
 		DAMAGE = @DAMAGE,
 		DAMAGEMSG = @DAMAGEMSG
 		where No_ = @No_;
-
 	`,
 	insertPackageHistory: `
 		insert into PackageHistory(rn, TrackingNumber, ShippingAgentCode, ActivityJson, IsDeleted)

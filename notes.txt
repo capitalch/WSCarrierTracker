@@ -1,3 +1,11 @@
+//package Log
+Before exit update.
+//email
+Package run end time: time
+Carrier Code      Delivered   Returned      damaged     exception Not Delivered
+//Azure error logs
+create final error object and publish
+
 //Adam2
                                           1. Complete UPS 
 1.5 Complete TPS

@@ -79,14 +79,14 @@ const disburse = (data) => {
     if (req) {
         req.isAvailable = false;
         req.multiple = true;
-        // tools.setInputParams(req, data);
+        tools.setInputParams(req, data);
         notify.addDbRequest();
         // console.log('rn:', data.rn);
-        // const packageHistorySql = sqlCommands.insertPackageHistory;
-        // let sqlCommand = sqlCommands.updateInfoAndInsertInPackageHistory;
-        //.concat(data.activityJson ? `${packageHistorySql}` : '');
-        const testCommand = sqlCommands.updateTest;
-        req.query(testCommand, (err, result) => {
+        const packageHistorySql = sqlCommands.insertPackageHistory;
+        let sqlCommand = sqlCommands.updateInfoAndInsertInPackageHistory
+        .concat(data.activityJson ? `${packageHistorySql}` : '');
+        // const testCommand = sqlCommands.updateTest;
+        req.query(sqlCommand, (err, result) => {
             req.isAvailable = true;
             
             // req.isAvailable = true;
@@ -102,7 +102,7 @@ const disburse = (data) => {
         setTimeout(() => {
             disburse(data);
             // console.log('waiting for db channel to be freed up');
-        }, 10000);
+        }, 1000);
     }
 }
 
