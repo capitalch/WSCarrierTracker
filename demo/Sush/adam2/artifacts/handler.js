@@ -2,7 +2,11 @@
 const ibuki = require('./ibuki');
 const domain = require('domain');
 const rx = require('rxjs');
+const settings = require('../settings.json');
 const notify = require('./notify');
+
+let verbose = settings.config.verbose;
+verbose = verbose || true;
 
 let handler = {};
 handler.buffer = new rx.Subject();
@@ -18,7 +22,7 @@ process.domainError.on('error', function (err) {
     handler.cleanup();
     console.log(err);
     //use telemetry to log error
-    process.exit(100);
+    process.exit(102);
 });
 
 process.on('uncaughtException', function (err) {
@@ -44,7 +48,8 @@ const isIdle = () => {
 handler.closeIfIdle = () => {
     const myInterval = rx.interval(2000);
     handler.sub6 = myInterval.subscribe(() => {
-        isIdle() && handler.cleanup();
+        verbose && notify.showAllStatus();
+        isIdle() && (handler.sub6.unsubscribe(), handler.cleanup());
     });
 }
 
@@ -62,13 +67,13 @@ ibuki.filterOn('app-error:any').subscribe(d => {
 
 handler.frameError = (error, location, severity, index) => {
     error.location = location;
-    error.severity=severity;
-    error.index=index;
+    error.severity = severity;
+    error.index = index;
     return (error);
 }
 
 handler.cleanup = () => {
-    notify.showStatus({carrierName:'gso'});
+    notify.showStatus({ carrierName: 'gso' });
     console.log('cleaning up');
     handler.sub0 && handler.sub0.unsubscribe();
     handler.sub1 && handler.sub1.unsubscribe();

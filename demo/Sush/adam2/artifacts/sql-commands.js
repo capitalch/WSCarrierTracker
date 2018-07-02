@@ -28,48 +28,17 @@ let sqlCommands = {
 	insertPackageHistory: `
 		insert into PackageHistory(rn, TrackingNumber, ShippingAgentCode, ActivityJson, IsDeleted)
 		values (@rn, @trackingNumber, @shippingAgentCode,@activityJson, 0);
-	`,
-	updateTest: `
-	update Wineshipping$PackageInfoNew
-	set Status = ''
-	where No_ = 'CONT-000005331'
-	`,
-	updateTest1:`
-	update Product set unitPrice = 0 where id = 1;
 	`
+	// ,
+	// updateTest: `
+	// update Wineshipping$PackageInfoNew
+	// set Status = ''
+	// where No_ = 'CONT-000005331'
+	// `,
+	// updateTest1:`
+	// update Product set unitPrice = 0 where id = 1;
+	// `
 };
-
-/*
-,
-		Status_Date = '',
-		Status_Time = '',
-		EstimatedDeliveryDate = '',
-		CarrierStatusCode = '',
-		CarrierStatusMessage = '',
-		SignedForByName = '',
-		ExceptionStatus= '' 
-	
-		
-*/
-
-
-
-// insert into PackageHistory(rn, TrackingNumber, ShippingAgentCode, ActivityJson)
-// 	values(
-// 		rn,'','','')
-
-// sqlCommands.getInfos = `
-// SELECT top 1000 NO_ rn,[Shipping Agent Code] shipping,[External Tracking No_] trackingNumber,status
-// 	FROM [Wineshipping$PackageinfoNew] 
-// 	WHERE 
-// 			NOT [Status] = 'Package returned to shipper' and 
-// 			NOT [Status] = 'Delivered' and 
-// 			NOT [Status] = 'Returned' and			
-// 			[Shipping Agent Code] in ('FEX') 
-// 			AND NOT [External Tracking No_] = ''
-// `;
 
 module.exports = sqlCommands;
 //, 'UPS', 'FEX', 'GSO', 'TMC', 'FCC', 'TPS'
-
-// AND status = 'View Detail'

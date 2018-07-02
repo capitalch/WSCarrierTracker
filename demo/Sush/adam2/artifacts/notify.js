@@ -104,7 +104,11 @@ const notify = {
     },
     addApiResponse: (info) => {
         apiStatus[info.carrierName].responses++;
-        verbose && notify.showStatus(info);
+        // verbose && notify.showStatus(info);
+    },
+    addApiError: (info) => {
+        apiStatus[info.carrierName].errors++;
+        // verbose && notify.showStatus(info);
     },
     incrDelivered: (carrierName) => {
         carrierStatus[carrierName].delivered++;
@@ -121,14 +125,29 @@ const notify = {
     incrNotDelivered: (carrierName) => {
         carrierStatus[carrierName].notDelivered++;
     },
-    addApiError: (info) => {
-        apiStatus[info.carrierName].errors++;
-        verbose && notify.showStatus(info);
-    },
     showStatus: (info) => {
         console.log(info.carrierName,
-            ' ApiRequests:', apiStatus[info.carrierName].requests, ' ApiResponses:', apiStatus[info.carrierName].responses, ' ApiErrors:', apiStatus[info.carrierName].errors, ' ApiQueue:', apiStatus[info.carrierName].queue(), ' Piston:', apiStatus[info.carrierName].piston, ' DbRequests:', dbStatus.dbRequests, ' DbResponses:', dbStatus.dbResponses, ' DbErrors:', dbStatus.dbErrors, ' DbQueue:', dbStatus.dbQueue()
-        );
+            ' ApiRequests:', apiStatus[info.carrierName].requests,
+            ' ApiResponses:', apiStatus[info.carrierName].responses,
+            ' ApiErrors:', apiStatus[info.carrierName].errors,
+            ' ApiQueue:', apiStatus[info.carrierName].queue(),
+            ' Piston:', apiStatus[info.carrierName].piston,
+            ' DbRequests:', dbStatus.dbRequests, ' DbResponses:',
+            dbStatus.dbResponses, ' DbErrors:', dbStatus.dbErrors,
+            ' DbQueue:', dbStatus.dbQueue());
+    },
+    showAllStatus: () => {
+        const carriers = settings.carriers;
+        Object.keys(carriers).forEach(x => {
+            apiStatus[x] && console.log(x, ' ApiRequests:', apiStatus[x].requests,
+                ' ApiResponses:', apiStatus[x].responses,
+                ' ApiErrors:', apiStatus[x].errors,
+                ' ApiQueue:', apiStatus[x].queue(),
+                ' Piston:', apiStatus[x].piston,
+                ' DbRequests:', dbStatus.dbRequests, ' DbResponses:',
+                dbStatus.dbResponses, ' DbErrors:', dbStatus.dbErrors,
+                ' DbQueue:', dbStatus.dbQueue());
+        });
     },
     pushError: (x) => {
         verbose && console.log(x);

@@ -15,9 +15,10 @@ create final error object and publish
       to be treated as exceptions updated to DB as exceptionStatus as 1
 6. Check all errors not tracking number specific errors go to error array
 7. Azure log errors from error array
-8. Debug why sometimes app is not closing generously
+            8. Debug why sometimes app is not closing generously
 5. Testing with special data
-6. Deployment
+                                          6. Status update every 2 seconds while checking idle
+7. Deployment
 
 GSO Delivery Status, options are:
 IN TRANSIT                              inTransit

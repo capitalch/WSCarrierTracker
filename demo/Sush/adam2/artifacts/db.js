@@ -15,9 +15,9 @@ let reqs = [];
 const tools = {
     setInputParams: (req, json) => {
         req.input('Status', sql.VarChar, json.status || 'No Status');
-        req.input('Status_date', sql.VarChar,json.statusDate || '');        
+        req.input('Status_date', sql.VarChar, json.statusDate || '');
         req.input('Status_Time', sql.VarChar, json.statusTime || '');
-        req.input('EstimatedDeliveryDate', sql.DateTime, json.estimatedDeliveryDate ? new Date(json.estimatedDeliveryDate): new Date('1900-01-01'));
+        req.input('EstimatedDeliveryDate', sql.DateTime, json.estimatedDeliveryDate ? new Date(json.estimatedDeliveryDate) : new Date('1900-01-01'));
         req.input('CarrierStatusCode', sql.VarChar, json.carrierStatusCode || '');
         req.input('CarrierStatusMessage', sql.VarChar, json.carrierStatusMessage || 'No Status');
         req.input('SignedForByName', sql.VarChar, json.signedForByName || '');
@@ -27,7 +27,7 @@ const tools = {
         req.input('DAMAGE', sql.Int, json.damage || 0);
         req.input('DAMAGEMSG', sql.VarChar, json.damageMsg || '');
         req.input('No_', sql.VarChar, json.rn);
-        if(json.activityJson){
+        if (json.activityJson) {
             req.input('rn', sql.VarChar, json.rn);
             req.input('TrackingNumber', sql.VarChar, json.trackingNumber);
             req.input('ShippingAgentCode', sql.VarChar, json.shippingAgentCode);
@@ -84,24 +84,18 @@ const disburse = (data) => {
         // console.log('rn:', data.rn);
         const packageHistorySql = sqlCommands.insertPackageHistory;
         let sqlCommand = sqlCommands.updateInfoAndInsertInPackageHistory
-        .concat(data.activityJson ? `${packageHistorySql}` : '');
-        // const testCommand = sqlCommands.updateTest;
+            .concat(data.activityJson ? `${packageHistorySql}` : '');
         req.query(sqlCommand, (err, result) => {
             req.isAvailable = true;
-            
-            // req.isAvailable = true;
             if (err) {
                 notify.addDbError();
             } else {
                 notify.addDbResponse();
             }
         });
-        // req = new sql.Request(handler.pool);
-        
     } else {
         setTimeout(() => {
             disburse(data);
-            // console.log('waiting for db channel to be freed up');
         }, 1000);
     }
 }
