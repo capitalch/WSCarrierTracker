@@ -9,12 +9,4 @@ const tps = {};
 const tools = {
 
 }
-
-gso.processTps = (x) => {
-    handleGso(x);
-}
-
-function handleTps(x) {
-
-}
 module.exports = tps;
