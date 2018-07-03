@@ -4,6 +4,7 @@ const ibuki = require('../ibuki');
 const handler = require('../handler');
 const parseString = require('xml2js').parseString;
 const notify = require('../notify');
+const api = require('../api');
 const fex = {};
 const tools = {
     fexStatusCodes: () => {
@@ -124,6 +125,7 @@ fex.processFex = (x) => {
                 handler.buffer.next(errorJson);
                 ibuki.emit('app-error:any', handler.frameError(err, 'util', 'info', 4))
             } else {
+                ibuki.emit('axios-post:fex>api', x);
                 handleFex(x, result);
             }
         }

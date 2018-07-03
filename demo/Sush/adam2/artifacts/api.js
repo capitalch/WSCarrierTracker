@@ -1,7 +1,6 @@
 'use strict';
 const axios = require('axios');
 const ibuki = require('./ibuki');
-// const util = require('./util');
 const handler = require('./handler');
 const Q = require('q');
 const notify = require('./notify');
@@ -31,20 +30,24 @@ api.getGsoTokenPromises = (info) => {
         };
         const promise = axios.get(info.tokenUrl, config);
         return (promise);
-    });    
+    });
     return (Q.allSettled(promises)); //Even if error is encountered in a promise still other promises are handled
 }
+
+handler.sub14 = ibuki.filterOn('axios-post:fex>api').subscribe(d => {
+    // let x = api.axiosPost();
+})
 
 api.axiosPost = (carrierInfo) => {
     axios.post(carrierInfo.url, carrierInfo.param)
         .then(res => {
             //Save in database
             carrierInfo.response = res.data;
-            notify.addApiResponse(carrierInfo);            
+            notify.addApiResponse(carrierInfo);
             processCarrierResponse(carrierInfo);
         })
         .catch(err => {
-            err.message = err.message.concat('. ','Carrier name:', carrierInfo.carrierName, ', Tracking number:',carrierInfo.trackingNumber);
+            err.message = err.message.concat('. ', 'Carrier name:', carrierInfo.carrierName, ', Tracking number:', carrierInfo.trackingNumber);
             notify.pushError(err);
             notify.addApiError(carrierInfo);
             ibuki.emit('app-error:any', handler.frameError(
@@ -62,7 +65,7 @@ api.axiosGet = (carrierInfo) => {
         })
         .catch(err => {
             //log in database
-            err.message = err.message.concat('. ','Carrier name:', carrierInfo.carrierName, ', Tracking number:',carrierInfo.trackingNumber);
+            err.message = err.message.concat('. ', 'Carrier name:', carrierInfo.carrierName, ', Tracking number:', carrierInfo.trackingNumber);
             notify.pushError(err);
             notify.addApiError(carrierInfo);
             ibuki.emit('app-error:any', handler.frameError(

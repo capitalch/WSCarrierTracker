@@ -57,7 +57,6 @@ handler.sub0 = ibuki.filterOn('get-big-object:run>db').subscribe(d => {
                 createRequests();
                 const req = reqs.find((e) => e.isAvailable);
                 req.isAvailable = false;
-                // notify.addDbRequest();
                 req.query(sqlCommands.getInfos, (err, result) => {
                     if (err) {
                         notify.pushError(err);

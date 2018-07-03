@@ -1,12 +1,12 @@
 let sqlCommands = {
 	getInfos: `
-		SELECT top 1000 NO_ rn,[Shipping Agent Code] shippingAgentCode,[External Tracking No_] trackingNumber,status
+		SELECT top 2 NO_ rn,[Shipping Agent Code] shippingAgentCode,[External Tracking No_] trackingNumber,status
 		FROM [Wineshipping$PackageinfoNew] 
 		WHERE 
 				NOT [Status] = 'Package returned to shipper' and 
 				--NOT [Status] = 'Delivered' and 
 				NOT [Status] = 'Returned' and			
-				[Shipping Agent Code] in ('GSO') 
+				[Shipping Agent Code] in ('FEX') 
 				AND NOT [External Tracking No_] = ''
 			`,
 	updateInfoAndInsertInPackageHistory: `

@@ -54,6 +54,7 @@ function cleanup(code) {
     handler.sub11 && handler.sub11.unsubscribe();
     handler.sub12 && handler.sub12.unsubscribe();
     handler.sub13 && handler.sub13.unsubscribe();
+    handler.sub14 && handler.sub13.unsubscribe();
     handler.pool && handler.pool.close();
     (code !== 0) && (process.exit(code));
 }
