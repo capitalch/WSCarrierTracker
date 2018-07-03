@@ -44,6 +44,7 @@ api.axiosPost = (carrierInfo) => {
             processCarrierResponse(carrierInfo);
         })
         .catch(err => {
+            err.message = err.message.concat('. ','Carrier name:', carrierInfo.carrierName, ', Tracking number:',carrierInfo.trackingNumber);
             notify.pushError(err);
             notify.addApiError(carrierInfo);
             ibuki.emit('app-error:any', handler.frameError(
@@ -61,6 +62,7 @@ api.axiosGet = (carrierInfo) => {
         })
         .catch(err => {
             //log in database
+            err.message = err.message.concat('. ','Carrier name:', carrierInfo.carrierName, ', Tracking number:',carrierInfo.trackingNumber);
             notify.pushError(err);
             notify.addApiError(carrierInfo);
             ibuki.emit('app-error:any', handler.frameError(

@@ -67,6 +67,7 @@ handler.frameError = (error, location, severity, index) => {
 
 process.on('exit', function (code) {
     console.log('Exiting program:Exit code:', code, ' Start time:', notify.getTime('start'), ' End time:', notify.getTime('end'), ' Duration (hh:mm:ss)', notify.getJobRunDuration());
+    notify.showAllErrors();
 });
 
 process.on('uncaughtException', function (err) {
