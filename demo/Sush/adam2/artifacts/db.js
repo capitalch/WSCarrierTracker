@@ -54,8 +54,9 @@ handler.sub0 = ibuki.filterOn('get-big-object:run>db').subscribe(d => {
                         notify.addDbResponse();
                         ibuki.emit('handle-big-object:db>workbench', result.recordset);
                     }
-                    req.isAvailable = true;
+                    req.isAvailable = true;                    
                 });
+                
             }
         }
     );

@@ -5,6 +5,7 @@ verbose = verbose || true;
 
 let errors = [];
 const apiStatus = {};
+const timing = {};
 const dbStatus = {
     dbRequests: 0,
     dbResponses: 0,
@@ -46,6 +47,12 @@ const carrierStatus = {
 };
 
 const notify = {
+    setTime: (t) => {
+        timing[t] = (new Date()).toISOString();
+    },
+    getTime: (t) => {
+        return (timing[t]);
+    },
     getErrorJson: (error, info) => {
         const errorJson = {
             status: 'No Status',
@@ -125,17 +132,17 @@ const notify = {
     incrNotDelivered: (carrierName) => {
         carrierStatus[carrierName].notDelivered++;
     },
-    showStatus: (info) => {
-        console.log(info.carrierName,
-            ' ApiRequests:', apiStatus[info.carrierName].requests,
-            ' ApiResponses:', apiStatus[info.carrierName].responses,
-            ' ApiErrors:', apiStatus[info.carrierName].errors,
-            ' ApiQueue:', apiStatus[info.carrierName].queue(),
-            ' Piston:', apiStatus[info.carrierName].piston,
-            ' DbRequests:', dbStatus.dbRequests, ' DbResponses:',
-            dbStatus.dbResponses, ' DbErrors:', dbStatus.dbErrors,
-            ' DbQueue:', dbStatus.dbQueue());
-    },
+    // showStatus: (info) => {
+    //     console.log(info.carrierName,
+    //         ' ApiRequests:', apiStatus[info.carrierName].requests,
+    //         ' ApiResponses:', apiStatus[info.carrierName].responses,
+    //         ' ApiErrors:', apiStatus[info.carrierName].errors,
+    //         ' ApiQueue:', apiStatus[info.carrierName].queue(),
+    //         ' Piston:', apiStatus[info.carrierName].piston,
+    //         ' DbRequests:', dbStatus.dbRequests, ' DbResponses:',
+    //         dbStatus.dbResponses, ' DbErrors:', dbStatus.dbErrors,
+    //         ' DbQueue:', dbStatus.dbQueue());
+    // },
     showAllStatus: () => {
         const carriers = settings.carriers;
         Object.keys(carriers).forEach(x => {

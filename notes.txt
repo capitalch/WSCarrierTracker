@@ -10,7 +10,7 @@ create final error object and publish
 1. Complete TPS
 2. Implement Saby correction
 3. Insert in package log table before exit. Provide start, end time and exit log code.
-4. Fire email report
+4. Fire email report. Mandril.
 5. Check and implement all api errors 
       to be treated as exceptions updated to DB as exceptionStatus as 1
 6. Check all errors not tracking number specific errors go to error array

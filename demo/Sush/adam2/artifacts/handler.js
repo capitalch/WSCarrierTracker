@@ -5,35 +5,11 @@ const rx = require('rxjs');
 const settings = require('../settings.json');
 const notify = require('./notify');
 
+const handler = {};
 let verbose = settings.config.verbose;
 verbose = verbose || true;
-
-let handler = {};
 handler.buffer = new rx.Subject();
-handler.dbRequests = 0;
-handler.apiRequests = 0;
-handler.carrierCount = 0;
-
-//process is global variable. Let the domain error ride over process variable
-// so that it is available everywhere. Domain error is unhandled error anywhere in application
-process.domainError = domain.create();
-process.domainError.on('error', function (err) {
-    // error.severity = 'fatal';
-    handler.cleanup();
-    console.log(err);
-    //use telemetry to log error
-    process.exit(102);
-});
-
-process.on('uncaughtException', function (err) {
-    handler.cleanup();
-    console.log('Caught exception: ', err.stack);
-    process.exit(101);
-});
-
-process.on('exit', function (code) {
-    console.log('Exiting WSCarrierTracker:', code);
-});
+handler.domainError = domain.create();
 
 const isIdle = () => {
     const apiStatus = notify.getApiStatus();
@@ -49,31 +25,12 @@ handler.closeIfIdle = () => {
     const myInterval = rx.interval(2000);
     handler.sub6 = myInterval.subscribe(() => {
         verbose && notify.showAllStatus();
-        isIdle() && (handler.sub6.unsubscribe(), handler.cleanup());
+        isIdle() && (handler.sub6.unsubscribe(), cleanup());
     });
 }
 
-ibuki.filterOn('app-error:any').subscribe(d => {
-    const err = d.data;
-    if (err.severity === 'fatal') {
-        console.log(err.stack);
-        handler.cleanup();
-        process.exit(100);
-    } else {
-        console.log(err);
-    }
-    // Use telemetry to log error
-});
-
-handler.frameError = (error, location, severity, index) => {
-    error.location = location;
-    error.severity = severity;
-    error.index = index;
-    return (error);
-}
-
-handler.cleanup = () => {
-    notify.showStatus({ carrierName: 'gso' });
+function cleanup() {    
+    notify.showAllStatus();
     console.log('cleaning up');
     handler.sub0 && handler.sub0.unsubscribe();
     handler.sub1 && handler.sub1.unsubscribe();
@@ -89,5 +46,42 @@ handler.cleanup = () => {
     handler.sub11 && handler.sub11.unsubscribe();
     handler.pool && handler.pool.close();
 }
+
+handler.frameError = (error, location, severity, index) => {
+    error.location = location;
+    error.severity = severity;
+    error.index = index;
+    return (error);
+}
+
+process.on('exit', function (code) {
+    notify.setTime('end');
+    console.log('Exiting WSCarrierTracker:', code, ' Start time:', notify.getTime('start'), ' end time:', notify.getTime('end'));
+});
+
+process.on('uncaughtException', function (err) {
+    console.log('Caught exception: ', err.stack || '');
+    cleanup();
+    process.exit(101);
+});
+
+handler.domainError.on('error', function (err) {
+    console.log(err.stack || err || '');
+    cleanup();
+    //use telemetry to log error
+    process.exit(102);
+});
+
+ibuki.filterOn('app-error:any').subscribe(d => {
+    const err = d.data;
+    if (err.severity === 'fatal') {
+        console.log(err.stack);
+        cleanup();
+        process.exit(100);
+    } else {
+        console.log(err);
+    }
+    // Use telemetry to log error
+});
 
 module.exports = handler;

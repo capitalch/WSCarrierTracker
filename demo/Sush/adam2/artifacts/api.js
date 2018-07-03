@@ -31,9 +31,8 @@ api.getGsoTokenPromises = (info) => {
         };
         const promise = axios.get(info.tokenUrl, config);
         return (promise);
-    });
+    });    
     return (Q.allSettled(promises)); //Even if error is encountered in a promise still other promises are handled
-    // return (axios.all(promises));
 }
 
 api.axiosPost = (carrierInfo) => {
@@ -41,7 +40,7 @@ api.axiosPost = (carrierInfo) => {
         .then(res => {
             //Save in database
             carrierInfo.response = res.data;
-            notify.addApiResponse(carrierInfo);
+            notify.addApiResponse(carrierInfo);            
             processCarrierResponse(carrierInfo);
         })
         .catch(err => {

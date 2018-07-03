@@ -69,7 +69,7 @@ handler.sub1 = ibuki.filterOn('handle-big-object:db>workbench').subscribe(
             (ibuki.emit('process-carrier:self', ups));
         (tps.length > 0) && (notify.initCarrier('tps', tps)) &&
             (ibuki.emit('process-carrier:self', tps));
-        handler.closeIfIdle();
+        handler.closeIfIdle();        
     }
 );
 
@@ -88,7 +88,7 @@ handler.sub8 = ibuki.filterOn('process-carrier:self').subscribe(d => {
         .subscribe(
             x => {
                 notify.addApiRequest(x);
-                api[x.method](x);
+                api[x.method](x);                
             }
         );
 });
