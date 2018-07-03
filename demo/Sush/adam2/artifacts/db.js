@@ -18,6 +18,7 @@ const tools = {
         req.input('Status_date', sql.VarChar, json.statusDate || '');
         req.input('Status_Time', sql.VarChar, json.statusTime || '');
         req.input('EstimatedDeliveryDate', sql.DateTime, json.estimatedDeliveryDate ? new Date(json.estimatedDeliveryDate) : new Date('1900-01-01'));
+        // req.input('EstimatedDeliveryDate', sql.VarChar, '');//json.estimatedDeliveryDate ? new Date(json.estimatedDeliveryDate) : new Date('1900-01-01'));
         req.input('CarrierStatusCode', sql.VarChar, json.carrierStatusCode || '');
         req.input('CarrierStatusMessage', sql.VarChar, json.carrierStatusMessage || 'No Status');
         req.input('SignedForByName', sql.VarChar, json.signedForByName || '');
