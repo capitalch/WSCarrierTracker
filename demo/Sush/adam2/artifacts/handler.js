@@ -56,7 +56,7 @@ handler.frameError = (error, location, severity, index) => {
 
 process.on('exit', function (code) {
     notify.setTime('end');
-    console.log('Exiting WSCarrierTracker:', code, ' Start time:', notify.getTime('start'), ' end time:', notify.getTime('end'));
+    console.log('Exiting WSCarrierTracker:', code, ' Start time:', notify.getTime('start'), ' End time:', notify.getTime('end'));
 });
 
 process.on('uncaughtException', function (err) {
