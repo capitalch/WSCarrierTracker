@@ -1,4 +1,5 @@
 'use strict';
+const moment = require('moment');
 const settings = require('../settings.json');
 let verbose = settings.config.verbose;
 verbose = verbose || true;
@@ -48,10 +49,19 @@ const carrierStatus = {
 
 const notify = {
     setTime: (t) => {
-        timing[t] = (new Date()).toISOString();
+        timing[t] = moment();
     },
     getTime: (t) => {
-        return (timing[t]);
+        const time = timing[t] ? moment(timing[t]).toISOString() : '0'
+        return (time);
+    },
+    getJobRunDuration: () => {
+        let duration = '0';
+        if (timing.start && timing.end) {
+            const diff = timing.end.diff(timing.start);
+            duration = moment.utc(diff).format('HH:mm:ss');
+        }
+        return (duration);
     },
     getErrorJson: (error, info) => {
         const errorJson = {
@@ -155,6 +165,29 @@ const notify = {
                 dbStatus.dbResponses, ' DbErrors:', dbStatus.dbErrors,
                 ' DbQueue:', dbStatus.dbQueue());
         });
+    },
+    getJobRunStatus: () => {
+        const carriers = Object.keys(apiStatus);
+        const status = {
+            apiRequests: 0,
+            apiResponses: 0,
+            apiErrors: 0,
+            dbRequests: 0,
+            dbResponses: 0,
+            dbErrors: 0,
+            startTime: notify.getTime('start'),
+            endTime: notify.getTime('end'),
+            duration: notify.getJobRunDuration()
+        };
+        carriers && carriers.forEach(x => {
+            status.apiRequests = status.apiRequests + apiStatus[x].requests;
+            status.apiResponses = status.apiResponses + apiStatus[x].responses;
+            status.apiErrors = status.apiErrors + apiStatus[x].errors;
+        });
+        status.dbRequests = dbStatus.dbRequests;
+        status.dbResponses = dbStatus.dbResponses;
+        status.errors = dbStatus.dbErrors;
+        return(status);
     },
     pushError: (x) => {
         verbose && console.log(x);

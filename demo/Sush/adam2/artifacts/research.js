@@ -1,4 +1,5 @@
 'use strict';
+const moment = require('moment');
 // console.log('Research');
 // var nodemailer = require('nodemailer');
 
@@ -49,3 +50,18 @@
 // });
 // const obj = {name:"Test", message:"Test errors", stack:'Error generated in research.js, line 50'};
 // throw obj;
+
+// const start = moment();
+// const end = moment();
+// const diff = end.diff(start);
+// const duration = moment.utc(diff).format("HH:mm:ss");
+// console.log('duration:', duration);
+
+// // set up
+// let start = moment("2018-05-16 12:00:00"); // some random moment in time (in ms)
+// let end = moment("2018-05-16 12:22:00"); // some random moment after start (in ms)
+// let diff = end.diff(start);
+
+// // execution
+// let f = moment.utc(diff).format("HH:mm:ss.SSS");
+// alert(f);

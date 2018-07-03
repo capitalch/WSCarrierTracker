@@ -1,6 +1,6 @@
 let sqlCommands = {
 	getInfos: `
-		SELECT top 100 NO_ rn,[Shipping Agent Code] shippingAgentCode,[External Tracking No_] trackingNumber,status
+		SELECT top 1000 NO_ rn,[Shipping Agent Code] shippingAgentCode,[External Tracking No_] trackingNumber,status
 		FROM [Wineshipping$PackageinfoNew] 
 		WHERE 
 				NOT [Status] = 'Package returned to shipper' and 
@@ -28,6 +28,10 @@ let sqlCommands = {
 	insertPackageHistory: `
 		insert into PackageHistory(rn, TrackingNumber, ShippingAgentCode, ActivityJson, IsDeleted)
 		values (@rn, @trackingNumber, @shippingAgentCode,@activityJson, 0);
+	`,
+	insertPackageLog:`
+	insert into packageLog(ApiRequests, ApiResponses, ApiErrors, DbRequests, DbResponses, DbErrors, StartTime, EndTime, Duration)
+		values(@ApiRequests, @ApiResponses, @ApiErrors, @DbRequests, @DbResponses, @DbErrors, @StartTime, @EndTime, @Duration);
 	`
 	// ,
 	// updateTest: `

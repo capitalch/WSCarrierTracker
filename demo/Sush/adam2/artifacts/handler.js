@@ -1,7 +1,7 @@
 'use strict';
-const ibuki = require('./ibuki');
 const domain = require('domain');
 const rx = require('rxjs');
+const ibuki = require('./ibuki');
 const settings = require('../settings.json');
 const notify = require('./notify');
 
@@ -15,7 +15,9 @@ const isIdle = () => {
     const apiStatus = notify.getApiStatus();
     const carriers = Object.keys(apiStatus);
     let apiQueue = 0;
-    carriers.forEach(x => { apiQueue = apiQueue + apiStatus[x].queue() });
+    carriers.forEach(x => {
+        apiQueue = apiQueue + apiStatus[x].queue()
+    });
     const dbQueue = notify.getDbStatus().dbQueue();
     const ret = ((dbQueue === 0) && (apiQueue === 0));
     return (ret);
@@ -25,12 +27,18 @@ handler.closeIfIdle = () => {
     const myInterval = rx.interval(2000);
     handler.sub6 = myInterval.subscribe(() => {
         verbose && notify.showAllStatus();
-        isIdle() && (handler.sub6.unsubscribe(), cleanup());
+        isIdle() && (handler.sub6.unsubscribe(), notify.setTime('end'), ibuki.emit('db-log:handler>db'));
     });
 }
 
-function cleanup() {    
-    notify.showAllStatus();
+handler.sub13 = ibuki.filterOn('cleanup:db>handler').subscribe(d => {
+    cleanup(0);
+});
+
+function cleanup(code) {
+    // notify.showAllStatus();
+    // notify.setTime('end'); // End of program time set
+    console.log(notify.getJobRunStatus());
     console.log('cleaning up');
     handler.sub0 && handler.sub0.unsubscribe();
     handler.sub1 && handler.sub1.unsubscribe();
@@ -44,7 +52,10 @@ function cleanup() {
     handler.sub9 && handler.sub9.unsubscribe();
     handler.sub10 && handler.sub10.unsubscribe();
     handler.sub11 && handler.sub11.unsubscribe();
+    handler.sub12 && handler.sub12.unsubscribe();
+    handler.sub13 && handler.sub13.unsubscribe();
     handler.pool && handler.pool.close();
+    (code !== 0) && (process.exit(code));
 }
 
 handler.frameError = (error, location, severity, index) => {
@@ -55,29 +66,26 @@ handler.frameError = (error, location, severity, index) => {
 }
 
 process.on('exit', function (code) {
-    notify.setTime('end');
-    console.log('Exiting WSCarrierTracker:', code, ' Start time:', notify.getTime('start'), ' End time:', notify.getTime('end'));
+    console.log('Exiting program:Exit code:', code, ' Start time:', notify.getTime('start'), ' End time:', notify.getTime('end'), ' Duration (hh:mm:ss)', notify.getJobRunDuration());
 });
 
 process.on('uncaughtException', function (err) {
-    console.log('Caught exception: ', err.stack || '');
-    cleanup();
-    process.exit(101);
+    console.log('Uncaught exception:', err.stack || '');
+    cleanup(101);
 });
 
 handler.domainError.on('error', function (err) {
-    console.log(err.stack || err || '');
-    cleanup();
+    console.log('Domain exception:', err.stack || err || '');
+    cleanup(102);
     //use telemetry to log error
-    process.exit(102);
 });
 
 ibuki.filterOn('app-error:any').subscribe(d => {
     const err = d.data;
     if (err.severity === 'fatal') {
         console.log(err.stack);
-        cleanup();
-        process.exit(100);
+        cleanup(100);
+        // process.exit(100);
     } else {
         console.log(err);
     }

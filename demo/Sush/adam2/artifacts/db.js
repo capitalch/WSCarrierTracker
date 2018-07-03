@@ -33,6 +33,17 @@ const tools = {
             req.input('ShippingAgentCode', sql.VarChar, json.shippingAgentCode);
             req.input('ActivityJson', sql.VarChar, JSON.stringify(json.activityJson));
         }
+    },
+    setLogInputParams:(req,json)=>{
+        req.input('ApiRequests', sql.Int, json.apiRequests);
+        req.input('ApiResponses', sql.Int, json.apiResponses);
+        req.input('ApiErrors', sql.Int, json.apiErrors);
+        req.input('DbRequests', sql.Int, json.dbRequests);
+        req.input('DbResponses', sql.Int, json.dbResponses);
+        req.input('DbErrors', sql.Int, json.dbErrors);
+        req.input('StartTime', sql.VarChar, json.startTime);
+        req.input('EndTime', sql.VarChar, json.endTime);
+        req.input('Duration', sql.VarChar, json.duration);
     }
 };
 handler.pool = new sql.ConnectionPool(settings.db);
@@ -45,18 +56,18 @@ handler.sub0 = ibuki.filterOn('get-big-object:run>db').subscribe(d => {
                 createRequests();
                 const req = reqs.find((e) => e.isAvailable);
                 req.isAvailable = false;
-                notify.addDbRequest();
+                // notify.addDbRequest();
                 req.query(sqlCommands.getInfos, (err, result) => {
                     if (err) {
-                        notify.addDbError();
+                        // notify.addDbError();
                         ibuki.emit('app-error:any', handler.frameError(err, 'db', 'fatal', 2));
                     } else {
-                        notify.addDbResponse();
+                        // notify.addDbResponse();
                         ibuki.emit('handle-big-object:db>workbench', result.recordset);
                     }
-                    req.isAvailable = true;                    
+                    req.isAvailable = true;
                 });
-                
+
             }
         }
     );
@@ -82,7 +93,6 @@ const disburse = (data) => {
         req.multiple = true;
         tools.setInputParams(req, data);
         notify.addDbRequest();
-        // console.log('rn:', data.rn);
         const packageHistorySql = sqlCommands.insertPackageHistory;
         let sqlCommand = sqlCommands.updateInfoAndInsertInPackageHistory
             .concat(data.activityJson ? `${packageHistorySql}` : '');
@@ -100,5 +110,23 @@ const disburse = (data) => {
         }, 1000);
     }
 }
+
+handler.sub12 = ibuki.filterOn('db-log:handler>db').subscribe(d => {
+    let req = reqs.find((e) => e.isAvailable);
+    if (req) {
+        req.isAvailable = false;
+        tools.setLogInputParams(req,notify.getJobRunStatus());
+        const sqlCommand = sqlCommands.insertPackageLog;
+        req.query(sqlCommand, (err, result) => {
+            req.isAvailable = true;
+            if (err) {
+                //log the error
+            }
+            ibuki.emit('cleanup:db>handler');
+        })
+    }
+});
+
+
 
 module.exports = db;
