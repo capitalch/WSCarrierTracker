@@ -51,6 +51,7 @@ handler.sub0 = ibuki.filterOn('get-big-object:run>db').subscribe(d => {
     handler.pool.connect(
         err => {
             if (err) {
+                notify.pushError(err);
                 ibuki.emit('app-error:any', handler.frameError(err, 'db', 'fatal', 1));
             } else {
                 createRequests();
@@ -59,10 +60,9 @@ handler.sub0 = ibuki.filterOn('get-big-object:run>db').subscribe(d => {
                 // notify.addDbRequest();
                 req.query(sqlCommands.getInfos, (err, result) => {
                     if (err) {
-                        // notify.addDbError();
+                        notify.pushError(err);
                         ibuki.emit('app-error:any', handler.frameError(err, 'db', 'fatal', 2));
                     } else {
-                        // notify.addDbResponse();
                         ibuki.emit('handle-big-object:db>workbench', result.recordset);
                     }
                     req.isAvailable = true;
@@ -99,6 +99,7 @@ const disburse = (data) => {
         req.query(sqlCommand, (err, result) => {
             req.isAvailable = true;
             if (err) {
+                notify.pushError(err);
                 notify.addDbError();
             } else {
                 notify.addDbResponse();
@@ -120,6 +121,7 @@ handler.sub12 = ibuki.filterOn('db-log:handler>db').subscribe(d => {
         req.query(sqlCommand, (err, result) => {
             req.isAvailable = true;
             if (err) {
+                notify.pushError(err);
                 //log the error
             }
             ibuki.emit('cleanup:db>handler');

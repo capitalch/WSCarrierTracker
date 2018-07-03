@@ -121,7 +121,8 @@ handler.sub9 = ibuki.filterOn('pre-process-gso-carrier:self').subscribe(d => {
         });
         ibuki.emit('process-carrier:self', gso);
     }).catch(err => {
-        console.log(err);
+        notify.pushError(err);
+        // console.log(err);
     });
 });
 

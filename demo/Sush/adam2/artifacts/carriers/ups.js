@@ -86,6 +86,7 @@ ups.processUps = (x) => {
         explicitArray: false
     }, function (err, result) {
         if (err) {
+            notify.pushError(err);
             const errorJson = notify.getErrorJson(err);
             handler.buffer.next(errorJson);
             notify.incrException(x.carrierName);

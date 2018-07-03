@@ -107,6 +107,7 @@ fex.processFex = (x) => {
         explicitArray: false
     }, function (err, result) {
         if (err) {
+            notify.pushError(err);
             notify.incrException(x.carrierName);
             const errorJson = notify.getErrorJson(err,x);
             handler.buffer.next(errorJson);

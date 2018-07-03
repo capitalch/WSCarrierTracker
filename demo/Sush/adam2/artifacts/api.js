@@ -44,7 +44,7 @@ api.axiosPost = (carrierInfo) => {
             processCarrierResponse(carrierInfo);
         })
         .catch(err => {
-            // handler.carrierCount--;
+            notify.pushError(err);
             notify.addApiError(carrierInfo);
             ibuki.emit('app-error:any', handler.frameError(
                 err, 'api', 'info', 5));
@@ -61,6 +61,7 @@ api.axiosGet = (carrierInfo) => {
         })
         .catch(err => {
             //log in database
+            notify.pushError(err);
             notify.addApiError(carrierInfo);
             ibuki.emit('app-error:any', handler.frameError(
                 err, 'api', 'info', 6));
