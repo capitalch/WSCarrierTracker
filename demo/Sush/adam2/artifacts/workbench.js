@@ -133,13 +133,14 @@ handler.sub10 = ibuki.filterOn('adjust-piston:self').subscribe(
         const carrierName = d.data;
         const queueSettings = settings.carriers[carrierName].queue;
         const myInterval = rx.interval(500);
-        handler.sub11 = myInterval.subscribe((x) => {
+        handler.sub11 = myInterval.subscribe(() => {
             const queue = notify.getQueue(carrierName);
             if (queue > queueSettings) { //increase piston to reduce queue
                 notify.varyPiston(carrierName, 5);
             } else {
                 notify.varyPiston(carrierName, -5);
             }
+            // handler.sub11.unsubscribe();
         });
     }
 )

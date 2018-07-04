@@ -36,7 +36,7 @@ api.getGsoTokenPromises = (info) => {
     return (Q.allSettled(promises)); //Even if error is encountered in a promise still other promises are handled
 }
 
-handler.sub14 = ibuki.filterOn('axios-post:fex>api').subscribe(d => {
+handler.sub13 = ibuki.filterOn('axios-post:fex>api').subscribe(d => {
     api.axiosPost(d.data);
 })
 

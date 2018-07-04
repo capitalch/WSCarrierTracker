@@ -30,21 +30,23 @@ handler.closeIfIdle = () => {
         verbose && notify.showAllStatus();
         isIdle() && (
             notify.setTime('end')
-            // , ibuki.emit('db-log:handler>db')
-            , cleanup(0)
+            , ibuki.emit('db-log:handler>db')
             , handler.sub6.unsubscribe()
+            // , cleanup(0)
         );
     });
 }
 
 const subs = ibuki.filterOn('cleanup:db>handler').subscribe(() => {
     subs.unsubscribe();
-    cleanup(0);
+    ibuki.emit('send-status-mail:handler>email');
+    // cleanup(0);
 });
 
 const subs1 = ibuki.filterOn('mail-processed:email>handler').subscribe(()=>{    
     subs1.unsubscribe();
-    process.exit(0);
+    cleanup(0);
+    // process.exit(0);
 });
 
 function cleanup(code) {
@@ -64,8 +66,10 @@ function cleanup(code) {
     handler.sub10 && handler.sub10.unsubscribe();
     handler.sub11 && handler.sub11.unsubscribe();
     handler.sub12 && handler.sub12.unsubscribe();
-    handler.pool && handler.pool.close();
-    ibuki.emit('send-status-mail:handler>email');
+    handler.sub13 && handler.sub13.unsubscribe();
+    handler.sub14 && handler.sub14.unsubscribe();
+    handler.pool && handler.pool.close();    
+    process.exit(code);
 }
 
 handler.frameError = (error, location, severity, index) => {
@@ -91,7 +95,7 @@ handler.domainError.on('error', function (err) {
     //use telemetry to log error
 });
 
-ibuki.filterOn('app-error:any').subscribe(d => {
+handler.sub14 = ibuki.filterOn('app-error:any').subscribe(d => {
     const err = d.data;
     if (err.severity === 'fatal') {
         console.log(err.stack);

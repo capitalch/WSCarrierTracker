@@ -144,3 +144,1175 @@
 {"message":"gso ApiRequests:7 ApiResponses:6 ApiErrors:0 ApiQueue:1 Piston:0 DbRequests:9 DbResponses:9 DbErrors:0 DbQueue:0","level":"info"}
 {"message":"fex ApiRequests:3 ApiResponses:3 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:10 DbResponses:10 DbErrors:0 DbQueue:0","level":"info"}
 {"message":"gso ApiRequests:7 ApiResponses:7 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:10 DbResponses:10 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"fex ApiRequests:3 ApiResponses:0 ApiErrors:0 ApiQueue:3 Piston:0 DbRequests:0 DbResponses:0 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"gso ApiRequests:7 ApiResponses:0 ApiErrors:0 ApiQueue:7 Piston:10 DbRequests:0 DbResponses:0 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"fex ApiRequests:3 ApiResponses:3 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:9 DbResponses:9 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"gso ApiRequests:7 ApiResponses:6 ApiErrors:0 ApiQueue:1 Piston:0 DbRequests:9 DbResponses:9 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"fex ApiRequests:3 ApiResponses:3 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:10 DbResponses:10 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"gso ApiRequests:7 ApiResponses:7 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:10 DbResponses:10 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"fex ApiRequests:3 ApiResponses:0 ApiErrors:0 ApiQueue:3 Piston:0 DbRequests:0 DbResponses:0 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"gso ApiRequests:7 ApiResponses:0 ApiErrors:0 ApiQueue:7 Piston:5 DbRequests:0 DbResponses:0 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"fex ApiRequests:3 ApiResponses:3 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:10 DbResponses:10 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"gso ApiRequests:7 ApiResponses:7 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:10 DbResponses:10 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"fex ApiRequests:3 ApiResponses:1 ApiErrors:0 ApiQueue:2 Piston:0 DbRequests:1 DbResponses:0 DbErrors:0 DbQueue:1","level":"info"}
+{"message":"gso ApiRequests:7 ApiResponses:0 ApiErrors:0 ApiQueue:7 Piston:5 DbRequests:1 DbResponses:0 DbErrors:0 DbQueue:1","level":"info"}
+{"message":"fex ApiRequests:3 ApiResponses:3 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:10 DbResponses:10 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"gso ApiRequests:7 ApiResponses:7 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:10 DbResponses:10 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"fex ApiRequests:3 ApiResponses:0 ApiErrors:0 ApiQueue:3 Piston:10 DbRequests:0 DbResponses:0 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"gso ApiRequests:7 ApiResponses:0 ApiErrors:0 ApiQueue:7 Piston:10 DbRequests:0 DbResponses:0 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"fex ApiRequests:3 ApiResponses:3 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:10 DbResponses:10 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"gso ApiRequests:7 ApiResponses:7 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:10 DbResponses:10 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"fex ApiRequests:3 ApiResponses:3 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:3 DbResponses:0 DbErrors:0 DbQueue:3","level":"info"}
+{"message":"gso ApiRequests:7 ApiResponses:0 ApiErrors:0 ApiQueue:7 Piston:5 DbRequests:3 DbResponses:0 DbErrors:0 DbQueue:3","level":"info"}
+{"message":"fex ApiRequests:3 ApiResponses:3 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:10 DbResponses:10 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"gso ApiRequests:7 ApiResponses:7 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:10 DbResponses:10 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"fex ApiRequests:3 ApiResponses:0 ApiErrors:0 ApiQueue:3 Piston:10 DbRequests:0 DbResponses:0 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"gso ApiRequests:7 ApiResponses:0 ApiErrors:0 ApiQueue:7 Piston:10 DbRequests:0 DbResponses:0 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"fex ApiRequests:3 ApiResponses:3 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:10 DbResponses:10 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"gso ApiRequests:7 ApiResponses:7 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:10 DbResponses:10 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"fex ApiRequests:3 ApiResponses:2 ApiErrors:0 ApiQueue:1 Piston:5 DbRequests:2 DbResponses:0 DbErrors:0 DbQueue:2","level":"info"}
+{"message":"gso ApiRequests:7 ApiResponses:0 ApiErrors:0 ApiQueue:7 Piston:5 DbRequests:2 DbResponses:0 DbErrors:0 DbQueue:2","level":"info"}
+{"message":"fex ApiRequests:3 ApiResponses:3 ApiErrors:0 ApiQueue:0 Piston:5 DbRequests:10 DbResponses:10 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"gso ApiRequests:7 ApiResponses:7 ApiErrors:0 ApiQueue:0 Piston:5 DbRequests:10 DbResponses:10 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"fex ApiRequests:3 ApiResponses:1 ApiErrors:0 ApiQueue:2 Piston:0 DbRequests:1 DbResponses:0 DbErrors:0 DbQueue:1","level":"info"}
+{"message":"gso ApiRequests:0 ApiResponses:0 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:1 DbResponses:0 DbErrors:0 DbQueue:1","level":"info"}
+{"message":"fex ApiRequests:3 ApiResponses:3 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:8 DbResponses:8 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"gso ApiRequests:7 ApiResponses:5 ApiErrors:0 ApiQueue:2 Piston:0 DbRequests:8 DbResponses:8 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"fex ApiRequests:3 ApiResponses:3 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:10 DbResponses:10 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"gso ApiRequests:7 ApiResponses:7 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:10 DbResponses:10 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"fex ApiRequests:12 ApiResponses:12 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:30 DbResponses:0 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:29 ApiResponses:28 ApiErrors:0 ApiQueue:1 Piston:10 DbRequests:30 DbResponses:0 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:10 ApiResponses:0 ApiErrors:0 ApiQueue:10 Piston:10 DbRequests:30 DbResponses:0 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:12 ApiResponses:12 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:100 DbResponses:90 DbErrors:0 DbQueue:10","level":"info"}
+{"message":"ups ApiRequests:29 ApiResponses:29 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:100 DbResponses:90 DbErrors:0 DbQueue:10","level":"info"}
+{"message":"gso ApiRequests:132 ApiResponses:59 ApiErrors:0 ApiQueue:73 Piston:10 DbRequests:100 DbResponses:90 DbErrors:0 DbQueue:10","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112449","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112415","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112370","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112347","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112343","level":"info"}
+{"message":"fex ApiRequests:12 ApiResponses:12 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:217 DbResponses:210 DbErrors:0 DbQueue:7","level":"info"}
+{"message":"ups ApiRequests:29 ApiResponses:29 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:217 DbResponses:210 DbErrors:0 DbQueue:7","level":"info"}
+{"message":"gso ApiRequests:257 ApiResponses:176 ApiErrors:5 ApiQueue:76 Piston:10 DbRequests:217 DbResponses:210 DbErrors:0 DbQueue:7","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112588","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112598","level":"info"}
+{"message":"fex ApiRequests:12 ApiResponses:12 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:339 DbResponses:331 DbErrors:0 DbQueue:8","level":"info"}
+{"message":"ups ApiRequests:29 ApiResponses:29 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:339 DbResponses:331 DbErrors:0 DbQueue:8","level":"info"}
+{"message":"gso ApiRequests:381 ApiResponses:298 ApiErrors:7 ApiQueue:76 Piston:10 DbRequests:339 DbResponses:331 DbErrors:0 DbQueue:8","level":"info"}
+{"message":"fex ApiRequests:12 ApiResponses:12 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:452 DbResponses:446 DbErrors:0 DbQueue:6","level":"info"}
+{"message":"ups ApiRequests:29 ApiResponses:29 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:452 DbResponses:446 DbErrors:0 DbQueue:6","level":"info"}
+{"message":"gso ApiRequests:502 ApiResponses:411 ApiErrors:7 ApiQueue:84 Piston:10 DbRequests:452 DbResponses:446 DbErrors:0 DbQueue:6","level":"info"}
+{"message":"fex ApiRequests:12 ApiResponses:12 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:581 DbResponses:577 DbErrors:0 DbQueue:4","level":"info"}
+{"message":"ups ApiRequests:29 ApiResponses:29 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:581 DbResponses:577 DbErrors:0 DbQueue:4","level":"info"}
+{"message":"gso ApiRequests:630 ApiResponses:540 ApiErrors:7 ApiQueue:83 Piston:10 DbRequests:581 DbResponses:577 DbErrors:0 DbQueue:4","level":"info"}
+{"message":"fex ApiRequests:12 ApiResponses:12 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:702 DbResponses:701 DbErrors:0 DbQueue:1","level":"info"}
+{"message":"ups ApiRequests:29 ApiResponses:29 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:702 DbResponses:701 DbErrors:0 DbQueue:1","level":"info"}
+{"message":"gso ApiRequests:752 ApiResponses:661 ApiErrors:7 ApiQueue:84 Piston:10 DbRequests:702 DbResponses:701 DbErrors:0 DbQueue:1","level":"info"}
+{"message":"fex ApiRequests:12 ApiResponses:12 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:829 DbResponses:823 DbErrors:0 DbQueue:6","level":"info"}
+{"message":"ups ApiRequests:29 ApiResponses:29 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:829 DbResponses:823 DbErrors:0 DbQueue:6","level":"info"}
+{"message":"gso ApiRequests:874 ApiResponses:788 ApiErrors:7 ApiQueue:79 Piston:10 DbRequests:829 DbResponses:823 DbErrors:0 DbQueue:6","level":"info"}
+{"message":"fex ApiRequests:12 ApiResponses:12 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:948 DbResponses:944 DbErrors:0 DbQueue:4","level":"info"}
+{"message":"ups ApiRequests:29 ApiResponses:29 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:948 DbResponses:944 DbErrors:0 DbQueue:4","level":"info"}
+{"message":"gso ApiRequests:959 ApiResponses:907 ApiErrors:7 ApiQueue:45 Piston:10 DbRequests:948 DbResponses:944 DbErrors:0 DbQueue:4","level":"info"}
+{"message":"fex ApiRequests:12 ApiResponses:12 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:992 DbResponses:991 DbErrors:0 DbQueue:1","level":"info"}
+{"message":"ups ApiRequests:29 ApiResponses:29 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:992 DbResponses:991 DbErrors:0 DbQueue:1","level":"info"}
+{"message":"gso ApiRequests:959 ApiResponses:951 ApiErrors:7 ApiQueue:1 Piston:10 DbRequests:992 DbResponses:991 DbErrors:0 DbQueue:1","level":"info"}
+{"message":"fex ApiRequests:12 ApiResponses:12 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:993 DbResponses:993 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"ups ApiRequests:29 ApiResponses:29 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:993 DbResponses:993 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"gso ApiRequests:959 ApiResponses:952 ApiErrors:7 ApiQueue:0 Piston:10 DbRequests:993 DbResponses:993 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"fex ApiRequests:12 ApiResponses:2 ApiErrors:0 ApiQueue:10 Piston:10 DbRequests:29 DbResponses:0 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"ups ApiRequests:29 ApiResponses:27 ApiErrors:0 ApiQueue:2 Piston:10 DbRequests:29 DbResponses:0 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"gso ApiRequests:26 ApiResponses:0 ApiErrors:0 ApiQueue:26 Piston:10 DbRequests:29 DbResponses:0 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112449","level":"info"}
+{"message":"fex ApiRequests:12 ApiResponses:12 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:110 DbResponses:105 DbErrors:0 DbQueue:5","level":"info"}
+{"message":"ups ApiRequests:29 ApiResponses:29 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:110 DbResponses:105 DbErrors:0 DbQueue:5","level":"info"}
+{"message":"gso ApiRequests:152 ApiResponses:69 ApiErrors:1 ApiQueue:82 Piston:10 DbRequests:110 DbResponses:105 DbErrors:0 DbQueue:5","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112415","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112370","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112347","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112343","level":"info"}
+{"message":"fex ApiRequests:12 ApiResponses:12 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:232 DbResponses:227 DbErrors:0 DbQueue:5","level":"info"}
+{"message":"ups ApiRequests:29 ApiResponses:29 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:232 DbResponses:227 DbErrors:0 DbQueue:5","level":"info"}
+{"message":"gso ApiRequests:274 ApiResponses:191 ApiErrors:5 ApiQueue:78 Piston:10 DbRequests:232 DbResponses:227 DbErrors:0 DbQueue:5","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112588","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112598","level":"info"}
+{"message":"fex ApiRequests:12 ApiResponses:12 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:360 DbResponses:352 DbErrors:0 DbQueue:8","level":"info"}
+{"message":"ups ApiRequests:29 ApiResponses:29 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:360 DbResponses:352 DbErrors:0 DbQueue:8","level":"info"}
+{"message":"gso ApiRequests:398 ApiResponses:319 ApiErrors:7 ApiQueue:72 Piston:10 DbRequests:360 DbResponses:352 DbErrors:0 DbQueue:8","level":"info"}
+{"message":"fex ApiRequests:12 ApiResponses:12 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:477 DbResponses:470 DbErrors:0 DbQueue:7","level":"info"}
+{"message":"ups ApiRequests:29 ApiResponses:29 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:477 DbResponses:470 DbErrors:0 DbQueue:7","level":"info"}
+{"message":"gso ApiRequests:521 ApiResponses:436 ApiErrors:7 ApiQueue:78 Piston:10 DbRequests:477 DbResponses:470 DbErrors:0 DbQueue:7","level":"info"}
+{"message":"fex ApiRequests:12 ApiResponses:12 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:610 DbResponses:594 DbErrors:0 DbQueue:16","level":"info"}
+{"message":"ups ApiRequests:29 ApiResponses:29 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:610 DbResponses:594 DbErrors:0 DbQueue:16","level":"info"}
+{"message":"gso ApiRequests:647 ApiResponses:569 ApiErrors:7 ApiQueue:71 Piston:10 DbRequests:610 DbResponses:594 DbErrors:0 DbQueue:16","level":"info"}
+{"message":"fex ApiRequests:12 ApiResponses:12 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:732 DbResponses:723 DbErrors:0 DbQueue:9","level":"info"}
+{"message":"ups ApiRequests:29 ApiResponses:29 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:732 DbResponses:723 DbErrors:0 DbQueue:9","level":"info"}
+{"message":"gso ApiRequests:771 ApiResponses:691 ApiErrors:7 ApiQueue:73 Piston:10 DbRequests:732 DbResponses:723 DbErrors:0 DbQueue:9","level":"info"}
+{"message":"fex ApiRequests:12 ApiResponses:12 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:849 DbResponses:841 DbErrors:0 DbQueue:8","level":"info"}
+{"message":"ups ApiRequests:29 ApiResponses:29 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:849 DbResponses:841 DbErrors:0 DbQueue:8","level":"info"}
+{"message":"gso ApiRequests:899 ApiResponses:808 ApiErrors:7 ApiQueue:84 Piston:10 DbRequests:849 DbResponses:841 DbErrors:0 DbQueue:8","level":"info"}
+{"message":"fex ApiRequests:12 ApiResponses:12 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:957 DbResponses:927 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:29 ApiResponses:29 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:957 DbResponses:927 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:959 ApiResponses:942 ApiErrors:7 ApiQueue:10 Piston:10 DbRequests:957 DbResponses:927 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:12 ApiResponses:12 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:993 DbResponses:993 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"ups ApiRequests:29 ApiResponses:29 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:993 DbResponses:993 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"gso ApiRequests:959 ApiResponses:952 ApiErrors:7 ApiQueue:0 Piston:10 DbRequests:993 DbResponses:993 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"fex ApiRequests:121 ApiResponses:1 ApiErrors:0 ApiQueue:120 Piston:10 DbRequests:25 DbResponses:0 DbErrors:0 DbQueue:25","level":"info"}
+{"message":"ups ApiRequests:121 ApiResponses:24 ApiErrors:0 ApiQueue:97 Piston:10 DbRequests:25 DbResponses:0 DbErrors:0 DbQueue:25","level":"info"}
+{"message":"gso ApiRequests:0 ApiResponses:0 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:25 DbResponses:0 DbErrors:0 DbQueue:25","level":"info"}
+{"message":"fex ApiRequests:191 ApiResponses:126 ApiErrors:0 ApiQueue:65 Piston:10 DbRequests:138 DbResponses:108 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:191 ApiResponses:126 ApiErrors:0 ApiQueue:65 Piston:10 DbRequests:138 DbResponses:108 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:53 ApiResponses:0 ApiErrors:0 ApiQueue:53 Piston:10 DbRequests:138 DbResponses:108 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112449","level":"info"}
+{"message":"fex ApiRequests:279 ApiResponses:232 ApiErrors:0 ApiQueue:47 Piston:10 DbRequests:304 DbResponses:274 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:279 ApiResponses:221 ApiErrors:0 ApiQueue:58 Piston:10 DbRequests:304 DbResponses:274 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:141 ApiResponses:80 ApiErrors:1 ApiQueue:60 Piston:10 DbRequests:304 DbResponses:274 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112415","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112370","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112347","level":"info"}
+{"message":"fex ApiRequests:371 ApiResponses:320 ApiErrors:0 ApiQueue:51 Piston:10 DbRequests:490 DbResponses:460 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:371 ApiResponses:303 ApiErrors:0 ApiQueue:68 Piston:10 DbRequests:490 DbResponses:460 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:233 ApiResponses:174 ApiErrors:4 ApiQueue:55 Piston:10 DbRequests:490 DbResponses:460 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112343","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112588","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112598","level":"info"}
+{"message":"fex ApiRequests:467 ApiResponses:403 ApiErrors:0 ApiQueue:64 Piston:10 DbRequests:661 DbResponses:631 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:467 ApiResponses:392 ApiErrors:0 ApiQueue:75 Piston:10 DbRequests:661 DbResponses:631 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:329 ApiResponses:248 ApiErrors:7 ApiQueue:74 Piston:10 DbRequests:661 DbResponses:631 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:566 ApiResponses:494 ApiErrors:0 ApiQueue:72 Piston:10 DbRequests:837 DbResponses:807 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:566 ApiResponses:482 ApiErrors:0 ApiQueue:84 Piston:10 DbRequests:837 DbResponses:807 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:427 ApiResponses:343 ApiErrors:7 ApiQueue:77 Piston:10 DbRequests:837 DbResponses:807 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:657 ApiResponses:590 ApiErrors:0 ApiQueue:67 Piston:10 DbRequests:1020 DbResponses:990 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:657 ApiResponses:585 ApiErrors:0 ApiQueue:72 Piston:10 DbRequests:1020 DbResponses:990 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:518 ApiResponses:437 ApiErrors:7 ApiQueue:74 Piston:10 DbRequests:1020 DbResponses:990 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:754 ApiResponses:688 ApiErrors:0 ApiQueue:66 Piston:10 DbRequests:1174 DbResponses:1144 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:754 ApiResponses:688 ApiErrors:0 ApiQueue:66 Piston:10 DbRequests:1174 DbResponses:1144 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:616 ApiResponses:531 ApiErrors:7 ApiQueue:78 Piston:10 DbRequests:1174 DbResponses:1144 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:858 ApiResponses:785 ApiErrors:0 ApiQueue:73 Piston:10 DbRequests:1346 DbResponses:1316 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:857 ApiResponses:783 ApiErrors:0 ApiQueue:74 Piston:10 DbRequests:1346 DbResponses:1316 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:720 ApiResponses:634 ApiErrors:7 ApiQueue:79 Piston:10 DbRequests:1346 DbResponses:1316 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:950 ApiResponses:888 ApiErrors:0 ApiQueue:62 Piston:10 DbRequests:1511 DbResponses:1481 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:949 ApiResponses:883 ApiErrors:0 ApiQueue:66 Piston:10 DbRequests:1511 DbResponses:1481 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:812 ApiResponses:740 ApiErrors:7 ApiQueue:65 Piston:10 DbRequests:1511 DbResponses:1481 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1057 ApiResponses:992 ApiErrors:0 ApiQueue:65 Piston:10 DbRequests:1671 DbResponses:1641 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:1056 ApiResponses:979 ApiErrors:0 ApiQueue:77 Piston:10 DbRequests:1671 DbResponses:1641 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:918 ApiResponses:830 ApiErrors:7 ApiQueue:81 Piston:10 DbRequests:1671 DbResponses:1641 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1151 ApiResponses:1086 ApiErrors:0 ApiQueue:65 Piston:10 DbRequests:1835 DbResponses:1805 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:1150 ApiResponses:1076 ApiErrors:0 ApiQueue:74 Piston:10 DbRequests:1835 DbResponses:1805 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:1012 ApiResponses:930 ApiErrors:7 ApiQueue:75 Piston:10 DbRequests:1835 DbResponses:1805 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1238 ApiResponses:1178 ApiErrors:0 ApiQueue:60 Piston:10 DbRequests:2000 DbResponses:1970 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:1237 ApiResponses:1177 ApiErrors:0 ApiQueue:60 Piston:10 DbRequests:2000 DbResponses:1970 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:1099 ApiResponses:1027 ApiErrors:7 ApiQueue:65 Piston:10 DbRequests:2000 DbResponses:1970 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1328 ApiResponses:1271 ApiErrors:0 ApiQueue:57 Piston:10 DbRequests:2169 DbResponses:2139 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:1329 ApiResponses:1268 ApiErrors:0 ApiQueue:61 Piston:10 DbRequests:2169 DbResponses:2139 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:1190 ApiResponses:1129 ApiErrors:7 ApiQueue:54 Piston:10 DbRequests:2169 DbResponses:2139 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1424 ApiResponses:1370 ApiErrors:0 ApiQueue:54 Piston:10 DbRequests:2321 DbResponses:2292 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"ups ApiRequests:1425 ApiResponses:1364 ApiErrors:0 ApiQueue:61 Piston:10 DbRequests:2321 DbResponses:2292 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"gso ApiRequests:1285 ApiResponses:1216 ApiErrors:7 ApiQueue:62 Piston:10 DbRequests:2321 DbResponses:2292 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1438 ApiErrors:0 ApiQueue:52 Piston:10 DbRequests:2496 DbResponses:2466 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:1529 ApiResponses:1455 ApiErrors:0 ApiQueue:74 Piston:10 DbRequests:2496 DbResponses:2466 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:1389 ApiResponses:1315 ApiErrors:7 ApiQueue:67 Piston:10 DbRequests:2496 DbResponses:2466 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:2662 DbResponses:2632 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:1637 ApiResponses:1561 ApiErrors:0 ApiQueue:76 Piston:10 DbRequests:2662 DbResponses:2632 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:1498 ApiResponses:1412 ApiErrors:7 ApiQueue:79 Piston:10 DbRequests:2662 DbResponses:2632 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:2821 DbResponses:2791 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:1761 ApiResponses:1687 ApiErrors:0 ApiQueue:74 Piston:10 DbRequests:2821 DbResponses:2791 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:1621 ApiResponses:1521 ApiErrors:7 ApiQueue:93 Piston:10 DbRequests:2821 DbResponses:2791 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:2988 DbResponses:2959 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"ups ApiRequests:1880 ApiResponses:1805 ApiErrors:0 ApiQueue:75 Piston:10 DbRequests:2988 DbResponses:2959 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"gso ApiRequests:1741 ApiResponses:1656 ApiErrors:7 ApiQueue:78 Piston:10 DbRequests:2988 DbResponses:2959 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:3151 DbResponses:3121 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:2002 ApiResponses:1927 ApiErrors:0 ApiQueue:75 Piston:10 DbRequests:3151 DbResponses:3121 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:1862 ApiResponses:1760 ApiErrors:7 ApiQueue:95 Piston:10 DbRequests:3151 DbResponses:3121 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:3306 DbResponses:3276 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:2120 ApiResponses:2049 ApiErrors:0 ApiQueue:71 Piston:10 DbRequests:3306 DbResponses:3276 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:1978 ApiResponses:1892 ApiErrors:7 ApiQueue:79 Piston:10 DbRequests:3306 DbResponses:3276 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:3480 DbResponses:3450 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:2232 ApiResponses:2151 ApiErrors:0 ApiQueue:81 Piston:10 DbRequests:3480 DbResponses:3450 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2090 ApiResponses:1992 ApiErrors:7 ApiQueue:91 Piston:10 DbRequests:3480 DbResponses:3450 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:3639 DbResponses:3609 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:2334 ApiResponses:2260 ApiErrors:0 ApiQueue:74 Piston:10 DbRequests:3639 DbResponses:3609 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2192 ApiResponses:2099 ApiErrors:7 ApiQueue:86 Piston:10 DbRequests:3639 DbResponses:3609 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111115093","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:3809 DbResponses:3779 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:2449 ApiResponses:2377 ApiErrors:0 ApiQueue:72 Piston:10 DbRequests:3809 DbResponses:3779 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2308 ApiResponses:2212 ApiErrors:8 ApiQueue:88 Piston:10 DbRequests:3809 DbResponses:3779 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:3968 DbResponses:3938 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:2567 ApiResponses:2493 ApiErrors:0 ApiQueue:74 Piston:10 DbRequests:3968 DbResponses:3938 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2426 ApiResponses:2330 ApiErrors:8 ApiQueue:88 Piston:10 DbRequests:3968 DbResponses:3938 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:4108 DbResponses:4078 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:2673 ApiResponses:2612 ApiErrors:0 ApiQueue:61 Piston:10 DbRequests:4108 DbResponses:4078 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2531 ApiResponses:2454 ApiErrors:8 ApiQueue:69 Piston:10 DbRequests:4108 DbResponses:4078 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:4294 DbResponses:4264 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:2784 ApiResponses:2713 ApiErrors:0 ApiQueue:71 Piston:10 DbRequests:4294 DbResponses:4264 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2643 ApiResponses:2555 ApiErrors:8 ApiQueue:80 Piston:10 DbRequests:4294 DbResponses:4264 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:4465 DbResponses:4435 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:2894 ApiResponses:2818 ApiErrors:0 ApiQueue:76 Piston:10 DbRequests:4465 DbResponses:4435 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2754 ApiResponses:2662 ApiErrors:8 ApiQueue:84 Piston:10 DbRequests:4465 DbResponses:4435 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:4625 DbResponses:4595 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:3011 ApiResponses:2939 ApiErrors:0 ApiQueue:72 Piston:10 DbRequests:4625 DbResponses:4595 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2872 ApiResponses:2777 ApiErrors:8 ApiQueue:87 Piston:10 DbRequests:4625 DbResponses:4595 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111115795","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111115885","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111115904","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:4786 DbResponses:4756 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:3132 ApiResponses:3053 ApiErrors:0 ApiQueue:79 Piston:10 DbRequests:4786 DbResponses:4756 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2890 ApiErrors:11 ApiQueue:51 Piston:10 DbRequests:4786 DbResponses:4756 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:4955 DbResponses:4925 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:3257 ApiResponses:3177 ApiErrors:0 ApiQueue:80 Piston:10 DbRequests:4955 DbResponses:4925 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2938 ApiErrors:11 ApiQueue:3 Piston:10 DbRequests:4955 DbResponses:4925 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:5116 DbResponses:5087 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"ups ApiRequests:3382 ApiResponses:3301 ApiErrors:0 ApiQueue:81 Piston:10 DbRequests:5116 DbResponses:5087 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:5116 DbResponses:5087 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:5288 DbResponses:5258 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:3519 ApiResponses:3435 ApiErrors:0 ApiQueue:84 Piston:10 DbRequests:5288 DbResponses:5258 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:5288 DbResponses:5258 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:5443 DbResponses:5413 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:3644 ApiResponses:3568 ApiErrors:0 ApiQueue:76 Piston:10 DbRequests:5443 DbResponses:5413 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:5443 DbResponses:5413 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:5608 DbResponses:5578 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:3767 ApiResponses:3685 ApiErrors:0 ApiQueue:82 Piston:10 DbRequests:5608 DbResponses:5578 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:5608 DbResponses:5578 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:5774 DbResponses:5745 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"ups ApiRequests:3888 ApiResponses:3807 ApiErrors:0 ApiQueue:81 Piston:10 DbRequests:5774 DbResponses:5745 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:5774 DbResponses:5745 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:5938 DbResponses:5908 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:4009 ApiResponses:3928 ApiErrors:0 ApiQueue:81 Piston:10 DbRequests:5938 DbResponses:5908 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:5938 DbResponses:5908 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:6102 DbResponses:6072 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:4126 ApiResponses:4051 ApiErrors:0 ApiQueue:75 Piston:10 DbRequests:6102 DbResponses:6072 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:6102 DbResponses:6072 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:6264 DbResponses:6234 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:4242 ApiResponses:4165 ApiErrors:0 ApiQueue:77 Piston:10 DbRequests:6264 DbResponses:6234 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:6264 DbResponses:6234 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:6422 DbResponses:6396 DbErrors:0 DbQueue:26","level":"info"}
+{"message":"ups ApiRequests:4358 ApiResponses:4291 ApiErrors:0 ApiQueue:67 Piston:10 DbRequests:6422 DbResponses:6396 DbErrors:0 DbQueue:26","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:6422 DbResponses:6396 DbErrors:0 DbQueue:26","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:6595 DbResponses:6566 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"ups ApiRequests:4478 ApiResponses:4397 ApiErrors:0 ApiQueue:81 Piston:10 DbRequests:6595 DbResponses:6566 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:6595 DbResponses:6566 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:6761 DbResponses:6731 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:4599 ApiResponses:4528 ApiErrors:0 ApiQueue:71 Piston:10 DbRequests:6761 DbResponses:6731 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:6761 DbResponses:6731 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:6919 DbResponses:6890 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"ups ApiRequests:4734 ApiResponses:4642 ApiErrors:0 ApiQueue:92 Piston:10 DbRequests:6919 DbResponses:6890 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:6919 DbResponses:6890 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:7073 DbResponses:7046 DbErrors:0 DbQueue:27","level":"info"}
+{"message":"ups ApiRequests:4864 ApiResponses:4784 ApiErrors:0 ApiQueue:80 Piston:10 DbRequests:7073 DbResponses:7046 DbErrors:0 DbQueue:27","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:7073 DbResponses:7046 DbErrors:0 DbQueue:27","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:7251 DbResponses:7221 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:4997 ApiResponses:4907 ApiErrors:0 ApiQueue:90 Piston:10 DbRequests:7251 DbResponses:7221 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:7251 DbResponses:7221 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:7415 DbResponses:7385 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:5138 ApiResponses:5047 ApiErrors:0 ApiQueue:91 Piston:10 DbRequests:7415 DbResponses:7385 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:7415 DbResponses:7385 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:7579 DbResponses:7549 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:5296 ApiResponses:5186 ApiErrors:0 ApiQueue:110 Piston:10 DbRequests:7579 DbResponses:7549 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:7579 DbResponses:7549 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:7727 DbResponses:7697 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:5418 ApiResponses:5341 ApiErrors:0 ApiQueue:77 Piston:10 DbRequests:7727 DbResponses:7697 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:7727 DbResponses:7697 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:7906 DbResponses:7876 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:5543 ApiResponses:5460 ApiErrors:0 ApiQueue:83 Piston:10 DbRequests:7906 DbResponses:7876 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:7906 DbResponses:7876 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:8068 DbResponses:8038 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:5558 ApiResponses:5557 ApiErrors:0 ApiQueue:1 Piston:10 DbRequests:8068 DbResponses:8038 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:8068 DbResponses:8038 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:8237 DbResponses:8207 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:5558 ApiResponses:5558 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:8237 DbResponses:8207 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:8237 DbResponses:8207 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:8395 DbResponses:8366 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"ups ApiRequests:5558 ApiResponses:5558 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:8395 DbResponses:8366 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:8395 DbResponses:8366 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:8547 DbResponses:8517 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:5558 ApiResponses:5558 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:8547 DbResponses:8517 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:8547 DbResponses:8517 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:8699 DbResponses:8669 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:5558 ApiResponses:5558 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:8699 DbResponses:8669 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:8699 DbResponses:8669 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:8833 DbResponses:8804 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"ups ApiRequests:5558 ApiResponses:5558 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:8833 DbResponses:8804 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:8833 DbResponses:8804 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:8960 DbResponses:8932 DbErrors:0 DbQueue:28","level":"info"}
+{"message":"ups ApiRequests:5558 ApiResponses:5558 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:8960 DbResponses:8932 DbErrors:0 DbQueue:28","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:8960 DbResponses:8932 DbErrors:0 DbQueue:28","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:9089 DbResponses:9060 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"ups ApiRequests:5558 ApiResponses:5558 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:9089 DbResponses:9060 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:9089 DbResponses:9060 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:9192 DbResponses:9162 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:5558 ApiResponses:5558 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:9192 DbResponses:9162 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:9192 DbResponses:9162 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:9293 DbResponses:9263 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:5558 ApiResponses:5558 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:9293 DbResponses:9263 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:9293 DbResponses:9263 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:9371 DbResponses:9359 DbErrors:0 DbQueue:12","level":"info"}
+{"message":"ups ApiRequests:5558 ApiResponses:5558 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:9371 DbResponses:9359 DbErrors:0 DbQueue:12","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:9371 DbResponses:9359 DbErrors:0 DbQueue:12","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:9467 DbResponses:9447 DbErrors:0 DbQueue:20","level":"info"}
+{"message":"ups ApiRequests:5558 ApiResponses:5558 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:9467 DbResponses:9447 DbErrors:0 DbQueue:20","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:9467 DbResponses:9447 DbErrors:0 DbQueue:20","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:9534 DbResponses:9508 DbErrors:0 DbQueue:26","level":"info"}
+{"message":"ups ApiRequests:5558 ApiResponses:5558 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:9534 DbResponses:9508 DbErrors:0 DbQueue:26","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:9534 DbResponses:9508 DbErrors:0 DbQueue:26","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:9594 DbResponses:9574 DbErrors:0 DbQueue:20","level":"info"}
+{"message":"ups ApiRequests:5558 ApiResponses:5558 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:9594 DbResponses:9574 DbErrors:0 DbQueue:20","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:9594 DbResponses:9574 DbErrors:0 DbQueue:20","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:9654 DbResponses:9624 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:5558 ApiResponses:5558 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:9654 DbResponses:9624 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:9654 DbResponses:9624 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:9714 DbResponses:9684 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:5558 ApiResponses:5558 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:9714 DbResponses:9684 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:9714 DbResponses:9684 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:9774 DbResponses:9744 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:5558 ApiResponses:5558 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:9774 DbResponses:9744 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:9774 DbResponses:9744 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:9804 DbResponses:9804 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"ups ApiRequests:5558 ApiResponses:5558 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:9804 DbResponses:9804 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:9804 DbResponses:9804 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"fex ApiRequests:118 ApiResponses:8 ApiErrors:0 ApiQueue:110 Piston:10 DbRequests:30 DbResponses:0 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:119 ApiResponses:32 ApiErrors:0 ApiQueue:87 Piston:10 DbRequests:30 DbResponses:0 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:22 ApiResponses:0 ApiErrors:0 ApiQueue:22 Piston:10 DbRequests:30 DbResponses:0 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:201 ApiResponses:126 ApiErrors:0 ApiQueue:75 Piston:10 DbRequests:201 DbResponses:174 DbErrors:0 DbQueue:27","level":"info"}
+{"message":"ups ApiRequests:202 ApiResponses:128 ApiErrors:0 ApiQueue:74 Piston:10 DbRequests:201 DbResponses:174 DbErrors:0 DbQueue:27","level":"info"}
+{"message":"gso ApiRequests:105 ApiResponses:28 ApiErrors:0 ApiQueue:77 Piston:10 DbRequests:201 DbResponses:174 DbErrors:0 DbQueue:27","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112449","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112415","level":"info"}
+{"message":"fex ApiRequests:296 ApiResponses:238 ApiErrors:0 ApiQueue:58 Piston:10 DbRequests:385 DbResponses:355 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:297 ApiResponses:233 ApiErrors:0 ApiQueue:64 Piston:10 DbRequests:385 DbResponses:355 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:201 ApiResponses:130 ApiErrors:2 ApiQueue:69 Piston:10 DbRequests:385 DbResponses:355 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112370","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112347","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112343","level":"info"}
+{"message":"fex ApiRequests:365 ApiResponses:310 ApiErrors:0 ApiQueue:55 Piston:10 DbRequests:551 DbResponses:522 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"ups ApiRequests:367 ApiResponses:308 ApiErrors:0 ApiQueue:59 Piston:10 DbRequests:551 DbResponses:522 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"gso ApiRequests:271 ApiResponses:199 ApiErrors:5 ApiQueue:67 Piston:10 DbRequests:551 DbResponses:522 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112588","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112598","level":"info"}
+{"message":"fex ApiRequests:476 ApiResponses:407 ApiErrors:0 ApiQueue:69 Piston:10 DbRequests:716 DbResponses:686 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:476 ApiResponses:404 ApiErrors:0 ApiQueue:72 Piston:10 DbRequests:716 DbResponses:686 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:381 ApiResponses:280 ApiErrors:7 ApiQueue:94 Piston:10 DbRequests:716 DbResponses:686 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:581 ApiResponses:513 ApiErrors:0 ApiQueue:68 Piston:10 DbRequests:874 DbResponses:844 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:582 ApiResponses:511 ApiErrors:0 ApiQueue:71 Piston:10 DbRequests:874 DbResponses:844 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:487 ApiResponses:391 ApiErrors:7 ApiQueue:89 Piston:10 DbRequests:874 DbResponses:844 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:689 ApiResponses:613 ApiErrors:0 ApiQueue:76 Piston:10 DbRequests:1040 DbResponses:1010 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:690 ApiResponses:612 ApiErrors:0 ApiQueue:78 Piston:10 DbRequests:1040 DbResponses:1010 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:595 ApiResponses:498 ApiErrors:7 ApiQueue:90 Piston:10 DbRequests:1040 DbResponses:1010 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:791 ApiResponses:725 ApiErrors:0 ApiQueue:66 Piston:10 DbRequests:1207 DbResponses:1177 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:793 ApiResponses:718 ApiErrors:0 ApiQueue:75 Piston:10 DbRequests:1207 DbResponses:1177 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:698 ApiResponses:606 ApiErrors:7 ApiQueue:85 Piston:10 DbRequests:1207 DbResponses:1177 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:889 ApiResponses:822 ApiErrors:0 ApiQueue:67 Piston:10 DbRequests:1371 DbResponses:1341 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:891 ApiResponses:821 ApiErrors:0 ApiQueue:70 Piston:10 DbRequests:1371 DbResponses:1341 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:796 ApiResponses:706 ApiErrors:7 ApiQueue:83 Piston:10 DbRequests:1371 DbResponses:1341 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:991 ApiResponses:925 ApiErrors:0 ApiQueue:66 Piston:10 DbRequests:1531 DbResponses:1501 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:994 ApiResponses:921 ApiErrors:0 ApiQueue:73 Piston:10 DbRequests:1531 DbResponses:1501 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:898 ApiResponses:810 ApiErrors:7 ApiQueue:81 Piston:10 DbRequests:1531 DbResponses:1501 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1093 ApiResponses:1023 ApiErrors:0 ApiQueue:70 Piston:10 DbRequests:1697 DbResponses:1667 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:1096 ApiResponses:1022 ApiErrors:0 ApiQueue:74 Piston:10 DbRequests:1697 DbResponses:1667 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:1000 ApiResponses:909 ApiErrors:7 ApiQueue:84 Piston:10 DbRequests:1697 DbResponses:1667 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1197 ApiResponses:1128 ApiErrors:0 ApiQueue:69 Piston:10 DbRequests:1863 DbResponses:1833 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:1201 ApiResponses:1126 ApiErrors:0 ApiQueue:75 Piston:10 DbRequests:1863 DbResponses:1833 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:1104 ApiResponses:1009 ApiErrors:7 ApiQueue:88 Piston:10 DbRequests:1863 DbResponses:1833 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1293 ApiResponses:1232 ApiErrors:0 ApiQueue:61 Piston:10 DbRequests:2020 DbResponses:1990 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:1298 ApiResponses:1228 ApiErrors:0 ApiQueue:70 Piston:10 DbRequests:2020 DbResponses:1990 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:1201 ApiResponses:1113 ApiErrors:7 ApiQueue:81 Piston:10 DbRequests:2020 DbResponses:1990 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1395 ApiResponses:1329 ApiErrors:0 ApiQueue:66 Piston:10 DbRequests:2192 DbResponses:2162 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:1401 ApiResponses:1332 ApiErrors:0 ApiQueue:69 Piston:10 DbRequests:2192 DbResponses:2162 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:1303 ApiResponses:1204 ApiErrors:7 ApiQueue:92 Piston:10 DbRequests:2192 DbResponses:2162 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1429 ApiErrors:0 ApiQueue:61 Piston:10 DbRequests:2358 DbResponses:2328 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:1513 ApiResponses:1434 ApiErrors:0 ApiQueue:79 Piston:10 DbRequests:2358 DbResponses:2328 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:1415 ApiResponses:1314 ApiErrors:7 ApiQueue:94 Piston:10 DbRequests:2358 DbResponses:2328 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1487 ApiErrors:0 ApiQueue:3 Piston:10 DbRequests:2519 DbResponses:2489 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:1627 ApiResponses:1549 ApiErrors:0 ApiQueue:78 Piston:10 DbRequests:2519 DbResponses:2489 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:1529 ApiResponses:1426 ApiErrors:7 ApiQueue:96 Piston:10 DbRequests:2519 DbResponses:2489 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1492 ApiErrors:0 ApiQueue:-2 Piston:10 DbRequests:2686 DbResponses:2656 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:1752 ApiResponses:1670 ApiErrors:0 ApiQueue:82 Piston:10 DbRequests:2686 DbResponses:2656 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:1652 ApiResponses:1544 ApiErrors:7 ApiQueue:101 Piston:10 DbRequests:2686 DbResponses:2656 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:2850 DbResponses:2821 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"ups ApiRequests:1861 ApiResponses:1787 ApiErrors:0 ApiQueue:74 Piston:10 DbRequests:2850 DbResponses:2821 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"gso ApiRequests:1760 ApiResponses:1657 ApiErrors:7 ApiQueue:96 Piston:10 DbRequests:2850 DbResponses:2821 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:3007 DbResponses:2977 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:1990 ApiResponses:1900 ApiErrors:0 ApiQueue:90 Piston:10 DbRequests:3007 DbResponses:2977 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:1889 ApiResponses:1769 ApiErrors:7 ApiQueue:113 Piston:10 DbRequests:3007 DbResponses:2977 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:3176 DbResponses:3146 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:2097 ApiResponses:2025 ApiErrors:0 ApiQueue:72 Piston:10 DbRequests:3176 DbResponses:3146 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:1995 ApiResponses:1898 ApiErrors:7 ApiQueue:90 Piston:10 DbRequests:3176 DbResponses:3146 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:3345 DbResponses:3315 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:2222 ApiResponses:2133 ApiErrors:0 ApiQueue:89 Piston:10 DbRequests:3345 DbResponses:3315 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2119 ApiResponses:2004 ApiErrors:7 ApiQueue:108 Piston:10 DbRequests:3345 DbResponses:3315 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111115093","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:3506 DbResponses:3476 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:2342 ApiResponses:2262 ApiErrors:0 ApiQueue:80 Piston:10 DbRequests:3506 DbResponses:3476 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2239 ApiResponses:2138 ApiErrors:8 ApiQueue:93 Piston:10 DbRequests:3506 DbResponses:3476 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:3589 DbResponses:3561 DbErrors:0 DbQueue:28","level":"info"}
+{"message":"ups ApiRequests:2466 ApiResponses:2385 ApiErrors:0 ApiQueue:81 Piston:10 DbRequests:3589 DbResponses:3561 DbErrors:0 DbQueue:28","level":"info"}
+{"message":"gso ApiRequests:2362 ApiResponses:2255 ApiErrors:8 ApiQueue:99 Piston:10 DbRequests:3589 DbResponses:3561 DbErrors:0 DbQueue:28","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:3765 DbResponses:3735 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:2582 ApiResponses:2513 ApiErrors:0 ApiQueue:69 Piston:10 DbRequests:3765 DbResponses:3735 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2478 ApiResponses:2382 ApiErrors:8 ApiQueue:88 Piston:10 DbRequests:3765 DbResponses:3735 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:3952 DbResponses:3922 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:2699 ApiResponses:2623 ApiErrors:0 ApiQueue:76 Piston:10 DbRequests:3952 DbResponses:3922 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2596 ApiResponses:2496 ApiErrors:8 ApiQueue:92 Piston:10 DbRequests:3952 DbResponses:3922 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:4145 DbResponses:4116 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"ups ApiRequests:2809 ApiResponses:2736 ApiErrors:0 ApiQueue:73 Piston:10 DbRequests:4145 DbResponses:4116 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"gso ApiRequests:2705 ApiResponses:2606 ApiErrors:8 ApiQueue:91 Piston:10 DbRequests:4145 DbResponses:4116 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:4299 DbResponses:4269 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:2926 ApiResponses:2832 ApiErrors:0 ApiQueue:94 Piston:10 DbRequests:4299 DbResponses:4269 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2823 ApiResponses:2715 ApiErrors:8 ApiQueue:100 Piston:10 DbRequests:4299 DbResponses:4269 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111115795","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:4465 DbResponses:4436 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"ups ApiRequests:3045 ApiResponses:2967 ApiErrors:0 ApiQueue:78 Piston:10 DbRequests:4465 DbResponses:4436 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"gso ApiRequests:2942 ApiResponses:2835 ApiErrors:9 ApiQueue:98 Piston:10 DbRequests:4465 DbResponses:4436 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111115885","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111115904","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:4635 DbResponses:4605 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:3166 ApiResponses:3089 ApiErrors:0 ApiQueue:77 Piston:10 DbRequests:4635 DbResponses:4605 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2937 ApiErrors:11 ApiQueue:4 Piston:10 DbRequests:4635 DbResponses:4605 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:4766 DbResponses:4736 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:3280 ApiResponses:3210 ApiErrors:0 ApiQueue:70 Piston:10 DbRequests:4766 DbResponses:4736 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:4766 DbResponses:4736 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:4938 DbResponses:4909 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"ups ApiRequests:3397 ApiResponses:3312 ApiErrors:0 ApiQueue:85 Piston:10 DbRequests:4938 DbResponses:4909 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:4938 DbResponses:4909 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:5123 DbResponses:5093 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:3508 ApiResponses:3432 ApiErrors:0 ApiQueue:76 Piston:10 DbRequests:5123 DbResponses:5093 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:5123 DbResponses:5093 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:5287 DbResponses:5258 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"ups ApiRequests:3624 ApiResponses:3551 ApiErrors:0 ApiQueue:73 Piston:10 DbRequests:5287 DbResponses:5258 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:5287 DbResponses:5258 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:5450 DbResponses:5420 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:3731 ApiResponses:3657 ApiErrors:0 ApiQueue:74 Piston:10 DbRequests:5450 DbResponses:5420 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:5450 DbResponses:5420 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:5619 DbResponses:5589 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:3847 ApiResponses:3774 ApiErrors:0 ApiQueue:73 Piston:10 DbRequests:5619 DbResponses:5589 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:5619 DbResponses:5589 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:5782 DbResponses:5754 DbErrors:0 DbQueue:28","level":"info"}
+{"message":"ups ApiRequests:3968 ApiResponses:3888 ApiErrors:0 ApiQueue:80 Piston:10 DbRequests:5782 DbResponses:5754 DbErrors:0 DbQueue:28","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:5782 DbResponses:5754 DbErrors:0 DbQueue:28","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:5939 DbResponses:5910 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"ups ApiRequests:4100 ApiResponses:4017 ApiErrors:0 ApiQueue:83 Piston:10 DbRequests:5939 DbResponses:5910 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:5939 DbResponses:5910 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:6100 DbResponses:6070 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:4260 ApiResponses:4158 ApiErrors:0 ApiQueue:102 Piston:10 DbRequests:6100 DbResponses:6070 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:6100 DbResponses:6070 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:6266 DbResponses:6236 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:4383 ApiResponses:4308 ApiErrors:0 ApiQueue:75 Piston:10 DbRequests:6266 DbResponses:6236 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:6266 DbResponses:6236 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:6426 DbResponses:6396 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:4513 ApiResponses:4429 ApiErrors:0 ApiQueue:84 Piston:10 DbRequests:6426 DbResponses:6396 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:6426 DbResponses:6396 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:6606 DbResponses:6577 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"ups ApiRequests:4639 ApiResponses:4562 ApiErrors:0 ApiQueue:77 Piston:10 DbRequests:6606 DbResponses:6577 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:6606 DbResponses:6577 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:6767 DbResponses:6737 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:4750 ApiResponses:4676 ApiErrors:0 ApiQueue:74 Piston:10 DbRequests:6767 DbResponses:6737 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:6767 DbResponses:6737 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:6916 DbResponses:6886 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:4861 ApiResponses:4788 ApiErrors:0 ApiQueue:73 Piston:10 DbRequests:6916 DbResponses:6886 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:6916 DbResponses:6886 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:7097 DbResponses:7067 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:4985 ApiResponses:4905 ApiErrors:0 ApiQueue:80 Piston:10 DbRequests:7097 DbResponses:7067 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:7097 DbResponses:7067 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:7253 DbResponses:7224 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"ups ApiRequests:5106 ApiResponses:5028 ApiErrors:0 ApiQueue:78 Piston:10 DbRequests:7253 DbResponses:7224 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:7253 DbResponses:7224 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:7412 DbResponses:7382 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:5250 ApiResponses:5164 ApiErrors:0 ApiQueue:86 Piston:10 DbRequests:7412 DbResponses:7382 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:7412 DbResponses:7382 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:7574 DbResponses:7545 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"ups ApiRequests:5357 ApiResponses:5292 ApiErrors:0 ApiQueue:65 Piston:10 DbRequests:7574 DbResponses:7545 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:7574 DbResponses:7545 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:7747 DbResponses:7717 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:5478 ApiResponses:5402 ApiErrors:0 ApiQueue:76 Piston:10 DbRequests:7747 DbResponses:7717 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:7747 DbResponses:7717 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:7914 DbResponses:7884 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:5558 ApiResponses:5525 ApiErrors:0 ApiQueue:33 Piston:10 DbRequests:7914 DbResponses:7884 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:7914 DbResponses:7884 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:8081 DbResponses:8051 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:5558 ApiResponses:5558 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:8081 DbResponses:8051 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:8081 DbResponses:8051 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:8246 DbResponses:8217 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"ups ApiRequests:5558 ApiResponses:5558 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:8246 DbResponses:8217 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:8246 DbResponses:8217 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:8409 DbResponses:8381 DbErrors:0 DbQueue:28","level":"info"}
+{"message":"ups ApiRequests:5558 ApiResponses:5558 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:8409 DbResponses:8381 DbErrors:0 DbQueue:28","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:8409 DbResponses:8381 DbErrors:0 DbQueue:28","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:8570 DbResponses:8540 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:5558 ApiResponses:5558 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:8570 DbResponses:8540 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:8570 DbResponses:8540 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:8738 DbResponses:8708 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:5558 ApiResponses:5558 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:8738 DbResponses:8708 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:8738 DbResponses:8708 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:8905 DbResponses:8875 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:5558 ApiResponses:5558 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:8905 DbResponses:8875 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:8905 DbResponses:8875 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:9064 DbResponses:9034 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:5558 ApiResponses:5558 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:9064 DbResponses:9034 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:9064 DbResponses:9034 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:9217 DbResponses:9187 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:5558 ApiResponses:5558 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:9217 DbResponses:9187 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:9217 DbResponses:9187 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:9336 DbResponses:9310 DbErrors:0 DbQueue:26","level":"info"}
+{"message":"ups ApiRequests:5558 ApiResponses:5558 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:9336 DbResponses:9310 DbErrors:0 DbQueue:26","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:9336 DbResponses:9310 DbErrors:0 DbQueue:26","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:9424 DbResponses:9394 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:5558 ApiResponses:5558 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:9424 DbResponses:9394 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:9424 DbResponses:9394 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:9493 DbResponses:9463 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:5558 ApiResponses:5558 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:9493 DbResponses:9463 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:9493 DbResponses:9463 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:9550 DbResponses:9523 DbErrors:0 DbQueue:27","level":"info"}
+{"message":"ups ApiRequests:5558 ApiResponses:5558 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:9550 DbResponses:9523 DbErrors:0 DbQueue:27","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:9550 DbResponses:9523 DbErrors:0 DbQueue:27","level":"info"}
+{"message":"fex ApiRequests:1490 ApiResponses:1493 ApiErrors:0 ApiQueue:-3 Piston:10 DbRequests:9584 DbResponses:9584 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"ups ApiRequests:5558 ApiResponses:5558 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:9584 DbResponses:9584 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"gso ApiRequests:2952 ApiResponses:2941 ApiErrors:11 ApiQueue:0 Piston:10 DbRequests:9584 DbResponses:9584 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"Connection is closed.","level":"info"}
+{"message":"fex ApiRequests:12 ApiResponses:0 ApiErrors:0 ApiQueue:12 Piston:10 DbRequests:27 DbResponses:0 DbErrors:0 DbQueue:27","level":"info"}
+{"message":"ups ApiRequests:29 ApiResponses:27 ApiErrors:0 ApiQueue:2 Piston:10 DbRequests:27 DbResponses:0 DbErrors:0 DbQueue:27","level":"info"}
+{"message":"gso ApiRequests:0 ApiResponses:0 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:27 DbResponses:0 DbErrors:0 DbQueue:27","level":"info"}
+{"message":"fex ApiRequests:12 ApiResponses:12 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:46 DbResponses:46 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"ups ApiRequests:29 ApiResponses:29 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:46 DbResponses:46 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"gso ApiRequests:93 ApiResponses:5 ApiErrors:0 ApiQueue:88 Piston:10 DbRequests:46 DbResponses:46 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112449","level":"info"}
+{"message":"fex ApiRequests:122 ApiResponses:24 ApiErrors:0 ApiQueue:98 Piston:15 DbRequests:24 DbResponses:0 DbErrors:0 DbQueue:24","level":"info"}
+{"message":"fex ApiRequests:185 ApiResponses:138 ApiErrors:0 ApiQueue:47 Piston:25 DbRequests:137 DbResponses:134 DbErrors:0 DbQueue:3","level":"info"}
+{"message":"fex ApiRequests:257 ApiResponses:203 ApiErrors:0 ApiQueue:54 Piston:25 DbRequests:202 DbResponses:196 DbErrors:0 DbQueue:6","level":"info"}
+{"message":"fex ApiRequests:329 ApiResponses:282 ApiErrors:0 ApiQueue:47 Piston:15 DbRequests:281 DbResponses:278 DbErrors:0 DbQueue:3","level":"info"}
+{"message":"fex ApiRequests:419 ApiResponses:379 ApiErrors:0 ApiQueue:40 Piston:25 DbRequests:378 DbResponses:373 DbErrors:0 DbQueue:5","level":"info"}
+{"message":"fex ApiRequests:517 ApiResponses:456 ApiErrors:0 ApiQueue:61 Piston:15 DbRequests:455 DbResponses:449 DbErrors:0 DbQueue:6","level":"info"}
+{"message":"fex ApiRequests:617 ApiResponses:550 ApiErrors:0 ApiQueue:67 Piston:15 DbRequests:548 DbResponses:540 DbErrors:0 DbQueue:8","level":"info"}
+{"message":"fex ApiRequests:693 ApiResponses:648 ApiErrors:0 ApiQueue:45 Piston:15 DbRequests:646 DbResponses:640 DbErrors:0 DbQueue:6","level":"info"}
+{"message":"fex ApiRequests:786 ApiResponses:745 ApiErrors:0 ApiQueue:41 Piston:25 DbRequests:743 DbResponses:738 DbErrors:0 DbQueue:5","level":"info"}
+{"message":"fex ApiRequests:885 ApiResponses:822 ApiErrors:0 ApiQueue:63 Piston:15 DbRequests:820 DbResponses:814 DbErrors:0 DbQueue:6","level":"info"}
+{"message":"fex ApiRequests:986 ApiResponses:923 ApiErrors:0 ApiQueue:63 Piston:15 DbRequests:921 DbResponses:918 DbErrors:0 DbQueue:3","level":"info"}
+{"message":"fex ApiRequests:1000 ApiResponses:999 ApiErrors:0 ApiQueue:1 Piston:5 DbRequests:997 DbResponses:997 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"fex ApiRequests:1000 ApiResponses:1001 ApiErrors:0 ApiQueue:-1 Piston:0 DbRequests:999 DbResponses:999 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"fex ApiRequests:117 ApiResponses:39 ApiErrors:0 ApiQueue:78 Piston:15 DbRequests:30 DbResponses:0 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:216 ApiResponses:150 ApiErrors:0 ApiQueue:66 Piston:15 DbRequests:141 DbResponses:138 DbErrors:0 DbQueue:3","level":"info"}
+{"message":"fex ApiRequests:300 ApiResponses:253 ApiErrors:0 ApiQueue:47 Piston:15 DbRequests:252 DbResponses:248 DbErrors:0 DbQueue:4","level":"info"}
+{"message":"fex ApiRequests:395 ApiResponses:352 ApiErrors:0 ApiQueue:43 Piston:15 DbRequests:351 DbResponses:348 DbErrors:0 DbQueue:3","level":"info"}
+{"message":"fex ApiRequests:496 ApiResponses:451 ApiErrors:0 ApiQueue:45 Piston:15 DbRequests:450 DbResponses:443 DbErrors:0 DbQueue:7","level":"info"}
+{"message":"fex ApiRequests:598 ApiResponses:556 ApiErrors:0 ApiQueue:42 Piston:15 DbRequests:554 DbResponses:547 DbErrors:0 DbQueue:7","level":"info"}
+{"message":"fex ApiRequests:693 ApiResponses:649 ApiErrors:0 ApiQueue:44 Piston:15 DbRequests:647 DbResponses:641 DbErrors:0 DbQueue:6","level":"info"}
+{"message":"fex ApiRequests:798 ApiResponses:751 ApiErrors:0 ApiQueue:47 Piston:15 DbRequests:749 DbResponses:743 DbErrors:0 DbQueue:6","level":"info"}
+{"message":"fex ApiRequests:892 ApiResponses:852 ApiErrors:0 ApiQueue:40 Piston:15 DbRequests:850 DbResponses:844 DbErrors:0 DbQueue:6","level":"info"}
+{"message":"fex ApiRequests:989 ApiResponses:940 ApiErrors:0 ApiQueue:49 Piston:15 DbRequests:938 DbResponses:931 DbErrors:0 DbQueue:7","level":"info"}
+{"message":"fex ApiRequests:1000 ApiResponses:999 ApiErrors:0 ApiQueue:1 Piston:0 DbRequests:997 DbResponses:997 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"fex ApiRequests:1000 ApiResponses:1002 ApiErrors:0 ApiQueue:-2 Piston:0 DbRequests:1000 DbResponses:999 DbErrors:0 DbQueue:1","level":"info"}
+{"message":"fex ApiRequests:1000 ApiResponses:1002 ApiErrors:0 ApiQueue:-2 Piston:0 DbRequests:1000 DbResponses:1000 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"Connection not yet open.","level":"info"}
+{"message":"fex ApiRequests:195 ApiResponses:4 ApiErrors:0 ApiQueue:191 Piston:15 DbRequests:4 DbResponses:0 DbErrors:0 DbQueue:4","level":"info"}
+{"message":"fex ApiRequests:238 ApiResponses:204 ApiErrors:0 ApiQueue:34 Piston:25 DbRequests:93 DbResponses:71 DbErrors:0 DbQueue:22","level":"info"}
+{"message":"fex ApiRequests:336 ApiResponses:275 ApiErrors:0 ApiQueue:61 Piston:15 DbRequests:269 DbResponses:264 DbErrors:0 DbQueue:5","level":"info"}
+{"message":"fex ApiRequests:435 ApiResponses:376 ApiErrors:0 ApiQueue:59 Piston:15 DbRequests:375 DbResponses:369 DbErrors:0 DbQueue:6","level":"info"}
+{"message":"fex ApiRequests:521 ApiResponses:476 ApiErrors:0 ApiQueue:45 Piston:15 DbRequests:475 DbResponses:469 DbErrors:0 DbQueue:6","level":"info"}
+{"message":"fex ApiRequests:618 ApiResponses:577 ApiErrors:0 ApiQueue:41 Piston:15 DbRequests:575 DbResponses:567 DbErrors:0 DbQueue:8","level":"info"}
+{"message":"fex ApiRequests:715 ApiResponses:669 ApiErrors:0 ApiQueue:46 Piston:15 DbRequests:667 DbResponses:659 DbErrors:0 DbQueue:8","level":"info"}
+{"message":"fex ApiRequests:817 ApiResponses:774 ApiErrors:0 ApiQueue:43 Piston:15 DbRequests:772 DbResponses:764 DbErrors:0 DbQueue:8","level":"info"}
+{"message":"fex ApiRequests:920 ApiResponses:872 ApiErrors:0 ApiQueue:48 Piston:15 DbRequests:870 DbResponses:857 DbErrors:0 DbQueue:13","level":"info"}
+{"message":"fex ApiRequests:1000 ApiResponses:971 ApiErrors:0 ApiQueue:29 Piston:25 DbRequests:969 DbResponses:966 DbErrors:0 DbQueue:3","level":"info"}
+{"message":"fex ApiRequests:1000 ApiResponses:999 ApiErrors:0 ApiQueue:1 Piston:5 DbRequests:997 DbResponses:997 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"fex ApiRequests:1000 ApiResponses:1002 ApiErrors:0 ApiQueue:-2 Piston:0 DbRequests:1000 DbResponses:1000 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"fex ApiRequests:120 ApiResponses:27 ApiErrors:0 ApiQueue:93 Piston:15 DbRequests:27 DbResponses:0 DbErrors:0 DbQueue:27","level":"info"}
+{"message":"fex ApiRequests:194 ApiResponses:150 ApiErrors:0 ApiQueue:44 Piston:25 DbRequests:140 DbResponses:134 DbErrors:0 DbQueue:6","level":"info"}
+{"message":"fex ApiRequests:290 ApiResponses:226 ApiErrors:0 ApiQueue:64 Piston:15 DbRequests:225 DbResponses:219 DbErrors:0 DbQueue:6","level":"info"}
+{"message":"fex ApiRequests:388 ApiResponses:324 ApiErrors:0 ApiQueue:64 Piston:15 DbRequests:323 DbResponses:310 DbErrors:0 DbQueue:13","level":"info"}
+{"message":"fex ApiRequests:464 ApiResponses:423 ApiErrors:0 ApiQueue:41 Piston:25 DbRequests:422 DbResponses:415 DbErrors:0 DbQueue:7","level":"info"}
+{"message":"fex ApiRequests:538 ApiResponses:492 ApiErrors:0 ApiQueue:46 Piston:25 DbRequests:491 DbResponses:487 DbErrors:0 DbQueue:4","level":"info"}
+{"message":"fex ApiRequests:622 ApiResponses:576 ApiErrors:0 ApiQueue:46 Piston:15 DbRequests:574 DbResponses:571 DbErrors:0 DbQueue:3","level":"info"}
+{"message":"fex ApiRequests:713 ApiResponses:668 ApiErrors:0 ApiQueue:45 Piston:25 DbRequests:666 DbResponses:659 DbErrors:0 DbQueue:7","level":"info"}
+{"message":"fex ApiRequests:789 ApiResponses:750 ApiErrors:0 ApiQueue:39 Piston:25 DbRequests:748 DbResponses:738 DbErrors:0 DbQueue:10","level":"info"}
+{"message":"fex ApiRequests:880 ApiResponses:823 ApiErrors:0 ApiQueue:57 Piston:15 DbRequests:821 DbResponses:814 DbErrors:0 DbQueue:7","level":"info"}
+{"message":"fex ApiRequests:954 ApiResponses:907 ApiErrors:0 ApiQueue:47 Piston:15 DbRequests:905 DbResponses:901 DbErrors:0 DbQueue:4","level":"info"}
+{"message":"fex ApiRequests:1000 ApiResponses:994 ApiErrors:0 ApiQueue:6 Piston:5 DbRequests:992 DbResponses:992 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"fex ApiRequests:1000 ApiResponses:999 ApiErrors:0 ApiQueue:1 Piston:0 DbRequests:997 DbResponses:996 DbErrors:0 DbQueue:1","level":"info"}
+{"message":"fex ApiRequests:1000 ApiResponses:1002 ApiErrors:0 ApiQueue:-2 Piston:0 DbRequests:1000 DbResponses:1000 DbErrors:0 DbQueue:0","level":"info"}
