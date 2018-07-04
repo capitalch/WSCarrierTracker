@@ -8,7 +8,7 @@ create final error object and publish
 
 //Adam2 
 1. Complete TPS
-2. Implement Saby correction
+                                    2. Implement Saby correction
 3. Insert in package log table before exit. Provide start, end time and exit log code.
 4. Fire email report. Mandril.
 5. Check and implement all api errors 
@@ -18,7 +18,8 @@ create final error object and publish
             8. Debug why sometimes app is not closing generously
 5. Testing with special data
                                           6. Status update every 2 seconds while checking idle
-7. Deployment
+7. Deployment scripts
+8. Handle database connection errors
 
 GSO Delivery Status, options are:
 IN TRANSIT                              inTransit
@@ -108,18 +109,28 @@ A status update is not yet available on your package. It will be available when 
 URL is: http://production.shippingapis.com/ShippingAPI.dll?API=TrackV2&XML=%3CTrackFieldRequest%20USERID=%22487WINES7756%22%3E%3CTrackID%20ID=%229400110200881650000000%22%3E%3C/TrackID%3E%3C/TrackFieldRequest%3E
 
 // script for PackageHistory table
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
 CREATE TABLE [dbo].[PackageHistory](
 	[ID] [bigint] IDENTITY(1,1) NOT NULL,
 	[rn] [varchar](50) NOT NULL,
-	[TrackingNo] [varchar](50) NOT NULL,
+	[TrackingNumber] [varchar](50) NOT NULL,
 	[ShippingAgentCode] [varchar](50) NOT NULL,
-	[ActivityJson] [nvarchar](4000) NULL,
+	[ActivityJson] [nvarchar](MAX) NULL,
 	[IsDeleted] [bit] NOT NULL,
  CONSTRAINT [PK_PackageHistory] PRIMARY KEY CLUSTERED 
 (
 	[ID] ASC
 )WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[PackageHistory] ADD  DEFAULT ((0)) FOR [IsDeleted]
+GO
 
 
 CREATE TABLE [dbo].[PackageLog](

@@ -1,19 +1,19 @@
 let sqlCommands = {
 	getInfos: `
-		SELECT top 10 NO_ rn,[Shipping Agent Code] shippingAgentCode,[External Tracking No_] trackingNumber,status
+		SELECT NO_ rn,[Shipping Agent Code] shippingAgentCode,[External Tracking No_] trackingNumber,status
 		FROM [Wineshipping$PackageinfoNew] 
 		WHERE 
 				NOT [Status] = 'Package returned to shipper' and 
 				--NOT [Status] = 'Delivered' and 
 				NOT [Status] = 'Returned' and			
-				[Shipping Agent Code] in ('FEX') 
+				[Shipping Agent Code] in ( 'FEX') 
 				AND NOT [External Tracking No_] = ''
 			`,
 	updateInfoAndInsertInPackageHistory: `
 		update Wineshipping$PackageInfoNew
 		set Status= @Status,
-		Status_Date= @Status_Date,
 		Status_Time = @Status_Time,
+		Status_Date= @Status_Date,
 		EstimatedDeliveryDate = @EstimatedDeliveryDate,
 		CarrierStatusCode = @CarrierStatusCode,
 		CarrierStatusMessage = @CarrierStatusMessage,
@@ -26,8 +26,12 @@ let sqlCommands = {
 		where No_ = @No_;
 	`,
 	insertPackageHistory: `
-		insert into PackageHistory(rn, TrackingNumber, ShippingAgentCode, ActivityJson, IsDeleted)
-		values (@rn, @trackingNumber, @shippingAgentCode,@activityJson, 0);
+		insert into PackageHistory(rn, TrackingNumber, ShippingAgentCode, 
+			ActivityJson, 
+			IsDeleted)
+		values (@rn, @trackingNumber, @shippingAgentCode
+			,@activityJson
+			, 0);
 	`,
 	insertPackageLog:`
 	insert into packageLog(ApiRequests, ApiResponses, ApiErrors, DbRequests, DbResponses, DbErrors, StartTime, EndTime, Duration)
@@ -46,3 +50,9 @@ let sqlCommands = {
 
 module.exports = sqlCommands;
 //, 'UPS', 'FEX', 'GSO', 'TMC', 'FCC', 'TPS'
+
+/*
+
+		--
+
+*/

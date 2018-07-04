@@ -14,11 +14,10 @@ let db = {};
 let reqs = [];
 const tools = {
     setInputParams: (req, json) => {
-        req.input('Status', sql.VarChar, json.status || 'No Status');
+        req.input('Status', sql.VarChar, json.status ||'No Status');
         req.input('Status_date', sql.VarChar, json.statusDate || '');
         req.input('Status_Time', sql.VarChar, json.statusTime || '');
         req.input('EstimatedDeliveryDate', sql.DateTime, json.estimatedDeliveryDate ? new Date(json.estimatedDeliveryDate) : new Date('1900-01-01'));
-        // req.input('EstimatedDeliveryDate', sql.VarChar, '');//json.estimatedDeliveryDate ? new Date(json.estimatedDeliveryDate) : new Date('1900-01-01'));
         req.input('CarrierStatusCode', sql.VarChar, json.carrierStatusCode || '');
         req.input('CarrierStatusMessage', sql.VarChar, json.carrierStatusMessage || 'No Status');
         req.input('SignedForByName', sql.VarChar, json.signedForByName || '');
@@ -35,7 +34,7 @@ const tools = {
             req.input('ActivityJson', sql.VarChar, JSON.stringify(json.activityJson));
         }
     },
-    setLogInputParams:(req,json)=>{
+    setLogInputParams: (req, json) => {
         req.input('ApiRequests', sql.Int, json.apiRequests);
         req.input('ApiResponses', sql.Int, json.apiResponses);
         req.input('ApiErrors', sql.Int, json.apiErrors);
@@ -94,8 +93,9 @@ const disburse = (data) => {
         tools.setInputParams(req, data);
         notify.addDbRequest();
         const packageHistorySql = sqlCommands.insertPackageHistory;
+        // let sqlCommandTest = 'update product set UnitPrice = UnitPrice + 1 where id = 1;';
         let sqlCommand = sqlCommands.updateInfoAndInsertInPackageHistory
-            .concat(data.activityJson ? `${packageHistorySql}` : '');
+        .concat(data.activityJson ? `${packageHistorySql}` : '');
         req.query(sqlCommand, (err, result) => {
             req.isAvailable = true;
             if (err) {

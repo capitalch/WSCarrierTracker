@@ -19,6 +19,8 @@ handler.sub1 = ibuki.filterOn('handle-big-object:db>workbench').subscribe(
             ).map(x => {
                 x.url = settings.carriers.fex.url;
                 x.param = `<TrackRequest xmlns='http://fedex.com/ws/track/v3'><WebAuthenticationDetail><UserCredential><Key>${settings.carriers.fex.key}</Key><Password>${settings.carriers.fex.password}</Password></UserCredential></WebAuthenticationDetail><ClientDetail><AccountNumber>${settings.carriers.fex.accountNumber}</AccountNumber><MeterNumber>${settings.carriers.fex.meterNumber}</MeterNumber></ClientDetail><TransactionDetail><CustomerTransactionId>***Track v8 Request using VB.NET***</CustomerTransactionId></TransactionDetail><Version><ServiceId>trck</ServiceId><Major>3</Major><Intermediate>0</Intermediate><Minor>0</Minor></Version><PackageIdentifier><Value>${x.trackingNumber}</Value><Type>TRACKING_NUMBER_OR_DOORTAG</Type></PackageIdentifier><IncludeDetailedScans>1</IncludeDetailedScans></TrackRequest>`;
+                //to take care for multiple tracking number add trackingNumberUniqueIdentifier tag
+                x.param1 = `<TrackRequest xmlns='http://fedex.com/ws/track/v3'><WebAuthenticationDetail><UserCredential><Key>${settings.carriers.fex.key}</Key><Password>${settings.carriers.fex.password}</Password></UserCredential></WebAuthenticationDetail><ClientDetail><AccountNumber>${settings.carriers.fex.accountNumber}</AccountNumber><MeterNumber>${settings.carriers.fex.meterNumber}</MeterNumber></ClientDetail><TransactionDetail><CustomerTransactionId>***Track v8 Request using VB.NET***</CustomerTransactionId></TransactionDetail><Version><ServiceId>trck</ServiceId><Major>3</Major><Intermediate>0</Intermediate><Minor>0</Minor></Version><PackageIdentifier><Value>${x.trackingNumber}</Value><Type>TRACKING_NUMBER_OR_DOORTAG</Type></PackageIdentifier><TrackingNumberUniqueIdentifier>$$$trackingUid</TrackingNumberUniqueIdentifier><IncludeDetailedScans>1</IncludeDetailedScans></TrackRequest>`
                 x.method = 'axiosPost';
                 x.carrierName = 'fex';
                 return (x);
@@ -82,7 +84,6 @@ handler.sub8 = ibuki.filterOn('process-carrier:self').subscribe(d => {
                 .concatMap(x => rx.of(x)
                     .pipe(operators
                         .delay(
-                            // settings.carriers[x.carrierName].piston || 20
                             settings.config.autoPilotPiston ? (notify.getPiston(x.carrierName) || 10) : 10
                         ))))
         .subscribe(

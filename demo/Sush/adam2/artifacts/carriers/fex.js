@@ -90,7 +90,7 @@ const tools = {
                 });
             } else { // events is an object
                 const isNot71 = events.StatusExceptionCode !== '71';
-                const isNotScheduled = !events.StatusExceptionDescription.toLowerCase().includes('next scheduled tracking update');
+                const isNotScheduled = (events.StatusExceptionDescription) && (!events.StatusExceptionDescription.toLowerCase().includes('next scheduled tracking update'));
                 if (events.StatusExceptionDescription) {
                     if (isNot71 && isNotScheduled) {
                         event = events;
@@ -110,26 +110,41 @@ fex.processFex = (x) => {
         if (err) {
             notify.pushError(err);
             notify.incrException(x.carrierName);
-            const errorJson = notify.getErrorJson(err,x);
+            const errorJson = notify.getErrorJson(err, x);
             handler.buffer.next(errorJson);
             ibuki.emit('app-error:any', handler.frameError(err, 'util', 'info', 3))
         } else {
             const notifications = result.TrackReply.Notifications;
             if ((notifications.Severity === 'ERROR') || (notifications.Severity === 'FAILURE')) {
-                const error = {
-                    name: 'apiCallError',
-                    message: 'Fex:' + x.trackingNumber + ' ' + notifications.LocalizedMessage
-                };
+                // const error = {
+                //     name: 'apiCallError',
+                //     message: 'Fex:' + x.trackingNumber + ' ' + notifications.LocalizedMessage
+                // };
+                const error = Error('Fex:' + x.trackingNumber + ' ' + notifications.LocalizedMessage);
                 notify.incrException(x.carrierName);
                 const errorJson = notify.getErrorJson(error, x);
                 handler.buffer.next(errorJson);
-                ibuki.emit('app-error:any', handler.frameError(err, 'util', 'info', 4))
+                ibuki.emit('app-error:any', handler.frameError(error, 'util', 'info', 4))
             } else {
-                ibuki.emit('axios-post:fex>api', x);
-                handleFex(x, result);
+                // ibuki.emit('axios-post:fex>api', x);
+                // handleFex(x, result);
+                checkMultiple(x, result);
             }
         }
     });
+}
+
+function checkMultiple(x, result) {
+    const trackDetails = result.TrackReply.TrackDetails;
+    if (Array.isArray(trackDetails) && trackDetails.length > 0) {
+        const trackingNumberUniqueIdentifier = trackDetails[0].TrackingNumberUniqueIdentifier;
+        x.param = x.param1.replace('$$$trackingUid', trackingNumberUniqueIdentifier);
+        // x.trackingNumberUniqueIdentifier = trackDetails[0].TrackingNumberUniqueIdentifier;
+        // x.param = `<TrackRequest xmlns='http://fedex.com/ws/track/v3'><WebAuthenticationDetail><UserCredential><Key>${settings.carriers.fex.key}</Key><Password>${settings.carriers.fex.password}</Password></UserCredential></WebAuthenticationDetail><ClientDetail><AccountNumber>${settings.carriers.fex.accountNumber}</AccountNumber><MeterNumber>${settings.carriers.fex.meterNumber}</MeterNumber></ClientDetail><TransactionDetail><CustomerTransactionId>***Track v8 Request using VB.NET***</CustomerTransactionId></TransactionDetail><Version><ServiceId>trck</ServiceId><Major>3</Major><Intermediate>0</Intermediate><Minor>0</Minor></Version><PackageIdentifier><Value>${x.trackingNumber}</Value><Type>TRACKING_NUMBER_OR_DOORTAG</Type></PackageIdentifier><TrackingNumberUniqueIdentifier>${x.trackingNumberUniqueIdentifier}</TrackingNumberUniqueIdentifier><IncludeDetailedScans>1</IncludeDetailedScans></TrackRequest>`;
+        ibuki.emit('axios-post:fex>api', x); 
+    } else {
+        handleFex(x, result);
+    }
 }
 
 function handleFex(x, result) {
@@ -156,7 +171,7 @@ function handleFex(x, result) {
             exceptionStatus = 1,
             damage = 1,
             timeStamp = damageEvent.Timestamp,
-            damageMsg = damageEvent.EventDescription 
+            damageMsg = damageEvent.EventDescription
         );
         // check return
         const returnIdentifier = tools.getReturnIdentifier(otherIdentifiers);
@@ -193,12 +208,12 @@ function handleFex(x, result) {
     } else {
         notify.incrException(x.carrierName);
     }
-    
+
     const mTimeStamp = timeStamp ? moment(timeStamp) : null;
     const mDate = mTimeStamp ? mTimeStamp.format("MMM. DD, YYYY") : '';
     const mTime = mTimeStamp ? mTimeStamp.format("h:mm A") : '';
     const fexJson = {
-        status: statusDescription || 'No Status',
+        status: '', //statusDescription || 'No Status',
         statusDate: mDate, //from timeStamp
         statusTime: mTime, //from timestamp
 
