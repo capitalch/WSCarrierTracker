@@ -128,7 +128,4 @@ handler.sub12 = ibuki.filterOn('db-log:handler>db').subscribe(d => {
         })
     }
 });
-
-
-
 module.exports = db;

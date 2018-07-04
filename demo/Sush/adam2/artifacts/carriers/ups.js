@@ -96,13 +96,14 @@ ups.processUps = (x) => {
             if (response.ResponseStatusCode === '0') {
                 const errorDescription = response.Error.ErrorDescription;
                 notify.incrException(x.carrierName);
-                const error = {
-                    name: 'apiCallError',
-                    message: 'UPS:' + x.trackingNumber + ' ' + errorDescription
-                };
-                const errorJson = notify.getErrorJson(err);
+                const error = Error('UPS:' + x.trackingNumber + ' ' + errorDescription);
+                // const error = {
+                //     name: 'apiCallError',
+                //     message: 'UPS:' + x.trackingNumber + ' ' + errorDescription
+                // };
+                const errorJson = notify.getErrorJson(error,x);
                 handler.buffer.next(errorJson);
-                ibuki.emit('app-error:any', handler.frameError(error, 'util', 'info', 7));
+                ibuki.emit('app-error:any', handler.frameError(error, 'ups', 'info', 7));
             } else {
                 handleUps(x, result);
             }

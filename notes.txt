@@ -7,7 +7,7 @@ Carrier Code      Delivered   Returned      damaged     exception Not Delivered
 create final error object and publish
 
 //Adam2 
-1. Complete TPS
+                                    1. Complete TPS
                                     2. Implement Saby correction
 3. Insert in package log table before exit. Provide start, end time and exit log code.
 4. Fire email report. Mandril.
@@ -19,7 +19,10 @@ create final error object and publish
 5. Testing with special data
                                           6. Status update every 2 seconds while checking idle
 7. Deployment scripts
-8. Handle database connection errors
+8. Issues
+      Handle database connection errors
+      Api Queue < 0
+      
 
 GSO Delivery Status, options are:
 IN TRANSIT                              inTransit

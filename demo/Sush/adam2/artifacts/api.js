@@ -7,6 +7,7 @@ const notify = require('./notify');
 const fex = require('./carriers/fex');
 const gso = require('./carriers/gso');
 const ups = require('./carriers/ups');
+const tps = require('./carriers/tps');
 
 let api = {};
 
@@ -15,7 +16,7 @@ function processCarrierResponse(carrierInfo) {
         fex: (x) => fex.processFex(x),
         ups: (x) => ups.processUps(x),
         gso: (x) => gso.processGso(x),
-        tps: (x) => gso.processTps(x)
+        tps: (x) => tps.processTps(x)
     }
     carriermap[carrierInfo.carrierName](carrierInfo);
 }

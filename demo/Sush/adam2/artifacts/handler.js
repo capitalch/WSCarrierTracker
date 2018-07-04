@@ -19,7 +19,7 @@ const isIdle = () => {
         apiQueue = apiQueue + apiStatus[x].queue()
     });
     const dbQueue = notify.getDbStatus().dbQueue();
-    const ret = ((dbQueue === 0) && (apiQueue === 0));
+    const ret = ((dbQueue <= 0) && (apiQueue <= 0));
     return (ret);
 }
 
