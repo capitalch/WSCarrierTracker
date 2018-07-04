@@ -190,8 +190,8 @@ const notify = {
         return(status);
     },
     pushError: (x) => {
-        verbose && console.log(x);
-        errors.push(x)
+        verbose && console.log(x.message);
+        // errors.push(x)
     },
     getAllErrors: () => notify.errors,
     showAllErrors: () => {

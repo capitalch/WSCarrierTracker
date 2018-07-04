@@ -89,7 +89,7 @@ ibuki.filterOn('app-error:any').subscribe(d => {
         cleanup(100);
         // process.exit(100);
     } else {
-        console.log(err);
+        console.log(err.message);
     }
     // Use telemetry to log error
 });
