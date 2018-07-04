@@ -4,7 +4,7 @@ const ibuki = require('../ibuki');
 const handler = require('../handler');
 const parseString = require('xml2js').parseString;
 const notify = require('../notify');
-const api = require('../api');
+// const api = require('../api');
 const fex = {};
 const tools = {
     fexStatusCodes: () => {
@@ -161,7 +161,7 @@ function handleFex(x, result) {
         returnEvent = null,
         rts = 0,
         rtsTrackingNo = '',
-        statusDescription = trackDetails.StatusDescription;
+        statusDescription = '';//trackDetails.StatusDescription;
     const checkExceptions = () => {
         // check damage
         const damageEvent = tools.getDamageEvent(events);
@@ -190,13 +190,13 @@ function handleFex(x, result) {
         const exception71Event = tools.getException71Event(events);
         exception71Event && (
             notify.incrException(x.carrierName),
-            statusDescription = exception71Event.StatusExceptionDescription || statusDescription,
+            exception71Event.StatusExceptionDescription && (statusDescription = exception71Event.StatusExceptionDescription.substr(0,49)),            
             exceptionStatus = 1,
             timeStamp = exception71Event.Timestamp
         );
-        exception71Event && (
-            notify.incrException(x.carrierName)
-        );
+        // exception71Event && (
+        //     notify.incrException(x.carrierName)
+        // );
     }
 
     if (statusDescription) {

@@ -1,0 +1,30 @@
+{"message":"Hello again distributed logs","level":"info"}
+{"message":"Hello again distributed logs","level":"info"}
+{"message":"Hello again distributed logs","level":"info"}
+{"message":"Hello again distributed logs","level":"info"}
+{"message":"Timeout: Request failed to complete in 15000ms","level":"info"}
+{"message":"fex ApiRequests:1 ApiResponses:0 ApiErrors:0 ApiQueue:1 Piston:5 DbRequests:0 DbResponses:0 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"ups ApiRequests:1 ApiResponses:0 ApiErrors:0 ApiQueue:1 Piston:5 DbRequests:0 DbResponses:0 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"gso ApiRequests:0 ApiResponses:0 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:0 DbResponses:0 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"fex ApiRequests:165 ApiResponses:0 ApiErrors:0 ApiQueue:165 Piston:30 DbRequests:6 DbResponses:0 DbErrors:0 DbQueue:6","level":"info"}
+{"message":"ups ApiRequests:165 ApiResponses:6 ApiErrors:0 ApiQueue:159 Piston:30 DbRequests:6 DbResponses:0 DbErrors:0 DbQueue:6","level":"info"}
+{"message":"gso ApiRequests:58 ApiResponses:0 ApiErrors:0 ApiQueue:58 Piston:5 DbRequests:6 DbResponses:0 DbErrors:0 DbQueue:6","level":"info"}
+{"message":"fex ApiRequests:191 ApiResponses:162 ApiErrors:0 ApiQueue:29 Piston:50 DbRequests:44 DbResponses:14 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:197 ApiResponses:164 ApiErrors:0 ApiQueue:33 Piston:20 DbRequests:44 DbResponses:14 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:95 ApiResponses:53 ApiErrors:0 ApiQueue:42 Piston:25 DbRequests:44 DbResponses:14 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112449","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112415","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112370","level":"info"}
+{"message":"fex ApiRequests:258 ApiResponses:227 ApiErrors:0 ApiQueue:31 Piston:20 DbRequests:90 DbResponses:60 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:299 ApiResponses:254 ApiErrors:0 ApiQueue:45 Piston:30 DbRequests:90 DbResponses:60 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:209 ApiResponses:153 ApiErrors:3 ApiQueue:53 Piston:15 DbRequests:90 DbResponses:60 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112347","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112588","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112598","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112343","level":"info"}
+{"message":"fex ApiRequests:359 ApiResponses:323 ApiErrors:0 ApiQueue:36 Piston:25 DbRequests:133 DbResponses:103 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:373 ApiResponses:331 ApiErrors:0 ApiQueue:42 Piston:35 DbRequests:133 DbResponses:103 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:303 ApiResponses:250 ApiErrors:7 ApiQueue:46 Piston:40 DbRequests:133 DbResponses:103 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:486 ApiResponses:411 ApiErrors:0 ApiQueue:75 Piston:25 DbRequests:204 DbResponses:174 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:462 ApiResponses:409 ApiErrors:0 ApiQueue:53 Piston:35 DbRequests:204 DbResponses:174 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:400 ApiResponses:334 ApiErrors:7 ApiQueue:59 Piston:20 DbRequests:204 DbResponses:174 DbErrors:0 DbQueue:30","level":"info"}

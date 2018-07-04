@@ -1,5 +1,6 @@
 'use strict';
 const moment = require('moment');
+const logger = require('./logger');
 const settings = require('../settings.json');
 let verbose = settings.config.verbose;
 verbose = verbose || true;
@@ -156,14 +157,23 @@ const notify = {
     showAllStatus: () => {
         const carriers = settings.carriers;
         Object.keys(carriers).forEach(x => {
-            apiStatus[x] && console.log(x, ' ApiRequests:', apiStatus[x].requests,
-                ' ApiResponses:', apiStatus[x].responses,
-                ' ApiErrors:', apiStatus[x].errors,
-                ' ApiQueue:', apiStatus[x].queue(),
-                ' Piston:', apiStatus[x].piston,
-                ' DbRequests:', dbStatus.dbRequests, ' DbResponses:',
-                dbStatus.dbResponses, ' DbErrors:', dbStatus.dbErrors,
-                ' DbQueue:', dbStatus.dbQueue());
+            apiStatus[x] &&
+                // console.log(x, ' ApiRequests:', apiStatus[x].requests,
+                //     ' ApiResponses:', apiStatus[x].responses,
+                //     ' ApiErrors:', apiStatus[x].errors,
+                //     ' ApiQueue:', apiStatus[x].queue(),
+                //     ' Piston:', apiStatus[x].piston,
+                //     ' DbRequests:', dbStatus.dbRequests, ' DbResponses:',
+                //     dbStatus.dbResponses, ' DbErrors:', dbStatus.dbErrors,
+                //     ' DbQueue:', dbStatus.dbQueue());
+                logger.info(x + ' ApiRequests:' + apiStatus[x].requests +
+                ' ApiResponses:' + apiStatus[x].responses +
+                ' ApiErrors:'+ apiStatus[x].errors+
+                ' ApiQueue:'+ apiStatus[x].queue()+
+                ' Piston:'+ apiStatus[x].piston+
+                ' DbRequests:'+ dbStatus.dbRequests + ' DbResponses:'+
+                dbStatus.dbResponses + ' DbErrors:'+ dbStatus.dbErrors+
+                ' DbQueue:'+ dbStatus.dbQueue())
         });
     },
     getJobRunStatus: () => {
@@ -187,10 +197,11 @@ const notify = {
         status.dbRequests = dbStatus.dbRequests;
         status.dbResponses = dbStatus.dbResponses;
         status.errors = dbStatus.dbErrors;
-        return(status);
+        return (status);
     },
     pushError: (x) => {
-        verbose && console.log(x.message);
+        // verbose && console.log(x.message);
+        logger.info(x.message);
         // errors.push(x)
     },
     getAllErrors: () => notify.errors,

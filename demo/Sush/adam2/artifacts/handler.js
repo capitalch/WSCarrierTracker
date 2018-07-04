@@ -5,6 +5,7 @@ const ibuki = require('./ibuki');
 const settings = require('../settings.json');
 const notify = require('./notify');
 
+
 const handler = {};
 let verbose = settings.config.verbose;
 verbose = verbose || true;
@@ -24,7 +25,7 @@ const isIdle = () => {
 }
 
 handler.closeIfIdle = () => {
-    const myInterval = rx.interval(2000);
+    const myInterval = rx.interval(3000);
     handler.sub6 = myInterval.subscribe(() => {
         verbose && notify.showAllStatus();
         isIdle() && (handler.sub6.unsubscribe(), notify.setTime('end'), ibuki.emit('db-log:handler>db'));
@@ -89,7 +90,7 @@ ibuki.filterOn('app-error:any').subscribe(d => {
         cleanup(100);
         // process.exit(100);
     } else {
-        console.log(err.message);
+        // console.log(err.message);
     }
     // Use telemetry to log error
 });

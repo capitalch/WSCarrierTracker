@@ -1,6 +1,6 @@
 {
     "config": {
-        "verbose": true
+        "verbose": false
         ,"autoPilotPiston":true
     },
     "db": {

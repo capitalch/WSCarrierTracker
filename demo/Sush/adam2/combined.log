@@ -1,0 +1,112 @@
+{"message":"fex ApiRequests:166 ApiResponses:114 ApiErrors:0 ApiQueue:52 Piston:25 DbRequests:30 DbResponses:0 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:166 ApiResponses:106 ApiErrors:0 ApiQueue:60 Piston:25 DbRequests:30 DbResponses:0 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:11 ApiResponses:0 ApiErrors:0 ApiQueue:11 Piston:0 DbRequests:30 DbResponses:0 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112449","level":"info"}
+{"message":"fex ApiRequests:265 ApiResponses:209 ApiErrors:0 ApiQueue:56 Piston:35 DbRequests:84 DbResponses:54 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:238 ApiResponses:186 ApiErrors:0 ApiQueue:52 Piston:45 DbRequests:84 DbResponses:54 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:226 ApiResponses:88 ApiErrors:1 ApiQueue:137 Piston:25 DbRequests:84 DbResponses:54 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112415","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112343","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112347","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112588","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112598","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112370","level":"info"}
+{"message":"fex ApiRequests:334 ApiResponses:293 ApiErrors:0 ApiQueue:41 Piston:35 DbRequests:137 DbResponses:108 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"ups ApiRequests:302 ApiResponses:252 ApiErrors:0 ApiQueue:50 Piston:35 DbRequests:137 DbResponses:108 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"gso ApiRequests:306 ApiResponses:241 ApiErrors:7 ApiQueue:58 Piston:55 DbRequests:137 DbResponses:108 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"fex ApiRequests:434 ApiResponses:387 ApiErrors:0 ApiQueue:47 Piston:35 DbRequests:211 DbResponses:181 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:377 ApiResponses:323 ApiErrors:0 ApiQueue:54 Piston:25 DbRequests:211 DbResponses:181 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:374 ApiResponses:319 ApiErrors:7 ApiQueue:48 Piston:25 DbRequests:211 DbResponses:181 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:544 ApiResponses:497 ApiErrors:0 ApiQueue:47 Piston:25 DbRequests:282 DbResponses:252 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:455 ApiResponses:412 ApiErrors:0 ApiQueue:43 Piston:45 DbRequests:282 DbResponses:252 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:465 ApiResponses:412 ApiErrors:7 ApiQueue:46 Piston:25 DbRequests:282 DbResponses:252 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:660 ApiResponses:610 ApiErrors:0 ApiQueue:50 Piston:15 DbRequests:360 DbResponses:330 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:527 ApiResponses:483 ApiErrors:0 ApiQueue:44 Piston:45 DbRequests:360 DbResponses:330 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:564 ApiResponses:501 ApiErrors:7 ApiQueue:56 Piston:20 DbRequests:360 DbResponses:330 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"read ECONNRESET. Carrier name:fex, Tracking number:415215293586","level":"info"}
+{"message":"fex ApiRequests:790 ApiResponses:732 ApiErrors:1 ApiQueue:57 Piston:15 DbRequests:444 DbResponses:414 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:607 ApiResponses:555 ApiErrors:0 ApiQueue:52 Piston:35 DbRequests:444 DbResponses:414 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:675 ApiResponses:620 ApiErrors:7 ApiQueue:48 Piston:30 DbRequests:444 DbResponses:414 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:906 ApiResponses:849 ApiErrors:1 ApiQueue:56 Piston:15 DbRequests:535 DbResponses:505 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:679 ApiResponses:636 ApiErrors:0 ApiQueue:43 Piston:25 DbRequests:535 DbResponses:505 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:781 ApiResponses:723 ApiErrors:7 ApiQueue:51 Piston:20 DbRequests:535 DbResponses:505 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"read ECONNRESET. Carrier name:fex, Tracking number:415215295486","level":"info"}
+{"message":"fex ApiRequests:1018 ApiResponses:970 ApiErrors:2 ApiQueue:46 Piston:25 DbRequests:652 DbResponses:622 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:777 ApiResponses:723 ApiErrors:0 ApiQueue:54 Piston:45 DbRequests:652 DbResponses:622 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:885 ApiResponses:827 ApiErrors:7 ApiQueue:51 Piston:20 DbRequests:652 DbResponses:622 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1137 ApiResponses:1076 ApiErrors:2 ApiQueue:59 Piston:25 DbRequests:747 DbResponses:717 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:865 ApiResponses:806 ApiErrors:0 ApiQueue:59 Piston:35 DbRequests:747 DbResponses:717 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:1014 ApiResponses:930 ApiErrors:7 ApiQueue:77 Piston:20 DbRequests:747 DbResponses:717 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"read ECONNRESET. Carrier name:fex, Tracking number:415215291664","level":"info"}
+{"message":"fex ApiRequests:1216 ApiResponses:1171 ApiErrors:3 ApiQueue:42 Piston:25 DbRequests:834 DbResponses:804 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:938 ApiResponses:889 ApiErrors:0 ApiQueue:49 Piston:45 DbRequests:834 DbResponses:804 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:1106 ApiResponses:1040 ApiErrors:7 ApiQueue:59 Piston:30 DbRequests:834 DbResponses:804 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1323 ApiResponses:1274 ApiErrors:3 ApiQueue:46 Piston:25 DbRequests:928 DbResponses:898 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:1005 ApiResponses:956 ApiErrors:0 ApiQueue:49 Piston:35 DbRequests:928 DbResponses:898 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:1177 ApiResponses:1121 ApiErrors:7 ApiQueue:49 Piston:40 DbRequests:928 DbResponses:898 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"connect ETIMEDOUT 199.81.218.160:443. Carrier name:fex, Tracking number:415215295615","level":"info"}
+{"message":"fex ApiRequests:1458 ApiResponses:1401 ApiErrors:4 ApiQueue:53 Piston:25 DbRequests:1040 DbResponses:1010 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:1074 ApiResponses:1034 ApiErrors:0 ApiQueue:40 Piston:35 DbRequests:1040 DbResponses:1010 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:1279 ApiResponses:1215 ApiErrors:7 ApiQueue:57 Piston:30 DbRequests:1040 DbResponses:1010 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1569 ApiResponses:1529 ApiErrors:4 ApiQueue:36 Piston:25 DbRequests:1145 DbResponses:1115 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:1167 ApiResponses:1105 ApiErrors:0 ApiQueue:62 Piston:35 DbRequests:1145 DbResponses:1115 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:1380 ApiResponses:1314 ApiErrors:7 ApiQueue:59 Piston:20 DbRequests:1145 DbResponses:1115 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:1675 ApiResponses:1631 ApiErrors:4 ApiQueue:40 Piston:25 DbRequests:1203 DbResponses:1173 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:1248 ApiResponses:1191 ApiErrors:0 ApiQueue:57 Piston:35 DbRequests:1203 DbResponses:1173 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:1475 ApiResponses:1425 ApiErrors:7 ApiQueue:43 Piston:30 DbRequests:1203 DbResponses:1173 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"read ECONNRESET. Carrier name:fex, Tracking number:415205506459","level":"info"}
+{"message":"fex ApiRequests:1769 ApiResponses:1735 ApiErrors:5 ApiQueue:29 Piston:30 DbRequests:1256 DbResponses:1226 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:1307 ApiResponses:1264 ApiErrors:0 ApiQueue:43 Piston:50 DbRequests:1256 DbResponses:1226 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:1558 ApiResponses:1510 ApiErrors:7 ApiQueue:41 Piston:30 DbRequests:1256 DbResponses:1226 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"connect ETIMEDOUT 199.81.218.160:443. Carrier name:fex, Tracking number:415215301213","level":"info"}
+{"message":"fex ApiRequests:1908 ApiResponses:1856 ApiErrors:6 ApiQueue:46 Piston:20 DbRequests:1312 DbResponses:1282 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:1393 ApiResponses:1333 ApiErrors:0 ApiQueue:60 Piston:30 DbRequests:1312 DbResponses:1282 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:1646 ApiResponses:1599 ApiErrors:7 ApiQueue:40 Piston:40 DbRequests:1312 DbResponses:1282 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:2025 ApiResponses:1971 ApiErrors:6 ApiQueue:48 Piston:40 DbRequests:1363 DbResponses:1333 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:1472 ApiResponses:1424 ApiErrors:0 ApiQueue:48 Piston:30 DbRequests:1363 DbResponses:1333 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:1737 ApiResponses:1670 ApiErrors:7 ApiQueue:60 Piston:40 DbRequests:1363 DbResponses:1333 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:2114 ApiResponses:2046 ApiErrors:6 ApiQueue:62 Piston:30 DbRequests:1416 DbResponses:1386 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:1546 ApiResponses:1498 ApiErrors:0 ApiQueue:48 Piston:50 DbRequests:1416 DbResponses:1386 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:1815 ApiResponses:1752 ApiErrors:7 ApiQueue:56 Piston:20 DbRequests:1416 DbResponses:1386 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"read ECONNRESET. Carrier name:fex, Tracking number:415215308398","level":"info"}
+{"message":"read ECONNRESET. Carrier name:fex, Tracking number:415215305470","level":"info"}
+{"message":"read ECONNRESET. Carrier name:fex, Tracking number:415215306833","level":"info"}
+{"message":"fex ApiRequests:2205 ApiResponses:2147 ApiErrors:9 ApiQueue:49 Piston:40 DbRequests:1456 DbResponses:1426 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:1636 ApiResponses:1581 ApiErrors:0 ApiQueue:55 Piston:20 DbRequests:1456 DbResponses:1426 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:1908 ApiResponses:1848 ApiErrors:7 ApiQueue:53 Piston:40 DbRequests:1456 DbResponses:1426 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:2296 ApiResponses:2245 ApiErrors:9 ApiQueue:42 Piston:30 DbRequests:1498 DbResponses:1468 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:1739 ApiResponses:1688 ApiErrors:0 ApiQueue:51 Piston:20 DbRequests:1498 DbResponses:1468 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2010 ApiResponses:1935 ApiErrors:7 ApiQueue:68 Piston:30 DbRequests:1498 DbResponses:1468 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:2409 ApiResponses:2336 ApiErrors:9 ApiQueue:64 Piston:20 DbRequests:1533 DbResponses:1503 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:1830 ApiResponses:1787 ApiErrors:0 ApiQueue:43 Piston:20 DbRequests:1533 DbResponses:1503 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2077 ApiResponses:2026 ApiErrors:7 ApiQueue:44 Piston:35 DbRequests:1533 DbResponses:1503 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:2536 ApiResponses:2460 ApiErrors:9 ApiQueue:67 Piston:20 DbRequests:1585 DbResponses:1555 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:1955 ApiResponses:1911 ApiErrors:0 ApiQueue:44 Piston:20 DbRequests:1585 DbResponses:1555 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2166 ApiResponses:2108 ApiErrors:7 ApiQueue:51 Piston:25 DbRequests:1585 DbResponses:1555 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111115093","level":"info"}
+{"message":"fex ApiRequests:2629 ApiResponses:2582 ApiErrors:9 ApiQueue:38 Piston:30 DbRequests:1638 DbResponses:1609 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"ups ApiRequests:2087 ApiResponses:2038 ApiErrors:0 ApiQueue:49 Piston:30 DbRequests:1638 DbResponses:1609 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"gso ApiRequests:2262 ApiResponses:2204 ApiErrors:8 ApiQueue:50 Piston:35 DbRequests:1638 DbResponses:1609 DbErrors:0 DbQueue:29","level":"info"}
+{"message":"read ECONNRESET. Carrier name:fex, Tracking number:415215310803","level":"info"}
+{"message":"fex ApiRequests:2730 ApiResponses:2670 ApiErrors:10 ApiQueue:50 Piston:20 DbRequests:1695 DbResponses:1665 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:2198 ApiResponses:2145 ApiErrors:0 ApiQueue:53 Piston:30 DbRequests:1695 DbResponses:1665 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2327 ApiResponses:2269 ApiErrors:8 ApiQueue:50 Piston:35 DbRequests:1695 DbResponses:1665 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"connect ETIMEDOUT 153.2.228.76:443. Carrier name:ups, Tracking number:1ZTT1049A822288791","level":"info"}
+{"message":"fex ApiRequests:2844 ApiResponses:2784 ApiErrors:10 ApiQueue:50 Piston:20 DbRequests:1742 DbResponses:1712 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:2323 ApiResponses:2278 ApiErrors:1 ApiQueue:44 Piston:30 DbRequests:1742 DbResponses:1712 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2412 ApiResponses:2353 ApiErrors:8 ApiQueue:51 Piston:25 DbRequests:1742 DbResponses:1712 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:2979 ApiResponses:2903 ApiErrors:10 ApiQueue:66 Piston:20 DbRequests:1795 DbResponses:1765 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:2440 ApiResponses:2388 ApiErrors:1 ApiQueue:51 Piston:30 DbRequests:1795 DbResponses:1765 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2511 ApiResponses:2438 ApiErrors:8 ApiQueue:65 Piston:25 DbRequests:1795 DbResponses:1765 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"read ECONNRESET. Carrier name:fex, Tracking number:415205508278","level":"info"}
+{"message":"read ECONNRESET. Carrier name:fex, Tracking number:415205508407","level":"info"}
+{"message":"fex ApiRequests:3065 ApiResponses:3011 ApiErrors:12 ApiQueue:42 Piston:30 DbRequests:1837 DbResponses:1807 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:2529 ApiResponses:2479 ApiErrors:1 ApiQueue:49 Piston:30 DbRequests:1837 DbResponses:1807 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2577 ApiResponses:2526 ApiErrors:8 ApiQueue:43 Piston:45 DbRequests:1837 DbResponses:1807 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"fex ApiRequests:3158 ApiResponses:3094 ApiErrors:12 ApiQueue:52 Piston:40 DbRequests:1910 DbResponses:1880 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:2619 ApiResponses:2577 ApiErrors:1 ApiQueue:41 Piston:30 DbRequests:1910 DbResponses:1880 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2664 ApiResponses:2590 ApiErrors:8 ApiQueue:66 Piston:35 DbRequests:1910 DbResponses:1880 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"read ECONNRESET. Carrier name:fex, Tracking number:415215315507","level":"info"}
+{"message":"fex ApiRequests:3255 ApiResponses:3192 ApiErrors:13 ApiQueue:50 Piston:20 DbRequests:1953 DbResponses:1923 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"ups ApiRequests:2709 ApiResponses:2667 ApiErrors:1 ApiQueue:41 Piston:30 DbRequests:1953 DbResponses:1923 DbErrors:0 DbQueue:30","level":"info"}
+{"message":"gso ApiRequests:2726 ApiResponses:2671 ApiErrors:8 ApiQueue:47 Piston:65 DbRequests:1953 DbResponses:1923 DbErrors:0 DbQueue:30","level":"info"}
