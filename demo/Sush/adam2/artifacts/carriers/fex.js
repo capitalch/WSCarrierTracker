@@ -190,6 +190,7 @@ function handleFex(x, result) {
         const exception71Event = tools.getException71Event(events);
         exception71Event && (
             notify.incrException(x.carrierName),
+            
             exception71Event.StatusExceptionDescription && (statusDescription = exception71Event.StatusExceptionDescription.substr(0,49)),            
             exceptionStatus = 1,
             timeStamp = exception71Event.Timestamp

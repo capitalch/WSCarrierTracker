@@ -90,12 +90,12 @@ const disburse = (data) => {
     if (req) {
         req.isAvailable = false;
         req.multiple = true;
-        tools.setInputParams(req, data);
+        // tools.setInputParams(req, data);
         notify.addDbRequest();
         const packageHistorySql = sqlCommands.insertPackageHistory;
         // let sqlCommandTest = 'update product set UnitPrice = UnitPrice + 1 where id = 1;';
-        let sqlCommand = sqlCommands.updateInfoAndInsertInPackageHistory
-        .concat(data.activityJson ? `${packageHistorySql}` : '');
+        let sqlCommand = sqlCommands.updateInfoAndInsertInPackageHistory1;
+        // .concat(data.activityJson ? `${packageHistorySql}` : '');
         req.query(sqlCommand, (err, result) => {
             req.isAvailable = true;
             if (err) {

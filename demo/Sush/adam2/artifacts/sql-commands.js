@@ -1,6 +1,6 @@
 let sqlCommands = {
 	getInfos: `
-		SELECT NO_ rn,[Shipping Agent Code] shippingAgentCode,[External Tracking No_] trackingNumber,status
+		SELECT top 1100 NO_ rn,[Shipping Agent Code] shippingAgentCode,[External Tracking No_] trackingNumber,status
 		FROM [Wineshipping$PackageinfoNew] 
 		WHERE 
 				NOT [Status] = 'Package returned to shipper' and 
@@ -24,6 +24,22 @@ let sqlCommands = {
 		DAMAGE = @DAMAGE,
 		DAMAGEMSG = @DAMAGEMSG
 		where No_ = @No_;
+	`,
+	updateInfoAndInsertInPackageHistory1: `
+		update Wineshipping$PackageInfoNew
+		set Status= '',
+		Status_Time = '',
+		Status_Date= '',
+		EstimatedDeliveryDate = '',
+		CarrierStatusCode = '',
+		CarrierStatusMessage = '',
+		SignedForByName = '',
+		ExceptionStatus = 0,
+		RTS = 0,
+		RTSTrackingNo = '',
+		DAMAGE = 0,
+		DAMAGEMSG = ''
+		where No_ = 'CONT-000004566';
 	`,
 	insertPackageHistory: `
 		insert into PackageHistory(rn, TrackingNumber, ShippingAgentCode, 
