@@ -1,10 +1,9 @@
-//package Log
-Before exit update.
-//email
-Package run end time: time
-Carrier Code      Delivered   Returned      damaged     exception Not Delivered
-//Azure error logs
-create final error object and publish
+//Saby
+1. Find bug -Queue
+2. Git hub deployment in azure
+3. Prepare statement check
+4. Testing data
+5. Email function check and send mail to Sandip
 
 //Adam2 
                                     1. Complete TPS
