@@ -89,6 +89,7 @@ const notify = {
     },
     getDbStatus: () => dbStatus,
     getApiStatus: () => apiStatus,
+    getCarrierStatus: () => carrierStatus,
     initCarrier: (carrierName, infos) => {
         apiStatus[carrierName] || (apiStatus[carrierName] = {});
         apiStatus[carrierName].requests || (apiStatus[carrierName].requests = 0);
@@ -167,13 +168,13 @@ const notify = {
                 //     dbStatus.dbResponses, ' DbErrors:', dbStatus.dbErrors,
                 //     ' DbQueue:', dbStatus.dbQueue());
                 logger.info(x + ' ApiRequests:' + apiStatus[x].requests +
-                ' ApiResponses:' + apiStatus[x].responses +
-                ' ApiErrors:'+ apiStatus[x].errors+
-                ' ApiQueue:'+ apiStatus[x].queue()+
-                ' Piston:'+ apiStatus[x].piston+
-                ' DbRequests:'+ dbStatus.dbRequests + ' DbResponses:'+
-                dbStatus.dbResponses + ' DbErrors:'+ dbStatus.dbErrors+
-                ' DbQueue:'+ dbStatus.dbQueue())
+                    ' ApiResponses:' + apiStatus[x].responses +
+                    ' ApiErrors:' + apiStatus[x].errors +
+                    ' ApiQueue:' + apiStatus[x].queue() +
+                    ' Piston:' + apiStatus[x].piston +
+                    ' DbRequests:' + dbStatus.dbRequests + ' DbResponses:' +
+                    dbStatus.dbResponses + ' DbErrors:' + dbStatus.dbErrors +
+                    ' DbQueue:' + dbStatus.dbQueue())
         });
     },
     getJobRunStatus: () => {

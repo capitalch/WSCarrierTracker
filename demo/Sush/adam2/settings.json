@@ -2,6 +2,10 @@
     "config": {
         "verbose": false
         ,"autoPilotPiston":true
+        , "mailAddresses":[
+            "sagarwal@netwoven.com",
+            "capitalch@gmail.com"
+        ]
     },
     "db": {
         "user": "sagarwal",

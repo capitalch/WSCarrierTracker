@@ -4,7 +4,7 @@ const rx = require('rxjs');
 const ibuki = require('./ibuki');
 const settings = require('../settings.json');
 const notify = require('./notify');
-
+const email = require('./email');
 
 const handler = {};
 let verbose = settings.config.verbose;
@@ -25,20 +25,30 @@ const isIdle = () => {
 }
 
 handler.closeIfIdle = () => {
-    const myInterval = rx.interval(3000);
+    const myInterval = rx.interval(2000);
     handler.sub6 = myInterval.subscribe(() => {
         verbose && notify.showAllStatus();
-        isIdle() && (handler.sub6.unsubscribe(), notify.setTime('end'), ibuki.emit('db-log:handler>db'));
+        isIdle() && (
+            notify.setTime('end')
+            // , ibuki.emit('db-log:handler>db')
+            , cleanup(0)
+            , handler.sub6.unsubscribe()
+        );
     });
 }
 
-handler.sub13 = ibuki.filterOn('cleanup:db>handler').subscribe(d => {
+const subs = ibuki.filterOn('cleanup:db>handler').subscribe(() => {
+    subs.unsubscribe();
     cleanup(0);
+});
+
+const subs1 = ibuki.filterOn('mail-processed:email>handler').subscribe(()=>{    
+    subs1.unsubscribe();
+    process.exit(0);
 });
 
 function cleanup(code) {
     // notify.showAllStatus();
-    // notify.setTime('end'); // End of program time set
     console.log(notify.getJobRunStatus());
     console.log('cleaning up');
     handler.sub0 && handler.sub0.unsubscribe();
@@ -54,10 +64,8 @@ function cleanup(code) {
     handler.sub10 && handler.sub10.unsubscribe();
     handler.sub11 && handler.sub11.unsubscribe();
     handler.sub12 && handler.sub12.unsubscribe();
-    handler.sub13 && handler.sub13.unsubscribe();
-    handler.sub14 && handler.sub13.unsubscribe();
     handler.pool && handler.pool.close();
-    (code !== 0) && (process.exit(code));
+    ibuki.emit('send-status-mail:handler>email');
 }
 
 handler.frameError = (error, location, severity, index) => {
