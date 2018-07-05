@@ -11,6 +11,8 @@
             "name": "Sushant Agrawal",
             "type": "to"
         }]
+        , "mandrillApiKey":"r96zzCYUlKTLJ8e620HbKQ"
+        , "fromMail":"noreply@wineshippingalerts.com"
     },
     "db": {
         "user": "sagarwal",

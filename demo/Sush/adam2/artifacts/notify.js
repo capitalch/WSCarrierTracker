@@ -210,7 +210,9 @@ const notify = {
         errors.forEach((x) => {
             console.log(x);
         })
-    }
+    },
+    logInfo:(x)=>logger.info(x)
+
 }
 
 module.exports = notify;

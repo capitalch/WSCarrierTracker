@@ -6,6 +6,7 @@ const handler = require('./handler');
 const settings = require('../settings.json');
 const mandrill = require('mandrill-api/mandrill');
 const mandrillClient = new mandrill.Mandrill('r96zzCYUlKTLJ8e620HbKQ');
+// const mandrillClient = new mandrill.Mandrill(settings.config.mandrillApiKey);
 
 const mailAddresses = settings.config.mailAddresses;
 
@@ -65,12 +66,14 @@ const subs = ibuki.filterOn('send-status-mail:handler>email').subscribe(() => {
     var async = false;
     mandrillClient.messages.send({ "message": message, "async": async }, function (result) {
         // console.log(result);
+        notify.logInfo('Mandrill mail sent');
+        ibuki.emit('mail-processed:email>handler');
     }, function (e) {
         // Mandrill returns the error as an object with name and message keys
-        // console.log('A mandrill error occurred: ' + e.name + ' - ' + e.message);
+        ibuki.emit('mail-processed:email>handler');
+        notify.pushError('A mandrill error occurred: ' + e.name + ' - ' + e.message);
         // A mandrill error occurred: Unknown_Subaccount - No subaccount exists with the id 'customer-123'
     });
-    ibuki.emit('mail-processed:email>handler');
     subs.unsubscribe();
 });
 
