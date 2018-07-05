@@ -98,3 +98,16 @@
 {"message":"fex ApiRequests:3 ApiResponses:3 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:9 DbResponses:9 DbErrors:0 DbQueue:0","level":"info"}
 {"message":"gso ApiRequests:7 ApiResponses:6 ApiErrors:1 ApiQueue:0 Piston:0 DbRequests:9 DbResponses:9 DbErrors:0 DbQueue:0","level":"info"}
 {"message":"Mandrill mail sent","level":"info"}
+{"message":"fex ApiRequests:3 ApiResponses:0 ApiErrors:0 ApiQueue:3 Piston:0 DbRequests:0 DbResponses:0 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"gso ApiRequests:0 ApiResponses:0 ApiErrors:0 ApiQueue:0 Piston:10 DbRequests:0 DbResponses:0 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"fex ApiRequests:3 ApiResponses:2 ApiErrors:0 ApiQueue:1 Piston:0 DbRequests:9 DbResponses:5 DbErrors:0 DbQueue:4","level":"info"}
+{"message":"gso ApiRequests:7 ApiResponses:7 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:9 DbResponses:5 DbErrors:0 DbQueue:4","level":"info"}
+{"message":"fex ApiRequests:3 ApiResponses:3 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:10 DbResponses:10 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"gso ApiRequests:7 ApiResponses:7 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:10 DbResponses:10 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"Mandrill mail sent","level":"info"}
+{"message":"New Job started at 2018-07-05T12:03:20.241Z","level":"info"}
+{"message":"fex ApiRequests:3 ApiResponses:0 ApiErrors:0 ApiQueue:3 Piston:0 DbRequests:0 DbResponses:0 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"gso ApiRequests:7 ApiResponses:0 ApiErrors:0 ApiQueue:7 Piston:10 DbRequests:0 DbResponses:0 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"fex ApiRequests:3 ApiResponses:3 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:10 DbResponses:10 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"gso ApiRequests:7 ApiResponses:7 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:10 DbResponses:10 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"Mandrill mail sent","level":"info"}
