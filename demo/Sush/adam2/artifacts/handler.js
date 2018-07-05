@@ -20,7 +20,7 @@ const isIdle = () => {
         apiQueue = apiQueue + apiStatus[x].queue()
     });
     const dbQueue = notify.getDbStatus().dbQueue();
-    const ret = ((dbQueue <= 0) && (apiQueue <= 0));
+    const ret = ((dbQueue === 0) && (apiQueue === 0));
     return (ret);
 }
 
@@ -32,7 +32,7 @@ handler.closeIfIdle = () => {
             notify.setTime('end')
             , ibuki.emit('db-log:handler>db')
             , handler.sub6.unsubscribe()
-            // , cleanup(0)
+            // , cleanup(0)// to be removed
         );
     });
 }

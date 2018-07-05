@@ -2,10 +2,15 @@
     "config": {
         "verbose": false
         ,"autoPilotPiston":true
-        , "mailAddresses":[
-            "sagarwal@netwoven.com",
-            "capitalch@gmail.com"
-        ]
+        , "mailAddresses":[{
+            "email": "sbal@netwoven.com",
+            "name": "Sabyasachi bal",
+            "type": "to"
+        }, {
+            "email": "sagarwal@netwoven.com",
+            "name": "Sushant Agrawal",
+            "type": "to"
+        }]
     },
     "db": {
         "user": "sagarwal",

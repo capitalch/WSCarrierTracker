@@ -141,6 +141,7 @@ function checkMultiple(x, result) {
         x.param = x.param1.replace('$$$trackingUid', trackingNumberUniqueIdentifier);
         // x.trackingNumberUniqueIdentifier = trackDetails[0].TrackingNumberUniqueIdentifier;
         // x.param = `<TrackRequest xmlns='http://fedex.com/ws/track/v3'><WebAuthenticationDetail><UserCredential><Key>${settings.carriers.fex.key}</Key><Password>${settings.carriers.fex.password}</Password></UserCredential></WebAuthenticationDetail><ClientDetail><AccountNumber>${settings.carriers.fex.accountNumber}</AccountNumber><MeterNumber>${settings.carriers.fex.meterNumber}</MeterNumber></ClientDetail><TransactionDetail><CustomerTransactionId>***Track v8 Request using VB.NET***</CustomerTransactionId></TransactionDetail><Version><ServiceId>trck</ServiceId><Major>3</Major><Intermediate>0</Intermediate><Minor>0</Minor></Version><PackageIdentifier><Value>${x.trackingNumber}</Value><Type>TRACKING_NUMBER_OR_DOORTAG</Type></PackageIdentifier><TrackingNumberUniqueIdentifier>${x.trackingNumberUniqueIdentifier}</TrackingNumberUniqueIdentifier><IncludeDetailedScans>1</IncludeDetailedScans></TrackRequest>`;
+        notify.addApiRequest(x);
         ibuki.emit('axios-post:fex>api', x); 
     } else {
         handleFex(x, result);
@@ -214,7 +215,7 @@ function handleFex(x, result) {
     const mDate = mTimeStamp ? mTimeStamp.format("MMM. DD, YYYY") : '';
     const mTime = mTimeStamp ? mTimeStamp.format("h:mm A") : '';
     const fexJson = {
-        status: '', //statusDescription || 'No Status',
+        status: statusCode ? fexStatusCodes[statusCode] || 'noStatus' : 'noStatus', //statusDescription || 'No Status',
         statusDate: mDate, //from timeStamp
         statusTime: mTime, //from timestamp
 

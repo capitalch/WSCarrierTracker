@@ -13,7 +13,7 @@ let db = {};
 let reqs = [];
 const tools = {
     setInputParams: (req, json) => {
-        req.input('Status', sql.VarChar, json.status ||'No Status');
+        req.input('Status', sql.VarChar, json.status || 'No Status');
         req.input('Status_date', sql.VarChar, json.statusDate || '');
         req.input('Status_Time', sql.VarChar, json.statusTime || '');
         req.input('EstimatedDeliveryDate', sql.DateTime, json.estimatedDeliveryDate ? new Date(json.estimatedDeliveryDate) : new Date('1900-01-01'));
@@ -32,6 +32,50 @@ const tools = {
             req.input('ShippingAgentCode', sql.VarChar, json.shippingAgentCode);
             req.input('ActivityJson', sql.VarChar, JSON.stringify(json.activityJson));
         }
+    },
+    setPsInputTypes: (ps) => {
+        ps.input('Status', sql.VarChar);
+        ps.input('Status_date', sql.VarChar);
+        ps.input('Status_Time', sql.VarChar);
+        ps.input('EstimatedDeliveryDate', sql.DateTime);
+        ps.input('CarrierStatusCode', sql.VarChar);
+        ps.input('CarrierStatusMessage', sql.VarChar);
+        ps.input('SignedForByName', sql.VarChar);
+        ps.input('ExceptionStatus', sql.Int);
+        ps.input('RTS', sql.Int);
+        ps.input('RTSTrackingNo', sql.VarChar);
+        ps.input('DAMAGE', sql.Int);
+        ps.input('DAMAGEMSG', sql.VarChar);
+        ps.input('No_', sql.VarChar);
+
+        ps.input('rn', sql.VarChar);
+        ps.input('TrackingNumber', sql.VarChar);
+        ps.input('ShippingAgentCode', sql.VarChar);
+        ps.input('ActivityJson', sql.VarChar);
+    },
+    getPsParamsObject: (json) => {
+        const obj = {
+            Status: json.status || 'No Status',
+            'Status_date': json.statusDate || '',
+            'Status_Time': json.statusTime || '',
+            EstimatedDeliveryDate: json.estimatedDeliveryDate ? new Date(json.estimatedDeliveryDate) : new Date('1900-01-01'),
+            CarrierStatusCode: json.carrierStatusCode || '',
+            CarrierStatusMessage: json.carrierStatusMessage || 'No Status',
+            SignedForByName: json.signedForByName || '',
+            ExceptionStatus: json.exceptionStatus || 0,
+            RTS: json.rts || 0,
+            RTSTrackingNo: json.rtsTrackingNo || '',
+            DAMAGE: json.damage || 0,
+            DAMAGEMSG: json.damageMsg || '',
+            No_: json.rn,
+
+            rn: json.rn,
+            TrackingNumber: json.trackingNumber,
+            ShippingAgentCode: json.shippingAgentCode,
+            ActivityJson: JSON.stringify(json.activityJson)
+
+        };
+        return (obj);
     },
     setLogInputParams: (req, json) => {
         req.input('ApiRequests', sql.Int, json.apiRequests);
@@ -53,30 +97,42 @@ handler.sub0 = ibuki.filterOn('get-big-object:run>db').subscribe(d => {
                 notify.pushError(err);
                 ibuki.emit('app-error:any', handler.frameError(err, 'db', 'fatal', 1));
             } else {
-                createRequests();
-                const req = reqs.find((e) => e.isAvailable);
-                req.isAvailable = false;
-                req.query(sqlCommands.getInfos, (err, result) => {
+                const req1 = new sql.Request(handler.pool);
+                req1.query(sqlCommands.getInfos, (err, result) => {
                     if (err) {
                         notify.pushError(err);
                         ibuki.emit('app-error:any', handler.frameError(err, 'db', 'fatal', 2));
                     } else {
                         ibuki.emit('handle-big-object:db>workbench', result.recordset);
                     }
-                    req.isAvailable = true;
                 });
-
+                createPsRequests();
             }
         }
     );
 });
 
-const createRequests = () => {
-    for (let i = 0; i < settings.db.pool.max; i++) {
-        const req = new sql.Request(handler.pool);
-        req.isAvailable = true;
-        req.index = i;
-        reqs.push(req);
+const createPsRequests = () => {
+    for (let i = 0; i < (settings.db.pool.max - 2); i++) {
+        const ps = new sql.PreparedStatement(handler.pool);
+        tools.setPsInputTypes(ps);
+        const packageHistorySql = sqlCommands.insertPackageHistory;
+        // let sqlCommandTest = 'update product set UnitPrice = UnitPrice + 1 where id = 1;';
+        let sqlCommand = sqlCommands.updateInfoAndInsertInPackageHistory
+            .concat(`${packageHistorySql}`);
+        // .concat(data.activityJson ? `${packageHistorySql}` : '');
+        ps.isAvailable = true;
+        ps.index = i;
+        // ps.input('No', sql.VarChar);
+        ps.prepare(sqlCommand, (err) => {
+            if (err) {
+                notify.pushError(err);
+            } else {
+                ps.multiple = true;
+                reqs.push(ps);
+            }
+        });
+
     }
 }
 
@@ -85,18 +141,14 @@ handler.sub5 = handler.buffer.subscribe(d => {
 });
 
 const disburse = (data) => {
-    let req = reqs.find((e) => e.isAvailable);
-    if (req) {
-        req.isAvailable = false;
-        req.multiple = true;
-        // tools.setInputParams(req, data);
+    let ps = reqs.find((e) => e.isAvailable);
+    if (ps) {
+        ps.isAvailable = false;
         notify.addDbRequest();
-        const packageHistorySql = sqlCommands.insertPackageHistory;
-        // let sqlCommandTest = 'update product set UnitPrice = UnitPrice + 1 where id = 1;';
-        let sqlCommand = sqlCommands.updateInfoAndInsertInPackageHistory1;
-        // .concat(data.activityJson ? `${packageHistorySql}` : '');
-        req.query(sqlCommand, (err, result) => {
-            req.isAvailable = true;
+        const psParamsObject = tools.getPsParamsObject(data);
+        // ps.execute({ No: 'CONT-000004566' }, (err, result) => {
+        ps.execute(psParamsObject, (err, result) => {
+            ps.isAvailable = true;
             if (err) {
                 notify.pushError(err);
                 notify.addDbError();
@@ -112,19 +164,54 @@ const disburse = (data) => {
 }
 
 handler.sub12 = ibuki.filterOn('db-log:handler>db').subscribe(d => {
-    let req = reqs.find((e) => e.isAvailable);
-    if (req) {
-        req.isAvailable = false;
-        tools.setLogInputParams(req,notify.getJobRunStatus());
-        const sqlCommand = sqlCommands.insertPackageLog;
-        req.query(sqlCommand, (err, result) => {
-            req.isAvailable = true;
+    const req1 = new sql.Request(handler.pool);
+    tools.setLogInputParams(req1, notify.getJobRunStatus());
+    const sqlCommand = sqlCommands.insertPackageLog;
+        req1.query(sqlCommand, (err, result) => {
+            req1.isAvailable = true;
             if (err) {
                 notify.pushError(err);
                 //log the error
             }
             ibuki.emit('cleanup:db>handler');
         })
-    }
 });
 module.exports = db;
+
+
+// const createRequests = () => {
+//     for (let i = 0; i < settings.db.pool.max; i++) {
+//         const req = new sql.Request(handler.pool);
+//         req.isAvailable = true;
+//         req.index = i;
+//         reqs.push(req);
+//     }
+// }
+
+// const disburse = (data) => {
+//     let req = reqs.find((e) => e.isAvailable);
+//     if (req) {
+//         req.isAvailable = false;
+//         req.multiple = true;
+//         // tools.setInputParams(req, data);
+//         notify.addDbRequest();
+//         const packageHistorySql = sqlCommands.insertPackageHistory;
+//         // let sqlCommandTest = 'update product set UnitPrice = UnitPrice + 1 where id = 1;';
+//         let sqlCommand = sqlCommands.updateInfoAndInsertInPackageHistory1;
+//         // .concat(data.activityJson ? `${packageHistorySql}` : '');
+
+//         req.query(sqlCommand, (err, result) => {
+//             req.isAvailable = true;
+//             if (err) {
+//                 notify.pushError(err);
+//                 notify.addDbError();
+//             } else {
+//                 notify.addDbResponse();
+//             }
+//         });
+//     } else {
+//         setTimeout(() => {
+//             disburse(data);
+//         }, 1000);
+//     }
+// }
