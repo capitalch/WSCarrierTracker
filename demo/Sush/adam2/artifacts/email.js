@@ -64,12 +64,13 @@ const subs = ibuki.filterOn('send-status-mail:handler>email').subscribe(() => {
     };
     var async = false;
     mandrillClient.messages.send({ "message": message, "async": async }, function (result) {
-        console.log(result);
+        // console.log(result);
     }, function (e) {
         // Mandrill returns the error as an object with name and message keys
-        console.log('A mandrill error occurred: ' + e.name + ' - ' + e.message);
+        // console.log('A mandrill error occurred: ' + e.name + ' - ' + e.message);
         // A mandrill error occurred: Unknown_Subaccount - No subaccount exists with the id 'customer-123'
     });
+    ibuki.emit('mail-processed:email>handler');
     subs.unsubscribe();
 });
 
