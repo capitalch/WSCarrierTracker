@@ -23,8 +23,10 @@ const tools = {
         if (activities) {
             if (Array.isArray(activities)) {
                 activity = activities.find(
-                    x => x.Status.StatusType.Description
-                    .toLowerCase().includes('damage'));
+                    x => {
+                        let desc = x.Status.StatusType.Description;
+                        return desc && desc.toLowerCase().includes('damage')
+                    });
             }
         }
         return (activity);
@@ -34,8 +36,10 @@ const tools = {
         if (activities) {
             if (Array.isArray(activities)) {
                 activities.find(
-                    x => x.Status.StatusType.Description
-                    .toLowerCase().includes('returned to'));
+                    x => {
+                        let desc = x.Status.StatusType.Description;
+                        return desc && desc.toLowerCase().includes('damage')
+                    });
             }
         }
         return (activity);
@@ -55,7 +59,7 @@ const tools = {
         let activity = null;
         if (activities) {
             if (Array.isArray(activities)) {
-                activities.find(
+                activity = activities.find(
                     x => x.Status.StatusType.Code === 'D');
             }
         }
@@ -80,7 +84,6 @@ const tools = {
 }
 
 ups.processUps = (x) => {
-
     parseString(x.response, {
         trim: true,
         explicitArray: false
@@ -97,10 +100,6 @@ ups.processUps = (x) => {
                 const errorDescription = response.Error.ErrorDescription;
                 notify.incrException(x.carrierName);
                 const error = Error('UPS:' + x.trackingNumber + ' ' + errorDescription);
-                // const error = {
-                //     name: 'apiCallError',
-                //     message: 'UPS:' + x.trackingNumber + ' ' + errorDescription
-                // };
                 const errorJson = notify.getErrorJson(error,x);
                 handler.buffer.next(errorJson);
                 ibuki.emit('app-error:any', handler.frameError(error, 'ups', 'info', 7));
@@ -203,37 +202,3 @@ function handleUps(x, result) {
 }
 
 module.exports = ups;
-//const _ = require('lodash');
-// upsTemp.statusCode = startActivity.Status.StatusType.Code;
-// upsTemp.statusDate = tools.getDate(startActivity);
-// upsTemp.statusTime = tools.getTime(startActivity);
-// upsTemp.carrierStatusMessage = startActivity.Status.StatusType.Description;
-// upsTemp.statusCode = startActivity.Status.StatusType.Code;
-// upsTemp.statusDate = tools.getDate(startActivity);
-// upsTemp.statusTime = tools.getTime(startActivity);
-// upsTemp.carrierStatusMessage = startActivity.Status.StatusType.Description;
-// deliveryActivity = tools.getDeliveryActivity(activities);
-// upsTemp.statusCode = startActivity.Status.StatusType.Code;
-// upsTemp.statusDate = tools.getDate(startActivity);
-// upsTemp.statusTime = tools.getTime(startActivity);
-
-// upsTemp.statusCode = startActivity.Status.StatusType.Code;
-// upsTemp.statusDate = tools.getDate(startActivity);
-// upsTemp.statusTime = tools.getTime(startActivity);
-// upsTemp.upsStatusCodes = tools.upsStatusCodes();
-// let damage = 0,
-//     damageMsg = '',
-//     exceptionStatus = 0,
-//     statusCode = '';
-//damage count
-// let damageActivity = _.find(activity, function (o) {
-//     return o.Status.StatusType.Description.toLowerCase().includes('damage');
-// })
-// _.find(activity, function (o) {
-//     return o.Status.StatusType.Description.toLowerCase().includes('returned to');
-// })
-// getDelevaryActivity: (activity) => {
-//     return _.find(activity, function (o) {
-//         return o.Status.StatusType.Code === 'D';
-//     })
-// },
