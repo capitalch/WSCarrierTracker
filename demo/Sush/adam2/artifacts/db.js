@@ -123,7 +123,6 @@ const createPsRequests = () => {
         // .concat(data.activityJson ? `${packageHistorySql}` : '');
         ps.isAvailable = true;
         ps.index = i;
-        // ps.input('No', sql.VarChar);
         ps.prepare(sqlCommand, (err) => {
             if (err) {
                 notify.pushError(err);

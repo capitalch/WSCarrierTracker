@@ -1,18 +1,14 @@
 {
     "config": {
-        "verbose": false
-        ,"autoPilotPiston":true
-        , "mailAddresses":[{
-            "email": "sbal@netwoven.com",
-            "name": "Sabyasachi bal",
-            "type": "to"
-        }, {
+        "verbose": false,
+        "autoPilotPiston": true,
+        "mailAddresses": [{
             "email": "sagarwal@netwoven.com",
             "name": "Sushant Agrawal",
             "type": "to"
-        }]
-        , "mandrillApiKey":"r96zzCYUlKTLJ8e620HbKQ"
-        , "fromMail":"noreply@wineshippingalerts.com"
+        }],
+        "mandrillApiKey": "r96zzCYUlKTLJ8e620HbKQ",
+        "fromMail": "noreply@wineshippingalerts.com"
     },
     "db": {
         "user": "sagarwal",
@@ -41,7 +37,7 @@
         },
         "ups": {
             "piston": 10,
-            "queue":50,
+            "queue": 50,
             "url": "https://onlinetools.ups.com/ups.app/xml/Track",
             "accessLicenseNumber": "FC312F9BE62AFF90",
             "userId": "UPSwineshipping",
@@ -49,7 +45,7 @@
         },
         "gso": {
             "piston": 10,
-            "queue":50,
+            "queue": 50,
             "tokenUrl": "https://api.gso.com/Rest/v1/token",
             "url": "https://api.gso.com/Rest/v1/TrackShipment",
             "accounts": [{
@@ -70,8 +66,8 @@
             ]
         },
         "tps": {
-            "piston":20,
-            "queue":10,
+            "piston": 20,
+            "queue": 10,
             "url": "http://production.shippingapis.com/ShippingAPI.dll",
             "userId": "487WINES7756"
         }
