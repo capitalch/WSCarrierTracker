@@ -12,6 +12,9 @@ node_modules/
 #dot net
 dot-net/
 
+#settings
+settings.json
+
 # IDEs and editors
 /.idea
 .project
