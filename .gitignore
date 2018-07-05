@@ -13,7 +13,7 @@ node_modules/
 dot-net/
 
 #settings
-settings.json
+/settings.json
 
 # IDEs and editors
 /.idea
