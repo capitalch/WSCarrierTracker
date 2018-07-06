@@ -155,11 +155,8 @@ const disburse = (data) => {
         const myInterval = rx.interval(1000);
         const subs = myInterval.subscribe(()=>{
             subs.unsubscribe();
-            disburse(data);
+            handler.buffer.next(data);
         });
-        // setTimeout(() => {
-        //     // disburse(data);
-        // }, 1000);
     }
 }
 
