@@ -71,7 +71,7 @@ const notify = {
         // apiStatus[carrierName].errors || (apiStatus[carrierName].errors = 0);
         notifyData.apiStatus[carrierName].count = infos.length;
         notifyData.apiStatus[carrierName].piston = settings.carriers[carrierName].piston || 10;
-        logger.info(carrierName + 'Item Count: ' + notifyData.apiStatus[carrierName].count);
+        logger.info(carrierName + ' Item Count: ' + notifyData.apiStatus[carrierName].count);
         // verbose && (console.log(carrierName, 'Item Count :', apiStatus[carrierName].count));
         return (true);
     },
@@ -130,25 +130,35 @@ const notify = {
     // },
     showAllStatus: () => {
         const carriers = settings.carriers;
+        let apiReq = 0, apiRes = 0, apiErr = 0, apiQue = 0, dbReq = 0, dbRes = 0, dbErr = 0, dbQue = 0;
         Object.keys(carriers).forEach(x => {
+            apiReq += notifyData.apiStatus[x].requests;
+            apiRes += notifyData.apiStatus[x].responses;
+            apiErr += notifyData.apiStatus[x].errors;
+            apiQue += notifyData.apiStatus[x].queue();
+            dbReq += notifyData.dbStatus[x].requests;
+            dbRes += notifyData.dbStatus[x].responses;
+            dbErr += notifyData.dbStatus[x].errors;
+            dbQue += notifyData.dbStatus[x].queue();
             notifyData.apiStatus[x] &&
-                // console.log(x, ' ApiRequests:', apiStatus[x].requests,
-                //     ' ApiResponses:', apiStatus[x].responses,
-                //     ' ApiErrors:', apiStatus[x].errors,
-                //     ' ApiQueue:', apiStatus[x].queue(),
-                //     ' Piston:', apiStatus[x].piston,
-                //     ' DbRequests:', dbStatus.dbRequests, ' DbResponses:',
-                //     dbStatus.dbResponses, ' DbErrors:', dbStatus.dbErrors,
-                //     ' DbQueue:', dbStatus.dbQueue());
-                logger.info(x + ' ApiRequests:' + notifyData.apiStatus[x].requests +
-                    ' ApiResponses:' + notifyData.apiStatus[x].responses +
-                    ' ApiErrors:' + notifyData.apiStatus[x].errors +
-                    ' ApiQueue:' + notifyData.apiStatus[x].queue() +
+                logger.info(x + ' ApiReq:' + notifyData.apiStatus[x].requests +
+                    ' ApiRes:' + notifyData.apiStatus[x].responses +
+                    ' ApiErr:' + notifyData.apiStatus[x].errors +
+                    ' ApiQue:' + notifyData.apiStatus[x].queue() +
                     ' Piston:' + notifyData.apiStatus[x].piston +
-                    ' DbRequests:' + notifyData.dbStatus[x].requests + ' DbResponses:' +
-                    notifyData.dbStatus[x].responses + ' DbErrors:' + notifyData.dbStatus[x].errors +
-                    ' DbQueue:' + notifyData.dbStatus[x].queue())
+                    ' DbReq:' + notifyData.dbStatus[x].requests + ' DbRes:' +
+                    notifyData.dbStatus[x].responses + ' DbErr:' + notifyData.dbStatus[x].errors +
+                    ' DbQue:' + notifyData.dbStatus[x].queue());
         });
+        logger.info('Total' +' apiReq:' + apiReq +
+                    ' apiRes:' + apiRes +
+                    ' apiErr:' + apiErr +
+                    ' apiQue:' + apiQue +
+                    // ' Total Piston:' + notifyData.apiStatus[x].piston +
+                    ' dbReq:' + dbReq +
+                    ' dbRes:' + dbRes +
+                    ' dbErr:' + dbErr +
+                    ' dbQue:' + dbQue);
     },
     getJobRunStatus: () => {
         const carriers = Object.keys(notifyData.apiStatus);

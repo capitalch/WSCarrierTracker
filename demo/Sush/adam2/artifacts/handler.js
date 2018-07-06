@@ -30,7 +30,7 @@ const isIdle = () => {
 }
 
 handler.closeIfIdle = () => {
-    const myInterval = rx.interval(2000);
+    const myInterval = rx.interval(5000);
     handler.sub6 = myInterval.subscribe(() => {
         verbose && notify.showAllStatus();
         isIdle() && (
