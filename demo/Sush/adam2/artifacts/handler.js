@@ -14,12 +14,17 @@ handler.domainError = domain.create();
 
 const isIdle = () => {
     const apiStatus = notify.getApiStatus();
-    const carriers = Object.keys(apiStatus);
+    let carriers = Object.keys(apiStatus);
     let apiQueue = 0;
     carriers.forEach(x => {
         apiQueue = apiQueue + apiStatus[x].queue()
     });
-    const dbQueue = notify.getDbStatus().dbQueue();
+    let dbQueue = 0;
+    const dbStatus = notify.getDbStatus();
+    carriers = Object.keys(dbStatus);
+    carriers.forEach(x=>{
+        dbQueue = dbQueue + dbStatus[x].queue();
+    })
     const ret = ((dbQueue === 0) && (apiQueue <= 0));
     return (ret);
 }
@@ -95,13 +100,13 @@ process.on('exit', function (code) {
 
 process.on('uncaughtException', function (err) {
     // console.log('Uncaught exception:', err.stack || '');
-    notify.logInfo('Uncaught exception:', err.stack || '');
+    notify.logInfo('Uncaught exception: ' + err.stack || '');
     cleanup(101);
 });
 
 handler.domainError.on('error', function (err) {
     // console.log('Domain exception:', err.stack || err || '');
-    notify.logInfo('Domain exception:', err.stack || err || '');
+    notify.logInfo('Domain exception: ' + err.stack || err || '');
     cleanup(102);
     //use telemetry to log error
 });

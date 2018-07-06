@@ -6,7 +6,7 @@ const db = require('./artifacts/db');
 const notify = require('./artifacts/notify');
 
 notify.setTime('start');
-notify.logInfo('New Job started at '.concat(notify.getTime('start')));
+notify.logInfo('New Job started at ' + notify.getTime('start'));
 handler.domainError.run(function () {
     ibuki.emit('get-big-object:run>db');
 });

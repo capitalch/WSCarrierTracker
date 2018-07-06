@@ -7,3 +7,79 @@
 {"message":"Exiting program:Exit code:0 Start time:2018-07-06T04:41:56.706Z End time:0 Duration (hh:mm:ss)0","level":"info"}
 {"message":"New Job started at 2018-07-06T04:42:28.794Z","level":"info"}
 {"message":"Exiting program:Exit code:0 Start time:2018-07-06T04:42:28.794Z End time:0 Duration (hh:mm:ss)0","level":"info"}
+{"message":"New Job started at 2018-07-06T13:52:51.413Z","level":"info"}
+{"message":"New Job started at ","level":"info"}
+{"message":"Incorrect syntax near 'rn'.","level":"info"}
+{"message":"New Job started at ","level":"info"}
+{"message":"Incorrect syntax near 'rn'.","level":"info"}
+{"message":"New Job started at ","level":"info"}
+{"message":"Incorrect syntax near 'rn'.","level":"info"}
+{"message":"New Job started at ","level":"info"}
+{"message":"fexItem Count: 1","level":"info"}
+{"message":"fex ApiRequests:1 ApiResponses:0 ApiErrors:0 ApiQueue:1 Piston:0 DbRequests:0 DbResponses:0 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"ups ApiRequests:0 ApiResponses:0 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:0 DbResponses:0 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"gso ApiRequests:0 ApiResponses:0 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:0 DbResponses:0 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"tps ApiRequests:0 ApiResponses:0 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:0 DbResponses:0 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"fex ApiRequests:1 ApiResponses:1 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:1 DbResponses:1 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"ups ApiRequests:0 ApiResponses:0 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:1 DbResponses:1 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"gso ApiRequests:0 ApiResponses:0 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:1 DbResponses:1 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"tps ApiRequests:0 ApiResponses:0 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:1 DbResponses:1 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"Mandrill mail sent","level":"info"}
+{"message":"New Job started at ","level":"info"}
+{"message":"fexItem Count: 1","level":"info"}
+{"message":"fex ApiRequests:1 ApiResponses:0 ApiErrors:0 ApiQueue:1 Piston:0 DbRequests:0 DbResponses:0 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"ups ApiRequests:0 ApiResponses:0 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:0 DbResponses:0 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"gso ApiRequests:0 ApiResponses:0 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:0 DbResponses:0 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"tps ApiRequests:0 ApiResponses:0 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:0 DbResponses:0 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"fex ApiRequests:1 ApiResponses:1 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:1 DbResponses:1 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"ups ApiRequests:0 ApiResponses:0 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:1 DbResponses:1 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"gso ApiRequests:0 ApiResponses:0 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:1 DbResponses:1 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"tps ApiRequests:0 ApiResponses:0 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:1 DbResponses:1 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"Mandrill mail sent","level":"info"}
+{"message":"New Job started at ","level":"info"}
+{"message":"fexItem Count: 1","level":"info"}
+{"message":"fex ApiRequests:1 ApiResponses:0 ApiErrors:0 ApiQueue:1 Piston:0 DbRequests:0 DbResponses:0 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"ups ApiRequests:0 ApiResponses:0 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:0 DbResponses:0 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"gso ApiRequests:0 ApiResponses:0 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:0 DbResponses:0 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"tps ApiRequests:0 ApiResponses:0 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:0 DbResponses:0 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"fex ApiRequests:1 ApiResponses:1 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:1 DbResponses:1 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"ups ApiRequests:0 ApiResponses:0 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:1 DbResponses:1 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"gso ApiRequests:0 ApiResponses:0 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:1 DbResponses:1 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"tps ApiRequests:0 ApiResponses:0 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:1 DbResponses:1 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"Mandrill mail sent","level":"info"}
+{"message":"New Job started at 2018-07-06T15:15:40.238Z","level":"info"}
+{"message":"fexItem Count: 1","level":"info"}
+{"message":"fex ApiRequests:1 ApiResponses:0 ApiErrors:0 ApiQueue:1 Piston:0 DbRequests:0 DbResponses:0 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"ups ApiRequests:0 ApiResponses:0 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:0 DbResponses:0 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"gso ApiRequests:0 ApiResponses:0 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:0 DbResponses:0 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"tps ApiRequests:0 ApiResponses:0 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:0 DbResponses:0 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"New Job started at 2018-07-06T15:17:21.175Z","level":"info"}
+{"message":"fexItem Count: 1","level":"info"}
+{"message":"fex ApiRequests:1 ApiResponses:1 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:0 DbResponses:0 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"ups ApiRequests:0 ApiResponses:0 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:0 DbResponses:0 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"gso ApiRequests:0 ApiResponses:0 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:0 DbResponses:0 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"tps ApiRequests:0 ApiResponses:0 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:0 DbResponses:0 DbErrors:0 DbQueue:0","level":"info"}
+{"message":"fex ApiRequests:1 ApiResponses:1 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:0 DbResponses:1 DbErrors:0 DbQueue:-1","level":"info"}
+{"message":"ups ApiRequests:0 ApiResponses:0 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:0 DbResponses:1 DbErrors:0 DbQueue:-1","level":"info"}
+{"message":"gso ApiRequests:0 ApiResponses:0 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:0 DbResponses:1 DbErrors:0 DbQueue:-1","level":"info"}
+{"message":"tps ApiRequests:0 ApiResponses:0 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:0 DbResponses:1 DbErrors:0 DbQueue:-1","level":"info"}
+{"message":"fex ApiRequests:1 ApiResponses:1 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:0 DbResponses:1 DbErrors:0 DbQueue:-1","level":"info"}
+{"message":"ups ApiRequests:0 ApiResponses:0 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:0 DbResponses:1 DbErrors:0 DbQueue:-1","level":"info"}
+{"message":"gso ApiRequests:0 ApiResponses:0 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:0 DbResponses:1 DbErrors:0 DbQueue:-1","level":"info"}
+{"message":"tps ApiRequests:0 ApiResponses:0 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:0 DbResponses:1 DbErrors:0 DbQueue:-1","level":"info"}
+{"message":"fex ApiRequests:1 ApiResponses:1 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:0 DbResponses:1 DbErrors:0 DbQueue:-1","level":"info"}
+{"message":"ups ApiRequests:0 ApiResponses:0 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:0 DbResponses:1 DbErrors:0 DbQueue:-1","level":"info"}
+{"message":"gso ApiRequests:0 ApiResponses:0 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:0 DbResponses:1 DbErrors:0 DbQueue:-1","level":"info"}
+{"message":"tps ApiRequests:0 ApiResponses:0 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:0 DbResponses:1 DbErrors:0 DbQueue:-1","level":"info"}
+{"message":"fex ApiRequests:1 ApiResponses:1 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:0 DbResponses:1 DbErrors:0 DbQueue:-1","level":"info"}
+{"message":"ups ApiRequests:0 ApiResponses:0 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:0 DbResponses:1 DbErrors:0 DbQueue:-1","level":"info"}
+{"message":"gso ApiRequests:0 ApiResponses:0 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:0 DbResponses:1 DbErrors:0 DbQueue:-1","level":"info"}
+{"message":"tps ApiRequests:0 ApiResponses:0 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:0 DbResponses:1 DbErrors:0 DbQueue:-1","level":"info"}
+{"message":"fex ApiRequests:1 ApiResponses:1 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:0 DbResponses:1 DbErrors:0 DbQueue:-1","level":"info"}
+{"message":"ups ApiRequests:0 ApiResponses:0 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:0 DbResponses:1 DbErrors:0 DbQueue:-1","level":"info"}
+{"message":"gso ApiRequests:0 ApiResponses:0 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:0 DbResponses:1 DbErrors:0 DbQueue:-1","level":"info"}
+{"message":"tps ApiRequests:0 ApiResponses:0 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:0 DbResponses:1 DbErrors:0 DbQueue:-1","level":"info"}
+{"message":"fex ApiRequests:1 ApiResponses:1 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:0 DbResponses:1 DbErrors:0 DbQueue:-1","level":"info"}
+{"message":"ups ApiRequests:0 ApiResponses:0 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:0 DbResponses:1 DbErrors:0 DbQueue:-1","level":"info"}
+{"message":"gso ApiRequests:0 ApiResponses:0 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:0 DbResponses:1 DbErrors:0 DbQueue:-1","level":"info"}
+{"message":"tps ApiRequests:0 ApiResponses:0 ApiErrors:0 ApiQueue:0 Piston:0 DbRequests:0 DbResponses:1 DbErrors:0 DbQueue:-1","level":"info"}

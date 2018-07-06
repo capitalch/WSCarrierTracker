@@ -140,15 +140,15 @@ const disburse = (data) => {
     let ps = reqs.find((e) => e.isAvailable);
     if (ps) {
         ps.isAvailable = false;
-        notify.addDbRequest();
+        notify.addDbRequest(data.shippingAgentCode);
         const psParamsObject = tools.getPsParamsObject(data);
         ps.execute(psParamsObject, (err, result) => {
             ps.isAvailable = true;
             if (err) {
                 notify.pushError(err);
-                notify.addDbError();
+                notify.addDbError(data.shippingAgentCode);
             } else {
-                notify.addDbResponse();
+                notify.addDbResponse(data.shippingAgentCode);
             }
         });
     } else {

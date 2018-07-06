@@ -2,51 +2,22 @@
 const moment = require('moment');
 const logger = require('./logger');
 const settings = require('../settings.json');
-let verbose = settings.config.verbose;
-verbose = verbose || true;
+const notifyData = require('./notifyData');
+// let verbose = settings.config.verbose;
+// verbose = verbose || true;
 
 let errors = [];
-const apiStatus = {};
+// const apiStatus = {};
 const timing = {};
-const dbStatus = {
+const dbStatus1 = {
     dbRequests: 0,
     dbResponses: 0,
     dbErrors: 0,
     dbQueue: () => {
-        return (dbStatus.dbRequests - dbStatus.dbResponses - dbStatus.dbErrors);
+        return (dbStatus1.dbRequests - dbStatus1.dbResponses - dbStatus1.dbErrors);
     }
 };
 
-const carrierStatus = {
-    fex: {
-        delivered: 0,
-        return: 0,
-        damage: 0,
-        exception: 0,
-        notDelivered: 0
-    },
-    ups: {
-        delivered: 0,
-        return: 0,
-        damage: 0,
-        exception: 0,
-        notDelivered: 0
-    },
-    gso: {
-        delivered: 0,
-        return: 0,
-        damage: 0,
-        exception: 0,
-        notDelivered: 0
-    },
-    tps: {
-        delivered: 0,
-        return: 0,
-        damage: 0,
-        exception: 0,
-        notDelivered: 0
-    }
-};
 
 const notify = {
     setTime: (t) => {
@@ -87,62 +58,64 @@ const notify = {
         }
         return (errorJson);
     },
-    getDbStatus: () => dbStatus,
-    getApiStatus: () => apiStatus,
-    getCarrierStatus: () => carrierStatus,
+    getDbStatus: () => notifyData.dbStatus,
+    getApiStatus: () => notifyData.apiStatus,
+    getCarrierStatus: () => notifyData.carrierStatus,
     initCarrier: (carrierName, infos) => {
-        apiStatus[carrierName] || (apiStatus[carrierName] = {});
-        apiStatus[carrierName].requests || (apiStatus[carrierName].requests = 0);
-        apiStatus[carrierName].responses || (apiStatus[carrierName].responses = 0);
-        apiStatus[carrierName].queue || (apiStatus[carrierName].queue = () =>
-            apiStatus[carrierName].requests - apiStatus[carrierName].responses - apiStatus[carrierName].errors);
-        apiStatus[carrierName].errors || (apiStatus[carrierName].errors = 0);
-        apiStatus[carrierName].count = infos.length;
-        apiStatus[carrierName].piston = settings.carriers[carrierName].piston || 10;
-        verbose && (console.log(carrierName, 'Item Count :', apiStatus[carrierName].count));
+
+        // apiStatus[carrierName] || (apiStatus[carrierName] = {});
+        // apiStatus[carrierName].requests || (apiStatus[carrierName].requests = 0);
+        // apiStatus[carrierName].responses || (apiStatus[carrierName].responses = 0);
+        // apiStatus[carrierName].queue || (apiStatus[carrierName].queue = () =>
+        //     apiStatus[carrierName].requests - apiStatus[carrierName].responses - apiStatus[carrierName].errors);
+        // apiStatus[carrierName].errors || (apiStatus[carrierName].errors = 0);
+        notifyData.apiStatus[carrierName].count = infos.length;
+        notifyData.apiStatus[carrierName].piston = settings.carriers[carrierName].piston || 10;
+        logger.info(carrierName + 'Item Count: ' + notifyData.apiStatus[carrierName].count);
+        // verbose && (console.log(carrierName, 'Item Count :', apiStatus[carrierName].count));
         return (true);
     },
-    getPiston: (carrierName) => apiStatus[carrierName].piston,
+    getPiston: (carrierName) => notifyData.apiStatus[carrierName].piston,
     varyPiston: (carrierName, variation) => {
-        let temp = apiStatus[carrierName].piston + variation;
+        let temp = notifyData.apiStatus[carrierName].piston + variation;
         (temp < 0) && (variation = 0);
-        apiStatus[carrierName].piston = apiStatus[carrierName].piston + variation;
+        notifyData.apiStatus[carrierName].piston = notifyData.apiStatus[carrierName].piston + variation;
     },
-    getQueue: (carrierName) => apiStatus[carrierName].queue(),
-    addDbRequest: () => {
-        dbStatus.dbRequests++;
+    getApiQueue: (carrierName) => notifyData.apiStatus[carrierName].queue(),
+    addDbRequest: (carrierName) => {
+        notifyData.dbStatus[carrierName].requests++;
     },
-    addDbResponse: () => {
-        dbStatus.dbResponses++;
+    addDbResponse: (carrierName) => {
+        notifyData.dbStatus[carrierName].responses++;
     },
-    addDbError: () => {
-        dbStatus.dbErrors++;
+    addDbError: (carrierName) => {
+        notifyData.dbStatus[carrierName].errors++;
     },
     addApiRequest: (info) => {
-        apiStatus[info.carrierName].requests++;
+        notifyData.apiStatus[info.carrierName].requests++;
     },
     addApiResponse: (info) => {
-        apiStatus[info.carrierName].responses++;
+        notifyData.apiStatus[info.carrierName].responses++;
         // verbose && notify.showStatus(info);
     },
     addApiError: (info) => {
-        apiStatus[info.carrierName].errors++;
+        notifyData.apiStatus[info.carrierName].errors++;
         // verbose && notify.showStatus(info);
     },
     incrDelivered: (carrierName) => {
-        carrierStatus[carrierName].delivered++;
+        notifyData.carrierStatus[carrierName].delivered++;
     },
     incrDamage: (carrierName) => {
-        carrierStatus[carrierName].damage++;
+        notifyData.carrierStatus[carrierName].damage++;
     },
     incrReturn: (carrierName) => {
-        carrierStatus[carrierName].return++;
+        notifyData.carrierStatus[carrierName].return++;
     },
     incrException: (carrierName) => {
-        carrierStatus[carrierName].exception++;
+        notifyData.carrierStatus[carrierName].exception++;
     },
     incrNotDelivered: (carrierName) => {
-        carrierStatus[carrierName].notDelivered++;
+        notifyData.carrierStatus[carrierName].notDelivered++;
     },
     // showStatus: (info) => {
     //     console.log(info.carrierName,
@@ -158,7 +131,7 @@ const notify = {
     showAllStatus: () => {
         const carriers = settings.carriers;
         Object.keys(carriers).forEach(x => {
-            apiStatus[x] &&
+            notifyData.apiStatus[x] &&
                 // console.log(x, ' ApiRequests:', apiStatus[x].requests,
                 //     ' ApiResponses:', apiStatus[x].responses,
                 //     ' ApiErrors:', apiStatus[x].errors,
@@ -167,18 +140,18 @@ const notify = {
                 //     ' DbRequests:', dbStatus.dbRequests, ' DbResponses:',
                 //     dbStatus.dbResponses, ' DbErrors:', dbStatus.dbErrors,
                 //     ' DbQueue:', dbStatus.dbQueue());
-                logger.info(x + ' ApiRequests:' + apiStatus[x].requests +
-                    ' ApiResponses:' + apiStatus[x].responses +
-                    ' ApiErrors:' + apiStatus[x].errors +
-                    ' ApiQueue:' + apiStatus[x].queue() +
-                    ' Piston:' + apiStatus[x].piston +
-                    ' DbRequests:' + dbStatus.dbRequests + ' DbResponses:' +
-                    dbStatus.dbResponses + ' DbErrors:' + dbStatus.dbErrors +
-                    ' DbQueue:' + dbStatus.dbQueue())
+                logger.info(x + ' ApiRequests:' + notifyData.apiStatus[x].requests +
+                    ' ApiResponses:' + notifyData.apiStatus[x].responses +
+                    ' ApiErrors:' + notifyData.apiStatus[x].errors +
+                    ' ApiQueue:' + notifyData.apiStatus[x].queue() +
+                    ' Piston:' + notifyData.apiStatus[x].piston +
+                    ' DbRequests:' + notifyData.dbStatus[x].requests + ' DbResponses:' +
+                    notifyData.dbStatus[x].responses + ' DbErrors:' + notifyData.dbStatus[x].errors +
+                    ' DbQueue:' + notifyData.dbStatus[x].queue())
         });
     },
     getJobRunStatus: () => {
-        const carriers = Object.keys(apiStatus);
+        const carriers = Object.keys(notifyData.apiStatus);
         const status = {
             apiRequests: 0,
             apiResponses: 0,
@@ -191,28 +164,24 @@ const notify = {
             duration: notify.getJobRunDuration()
         };
         carriers && carriers.forEach(x => {
-            status.apiRequests = status.apiRequests + apiStatus[x].requests;
-            status.apiResponses = status.apiResponses + apiStatus[x].responses;
-            status.apiErrors = status.apiErrors + apiStatus[x].errors;
+            status.apiRequests = status.apiRequests + notifyData.apiStatus[x].requests;
+            status.apiResponses = status.apiResponses + notifyData.apiStatus[x].responses;
+            status.apiErrors = status.apiErrors + notifyData.apiStatus[x].errors;
+
+            status.dbRequests = status.dbRequests + notifyData.dbStatus[x].requests;
+            status.dbResponses = status.dbResponses + notifyData.dbStatus[x].responses;
+            status.dbErrors = status.dbErrors + notifyData.dbStatus[x].errors;
+
         });
-        status.dbRequests = dbStatus.dbRequests;
-        status.dbResponses = dbStatus.dbResponses;
-        status.errors = dbStatus.dbErrors;
+        // status.dbRequests = dbStatus1.dbRequests;
+        // status.dbResponses = dbStatus1.dbResponses;
+        // status.errors = dbStatus1.dbErrors;
         return (status);
     },
     pushError: (x) => {
-        // verbose && console.log(x.message);
         logger.info(x.message);
-        // errors.push(x)
     },
-    getAllErrors: () => notify.errors,
-    showAllErrors: () => {
-        errors.forEach((x) => {
-            console.log(x);
-        })
-    },
-    logInfo:(x)=>logger.info(x)
-
+    logInfo: (x) => logger.info(x)
 }
 
 module.exports = notify;
