@@ -1,34 +1,40 @@
 'use strict';
-const moment = require('moment');
-const sql = require('mssql');
-const settings = require('../settings.json');
-const handler = require('./handler');
-const sqlCommands = require('./sql-commands');
+const rx = require('rxjs');
+const myInterval = rx.interval(10000);
+const subs = myInterval.subscribe(()=>{
+    console.log('interval test');
+    subs.unsubscribe();
+});
+// const moment = require('moment');
+// const sql = require('mssql');
+// const settings = require('../settings.json');
+// const handler = require('./handler');
+// const sqlCommands = require('./sql-commands');
 //prepared statement
-handler.pool = new sql.ConnectionPool(settings.db);
-const ps = new sql.PreparedStatement(handler.pool);
-handler.pool.connect(err => {
-    if (err) {
-        console.log(err);
-    } else {
-        ps.input('i', sql.Int)
-        ps.prepare('update product set UnitPrice = UnitPrice + @i', err => {
-            if (err) {
-                console.log(err);
-            }
-            ps.execute({ i: 10 }, (err, result) => {
-                if (err) {
-                    console.log(err);
-                }
-                ps.unprepare(err => {
-                    if (err) {
-                        console.log(err);
-                    }
-                })
-            })
-        })
-    }
-})
+// handler.pool = new sql.ConnectionPool(settings.db);
+// const ps = new sql.PreparedStatement(handler.pool);
+// handler.pool.connect(err => {
+//     if (err) {
+//         console.log(err);
+//     } else {
+//         ps.input('i', sql.Int)
+//         ps.prepare('update product set UnitPrice = UnitPrice + @i', err => {
+//             if (err) {
+//                 console.log(err);
+//             }
+//             ps.execute({ i: 10 }, (err, result) => {
+//                 if (err) {
+//                     console.log(err);
+//                 }
+//                 ps.unprepare(err => {
+//                     if (err) {
+//                         console.log(err);
+//                     }
+//                 })
+//             })
+//         })
+//     }
+// })
 
 
 

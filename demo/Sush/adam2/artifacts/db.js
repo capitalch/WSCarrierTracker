@@ -1,7 +1,7 @@
 'use strict';
 const sql = require('mssql');
 // const moment = require('moment');
-// const rx = require('rxjs');
+const rx = require('rxjs');
 const ibuki = require('./ibuki');
 const handler = require('./handler');
 const settings = require('../settings.json');
@@ -117,10 +117,8 @@ const createPsRequests = () => {
         const ps = new sql.PreparedStatement(handler.pool);
         tools.setPsInputTypes(ps);
         const packageHistorySql = sqlCommands.insertPackageHistory;
-        // let sqlCommandTest = 'update product set UnitPrice = UnitPrice + 1 where id = 1;';
         let sqlCommand = sqlCommands.updateInfoAndInsertInPackageHistory
             .concat(`${packageHistorySql}`);
-        // .concat(data.activityJson ? `${packageHistorySql}` : '');
         ps.isAvailable = true;
         ps.index = i;
         ps.prepare(sqlCommand, (err) => {
@@ -144,7 +142,6 @@ const disburse = (data) => {
         ps.isAvailable = false;
         notify.addDbRequest();
         const psParamsObject = tools.getPsParamsObject(data);
-        // ps.execute({ No: 'CONT-000004566' }, (err, result) => {
         ps.execute(psParamsObject, (err, result) => {
             ps.isAvailable = true;
             if (err) {
@@ -155,9 +152,14 @@ const disburse = (data) => {
             }
         });
     } else {
-        setTimeout(() => {
+        const myInterval = rx.interval(1000);
+        const subs = myInterval.subscribe(()=>{
+            subs.unsubscribe();
             disburse(data);
-        }, 1000);
+        });
+        // setTimeout(() => {
+        //     // disburse(data);
+        // }, 1000);
     }
 }
 
@@ -169,7 +171,6 @@ handler.sub12 = ibuki.filterOn('db-log:handler>db').subscribe(d => {
             req1.isAvailable = true;
             if (err) {
                 notify.pushError(err);
-                //log the error
             }
             ibuki.emit('cleanup:db>handler');
         })
