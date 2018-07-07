@@ -16,16 +16,21 @@ const isIdle = () => {
     const apiStatus = notify.getApiStatus();
     let carriers = Object.keys(apiStatus);
     let apiQueue = 0;
+    let toDb = 0;
+    const consumed = false;
     carriers.forEach(x => {
-        apiQueue = apiQueue + apiStatus[x].queue()
+        apiQueue = apiQueue + apiStatus[x].queue();
+        toDb = toDb + apiStatus[x].toDb;
     });
     let dbQueue = 0;
     const dbStatus = notify.getDbStatus();
+    let dbRequests = 0;
     carriers = Object.keys(dbStatus);
     carriers.forEach(x=>{
         dbQueue = dbQueue + dbStatus[x].queue();
-    })
-    const ret = ((dbQueue === 0) && (apiQueue <= 0));
+        dbRequests = dbRequests + dbStatus[x].requests;
+    });
+    const ret = ((dbQueue === 0) && (apiQueue === 0) && (toDb === dbRequests));
     return (ret);
 }
 

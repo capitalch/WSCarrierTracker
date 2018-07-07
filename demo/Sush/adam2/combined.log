@@ -3041,3 +3041,1042 @@
 {"message":"tps ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
 {"message":"Total apiReq:10 apiRes:10 apiErr:0 apiQue:0 dbReq:10 dbRes:10 dbErr:0 dbQue:0 Time:2018-07-07T09:46:20.455Z","level":"info"}
 {"message":"Mandrill mail sent","level":"info"}
+{"message":"New Job started at 2018-07-07T12:27:09.690Z","level":"info"}
+{"message":"gso Item Count: 7","level":"info"}
+{"message":"fex Item Count: 3","level":"info"}
+{"message":"fex ApiReq:3 ApiRes:3 ApiErr:0 ApiQue:0 ApiToDb:0 Piston:0 DbReq:3 DbRes:3 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 ApiToDb:0 Piston:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:7 ApiRes:6 ApiErr:0 ApiQue:1 ApiToDb:0 Piston:0 DbReq:4 DbRes:4 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 ApiToDb:0 Piston:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:10 apiRes:9 apiErr:0 apiQue:1 apiToDb:NaN dbReq:7 dbRes:7 dbErr:0 dbQue:0 Time:2018-07-07T12:27:16.967Z","level":"info"}
+{"message":"fex ApiReq:3 ApiRes:3 ApiErr:0 ApiQue:0 ApiToDb:0 Piston:0 DbReq:3 DbRes:3 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 ApiToDb:0 Piston:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:7 ApiRes:7 ApiErr:0 ApiQue:0 ApiToDb:0 Piston:0 DbReq:7 DbRes:7 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 ApiToDb:0 Piston:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:10 apiRes:10 apiErr:0 apiQue:0 apiToDb:NaN dbReq:10 dbRes:10 dbErr:0 dbQue:0 Time:2018-07-07T12:27:21.971Z","level":"info"}
+{"message":"fex ApiReq:3 ApiRes:3 ApiErr:0 ApiQue:0 ApiToDb:0 Piston:0 DbReq:3 DbRes:3 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 ApiToDb:0 Piston:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:7 ApiRes:7 ApiErr:0 ApiQue:0 ApiToDb:0 Piston:0 DbReq:7 DbRes:7 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 ApiToDb:0 Piston:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:10 apiRes:10 apiErr:0 apiQue:0 apiToDb:NaN dbReq:10 dbRes:10 dbErr:0 dbQue:0 Time:2018-07-07T12:27:26.975Z","level":"info"}
+{"message":"fex ApiReq:3 ApiRes:3 ApiErr:0 ApiQue:0 ApiToDb:0 Piston:0 DbReq:3 DbRes:3 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 ApiToDb:0 Piston:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:7 ApiRes:7 ApiErr:0 ApiQue:0 ApiToDb:0 Piston:0 DbReq:7 DbRes:7 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 ApiToDb:0 Piston:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:10 apiRes:10 apiErr:0 apiQue:0 apiToDb:NaN dbReq:10 dbRes:10 dbErr:0 dbQue:0 Time:2018-07-07T12:27:31.978Z","level":"info"}
+{"message":"fex ApiReq:3 ApiRes:3 ApiErr:0 ApiQue:0 ApiToDb:0 Piston:0 DbReq:3 DbRes:3 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 ApiToDb:0 Piston:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:7 ApiRes:7 ApiErr:0 ApiQue:0 ApiToDb:0 Piston:0 DbReq:7 DbRes:7 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 ApiToDb:0 Piston:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:10 apiRes:10 apiErr:0 apiQue:0 apiToDb:NaN dbReq:10 dbRes:10 dbErr:0 dbQue:0 Time:2018-07-07T12:27:36.983Z","level":"info"}
+{"message":"fex ApiReq:3 ApiRes:3 ApiErr:0 ApiQue:0 ApiToDb:0 Piston:0 DbReq:3 DbRes:3 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 ApiToDb:0 Piston:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:7 ApiRes:7 ApiErr:0 ApiQue:0 ApiToDb:0 Piston:0 DbReq:7 DbRes:7 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 ApiToDb:0 Piston:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:10 apiRes:10 apiErr:0 apiQue:0 apiToDb:NaN dbReq:10 dbRes:10 dbErr:0 dbQue:0 Time:2018-07-07T12:27:41.989Z","level":"info"}
+{"message":"New Job started at 2018-07-07T12:32:46.603Z","level":"info"}
+{"message":"gso Item Count: 7","level":"info"}
+{"message":"fex Item Count: 3","level":"info"}
+{"message":"Domain exception: TypeError: Cannot read property 'carrierName' of undefined\n    at SafeSubscriber.handler.sub5.handler.buffer.subscribe.d [as _next] (C:\\Projects\\WSCarrierTracker\\demo\\Sush\\adam2\\artifacts\\db.js:135:30)\n    at SafeSubscriber.__tryOrUnsub (C:\\Projects\\WSCarrierTracker\\demo\\Sush\\node_modules\\rxjs\\internal\\Subscriber.js:263:16)\n    at SafeSubscriber.next (C:\\Projects\\WSCarrierTracker\\demo\\Sush\\node_modules\\rxjs\\internal\\Subscriber.js:201:22)\n    at Subscriber._next (C:\\Projects\\WSCarrierTracker\\demo\\Sush\\node_modules\\rxjs\\internal\\Subscriber.js:139:26)\n    at Subscriber.next (C:\\Projects\\WSCarrierTracker\\demo\\Sush\\node_modules\\rxjs\\internal\\Subscriber.js:103:18)\n    at Subject.next (C:\\Projects\\WSCarrierTracker\\demo\\Sush\\node_modules\\rxjs\\internal\\Subject.js:63:25)\n    at handleFex (C:\\Projects\\WSCarrierTracker\\demo\\Sush\\adam2\\artifacts\\carriers\\fex.js:237:20)\n    at checkMultiple (C:\\Projects\\WSCarrierTracker\\demo\\Sush\\adam2\\artifacts\\carriers\\fex.js:145:9)\n    at C:\\Projects\\WSCarrierTracker\\demo\\Sush\\adam2\\artifacts\\carriers\\fex.js:131:17\n    at Parser.<anonymous> (C:\\Projects\\WSCarrierTracker\\demo\\Sush\\node_modules\\xml2js\\lib\\parser.js:303:18)","level":"info"}
+{"message":"New Job started at 2018-07-07T12:38:19.217Z","level":"info"}
+{"message":"gso Item Count: 7","level":"info"}
+{"message":"fex Item Count: 3","level":"info"}
+{"message":"fex ApiReq:3 ApiRes:3 ApiErr:0 ApiQue:0 ApiToDb:3 Piston:0 DbReq:3 DbRes:3 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 ApiToDb:0 Piston:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:7 ApiRes:7 ApiErr:0 ApiQue:0 ApiToDb:7 Piston:0 DbReq:7 DbRes:7 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 ApiToDb:0 Piston:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:10 apiRes:10 apiErr:0 apiQue:0 apiToDb:NaN dbReq:10 dbRes:10 dbErr:0 dbQue:0 Time:2018-07-07T12:38:28.104Z","level":"info"}
+{"message":"Mandrill mail sent","level":"info"}
+{"message":"New Job started at 2018-07-07T12:40:49.756Z","level":"info"}
+{"message":"gso Item Count: 7","level":"info"}
+{"message":"fex Item Count: 3","level":"info"}
+{"message":"fex ApiReq:3 ApiRes:3 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:3 DbReq:3 DbRes:3 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:7 ApiRes:7 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:7 DbReq:7 DbRes:7 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:10 apiRes:10 apiErr:0 apiQue:0 apiToDb:10 dbReq:10 dbRes:10 dbErr:0 dbQue:0 Time:2018-07-07T12:40:56.890Z","level":"info"}
+{"message":"Mandrill mail sent","level":"info"}
+{"message":"New Job started at 2018-07-07T12:42:32.523Z","level":"info"}
+{"message":"gso Item Count: 2952","level":"info"}
+{"message":"fex Item Count: 1487","level":"info"}
+{"message":"ups Item Count: 5530","level":"info"}
+{"message":"tps Item Count: 31","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112449","level":"info"}
+{"message":"fex ApiReq:235 ApiRes:173 ApiErr:0 ApiQue:62 Piston:25 ApiToDb:321 DbReq:58 DbRes:58 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:233 ApiRes:164 ApiErr:0 ApiQue:69 Piston:25 ApiToDb:310 DbReq:55 DbRes:55 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:179 ApiRes:75 ApiErr:1 ApiQue:103 Piston:15 ApiToDb:84 DbReq:13 DbRes:13 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:32 DbReq:30 DbRes:30 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:678 apiRes:443 apiErr:1 apiQue:234 apiToDb:747 dbReq:156 dbRes:156 dbErr:0 dbQue:0 Time:2018-07-07T12:42:40.455Z","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112415","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112370","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112347","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112343","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112588","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112598","level":"info"}
+{"message":"fex ApiReq:392 ApiRes:347 ApiErr:0 ApiQue:45 Piston:25 ApiToDb:1269 DbReq:111 DbRes:111 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:388 ApiRes:331 ApiErr:0 ApiQue:57 Piston:35 ApiToDb:1246 DbReq:102 DbRes:102 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:377 ApiRes:327 ApiErr:7 ApiQue:43 Piston:25 ApiToDb:1105 DbReq:73 DbRes:73 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:37 DbReq:30 DbRes:30 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:1188 apiRes:1036 apiErr:7 apiQue:145 apiToDb:3657 dbReq:316 dbRes:316 dbErr:0 dbQue:0 Time:2018-07-07T12:42:45.458Z","level":"info"}
+{"message":"fex ApiReq:585 ApiRes:534 ApiErr:0 ApiQue:51 Piston:25 ApiToDb:2817 DbReq:174 DbRes:174 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:541 ApiRes:488 ApiErr:0 ApiQue:53 Piston:35 ApiToDb:2757 DbReq:148 DbRes:148 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:578 ApiRes:525 ApiErr:7 ApiQue:46 Piston:25 ApiToDb:2811 DbReq:135 DbRes:135 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:42 DbReq:30 DbRes:30 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:1735 apiRes:1578 apiErr:7 apiQue:150 apiToDb:8427 dbReq:487 dbRes:487 dbErr:0 dbQue:0 Time:2018-07-07T12:42:50.463Z","level":"info"}
+{"message":"read ECONNRESET. Carrier name:fex, Tracking number:415215291208","level":"info"}
+{"message":"fex ApiReq:788 ApiRes:728 ApiErr:1 ApiQue:59 Piston:15 ApiToDb:5008 DbReq:243 DbRes:243 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:685 ApiRes:635 ApiErr:0 ApiQue:50 Piston:25 ApiToDb:4756 DbReq:202 DbRes:202 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:780 ApiRes:731 ApiErr:7 ApiQue:42 Piston:25 ApiToDb:5254 DbReq:197 DbRes:197 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:47 DbReq:30 DbRes:30 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:2284 apiRes:2125 apiErr:8 apiQue:151 apiToDb:15065 dbReq:672 dbRes:672 dbErr:0 dbQue:0 Time:2018-07-07T12:42:55.468Z","level":"info"}
+{"message":"fex ApiReq:970 ApiRes:915 ApiErr:1 ApiQue:54 Piston:15 ApiToDb:7873 DbReq:299 DbRes:299 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:822 ApiRes:770 ApiErr:0 ApiQue:52 Piston:45 ApiToDb:7221 DbReq:248 DbRes:248 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:976 ApiRes:916 ApiErr:7 ApiQue:53 Piston:25 ApiToDb:8337 DbReq:266 DbRes:266 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:49 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:2799 apiRes:2632 apiErr:8 apiQue:159 apiToDb:23480 dbReq:844 dbRes:844 dbErr:0 dbQue:0 Time:2018-07-07T12:43:00.471Z","level":"info"}
+{"message":"fex ApiReq:1169 ApiRes:1119 ApiErr:1 ApiQue:49 Piston:15 ApiToDb:11344 DbReq:370 DbRes:370 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:956 ApiRes:916 ApiErr:0 ApiQue:40 Piston:35 ApiToDb:10137 DbReq:292 DbRes:292 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:1153 ApiRes:1097 ApiErr:7 ApiQue:49 Piston:15 ApiToDb:12021 DbReq:319 DbRes:319 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:49 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:3309 apiRes:3163 apiErr:8 apiQue:138 apiToDb:33551 dbReq:1012 dbRes:1012 dbErr:0 dbQue:0 Time:2018-07-07T12:43:05.476Z","level":"info"}
+{"message":"read ECONNRESET. Carrier name:fex, Tracking number:415215298202","level":"info"}
+{"message":"fex ApiReq:1371 ApiRes:1315 ApiErr:2 ApiQue:54 Piston:20 ApiToDb:15481 DbReq:441 DbRes:441 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:1106 ApiRes:1052 ApiErr:0 ApiQue:54 Piston:40 ApiToDb:13500 DbReq:350 DbRes:350 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:1351 ApiRes:1287 ApiErr:7 ApiQue:57 Piston:20 ApiToDb:16389 DbReq:371 DbRes:371 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:49 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:3859 apiRes:3685 apiErr:9 apiQue:165 apiToDb:45419 dbReq:1193 dbRes:1193 dbErr:0 dbQue:0 Time:2018-07-07T12:43:10.477Z","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1481 ApiErr:2 ApiQue:7 Piston:20 ApiToDb:20209 DbReq:509 DbRes:509 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:1229 ApiRes:1177 ApiErr:0 ApiQue:52 Piston:40 ApiToDb:17261 DbReq:392 DbRes:392 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:1541 ApiRes:1482 ApiErr:7 ApiQue:52 Piston:30 ApiToDb:21378 DbReq:431 DbRes:431 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:49 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:4291 apiRes:4171 apiErr:9 apiQue:111 apiToDb:58897 dbReq:1363 dbRes:1363 dbErr:0 dbQue:0 Time:2018-07-07T12:43:15.479Z","level":"info"}
+{"message":"read ECONNRESET. Carrier name:fex, Tracking number:415215299985","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:3 ApiQue:1 Piston:0 ApiToDb:24914 DbReq:567 DbRes:567 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:1345 ApiRes:1286 ApiErr:0 ApiQue:59 Piston:40 ApiToDb:21369 DbReq:447 DbRes:447 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:1730 ApiRes:1680 ApiErr:7 ApiQue:43 Piston:30 ApiToDb:27026 DbReq:502 DbRes:502 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:49 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:4596 apiRes:4483 apiErr:10 apiQue:103 apiToDb:73358 dbReq:1547 dbRes:1547 dbErr:0 dbQue:0 Time:2018-07-07T12:43:20.482Z","level":"info"}
+{"message":"connect ETIMEDOUT 153.2.228.76:443. Carrier name:ups, Tracking number:1ZTT1049A822281814","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:3 ApiQue:1 Piston:0 ApiToDb:29355 DbReq:613 DbRes:613 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:1469 ApiRes:1409 ApiErr:1 ApiQue:59 Piston:30 ApiToDb:25790 DbReq:503 DbRes:503 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:1930 ApiRes:1852 ApiErr:7 ApiQue:71 Piston:20 ApiToDb:33274 DbReq:573 DbRes:573 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:49 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:4920 apiRes:4778 apiErr:11 apiQue:131 apiToDb:88468 dbReq:1720 dbRes:1720 dbErr:0 dbQue:0 Time:2018-07-07T12:43:25.485Z","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:3 ApiQue:1 Piston:0 ApiToDb:33583 DbReq:647 DbRes:647 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:1592 ApiRes:1542 ApiErr:1 ApiQue:49 Piston:50 ApiToDb:30553 DbReq:562 DbRes:562 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2115 ApiRes:2060 ApiErr:7 ApiQue:48 Piston:20 ApiToDb:40012 DbReq:668 DbRes:668 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:49 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:5228 apiRes:5119 apiErr:11 apiQue:98 apiToDb:104197 dbReq:1908 dbRes:1908 dbErr:0 dbQue:0 Time:2018-07-07T12:43:30.490Z","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111115093","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:3 ApiQue:1 Piston:0 ApiToDb:37612 DbReq:677 DbRes:677 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:1708 ApiRes:1660 ApiErr:1 ApiQue:47 Piston:40 ApiToDb:35578 DbReq:636 DbRes:636 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2320 ApiRes:2269 ApiErr:8 ApiQue:43 Piston:30 ApiToDb:47287 DbReq:760 DbRes:760 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:49 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:5549 apiRes:5446 apiErr:12 apiQue:91 apiToDb:120526 dbReq:2104 dbRes:2104 dbErr:0 dbQue:0 Time:2018-07-07T12:43:35.494Z","level":"info"}
+{"message":"read ECONNRESET. Carrier name:ups, Tracking number:1Z91V467A822229429","level":"info"}
+{"message":"read ECONNRESET. Carrier name:ups, Tracking number:1Z91V467A822229376","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:3 ApiQue:1 Piston:0 ApiToDb:41612 DbReq:695 DbRes:695 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:1825 ApiRes:1773 ApiErr:3 ApiQue:49 Piston:40 ApiToDb:40922 DbReq:685 DbRes:685 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2519 ApiRes:2466 ApiErr:8 ApiQue:45 Piston:20 ApiToDb:55151 DbReq:883 DbRes:883 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:49 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:5865 apiRes:5756 apiErr:14 apiQue:95 apiToDb:137734 dbReq:2294 dbRes:2294 dbErr:0 dbQue:0 Time:2018-07-07T12:43:40.497Z","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:3 ApiQue:1 Piston:0 ApiToDb:45503 DbReq:714 DbRes:714 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:1929 ApiRes:1876 ApiErr:3 ApiQue:50 Piston:40 ApiToDb:46545 DbReq:741 DbRes:741 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2721 ApiRes:2662 ApiErr:8 ApiQue:51 Piston:20 ApiToDb:63417 DbReq:993 DbRes:993 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:49 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:6171 apiRes:6055 apiErr:14 apiQue:102 apiToDb:155514 dbReq:2479 dbRes:2479 dbErr:0 dbQue:0 Time:2018-07-07T12:43:45.500Z","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111115795","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:3 ApiQue:1 Piston:0 ApiToDb:49313 DbReq:725 DbRes:725 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:2048 ApiRes:1993 ApiErr:3 ApiQue:52 Piston:40 ApiToDb:52355 DbReq:807 DbRes:807 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2906 ApiRes:2845 ApiErr:9 ApiQue:52 Piston:20 ApiToDb:71966 DbReq:1103 DbRes:1103 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:49 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:6475 apiRes:6355 apiErr:15 apiQue:105 apiToDb:173683 dbReq:2666 dbRes:2666 dbErr:0 dbQue:0 Time:2018-07-07T12:43:50.502Z","level":"info"}
+{"message":"connect ECONNREFUSED 153.2.228.76:443. Carrier name:ups, Tracking number:1ZTT1049A822289870","level":"info"}
+{"message":"connect ECONNREFUSED 153.2.228.76:443. Carrier name:ups, Tracking number:1ZTT1049A822293105","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111115885","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111115904","level":"info"}
+{"message":"connect ECONNREFUSED 153.2.228.76:443. Carrier name:ups, Tracking number:1ZTT1049A822294819","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:3 ApiQue:1 Piston:0 ApiToDb:53101 DbReq:730 DbRes:730 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:2170 ApiRes:2112 ApiErr:6 ApiQue:52 Piston:40 ApiToDb:58464 DbReq:884 DbRes:884 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2941 ApiErr:11 ApiQue:0 Piston:0 ApiToDb:80822 DbReq:1212 DbRes:1212 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:49 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:6643 apiRes:6570 apiErr:20 apiQue:53 apiToDb:192436 dbReq:2857 dbRes:2857 dbErr:0 dbQue:0 Time:2018-07-07T12:43:55.509Z","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:3 ApiQue:1 Piston:0 ApiToDb:56846 DbReq:744 DbRes:744 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:2274 ApiRes:2222 ApiErr:6 ApiQue:46 Piston:40 ApiToDb:64761 DbReq:963 DbRes:963 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2941 ApiErr:11 ApiQue:0 Piston:0 ApiToDb:89247 DbReq:1303 DbRes:1303 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:49 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:6747 apiRes:6680 apiErr:20 apiQue:47 apiToDb:210903 dbReq:3041 dbRes:3041 dbErr:0 dbQue:0 Time:2018-07-07T12:44:00.544Z","level":"info"}
+{"message":"read ECONNRESET. Carrier name:ups, Tracking number:1ZTT1049A822289307","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:3 ApiQue:1 Piston:0 ApiToDb:60507 DbReq:764 DbRes:764 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:2390 ApiRes:2343 ApiErr:7 ApiQue:40 Piston:40 ApiToDb:71129 DbReq:1075 DbRes:1075 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2941 ApiErr:11 ApiQue:0 Piston:0 ApiToDb:97285 DbReq:1372 DbRes:1372 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:49 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:6863 apiRes:6801 apiErr:21 apiQue:41 apiToDb:228970 dbReq:3242 dbRes:3242 dbErr:0 dbQue:0 Time:2018-07-07T12:44:05.546Z","level":"info"}
+{"message":"connect ECONNREFUSED 153.2.228.76:443. Carrier name:ups, Tracking number:1ZTT1049A822288951","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:3 ApiQue:1 Piston:0 ApiToDb:64069 DbReq:779 DbRes:779 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:2522 ApiRes:2465 ApiErr:8 ApiQue:49 Piston:40 ApiToDb:77548 DbReq:1195 DbRes:1195 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2941 ApiErr:11 ApiQue:0 Piston:0 ApiToDb:105010 DbReq:1438 DbRes:1438 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:49 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:6995 apiRes:6923 apiErr:22 apiQue:50 apiToDb:246676 dbReq:3443 dbRes:3443 dbErr:0 dbQue:0 Time:2018-07-07T12:44:10.559Z","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:3 ApiQue:1 Piston:0 ApiToDb:67549 DbReq:797 DbRes:797 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:2628 ApiRes:2569 ApiErr:8 ApiQue:51 Piston:60 ApiToDb:83901 DbReq:1312 DbRes:1312 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2941 ApiErr:11 ApiQue:0 Piston:0 ApiToDb:112423 DbReq:1496 DbRes:1496 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:49 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:7101 apiRes:7027 apiErr:22 apiQue:52 apiToDb:263922 dbReq:3636 dbRes:3636 dbErr:0 dbQue:0 Time:2018-07-07T12:44:15.563Z","level":"info"}
+{"message":"read ECONNRESET. Carrier name:ups, Tracking number:1ZTT1049A822288595","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:3 ApiQue:1 Piston:0 ApiToDb:70912 DbReq:816 DbRes:816 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:2723 ApiRes:2670 ApiErr:9 ApiQue:44 Piston:60 ApiToDb:90271 DbReq:1412 DbRes:1412 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2941 ApiErr:11 ApiQue:0 Piston:0 ApiToDb:119438 DbReq:1573 DbRes:1573 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:49 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:7196 apiRes:7128 apiErr:23 apiQue:45 apiToDb:280670 dbReq:3832 dbRes:3832 dbErr:0 dbQue:0 Time:2018-07-07T12:44:20.566Z","level":"info"}
+{"message":"read ECONNRESET. Carrier name:ups, Tracking number:1Z91V467A822229563","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:3 ApiQue:1 Piston:0 ApiToDb:74219 DbReq:849 DbRes:849 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:2827 ApiRes:2770 ApiErr:10 ApiQue:47 Piston:50 ApiToDb:96582 DbReq:1521 DbRes:1521 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2941 ApiErr:11 ApiQue:0 Piston:0 ApiToDb:126242 DbReq:1625 DbRes:1625 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:49 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:7300 apiRes:7228 apiErr:24 apiQue:48 apiToDb:297092 dbReq:4026 dbRes:4026 dbErr:0 dbQue:0 Time:2018-07-07T12:44:25.585Z","level":"info"}
+{"message":"New Job started at 2018-07-07T12:45:39.188Z","level":"info"}
+{"message":"gso Item Count: 33","level":"info"}
+{"message":"fex Item Count: 5","level":"info"}
+{"message":"ups Item Count: 62","level":"info"}
+{"message":"fex ApiReq:5 ApiRes:5 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:6 DbReq:5 DbRes:5 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:62 ApiRes:61 ApiErr:0 ApiQue:1 Piston:0 ApiToDb:79 DbReq:61 DbRes:61 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:33 ApiRes:29 ApiErr:0 ApiQue:4 Piston:0 ApiToDb:29 DbReq:29 DbRes:29 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:100 apiRes:95 apiErr:0 apiQue:5 apiToDb:114 dbReq:95 dbRes:95 dbErr:0 dbQue:0 Time:2018-07-07T12:45:46.634Z","level":"info"}
+{"message":"fex ApiReq:5 ApiRes:5 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:6 DbReq:5 DbRes:5 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:62 ApiRes:62 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:80 DbReq:62 DbRes:62 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:33 ApiRes:33 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:33 DbReq:33 DbRes:33 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:100 apiRes:100 apiErr:0 apiQue:0 apiToDb:119 dbReq:100 dbRes:100 dbErr:0 dbQue:0 Time:2018-07-07T12:45:51.640Z","level":"info"}
+{"message":"fex ApiReq:5 ApiRes:5 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:6 DbReq:5 DbRes:5 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:62 ApiRes:62 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:80 DbReq:62 DbRes:62 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:33 ApiRes:33 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:33 DbReq:33 DbRes:33 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:100 apiRes:100 apiErr:0 apiQue:0 apiToDb:119 dbReq:100 dbRes:100 dbErr:0 dbQue:0 Time:2018-07-07T12:45:56.645Z","level":"info"}
+{"message":"fex ApiReq:5 ApiRes:5 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:6 DbReq:5 DbRes:5 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:62 ApiRes:62 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:80 DbReq:62 DbRes:62 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:33 ApiRes:33 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:33 DbReq:33 DbRes:33 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:100 apiRes:100 apiErr:0 apiQue:0 apiToDb:119 dbReq:100 dbRes:100 dbErr:0 dbQue:0 Time:2018-07-07T12:46:01.650Z","level":"info"}
+{"message":"fex ApiReq:5 ApiRes:5 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:6 DbReq:5 DbRes:5 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:62 ApiRes:62 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:80 DbReq:62 DbRes:62 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:33 ApiRes:33 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:33 DbReq:33 DbRes:33 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:100 apiRes:100 apiErr:0 apiQue:0 apiToDb:119 dbReq:100 dbRes:100 dbErr:0 dbQue:0 Time:2018-07-07T12:46:06.655Z","level":"info"}
+{"message":"fex ApiReq:5 ApiRes:5 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:6 DbReq:5 DbRes:5 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:62 ApiRes:62 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:80 DbReq:62 DbRes:62 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:33 ApiRes:33 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:33 DbReq:33 DbRes:33 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:100 apiRes:100 apiErr:0 apiQue:0 apiToDb:119 dbReq:100 dbRes:100 dbErr:0 dbQue:0 Time:2018-07-07T12:46:11.660Z","level":"info"}
+{"message":"fex ApiReq:5 ApiRes:5 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:6 DbReq:5 DbRes:5 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:62 ApiRes:62 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:80 DbReq:62 DbRes:62 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:33 ApiRes:33 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:33 DbReq:33 DbRes:33 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:100 apiRes:100 apiErr:0 apiQue:0 apiToDb:119 dbReq:100 dbRes:100 dbErr:0 dbQue:0 Time:2018-07-07T12:46:16.664Z","level":"info"}
+{"message":"fex ApiReq:5 ApiRes:5 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:6 DbReq:5 DbRes:5 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:62 ApiRes:62 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:80 DbReq:62 DbRes:62 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:33 ApiRes:33 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:33 DbReq:33 DbRes:33 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:100 apiRes:100 apiErr:0 apiQue:0 apiToDb:119 dbReq:100 dbRes:100 dbErr:0 dbQue:0 Time:2018-07-07T12:46:21.671Z","level":"info"}
+{"message":"fex ApiReq:5 ApiRes:5 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:6 DbReq:5 DbRes:5 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:62 ApiRes:62 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:80 DbReq:62 DbRes:62 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:33 ApiRes:33 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:33 DbReq:33 DbRes:33 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:100 apiRes:100 apiErr:0 apiQue:0 apiToDb:119 dbReq:100 dbRes:100 dbErr:0 dbQue:0 Time:2018-07-07T12:46:26.680Z","level":"info"}
+{"message":"fex ApiReq:5 ApiRes:5 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:6 DbReq:5 DbRes:5 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:62 ApiRes:62 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:80 DbReq:62 DbRes:62 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:33 ApiRes:33 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:33 DbReq:33 DbRes:33 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:100 apiRes:100 apiErr:0 apiQue:0 apiToDb:119 dbReq:100 dbRes:100 dbErr:0 dbQue:0 Time:2018-07-07T12:46:31.686Z","level":"info"}
+{"message":"fex ApiReq:5 ApiRes:5 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:6 DbReq:5 DbRes:5 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:62 ApiRes:62 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:80 DbReq:62 DbRes:62 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:33 ApiRes:33 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:33 DbReq:33 DbRes:33 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:100 apiRes:100 apiErr:0 apiQue:0 apiToDb:119 dbReq:100 dbRes:100 dbErr:0 dbQue:0 Time:2018-07-07T12:46:36.691Z","level":"info"}
+{"message":"fex ApiReq:5 ApiRes:5 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:6 DbReq:5 DbRes:5 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:62 ApiRes:62 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:80 DbReq:62 DbRes:62 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:33 ApiRes:33 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:33 DbReq:33 DbRes:33 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:100 apiRes:100 apiErr:0 apiQue:0 apiToDb:119 dbReq:100 dbRes:100 dbErr:0 dbQue:0 Time:2018-07-07T12:46:41.697Z","level":"info"}
+{"message":"New Job started at 2018-07-07T12:47:06.353Z","level":"info"}
+{"message":"gso Item Count: 7","level":"info"}
+{"message":"fex Item Count: 3","level":"info"}
+{"message":"fex ApiReq:3 ApiRes:3 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:3 DbReq:3 DbRes:3 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:7 ApiRes:7 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:7 DbReq:7 DbRes:7 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:10 apiRes:10 apiErr:0 apiQue:0 apiToDb:10 dbReq:10 dbRes:10 dbErr:0 dbQue:0 Time:2018-07-07T12:47:13.534Z","level":"info"}
+{"message":"Mandrill mail sent","level":"info"}
+{"message":"New Job started at 2018-07-07T12:47:31.153Z","level":"info"}
+{"message":"gso Item Count: 11","level":"info"}
+{"message":"fex Item Count: 3","level":"info"}
+{"message":"ups Item Count: 6","level":"info"}
+{"message":"fex ApiReq:3 ApiRes:3 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:3 DbReq:3 DbRes:3 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:6 ApiRes:6 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:6 DbReq:6 DbRes:6 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:11 ApiRes:11 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:11 DbReq:11 DbRes:11 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:20 apiRes:20 apiErr:0 apiQue:0 apiToDb:20 dbReq:20 dbRes:20 dbErr:0 dbQue:0 Time:2018-07-07T12:47:38.209Z","level":"info"}
+{"message":"Mandrill mail sent","level":"info"}
+{"message":"New Job started at 2018-07-07T12:47:59.936Z","level":"info"}
+{"message":"gso Item Count: 11","level":"info"}
+{"message":"fex Item Count: 3","level":"info"}
+{"message":"ups Item Count: 16","level":"info"}
+{"message":"fex ApiReq:3 ApiRes:3 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:3 DbReq:3 DbRes:3 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:16 ApiRes:16 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:16 DbReq:16 DbRes:16 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:11 ApiRes:11 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:11 DbReq:11 DbRes:11 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:30 apiRes:30 apiErr:0 apiQue:0 apiToDb:30 dbReq:30 dbRes:30 dbErr:0 dbQue:0 Time:2018-07-07T12:48:09.782Z","level":"info"}
+{"message":"Mandrill mail sent","level":"info"}
+{"message":"New Job started at 2018-07-07T12:48:24.975Z","level":"info"}
+{"message":"gso Item Count: 11","level":"info"}
+{"message":"fex Item Count: 3","level":"info"}
+{"message":"ups Item Count: 26","level":"info"}
+{"message":"fex ApiReq:3 ApiRes:3 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:3 DbReq:3 DbRes:3 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:26 ApiRes:26 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:26 DbReq:26 DbRes:26 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:11 ApiRes:10 ApiErr:0 ApiQue:1 Piston:0 ApiToDb:10 DbReq:10 DbRes:10 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:40 apiRes:39 apiErr:0 apiQue:1 apiToDb:39 dbReq:39 dbRes:39 dbErr:0 dbQue:0 Time:2018-07-07T12:48:31.927Z","level":"info"}
+{"message":"fex ApiReq:3 ApiRes:3 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:3 DbReq:3 DbRes:3 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:26 ApiRes:26 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:26 DbReq:26 DbRes:26 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:11 ApiRes:11 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:11 DbReq:11 DbRes:11 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:40 apiRes:40 apiErr:0 apiQue:0 apiToDb:40 dbReq:40 dbRes:40 dbErr:0 dbQue:0 Time:2018-07-07T12:48:36.934Z","level":"info"}
+{"message":"Mandrill mail sent","level":"info"}
+{"message":"New Job started at 2018-07-07T12:48:51.771Z","level":"info"}
+{"message":"gso Item Count: 11","level":"info"}
+{"message":"fex Item Count: 3","level":"info"}
+{"message":"ups Item Count: 46","level":"info"}
+{"message":"fex ApiReq:3 ApiRes:3 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:3 DbReq:3 DbRes:3 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:46 ApiRes:46 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:46 DbReq:46 DbRes:46 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:11 ApiRes:11 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:11 DbReq:11 DbRes:11 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:60 apiRes:60 apiErr:0 apiQue:0 apiToDb:60 dbReq:60 dbRes:60 dbErr:0 dbQue:0 Time:2018-07-07T12:48:59.403Z","level":"info"}
+{"message":"Mandrill mail sent","level":"info"}
+{"message":"New Job started at 2018-07-07T12:49:27.430Z","level":"info"}
+{"message":"gso Item Count: 14","level":"info"}
+{"message":"fex Item Count: 4","level":"info"}
+{"message":"ups Item Count: 62","level":"info"}
+{"message":"fex ApiReq:4 ApiRes:4 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:5 DbReq:4 DbRes:4 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:62 ApiRes:62 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:71 DbReq:62 DbRes:62 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:14 ApiRes:13 ApiErr:0 ApiQue:1 Piston:0 ApiToDb:13 DbReq:13 DbRes:13 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:80 apiRes:79 apiErr:0 apiQue:1 apiToDb:89 dbReq:79 dbRes:79 dbErr:0 dbQue:0 Time:2018-07-07T12:49:34.843Z","level":"info"}
+{"message":"fex ApiReq:4 ApiRes:4 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:5 DbReq:4 DbRes:4 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:62 ApiRes:62 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:71 DbReq:62 DbRes:62 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:14 ApiRes:14 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:14 DbReq:14 DbRes:14 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:80 apiRes:80 apiErr:0 apiQue:0 apiToDb:90 dbReq:80 dbRes:80 dbErr:0 dbQue:0 Time:2018-07-07T12:49:39.849Z","level":"info"}
+{"message":"fex ApiReq:4 ApiRes:4 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:5 DbReq:4 DbRes:4 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:62 ApiRes:62 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:71 DbReq:62 DbRes:62 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:14 ApiRes:14 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:14 DbReq:14 DbRes:14 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:80 apiRes:80 apiErr:0 apiQue:0 apiToDb:90 dbReq:80 dbRes:80 dbErr:0 dbQue:0 Time:2018-07-07T12:49:44.855Z","level":"info"}
+{"message":"fex ApiReq:4 ApiRes:4 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:5 DbReq:4 DbRes:4 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:62 ApiRes:62 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:71 DbReq:62 DbRes:62 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:14 ApiRes:14 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:14 DbReq:14 DbRes:14 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:80 apiRes:80 apiErr:0 apiQue:0 apiToDb:90 dbReq:80 dbRes:80 dbErr:0 dbQue:0 Time:2018-07-07T12:49:49.861Z","level":"info"}
+{"message":"fex ApiReq:4 ApiRes:4 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:5 DbReq:4 DbRes:4 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:62 ApiRes:62 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:71 DbReq:62 DbRes:62 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:14 ApiRes:14 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:14 DbReq:14 DbRes:14 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:80 apiRes:80 apiErr:0 apiQue:0 apiToDb:90 dbReq:80 dbRes:80 dbErr:0 dbQue:0 Time:2018-07-07T12:49:54.865Z","level":"info"}
+{"message":"New Job started at 2018-07-07T12:50:07.329Z","level":"info"}
+{"message":"gso Item Count: 12","level":"info"}
+{"message":"fex Item Count: 3","level":"info"}
+{"message":"ups Item Count: 55","level":"info"}
+{"message":"fex ApiReq:3 ApiRes:3 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:3 DbReq:3 DbRes:3 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:55 ApiRes:55 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:55 DbReq:55 DbRes:55 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:12 ApiRes:12 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:12 DbReq:12 DbRes:12 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:70 apiRes:70 apiErr:0 apiQue:0 apiToDb:70 dbReq:70 dbRes:70 dbErr:0 dbQue:0 Time:2018-07-07T12:50:14.777Z","level":"info"}
+{"message":"Mandrill mail sent","level":"info"}
+{"message":"New Job started at 2018-07-07T12:50:37.137Z","level":"info"}
+{"message":"gso Item Count: 14","level":"info"}
+{"message":"fex Item Count: 4","level":"info"}
+{"message":"ups Item Count: 62","level":"info"}
+{"message":"fex ApiReq:4 ApiRes:4 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:4 DbReq:4 DbRes:4 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:62 ApiRes:62 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:62 DbReq:62 DbRes:62 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:14 ApiRes:14 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:14 DbReq:13 DbRes:13 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:80 apiRes:80 apiErr:0 apiQue:0 apiToDb:80 dbReq:79 dbRes:79 dbErr:0 dbQue:0 Time:2018-07-07T12:50:44.281Z","level":"info"}
+{"message":"fex ApiReq:4 ApiRes:4 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:4 DbReq:4 DbRes:4 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:62 ApiRes:62 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:62 DbReq:62 DbRes:62 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:14 ApiRes:14 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:14 DbReq:14 DbRes:14 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:80 apiRes:80 apiErr:0 apiQue:0 apiToDb:80 dbReq:80 dbRes:80 dbErr:0 dbQue:0 Time:2018-07-07T12:50:49.287Z","level":"info"}
+{"message":"Mandrill mail sent","level":"info"}
+{"message":"New Job started at 2018-07-07T12:51:08.100Z","level":"info"}
+{"message":"gso Item Count: 24","level":"info"}
+{"message":"fex Item Count: 4","level":"info"}
+{"message":"ups Item Count: 62","level":"info"}
+{"message":"fex ApiReq:4 ApiRes:4 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:4 DbReq:4 DbRes:4 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:62 ApiRes:62 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:63 DbReq:62 DbRes:62 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:24 ApiRes:23 ApiErr:0 ApiQue:1 Piston:0 ApiToDb:23 DbReq:23 DbRes:23 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:90 apiRes:89 apiErr:0 apiQue:1 apiToDb:90 dbReq:89 dbRes:89 dbErr:0 dbQue:0 Time:2018-07-07T12:51:15.018Z","level":"info"}
+{"message":"fex ApiReq:4 ApiRes:4 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:4 DbReq:4 DbRes:4 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:62 ApiRes:62 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:63 DbReq:62 DbRes:62 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:24 ApiRes:24 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:24 DbReq:24 DbRes:24 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:90 apiRes:90 apiErr:0 apiQue:0 apiToDb:91 dbReq:90 dbRes:90 dbErr:0 dbQue:0 Time:2018-07-07T12:51:20.025Z","level":"info"}
+{"message":"fex ApiReq:4 ApiRes:4 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:4 DbReq:4 DbRes:4 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:62 ApiRes:62 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:63 DbReq:62 DbRes:62 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:24 ApiRes:24 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:24 DbReq:24 DbRes:24 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:90 apiRes:90 apiErr:0 apiQue:0 apiToDb:91 dbReq:90 dbRes:90 dbErr:0 dbQue:0 Time:2018-07-07T12:51:25.032Z","level":"info"}
+{"message":"New Job started at 2018-07-07T12:52:08.046Z","level":"info"}
+{"message":"ups Item Count: 10","level":"info"}
+{"message":"fex ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:10 ApiRes:10 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:10 DbReq:10 DbRes:10 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:10 apiRes:10 apiErr:0 apiQue:0 apiToDb:10 dbReq:10 dbRes:10 dbErr:0 dbQue:0 Time:2018-07-07T12:52:15.257Z","level":"info"}
+{"message":"Mandrill mail sent","level":"info"}
+{"message":"New Job started at 2018-07-07T12:52:44.620Z","level":"info"}
+{"message":"ups Item Count: 50","level":"info"}
+{"message":"fex ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:50 ApiRes:50 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:50 DbReq:50 DbRes:50 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:50 apiRes:50 apiErr:0 apiQue:0 apiToDb:50 dbReq:50 dbRes:50 dbErr:0 dbQue:0 Time:2018-07-07T12:52:51.737Z","level":"info"}
+{"message":"Mandrill mail sent","level":"info"}
+{"message":"New Job started at 2018-07-07T12:53:10.529Z","level":"info"}
+{"message":"ups Item Count: 70","level":"info"}
+{"message":"fex ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:70 ApiRes:70 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:70 DbReq:70 DbRes:70 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:70 apiRes:70 apiErr:0 apiQue:0 apiToDb:70 dbReq:70 dbRes:70 dbErr:0 dbQue:0 Time:2018-07-07T12:53:17.629Z","level":"info"}
+{"message":"Mandrill mail sent","level":"info"}
+{"message":"New Job started at 2018-07-07T12:53:35.424Z","level":"info"}
+{"message":"ups Item Count: 90","level":"info"}
+{"message":"fex ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:90 ApiRes:90 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:103 DbReq:90 DbRes:90 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:90 apiRes:90 apiErr:0 apiQue:0 apiToDb:103 dbReq:90 dbRes:90 dbErr:0 dbQue:0 Time:2018-07-07T12:53:42.327Z","level":"info"}
+{"message":"fex ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:90 ApiRes:90 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:103 DbReq:90 DbRes:90 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:90 apiRes:90 apiErr:0 apiQue:0 apiToDb:103 dbReq:90 dbRes:90 dbErr:0 dbQue:0 Time:2018-07-07T12:53:47.333Z","level":"info"}
+{"message":"New Job started at 2018-07-07T12:53:54.577Z","level":"info"}
+{"message":"ups Item Count: 90","level":"info"}
+{"message":"fex ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:90 ApiRes:89 ApiErr:0 ApiQue:1 Piston:0 ApiToDb:89 DbReq:89 DbRes:89 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:90 apiRes:89 apiErr:0 apiQue:1 apiToDb:89 dbReq:89 dbRes:89 dbErr:0 dbQue:0 Time:2018-07-07T12:54:01.778Z","level":"info"}
+{"message":"fex ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:90 ApiRes:90 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:90 DbReq:90 DbRes:90 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:90 apiRes:90 apiErr:0 apiQue:0 apiToDb:90 dbReq:90 dbRes:90 dbErr:0 dbQue:0 Time:2018-07-07T12:54:06.785Z","level":"info"}
+{"message":"Mandrill mail sent","level":"info"}
+{"message":"New Job started at 2018-07-07T12:54:25.916Z","level":"info"}
+{"message":"ups Item Count: 90","level":"info"}
+{"message":"fex ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:90 ApiRes:90 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:96 DbReq:90 DbRes:90 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:90 apiRes:90 apiErr:0 apiQue:0 apiToDb:96 dbReq:90 dbRes:90 dbErr:0 dbQue:0 Time:2018-07-07T12:54:32.839Z","level":"info"}
+{"message":"fex ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:90 ApiRes:90 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:96 DbReq:90 DbRes:90 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:90 apiRes:90 apiErr:0 apiQue:0 apiToDb:96 dbReq:90 dbRes:90 dbErr:0 dbQue:0 Time:2018-07-07T12:54:37.846Z","level":"info"}
+{"message":"fex ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:90 ApiRes:90 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:96 DbReq:90 DbRes:90 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:90 apiRes:90 apiErr:0 apiQue:0 apiToDb:96 dbReq:90 dbRes:90 dbErr:0 dbQue:0 Time:2018-07-07T12:54:42.853Z","level":"info"}
+{"message":"New Job started at 2018-07-07T13:05:59.529Z","level":"info"}
+{"message":"ups Item Count: 100","level":"info"}
+{"message":"fex ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:100 ApiRes:100 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:123 DbReq:100 DbRes:100 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:100 apiRes:100 apiErr:0 apiQue:0 apiToDb:123 dbReq:100 dbRes:100 dbErr:0 dbQue:0 Time:2018-07-07T13:06:06.622Z","level":"info"}
+{"message":"fex ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:100 ApiRes:100 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:123 DbReq:100 DbRes:100 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:100 apiRes:100 apiErr:0 apiQue:0 apiToDb:123 dbReq:100 dbRes:100 dbErr:0 dbQue:0 Time:2018-07-07T13:06:11.629Z","level":"info"}
+{"message":"New Job started at 2018-07-07T13:06:27.164Z","level":"info"}
+{"message":"fex Item Count: 100","level":"info"}
+{"message":"fex ApiReq:101 ApiRes:101 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:187 DbReq:89 DbRes:89 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:101 apiRes:101 apiErr:0 apiQue:0 apiToDb:187 dbReq:89 dbRes:89 dbErr:0 dbQue:0 Time:2018-07-07T13:06:34.390Z","level":"info"}
+{"message":"fex ApiReq:101 ApiRes:101 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:187 DbReq:100 DbRes:100 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:101 apiRes:101 apiErr:0 apiQue:0 apiToDb:187 dbReq:100 dbRes:100 dbErr:0 dbQue:0 Time:2018-07-07T13:06:39.396Z","level":"info"}
+{"message":"fex ApiReq:101 ApiRes:101 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:187 DbReq:100 DbRes:100 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:101 apiRes:101 apiErr:0 apiQue:0 apiToDb:187 dbReq:100 dbRes:100 dbErr:0 dbQue:0 Time:2018-07-07T13:06:44.402Z","level":"info"}
+{"message":"fex ApiReq:101 ApiRes:101 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:187 DbReq:100 DbRes:100 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:101 apiRes:101 apiErr:0 apiQue:0 apiToDb:187 dbReq:100 dbRes:100 dbErr:0 dbQue:0 Time:2018-07-07T13:06:49.405Z","level":"info"}
+{"message":"fex ApiReq:101 ApiRes:101 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:187 DbReq:100 DbRes:100 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:101 apiRes:101 apiErr:0 apiQue:0 apiToDb:187 dbReq:100 dbRes:100 dbErr:0 dbQue:0 Time:2018-07-07T13:06:54.409Z","level":"info"}
+{"message":"fex ApiReq:101 ApiRes:101 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:187 DbReq:100 DbRes:100 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:101 apiRes:101 apiErr:0 apiQue:0 apiToDb:187 dbReq:100 dbRes:100 dbErr:0 dbQue:0 Time:2018-07-07T13:06:59.414Z","level":"info"}
+{"message":"fex ApiReq:101 ApiRes:101 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:187 DbReq:100 DbRes:100 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:101 apiRes:101 apiErr:0 apiQue:0 apiToDb:187 dbReq:100 dbRes:100 dbErr:0 dbQue:0 Time:2018-07-07T13:07:04.420Z","level":"info"}
+{"message":"New Job started at 2018-07-07T13:09:18.460Z","level":"info"}
+{"message":"fex Item Count: 100","level":"info"}
+{"message":"fex ApiReq:101 ApiRes:100 ApiErr:0 ApiQue:1 Piston:0 ApiToDb:99 DbReq:80 DbRes:80 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:101 apiRes:100 apiErr:0 apiQue:1 apiToDb:99 dbReq:80 dbRes:80 dbErr:0 dbQue:0 Time:2018-07-07T13:09:26.024Z","level":"info"}
+{"message":"fex ApiReq:101 ApiRes:101 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:100 DbReq:100 DbRes:100 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:101 apiRes:101 apiErr:0 apiQue:0 apiToDb:100 dbReq:100 dbRes:100 dbErr:0 dbQue:0 Time:2018-07-07T13:09:31.031Z","level":"info"}
+{"message":"Mandrill mail sent","level":"info"}
+{"message":"New Job started at 2018-07-07T13:10:13.422Z","level":"info"}
+{"message":"gso Item Count: 2952","level":"info"}
+{"message":"fex Item Count: 1487","level":"info"}
+{"message":"ups Item Count: 5530","level":"info"}
+{"message":"tps Item Count: 31","level":"info"}
+{"message":"fex ApiReq:224 ApiRes:170 ApiErr:0 ApiQue:54 Piston:45 ApiToDb:45 DbReq:29 DbRes:29 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:222 ApiRes:184 ApiErr:0 ApiQue:38 Piston:35 ApiToDb:38 DbReq:30 DbRes:30 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:54 ApiRes:12 ApiErr:0 ApiQue:42 Piston:0 ApiToDb:3 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:25 ApiToDb:29 DbReq:28 DbRes:28 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:531 apiRes:397 apiErr:0 apiQue:134 apiToDb:115 dbReq:87 dbRes:87 dbErr:0 dbQue:0 Time:2018-07-07T13:10:21.127Z","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112449","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112415","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112370","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112347","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112343","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112588","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112598","level":"info"}
+{"message":"fex ApiReq:317 ApiRes:285 ApiErr:0 ApiQue:32 Piston:35 ApiToDb:109 DbReq:97 DbRes:97 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:372 ApiRes:314 ApiErr:0 ApiQue:58 Piston:35 ApiToDb:94 DbReq:89 DbRes:89 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:343 ApiRes:284 ApiErr:7 ApiQue:52 Piston:30 ApiToDb:56 DbReq:45 DbRes:45 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:1063 apiRes:914 apiErr:7 apiQue:142 apiToDb:290 dbReq:262 dbRes:262 dbErr:0 dbQue:0 Time:2018-07-07T13:10:26.134Z","level":"info"}
+{"message":"fex ApiReq:514 ApiRes:450 ApiErr:0 ApiQue:64 Piston:25 ApiToDb:169 DbReq:156 DbRes:156 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:523 ApiRes:469 ApiErr:0 ApiQue:54 Piston:35 ApiToDb:145 DbReq:138 DbRes:138 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:541 ApiRes:471 ApiErr:7 ApiQue:63 Piston:20 ApiToDb:118 DbReq:110 DbRes:110 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:1609 apiRes:1421 apiErr:7 apiQue:181 apiToDb:463 dbReq:435 dbRes:435 dbErr:0 dbQue:0 Time:2018-07-07T13:10:31.136Z","level":"info"}
+{"message":"read ECONNRESET. Carrier name:fex, Tracking number:415215290201","level":"info"}
+{"message":"fex ApiReq:704 ApiRes:656 ApiErr:1 ApiQue:47 Piston:25 ApiToDb:245 DbReq:231 DbRes:231 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:676 ApiRes:634 ApiErr:0 ApiQue:42 Piston:35 ApiToDb:189 DbReq:182 DbRes:182 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:740 ApiRes:684 ApiErr:7 ApiQue:49 Piston:20 ApiToDb:166 DbReq:159 DbRes:159 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:2151 apiRes:2005 apiErr:8 apiQue:138 apiToDb:631 dbReq:603 dbRes:603 dbErr:0 dbQue:0 Time:2018-07-07T13:10:36.138Z","level":"info"}
+{"message":"read ECONNRESET. Carrier name:fex, Tracking number:415215294001","level":"info"}
+{"message":"fex ApiReq:884 ApiRes:832 ApiErr:2 ApiQue:50 Piston:25 ApiToDb:312 DbReq:305 DbRes:305 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:828 ApiRes:773 ApiErr:0 ApiQue:55 Piston:35 ApiToDb:239 DbReq:229 DbRes:229 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:958 ApiRes:900 ApiErr:7 ApiQue:51 Piston:30 ApiToDb:232 DbReq:222 DbRes:222 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:2701 apiRes:2536 apiErr:9 apiQue:156 apiToDb:814 dbReq:787 dbRes:787 dbErr:0 dbQue:0 Time:2018-07-07T13:10:41.141Z","level":"info"}
+{"message":"read ECONNRESET. Carrier name:fex, Tracking number:415215294126","level":"info"}
+{"message":"read ECONNRESET. Carrier name:fex, Tracking number:415215292616","level":"info"}
+{"message":"fex ApiReq:1084 ApiRes:1036 ApiErr:4 ApiQue:44 Piston:25 ApiToDb:380 DbReq:367 DbRes:367 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:981 ApiRes:935 ApiErr:0 ApiQue:46 Piston:35 ApiToDb:281 DbReq:274 DbRes:274 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:1135 ApiRes:1078 ApiErr:7 ApiQue:50 Piston:20 ApiToDb:296 DbReq:288 DbRes:288 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:3231 apiRes:3080 apiErr:11 apiQue:140 apiToDb:988 dbReq:960 dbRes:960 dbErr:0 dbQue:0 Time:2018-07-07T13:10:46.145Z","level":"info"}
+{"message":"fex ApiReq:1227 ApiRes:1179 ApiErr:4 ApiQue:44 Piston:25 ApiToDb:437 DbReq:430 DbRes:430 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:1120 ApiRes:1074 ApiErr:0 ApiQue:46 Piston:25 ApiToDb:342 DbReq:330 DbRes:330 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:1345 ApiRes:1268 ApiErr:7 ApiQue:70 Piston:20 ApiToDb:361 DbReq:352 DbRes:352 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:3723 apiRes:3552 apiErr:11 apiQue:160 apiToDb:1171 dbReq:1143 dbRes:1143 dbErr:0 dbQue:0 Time:2018-07-07T13:10:51.148Z","level":"info"}
+{"message":"fex ApiReq:1418 ApiRes:1348 ApiErr:4 ApiQue:66 Piston:20 ApiToDb:514 DbReq:502 DbRes:502 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:1266 ApiRes:1209 ApiErr:0 ApiQue:57 Piston:30 ApiToDb:388 DbReq:380 DbRes:380 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:1515 ApiRes:1464 ApiErr:7 ApiQue:44 Piston:30 ApiToDb:414 DbReq:406 DbRes:406 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:4230 apiRes:4052 apiErr:11 apiQue:167 apiToDb:1347 dbReq:1319 dbRes:1319 dbErr:0 dbQue:0 Time:2018-07-07T13:10:56.149Z","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ApiToDb:567 DbReq:561 DbRes:561 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:1386 ApiRes:1332 ApiErr:0 ApiQue:54 Piston:30 ApiToDb:437 DbReq:429 DbRes:429 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:1707 ApiRes:1652 ApiErr:7 ApiQue:48 Piston:20 ApiToDb:497 DbReq:483 DbRes:483 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:4614 apiRes:4501 apiErr:11 apiQue:102 apiToDb:1532 dbReq:1504 dbRes:1504 dbErr:0 dbQue:0 Time:2018-07-07T13:11:01.153Z","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ApiToDb:608 DbReq:603 DbRes:603 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:1525 ApiRes:1471 ApiErr:0 ApiQue:54 Piston:40 ApiToDb:496 DbReq:482 DbRes:482 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:1907 ApiRes:1857 ApiErr:7 ApiQue:43 Piston:30 ApiToDb:581 DbReq:572 DbRes:572 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:4953 apiRes:4845 apiErr:11 apiQue:97 apiToDb:1716 dbReq:1688 dbRes:1688 dbErr:0 dbQue:0 Time:2018-07-07T13:11:06.156Z","level":"info"}
+{"message":"connect ETIMEDOUT 153.2.228.76:443. Carrier name:ups, Tracking number:1ZTT1049A822301711","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ApiToDb:633 DbReq:629 DbRes:629 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:1649 ApiRes:1601 ApiErr:1 ApiQue:47 Piston:40 ApiToDb:558 DbReq:548 DbRes:548 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2076 ApiRes:2025 ApiErr:7 ApiQue:44 Piston:20 ApiToDb:676 DbReq:662 DbRes:662 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:5246 apiRes:5143 apiErr:12 apiQue:91 apiToDb:1898 dbReq:1870 dbRes:1870 dbErr:0 dbQue:0 Time:2018-07-07T13:11:11.158Z","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111115093","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ApiToDb:661 DbReq:656 DbRes:656 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:1800 ApiRes:1743 ApiErr:1 ApiQue:56 Piston:30 ApiToDb:632 DbReq:617 DbRes:617 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2253 ApiRes:2202 ApiErr:8 ApiQue:43 Piston:20 ApiToDb:760 DbReq:752 DbRes:752 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:5574 apiRes:5462 apiErr:13 apiQue:99 apiToDb:2084 dbReq:2056 dbRes:2056 dbErr:0 dbQue:0 Time:2018-07-07T13:11:16.160Z","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ApiToDb:676 DbReq:676 DbRes:676 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:1925 ApiRes:1866 ApiErr:1 ApiQue:58 Piston:40 ApiToDb:707 DbReq:696 DbRes:696 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2479 ApiRes:2410 ApiErr:8 ApiQue:61 Piston:30 ApiToDb:860 DbReq:845 DbRes:845 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:5925 apiRes:5793 apiErr:13 apiQue:119 apiToDb:2274 dbReq:2248 dbRes:2248 dbErr:0 dbQue:0 Time:2018-07-07T13:11:21.162Z","level":"info"}
+{"message":"connect ETIMEDOUT 153.2.228.76:443. Carrier name:ups, Tracking number:1ZTT1049A822289487","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ApiToDb:690 DbReq:684 DbRes:684 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:2045 ApiRes:1985 ApiErr:2 ApiQue:58 Piston:50 ApiToDb:764 DbReq:758 DbRes:758 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2668 ApiRes:2614 ApiErr:8 ApiQue:46 Piston:30 ApiToDb:972 DbReq:956 DbRes:956 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:6234 apiRes:6116 apiErr:14 apiQue:104 apiToDb:2457 dbReq:2429 dbRes:2429 dbErr:0 dbQue:0 Time:2018-07-07T13:11:26.166Z","level":"info"}
+{"message":"connect ETIMEDOUT 153.2.228.76:443. Carrier name:ups, Tracking number:1ZTT1049A822296095","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ApiToDb:703 DbReq:696 DbRes:696 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:2153 ApiRes:2097 ApiErr:3 ApiQue:53 Piston:40 ApiToDb:846 DbReq:836 DbRes:836 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2852 ApiRes:2792 ApiErr:8 ApiQue:52 Piston:30 ApiToDb:1065 DbReq:1054 DbRes:1054 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:6526 apiRes:6406 apiErr:15 apiQue:105 apiToDb:2645 dbReq:2617 dbRes:2617 dbErr:0 dbQue:0 Time:2018-07-07T13:11:31.170Z","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111115795","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111115885","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111115904","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ApiToDb:714 DbReq:712 DbRes:712 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:2290 ApiRes:2231 ApiErr:3 ApiQue:56 Piston:30 ApiToDb:939 DbReq:927 DbRes:927 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2941 ApiErr:11 ApiQue:0 Piston:15 ApiToDb:1157 DbReq:1143 DbRes:1143 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:6763 apiRes:6689 apiErr:18 apiQue:56 apiToDb:2841 dbReq:2813 dbRes:2813 dbErr:0 dbQue:0 Time:2018-07-07T13:11:36.179Z","level":"info"}
+{"message":"connect ETIMEDOUT 153.2.228.76:443. Carrier name:ups, Tracking number:1ZTT1049A822296460","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ApiToDb:737 DbReq:732 DbRes:732 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:2415 ApiRes:2360 ApiErr:4 ApiQue:51 Piston:50 ApiToDb:1041 DbReq:1028 DbRes:1028 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2941 ApiErr:11 ApiQue:0 Piston:0 ApiToDb:1240 DbReq:1230 DbRes:1230 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:6888 apiRes:6818 apiErr:19 apiQue:51 apiToDb:3049 dbReq:3021 dbRes:3021 dbErr:0 dbQue:0 Time:2018-07-07T13:11:41.184Z","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ApiToDb:771 DbReq:766 DbRes:766 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:2530 ApiRes:2467 ApiErr:4 ApiQue:59 Piston:40 ApiToDb:1115 DbReq:1108 DbRes:1108 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2941 ApiErr:11 ApiQue:0 Piston:0 ApiToDb:1314 DbReq:1302 DbRes:1302 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:7003 apiRes:6925 apiErr:19 apiQue:59 apiToDb:3231 dbReq:3207 dbRes:3207 dbErr:0 dbQue:0 Time:2018-07-07T13:11:46.188Z","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ApiToDb:790 DbReq:790 DbRes:790 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:2644 ApiRes:2592 ApiErr:4 ApiQue:48 Piston:45 ApiToDb:1209 DbReq:1199 DbRes:1199 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2941 ApiErr:11 ApiQue:0 Piston:0 ApiToDb:1383 DbReq:1378 DbRes:1378 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:7117 apiRes:7050 apiErr:19 apiQue:48 apiToDb:3413 dbReq:3398 dbRes:3398 dbErr:0 dbQue:0 Time:2018-07-07T13:11:51.193Z","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ApiToDb:816 DbReq:811 DbRes:811 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:2769 ApiRes:2721 ApiErr:4 ApiQue:44 Piston:35 ApiToDb:1324 DbReq:1305 DbRes:1305 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2941 ApiErr:11 ApiQue:0 Piston:0 ApiToDb:1439 DbReq:1435 DbRes:1435 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:7242 apiRes:7179 apiErr:19 apiQue:44 apiToDb:3610 dbReq:3582 dbRes:3582 dbErr:0 dbQue:0 Time:2018-07-07T13:11:56.197Z","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ApiToDb:843 DbReq:838 DbRes:838 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:2910 ApiRes:2849 ApiErr:4 ApiQue:57 Piston:35 ApiToDb:1429 DbReq:1417 DbRes:1417 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2941 ApiErr:11 ApiQue:0 Piston:0 ApiToDb:1504 DbReq:1493 DbRes:1493 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:7383 apiRes:7307 apiErr:19 apiQue:57 apiToDb:3807 dbReq:3779 dbRes:3779 dbErr:0 dbQue:0 Time:2018-07-07T13:12:01.201Z","level":"info"}
+{"message":"connect ECONNREFUSED 153.2.228.76:443. Carrier name:ups, Tracking number:1ZTT1049A822305039","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ApiToDb:868 DbReq:862 DbRes:862 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:3030 ApiRes:2977 ApiErr:5 ApiQue:48 Piston:55 ApiToDb:1543 DbReq:1528 DbRes:1528 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2941 ApiErr:11 ApiQue:0 Piston:0 ApiToDb:1547 DbReq:1540 DbRes:1540 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:7503 apiRes:7435 apiErr:20 apiQue:48 apiToDb:3989 dbReq:3961 dbRes:3961 dbErr:0 dbQue:0 Time:2018-07-07T13:12:06.215Z","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ApiToDb:895 DbReq:893 DbRes:893 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:3137 ApiRes:3092 ApiErr:5 ApiQue:40 Piston:45 ApiToDb:1679 DbReq:1657 DbRes:1657 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2941 ApiErr:11 ApiQue:0 Piston:0 ApiToDb:1573 DbReq:1569 DbRes:1569 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:7610 apiRes:7550 apiErr:20 apiQue:40 apiToDb:4178 dbReq:4150 dbRes:4150 dbErr:0 dbQue:0 Time:2018-07-07T13:12:11.218Z","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ApiToDb:914 DbReq:910 DbRes:910 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:3269 ApiRes:3212 ApiErr:5 ApiQue:52 Piston:45 ApiToDb:1795 DbReq:1780 DbRes:1780 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2941 ApiErr:11 ApiQue:0 Piston:0 ApiToDb:1632 DbReq:1624 DbRes:1624 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:7742 apiRes:7670 apiErr:20 apiQue:52 apiToDb:4372 dbReq:4345 dbRes:4345 dbErr:0 dbQue:0 Time:2018-07-07T13:12:16.223Z","level":"info"}
+{"message":"connect ETIMEDOUT 153.2.228.76:443. Carrier name:ups, Tracking number:1ZTT1049A822310569","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ApiToDb:940 DbReq:935 DbRes:935 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:3393 ApiRes:3336 ApiErr:6 ApiQue:51 Piston:35 ApiToDb:1923 DbReq:1906 DbRes:1906 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2941 ApiErr:11 ApiQue:0 Piston:0 ApiToDb:1678 DbReq:1672 DbRes:1672 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:7866 apiRes:7794 apiErr:21 apiQue:51 apiToDb:4572 dbReq:4544 dbRes:4544 dbErr:0 dbQue:0 Time:2018-07-07T13:12:21.229Z","level":"info"}
+{"message":"read ECONNRESET. Carrier name:ups, Tracking number:1ZTT1049A822291161","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ApiToDb:964 DbReq:963 DbRes:963 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:3536 ApiRes:3478 ApiErr:7 ApiQue:51 Piston:35 ApiToDb:2040 DbReq:2025 DbRes:2025 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2941 ApiErr:11 ApiQue:0 Piston:0 ApiToDb:1727 DbReq:1719 DbRes:1719 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:8009 apiRes:7936 apiErr:22 apiQue:51 apiToDb:4762 dbReq:4738 dbRes:4738 dbErr:0 dbQue:0 Time:2018-07-07T13:12:26.233Z","level":"info"}
+{"message":"read ECONNRESET. Carrier name:ups, Tracking number:1ZTT1049A822288764","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ApiToDb:989 DbReq:988 DbRes:988 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:3674 ApiRes:3620 ApiErr:8 ApiQue:46 Piston:35 ApiToDb:2159 DbReq:2141 DbRes:2141 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2941 ApiErr:11 ApiQue:0 Piston:0 ApiToDb:1773 DbReq:1769 DbRes:1769 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:8147 apiRes:8078 apiErr:23 apiQue:46 apiToDb:4952 dbReq:4929 dbRes:4929 dbErr:0 dbQue:0 Time:2018-07-07T13:12:31.236Z","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ApiToDb:999 DbReq:998 DbRes:998 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:3820 ApiRes:3752 ApiErr:8 ApiQue:60 Piston:35 ApiToDb:2301 DbReq:2289 DbRes:2289 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2941 ApiErr:11 ApiQue:0 Piston:0 ApiToDb:1815 DbReq:1814 DbRes:1814 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:8293 apiRes:8210 apiErr:23 apiQue:60 apiToDb:5146 dbReq:5132 dbRes:5132 dbErr:0 dbQue:0 Time:2018-07-07T13:12:36.240Z","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ApiToDb:1029 DbReq:1027 DbRes:1027 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:3946 ApiRes:3893 ApiErr:8 ApiQue:45 Piston:35 ApiToDb:2412 DbReq:2404 DbRes:2404 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2941 ApiErr:11 ApiQue:0 Piston:0 ApiToDb:1867 DbReq:1866 DbRes:1866 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:8419 apiRes:8351 apiErr:23 apiQue:45 apiToDb:5339 dbReq:5328 dbRes:5328 dbErr:0 dbQue:0 Time:2018-07-07T13:12:41.244Z","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ApiToDb:1046 DbReq:1043 DbRes:1043 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:4085 ApiRes:4028 ApiErr:8 ApiQue:49 Piston:35 ApiToDb:2573 DbReq:2557 DbRes:2557 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2941 ApiErr:11 ApiQue:0 Piston:0 ApiToDb:1890 DbReq:1881 DbRes:1881 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:8558 apiRes:8486 apiErr:23 apiQue:49 apiToDb:5540 dbReq:5512 dbRes:5512 dbErr:0 dbQue:0 Time:2018-07-07T13:12:46.248Z","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ApiToDb:1067 DbReq:1066 DbRes:1066 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:4212 ApiRes:4155 ApiErr:8 ApiQue:49 Piston:35 ApiToDb:2710 DbReq:2686 DbRes:2686 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2941 ApiErr:11 ApiQue:0 Piston:0 ApiToDb:1923 DbReq:1920 DbRes:1920 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:8685 apiRes:8613 apiErr:23 apiQue:49 apiToDb:5731 dbReq:5703 dbRes:5703 dbErr:0 dbQue:0 Time:2018-07-07T13:12:51.251Z","level":"info"}
+{"message":"connect ETIMEDOUT 153.2.228.76:443. Carrier name:ups, Tracking number:1ZTT1049A822316072","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ApiToDb:1084 DbReq:1083 DbRes:1083 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:4334 ApiRes:4270 ApiErr:9 ApiQue:55 Piston:45 ApiToDb:2839 DbReq:2831 DbRes:2831 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2941 ApiErr:11 ApiQue:0 Piston:0 ApiToDb:1968 DbReq:1967 DbRes:1967 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:8807 apiRes:8728 apiErr:24 apiQue:55 apiToDb:5922 dbReq:5912 dbRes:5912 dbErr:0 dbQue:0 Time:2018-07-07T13:12:56.255Z","level":"info"}
+{"message":"connect ETIMEDOUT 153.2.228.76:443. Carrier name:ups, Tracking number:1ZTT1049A822319453","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ApiToDb:1103 DbReq:1103 DbRes:1103 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:4460 ApiRes:4391 ApiErr:10 ApiQue:59 Piston:35 ApiToDb:2952 DbReq:2946 DbRes:2946 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2941 ApiErr:11 ApiQue:0 Piston:0 ApiToDb:2020 DbReq:2019 DbRes:2019 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:8933 apiRes:8849 apiErr:25 apiQue:59 apiToDb:6106 dbReq:6099 dbRes:6099 dbErr:0 dbQue:0 Time:2018-07-07T13:13:01.259Z","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ApiToDb:1120 DbReq:1117 DbRes:1117 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:4590 ApiRes:4527 ApiErr:10 ApiQue:53 Piston:35 ApiToDb:3080 DbReq:3058 DbRes:3058 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2941 ApiErr:11 ApiQue:0 Piston:0 ApiToDb:2069 DbReq:2066 DbRes:2066 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:9063 apiRes:8985 apiErr:25 apiQue:53 apiToDb:6300 dbReq:6272 dbRes:6272 dbErr:0 dbQue:0 Time:2018-07-07T13:13:06.262Z","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ApiToDb:1133 DbReq:1133 DbRes:1133 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:4715 ApiRes:4658 ApiErr:10 ApiQue:47 Piston:35 ApiToDb:3233 DbReq:3209 DbRes:3209 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2941 ApiErr:11 ApiQue:0 Piston:0 ApiToDb:2101 DbReq:2098 DbRes:2098 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:9188 apiRes:9116 apiErr:25 apiQue:47 apiToDb:6498 dbReq:6471 dbRes:6471 dbErr:0 dbQue:0 Time:2018-07-07T13:13:11.267Z","level":"info"}
+{"message":"connect ECONNREFUSED 153.2.228.76:443. Carrier name:ups, Tracking number:1ZTT1049A822324438","level":"info"}
+{"message":"read ECONNRESET. Carrier name:ups, Tracking number:1ZTT1049A822311415","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ApiToDb:1161 DbReq:1150 DbRes:1150 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:4840 ApiRes:4771 ApiErr:12 ApiQue:57 Piston:45 ApiToDb:3372 DbReq:3360 DbRes:3360 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2941 ApiErr:11 ApiQue:0 Piston:0 ApiToDb:2137 DbReq:2132 DbRes:2132 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:9313 apiRes:9229 apiErr:27 apiQue:57 apiToDb:6701 dbReq:6673 dbRes:6673 dbErr:0 dbQue:0 Time:2018-07-07T13:13:16.273Z","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ApiToDb:1183 DbReq:1178 DbRes:1178 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:4941 ApiRes:4884 ApiErr:12 ApiQue:45 Piston:45 ApiToDb:3489 DbReq:3475 DbRes:3475 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2941 ApiErr:11 ApiQue:0 Piston:0 ApiToDb:2184 DbReq:2175 DbRes:2175 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:9414 apiRes:9342 apiErr:27 apiQue:45 apiToDb:6887 dbReq:6859 dbRes:6859 dbErr:0 dbQue:0 Time:2018-07-07T13:13:21.277Z","level":"info"}
+{"message":"connect ETIMEDOUT 153.2.228.76:443. Carrier name:ups, Tracking number:1ZTT1049A822325820","level":"info"}
+{"message":"connect ECONNREFUSED 153.2.228.76:443. Carrier name:ups, Tracking number:1ZTT1049A822326678","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ApiToDb:1197 DbReq:1196 DbRes:1196 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:5062 ApiRes:4997 ApiErr:14 ApiQue:51 Piston:25 ApiToDb:3635 DbReq:3614 DbRes:3614 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2941 ApiErr:11 ApiQue:0 Piston:0 ApiToDb:2228 DbReq:2222 DbRes:2222 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:9535 apiRes:9455 apiErr:29 apiQue:51 apiToDb:7091 dbReq:7063 dbRes:7063 dbErr:0 dbQue:0 Time:2018-07-07T13:13:26.281Z","level":"info"}
+{"message":"connect ETIMEDOUT 153.2.228.76:443. Carrier name:ups, Tracking number:1ZTT1049A822326696","level":"info"}
+{"message":"read ECONNRESET. Carrier name:ups, Tracking number:1ZTT1049A822312129","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ApiToDb:1206 DbReq:1204 DbRes:1204 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:5200 ApiRes:5129 ApiErr:16 ApiQue:55 Piston:45 ApiToDb:3779 DbReq:3756 DbRes:3756 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2941 ApiErr:11 ApiQue:0 Piston:0 ApiToDb:2265 DbReq:2262 DbRes:2262 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:9673 apiRes:9587 apiErr:31 apiQue:55 apiToDb:7281 dbReq:7253 dbRes:7253 dbErr:0 dbQue:0 Time:2018-07-07T13:13:31.285Z","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ApiToDb:1216 DbReq:1215 DbRes:1215 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:5337 ApiRes:5269 ApiErr:16 ApiQue:52 Piston:45 ApiToDb:3925 DbReq:3903 DbRes:3903 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2941 ApiErr:11 ApiQue:0 Piston:0 ApiToDb:2300 DbReq:2295 DbRes:2295 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:9810 apiRes:9727 apiErr:31 apiQue:52 apiToDb:7472 dbReq:7444 dbRes:7444 dbErr:0 dbQue:0 Time:2018-07-07T13:13:36.289Z","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ApiToDb:1226 DbReq:1226 DbRes:1226 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:5460 ApiRes:5393 ApiErr:16 ApiQue:51 Piston:45 ApiToDb:4078 DbReq:4054 DbRes:4054 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2941 ApiErr:11 ApiQue:0 Piston:0 ApiToDb:2338 DbReq:2334 DbRes:2334 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:9933 apiRes:9851 apiErr:31 apiQue:51 apiToDb:7673 dbReq:7645 dbRes:7645 dbErr:0 dbQue:0 Time:2018-07-07T13:13:41.295Z","level":"info"}
+{"message":"read ECONNRESET. Carrier name:ups, Tracking number:1ZTT1049A822326605","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ApiToDb:1239 DbReq:1237 DbRes:1237 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:5530 ApiRes:5505 ApiErr:17 ApiQue:8 Piston:5 ApiToDb:4228 DbReq:4208 DbRes:4208 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2941 ApiErr:11 ApiQue:0 Piston:0 ApiToDb:2369 DbReq:2363 DbRes:2363 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:10003 apiRes:9963 apiErr:32 apiQue:8 apiToDb:7867 dbReq:7839 dbRes:7839 dbErr:0 dbQue:0 Time:2018-07-07T13:13:46.301Z","level":"info"}
+{"message":"connect ECONNREFUSED 153.2.228.76:443. Carrier name:ups, Tracking number:1ZTT1049A822332036","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ApiToDb:1263 DbReq:1258 DbRes:1258 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:5530 ApiRes:5511 ApiErr:18 ApiQue:1 Piston:0 ApiToDb:4358 DbReq:4345 DbRes:4345 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2941 ApiErr:11 ApiQue:0 Piston:0 ApiToDb:2422 DbReq:2412 DbRes:2412 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:10003 apiRes:9969 apiErr:33 apiQue:1 apiToDb:8074 dbReq:8046 dbRes:8046 dbErr:0 dbQue:0 Time:2018-07-07T13:13:51.305Z","level":"info"}
+{"message":"connect ECONNREFUSED 153.2.228.76:443. Carrier name:ups, Tracking number:1ZTT1049A822335524","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ApiToDb:1309 DbReq:1306 DbRes:1306 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:5530 ApiRes:5511 ApiErr:19 ApiQue:0 Piston:0 ApiToDb:4453 DbReq:4435 DbRes:4435 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2941 ApiErr:11 ApiQue:0 Piston:0 ApiToDb:2463 DbReq:2456 DbRes:2456 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:10003 apiRes:9969 apiErr:34 apiQue:0 apiToDb:8256 dbReq:8228 dbRes:8228 dbErr:0 dbQue:0 Time:2018-07-07T13:13:56.311Z","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ApiToDb:1330 DbReq:1326 DbRes:1326 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:5530 ApiRes:5511 ApiErr:19 ApiQue:0 Piston:0 ApiToDb:4566 DbReq:4549 DbRes:4549 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2941 ApiErr:11 ApiQue:0 Piston:0 ApiToDb:2523 DbReq:2516 DbRes:2516 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:10003 apiRes:9969 apiErr:34 apiQue:0 apiToDb:8450 dbReq:8422 dbRes:8422 dbErr:0 dbQue:0 Time:2018-07-07T13:14:01.316Z","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ApiToDb:1350 DbReq:1350 DbRes:1350 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:5530 ApiRes:5511 ApiErr:19 ApiQue:0 Piston:0 ApiToDb:4686 DbReq:4671 DbRes:4671 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2941 ApiErr:11 ApiQue:0 Piston:0 ApiToDb:2579 DbReq:2566 DbRes:2566 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:10003 apiRes:9969 apiErr:34 apiQue:0 apiToDb:8646 dbReq:8618 dbRes:8618 dbErr:0 dbQue:0 Time:2018-07-07T13:14:06.321Z","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ApiToDb:1377 DbReq:1373 DbRes:1373 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:5530 ApiRes:5511 ApiErr:19 ApiQue:0 Piston:0 ApiToDb:4793 DbReq:4780 DbRes:4780 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2941 ApiErr:11 ApiQue:0 Piston:0 ApiToDb:2650 DbReq:2639 DbRes:2639 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:10003 apiRes:9969 apiErr:34 apiQue:0 apiToDb:8851 dbReq:8823 dbRes:8823 dbErr:0 dbQue:0 Time:2018-07-07T13:14:11.326Z","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ApiToDb:1389 DbReq:1384 DbRes:1384 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:5530 ApiRes:5511 ApiErr:19 ApiQue:0 Piston:0 ApiToDb:4906 DbReq:4889 DbRes:4889 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2941 ApiErr:11 ApiQue:0 Piston:0 ApiToDb:2704 DbReq:2698 DbRes:2698 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:10003 apiRes:9969 apiErr:34 apiQue:0 apiToDb:9030 dbReq:9002 dbRes:9002 dbErr:0 dbQue:0 Time:2018-07-07T13:14:16.329Z","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ApiToDb:1403 DbReq:1400 DbRes:1400 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:5530 ApiRes:5511 ApiErr:19 ApiQue:0 Piston:0 ApiToDb:5040 DbReq:5018 DbRes:5018 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2941 ApiErr:11 ApiQue:0 Piston:0 ApiToDb:2727 DbReq:2724 DbRes:2724 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:10003 apiRes:9969 apiErr:34 apiQue:0 apiToDb:9201 dbReq:9173 dbRes:9173 dbErr:0 dbQue:0 Time:2018-07-07T13:14:21.340Z","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ApiToDb:1408 DbReq:1408 DbRes:1408 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:5530 ApiRes:5511 ApiErr:19 ApiQue:0 Piston:0 ApiToDb:5095 DbReq:5095 DbRes:5095 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2941 ApiErr:11 ApiQue:0 Piston:0 ApiToDb:2779 DbReq:2779 DbRes:2779 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ApiToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:10003 apiRes:9969 apiErr:34 apiQue:0 apiToDb:9313 dbReq:9313 dbRes:9313 dbErr:0 dbQue:0 Time:2018-07-07T13:14:26.346Z","level":"info"}
+{"message":"Mandrill mail sent","level":"info"}
+{"message":"New Job started at 2018-07-07T13:18:12.605Z","level":"info"}
+{"message":"gso Item Count: 2952","level":"info"}
+{"message":"fex Item Count: 1487","level":"info"}
+{"message":"ups Item Count: 5530","level":"info"}
+{"message":"tps Item Count: 31","level":"info"}
+{"message":"fex ApiReq:233 ApiRes:174 ApiErr:0 ApiQue:59 Piston:25 ToDb:73 DbReq:59 DbRes:59 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:232 ApiRes:159 ApiErr:0 ApiQue:73 Piston:25 ToDb:62 DbReq:51 DbRes:51 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:167 ApiRes:27 ApiErr:0 ApiQue:140 Piston:10 ToDb:6 DbReq:3 DbRes:3 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ToDb:30 DbReq:30 DbRes:30 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:663 apiRes:391 apiErr:0 apiQue:272 toDb:171 dbReq:143 dbRes:143 dbErr:0 dbQue:0 Time:2018-07-07T13:18:25.194Z","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112449","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112415","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112370","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112343","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112347","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112588","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112598","level":"info"}
+{"message":"fex ApiReq:438 ApiRes:376 ApiErr:0 ApiQue:62 Piston:25 ToDb:129 DbReq:115 DbRes:115 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:380 ApiRes:325 ApiErr:0 ApiQue:55 Piston:35 ToDb:105 DbReq:102 DbRes:102 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:331 ApiRes:269 ApiErr:7 ApiQue:55 Piston:20 ToDb:63 DbReq:52 DbRes:52 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:1180 apiRes:1001 apiErr:7 apiQue:172 toDb:328 dbReq:300 dbRes:300 dbErr:0 dbQue:0 Time:2018-07-07T13:18:30.197Z","level":"info"}
+{"message":"fex ApiReq:627 ApiRes:581 ApiErr:0 ApiQue:46 Piston:25 ToDb:197 DbReq:185 DbRes:185 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:513 ApiRes:458 ApiErr:0 ApiQue:55 Piston:35 ToDb:149 DbReq:141 DbRes:141 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:501 ApiRes:434 ApiErr:7 ApiQue:60 Piston:20 ToDb:129 DbReq:121 DbRes:121 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:1672 apiRes:1504 apiErr:7 apiQue:161 toDb:506 dbReq:478 dbRes:478 dbErr:0 dbQue:0 Time:2018-07-07T13:18:35.212Z","level":"info"}
+{"message":"fex ApiReq:838 ApiRes:785 ApiErr:0 ApiQue:53 Piston:15 ToDb:265 DbReq:254 DbRes:254 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:649 ApiRes:599 ApiErr:0 ApiQue:50 Piston:35 ToDb:204 DbReq:196 DbRes:196 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:668 ApiRes:605 ApiErr:7 ApiQue:56 Piston:20 ToDb:178 DbReq:169 DbRes:169 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:2186 apiRes:2020 apiErr:7 apiQue:159 toDb:678 dbReq:650 dbRes:650 dbErr:0 dbQue:0 Time:2018-07-07T13:18:40.215Z","level":"info"}
+{"message":"read ECONNRESET. Carrier name:fex, Tracking number:415215294045","level":"info"}
+{"message":"read ECONNRESET. Carrier name:fex, Tracking number:415215296254","level":"info"}
+{"message":"fex ApiReq:1049 ApiRes:999 ApiErr:2 ApiQue:48 Piston:25 ToDb:340 DbReq:328 DbRes:328 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:800 ApiRes:744 ApiErr:0 ApiQue:56 Piston:35 ToDb:250 DbReq:247 DbRes:247 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:838 ApiRes:783 ApiErr:7 ApiQue:48 Piston:30 ToDb:231 DbReq:225 DbRes:225 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:2718 apiRes:2557 apiErr:9 apiQue:152 toDb:852 dbReq:831 dbRes:831 dbErr:0 dbQue:0 Time:2018-07-07T13:18:45.220Z","level":"info"}
+{"message":"read ECONNRESET. Carrier name:fex, Tracking number:415215294056","level":"info"}
+{"message":"read ECONNRESET. Carrier name:fex, Tracking number:415215294300","level":"info"}
+{"message":"fex ApiReq:1239 ApiRes:1175 ApiErr:4 ApiQue:60 Piston:25 ToDb:410 DbReq:396 DbRes:396 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:950 ApiRes:905 ApiErr:0 ApiQue:45 Piston:35 ToDb:297 DbReq:290 DbRes:290 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:1011 ApiRes:945 ApiErr:7 ApiQue:59 Piston:30 ToDb:289 DbReq:282 DbRes:282 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:3231 apiRes:3056 apiErr:11 apiQue:164 toDb:1027 dbReq:999 dbRes:999 dbErr:0 dbQue:0 Time:2018-07-07T13:18:50.224Z","level":"info"}
+{"message":"fex ApiReq:1403 ApiRes:1350 ApiErr:4 ApiQue:49 Piston:25 ToDb:470 DbReq:460 DbRes:460 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:1094 ApiRes:1044 ApiErr:0 ApiQue:50 Piston:25 ToDb:350 DbReq:340 DbRes:340 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:1160 ApiRes:1110 ApiErr:7 ApiQue:43 Piston:30 ToDb:355 DbReq:347 DbRes:347 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:3688 apiRes:3535 apiErr:11 apiQue:142 toDb:1206 dbReq:1178 dbRes:1178 dbErr:0 dbQue:0 Time:2018-07-07T13:18:55.236Z","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1482 ApiErr:4 ApiQue:4 Piston:0 ToDb:544 DbReq:533 DbRes:533 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:1242 ApiRes:1183 ApiErr:0 ApiQue:59 Piston:45 ToDb:395 DbReq:387 DbRes:387 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:1320 ApiRes:1252 ApiErr:7 ApiQue:61 Piston:40 ToDb:410 DbReq:401 DbRes:401 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:4083 apiRes:3948 apiErr:11 apiQue:124 toDb:1380 dbReq:1352 dbRes:1352 dbErr:0 dbQue:0 Time:2018-07-07T13:19:00.240Z","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ToDb:594 DbReq:592 DbRes:592 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:1376 ApiRes:1328 ApiErr:0 ApiQue:48 Piston:35 ToDb:474 DbReq:462 DbRes:462 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:1453 ApiRes:1398 ApiErr:7 ApiQue:48 Piston:40 ToDb:475 DbReq:461 DbRes:461 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:4350 apiRes:4243 apiErr:11 apiQue:96 toDb:1574 dbReq:1546 dbRes:1546 dbErr:0 dbQue:0 Time:2018-07-07T13:19:05.245Z","level":"info"}
+{"message":"connect ETIMEDOUT 153.2.228.76:443. Carrier name:ups, Tracking number:1ZTT1049A822281663","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ToDb:627 DbReq:623 DbRes:623 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:1516 ApiRes:1464 ApiErr:1 ApiQue:51 Piston:35 ToDb:556 DbReq:541 DbRes:541 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:1606 ApiRes:1546 ApiErr:7 ApiQue:53 Piston:20 ToDb:541 DbReq:532 DbRes:532 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:4643 apiRes:4527 apiErr:12 apiQue:104 toDb:1755 dbReq:1727 dbRes:1727 dbErr:0 dbQue:0 Time:2018-07-07T13:19:10.247Z","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ToDb:644 DbReq:642 DbRes:642 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:1649 ApiRes:1608 ApiErr:1 ApiQue:40 Piston:35 ToDb:632 DbReq:619 DbRes:619 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:1762 ApiRes:1702 ApiErr:7 ApiQue:53 Piston:20 ToDb:632 DbReq:619 DbRes:619 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:4932 apiRes:4827 apiErr:12 apiQue:93 toDb:1939 dbReq:1911 dbRes:1911 dbErr:0 dbQue:0 Time:2018-07-07T13:19:15.257Z","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ToDb:666 DbReq:657 DbRes:657 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:1786 ApiRes:1732 ApiErr:1 ApiQue:53 Piston:35 ToDb:714 DbReq:707 DbRes:707 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:1915 ApiRes:1851 ApiErr:7 ApiQue:57 Piston:30 ToDb:729 DbReq:717 DbRes:717 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:5222 apiRes:5100 apiErr:12 apiQue:110 toDb:2140 dbReq:2112 dbRes:2112 dbErr:0 dbQue:0 Time:2018-07-07T13:19:20.260Z","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ToDb:699 DbReq:690 DbRes:690 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:1913 ApiRes:1869 ApiErr:1 ApiQue:43 Piston:35 ToDb:794 DbReq:782 DbRes:782 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2057 ApiRes:1998 ApiErr:7 ApiQue:52 Piston:40 ToDb:795 DbReq:788 DbRes:788 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:5491 apiRes:5384 apiErr:12 apiQue:95 toDb:2319 dbReq:2291 dbRes:2291 dbErr:0 dbQue:0 Time:2018-07-07T13:19:25.265Z","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ToDb:720 DbReq:715 DbRes:715 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:2056 ApiRes:1991 ApiErr:1 ApiQue:64 Piston:35 ToDb:866 DbReq:859 DbRes:859 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2209 ApiRes:2148 ApiErr:7 ApiQue:54 Piston:30 ToDb:878 DbReq:862 DbRes:862 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:5786 apiRes:5656 apiErr:12 apiQue:118 toDb:2495 dbReq:2467 dbRes:2467 dbErr:0 dbQue:0 Time:2018-07-07T13:19:30.268Z","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111115093","level":"info"}
+{"message":"connect ECONNREFUSED 153.2.228.76:443. Carrier name:ups, Tracking number:1ZTT1049A822294873","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ToDb:739 DbReq:734 DbRes:734 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:2183 ApiRes:2132 ApiErr:2 ApiQue:49 Piston:35 ToDb:956 DbReq:945 DbRes:945 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2359 ApiRes:2304 ApiErr:8 ApiQue:47 Piston:40 ToDb:969 DbReq:957 DbRes:957 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:6063 apiRes:5953 apiErr:14 apiQue:96 toDb:2695 dbReq:2667 dbRes:2667 dbErr:0 dbQue:0 Time:2018-07-07T13:19:35.290Z","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ToDb:754 DbReq:753 DbRes:753 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:2321 ApiRes:2271 ApiErr:2 ApiQue:48 Piston:35 ToDb:1038 DbReq:1024 DbRes:1024 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2515 ApiRes:2454 ApiErr:8 ApiQue:53 Piston:20 ToDb:1065 DbReq:1052 DbRes:1052 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:6357 apiRes:6242 apiErr:14 apiQue:101 toDb:2888 dbReq:2860 dbRes:2860 dbErr:0 dbQue:0 Time:2018-07-07T13:19:40.295Z","level":"info"}
+{"message":"read ECONNRESET. Carrier name:ups, Tracking number:1ZTT1049A822289110","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ToDb:762 DbReq:757 DbRes:757 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:2450 ApiRes:2389 ApiErr:3 ApiQue:58 Piston:35 ToDb:1124 DbReq:1112 DbRes:1112 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2677 ApiRes:2608 ApiErr:8 ApiQue:61 Piston:40 ToDb:1156 DbReq:1145 DbRes:1145 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:6648 apiRes:6514 apiErr:15 apiQue:119 toDb:3073 dbReq:3045 dbRes:3045 dbErr:0 dbQue:0 Time:2018-07-07T13:19:45.299Z","level":"info"}
+{"message":"connect ECONNREFUSED 153.2.228.76:443. Carrier name:ups, Tracking number:1ZTT1049A822300490","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ToDb:775 DbReq:773 DbRes:773 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:2555 ApiRes:2498 ApiErr:4 ApiQue:53 Piston:45 ToDb:1209 DbReq:1198 DbRes:1198 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2830 ApiRes:2769 ApiErr:8 ApiQue:53 Piston:30 ToDb:1247 DbReq:1232 DbRes:1232 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:6906 apiRes:6784 apiErr:16 apiQue:106 toDb:3262 dbReq:3234 dbRes:3234 dbErr:0 dbQue:0 Time:2018-07-07T13:19:50.302Z","level":"info"}
+{"message":"connect ECONNREFUSED 153.2.228.76:443. Carrier name:ups, Tracking number:1ZTT1049A822301024","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111115795","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111115885","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111115904","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ToDb:786 DbReq:784 DbRes:784 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:2660 ApiRes:2599 ApiErr:5 ApiQue:56 Piston:55 ToDb:1289 DbReq:1285 DbRes:1285 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2935 ApiErr:11 ApiQue:6 Piston:20 ToDb:1347 DbReq:1337 DbRes:1337 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:7133 apiRes:7051 apiErr:20 apiQue:62 toDb:3453 dbReq:3437 dbRes:3437 dbErr:0 dbQue:0 Time:2018-07-07T13:19:55.308Z","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ToDb:810 DbReq:804 DbRes:804 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:2758 ApiRes:2704 ApiErr:5 ApiQue:49 Piston:45 ToDb:1370 DbReq:1358 DbRes:1358 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2940 ApiErr:11 ApiQue:1 Piston:0 ToDb:1446 DbReq:1436 DbRes:1436 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:7231 apiRes:7161 apiErr:20 apiQue:50 toDb:3657 dbReq:3629 dbRes:3629 dbErr:0 dbQue:0 Time:2018-07-07T13:20:00.314Z","level":"info"}
+{"message":"connect ETIMEDOUT 153.2.228.76:443. Carrier name:ups, Tracking number:1ZTT1049A822306823","level":"info"}
+{"message":"connect ETIMEDOUT 153.2.228.76:443. Carrier name:ups, Tracking number:1ZTT1049A822310596","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ToDb:834 DbReq:834 DbRes:834 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:2863 ApiRes:2818 ApiErr:7 ApiQue:38 Piston:45 ToDb:1476 DbReq:1457 DbRes:1457 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2941 ApiErr:11 ApiQue:0 Piston:0 ToDb:1496 DbReq:1487 DbRes:1487 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:7336 apiRes:7276 apiErr:22 apiQue:38 toDb:3837 dbReq:3809 dbRes:3809 dbErr:0 dbQue:0 Time:2018-07-07T13:20:05.317Z","level":"info"}
+{"message":"connect ECONNREFUSED 153.2.228.76:443. Carrier name:ups, Tracking number:1ZTT1049A822307448","level":"info"}
+{"message":"connect ECONNREFUSED 153.2.228.76:443. Carrier name:ups, Tracking number:1ZTT1049A822304870","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ToDb:846 DbReq:843 DbRes:843 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:2994 ApiRes:2932 ApiErr:9 ApiQue:53 Piston:35 ToDb:1589 DbReq:1571 DbRes:1571 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2941 ApiErr:11 ApiQue:0 Piston:0 ToDb:1565 DbReq:1558 DbRes:1558 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:7467 apiRes:7390 apiErr:24 apiQue:53 toDb:4031 dbReq:4003 dbRes:4003 dbErr:0 dbQue:0 Time:2018-07-07T13:20:10.323Z","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ToDb:868 DbReq:864 DbRes:864 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:3118 ApiRes:3061 ApiErr:9 ApiQue:48 Piston:35 ToDb:1708 DbReq:1690 DbRes:1690 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2941 ApiErr:11 ApiQue:0 Piston:0 ToDb:1626 DbReq:1620 DbRes:1620 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:7591 apiRes:7519 apiErr:24 apiQue:48 toDb:4233 dbReq:4205 dbRes:4205 dbErr:0 dbQue:0 Time:2018-07-07T13:20:15.328Z","level":"info"}
+{"message":"read ECONNRESET. Carrier name:ups, Tracking number:1ZTT1049A822295863","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ToDb:886 DbReq:885 DbRes:885 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:3237 ApiRes:3173 ApiErr:10 ApiQue:54 Piston:50 ToDb:1816 DbReq:1800 DbRes:1800 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2941 ApiErr:11 ApiQue:0 Piston:0 ToDb:1686 DbReq:1676 DbRes:1676 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:7710 apiRes:7631 apiErr:25 apiQue:54 toDb:4419 dbReq:4392 dbRes:4392 dbErr:0 dbQue:0 Time:2018-07-07T13:20:20.333Z","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ToDb:893 DbReq:890 DbRes:890 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:3341 ApiRes:3278 ApiErr:10 ApiQue:53 Piston:50 ToDb:1936 DbReq:1923 DbRes:1923 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2941 ApiErr:11 ApiQue:0 Piston:0 ToDb:1754 DbReq:1742 DbRes:1742 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:7814 apiRes:7736 apiErr:25 apiQue:53 toDb:4614 dbReq:4586 dbRes:4586 dbErr:0 dbQue:0 Time:2018-07-07T13:20:25.336Z","level":"info"}
+{"message":"connect ETIMEDOUT 153.2.228.76:443. Carrier name:ups, Tracking number:1ZTT1049A822308572","level":"info"}
+{"message":"connect ETIMEDOUT 153.2.228.76:443. Carrier name:ups, Tracking number:1ZTT1049A822310327","level":"info"}
+{"message":"connect ECONNREFUSED 153.2.228.76:443. Carrier name:ups, Tracking number:1ZTT1049A822318301","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ToDb:920 DbReq:920 DbRes:920 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:3460 ApiRes:3399 ApiErr:13 ApiQue:48 Piston:40 ToDb:2042 DbReq:2023 DbRes:2023 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2941 ApiErr:11 ApiQue:0 Piston:0 ToDb:1815 DbReq:1806 DbRes:1806 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:7933 apiRes:7857 apiErr:28 apiQue:48 toDb:4808 dbReq:4780 dbRes:4780 dbErr:0 dbQue:0 Time:2018-07-07T13:20:30.340Z","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ToDb:952 DbReq:947 DbRes:947 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:3592 ApiRes:3527 ApiErr:13 ApiQue:52 Piston:30 ToDb:2179 DbReq:2160 DbRes:2160 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2941 ApiErr:11 ApiQue:0 Piston:0 ToDb:1852 DbReq:1848 DbRes:1848 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:8065 apiRes:7985 apiErr:28 apiQue:52 toDb:5014 dbReq:4986 dbRes:4986 dbErr:0 dbQue:0 Time:2018-07-07T13:20:35.342Z","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ToDb:971 DbReq:964 DbRes:964 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:3708 ApiRes:3650 ApiErr:13 ApiQue:45 Piston:50 ToDb:2292 DbReq:2277 DbRes:2277 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2941 ApiErr:11 ApiQue:0 Piston:0 ToDb:1896 DbReq:1890 DbRes:1890 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:8181 apiRes:8108 apiErr:28 apiQue:45 toDb:5190 dbReq:5162 dbRes:5162 dbErr:0 dbQue:0 Time:2018-07-07T13:20:40.346Z","level":"info"}
+{"message":"connect ECONNREFUSED 153.2.228.76:443. Carrier name:ups, Tracking number:1ZTT1049A822316214","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ToDb:989 DbReq:983 DbRes:983 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:3828 ApiRes:3761 ApiErr:14 ApiQue:53 Piston:30 ToDb:2428 DbReq:2412 DbRes:2412 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2941 ApiErr:11 ApiQue:0 Piston:0 ToDb:1936 DbReq:1930 DbRes:1930 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:8301 apiRes:8219 apiErr:29 apiQue:53 toDb:5384 dbReq:5356 dbRes:5356 dbErr:0 dbQue:0 Time:2018-07-07T13:20:45.354Z","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ToDb:1012 DbReq:1009 DbRes:1009 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:3953 ApiRes:3872 ApiErr:14 ApiQue:67 Piston:40 ToDb:2567 DbReq:2551 DbRes:2551 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2941 ApiErr:11 ApiQue:0 Piston:0 ToDb:1980 DbReq:1971 DbRes:1971 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:8426 apiRes:8330 apiErr:29 apiQue:67 toDb:5590 dbReq:5562 dbRes:5562 dbErr:0 dbQue:0 Time:2018-07-07T13:20:50.361Z","level":"info"}
+{"message":"read ECONNRESET. Carrier name:ups, Tracking number:1ZTT1049A822296531","level":"info"}
+{"message":"read ECONNRESET. Carrier name:ups, Tracking number:1Z91V467A822230122","level":"info"}
+{"message":"read ECONNRESET. Carrier name:ups, Tracking number:1ZTT1049A822301168","level":"info"}
+{"message":"read ECONNRESET. Carrier name:ups, Tracking number:1ZTT1049A622302474","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ToDb:1036 DbReq:1036 DbRes:1036 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:4058 ApiRes:3986 ApiErr:18 ApiQue:54 Piston:40 ToDb:2692 DbReq:2670 DbRes:2670 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2941 ApiErr:11 ApiQue:0 Piston:0 ToDb:2019 DbReq:2013 DbRes:2013 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:8531 apiRes:8444 apiErr:33 apiQue:54 toDb:5778 dbReq:5750 dbRes:5750 dbErr:0 dbQue:0 Time:2018-07-07T13:20:55.373Z","level":"info"}
+{"message":"connect ETIMEDOUT 153.2.228.76:443. Carrier name:ups, Tracking number:1ZTT1049A822316830","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ToDb:1062 DbReq:1062 DbRes:1062 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:4177 ApiRes:4109 ApiErr:19 ApiQue:49 Piston:50 ToDb:2818 DbReq:2790 DbRes:2790 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2941 ApiErr:11 ApiQue:0 Piston:0 ToDb:2057 DbReq:2057 DbRes:2057 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:8650 apiRes:8567 apiErr:34 apiQue:49 toDb:5968 dbReq:5940 dbRes:5940 dbErr:0 dbQue:0 Time:2018-07-07T13:21:00.377Z","level":"info"}
+{"message":"read ECONNRESET. Carrier name:ups, Tracking number:1ZTT1049A822308054","level":"info"}
+{"message":"connect ECONNREFUSED 153.2.228.76:443. Carrier name:ups, Tracking number:1ZTT1049A822312674","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ToDb:1078 DbReq:1078 DbRes:1078 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:4298 ApiRes:4235 ApiErr:21 ApiQue:42 Piston:40 ToDb:2975 DbReq:2947 DbRes:2947 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2941 ApiErr:11 ApiQue:0 Piston:0 ToDb:2080 DbReq:2080 DbRes:2080 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:8771 apiRes:8693 apiErr:36 apiQue:42 toDb:6164 dbReq:6136 dbRes:6136 dbErr:0 dbQue:0 Time:2018-07-07T13:21:05.379Z","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ToDb:1095 DbReq:1089 DbRes:1089 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:4447 ApiRes:4373 ApiErr:21 ApiQue:53 Piston:30 ToDb:3135 DbReq:3116 DbRes:3116 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2941 ApiErr:11 ApiQue:0 Piston:0 ToDb:2117 DbReq:2114 DbRes:2114 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:8920 apiRes:8831 apiErr:36 apiQue:53 toDb:6378 dbReq:6350 dbRes:6350 dbErr:0 dbQue:0 Time:2018-07-07T13:21:10.385Z","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ToDb:1113 DbReq:1113 DbRes:1113 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:4587 ApiRes:4515 ApiErr:21 ApiQue:51 Piston:40 ToDb:3281 DbReq:3253 DbRes:3253 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2941 ApiErr:11 ApiQue:0 Piston:0 ToDb:2140 DbReq:2140 DbRes:2140 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:9060 apiRes:8973 apiErr:36 apiQue:51 toDb:6565 dbReq:6537 dbRes:6537 dbErr:0 dbQue:0 Time:2018-07-07T13:21:15.389Z","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ToDb:1130 DbReq:1125 DbRes:1125 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:4713 ApiRes:4641 ApiErr:21 ApiQue:51 Piston:30 ToDb:3447 DbReq:3428 DbRes:3428 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2941 ApiErr:11 ApiQue:0 Piston:0 ToDb:2158 DbReq:2154 DbRes:2154 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:9186 apiRes:9099 apiErr:36 apiQue:51 toDb:6766 dbReq:6738 dbRes:6738 dbErr:0 dbQue:0 Time:2018-07-07T13:21:20.410Z","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ToDb:1142 DbReq:1138 DbRes:1138 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:4847 ApiRes:4774 ApiErr:21 ApiQue:52 Piston:30 ToDb:3614 DbReq:3591 DbRes:3591 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2941 ApiErr:11 ApiQue:0 Piston:0 ToDb:2176 DbReq:2175 DbRes:2175 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:9320 apiRes:9232 apiErr:36 apiQue:52 toDb:6963 dbReq:6935 dbRes:6935 dbErr:0 dbQue:0 Time:2018-07-07T13:21:25.413Z","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ToDb:1162 DbReq:1162 DbRes:1162 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:4975 ApiRes:4908 ApiErr:21 ApiQue:46 Piston:40 ToDb:3748 DbReq:3724 DbRes:3724 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2941 ApiErr:11 ApiQue:0 Piston:0 ToDb:2210 DbReq:2206 DbRes:2206 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:9448 apiRes:9366 apiErr:36 apiQue:46 toDb:7151 dbReq:7123 dbRes:7123 dbErr:0 dbQue:0 Time:2018-07-07T13:21:30.419Z","level":"info"}
+{"message":"fex ApiReq:1490 ApiRes:1486 ApiErr:4 ApiQue:0 Piston:0 ToDb:1174 DbReq:1174 DbRes:1174 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:5102 ApiRes:5034 ApiErr:21 ApiQue:47 Piston:40 ToDb:3902 DbReq:3874 DbRes:3874 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:2952 ApiRes:2941 ApiErr:11 ApiQue:0 Piston:0 ToDb:2238 DbReq:2238 DbRes:2238 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:9575 apiRes:9492 apiErr:36 apiQue:47 toDb:7345 dbReq:7317 dbRes:7317 dbErr:0 dbQue:0 Time:2018-07-07T13:21:35.425Z","level":"info"}

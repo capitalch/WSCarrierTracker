@@ -73,7 +73,6 @@ const tools = {
             TrackingNumber: json.trackingNumber,
             ShippingAgentCode: json.shippingAgentCode,
             ActivityJson: JSON.stringify(json.activityJson)
-
         };
         return (obj);
     },
@@ -140,9 +139,11 @@ const disburse = (data) => {
     let ps = reqs.find((e) => e.isAvailable);
     if (ps) {
         ps.isAvailable = false;
-        notify.addDbRequest(data.shippingAgentCode);
+        notify.addApiToDb(data.shippingAgentCode);
+        // notify.addDbRequest(data.shippingAgentCode);
         const psParamsObject = tools.getPsParamsObject(data);
         ps.execute(psParamsObject, (err, result) => {
+            notify.addDbRequest(data.shippingAgentCode);
             ps.isAvailable = true;
             if (err) {
                 notify.pushError(err);

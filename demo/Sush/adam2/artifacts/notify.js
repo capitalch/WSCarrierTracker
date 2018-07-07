@@ -86,6 +86,9 @@ const notify = {
         notifyData.apiStatus[info.carrierName].errors++;
         // verbose && notify.showStatus(info);
     },
+    addApiToDb: (carrierName) => {
+        notifyData.apiStatus[carrierName].toDb++;
+    },
     addDbRequest: (carrierName) => {
         notifyData.dbStatus[carrierName].requests++;
     },
@@ -112,12 +115,23 @@ const notify = {
     },
     showAllStatus: () => {
         const carriers = settings.carriers;
-        const allStatus = { apiReq: 0, apiRes: 0, apiErr: 0, apiQue: 0, dbReq: 0, dbRes: 0, dbErr: 0, dbQue: 0 }
+        const allStatus = {
+            apiReq: 0,
+            apiRes: 0,
+            apiErr: 0,
+            apiQue: 0,
+            toDb:0,
+            dbReq: 0,
+            dbRes: 0,
+            dbErr: 0,
+            dbQue: 0
+        }
         Object.keys(carriers).forEach(x => {
             allStatus.apiReq = allStatus.apiReq + notifyData.apiStatus[x].requests;
             allStatus.apiRes = allStatus.apiRes + notifyData.apiStatus[x].responses;
             allStatus.apiErr = allStatus.apiErr + notifyData.apiStatus[x].errors;
             allStatus.apiQue = allStatus.apiQue + notifyData.apiStatus[x].queue();
+            allStatus.toDb = allStatus.toDb + notifyData.apiStatus[x].toDb;
             allStatus.dbReq = allStatus.dbReq + notifyData.dbStatus[x].requests;
             allStatus.dbRes = allStatus.dbRes + notifyData.dbStatus[x].responses;
             allStatus.dbErr = allStatus.dbErr + notifyData.dbStatus[x].errors;
@@ -128,6 +142,7 @@ const notify = {
                     ' ApiErr:', notifyData.apiStatus[x].errors,
                     ' ApiQue:', notifyData.apiStatus[x].queue(),
                     ' Piston:', notifyData.apiStatus[x].piston,
+                    ' ToDb:', notifyData.apiStatus[x].toDb,
                     ' DbReq:', notifyData.dbStatus[x].requests, ' DbRes:',
                     notifyData.dbStatus[x].responses, ' DbErr:', notifyData.dbStatus[x].errors,
                     ' DbQue:' + notifyData.dbStatus[x].queue()));
@@ -137,6 +152,7 @@ const notify = {
             ' apiErr:', allStatus.apiErr,
             ' apiQue:', allStatus.apiQue,
             // ' Total Piston:' + notifyData.apiStatus[x].piston +
+            ' toDb:', allStatus.toDb,
             ' dbReq:', allStatus.dbReq,
             ' dbRes:', allStatus.dbRes,
             ' dbErr:', allStatus.dbErr,

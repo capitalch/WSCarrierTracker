@@ -1,0 +1,34 @@
+{"message":"New Job started at 2018-07-07T12:33:10.965Z","level":"info"}
+{"message":"gso Item Count: 7","level":"info"}
+{"message":"fex Item Count: 3","level":"info"}
+{"message":"New Job started at 2018-07-07T12:33:47.406Z","level":"info"}
+{"message":"gso Item Count: 7","level":"info"}
+{"message":"fex Item Count: 3","level":"info"}
+{"message":"New Job started at 2018-07-07T12:34:06.488Z","level":"info"}
+{"message":"Domain exception: Error: No event 'socketError' in state 'LoggedInSendingInitialSql'\n    at Connection.dispatchEvent (c:\\Projects\\WSCarrierTracker\\demo\\Sush\\node_modules\\tedious\\lib\\connection.js:994:28)\n    at Connection.socketError (c:\\Projects\\WSCarrierTracker\\demo\\Sush\\node_modules\\tedious\\lib\\connection.js:1010:12)\n    at emitOne (events.js:121:20)\n    at Socket.emit (events.js:211:7)\n    at emitErrorNT (internal/streams/destroy.js:64:8)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickDomainCallback (internal/process/next_tick.js:218:9)","level":"info"}
+{"message":"New Job started at 2018-07-07T12:34:23.334Z","level":"info"}
+{"message":"gso Item Count: 7","level":"info"}
+{"message":"fex Item Count: 3","level":"info"}
+{"message":"New Job started at 2018-07-07T12:35:20.198Z","level":"info"}
+{"message":"gso Item Count: 7","level":"info"}
+{"message":"fex Item Count: 3","level":"info"}
+{"message":"fex ApiReq:3 ApiRes:1 ApiErr:0 ApiQue:2 ApiToDb:1 Piston:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 ApiToDb:0 Piston:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:7 ApiRes:0 ApiErr:0 ApiQue:7 ApiToDb:0 Piston:5 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 ApiToDb:0 Piston:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:10 apiRes:1 apiErr:0 apiQue:9 apiToDb:NaN dbReq:0 dbRes:0 dbErr:0 dbQue:0 Time:2018-07-07T12:38:02.461Z","level":"info"}
+{"message":"read ECONNRESET. Carrier name:gso, Tracking number:508741111112294","level":"info"}
+{"message":"read ECONNRESET. Carrier name:gso, Tracking number:508741111112295","level":"info"}
+{"message":"read ECONNRESET. Carrier name:gso, Tracking number:508741111112297","level":"info"}
+{"message":"read ECONNRESET. Carrier name:gso, Tracking number:508741111112298","level":"info"}
+{"message":"read ECONNRESET. Carrier name:gso, Tracking number:508741111112299","level":"info"}
+{"message":"read ECONNRESET. Carrier name:gso, Tracking number:508741111112300","level":"info"}
+{"message":"read ECONNRESET. Carrier name:gso, Tracking number:508741111112296","level":"info"}
+{"message":"fex ApiReq:3 ApiRes:3 ApiErr:0 ApiQue:0 ApiToDb:3 Piston:0 DbReq:3 DbRes:3 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 ApiToDb:0 Piston:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:7 ApiRes:0 ApiErr:7 ApiQue:0 ApiToDb:7 Piston:0 DbReq:7 DbRes:7 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:0 ApiRes:0 ApiErr:0 ApiQue:0 ApiToDb:0 Piston:0 DbReq:0 DbRes:0 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:10 apiRes:3 apiErr:7 apiQue:0 apiToDb:NaN dbReq:10 dbRes:10 dbErr:0 dbQue:0 Time:2018-07-07T12:38:07.465Z","level":"info"}
+{"message":"Mandrill mail sent","level":"info"}
+{"message":"New Job started at 2018-07-07T12:47:54.864Z","level":"info"}
+{"message":"New Job started at 2018-07-07T12:50:32.455Z","level":"info"}

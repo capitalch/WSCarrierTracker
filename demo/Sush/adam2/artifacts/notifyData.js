@@ -79,7 +79,8 @@ notifyData.apiStatus = {
             return (c.requests - c.responses - c.errors);
         },
         count: 0,
-        piston: 0
+        piston: 0,
+        toDb:0
     },
     ups: {
         requests: 0,
@@ -90,7 +91,8 @@ notifyData.apiStatus = {
             return (c.requests - c.responses - c.errors);
         },
         count: 0,
-        piston: 0
+        piston: 0,
+        toDb:0
     },
     gso: {
         requests: 0,
@@ -101,7 +103,8 @@ notifyData.apiStatus = {
             return (c.requests - c.responses - c.errors);
         },
         count: 0,
-        piston: 0
+        piston: 0,
+        toDb:0
     },
     tps: {
         requests: 0,
@@ -112,7 +115,8 @@ notifyData.apiStatus = {
             return (c.requests - c.responses - c.errors);
         },
         count: 0,
-        piston: 0
+        piston: 0,
+        toDb:0
     }
 }
 

@@ -233,7 +233,7 @@ function handleFex(x, result) {
         rn: x.rn,
         activityJson: events || null,
         unifiedStatus: statusCode ? fexStatusCodes[statusCode] || 'noStatus' : 'noStatus'
-    }
+    }   
     handler.buffer.next(fexJson);
 }
 
