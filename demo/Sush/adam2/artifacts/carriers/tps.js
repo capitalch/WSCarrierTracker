@@ -26,7 +26,7 @@ tps.processTps = (x) => {
                 notify.incrException(x.carrierName);
                 const errorJson = notify.getErrorJson(error, x);
                 handler.buffer.next(errorJson);
-                ibuki.emit('app-error:any', handler.frameError(error, 'tps', 'info', 4))
+                // ibuki.emit('app-error:any', handler.frameError(error, 'tps', 'info', 4))
             } else {
                 handleTps(x, result);
             }
