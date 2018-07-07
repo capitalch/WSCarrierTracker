@@ -62,13 +62,6 @@ const notify = {
     getApiStatus: () => notifyData.apiStatus,
     getCarrierStatus: () => notifyData.carrierStatus,
     initCarrier: (carrierName, infos) => {
-
-        // apiStatus[carrierName] || (apiStatus[carrierName] = {});
-        // apiStatus[carrierName].requests || (apiStatus[carrierName].requests = 0);
-        // apiStatus[carrierName].responses || (apiStatus[carrierName].responses = 0);
-        // apiStatus[carrierName].queue || (apiStatus[carrierName].queue = () =>
-        //     apiStatus[carrierName].requests - apiStatus[carrierName].responses - apiStatus[carrierName].errors);
-        // apiStatus[carrierName].errors || (apiStatus[carrierName].errors = 0);
         notifyData.apiStatus[carrierName].count = infos.length;
         notifyData.apiStatus[carrierName].piston = settings.carriers[carrierName].piston || 10;
         logger.info(carrierName + ' Item Count: ' + notifyData.apiStatus[carrierName].count);
@@ -82,15 +75,6 @@ const notify = {
         notifyData.apiStatus[carrierName].piston = notifyData.apiStatus[carrierName].piston + variation;
     },
     getApiQueue: (carrierName) => notifyData.apiStatus[carrierName].queue(),
-    addDbRequest: (carrierName) => {
-        notifyData.dbStatus[carrierName].requests++;
-    },
-    addDbResponse: (carrierName) => {
-        notifyData.dbStatus[carrierName].responses++;
-    },
-    addDbError: (carrierName) => {
-        notifyData.dbStatus[carrierName].errors++;
-    },
     addApiRequest: (info) => {
         notifyData.apiStatus[info.carrierName].requests++;
     },
@@ -101,6 +85,15 @@ const notify = {
     addApiError: (info) => {
         notifyData.apiStatus[info.carrierName].errors++;
         // verbose && notify.showStatus(info);
+    },
+    addDbRequest: (carrierName) => {
+        notifyData.dbStatus[carrierName].requests++;
+    },
+    addDbResponse: (carrierName) => {
+        notifyData.dbStatus[carrierName].responses++;
+    },
+    addDbError: (carrierName) => {
+        notifyData.dbStatus[carrierName].errors++;
     },
     incrDelivered: (carrierName) => {
         notifyData.carrierStatus[carrierName].delivered++;
@@ -117,17 +110,6 @@ const notify = {
     incrNotDelivered: (carrierName) => {
         notifyData.carrierStatus[carrierName].notDelivered++;
     },
-    // showStatus: (info) => {
-    //     console.log(info.carrierName,
-    //         ' ApiRequests:', apiStatus[info.carrierName].requests,
-    //         ' ApiResponses:', apiStatus[info.carrierName].responses,
-    //         ' ApiErrors:', apiStatus[info.carrierName].errors,
-    //         ' ApiQueue:', apiStatus[info.carrierName].queue(),
-    //         ' Piston:', apiStatus[info.carrierName].piston,
-    //         ' DbRequests:', dbStatus.dbRequests, ' DbResponses:',
-    //         dbStatus.dbResponses, ' DbErrors:', dbStatus.dbErrors,
-    //         ' DbQueue:', dbStatus.dbQueue());
-    // },
     showAllStatus: () => {
         const carriers = settings.carriers;
         let apiReq = 0, apiRes = 0, apiErr = 0, apiQue = 0, dbReq = 0, dbRes = 0, dbErr = 0, dbQue = 0;
@@ -183,9 +165,6 @@ const notify = {
             status.dbErrors = status.dbErrors + notifyData.dbStatus[x].errors;
 
         });
-        // status.dbRequests = dbStatus1.dbRequests;
-        // status.dbResponses = dbStatus1.dbResponses;
-        // status.errors = dbStatus1.dbErrors;
         return (status);
     },
     pushError: (x) => {

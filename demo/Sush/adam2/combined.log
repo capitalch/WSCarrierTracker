@@ -5093,3 +5093,205 @@
 {"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:30 DbRes:30 DbErr:0 DbQue:0","level":"info"}
 {"message":"Total apiReq:103440 apiRes:103420 apiErr:20 apiQue:0 dbReq:59761 dbRes:59761 dbErr:0 dbQue:0","level":"info"}
 {"message":"Mandrill mail sent","level":"info"}
+{"message":"New Job started at 2018-07-07T04:41:26.742Z","level":"info"}
+{"message":"gso Item Count: 6566","level":"info"}
+{"message":"New Job started at 2018-07-07T04:47:37.469Z","level":"info"}
+{"message":"gso Item Count: 6566","level":"info"}
+{"message":"fex Item Count: 54585","level":"info"}
+{"message":"ups Item Count: 42122","level":"info"}
+{"message":"tps Item Count: 31","level":"info"}
+{"message":"fex ApiReq:270 ApiRes:235 ApiErr:0 ApiQue:35 Piston:30 DbReq:49 DbRes:34 DbErr:0 DbQue:15","level":"info"}
+{"message":"ups ApiReq:270 ApiRes:237 ApiErr:0 ApiQue:33 Piston:35 DbReq:40 DbRes:34 DbErr:0 DbQue:6","level":"info"}
+{"message":"gso ApiReq:197 ApiRes:20 ApiErr:0 ApiQue:177 Piston:30 DbReq:7 DbRes:0 DbErr:0 DbQue:7","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:25 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:768 apiRes:523 apiErr:0 apiQue:245 dbReq:127 dbRes:99 dbErr:0 dbQue:28","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112449","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112415","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112370","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112347","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112343","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112588","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112598","level":"info"}
+{"message":"fex ApiReq:496 ApiRes:435 ApiErr:0 ApiQue:61 Piston:15 DbReq:107 DbRes:98 DbErr:0 DbQue:9","level":"info"}
+{"message":"ups ApiReq:483 ApiRes:426 ApiErr:0 ApiQue:57 Piston:25 DbReq:86 DbRes:81 DbErr:0 DbQue:5","level":"info"}
+{"message":"gso ApiReq:293 ApiRes:266 ApiErr:7 ApiQue:20 Piston:60 DbReq:51 DbRes:37 DbErr:0 DbQue:14","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:1303 apiRes:1158 apiErr:7 apiQue:138 dbReq:275 dbRes:247 dbErr:0 dbQue:28","level":"info"}
+{"message":"fex ApiReq:723 ApiRes:664 ApiErr:0 ApiQue:59 Piston:15 DbReq:175 DbRes:162 DbErr:0 DbQue:13","level":"info"}
+{"message":"ups ApiReq:689 ApiRes:639 ApiErr:0 ApiQue:50 Piston:25 DbReq:146 DbRes:137 DbErr:0 DbQue:9","level":"info"}
+{"message":"gso ApiReq:456 ApiRes:379 ApiErr:7 ApiQue:70 Piston:20 DbReq:88 DbRes:82 DbErr:0 DbQue:6","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:1899 apiRes:1713 apiErr:7 apiQue:179 dbReq:440 dbRes:412 dbErr:0 dbQue:28","level":"info"}
+{"message":"New Job started at 2018-07-07T04:50:09.747Z","level":"info"}
+{"message":"gso Item Count: 6566","level":"info"}
+{"message":"fex Item Count: 54585","level":"info"}
+{"message":"ups Item Count: 42122","level":"info"}
+{"message":"tps Item Count: 31","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112449","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112415","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112370","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112347","level":"info"}
+{"message":"fex ApiReq:276 ApiRes:224 ApiErr:0 ApiQue:52 Piston:50 DbReq:53 DbRes:41 DbErr:0 DbQue:12","level":"info"}
+{"message":"ups ApiReq:333 ApiRes:275 ApiErr:0 ApiQue:58 Piston:15 DbReq:84 DbRes:71 DbErr:0 DbQue:13","level":"info"}
+{"message":"gso ApiReq:212 ApiRes:160 ApiErr:4 ApiQue:48 Piston:30 DbReq:5 DbRes:2 DbErr:0 DbQue:3","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:28 DbRes:28 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:852 apiRes:690 apiErr:4 apiQue:158 dbReq:170 dbRes:142 dbErr:0 dbQue:28","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112343","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112588","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112598","level":"info"}
+{"message":"fex ApiReq:459 ApiRes:409 ApiErr:0 ApiQue:50 Piston:20 DbReq:102 DbRes:95 DbErr:0 DbQue:7","level":"info"}
+{"message":"ups ApiReq:576 ApiRes:530 ApiErr:0 ApiQue:46 Piston:25 DbReq:149 DbRes:140 DbErr:0 DbQue:9","level":"info"}
+{"message":"gso ApiReq:444 ApiRes:380 ApiErr:7 ApiQue:57 Piston:20 DbReq:64 DbRes:52 DbErr:0 DbQue:12","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:28 DbRes:28 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:1510 apiRes:1350 apiErr:7 apiQue:153 dbReq:343 dbRes:315 dbErr:0 dbQue:28","level":"info"}
+{"message":"fex ApiReq:687 ApiRes:630 ApiErr:0 ApiQue:57 Piston:25 DbReq:161 DbRes:150 DbErr:0 DbQue:11","level":"info"}
+{"message":"ups ApiReq:822 ApiRes:769 ApiErr:0 ApiQue:53 Piston:15 DbReq:213 DbRes:205 DbErr:0 DbQue:8","level":"info"}
+{"message":"gso ApiReq:674 ApiRes:606 ApiErr:7 ApiQue:61 Piston:20 DbReq:121 DbRes:112 DbErr:0 DbQue:9","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:28 DbRes:28 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:2214 apiRes:2036 apiErr:7 apiQue:171 dbReq:523 dbRes:495 dbErr:0 dbQue:28","level":"info"}
+{"message":"fex ApiReq:917 ApiRes:862 ApiErr:0 ApiQue:55 Piston:25 DbReq:222 DbRes:215 DbErr:0 DbQue:7","level":"info"}
+{"message":"ups ApiReq:1062 ApiRes:1016 ApiErr:0 ApiQue:46 Piston:25 DbReq:276 DbRes:262 DbErr:0 DbQue:14","level":"info"}
+{"message":"gso ApiReq:885 ApiRes:833 ApiErr:7 ApiQue:45 Piston:20 DbReq:172 DbRes:165 DbErr:0 DbQue:7","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:28 DbRes:28 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:2895 apiRes:2742 apiErr:7 apiQue:146 dbReq:698 dbRes:670 dbErr:0 dbQue:28","level":"info"}
+{"message":"fex ApiReq:1137 ApiRes:1073 ApiErr:0 ApiQue:64 Piston:15 DbReq:291 DbRes:279 DbErr:0 DbQue:12","level":"info"}
+{"message":"ups ApiReq:1307 ApiRes:1250 ApiErr:0 ApiQue:57 Piston:15 DbReq:336 DbRes:325 DbErr:0 DbQue:11","level":"info"}
+{"message":"gso ApiReq:1101 ApiRes:1040 ApiErr:7 ApiQue:54 Piston:20 DbReq:227 DbRes:222 DbErr:0 DbQue:5","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:28 DbRes:28 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:3576 apiRes:3394 apiErr:7 apiQue:175 dbReq:882 dbRes:854 dbErr:0 dbQue:28","level":"info"}
+{"message":"fex ApiReq:1347 ApiRes:1303 ApiErr:0 ApiQue:44 Piston:25 DbReq:358 DbRes:346 DbErr:0 DbQue:12","level":"info"}
+{"message":"ups ApiReq:1545 ApiRes:1500 ApiErr:0 ApiQue:45 Piston:25 DbReq:386 DbRes:375 DbErr:0 DbQue:11","level":"info"}
+{"message":"gso ApiReq:1313 ApiRes:1263 ApiErr:7 ApiQue:43 Piston:30 DbReq:283 DbRes:278 DbErr:0 DbQue:5","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:28 DbRes:28 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:4236 apiRes:4097 apiErr:7 apiQue:132 dbReq:1055 dbRes:1027 dbErr:0 dbQue:28","level":"info"}
+{"message":"fex ApiReq:1552 ApiRes:1496 ApiErr:0 ApiQue:56 Piston:25 DbReq:418 DbRes:413 DbErr:0 DbQue:5","level":"info"}
+{"message":"ups ApiReq:1774 ApiRes:1733 ApiErr:0 ApiQue:41 Piston:25 DbReq:456 DbRes:443 DbErr:0 DbQue:13","level":"info"}
+{"message":"gso ApiReq:1541 ApiRes:1472 ApiErr:7 ApiQue:62 Piston:20 DbReq:346 DbRes:336 DbErr:0 DbQue:10","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:28 DbRes:28 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:4898 apiRes:4732 apiErr:7 apiQue:159 dbReq:1248 dbRes:1220 dbErr:0 dbQue:28","level":"info"}
+{"message":"fex ApiReq:1772 ApiRes:1716 ApiErr:0 ApiQue:56 Piston:15 DbReq:480 DbRes:471 DbErr:0 DbQue:9","level":"info"}
+{"message":"ups ApiReq:2019 ApiRes:1966 ApiErr:0 ApiQue:53 Piston:15 DbReq:512 DbRes:505 DbErr:0 DbQue:7","level":"info"}
+{"message":"gso ApiReq:1752 ApiRes:1700 ApiErr:7 ApiQue:45 Piston:30 DbReq:401 DbRes:389 DbErr:0 DbQue:12","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:28 DbRes:28 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:5574 apiRes:5413 apiErr:7 apiQue:154 dbReq:1421 dbRes:1393 dbErr:0 dbQue:28","level":"info"}
+{"message":"fex ApiReq:1997 ApiRes:1937 ApiErr:0 ApiQue:60 Piston:15 DbReq:538 DbRes:530 DbErr:0 DbQue:8","level":"info"}
+{"message":"ups ApiReq:2245 ApiRes:2189 ApiErr:0 ApiQue:56 Piston:15 DbReq:569 DbRes:561 DbErr:0 DbQue:8","level":"info"}
+{"message":"gso ApiReq:1978 ApiRes:1909 ApiErr:7 ApiQue:62 Piston:20 DbReq:454 DbRes:442 DbErr:0 DbQue:12","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:28 DbRes:28 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:6251 apiRes:6066 apiErr:7 apiQue:178 dbReq:1589 dbRes:1561 dbErr:0 dbQue:28","level":"info"}
+{"message":"fex ApiReq:2208 ApiRes:2165 ApiErr:0 ApiQue:43 Piston:25 DbReq:586 DbRes:576 DbErr:0 DbQue:10","level":"info"}
+{"message":"ups ApiReq:2479 ApiRes:2431 ApiErr:0 ApiQue:48 Piston:25 DbReq:636 DbRes:627 DbErr:0 DbQue:9","level":"info"}
+{"message":"gso ApiReq:2175 ApiRes:2122 ApiErr:7 ApiQue:46 Piston:20 DbReq:523 DbRes:514 DbErr:0 DbQue:9","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:28 DbRes:28 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:6893 apiRes:6749 apiErr:7 apiQue:137 dbReq:1773 dbRes:1745 dbErr:0 dbQue:28","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111115093","level":"info"}
+{"message":"fex ApiReq:2413 ApiRes:2369 ApiErr:0 ApiQue:44 Piston:25 DbReq:642 DbRes:630 DbErr:0 DbQue:12","level":"info"}
+{"message":"ups ApiReq:2721 ApiRes:2662 ApiErr:0 ApiQue:59 Piston:15 DbReq:695 DbRes:689 DbErr:0 DbQue:6","level":"info"}
+{"message":"gso ApiReq:2396 ApiRes:2341 ApiErr:8 ApiQue:47 Piston:30 DbReq:567 DbRes:557 DbErr:0 DbQue:10","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:28 DbRes:28 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:7561 apiRes:7403 apiErr:8 apiQue:150 dbReq:1932 dbRes:1904 dbErr:0 dbQue:28","level":"info"}
+{"message":"fex ApiReq:2617 ApiRes:2565 ApiErr:0 ApiQue:52 Piston:35 DbReq:715 DbRes:705 DbErr:0 DbQue:10","level":"info"}
+{"message":"ups ApiReq:2958 ApiRes:2910 ApiErr:0 ApiQue:48 Piston:25 DbReq:749 DbRes:738 DbErr:0 DbQue:11","level":"info"}
+{"message":"gso ApiReq:2610 ApiRes:2560 ApiErr:8 ApiQue:42 Piston:20 DbReq:621 DbRes:614 DbErr:0 DbQue:7","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:28 DbRes:28 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:8216 apiRes:8066 apiErr:8 apiQue:142 dbReq:2113 dbRes:2085 dbErr:0 dbQue:28","level":"info"}
+{"message":"fex ApiReq:2817 ApiRes:2757 ApiErr:0 ApiQue:60 Piston:25 DbReq:769 DbRes:759 DbErr:0 DbQue:10","level":"info"}
+{"message":"ups ApiReq:3180 ApiRes:3124 ApiErr:0 ApiQue:56 Piston:25 DbReq:815 DbRes:805 DbErr:0 DbQue:10","level":"info"}
+{"message":"gso ApiReq:2823 ApiRes:2769 ApiErr:8 ApiQue:46 Piston:20 DbReq:666 DbRes:658 DbErr:0 DbQue:8","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:28 DbRes:28 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:8851 apiRes:8681 apiErr:8 apiQue:162 dbReq:2278 dbRes:2250 dbErr:0 dbQue:28","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111115795","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111115885","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111115904","level":"info"}
+{"message":"fex ApiReq:3015 ApiRes:2970 ApiErr:0 ApiQue:45 Piston:25 DbReq:830 DbRes:818 DbErr:0 DbQue:12","level":"info"}
+{"message":"ups ApiReq:3408 ApiRes:3356 ApiErr:0 ApiQue:52 Piston:25 DbReq:870 DbRes:862 DbErr:0 DbQue:8","level":"info"}
+{"message":"gso ApiReq:3067 ApiRes:3009 ApiErr:11 ApiQue:47 Piston:20 DbReq:714 DbRes:706 DbErr:0 DbQue:8","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:28 DbRes:28 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:9521 apiRes:9366 apiErr:11 apiQue:144 dbReq:2442 dbRes:2414 dbErr:0 dbQue:28","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111116078","level":"info"}
+{"message":"fex ApiReq:3222 ApiRes:3176 ApiErr:0 ApiQue:46 Piston:25 DbReq:888 DbRes:880 DbErr:0 DbQue:8","level":"info"}
+{"message":"ups ApiReq:3640 ApiRes:3593 ApiErr:0 ApiQue:47 Piston:25 DbReq:916 DbRes:907 DbErr:0 DbQue:9","level":"info"}
+{"message":"gso ApiReq:3260 ApiRes:3199 ApiErr:12 ApiQue:49 Piston:20 DbReq:773 DbRes:762 DbErr:0 DbQue:11","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:28 DbRes:28 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:10153 apiRes:9999 apiErr:12 apiQue:142 dbReq:2605 dbRes:2577 dbErr:0 dbQue:28","level":"info"}
+{"message":"fex ApiReq:3432 ApiRes:3392 ApiErr:0 ApiQue:40 Piston:25 DbReq:952 DbRes:941 DbErr:0 DbQue:11","level":"info"}
+{"message":"ups ApiReq:3886 ApiRes:3829 ApiErr:0 ApiQue:57 Piston:15 DbReq:969 DbRes:960 DbErr:0 DbQue:9","level":"info"}
+{"message":"gso ApiReq:3471 ApiRes:3415 ApiErr:12 ApiQue:44 Piston:20 DbReq:820 DbRes:812 DbErr:0 DbQue:8","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:28 DbRes:28 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:10820 apiRes:10667 apiErr:12 apiQue:141 dbReq:2769 dbRes:2741 dbErr:0 dbQue:28","level":"info"}
+{"message":"fex ApiReq:3657 ApiRes:3598 ApiErr:0 ApiQue:59 Piston:25 DbReq:1007 DbRes:999 DbErr:0 DbQue:8","level":"info"}
+{"message":"ups ApiReq:4122 ApiRes:4067 ApiErr:0 ApiQue:55 Piston:25 DbReq:1030 DbRes:1022 DbErr:0 DbQue:8","level":"info"}
+{"message":"gso ApiReq:3669 ApiRes:3616 ApiErr:12 ApiQue:41 Piston:30 DbReq:864 DbRes:852 DbErr:0 DbQue:12","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:28 DbRes:28 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:11479 apiRes:11312 apiErr:12 apiQue:155 dbReq:2929 dbRes:2901 dbErr:0 dbQue:28","level":"info"}
+{"message":"fex ApiReq:3839 ApiRes:3777 ApiErr:0 ApiQue:62 Piston:25 DbReq:1076 DbRes:1062 DbErr:0 DbQue:14","level":"info"}
+{"message":"ups ApiReq:4355 ApiRes:4301 ApiErr:0 ApiQue:54 Piston:15 DbReq:1076 DbRes:1073 DbErr:0 DbQue:3","level":"info"}
+{"message":"gso ApiReq:3893 ApiRes:3825 ApiErr:12 ApiQue:56 Piston:30 DbReq:915 DbRes:904 DbErr:0 DbQue:11","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:28 DbRes:28 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:12118 apiRes:11934 apiErr:12 apiQue:172 dbReq:3095 dbRes:3067 dbErr:0 dbQue:28","level":"info"}
+{"message":"fex ApiReq:4039 ApiRes:3988 ApiErr:0 ApiQue:51 Piston:25 DbReq:1144 DbRes:1130 DbErr:0 DbQue:14","level":"info"}
+{"message":"ups ApiReq:4600 ApiRes:4547 ApiErr:0 ApiQue:53 Piston:25 DbReq:1116 DbRes:1108 DbErr:0 DbQue:8","level":"info"}
+{"message":"gso ApiReq:4116 ApiRes:4043 ApiErr:12 ApiQue:61 Piston:15 DbReq:959 DbRes:953 DbErr:0 DbQue:6","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:28 DbRes:28 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:12786 apiRes:12609 apiErr:12 apiQue:165 dbReq:3247 dbRes:3219 dbErr:0 dbQue:28","level":"info"}
+{"message":"fex ApiReq:4246 ApiRes:4194 ApiErr:0 ApiQue:52 Piston:25 DbReq:1190 DbRes:1180 DbErr:0 DbQue:10","level":"info"}
+{"message":"ups ApiReq:4853 ApiRes:4802 ApiErr:0 ApiQue:51 Piston:25 DbReq:1163 DbRes:1154 DbErr:0 DbQue:9","level":"info"}
+{"message":"gso ApiReq:4295 ApiRes:4242 ApiErr:12 ApiQue:41 Piston:25 DbReq:1028 DbRes:1019 DbErr:0 DbQue:9","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:28 DbRes:28 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:13425 apiRes:13269 apiErr:12 apiQue:144 dbReq:3409 dbRes:3381 dbErr:0 dbQue:28","level":"info"}
+{"message":"fex ApiReq:4436 ApiRes:4382 ApiErr:0 ApiQue:54 Piston:25 DbReq:1245 DbRes:1233 DbErr:0 DbQue:12","level":"info"}
+{"message":"ups ApiReq:5087 ApiRes:5037 ApiErr:0 ApiQue:50 Piston:15 DbReq:1220 DbRes:1212 DbErr:0 DbQue:8","level":"info"}
+{"message":"gso ApiReq:4486 ApiRes:4423 ApiErr:12 ApiQue:51 Piston:25 DbReq:1075 DbRes:1067 DbErr:0 DbQue:8","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:28 DbRes:28 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:14040 apiRes:13873 apiErr:12 apiQue:155 dbReq:3568 dbRes:3540 dbErr:0 dbQue:28","level":"info"}
+{"message":"fex ApiReq:4610 ApiRes:4565 ApiErr:0 ApiQue:45 Piston:25 DbReq:1302 DbRes:1292 DbErr:0 DbQue:10","level":"info"}
+{"message":"ups ApiReq:5331 ApiRes:5280 ApiErr:0 ApiQue:51 Piston:25 DbReq:1277 DbRes:1267 DbErr:0 DbQue:10","level":"info"}
+{"message":"gso ApiReq:4686 ApiRes:4629 ApiErr:12 ApiQue:45 Piston:25 DbReq:1126 DbRes:1118 DbErr:0 DbQue:8","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:28 DbRes:28 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:14658 apiRes:14505 apiErr:12 apiQue:141 dbReq:3733 dbRes:3705 dbErr:0 dbQue:28","level":"info"}
+{"message":"fex ApiReq:4795 ApiRes:4743 ApiErr:0 ApiQue:52 Piston:25 DbReq:1354 DbRes:1343 DbErr:0 DbQue:11","level":"info"}
+{"message":"ups ApiReq:5564 ApiRes:5517 ApiErr:0 ApiQue:47 Piston:15 DbReq:1330 DbRes:1321 DbErr:0 DbQue:9","level":"info"}
+{"message":"gso ApiReq:4906 ApiRes:4850 ApiErr:12 ApiQue:44 Piston:25 DbReq:1170 DbRes:1162 DbErr:0 DbQue:8","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:28 DbRes:28 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:15296 apiRes:15141 apiErr:12 apiQue:143 dbReq:3882 dbRes:3854 dbErr:0 dbQue:28","level":"info"}
+{"message":"fex ApiReq:4979 ApiRes:4919 ApiErr:0 ApiQue:60 Piston:15 DbReq:1411 DbRes:1402 DbErr:0 DbQue:9","level":"info"}
+{"message":"ups ApiReq:5802 ApiRes:5752 ApiErr:0 ApiQue:50 Piston:25 DbReq:1399 DbRes:1386 DbErr:0 DbQue:13","level":"info"}
+{"message":"gso ApiReq:5085 ApiRes:5028 ApiErr:12 ApiQue:45 Piston:35 DbReq:1224 DbRes:1218 DbErr:0 DbQue:6","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:28 DbRes:28 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:15897 apiRes:15730 apiErr:12 apiQue:155 dbReq:4062 dbRes:4034 dbErr:0 dbQue:28","level":"info"}
+{"message":"fex ApiReq:5162 ApiRes:5107 ApiErr:0 ApiQue:55 Piston:25 DbReq:1466 DbRes:1460 DbErr:0 DbQue:6","level":"info"}
+{"message":"ups ApiReq:6042 ApiRes:5992 ApiErr:0 ApiQue:50 Piston:15 DbReq:1466 DbRes:1458 DbErr:0 DbQue:8","level":"info"}
+{"message":"gso ApiReq:5269 ApiRes:5212 ApiErr:12 ApiQue:45 Piston:35 DbReq:1273 DbRes:1259 DbErr:0 DbQue:14","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:28 DbRes:28 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:16504 apiRes:16342 apiErr:12 apiQue:150 dbReq:4233 dbRes:4205 dbErr:0 dbQue:28","level":"info"}
+{"message":"fex ApiReq:5352 ApiRes:5311 ApiErr:0 ApiQue:41 Piston:25 DbReq:1529 DbRes:1519 DbErr:0 DbQue:10","level":"info"}
+{"message":"ups ApiReq:6298 ApiRes:6249 ApiErr:0 ApiQue:49 Piston:15 DbReq:1525 DbRes:1515 DbErr:0 DbQue:10","level":"info"}
+{"message":"gso ApiReq:5450 ApiRes:5382 ApiErr:12 ApiQue:56 Piston:15 DbReq:1315 DbRes:1307 DbErr:0 DbQue:8","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:28 DbRes:28 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:17131 apiRes:16973 apiErr:12 apiQue:146 dbReq:4397 dbRes:4369 dbErr:0 dbQue:28","level":"info"}
+{"message":"fex ApiReq:5554 ApiRes:5509 ApiErr:0 ApiQue:45 Piston:25 DbReq:1581 DbRes:1571 DbErr:0 DbQue:10","level":"info"}
+{"message":"ups ApiReq:6530 ApiRes:6484 ApiErr:0 ApiQue:46 Piston:25 DbReq:1582 DbRes:1569 DbErr:0 DbQue:13","level":"info"}
+{"message":"gso ApiReq:5636 ApiRes:5572 ApiErr:12 ApiQue:52 Piston:25 DbReq:1370 DbRes:1365 DbErr:0 DbQue:5","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:28 DbRes:28 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:17751 apiRes:17596 apiErr:12 apiQue:143 dbReq:4561 dbRes:4533 dbErr:0 dbQue:28","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111118705","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111118706","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111118708","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111118707","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111118702","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:5030800000050","level":"info"}
+{"message":"fex ApiReq:5752 ApiRes:5698 ApiErr:0 ApiQue:54 Piston:25 DbReq:1632 DbRes:1623 DbErr:0 DbQue:9","level":"info"}
+{"message":"ups ApiReq:6769 ApiRes:6723 ApiErr:0 ApiQue:46 Piston:15 DbReq:1640 DbRes:1628 DbErr:0 DbQue:12","level":"info"}
+{"message":"gso ApiReq:5834 ApiRes:5759 ApiErr:18 ApiQue:57 Piston:25 DbReq:1426 DbRes:1419 DbErr:0 DbQue:7","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:28 DbRes:28 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:18386 apiRes:18211 apiErr:18 apiQue:157 dbReq:4726 dbRes:4698 dbErr:0 dbQue:28","level":"info"}
+{"message":"fex ApiReq:5952 ApiRes:5901 ApiErr:0 ApiQue:51 Piston:20 DbReq:1683 DbRes:1677 DbErr:0 DbQue:6","level":"info"}
+{"message":"ups ApiReq:6987 ApiRes:6938 ApiErr:0 ApiQue:49 Piston:20 DbReq:1708 DbRes:1696 DbErr:0 DbQue:12","level":"info"}
+{"message":"gso ApiReq:5994 ApiRes:5916 ApiErr:18 ApiQue:60 Piston:30 DbReq:1476 DbRes:1466 DbErr:0 DbQue:10","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:28 DbRes:28 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:18964 apiRes:18786 apiErr:18 apiQue:160 dbReq:4895 dbRes:4867 dbErr:0 dbQue:28","level":"info"}
+{"message":"fex ApiReq:6149 ApiRes:6090 ApiErr:0 ApiQue:59 Piston:20 DbReq:1739 DbRes:1727 DbErr:0 DbQue:12","level":"info"}
+{"message":"ups ApiReq:7237 ApiRes:7165 ApiErr:0 ApiQue:72 Piston:10 DbReq:1754 DbRes:1746 DbErr:0 DbQue:8","level":"info"}
+{"message":"gso ApiReq:6134 ApiRes:6082 ApiErr:18 ApiQue:34 Piston:30 DbReq:1527 DbRes:1519 DbErr:0 DbQue:8","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:28 DbRes:28 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:19551 apiRes:19368 apiErr:18 apiQue:165 dbReq:5048 dbRes:5020 dbErr:0 dbQue:28","level":"info"}

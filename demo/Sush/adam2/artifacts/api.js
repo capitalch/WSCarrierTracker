@@ -10,16 +10,13 @@ const ups = require('./carriers/ups');
 const tps = require('./carriers/tps');
 
 let api = {};
+const carriermap = {
+    fex: (x) => fex.processFex(x),
+    ups: (x) => ups.processUps(x),
+    gso: (x) => gso.processGso(x),
+    tps: (x) => tps.processTps(x)
+};
 
-function processCarrierResponse(carrierInfo) {
-    const carriermap = {
-        fex: (x) => fex.processFex(x),
-        ups: (x) => ups.processUps(x),
-        gso: (x) => gso.processGso(x),
-        tps: (x) => tps.processTps(x)
-    }
-    carriermap[carrierInfo.carrierName](carrierInfo);
-}
 api.getGsoTokenPromises = (info) => {
     const accounts = info.accounts;
     const promises = accounts.map(x => {
@@ -43,36 +40,37 @@ handler.sub13 = ibuki.filterOn('axios-post:fex>api').subscribe(d => {
 api.axiosPost = (carrierInfo) => {
     axios.post(carrierInfo.url, carrierInfo.param)
         .then(res => {
-            //Save in database
-            carrierInfo.response = res.data;
-            notify.addApiResponse(carrierInfo);
-            processCarrierResponse(carrierInfo);
+            handleApiResponse(carrierInfo, res);
         })
         .catch(err => {
-            err.message = err.message.concat('. ', 'Carrier name:', carrierInfo.carrierName, ', Tracking number:', carrierInfo.trackingNumber);
-            notify.pushError(err);
-            notify.addApiError(carrierInfo);
-            ibuki.emit('app-error:any', handler.frameError(
-                err, 'api', 'info', 5));
+            handleApiResponse(carrierInfo, res);
         });
 };
 
 api.axiosGet = (carrierInfo) => {
     axios.get(carrierInfo.url, carrierInfo.config)
         .then(res => {
-            //Save in database
-            notify.addApiResponse(carrierInfo);
-            carrierInfo.response = res.data;
-            processCarrierResponse(carrierInfo);
+            handleApiResponse(carrierInfo, res);
         })
         .catch(err => {
-            //log in database
-            err.message = err.message.concat('. ', 'Carrier name:', carrierInfo.carrierName, ', Tracking number:', carrierInfo.trackingNumber);
-            notify.pushError(err);
-            notify.addApiError(carrierInfo);
-            ibuki.emit('app-error:any', handler.frameError(
-                err, 'api', 'info', 6));
+            handleApiError(carrierInfo, err);
         });
+}
+
+function handleApiResponse(carrierInfo, res) {
+    carrierInfo.response = res.data;
+    notify.addApiResponse(carrierInfo);
+    carriermap[carrierInfo.carrierName](carrierInfo);
+}
+
+function handleApiError(carrierInfo, err) {
+    err.message = err.message.concat('. ', 'Carrier name:', carrierInfo.carrierName, ', Tracking number:', carrierInfo.trackingNumber);
+    err.name = 'apiCallError';
+    notify.pushError(err);
+    notify.addApiError(carrierInfo);
+    notify.incrException(carrierInfo.carrierName);
+    const errorJson = notify.getErrorJson(err, carrierInfo);
+    handler.buffer.next(errorJson);
 }
 
 module.exports = api;

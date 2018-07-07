@@ -15,6 +15,11 @@
 14. Approximate prediction of time to be TrackShipment
 15. Verbose true would not write progress report to log files. Only errors are reported.
 16. Responses having error information should be treated as errors.
+17. Find a way to unsubscribe by addition in handler.
+18. Identify the sub1, sub2,su3 etc. and map them correctly.
+19. Make Api calls asyncronous. Presently they are syncronous.
+20. Provide timestamp in logging data
+
 
 //Saby
 1. Find bug -Queue
