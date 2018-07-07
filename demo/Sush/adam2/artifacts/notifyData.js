@@ -37,7 +37,8 @@ notifyData.dbStatus = {
         errors: 0,
         queue: () => {
             const c = notifyData.dbStatus.fex;
-            return (c.requests - c.responses - c.errors);
+            const c1 = notifyData.apiStatus.fex
+            return (c1.toDb - c.responses - c.errors);
         }
     },
     ups: {
@@ -46,7 +47,8 @@ notifyData.dbStatus = {
         errors: 0,
         queue: () => {
             const c = notifyData.dbStatus.ups;
-            return (c.requests - c.responses - c.errors);
+            const c1 = notifyData.apiStatus.ups;
+            return (c1.toDb - c.responses - c.errors);
         }
     },
     gso: {
@@ -55,7 +57,8 @@ notifyData.dbStatus = {
         errors: 0,
         queue: () => {
             const c = notifyData.dbStatus.gso;
-            return (c.requests - c.responses - c.errors);
+            const c1 = notifyData.apiStatus.gso;
+            return (c1.toDb - c.responses - c.errors);
         }
     },
     tps: {
@@ -64,7 +67,8 @@ notifyData.dbStatus = {
         errors: 0,
         queue: () => {
             const c = notifyData.dbStatus.tps;
-            return (c.requests - c.responses - c.errors);
+            const c1 = notifyData.apiStatus.tps;
+            return (c1.toDb - c.responses - c.errors);
         }
     }
 };

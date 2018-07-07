@@ -142,7 +142,7 @@ const disburse = (data) => {
         notify.addApiToDb(data.shippingAgentCode);
         // notify.addDbRequest(data.shippingAgentCode);
         const psParamsObject = tools.getPsParamsObject(data);
-        ps.execute(psParamsObject, (err, result) => {
+        ps.execute(psParamsObject, (err) => {
             notify.addDbRequest(data.shippingAgentCode);
             ps.isAvailable = true;
             if (err) {
