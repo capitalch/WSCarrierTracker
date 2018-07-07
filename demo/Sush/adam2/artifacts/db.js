@@ -78,12 +78,12 @@ const tools = {
         return (obj);
     },
     setLogInputParams: (req, json) => {
-        req.input('ApiRequests', sql.Int, json.apiRequests);
-        req.input('ApiResponses', sql.Int, json.apiResponses);
-        req.input('ApiErrors', sql.Int, json.apiErrors);
-        req.input('DbRequests', sql.Int, json.dbRequests);
-        req.input('DbResponses', sql.Int, json.dbResponses);
-        req.input('DbErrors', sql.Int, json.dbErrors);
+        req.input('ApiRequests', sql.Int, json.apiReq);
+        req.input('ApiResponses', sql.Int, json.apiRes);
+        req.input('ApiErrors', sql.Int, json.apiErr);
+        req.input('DbRequests', sql.Int, json.dbReq);
+        req.input('DbResponses', sql.Int, json.dbRes);
+        req.input('DbErrors', sql.Int, json.dbErr);
         req.input('StartTime', sql.VarChar, json.startTime);
         req.input('EndTime', sql.VarChar, json.endTime);
         req.input('Duration', sql.VarChar, json.duration);

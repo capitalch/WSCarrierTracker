@@ -1,6 +1,6 @@
 let sqlCommands = {
 	getInfos: `
-		SELECT top 80000 NO_ rn,[Shipping Agent Code] shippingAgentCode,[External Tracking No_] trackingNumber,status
+		SELECT top 10 NO_ rn,[Shipping Agent Code] shippingAgentCode,[External Tracking No_] trackingNumber,status
 		FROM [Wineshipping$PackageinfoNew] 
 		WHERE 
 				NOT [Status] = 'Package returned to shipper' and 
