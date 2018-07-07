@@ -1,26 +1,27 @@
 //Weekend
                                                 1. Saby's correction integrate
+                                                4. Memory footprint optimization
+                                                11. Logging strategies such as timestamp or file size etc
+                                                9. Make Api calls asyncronous. Presently they are syncronous.
+                                                20. Provide timestamp in logging data
+                                                21. Check TPS error
 2. Don't update DB if same status
-3. Don't insert in DB if json is NULL
-4. Memory footprint optimization
+3. Don't insert in DB if json is NULL                                                
 5. Timeout handling of Piston and Queue
+22. Provide maximum run interval of application                                                
+                                                
+12. Killing the application after fixed time.
+15. Verbose true would not write progress report to log files. Only errors are reported.
+16. Responses having error information should be treated as errors.
+17. Find a way to unsubscribe by addition in handler.
+18. Identify the sub1, sub2,su3 etc. and map them correctly.
 6. logical testing with errors and exceptions etc.
 7. Check how and why api queue value does not become zero at last.
 8. Provide a mecanism to know the pipeline value Api responses --> database requests
 9. Why DB Queue becomes zero sometimes. Do not complete application if db queue is zero. Check the items in pipe.
 10. Code cleanup.
-11. Logging strategies such as timestamp or file size etc.
-12. Killing the application after fixed time.
-13. Memory reporting
-14. Approximate prediction of time to be TrackShipment
-15. Verbose true would not write progress report to log files. Only errors are reported.
-16. Responses having error information should be treated as errors.
-17. Find a way to unsubscribe by addition in handler.
-18. Identify the sub1, sub2,su3 etc. and map them correctly.
-                                                9. Make Api calls asyncronous. Presently they are syncronous.
-                                                20. Provide timestamp in logging data
-                                                21. Check TPS error
-22. provide maximum run interval of application                                                
+                                                
+
 
 
 //Saby

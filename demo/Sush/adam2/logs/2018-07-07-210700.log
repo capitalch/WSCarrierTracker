@@ -1,0 +1,30 @@
+{"message":"New Job started at 2018-07-07T15:45:08.606Z","level":"info"}
+{"message":"gso Item Count: 873","level":"info"}
+{"message":"fex Item Count: 9","level":"info"}
+{"message":"ups Item Count: 87","level":"info"}
+{"message":"tps Item Count: 31","level":"info"}
+{"message":"fex ApiReq:9 ApiRes:9 ApiErr:0 ApiQue:0 Piston:0 ToDb:9 DbReq:9 DbRes:9 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:87 ApiRes:63 ApiErr:0 ApiQue:24 Piston:15 ToDb:63 DbReq:61 DbRes:61 DbErr:0 DbQue:2","level":"info"}
+{"message":"gso ApiReq:176 ApiRes:2 ApiErr:0 ApiQue:174 Piston:15 ToDb:2 DbReq:0 DbRes:0 DbErr:0 DbQue:2","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:25 ToDb:31 DbReq:26 DbRes:26 DbErr:0 DbQue:5","level":"info"}
+{"message":"Total apiReq:303 apiRes:105 apiErr:0 apiQue:198 toDb:105 dbReq:96 dbRes:96 dbErr:0 dbQue:9 Time:2018-07-07T15:45:17.292Z","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112449","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112415","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112370","level":"info"}
+{"message":"fex ApiReq:9 ApiRes:9 ApiErr:0 ApiQue:0 Piston:0 ToDb:9 DbReq:9 DbRes:9 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:87 ApiRes:87 ApiErr:0 ApiQue:0 Piston:0 ToDb:87 DbReq:86 DbRes:86 DbErr:0 DbQue:1","level":"info"}
+{"message":"gso ApiReq:328 ApiRes:36 ApiErr:3 ApiQue:289 Piston:65 ToDb:39 DbReq:17 DbRes:17 DbErr:0 DbQue:22","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:455 apiRes:163 apiErr:3 apiQue:289 toDb:166 dbReq:143 dbRes:143 dbErr:0 dbQue:23 Time:2018-07-07T15:45:22.297Z","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112347","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112343","level":"info"}
+{"message":"fex ApiReq:9 ApiRes:9 ApiErr:0 ApiQue:0 Piston:0 ToDb:9 DbReq:9 DbRes:9 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:87 ApiRes:87 ApiErr:0 ApiQue:0 Piston:0 ToDb:87 DbReq:86 DbRes:86 DbErr:0 DbQue:1","level":"info"}
+{"message":"gso ApiReq:387 ApiRes:146 ApiErr:5 ApiQue:236 Piston:115 ToDb:123 DbReq:97 DbRes:97 DbErr:0 DbQue:26","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:514 apiRes:273 apiErr:5 apiQue:236 toDb:250 dbReq:223 dbRes:223 dbErr:0 dbQue:27 Time:2018-07-07T15:45:27.302Z","level":"info"}
+{"message":"fex ApiReq:9 ApiRes:9 ApiErr:0 ApiQue:0 Piston:0 ToDb:9 DbReq:9 DbRes:9 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:87 ApiRes:87 ApiErr:0 ApiQue:0 Piston:0 ToDb:87 DbReq:87 DbRes:87 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:423 ApiRes:228 ApiErr:5 ApiQue:190 Piston:165 ToDb:233 DbReq:233 DbRes:233 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:550 apiRes:355 apiErr:5 apiQue:190 toDb:360 dbReq:360 dbRes:360 dbErr:0 dbQue:0 Time:2018-07-07T15:45:32.308Z","level":"info"}
