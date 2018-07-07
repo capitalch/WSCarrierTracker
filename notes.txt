@@ -19,7 +19,8 @@
 18. Identify the sub1, sub2,su3 etc. and map them correctly.
 19. Make Api calls asyncronous. Presently they are syncronous.
 20. Provide timestamp in logging data
-21. Check TPS error
+                                                21. Check TPS error
+22. provide maximum run interval of application                                                
 
 
 //Saby

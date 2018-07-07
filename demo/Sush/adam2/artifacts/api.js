@@ -33,21 +33,23 @@ api.getGsoTokenPromises = (info) => {
     return (Q.allSettled(promises)); //Even if error is encountered in a promise still other promises are handled
 }
 
-handler.sub13 = ibuki.filterOn('axios-post:fex>api').subscribe(d => {
-    api.axiosPost(d.data);
-})
+// handler.sub13 = ibuki.filterOn('axios-post:fex>api').subscribe(d => {
+//     api.axiosPost(d.data);
+// })
 
-api.axiosPost = (carrierInfo) => {
+handler.sub15 = ibuki.filterOn('axios-post:workbench-fex>api').subscribe(d=>{
+    const carrierInfo = d.data;
     axios.post(carrierInfo.url, carrierInfo.param)
         .then(res => {
             handleApiResponse(carrierInfo, res);
         })
         .catch(err => {
-            handleApiResponse(carrierInfo, res);
+            handleApiError(carrierInfo, err);
         });
-};
+})
 
-api.axiosGet = (carrierInfo) => {
+handler.sub16 = ibuki.filterOn('axios-get:workbench>api').subscribe(d=>{
+    const carrierInfo = d.data;
     axios.get(carrierInfo.url, carrierInfo.config)
         .then(res => {
             handleApiResponse(carrierInfo, res);
@@ -55,7 +57,27 @@ api.axiosGet = (carrierInfo) => {
         .catch(err => {
             handleApiError(carrierInfo, err);
         });
-}
+})
+
+// api.axiosPost = (carrierInfo) => {
+//     axios.post(carrierInfo.url, carrierInfo.param)
+//         .then(res => {
+//             handleApiResponse(carrierInfo, res);
+//         })
+//         .catch(err => {
+//             handleApiError(carrierInfo, err);
+//         });
+// };
+
+// api.axiosGet = (carrierInfo) => {
+//     axios.get(carrierInfo.url, carrierInfo.config)
+//         .then(res => {
+//             handleApiResponse(carrierInfo, res);
+//         })
+//         .catch(err => {
+//             handleApiError(carrierInfo, err);
+//         });
+// }
 
 function handleApiResponse(carrierInfo, res) {
     carrierInfo.response = res.data;

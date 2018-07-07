@@ -1,10 +1,29 @@
 'use strict';
 const rx = require('rxjs');
+const _ = require('lodash');
+const obj = {
+    a: {
+        b: {
+            c: 1
+        }
+    },
+    b: {
+        c: {
+            d: 2
+        }
+    },
+    c: {
+        d: 1
+    }
+};
+const what = _.has(obj,'a.b.c.d');
+
 const myInterval = rx.interval(10000);
-const subs = myInterval.subscribe(()=>{
-    console.log('interval test');
-    subs.unsubscribe();
-});
+// const subs = myInterval.subscribe(() => {
+//     console.log('interval test');
+//     subs.unsubscribe();
+// });
+
 // const moment = require('moment');
 // const sql = require('mssql');
 // const settings = require('../settings.json');

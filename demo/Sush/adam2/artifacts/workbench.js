@@ -72,7 +72,7 @@ handler.sub1 = ibuki.filterOn('handle-big-object:db>workbench').subscribe(
         (tps.length > 0) && (notify.initCarrier('tps', tps)) &&
             (ibuki.emit('process-carrier:self', tps));
         handler.closeIfIdle();
-        bigObject = null;      
+        bigObject = null;
     }
 );
 
@@ -90,7 +90,12 @@ handler.sub8 = ibuki.filterOn('process-carrier:self').subscribe(d => {
         .subscribe(
             x => {
                 notify.addApiRequest(x);
-                api[x.method](x);                
+                if (x.method === 'axiosPost') {
+                    ibuki.emit('axios-post:workbench-fex>api', x);
+                } else {
+                    ibuki.emit('axios-get:workbench>api', x)
+                }
+                // api[x.method](x);                
             }
         );
 });
