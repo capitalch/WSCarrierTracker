@@ -3,7 +3,7 @@ const moment = require('moment');
 const ibuki = require('../ibuki');
 const handler = require('../handler');
 const notify = require('../notify');
-
+const db = require('../db'); //required
 const gso = {};
 const tools = {
     getUnifiedStatus: (status) => {

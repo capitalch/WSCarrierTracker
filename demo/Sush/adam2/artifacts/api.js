@@ -8,6 +8,7 @@ const fex = require('./carriers/fex');
 const gso = require('./carriers/gso');
 const ups = require('./carriers/ups');
 const tps = require('./carriers/tps');
+const db = require('./db'); // needed
 
 let api = {};
 const carriermap = {
@@ -58,26 +59,6 @@ handler.sub16 = ibuki.filterOn('axios-get:workbench>api').subscribe(d=>{
             handleApiError(carrierInfo, err);
         });
 })
-
-// api.axiosPost = (carrierInfo) => {
-//     axios.post(carrierInfo.url, carrierInfo.param)
-//         .then(res => {
-//             handleApiResponse(carrierInfo, res);
-//         })
-//         .catch(err => {
-//             handleApiError(carrierInfo, err);
-//         });
-// };
-
-// api.axiosGet = (carrierInfo) => {
-//     axios.get(carrierInfo.url, carrierInfo.config)
-//         .then(res => {
-//             handleApiResponse(carrierInfo, res);
-//         })
-//         .catch(err => {
-//             handleApiError(carrierInfo, err);
-//         });
-// }
 
 function handleApiResponse(carrierInfo, res) {
     carrierInfo.response = res.data;

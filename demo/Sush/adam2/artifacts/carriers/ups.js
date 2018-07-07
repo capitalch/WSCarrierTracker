@@ -4,6 +4,7 @@ const ibuki = require('../ibuki');
 const handler = require('../handler');
 const parseString = require('xml2js').parseString;
 const notify = require('../notify');
+const db = require('../db'); //required
 
 const ups = {};
 const tools = {

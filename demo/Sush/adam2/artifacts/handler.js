@@ -17,7 +17,6 @@ const isIdle = () => {
     let carriers = Object.keys(apiStatus);
     let apiQueue = 0;
     let toDb = 0;
-    const consumed = false;
     carriers.forEach(x => {
         apiQueue = apiQueue + apiStatus[x].queue();
         toDb = toDb + apiStatus[x].toDb;
