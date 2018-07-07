@@ -1,5 +1,5 @@
 //Weekend
-1. Saby's correction integrate
+                                                1. Saby's correction integrate
 2. Don't update DB if same status
 3. Don't insert in DB if json is NULL
 4. Memory footprint optimization
@@ -17,8 +17,8 @@
 16. Responses having error information should be treated as errors.
 17. Find a way to unsubscribe by addition in handler.
 18. Identify the sub1, sub2,su3 etc. and map them correctly.
-19. Make Api calls asyncronous. Presently they are syncronous.
-20. Provide timestamp in logging data
+                                                9. Make Api calls asyncronous. Presently they are syncronous.
+                                                20. Provide timestamp in logging data
                                                 21. Check TPS error
 22. provide maximum run interval of application                                                
 

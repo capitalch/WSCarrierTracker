@@ -1,1 +1,1199 @@
 {"message":"New Job started at 2018-07-07T08:39:17.308Z","level":"info"}
+{"message":"gso Item Count: 6566","level":"info"}
+{"message":"fex Item Count: 31281","level":"info"}
+{"message":"ups Item Count: 42122","level":"info"}
+{"message":"tps Item Count: 31","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112449","level":"info"}
+{"message":"fex ApiReq:263 ApiRes:221 ApiErr:0 ApiQue:42 Piston:25 DbReq:47 DbRes:37 DbErr:0 DbQue:10","level":"info"}
+{"message":"ups ApiReq:293 ApiRes:235 ApiErr:0 ApiQue:58 Piston:25 DbReq:69 DbRes:58 DbErr:0 DbQue:11","level":"info"}
+{"message":"gso ApiReq:173 ApiRes:104 ApiErr:1 ApiQue:68 Piston:30 DbReq:10 DbRes:3 DbErr:0 DbQue:7","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:5 DbReq:30 DbRes:30 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:760 apiRes:591 apiErr:1 apiQue:168 dbReq:156 dbRes:128 dbErr:0 dbQue:28 Time:2018-07-07T08:39:54.644Z","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112415","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112370","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112347","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112343","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112588","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112598","level":"info"}
+{"message":"fex ApiReq:472 ApiRes:423 ApiErr:0 ApiQue:49 Piston:25 DbReq:105 DbRes:95 DbErr:0 DbQue:10","level":"info"}
+{"message":"ups ApiReq:480 ApiRes:428 ApiErr:0 ApiQue:52 Piston:25 DbReq:130 DbRes:121 DbErr:0 DbQue:9","level":"info"}
+{"message":"gso ApiReq:336 ApiRes:278 ApiErr:7 ApiQue:51 Piston:40 DbReq:64 DbRes:56 DbErr:0 DbQue:8","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:30 DbErr:0 DbQue:1","level":"info"}
+{"message":"Total apiReq:1319 apiRes:1160 apiErr:7 apiQue:152 dbReq:330 dbRes:302 dbErr:0 dbQue:28 Time:2018-07-07T08:39:59.647Z","level":"info"}
+{"message":"fex ApiReq:696 ApiRes:651 ApiErr:0 ApiQue:45 Piston:25 DbReq:181 DbRes:168 DbErr:0 DbQue:13","level":"info"}
+{"message":"ups ApiReq:673 ApiRes:619 ApiErr:0 ApiQue:54 Piston:15 DbReq:182 DbRes:175 DbErr:0 DbQue:7","level":"info"}
+{"message":"gso ApiReq:483 ApiRes:430 ApiErr:7 ApiQue:46 Piston:20 DbReq:110 DbRes:102 DbErr:0 DbQue:8","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:1883 apiRes:1731 apiErr:7 apiQue:145 dbReq:504 dbRes:476 dbErr:0 dbQue:28 Time:2018-07-07T08:40:04.645Z","level":"info"}
+{"message":"fex ApiReq:903 ApiRes:849 ApiErr:0 ApiQue:54 Piston:15 DbReq:252 DbRes:243 DbErr:0 DbQue:9","level":"info"}
+{"message":"ups ApiReq:875 ApiRes:821 ApiErr:0 ApiQue:54 Piston:25 DbReq:237 DbRes:226 DbErr:0 DbQue:11","level":"info"}
+{"message":"gso ApiReq:669 ApiRes:599 ApiErr:7 ApiQue:63 Piston:20 DbReq:154 DbRes:146 DbErr:0 DbQue:8","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:2478 apiRes:2300 apiErr:7 apiQue:171 dbReq:674 dbRes:646 dbErr:0 dbQue:28 Time:2018-07-07T08:40:09.649Z","level":"info"}
+{"message":"fex ApiReq:1086 ApiRes:1047 ApiErr:0 ApiQue:39 Piston:25 DbReq:313 DbRes:301 DbErr:0 DbQue:12","level":"info"}
+{"message":"ups ApiReq:1070 ApiRes:1022 ApiErr:0 ApiQue:48 Piston:15 DbReq:290 DbRes:281 DbErr:0 DbQue:9","level":"info"}
+{"message":"gso ApiReq:844 ApiRes:798 ApiErr:7 ApiQue:39 Piston:30 DbReq:207 DbRes:200 DbErr:0 DbQue:7","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:3031 apiRes:2898 apiErr:7 apiQue:126 dbReq:841 dbRes:813 dbErr:0 dbQue:28 Time:2018-07-07T08:40:14.645Z","level":"info"}
+{"message":"fex ApiReq:1281 ApiRes:1230 ApiErr:0 ApiQue:51 Piston:25 DbReq:379 DbRes:368 DbErr:0 DbQue:11","level":"info"}
+{"message":"ups ApiReq:1308 ApiRes:1257 ApiErr:0 ApiQue:51 Piston:25 DbReq:350 DbRes:341 DbErr:0 DbQue:9","level":"info"}
+{"message":"gso ApiReq:1003 ApiRes:952 ApiErr:7 ApiQue:44 Piston:30 DbReq:268 DbRes:260 DbErr:0 DbQue:8","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:3623 apiRes:3470 apiErr:7 apiQue:146 dbReq:1028 dbRes:1000 dbErr:0 dbQue:28 Time:2018-07-07T08:40:19.647Z","level":"info"}
+{"message":"fex ApiReq:1467 ApiRes:1413 ApiErr:0 ApiQue:54 Piston:15 DbReq:433 DbRes:423 DbErr:0 DbQue:10","level":"info"}
+{"message":"ups ApiReq:1500 ApiRes:1461 ApiErr:0 ApiQue:39 Piston:25 DbReq:419 DbRes:410 DbErr:0 DbQue:9","level":"info"}
+{"message":"gso ApiReq:1175 ApiRes:1121 ApiErr:7 ApiQue:47 Piston:20 DbReq:322 DbRes:313 DbErr:0 DbQue:9","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:4173 apiRes:4026 apiErr:7 apiQue:140 dbReq:1205 dbRes:1177 dbErr:0 dbQue:28 Time:2018-07-07T08:40:24.741Z","level":"info"}
+{"message":"fex ApiReq:1667 ApiRes:1610 ApiErr:0 ApiQue:57 Piston:25 DbReq:505 DbRes:495 DbErr:0 DbQue:10","level":"info"}
+{"message":"ups ApiReq:1696 ApiRes:1657 ApiErr:0 ApiQue:39 Piston:25 DbReq:471 DbRes:459 DbErr:0 DbQue:12","level":"info"}
+{"message":"gso ApiReq:1344 ApiRes:1289 ApiErr:7 ApiQue:48 Piston:30 DbReq:367 DbRes:361 DbErr:0 DbQue:6","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:4738 apiRes:4587 apiErr:7 apiQue:144 dbReq:1374 dbRes:1346 dbErr:0 dbQue:28 Time:2018-07-07T08:40:29.743Z","level":"info"}
+{"message":"fex ApiReq:1865 ApiRes:1815 ApiErr:0 ApiQue:50 Piston:25 DbReq:573 DbRes:562 DbErr:0 DbQue:11","level":"info"}
+{"message":"ups ApiReq:1894 ApiRes:1843 ApiErr:0 ApiQue:51 Piston:25 DbReq:536 DbRes:526 DbErr:0 DbQue:10","level":"info"}
+{"message":"gso ApiReq:1522 ApiRes:1449 ApiErr:7 ApiQue:66 Piston:30 DbReq:411 DbRes:404 DbErr:0 DbQue:7","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:5312 apiRes:5138 apiErr:7 apiQue:167 dbReq:1551 dbRes:1523 dbErr:0 dbQue:28 Time:2018-07-07T08:40:34.742Z","level":"info"}
+{"message":"fex ApiReq:2065 ApiRes:2027 ApiErr:0 ApiQue:38 Piston:25 DbReq:637 DbRes:625 DbErr:0 DbQue:12","level":"info"}
+{"message":"ups ApiReq:2094 ApiRes:2054 ApiErr:0 ApiQue:40 Piston:25 DbReq:598 DbRes:592 DbErr:0 DbQue:6","level":"info"}
+{"message":"gso ApiReq:1685 ApiRes:1634 ApiErr:7 ApiQue:44 Piston:30 DbReq:464 DbRes:454 DbErr:0 DbQue:10","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:5875 apiRes:5746 apiErr:7 apiQue:122 dbReq:1730 dbRes:1702 dbErr:0 dbQue:28 Time:2018-07-07T08:40:39.748Z","level":"info"}
+{"message":"fex ApiReq:2274 ApiRes:2223 ApiErr:0 ApiQue:51 Piston:25 DbReq:701 DbRes:688 DbErr:0 DbQue:13","level":"info"}
+{"message":"ups ApiReq:2311 ApiRes:2257 ApiErr:0 ApiQue:54 Piston:15 DbReq:653 DbRes:646 DbErr:0 DbQue:7","level":"info"}
+{"message":"gso ApiReq:1851 ApiRes:1797 ApiErr:7 ApiQue:47 Piston:20 DbReq:504 DbRes:496 DbErr:0 DbQue:8","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:6467 apiRes:6308 apiErr:7 apiQue:152 dbReq:1889 dbRes:1861 dbErr:0 dbQue:28 Time:2018-07-07T08:40:44.745Z","level":"info"}
+{"message":"fex ApiReq:2468 ApiRes:2417 ApiErr:0 ApiQue:51 Piston:25 DbReq:773 DbRes:766 DbErr:0 DbQue:7","level":"info"}
+{"message":"ups ApiReq:2509 ApiRes:2460 ApiErr:0 ApiQue:49 Piston:25 DbReq:704 DbRes:694 DbErr:0 DbQue:10","level":"info"}
+{"message":"gso ApiReq:2025 ApiRes:1965 ApiErr:7 ApiQue:53 Piston:30 DbReq:552 DbRes:541 DbErr:0 DbQue:11","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:7033 apiRes:6873 apiErr:7 apiQue:153 dbReq:2060 dbRes:2032 dbErr:0 dbQue:28 Time:2018-07-07T08:40:49.746Z","level":"info"}
+{"message":"fex ApiReq:2641 ApiRes:2602 ApiErr:0 ApiQue:39 Piston:25 DbReq:833 DbRes:821 DbErr:0 DbQue:12","level":"info"}
+{"message":"ups ApiReq:2701 ApiRes:2655 ApiErr:0 ApiQue:46 Piston:25 DbReq:754 DbRes:741 DbErr:0 DbQue:13","level":"info"}
+{"message":"gso ApiReq:2170 ApiRes:2124 ApiErr:7 ApiQue:39 Piston:20 DbReq:593 DbRes:590 DbErr:0 DbQue:3","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:7543 apiRes:7412 apiErr:7 apiQue:124 dbReq:2211 dbRes:2183 dbErr:0 dbQue:28 Time:2018-07-07T08:40:54.744Z","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111115093","level":"info"}
+{"message":"fex ApiReq:2845 ApiRes:2794 ApiErr:0 ApiQue:51 Piston:15 DbReq:895 DbRes:884 DbErr:0 DbQue:11","level":"info"}
+{"message":"ups ApiReq:2893 ApiRes:2854 ApiErr:0 ApiQue:39 Piston:25 DbReq:800 DbRes:794 DbErr:0 DbQue:6","level":"info"}
+{"message":"gso ApiReq:2347 ApiRes:2284 ApiErr:8 ApiQue:55 Piston:20 DbReq:649 DbRes:638 DbErr:0 DbQue:11","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:8116 apiRes:7963 apiErr:8 apiQue:145 dbReq:2375 dbRes:2347 dbErr:0 dbQue:28 Time:2018-07-07T08:40:59.759Z","level":"info"}
+{"message":"fex ApiReq:3062 ApiRes:3019 ApiErr:0 ApiQue:43 Piston:25 DbReq:966 DbRes:955 DbErr:0 DbQue:11","level":"info"}
+{"message":"ups ApiReq:3092 ApiRes:3040 ApiErr:0 ApiQue:52 Piston:25 DbReq:854 DbRes:845 DbErr:0 DbQue:9","level":"info"}
+{"message":"gso ApiReq:2502 ApiRes:2446 ApiErr:8 ApiQue:48 Piston:30 DbReq:692 DbRes:684 DbErr:0 DbQue:8","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:8687 apiRes:8536 apiErr:8 apiQue:143 dbReq:2543 dbRes:2515 dbErr:0 dbQue:28 Time:2018-07-07T08:41:04.762Z","level":"info"}
+{"message":"fex ApiReq:3274 ApiRes:3219 ApiErr:0 ApiQue:55 Piston:15 DbReq:1021 DbRes:1010 DbErr:0 DbQue:11","level":"info"}
+{"message":"ups ApiReq:3284 ApiRes:3235 ApiErr:0 ApiQue:49 Piston:25 DbReq:908 DbRes:896 DbErr:0 DbQue:12","level":"info"}
+{"message":"gso ApiReq:2650 ApiRes:2596 ApiErr:8 ApiQue:46 Piston:20 DbReq:741 DbRes:736 DbErr:0 DbQue:5","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:9239 apiRes:9081 apiErr:8 apiQue:150 dbReq:2701 dbRes:2673 dbErr:0 dbQue:28 Time:2018-07-07T08:41:09.764Z","level":"info"}
+{"message":"fex ApiReq:3462 ApiRes:3422 ApiErr:0 ApiQue:40 Piston:25 DbReq:1085 DbRes:1074 DbErr:0 DbQue:11","level":"info"}
+{"message":"ups ApiReq:3509 ApiRes:3449 ApiErr:0 ApiQue:60 Piston:25 DbReq:966 DbRes:958 DbErr:0 DbQue:8","level":"info"}
+{"message":"gso ApiReq:2809 ApiRes:2761 ApiErr:8 ApiQue:40 Piston:25 DbReq:781 DbRes:772 DbErr:0 DbQue:9","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:9811 apiRes:9663 apiErr:8 apiQue:140 dbReq:2863 dbRes:2835 dbErr:0 dbQue:28 Time:2018-07-07T08:41:14.764Z","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111115795","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111115885","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111115904","level":"info"}
+{"message":"fex ApiReq:3655 ApiRes:3611 ApiErr:0 ApiQue:44 Piston:25 DbReq:1139 DbRes:1132 DbErr:0 DbQue:7","level":"info"}
+{"message":"ups ApiReq:3692 ApiRes:3634 ApiErr:0 ApiQue:58 Piston:15 DbReq:1016 DbRes:1006 DbErr:0 DbQue:10","level":"info"}
+{"message":"gso ApiReq:2972 ApiRes:2918 ApiErr:11 ApiQue:43 Piston:25 DbReq:832 DbRes:821 DbErr:0 DbQue:11","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:10350 apiRes:10194 apiErr:11 apiQue:145 dbReq:3018 dbRes:2990 dbErr:0 dbQue:28 Time:2018-07-07T08:41:19.762Z","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111116078","level":"info"}
+{"message":"fex ApiReq:3831 ApiRes:3778 ApiErr:0 ApiQue:53 Piston:25 DbReq:1203 DbRes:1192 DbErr:0 DbQue:11","level":"info"}
+{"message":"ups ApiReq:3872 ApiRes:3830 ApiErr:0 ApiQue:42 Piston:25 DbReq:1061 DbRes:1056 DbErr:0 DbQue:5","level":"info"}
+{"message":"gso ApiReq:3157 ApiRes:3082 ApiErr:12 ApiQue:63 Piston:15 DbReq:883 DbRes:871 DbErr:0 DbQue:12","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:10891 apiRes:10721 apiErr:12 apiQue:158 dbReq:3178 dbRes:3150 dbErr:0 dbQue:28 Time:2018-07-07T08:41:24.777Z","level":"info"}
+{"message":"fex ApiReq:4024 ApiRes:3971 ApiErr:0 ApiQue:53 Piston:25 DbReq:1268 DbRes:1257 DbErr:0 DbQue:11","level":"info"}
+{"message":"ups ApiReq:4067 ApiRes:4030 ApiErr:0 ApiQue:37 Piston:25 DbReq:1125 DbRes:1118 DbErr:0 DbQue:7","level":"info"}
+{"message":"gso ApiReq:3314 ApiRes:3251 ApiErr:12 ApiQue:51 Piston:35 DbReq:926 DbRes:916 DbErr:0 DbQue:10","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:11436 apiRes:11283 apiErr:12 apiQue:141 dbReq:3350 dbRes:3322 dbErr:0 dbQue:28 Time:2018-07-07T08:41:29.782Z","level":"info"}
+{"message":"fex ApiReq:4203 ApiRes:4149 ApiErr:0 ApiQue:54 Piston:25 DbReq:1318 DbRes:1309 DbErr:0 DbQue:9","level":"info"}
+{"message":"ups ApiReq:4264 ApiRes:4206 ApiErr:0 ApiQue:58 Piston:25 DbReq:1178 DbRes:1171 DbErr:0 DbQue:7","level":"info"}
+{"message":"gso ApiReq:3470 ApiRes:3402 ApiErr:12 ApiQue:56 Piston:25 DbReq:967 DbRes:955 DbErr:0 DbQue:12","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:11968 apiRes:11788 apiErr:12 apiQue:168 dbReq:3494 dbRes:3466 dbErr:0 dbQue:28 Time:2018-07-07T08:41:34.784Z","level":"info"}
+{"message":"fex ApiReq:4379 ApiRes:4335 ApiErr:0 ApiQue:44 Piston:35 DbReq:1372 DbRes:1361 DbErr:0 DbQue:11","level":"info"}
+{"message":"ups ApiReq:4445 ApiRes:4397 ApiErr:0 ApiQue:48 Piston:15 DbReq:1243 DbRes:1235 DbErr:0 DbQue:8","level":"info"}
+{"message":"gso ApiReq:3634 ApiRes:3575 ApiErr:12 ApiQue:47 Piston:35 DbReq:1010 DbRes:1001 DbErr:0 DbQue:9","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:12489 apiRes:12338 apiErr:12 apiQue:139 dbReq:3656 dbRes:3628 dbErr:0 dbQue:28 Time:2018-07-07T08:41:39.788Z","level":"info"}
+{"message":"fex ApiReq:4558 ApiRes:4508 ApiErr:0 ApiQue:50 Piston:15 DbReq:1436 DbRes:1423 DbErr:0 DbQue:13","level":"info"}
+{"message":"ups ApiReq:4638 ApiRes:4590 ApiErr:0 ApiQue:48 Piston:15 DbReq:1297 DbRes:1289 DbErr:0 DbQue:8","level":"info"}
+{"message":"gso ApiReq:3795 ApiRes:3727 ApiErr:12 ApiQue:56 Piston:15 DbReq:1059 DbRes:1054 DbErr:0 DbQue:5","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:13022 apiRes:12856 apiErr:12 apiQue:154 dbReq:3823 dbRes:3797 dbErr:0 dbQue:26 Time:2018-07-07T08:41:44.789Z","level":"info"}
+{"message":"fex ApiReq:4740 ApiRes:4689 ApiErr:0 ApiQue:51 Piston:15 DbReq:1497 DbRes:1486 DbErr:0 DbQue:11","level":"info"}
+{"message":"ups ApiReq:4833 ApiRes:4780 ApiErr:0 ApiQue:53 Piston:15 DbReq:1337 DbRes:1329 DbErr:0 DbQue:8","level":"info"}
+{"message":"gso ApiReq:3959 ApiRes:3890 ApiErr:12 ApiQue:57 Piston:15 DbReq:1106 DbRes:1097 DbErr:0 DbQue:9","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:13563 apiRes:13390 apiErr:12 apiQue:161 dbReq:3971 dbRes:3943 dbErr:0 dbQue:28 Time:2018-07-07T08:41:49.791Z","level":"info"}
+{"message":"fex ApiReq:4921 ApiRes:4872 ApiErr:0 ApiQue:49 Piston:25 DbReq:1550 DbRes:1543 DbErr:0 DbQue:7","level":"info"}
+{"message":"ups ApiReq:5037 ApiRes:4975 ApiErr:0 ApiQue:62 Piston:25 DbReq:1402 DbRes:1393 DbErr:0 DbQue:9","level":"info"}
+{"message":"gso ApiReq:4138 ApiRes:4058 ApiErr:12 ApiQue:68 Piston:25 DbReq:1155 DbRes:1143 DbErr:0 DbQue:12","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:14127 apiRes:13936 apiErr:12 apiQue:179 dbReq:4138 dbRes:4110 dbErr:0 dbQue:28 Time:2018-07-07T08:41:54.780Z","level":"info"}
+{"message":"fex ApiReq:5123 ApiRes:5073 ApiErr:0 ApiQue:50 Piston:15 DbReq:1626 DbRes:1612 DbErr:0 DbQue:14","level":"info"}
+{"message":"ups ApiReq:5220 ApiRes:5172 ApiErr:0 ApiQue:48 Piston:15 DbReq:1462 DbRes:1455 DbErr:0 DbQue:7","level":"info"}
+{"message":"gso ApiReq:4296 ApiRes:4230 ApiErr:12 ApiQue:54 Piston:25 DbReq:1197 DbRes:1190 DbErr:0 DbQue:7","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:14670 apiRes:14506 apiErr:12 apiQue:152 dbReq:4316 dbRes:4288 dbErr:0 dbQue:28 Time:2018-07-07T08:41:59.795Z","level":"info"}
+{"message":"fex ApiReq:5308 ApiRes:5267 ApiErr:0 ApiQue:41 Piston:25 DbReq:1689 DbRes:1677 DbErr:0 DbQue:12","level":"info"}
+{"message":"ups ApiReq:5418 ApiRes:5369 ApiErr:0 ApiQue:49 Piston:15 DbReq:1526 DbRes:1514 DbErr:0 DbQue:12","level":"info"}
+{"message":"gso ApiReq:4457 ApiRes:4388 ApiErr:12 ApiQue:57 Piston:25 DbReq:1234 DbRes:1230 DbErr:0 DbQue:4","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:15214 apiRes:15055 apiErr:12 apiQue:147 dbReq:4480 dbRes:4452 dbErr:0 dbQue:28 Time:2018-07-07T08:42:04.794Z","level":"info"}
+{"message":"fex ApiReq:5529 ApiRes:5469 ApiErr:0 ApiQue:60 Piston:25 DbReq:1752 DbRes:1739 DbErr:0 DbQue:13","level":"info"}
+{"message":"ups ApiReq:5622 ApiRes:5567 ApiErr:0 ApiQue:55 Piston:25 DbReq:1585 DbRes:1577 DbErr:0 DbQue:8","level":"info"}
+{"message":"gso ApiReq:4617 ApiRes:4554 ApiErr:12 ApiQue:51 Piston:15 DbReq:1275 DbRes:1268 DbErr:0 DbQue:7","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:15799 apiRes:15621 apiErr:12 apiQue:166 dbReq:4643 dbRes:4615 dbErr:0 dbQue:28 Time:2018-07-07T08:42:09.796Z","level":"info"}
+{"message":"fex ApiReq:5686 ApiRes:5637 ApiErr:0 ApiQue:49 Piston:15 DbReq:1803 DbRes:1793 DbErr:0 DbQue:10","level":"info"}
+{"message":"ups ApiReq:5795 ApiRes:5747 ApiErr:0 ApiQue:48 Piston:25 DbReq:1640 DbRes:1632 DbErr:0 DbQue:8","level":"info"}
+{"message":"gso ApiReq:4797 ApiRes:4720 ApiErr:12 ApiQue:65 Piston:25 DbReq:1325 DbRes:1315 DbErr:0 DbQue:10","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:16309 apiRes:16135 apiErr:12 apiQue:162 dbReq:4799 dbRes:4771 dbErr:0 dbQue:28 Time:2018-07-07T08:42:14.796Z","level":"info"}
+{"message":"fex ApiReq:5873 ApiRes:5831 ApiErr:0 ApiQue:42 Piston:25 DbReq:1853 DbRes:1847 DbErr:0 DbQue:6","level":"info"}
+{"message":"ups ApiReq:5991 ApiRes:5927 ApiErr:0 ApiQue:64 Piston:25 DbReq:1696 DbRes:1682 DbErr:0 DbQue:14","level":"info"}
+{"message":"gso ApiReq:4941 ApiRes:4894 ApiErr:12 ApiQue:35 Piston:35 DbReq:1381 DbRes:1373 DbErr:0 DbQue:8","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:16836 apiRes:16683 apiErr:12 apiQue:141 dbReq:4961 dbRes:4933 dbErr:0 dbQue:28 Time:2018-07-07T08:42:19.931Z","level":"info"}
+{"message":"fex ApiReq:6068 ApiRes:6008 ApiErr:0 ApiQue:60 Piston:35 DbReq:1911 DbRes:1903 DbErr:0 DbQue:8","level":"info"}
+{"message":"ups ApiReq:6187 ApiRes:6136 ApiErr:0 ApiQue:51 Piston:25 DbReq:1757 DbRes:1743 DbErr:0 DbQue:14","level":"info"}
+{"message":"gso ApiReq:5108 ApiRes:5050 ApiErr:12 ApiQue:46 Piston:25 DbReq:1417 DbRes:1411 DbErr:0 DbQue:6","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:17394 apiRes:17225 apiErr:12 apiQue:157 dbReq:5116 dbRes:5088 dbErr:0 dbQue:28 Time:2018-07-07T08:42:24.932Z","level":"info"}
+{"message":"fex ApiReq:6256 ApiRes:6203 ApiErr:0 ApiQue:53 Piston:25 DbReq:1975 DbRes:1962 DbErr:0 DbQue:13","level":"info"}
+{"message":"ups ApiReq:6384 ApiRes:6334 ApiErr:0 ApiQue:50 Piston:15 DbReq:1808 DbRes:1799 DbErr:0 DbQue:9","level":"info"}
+{"message":"gso ApiReq:5277 ApiRes:5195 ApiErr:12 ApiQue:70 Piston:25 DbReq:1475 DbRes:1469 DbErr:0 DbQue:6","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:17948 apiRes:17763 apiErr:12 apiQue:173 dbReq:5289 dbRes:5261 dbErr:0 dbQue:28 Time:2018-07-07T08:42:29.936Z","level":"info"}
+{"message":"fex ApiReq:6449 ApiRes:6397 ApiErr:0 ApiQue:52 Piston:15 DbReq:2039 DbRes:2033 DbErr:0 DbQue:6","level":"info"}
+{"message":"ups ApiReq:6587 ApiRes:6533 ApiErr:0 ApiQue:54 Piston:15 DbReq:1866 DbRes:1856 DbErr:0 DbQue:10","level":"info"}
+{"message":"gso ApiReq:5424 ApiRes:5364 ApiErr:12 ApiQue:48 Piston:15 DbReq:1533 DbRes:1521 DbErr:0 DbQue:12","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:18491 apiRes:18325 apiErr:12 apiQue:154 dbReq:5469 dbRes:5441 dbErr:0 dbQue:28 Time:2018-07-07T08:42:34.938Z","level":"info"}
+{"message":"fex ApiReq:6633 ApiRes:6597 ApiErr:0 ApiQue:36 Piston:25 DbReq:2111 DbRes:2098 DbErr:0 DbQue:13","level":"info"}
+{"message":"ups ApiReq:6783 ApiRes:6735 ApiErr:0 ApiQue:48 Piston:15 DbReq:1929 DbRes:1924 DbErr:0 DbQue:5","level":"info"}
+{"message":"gso ApiReq:5596 ApiRes:5534 ApiErr:12 ApiQue:50 Piston:25 DbReq:1594 DbRes:1584 DbErr:0 DbQue:10","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:19043 apiRes:18897 apiErr:12 apiQue:134 dbReq:5665 dbRes:5637 dbErr:0 dbQue:28 Time:2018-07-07T08:42:39.930Z","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111118705","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111118706","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111118707","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111118708","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111118702","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:5030800000050","level":"info"}
+{"message":"fex ApiReq:6838 ApiRes:6782 ApiErr:0 ApiQue:56 Piston:25 DbReq:2182 DbRes:2176 DbErr:0 DbQue:6","level":"info"}
+{"message":"ups ApiReq:6964 ApiRes:6923 ApiErr:0 ApiQue:41 Piston:25 DbReq:1979 DbRes:1969 DbErr:0 DbQue:10","level":"info"}
+{"message":"gso ApiReq:5767 ApiRes:5684 ApiErr:18 ApiQue:65 Piston:25 DbReq:1644 DbRes:1632 DbErr:0 DbQue:12","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:19600 apiRes:19420 apiErr:18 apiQue:162 dbReq:5836 dbRes:5808 dbErr:0 dbQue:28 Time:2018-07-07T08:42:44.942Z","level":"info"}
+{"message":"fex ApiReq:7030 ApiRes:6973 ApiErr:0 ApiQue:57 Piston:25 DbReq:2236 DbRes:2227 DbErr:0 DbQue:9","level":"info"}
+{"message":"ups ApiReq:7156 ApiRes:7098 ApiErr:0 ApiQue:58 Piston:25 DbReq:2042 DbRes:2030 DbErr:0 DbQue:12","level":"info"}
+{"message":"gso ApiReq:5939 ApiRes:5872 ApiErr:18 ApiQue:49 Piston:25 DbReq:1696 DbRes:1689 DbErr:0 DbQue:7","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:20156 apiRes:19974 apiErr:18 apiQue:164 dbReq:6005 dbRes:5977 dbErr:0 dbQue:28 Time:2018-07-07T08:42:49.933Z","level":"info"}
+{"message":"fex ApiReq:7227 ApiRes:7168 ApiErr:0 ApiQue:59 Piston:35 DbReq:2300 DbRes:2290 DbErr:0 DbQue:10","level":"info"}
+{"message":"ups ApiReq:7333 ApiRes:7290 ApiErr:0 ApiQue:43 Piston:15 DbReq:2096 DbRes:2086 DbErr:0 DbQue:10","level":"info"}
+{"message":"gso ApiReq:6085 ApiRes:6017 ApiErr:18 ApiQue:50 Piston:25 DbReq:1750 DbRes:1742 DbErr:0 DbQue:8","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:20676 apiRes:20506 apiErr:18 apiQue:152 dbReq:6177 dbRes:6149 dbErr:0 dbQue:28 Time:2018-07-07T08:42:54.977Z","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111120622","level":"info"}
+{"message":"fex ApiReq:7416 ApiRes:7360 ApiErr:0 ApiQue:56 Piston:25 DbReq:2370 DbRes:2366 DbErr:0 DbQue:4","level":"info"}
+{"message":"ups ApiReq:7560 ApiRes:7514 ApiErr:0 ApiQue:46 Piston:15 DbReq:2167 DbRes:2160 DbErr:0 DbQue:7","level":"info"}
+{"message":"gso ApiReq:6261 ApiRes:6188 ApiErr:19 ApiQue:54 Piston:25 DbReq:1801 DbRes:1798 DbErr:0 DbQue:3","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:21268 apiRes:21093 apiErr:19 apiQue:156 dbReq:6369 dbRes:6355 dbErr:0 dbQue:14 Time:2018-07-07T08:42:59.991Z","level":"info"}
+{"message":"fex ApiReq:7605 ApiRes:7558 ApiErr:0 ApiQue:47 Piston:30 DbReq:2441 DbRes:2430 DbErr:0 DbQue:11","level":"info"}
+{"message":"ups ApiReq:7779 ApiRes:7733 ApiErr:0 ApiQue:46 Piston:20 DbReq:2225 DbRes:2218 DbErr:0 DbQue:7","level":"info"}
+{"message":"gso ApiReq:6403 ApiRes:6335 ApiErr:19 ApiQue:49 Piston:30 DbReq:1856 DbRes:1846 DbErr:0 DbQue:10","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:21818 apiRes:21657 apiErr:19 apiQue:142 dbReq:6553 dbRes:6525 dbErr:0 dbQue:28 Time:2018-07-07T08:43:04.998Z","level":"info"}
+{"message":"fex ApiReq:7795 ApiRes:7736 ApiErr:0 ApiQue:59 Piston:20 DbReq:2503 DbRes:2490 DbErr:0 DbQue:13","level":"info"}
+{"message":"ups ApiReq:7964 ApiRes:7920 ApiErr:0 ApiQue:44 Piston:20 DbReq:2286 DbRes:2280 DbErr:0 DbQue:6","level":"info"}
+{"message":"gso ApiReq:6541 ApiRes:6474 ApiErr:19 ApiQue:48 Piston:20 DbReq:1909 DbRes:1900 DbErr:0 DbQue:9","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:22331 apiRes:22161 apiErr:19 apiQue:151 dbReq:6729 dbRes:6701 dbErr:0 dbQue:28 Time:2018-07-07T08:43:09.996Z","level":"info"}
+{"message":"fex ApiReq:7971 ApiRes:7926 ApiErr:0 ApiQue:45 Piston:20 DbReq:2561 DbRes:2550 DbErr:0 DbQue:11","level":"info"}
+{"message":"ups ApiReq:8156 ApiRes:8105 ApiErr:0 ApiQue:51 Piston:20 DbReq:2362 DbRes:2351 DbErr:0 DbQue:11","level":"info"}
+{"message":"gso ApiReq:6566 ApiRes:6547 ApiErr:19 ApiQue:0 Piston:0 DbReq:1960 DbRes:1955 DbErr:0 DbQue:5","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:22724 apiRes:22609 apiErr:19 apiQue:96 dbReq:6914 dbRes:6887 dbErr:0 dbQue:27 Time:2018-07-07T08:43:15.005Z","level":"info"}
+{"message":"fex ApiReq:8159 ApiRes:8100 ApiErr:0 ApiQue:59 Piston:20 DbReq:2641 DbRes:2623 DbErr:0 DbQue:18","level":"info"}
+{"message":"ups ApiReq:8352 ApiRes:8312 ApiErr:0 ApiQue:40 Piston:20 DbReq:2442 DbRes:2434 DbErr:0 DbQue:8","level":"info"}
+{"message":"gso ApiReq:6566 ApiRes:6547 ApiErr:19 ApiQue:0 Piston:0 DbReq:1989 DbRes:1987 DbErr:0 DbQue:2","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:23108 apiRes:22990 apiErr:19 apiQue:99 dbReq:7103 dbRes:7075 dbErr:0 dbQue:28 Time:2018-07-07T08:43:20.009Z","level":"info"}
+{"message":"fex ApiReq:8372 ApiRes:8311 ApiErr:0 ApiQue:61 Piston:20 DbReq:2710 DbRes:2702 DbErr:0 DbQue:8","level":"info"}
+{"message":"ups ApiReq:8537 ApiRes:8493 ApiErr:0 ApiQue:44 Piston:20 DbReq:2528 DbRes:2515 DbErr:0 DbQue:13","level":"info"}
+{"message":"gso ApiReq:6566 ApiRes:6547 ApiErr:19 ApiQue:0 Piston:0 DbReq:2012 DbRes:2005 DbErr:0 DbQue:7","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:23506 apiRes:23382 apiErr:19 apiQue:105 dbReq:7281 dbRes:7253 dbErr:0 dbQue:28 Time:2018-07-07T08:43:25.011Z","level":"info"}
+{"message":"fex ApiReq:8545 ApiRes:8505 ApiErr:0 ApiQue:40 Piston:20 DbReq:2789 DbRes:2775 DbErr:0 DbQue:14","level":"info"}
+{"message":"ups ApiReq:8737 ApiRes:8683 ApiErr:0 ApiQue:54 Piston:20 DbReq:2613 DbRes:2599 DbErr:0 DbQue:14","level":"info"}
+{"message":"gso ApiReq:6566 ApiRes:6547 ApiErr:19 ApiQue:0 Piston:0 DbReq:2023 DbRes:2023 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:23879 apiRes:23766 apiErr:19 apiQue:94 dbReq:7456 dbRes:7428 dbErr:0 dbQue:28 Time:2018-07-07T08:43:30.015Z","level":"info"}
+{"message":"fex ApiReq:8728 ApiRes:8685 ApiErr:0 ApiQue:43 Piston:30 DbReq:2856 DbRes:2840 DbErr:0 DbQue:16","level":"info"}
+{"message":"ups ApiReq:8925 ApiRes:8887 ApiErr:0 ApiQue:38 Piston:20 DbReq:2677 DbRes:2669 DbErr:0 DbQue:8","level":"info"}
+{"message":"gso ApiReq:6566 ApiRes:6547 ApiErr:19 ApiQue:0 Piston:0 DbReq:2047 DbRes:2043 DbErr:0 DbQue:4","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:24250 apiRes:24150 apiErr:19 apiQue:81 dbReq:7611 dbRes:7583 dbErr:0 dbQue:28 Time:2018-07-07T08:43:35.009Z","level":"info"}
+{"message":"fex ApiReq:8893 ApiRes:8838 ApiErr:0 ApiQue:55 Piston:40 DbReq:2929 DbRes:2913 DbErr:0 DbQue:16","level":"info"}
+{"message":"ups ApiReq:9116 ApiRes:9079 ApiErr:0 ApiQue:37 Piston:20 DbReq:2735 DbRes:2723 DbErr:0 DbQue:12","level":"info"}
+{"message":"gso ApiReq:6566 ApiRes:6547 ApiErr:19 ApiQue:0 Piston:0 DbReq:2054 DbRes:2054 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:24606 apiRes:24495 apiErr:19 apiQue:92 dbReq:7749 dbRes:7721 dbErr:0 dbQue:28 Time:2018-07-07T08:43:40.014Z","level":"info"}
+{"message":"fex ApiReq:9056 ApiRes:9021 ApiErr:0 ApiQue:35 Piston:20 DbReq:3001 DbRes:2989 DbErr:0 DbQue:12","level":"info"}
+{"message":"ups ApiReq:9326 ApiRes:9277 ApiErr:0 ApiQue:49 Piston:20 DbReq:2811 DbRes:2799 DbErr:0 DbQue:12","level":"info"}
+{"message":"gso ApiReq:6566 ApiRes:6547 ApiErr:19 ApiQue:0 Piston:0 DbReq:2074 DbRes:2070 DbErr:0 DbQue:4","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:24979 apiRes:24876 apiErr:19 apiQue:84 dbReq:7917 dbRes:7889 dbErr:0 dbQue:28 Time:2018-07-07T08:43:45.026Z","level":"info"}
+{"message":"fex ApiReq:9271 ApiRes:9222 ApiErr:0 ApiQue:49 Piston:20 DbReq:3079 DbRes:3063 DbErr:0 DbQue:16","level":"info"}
+{"message":"ups ApiReq:9523 ApiRes:9474 ApiErr:0 ApiQue:49 Piston:30 DbReq:2889 DbRes:2877 DbErr:0 DbQue:12","level":"info"}
+{"message":"gso ApiReq:6566 ApiRes:6547 ApiErr:19 ApiQue:0 Piston:0 DbReq:2099 DbRes:2099 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:25391 apiRes:25274 apiErr:19 apiQue:98 dbReq:8098 dbRes:8070 dbErr:0 dbQue:28 Time:2018-07-07T08:43:50.027Z","level":"info"}
+{"message":"fex ApiReq:9477 ApiRes:9422 ApiErr:0 ApiQue:55 Piston:20 DbReq:3143 DbRes:3132 DbErr:0 DbQue:11","level":"info"}
+{"message":"ups ApiReq:9735 ApiRes:9659 ApiErr:0 ApiQue:76 Piston:20 DbReq:2964 DbRes:2953 DbErr:0 DbQue:11","level":"info"}
+{"message":"gso ApiReq:6566 ApiRes:6547 ApiErr:19 ApiQue:0 Piston:0 DbReq:2124 DbRes:2118 DbErr:0 DbQue:6","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:25809 apiRes:25659 apiErr:19 apiQue:131 dbReq:8262 dbRes:8234 dbErr:0 dbQue:28 Time:2018-07-07T08:43:55.033Z","level":"info"}
+{"message":"fex ApiReq:9682 ApiRes:9640 ApiErr:0 ApiQue:42 Piston:20 DbReq:3221 DbRes:3210 DbErr:0 DbQue:11","level":"info"}
+{"message":"ups ApiReq:9924 ApiRes:9868 ApiErr:0 ApiQue:56 Piston:20 DbReq:3047 DbRes:3033 DbErr:0 DbQue:14","level":"info"}
+{"message":"gso ApiReq:6566 ApiRes:6547 ApiErr:19 ApiQue:0 Piston:0 DbReq:2140 DbRes:2137 DbErr:0 DbQue:3","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:26203 apiRes:26086 apiErr:19 apiQue:98 dbReq:8439 dbRes:8411 dbErr:0 dbQue:28 Time:2018-07-07T08:44:00.030Z","level":"info"}
+{"message":"fex ApiReq:9893 ApiRes:9836 ApiErr:0 ApiQue:57 Piston:20 DbReq:3296 DbRes:3279 DbErr:0 DbQue:17","level":"info"}
+{"message":"ups ApiReq:10110 ApiRes:10064 ApiErr:0 ApiQue:46 Piston:20 DbReq:3119 DbRes:3111 DbErr:0 DbQue:8","level":"info"}
+{"message":"gso ApiReq:6566 ApiRes:6547 ApiErr:19 ApiQue:0 Piston:0 DbReq:2152 DbRes:2149 DbErr:0 DbQue:3","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:26600 apiRes:26478 apiErr:19 apiQue:103 dbReq:8598 dbRes:8570 dbErr:0 dbQue:28 Time:2018-07-07T08:44:05.043Z","level":"info"}
+{"message":"fex ApiReq:10083 ApiRes:10036 ApiErr:0 ApiQue:47 Piston:35 DbReq:3361 DbRes:3346 DbErr:0 DbQue:15","level":"info"}
+{"message":"ups ApiReq:10293 ApiRes:10256 ApiErr:0 ApiQue:37 Piston:25 DbReq:3196 DbRes:3184 DbErr:0 DbQue:12","level":"info"}
+{"message":"gso ApiReq:6566 ApiRes:6547 ApiErr:19 ApiQue:0 Piston:0 DbReq:2167 DbRes:2167 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:26973 apiRes:26870 apiErr:19 apiQue:84 dbReq:8755 dbRes:8728 dbErr:0 dbQue:27 Time:2018-07-07T08:44:10.045Z","level":"info"}
+{"message":"fex ApiReq:10244 ApiRes:10191 ApiErr:0 ApiQue:53 Piston:25 DbReq:3445 DbRes:3433 DbErr:0 DbQue:12","level":"info"}
+{"message":"ups ApiReq:10505 ApiRes:10452 ApiErr:0 ApiQue:53 Piston:25 DbReq:3269 DbRes:3256 DbErr:0 DbQue:13","level":"info"}
+{"message":"gso ApiReq:6566 ApiRes:6547 ApiErr:19 ApiQue:0 Piston:0 DbReq:2179 DbRes:2176 DbErr:0 DbQue:3","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:27346 apiRes:27221 apiErr:19 apiQue:106 dbReq:8924 dbRes:8896 dbErr:0 dbQue:28 Time:2018-07-07T08:44:15.047Z","level":"info"}
+{"message":"fex ApiReq:10426 ApiRes:10371 ApiErr:0 ApiQue:55 Piston:15 DbReq:3523 DbRes:3509 DbErr:0 DbQue:14","level":"info"}
+{"message":"ups ApiReq:10713 ApiRes:10646 ApiErr:0 ApiQue:67 Piston:15 DbReq:3339 DbRes:3326 DbErr:0 DbQue:13","level":"info"}
+{"message":"gso ApiReq:6566 ApiRes:6547 ApiErr:19 ApiQue:0 Piston:0 DbReq:2202 DbRes:2201 DbErr:0 DbQue:1","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:27736 apiRes:27595 apiErr:19 apiQue:122 dbReq:9095 dbRes:9067 dbErr:0 dbQue:28 Time:2018-07-07T08:44:20.053Z","level":"info"}
+{"message":"fex ApiReq:10615 ApiRes:10563 ApiErr:0 ApiQue:52 Piston:15 DbReq:3612 DbRes:3592 DbErr:0 DbQue:20","level":"info"}
+{"message":"ups ApiReq:10902 ApiRes:10851 ApiErr:0 ApiQue:51 Piston:15 DbReq:3416 DbRes:3410 DbErr:0 DbQue:6","level":"info"}
+{"message":"gso ApiReq:6566 ApiRes:6547 ApiErr:19 ApiQue:0 Piston:0 DbReq:2221 DbRes:2219 DbErr:0 DbQue:2","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:28114 apiRes:27992 apiErr:19 apiQue:103 dbReq:9280 dbRes:9252 dbErr:0 dbQue:28 Time:2018-07-07T08:44:25.043Z","level":"info"}
+{"message":"fex ApiReq:10837 ApiRes:10778 ApiErr:0 ApiQue:59 Piston:25 DbReq:3687 DbRes:3676 DbErr:0 DbQue:11","level":"info"}
+{"message":"ups ApiReq:11105 ApiRes:11051 ApiErr:0 ApiQue:54 Piston:15 DbReq:3490 DbRes:3473 DbErr:0 DbQue:17","level":"info"}
+{"message":"gso ApiReq:6566 ApiRes:6547 ApiErr:19 ApiQue:0 Piston:0 DbReq:2236 DbRes:2236 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:28539 apiRes:28407 apiErr:19 apiQue:113 dbReq:9444 dbRes:9416 dbErr:0 dbQue:28 Time:2018-07-07T08:44:30.054Z","level":"info"}
+{"message":"fex ApiReq:10998 ApiRes:10957 ApiErr:0 ApiQue:41 Piston:25 DbReq:3770 DbRes:3754 DbErr:0 DbQue:16","level":"info"}
+{"message":"ups ApiReq:11293 ApiRes:11241 ApiErr:0 ApiQue:52 Piston:25 DbReq:3560 DbRes:3548 DbErr:0 DbQue:12","level":"info"}
+{"message":"gso ApiReq:6566 ApiRes:6547 ApiErr:19 ApiQue:0 Piston:0 DbReq:2251 DbRes:2251 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:28888 apiRes:28776 apiErr:19 apiQue:93 dbReq:9612 dbRes:9584 dbErr:0 dbQue:28 Time:2018-07-07T08:44:35.062Z","level":"info"}
+{"message":"fex ApiReq:11183 ApiRes:11113 ApiErr:0 ApiQue:70 Piston:25 DbReq:3839 DbRes:3824 DbErr:0 DbQue:15","level":"info"}
+{"message":"ups ApiReq:11504 ApiRes:11451 ApiErr:0 ApiQue:53 Piston:25 DbReq:3627 DbRes:3614 DbErr:0 DbQue:13","level":"info"}
+{"message":"gso ApiReq:6566 ApiRes:6547 ApiErr:19 ApiQue:0 Piston:0 DbReq:2274 DbRes:2274 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:29284 apiRes:29142 apiErr:19 apiQue:123 dbReq:9771 dbRes:9743 dbErr:0 dbQue:28 Time:2018-07-07T08:44:40.062Z","level":"info"}
+{"message":"fex ApiReq:11347 ApiRes:11283 ApiErr:0 ApiQue:64 Piston:15 DbReq:3901 DbRes:3891 DbErr:0 DbQue:10","level":"info"}
+{"message":"ups ApiReq:11698 ApiRes:11654 ApiErr:0 ApiQue:44 Piston:15 DbReq:3704 DbRes:3701 DbErr:0 DbQue:3","level":"info"}
+{"message":"gso ApiReq:6566 ApiRes:6547 ApiErr:19 ApiQue:0 Piston:0 DbReq:2297 DbRes:2296 DbErr:0 DbQue:1","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:29642 apiRes:29515 apiErr:19 apiQue:108 dbReq:9933 dbRes:9919 dbErr:0 dbQue:14 Time:2018-07-07T08:44:45.071Z","level":"info"}
+{"message":"fex ApiReq:11533 ApiRes:11487 ApiErr:0 ApiQue:46 Piston:15 DbReq:3990 DbRes:3976 DbErr:0 DbQue:14","level":"info"}
+{"message":"ups ApiReq:11911 ApiRes:11864 ApiErr:0 ApiQue:47 Piston:15 DbReq:3776 DbRes:3765 DbErr:0 DbQue:11","level":"info"}
+{"message":"gso ApiReq:6566 ApiRes:6547 ApiErr:19 ApiQue:0 Piston:0 DbReq:2311 DbRes:2308 DbErr:0 DbQue:3","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:30041 apiRes:29929 apiErr:19 apiQue:93 dbReq:10108 dbRes:10080 dbErr:0 dbQue:28 Time:2018-07-07T08:44:50.073Z","level":"info"}
+{"message":"fex ApiReq:11717 ApiRes:11666 ApiErr:0 ApiQue:51 Piston:15 DbReq:4066 DbRes:4054 DbErr:0 DbQue:12","level":"info"}
+{"message":"ups ApiReq:12120 ApiRes:12075 ApiErr:0 ApiQue:45 Piston:15 DbReq:3851 DbRes:3841 DbErr:0 DbQue:10","level":"info"}
+{"message":"gso ApiReq:6566 ApiRes:6547 ApiErr:19 ApiQue:0 Piston:0 DbReq:2321 DbRes:2315 DbErr:0 DbQue:6","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:30434 apiRes:30319 apiErr:19 apiQue:96 dbReq:10269 dbRes:10241 dbErr:0 dbQue:28 Time:2018-07-07T08:44:55.076Z","level":"info"}
+{"message":"fex ApiReq:11899 ApiRes:11852 ApiErr:0 ApiQue:47 Piston:30 DbReq:4141 DbRes:4128 DbErr:0 DbQue:13","level":"info"}
+{"message":"ups ApiReq:12304 ApiRes:12258 ApiErr:0 ApiQue:46 Piston:20 DbReq:3919 DbRes:3904 DbErr:0 DbQue:15","level":"info"}
+{"message":"gso ApiReq:6566 ApiRes:6547 ApiErr:19 ApiQue:0 Piston:0 DbReq:2331 DbRes:2331 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:30800 apiRes:30688 apiErr:19 apiQue:93 dbReq:10422 dbRes:10394 dbErr:0 dbQue:28 Time:2018-07-07T08:45:00.078Z","level":"info"}
+{"message":"fex ApiReq:12068 ApiRes:12019 ApiErr:0 ApiQue:49 Piston:20 DbReq:4214 DbRes:4200 DbErr:0 DbQue:14","level":"info"}
+{"message":"ups ApiReq:12482 ApiRes:12444 ApiErr:0 ApiQue:38 Piston:20 DbReq:3995 DbRes:3981 DbErr:0 DbQue:14","level":"info"}
+{"message":"gso ApiReq:6566 ApiRes:6547 ApiErr:19 ApiQue:0 Piston:0 DbReq:2345 DbRes:2345 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:31147 apiRes:31041 apiErr:19 apiQue:87 dbReq:10585 dbRes:10557 dbErr:0 dbQue:28 Time:2018-07-07T08:45:05.066Z","level":"info"}
+{"message":"fex ApiReq:12246 ApiRes:12185 ApiErr:0 ApiQue:61 Piston:20 DbReq:4291 DbRes:4277 DbErr:0 DbQue:14","level":"info"}
+{"message":"ups ApiReq:12675 ApiRes:12617 ApiErr:0 ApiQue:58 Piston:20 DbReq:4056 DbRes:4045 DbErr:0 DbQue:11","level":"info"}
+{"message":"gso ApiReq:6566 ApiRes:6547 ApiErr:19 ApiQue:0 Piston:0 DbReq:2356 DbRes:2353 DbErr:0 DbQue:3","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:31518 apiRes:31380 apiErr:19 apiQue:119 dbReq:10734 dbRes:10706 dbErr:0 dbQue:28 Time:2018-07-07T08:45:10.082Z","level":"info"}
+{"message":"fex ApiReq:12417 ApiRes:12382 ApiErr:0 ApiQue:35 Piston:20 DbReq:4354 DbRes:4340 DbErr:0 DbQue:14","level":"info"}
+{"message":"ups ApiReq:12863 ApiRes:12816 ApiErr:0 ApiQue:47 Piston:20 DbReq:4125 DbRes:4111 DbErr:0 DbQue:14","level":"info"}
+{"message":"gso ApiReq:6566 ApiRes:6547 ApiErr:19 ApiQue:0 Piston:0 DbReq:2357 DbRes:2357 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:31877 apiRes:31776 apiErr:19 apiQue:82 dbReq:10867 dbRes:10839 dbErr:0 dbQue:28 Time:2018-07-07T08:45:15.095Z","level":"info"}
+{"message":"fex ApiReq:12600 ApiRes:12553 ApiErr:0 ApiQue:47 Piston:25 DbReq:4417 DbRes:4401 DbErr:0 DbQue:16","level":"info"}
+{"message":"ups ApiReq:13069 ApiRes:13016 ApiErr:0 ApiQue:53 Piston:15 DbReq:4188 DbRes:4176 DbErr:0 DbQue:12","level":"info"}
+{"message":"gso ApiReq:6566 ApiRes:6547 ApiErr:19 ApiQue:0 Piston:0 DbReq:2367 DbRes:2367 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:32266 apiRes:32147 apiErr:19 apiQue:100 dbReq:11003 dbRes:10975 dbErr:0 dbQue:28 Time:2018-07-07T08:45:20.098Z","level":"info"}
+{"message":"fex ApiReq:12751 ApiRes:12712 ApiErr:0 ApiQue:39 Piston:25 DbReq:4474 DbRes:4462 DbErr:0 DbQue:12","level":"info"}
+{"message":"ups ApiReq:13232 ApiRes:13188 ApiErr:0 ApiQue:44 Piston:25 DbReq:4257 DbRes:4245 DbErr:0 DbQue:12","level":"info"}
+{"message":"gso ApiReq:6566 ApiRes:6547 ApiErr:19 ApiQue:0 Piston:0 DbReq:2381 DbRes:2381 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:32580 apiRes:32478 apiErr:19 apiQue:83 dbReq:11143 dbRes:11119 dbErr:0 dbQue:24 Time:2018-07-07T08:45:25.095Z","level":"info"}
+{"message":"fex ApiReq:12937 ApiRes:12880 ApiErr:0 ApiQue:57 Piston:25 DbReq:4542 DbRes:4528 DbErr:0 DbQue:14","level":"info"}
+{"message":"ups ApiReq:13443 ApiRes:13388 ApiErr:0 ApiQue:55 Piston:25 DbReq:4334 DbRes:4320 DbErr:0 DbQue:14","level":"info"}
+{"message":"gso ApiReq:6566 ApiRes:6547 ApiErr:19 ApiQue:0 Piston:0 DbReq:2385 DbRes:2385 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:32977 apiRes:32846 apiErr:19 apiQue:112 dbReq:11292 dbRes:11264 dbErr:0 dbQue:28 Time:2018-07-07T08:45:30.097Z","level":"info"}
+{"message":"fex ApiReq:13106 ApiRes:13052 ApiErr:0 ApiQue:54 Piston:15 DbReq:4608 DbRes:4593 DbErr:0 DbQue:15","level":"info"}
+{"message":"ups ApiReq:13639 ApiRes:13576 ApiErr:0 ApiQue:63 Piston:15 DbReq:4387 DbRes:4380 DbErr:0 DbQue:7","level":"info"}
+{"message":"gso ApiReq:6566 ApiRes:6547 ApiErr:19 ApiQue:0 Piston:0 DbReq:2402 DbRes:2400 DbErr:0 DbQue:2","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:33342 apiRes:33206 apiErr:19 apiQue:117 dbReq:11428 dbRes:11404 dbErr:0 dbQue:24 Time:2018-07-07T08:45:35.108Z","level":"info"}
+{"message":"fex ApiReq:13290 ApiRes:13238 ApiErr:0 ApiQue:52 Piston:15 DbReq:4671 DbRes:4660 DbErr:0 DbQue:11","level":"info"}
+{"message":"ups ApiReq:13816 ApiRes:13773 ApiErr:0 ApiQue:43 Piston:25 DbReq:4449 DbRes:4432 DbErr:0 DbQue:17","level":"info"}
+{"message":"gso ApiReq:6566 ApiRes:6547 ApiErr:19 ApiQue:0 Piston:0 DbReq:2413 DbRes:2413 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:33703 apiRes:33589 apiErr:19 apiQue:95 dbReq:11564 dbRes:11536 dbErr:0 dbQue:28 Time:2018-07-07T08:45:40.109Z","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"fex ApiReq:13477 ApiRes:13416 ApiErr:0 ApiQue:61 Piston:25 DbReq:4742 DbRes:4696 DbErr:30 DbQue:16","level":"info"}
+{"message":"ups ApiReq:13999 ApiRes:13947 ApiErr:0 ApiQue:52 Piston:15 DbReq:4520 DbRes:4488 DbErr:22 DbQue:10","level":"info"}
+{"message":"gso ApiReq:6566 ApiRes:6547 ApiErr:19 ApiQue:0 Piston:0 DbReq:2417 DbRes:2415 DbErr:0 DbQue:2","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:34073 apiRes:33941 apiErr:19 apiQue:113 dbReq:11710 dbRes:11630 dbErr:52 dbQue:28 Time:2018-07-07T08:45:45.112Z","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"fex ApiReq:13645 ApiRes:13599 ApiErr:0 ApiQue:46 Piston:35 DbReq:4807 DbRes:4696 DbErr:96 DbQue:15","level":"info"}
+{"message":"ups ApiReq:14165 ApiRes:14122 ApiErr:0 ApiQue:43 Piston:25 DbReq:4574 DbRes:4488 DbErr:75 DbQue:11","level":"info"}
+{"message":"gso ApiReq:6566 ApiRes:6547 ApiErr:19 ApiQue:0 Piston:0 DbReq:2422 DbRes:2415 DbErr:5 DbQue:2","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:34407 apiRes:34299 apiErr:19 apiQue:89 dbReq:11834 dbRes:11630 dbErr:176 dbQue:28 Time:2018-07-07T08:45:50.108Z","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"fex ApiReq:13784 ApiRes:13748 ApiErr:0 ApiQue:36 Piston:25 DbReq:4860 DbRes:4696 DbErr:157 DbQue:7","level":"info"}
+{"message":"ups ApiReq:14338 ApiRes:14299 ApiErr:0 ApiQue:39 Piston:25 DbReq:4642 DbRes:4488 DbErr:133 DbQue:21","level":"info"}
+{"message":"gso ApiReq:6566 ApiRes:6547 ApiErr:19 ApiQue:0 Piston:0 DbReq:2424 DbRes:2415 DbErr:9 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:34719 apiRes:34625 apiErr:19 apiQue:75 dbReq:11957 dbRes:11630 dbErr:299 dbQue:28 Time:2018-07-07T08:45:55.114Z","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"fex ApiReq:13982 ApiRes:13935 ApiErr:0 ApiQue:47 Piston:15 DbReq:4931 DbRes:4696 DbErr:219 DbQue:16","level":"info"}
+{"message":"ups ApiReq:14530 ApiRes:14474 ApiErr:0 ApiQue:56 Piston:25 DbReq:4696 DbRes:4488 DbErr:197 DbQue:11","level":"info"}
+{"message":"gso ApiReq:6566 ApiRes:6547 ApiErr:19 ApiQue:0 Piston:0 DbReq:2428 DbRes:2415 DbErr:12 DbQue:1","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:35109 apiRes:34987 apiErr:19 apiQue:103 dbReq:12086 dbRes:11630 dbErr:428 dbQue:28 Time:2018-07-07T08:46:00.111Z","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"fex ApiReq:14182 ApiRes:14138 ApiErr:0 ApiQue:44 Piston:15 DbReq:4994 DbRes:4696 DbErr:286 DbQue:12","level":"info"}
+{"message":"ups ApiReq:14710 ApiRes:14664 ApiErr:0 ApiQue:46 Piston:25 DbReq:4776 DbRes:4488 DbErr:273 DbQue:15","level":"info"}
+{"message":"gso ApiReq:6566 ApiRes:6547 ApiErr:19 ApiQue:0 Piston:0 DbReq:2435 DbRes:2415 DbErr:19 DbQue:1","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:35489 apiRes:35380 apiErr:19 apiQue:90 dbReq:12236 dbRes:11630 dbErr:578 dbQue:28 Time:2018-07-07T08:46:05.112Z","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"fex ApiReq:14370 ApiRes:14318 ApiErr:0 ApiQue:52 Piston:25 DbReq:5068 DbRes:4696 DbErr:355 DbQue:17","level":"info"}
+{"message":"ups ApiReq:14884 ApiRes:14830 ApiErr:0 ApiQue:54 Piston:25 DbReq:4843 DbRes:4488 DbErr:344 DbQue:11","level":"info"}
+{"message":"gso ApiReq:6566 ApiRes:6547 ApiErr:19 ApiQue:0 Piston:0 DbReq:2440 DbRes:2415 DbErr:25 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:35851 apiRes:35726 apiErr:19 apiQue:106 dbReq:12382 dbRes:11630 dbErr:724 dbQue:28 Time:2018-07-07T08:46:10.125Z","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
+{"message":"The database 'WSCarrierTracker' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.","level":"info"}
