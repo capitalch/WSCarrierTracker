@@ -114,12 +114,8 @@ handler.domainError.on('error', function (err) {
 handler.sub14 = ibuki.filterOn('app-error:any').subscribe(d => {
     const err = d.data;
     if (err.severity === 'fatal') {
-        // console.log(err.stack);
         notify.logInfo(err.stack);
         cleanup(100);
-        // process.exit(100);
-    } else {
-        // console.log(err.message);
     }
     // Use telemetry to log error
 });

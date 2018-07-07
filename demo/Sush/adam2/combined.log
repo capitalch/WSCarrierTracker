@@ -5077,3 +5077,19 @@
 {"message":"gso ApiReq:6566 ApiRes:6547 ApiErr:19 ApiQue:0 Piston:0 DbReq:4235 DbRes:4229 DbErr:0 DbQue:6","level":"info"}
 {"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:30 DbRes:30 DbErr:0 DbQue:0","level":"info"}
 {"message":"Total apiReq:103440 apiRes:103420 apiErr:20 apiQue:0 dbReq:59328 dbRes:59300 dbErr:0 dbQue:28","level":"info"}
+{"message":"fex ApiReq:54721 ApiRes:54720 ApiErr:1 ApiQue:0 Piston:0 DbReq:30647 DbRes:30637 DbErr:0 DbQue:10","level":"info"}
+{"message":"ups ApiReq:42122 ApiRes:42122 ApiErr:0 ApiQue:0 Piston:0 DbReq:24547 DbRes:24532 DbErr:0 DbQue:15","level":"info"}
+{"message":"gso ApiReq:6566 ApiRes:6547 ApiErr:19 ApiQue:0 Piston:0 DbReq:4244 DbRes:4241 DbErr:0 DbQue:3","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:30 DbRes:30 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:103440 apiRes:103420 apiErr:20 apiQue:0 dbReq:59468 dbRes:59440 dbErr:0 dbQue:28","level":"info"}
+{"message":"fex ApiReq:54721 ApiRes:54720 ApiErr:1 ApiQue:0 Piston:0 DbReq:30733 DbRes:30730 DbErr:0 DbQue:3","level":"info"}
+{"message":"ups ApiReq:42122 ApiRes:42122 ApiErr:0 ApiQue:0 Piston:0 DbReq:24605 DbRes:24601 DbErr:0 DbQue:4","level":"info"}
+{"message":"gso ApiReq:6566 ApiRes:6547 ApiErr:19 ApiQue:0 Piston:0 DbReq:4253 DbRes:4253 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:30 DbRes:30 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:103440 apiRes:103420 apiErr:20 apiQue:0 dbReq:59621 dbRes:59614 dbErr:0 dbQue:7","level":"info"}
+{"message":"fex ApiReq:54721 ApiRes:54720 ApiErr:1 ApiQue:0 Piston:0 DbReq:30812 DbRes:30812 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:42122 ApiRes:42122 ApiErr:0 ApiQue:0 Piston:0 DbReq:24658 DbRes:24658 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:6566 ApiRes:6547 ApiErr:19 ApiQue:0 Piston:0 DbReq:4261 DbRes:4261 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 DbReq:30 DbRes:30 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:103440 apiRes:103420 apiErr:20 apiQue:0 dbReq:59761 dbRes:59761 dbErr:0 dbQue:0","level":"info"}
+{"message":"Mandrill mail sent","level":"info"}
