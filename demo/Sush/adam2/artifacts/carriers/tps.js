@@ -4,7 +4,7 @@ const _ = require('lodash');
 const handler = require('../handler');
 const parseString = require('xml2js').parseString;
 const notify = require('../notify');
-const db = require('../db'); //required
+// const db = require('../db'); //required
 
 const tps = {};
 tps.processTps = (x) => {

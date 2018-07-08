@@ -3,11 +3,14 @@ const moment = require('moment');
 const logger = require('./logger');
 const settings = require('../settings.json');
 const notifyData = require('./notifyData');
+const _ = require('lodash');
 // let verbose = settings.config.verbose;
 // verbose = verbose || true;
 
-let errors = [];
+// let errors = [];
 // const apiStatus = {};
+// let notify = {};
+// notify.datetimeFormat = _.has(settings, 'config.logDateTimeFormat') ? settings.config.logDateTimeFormat : 'YYYY-MM-DD HH:mm:SS';
 const timing = {};
 const dbStatus1 = {
     dbRequests: 0,
@@ -20,11 +23,15 @@ const dbStatus1 = {
 
 
 const notify = {
+    getDatetimeFormat: () => {
+        const f = _.has(settings, 'config.logDateTimeFormat') ? settings.config.logDateTimeFormat : 'YYYY-MM-DD HH:mm:SS'
+        return (f);
+    },
     setTime: (t) => {
         timing[t] = moment();
     },
     getTime: (t) => {
-        const time = timing[t] ? moment(timing[t]).toISOString() : '0'
+        const time = timing[t] ? moment(timing[t]).format(notify.getDatetimeFormat()) : '0'
         return (time);
     },
     getJobRunDuration: () => {
@@ -120,7 +127,7 @@ const notify = {
             apiRes: 0,
             apiErr: 0,
             apiQue: 0,
-            toDb:0,
+            toDb: 0,
             dbReq: 0,
             dbRes: 0,
             dbErr: 0,
@@ -157,7 +164,7 @@ const notify = {
             ' dbRes:', allStatus.dbRes,
             ' dbErr:', allStatus.dbErr,
             ' dbQue:', allStatus.dbQue,
-            ' Time:', moment().toISOString()
+            ' time:', moment().format(notify.getDatetimeFormat())
         ));
     },
     getJobRunStatus: () => {

@@ -6,7 +6,7 @@ const options = {
     file: {
         level: 'info',
         // filename: './logs/app.log',
-        filename: './logs/' + moment().format('YYYY-MM-DD-HHMMSS') + '.log',
+        filename: './logs/' + moment().format('YYYY-MM-DD HH-mm-ss') + '.log',
         handleExceptions: true,
         json: true,
         //   maxsize: 5242880, // 5MB

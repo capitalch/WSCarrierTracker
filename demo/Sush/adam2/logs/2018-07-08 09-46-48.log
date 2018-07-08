@@ -1,0 +1,54 @@
+{"message":"New Job started at 2018-07-08 09:46:48","level":"info"}
+{"message":"gso Item Count: 873","level":"info"}
+{"message":"fex Item Count: 9","level":"info"}
+{"message":"ups Item Count: 87","level":"info"}
+{"message":"tps Item Count: 31","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112449","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112415","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112370","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112347","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112343","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112588","level":"info"}
+{"message":"Request failed with status code 400. Carrier name:gso, Tracking number:508741111112598","level":"info"}
+{"message":"fex ApiReq:9 ApiRes:9 ApiErr:0 ApiQue:0 Piston:0 ToDb:9 DbReq:9 DbRes:9 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:87 ApiRes:87 ApiErr:0 ApiQue:0 Piston:0 ToDb:86 DbReq:86 DbRes:86 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:459 ApiRes:408 ApiErr:7 ApiQue:44 Piston:30 ToDb:254 DbReq:226 DbRes:226 DbErr:0 DbQue:28","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:586 apiRes:535 apiErr:7 apiQue:44 toDb:380 dbReq:352 dbRes:352 dbErr:0 dbQue:28 time:2018-07-08 09:47:01","level":"info"}
+{"message":"fex ApiReq:9 ApiRes:9 ApiErr:0 ApiQue:0 Piston:0 ToDb:9 DbReq:9 DbRes:9 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:87 ApiRes:87 ApiErr:0 ApiQue:0 Piston:0 ToDb:87 DbReq:87 DbRes:87 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:873 ApiRes:845 ApiErr:7 ApiQue:21 Piston:20 ToDb:621 DbReq:606 DbRes:606 DbErr:0 DbQue:15","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:1000 apiRes:972 apiErr:7 apiQue:21 toDb:748 dbReq:733 dbRes:733 dbErr:0 dbQue:15 time:2018-07-08 09:47:11","level":"info"}
+{"message":"fex ApiReq:9 ApiRes:9 ApiErr:0 ApiQue:0 Piston:0 ToDb:9 DbReq:9 DbRes:9 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:87 ApiRes:87 ApiErr:0 ApiQue:0 Piston:0 ToDb:87 DbReq:87 DbRes:87 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:873 ApiRes:850 ApiErr:7 ApiQue:16 Piston:0 ToDb:857 DbReq:857 DbRes:857 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:1000 apiRes:977 apiErr:7 apiQue:16 toDb:984 dbReq:984 dbRes:984 dbErr:0 dbQue:0 time:2018-07-08 09:47:21","level":"info"}
+{"message":"connect ETIMEDOUT 108.166.7.59:443. Carrier name:gso, Tracking number:508741111113142","level":"info"}
+{"message":"connect ETIMEDOUT 108.166.7.59:443. Carrier name:gso, Tracking number:508741111113154","level":"info"}
+{"message":"connect ETIMEDOUT 108.166.7.59:443. Carrier name:gso, Tracking number:508741111113140","level":"info"}
+{"message":"fex ApiReq:9 ApiRes:9 ApiErr:0 ApiQue:0 Piston:0 ToDb:9 DbReq:9 DbRes:9 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:87 ApiRes:87 ApiErr:0 ApiQue:0 Piston:0 ToDb:87 DbReq:87 DbRes:87 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:873 ApiRes:850 ApiErr:10 ApiQue:13 Piston:0 ToDb:860 DbReq:857 DbRes:857 DbErr:0 DbQue:3","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:1000 apiRes:977 apiErr:10 apiQue:13 toDb:987 dbReq:984 dbRes:984 dbErr:0 dbQue:3 time:2018-07-08 09:47:31","level":"info"}
+{"message":"connect ETIMEDOUT 108.166.7.59:443. Carrier name:gso, Tracking number:508741111113141","level":"info"}
+{"message":"connect ETIMEDOUT 108.166.7.59:443. Carrier name:gso, Tracking number:508741111113143","level":"info"}
+{"message":"connect ETIMEDOUT 108.166.7.59:443. Carrier name:gso, Tracking number:508741111113152","level":"info"}
+{"message":"connect ETIMEDOUT 108.166.7.59:443. Carrier name:gso, Tracking number:508741111113147","level":"info"}
+{"message":"connect ETIMEDOUT 108.166.7.59:443. Carrier name:gso, Tracking number:508741111113149","level":"info"}
+{"message":"connect ETIMEDOUT 108.166.7.59:443. Carrier name:gso, Tracking number:508741111113145","level":"info"}
+{"message":"connect ETIMEDOUT 108.166.7.59:443. Carrier name:gso, Tracking number:508741111113138","level":"info"}
+{"message":"connect ETIMEDOUT 108.166.7.59:443. Carrier name:gso, Tracking number:508741111113139","level":"info"}
+{"message":"connect ETIMEDOUT 108.166.7.59:443. Carrier name:gso, Tracking number:508741111113137","level":"info"}
+{"message":"connect ETIMEDOUT 108.166.7.59:443. Carrier name:gso, Tracking number:508741111113134","level":"info"}
+{"message":"connect ETIMEDOUT 108.166.7.59:443. Carrier name:gso, Tracking number:508741111113151","level":"info"}
+{"message":"connect ETIMEDOUT 108.166.7.59:443. Carrier name:gso, Tracking number:508741111113150","level":"info"}
+{"message":"connect ETIMEDOUT 108.166.7.59:443. Carrier name:gso, Tracking number:508741111113158","level":"info"}
+{"message":"fex ApiReq:9 ApiRes:9 ApiErr:0 ApiQue:0 Piston:0 ToDb:9 DbReq:9 DbRes:9 DbErr:0 DbQue:0","level":"info"}
+{"message":"ups ApiReq:87 ApiRes:87 ApiErr:0 ApiQue:0 Piston:0 ToDb:87 DbReq:87 DbRes:87 DbErr:0 DbQue:0","level":"info"}
+{"message":"gso ApiReq:873 ApiRes:850 ApiErr:23 ApiQue:0 Piston:0 ToDb:873 DbReq:873 DbRes:873 DbErr:0 DbQue:0","level":"info"}
+{"message":"tps ApiReq:31 ApiRes:31 ApiErr:0 ApiQue:0 Piston:0 ToDb:31 DbReq:31 DbRes:31 DbErr:0 DbQue:0","level":"info"}
+{"message":"Total apiReq:1000 apiRes:977 apiErr:23 apiQue:0 toDb:1000 dbReq:1000 dbRes:1000 dbErr:0 dbQue:0 time:2018-07-08 09:47:41","level":"info"}
+{"message":"Mandrill mail sent","level":"info"}

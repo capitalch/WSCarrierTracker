@@ -8,7 +8,7 @@ const fex = require('./carriers/fex');
 const gso = require('./carriers/gso');
 const ups = require('./carriers/ups');
 const tps = require('./carriers/tps');
-const db = require('./db'); // needed
+// const db = require('./db'); // needed
 
 let api = {};
 const carriermap = {

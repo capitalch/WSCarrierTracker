@@ -1,4 +1,5 @@
 'use strict';
+const _ = require('lodash');
 const domain = require('domain');
 const rx = require('rxjs');
 const ibuki = require('./ibuki');
@@ -11,7 +12,7 @@ let verbose = settings.config.verbose;
 verbose = verbose || true;
 handler.buffer = new rx.Subject();
 handler.domainError = domain.create();
-
+const samplingrate = _.has(settings,'config.samplingRateInSec') ? settings.config.samplingRateInSec : 10
 const isIdle = () => {
     const apiStatus = notify.getApiStatus();
     let carriers = Object.keys(apiStatus);
@@ -34,12 +35,11 @@ const isIdle = () => {
 }
 
 handler.closeIfIdle = () => {
-    const myInterval = rx.interval(5000);
+    const myInterval = rx.interval(samplingrate * 1000);
     handler.sub6 = myInterval.subscribe(() => {
         verbose && notify.showAllStatus();
         isIdle() && (
             notify.setTime('end'), ibuki.emit('db-log:handler>db'), handler.sub6.unsubscribe()
-            // , cleanup(0)// to be removed
         );
     });
 }
