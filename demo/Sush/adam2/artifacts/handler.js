@@ -79,6 +79,7 @@ function cleanup(code) {
     handler.sub14 && handler.sub14.unsubscribe();
     handler.sub15 && handler.sub15.unsubscribe();
     handler.sub16 && handler.sub16.unsubscribe();
+    handler.sub17 && handler.sub17.unsubscribe();
     handler.pool && handler.pool.close();
     process.exit(code);
 }

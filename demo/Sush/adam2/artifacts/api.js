@@ -14,12 +14,12 @@ const tps = require('./carriers/tps');
 
 let api = {};
 const carriermap = {
-    fex: (x) => fex.processFex(x),
+    fex: (x) => ibuki.emit('process-fex', x),// fex.processFex(x),
     ups: (x) => ups.processUps(x),
     gso: (x) => gso.processGso(x),
     tps: (x) => tps.processTps(x)
 };
-const timeout = _.has(settings,'config.timeoutSec') ? settings.config.timeoutSec * 1000 : 5;
+const timeout = _.has(settings, 'config.timeoutSec') ? settings.config.timeoutSec * 1000 : 5;
 
 api.getGsoTokenPromises = (info) => {
     const accounts = info.accounts;
@@ -41,11 +41,11 @@ handler.sub15 = ibuki.filterOn('axios-post:workbench-fex>api').subscribe(d => {
     const carrierInfo = d.data;
     notify.addApiRequest(carrierInfo);
     axios({
-            method: 'post',
-            url: carrierInfo.url,
-            timeout: timeout,
-            data: carrierInfo.param
-        })
+        method: 'post',
+        url: carrierInfo.url,
+        timeout: timeout,
+        data: carrierInfo.param
+    })
         .then(res => {
             handleApiResponse(carrierInfo, res);
         })

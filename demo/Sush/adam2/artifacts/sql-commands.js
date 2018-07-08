@@ -19,7 +19,7 @@ let sqlCommands = {
 				NOT [Status] = 'Package returned to shipper' and 
 				--NOT [Status] = 'Delivered' and 
 				NOT [Status] = 'Returned' and			
-				[Shipping Agent Code] in ( 'FEX') 
+				[Shipping Agent Code] in ( 'GSO') 
 				AND NOT [External Tracking No_] = ''
 				order by NO_
 			`,

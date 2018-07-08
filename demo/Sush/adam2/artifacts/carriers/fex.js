@@ -103,7 +103,11 @@ const tools = {
     }
 }
 
-fex.processFex = (x) => {
+handler.sub17 = ibuki.filterOn('process-fex:api>fex').subscribe(d => {
+    processFex(d.data);
+})
+
+const processFex = (x) => {
     parseString(x.response, {
         trim: true,
         explicitArray: false
@@ -113,22 +117,15 @@ fex.processFex = (x) => {
             notify.incrException(x.carrierName);
             const errorJson = notify.getErrorJson(err, x);
             handler.buffer.next(errorJson);
-            // ibuki.emit('app-error:any', handler.frameError(err, 'util', 'info', 3))
         } else {
             const notifications = result.TrackReply.Notifications;
             if ((notifications.Severity === 'ERROR') || (notifications.Severity === 'FAILURE')) {
-                // const error = {
-                //     name: 'apiCallError',
-                //     message: 'Fex:' + x.trackingNumber + ' ' + notifications.LocalizedMessage
-                // };
                 const error = Error('Fex:' + x.trackingNumber + ' ' + notifications.LocalizedMessage);
                 notify.incrException(x.carrierName);
                 const errorJson = notify.getErrorJson(error, x);
                 handler.buffer.next(errorJson);
                 // ibuki.emit('app-error:any', handler.frameError(error, 'util', 'info', 4))
             } else {
-                // ibuki.emit('axios-post:fex>api', x);
-                // handleFex(x, result);
                 checkMultiple(x, result);
             }
         }
@@ -140,9 +137,7 @@ function checkMultiple(x, result) {
     if (Array.isArray(trackDetails) && trackDetails.length > 0) {
         const trackingNumberUniqueIdentifier = trackDetails[0].TrackingNumberUniqueIdentifier;
         x.param = x.param1.replace('$$$trackingUid', trackingNumberUniqueIdentifier);
-        // notify.addApiRequest(x);
         ibuki.emit('axios-post:workbench-fex>api', x);
-        // console.log('multiple:',x.rn);
     } else {
         handleFex(x, result);
     }
@@ -196,9 +191,6 @@ function handleFex(x, result) {
             exceptionStatus = 1,
             timeStamp = exception71Event.Timestamp
         );
-        // exception71Event && (
-        //     notify.incrException(x.carrierName)
-        // );
     }
 
     if (statusDescription) {
