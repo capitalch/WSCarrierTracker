@@ -9,8 +9,10 @@
         }],
         "mandrillApiKey": "r96zzCYUlKTLJ8e620HbKQ",
         "fromMail": "noreply@wineshippingalerts.com",
-        "logDateTimeFormat": "YYYY-MM-DD HH:mm:ss",
-        "samplingRateInSec":7
+        "logDatetimeFormat": "YYYY-MM-DD HH:mm:ss",
+        "samplingRateInSec":10,
+        "appKillIntervalInHrs":2,
+        "maxPistonSizeInSec": 10
     },
     "db": {
         "user": "sagarwal",
@@ -28,7 +30,7 @@
     },
     "carriers": {
         "fex": {
-            "piston": 10,
+            "pistonMillis": 10,
             "queue": 50,
             "url": "https://gateway.fedex.com:443/xml",
             "method": "",
@@ -38,7 +40,7 @@
             "meterNumber": "5690072"
         },
         "ups": {
-            "piston": 10,
+            "pistonMillis": 10,
             "queue": 50,
             "url": "https://onlinetools.ups.com/ups.app/xml/Track",
             "accessLicenseNumber": "FC312F9BE62AFF90",
@@ -46,7 +48,7 @@
             "password": "easyship"
         },
         "gso": {
-            "piston": 10,
+            "pistonMillis": 10,
             "queue": 50,
             "tokenUrl": "https://api.gso.com/Rest/v1/token",
             "url": "https://api.gso.com/Rest/v1/TrackShipment",
@@ -68,7 +70,7 @@
             ]
         },
         "tps": {
-            "piston": 20,
+            "pistonMillis": 20,
             "queue": 10,
             "url": "http://production.shippingapis.com/ShippingAPI.dll",
             "userId": "487WINES7756"

@@ -142,7 +142,7 @@ handler.sub10 = ibuki.filterOn('adjust-piston:self').subscribe(
             const queue = notify.getApiQueue(carrierName);
             if (queue > queueSettings) { //increase piston to reduce queue
                 notify.varyPiston(carrierName, 5);
-            } else {
+            } else { //reduce piston
                 notify.varyPiston(carrierName, -5);
             }
         });

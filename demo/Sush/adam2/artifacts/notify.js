@@ -24,7 +24,7 @@ const dbStatus1 = {
 
 const notify = {
     getDatetimeFormat: () => {
-        const f = _.has(settings, 'config.logDateTimeFormat') ? settings.config.logDateTimeFormat : 'YYYY-MM-DD HH:mm:SS'
+        const f = _.has(settings, 'config.logDatetimeFormat') ? settings.config.logDatetimeFormat : 'YYYY-MM-DD HH:mm:SS'
         return (f);
     },
     setTime: (t) => {
