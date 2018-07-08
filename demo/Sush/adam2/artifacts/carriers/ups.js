@@ -101,7 +101,7 @@ ups.processUps = (x) => {
                 const errorDescription = response.Error.ErrorDescription;
                 notify.incrException(x.carrierName);
                 const error = Error('UPS:' + x.trackingNumber + ' ' + errorDescription);
-                const errorJson = notify.getErrorJson(error,x);
+                const errorJson = notify.getErrorJson(error, x);
                 handler.buffer.next(errorJson);
                 ibuki.emit('app-error:any', handler.frameError(error, 'ups', 'info', 7));
             } else {
@@ -199,7 +199,11 @@ function handleUps(x, result) {
         activityJson: activities || null,
         unifiedStatus: statusCode ? tools.getUnifiedStatus(statusCode) || 'noStatus' : 'noStatus'
     };
-    handler.buffer.next(upsJson);
+    if (notify.isSameStatus(x, upsJson)) {
+        notify.addApiDrop(x);
+    } else {
+        handler.buffer.next(upsJson);
+    }
 }
 
 module.exports = ups;

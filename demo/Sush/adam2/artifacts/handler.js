@@ -1,5 +1,6 @@
 'use strict';
 const _ = require('lodash');
+const moment = require('moment');
 const domain = require('domain');
 const rx = require('rxjs');
 const ibuki = require('./ibuki');
@@ -12,7 +13,7 @@ let verbose = settings.config.verbose;
 verbose = verbose || true;
 handler.buffer = new rx.Subject();
 handler.domainError = domain.create();
-const samplingrate = _.has(settings,'config.samplingRateSec') ? settings.config.samplingRateSec * 1000 : 5000
+const samplingrate = _.has(settings, 'config.samplingRateSec') ? settings.config.samplingRateSec * 1000 : 5000
 const isIdle = () => {
     const apiStatus = notify.getApiStatus();
     let carriers = Object.keys(apiStatus);
@@ -26,11 +27,13 @@ const isIdle = () => {
     const dbStatus = notify.getDbStatus();
     let dbRequests = 0;
     carriers = Object.keys(dbStatus);
-    carriers.forEach(x=>{
+    carriers.forEach(x => {
         dbQueue = dbQueue + dbStatus[x].queue();
         dbRequests = dbRequests + dbStatus[x].requests;
     });
-    const ret = ((dbQueue === 0) && (apiQueue === 0) && (toDb === dbRequests));
+    const ret = ((
+        (dbQueue === 0) && (toDb === dbRequests)) && 
+        ((apiQueue === 0) || notify.isSameApiQueueRepeat10()));
     return (ret);
 }
 
@@ -39,8 +42,10 @@ handler.closeIfIdle = () => {
     handler.sub6 = myInterval.subscribe(() => {
         verbose && notify.showAllStatus();
         isIdle() && (
-            notify.setTime('end'), ibuki.emit('db-log:handler>db'), handler.sub6.unsubscribe()
-        );
+            notify.setTime('end'),
+            ibuki.emit('db-log:handler>db'),
+            handler.sub6.unsubscribe()
+        )
     });
 }
 
@@ -85,7 +90,7 @@ handler.frameError = (error, location, severity, index) => {
     return (error);
 }
 
-process.on('exit', function (code) {    
+process.on('exit', function (code) {
     notify.logInfo('Exiting program:Exit code:' +
         code +
         ' Start time:' +
@@ -116,5 +121,15 @@ handler.sub14 = ibuki.filterOn('app-error:any').subscribe(d => {
     }
     // Use telemetry to log error
 });
+
+const subs2 = ibuki.filterOn('kill-process:any>handler').subscribe(
+    (d) => {
+        // const s = moment().format(notify.getDatetimeFormat());
+        notify.setTime('end');
+        notify.logInfo('Killing the process at:'.concat(moment().format(notify.getDatetimeFormat())));
+        subs2.unsubscribe();
+        cleanup(d.data || 103);
+    }
+)
 
 module.exports = handler;

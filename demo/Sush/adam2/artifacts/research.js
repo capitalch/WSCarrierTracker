@@ -1,24 +1,37 @@
 'use strict';
 const rx = require('rxjs');
 const _ = require('lodash');
-const obj = {
-    a: {
-        b: {
-            c: 1
-        }
-    },
-    b: {
-        c: {
-            d: 2
-        }
-    },
-    c: {
-        d: 1
-    }
-};
-const what = _.has(obj,'a.b.c.d');
 
-const myInterval = rx.interval(10000);
+const obj = {
+    a: 1,
+    b: 2,
+    c: 3,
+    d: 4
+};
+var data = "do shash'owania";
+var crypto = require('crypto');
+const hash = crypto.createHash('md5')
+    .update(data)
+    .digest("hex");
+
+// const obj = {
+//     a: {
+//         b: {
+//             c: 1
+//         }
+//     },
+//     b: {
+//         c: {
+//             d: 2
+//         }
+//     },
+//     c: {
+//         d: 1
+//     }
+// };
+// const what = _.has(obj,'a.b.c.d');
+
+// const myInterval = rx.interval(10000);
 // const subs = myInterval.subscribe(() => {
 //     console.log('interval test');
 //     subs.unsubscribe();

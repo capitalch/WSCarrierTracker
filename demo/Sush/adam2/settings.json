@@ -11,10 +11,11 @@
         "fromMail": "noreply@wineshippingalerts.com",
         "logDatetimeFormat": "YYYY-MM-DD HH:mm:ss",
         "samplingRateSec": 5,
-        "appKillIntervalHr": 2,
+        "appKillMin": 120,
         "maxCarrierQueueSize": 300,
         "maxCarrierErrorCount": 100,
-        "maxDbErrorCount":100
+        "maxDbErrorCount":100,
+        "timeoutSec":5
     },
     "db": {
         "user": "sagarwal",

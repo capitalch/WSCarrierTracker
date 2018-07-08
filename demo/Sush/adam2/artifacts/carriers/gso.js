@@ -120,7 +120,11 @@ function handleGso(x) {
         activityJson: transitNotes || null,
         unifiedStatus: gsoTemp.status ? tools.getUnifiedStatus(gsoTemp.status) : 'noStatus'
     }
-    handler.buffer.next(gsoJson);
+    if (notify.isSameStatus(x, gsoJson)) {
+        notify.addApiDrop(x);
+    } else {
+        handler.buffer.next(gsoJson);
+    }
 }
 
 module.exports = gso;

@@ -1,13 +1,27 @@
 let sqlCommands = {
 	getInfos: `
-		SELECT top 1000 NO_ rn,[Shipping Agent Code] shippingAgentCode,[External Tracking No_] trackingNumber,status
+		SELECT top 10000 NO_ rn,[Shipping Agent Code] shippingAgentCode
+		, [External Tracking No_] trackingNumber
+		, status
+		, Status_Date statusDate
+		, Status_Time statusTime
+		, EstimatedDeliveryDate estimatedDeliveryDate
+		, CarrierStatusCode carrierStatusCode
+		, CarrierStatusMessage carrierStatusMessage
+		, SignedForByName signedForByName
+		, ExceptionStatus exceptionStatus
+		, RTS rts
+		, RTSTrackingNo rtsTrackingNo
+		, DAMAGE damage
+		, DAMAGEMSG damageMsg
 		FROM [Wineshipping$PackageinfoNew] 
 		WHERE 
 				NOT [Status] = 'Package returned to shipper' and 
 				--NOT [Status] = 'Delivered' and 
 				NOT [Status] = 'Returned' and			
-				[Shipping Agent Code] in ( 'UPS', 'FEX', 'GSO', 'TMC', 'FCC', 'TPS') 
+				[Shipping Agent Code] in ( 'FEX') 
 				AND NOT [External Tracking No_] = ''
+				order by NO_
 			`,
 	updateInfoAndInsertInPackageHistory: `
 		update Wineshipping$PackageInfoNew
@@ -49,7 +63,7 @@ let sqlCommands = {
 			,@activityJson
 			, 0);
 	`,
-	insertPackageLog:`
+	insertPackageLog: `
 	insert into packageLog(ApiRequests, ApiResponses, ApiErrors, DbRequests, DbResponses, DbErrors, StartTime, EndTime, Duration)
 		values(@ApiRequests, @ApiResponses, @ApiErrors, @DbRequests, @DbResponses, @DbErrors, @StartTime, @EndTime, @Duration);
 	`

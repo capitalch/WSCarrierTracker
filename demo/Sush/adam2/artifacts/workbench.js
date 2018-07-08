@@ -10,6 +10,13 @@ const notify = require('./notify');
 
 let workbench = {};
 
+const appKill = _.has(settings,'config.appKillMin') ? settings.config.appKillMin * 60000 : 2 * 60 * 1000;
+const myInterval = rx.interval(appKill);
+const subs = myInterval.subscribe(() => {
+    subs.unsubscribe();
+    ibuki.emit('kill-process:any>handler');
+});
+
 handler.sub1 = ibuki.filterOn('handle-big-object:db>workbench').subscribe(
     d => {
         let bigObject = d.data;
@@ -65,13 +72,13 @@ handler.sub1 = ibuki.filterOn('handle-big-object:db>workbench').subscribe(
             });
         // notify module is used to notify errors and status
         (gso.length > 0) && (notify.initCarrier('gso', gso)) &&
-            (ibuki.emit('pre-process-gso-carrier:self', gso)); // Pre processing GSO object to get token information
+        (ibuki.emit('pre-process-gso-carrier:self', gso)); // Pre processing GSO object to get token information
         (fex.length > 0) && (notify.initCarrier('fex', fex)) &&
-            (ibuki.emit('process-carrier:self', fex));
+        (ibuki.emit('process-carrier:self', fex));
         (ups.length > 0) && (notify.initCarrier('ups', ups)) &&
-            (ibuki.emit('process-carrier:self', ups));
+        (ibuki.emit('process-carrier:self', ups));
         (tps.length > 0) && (notify.initCarrier('tps', tps)) &&
-            (ibuki.emit('process-carrier:self', tps));
+        (ibuki.emit('process-carrier:self', tps));
         handler.closeIfIdle();
         bigObject = null;
     }
@@ -83,12 +90,12 @@ handler.sub8 = ibuki.filterOn('process-carrier:self').subscribe(d => {
     handler.sub2 = rx.from(carrierInfos)
         .pipe(
             operators
-                .concatMap(x => rx.of(x)
-                    .pipe(operators
-                        .delay(
-                            _.has(settings, 'config.autoPilotPiston') ? (notify.getPiston(x.carrierName) || 10) : 10
-                        ))))
-        
+            .concatMap(x => rx.of(x)
+                .pipe(operators
+                    .delay(
+                        _.has(settings, 'config.autoPilotPiston') ? (notify.getPiston(x.carrierName) || 10) : 10
+                    ))))
+
         .subscribe(
             x => {
                 // notify.addApiRequest(x);

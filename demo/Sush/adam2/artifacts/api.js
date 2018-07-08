@@ -1,5 +1,7 @@
 'use strict';
 const axios = require('axios');
+const _ = require('lodash');
+const settings = require('../settings');
 const ibuki = require('./ibuki');
 const handler = require('./handler');
 const Q = require('q');
@@ -17,6 +19,7 @@ const carriermap = {
     gso: (x) => gso.processGso(x),
     tps: (x) => tps.processTps(x)
 };
+const timeout = _.has(settings,'config.timeoutSec') ? settings.config.timeoutSec * 1000 : 5;
 
 api.getGsoTokenPromises = (info) => {
     const accounts = info.accounts;
@@ -34,17 +37,13 @@ api.getGsoTokenPromises = (info) => {
     return (Q.allSettled(promises)); //Even if error is encountered in a promise still other promises are handled
 }
 
-// handler.sub13 = ibuki.filterOn('axios-post:fex>api').subscribe(d => {
-//     api.axiosPost(d.data);
-// })
-
 handler.sub15 = ibuki.filterOn('axios-post:workbench-fex>api').subscribe(d => {
     const carrierInfo = d.data;
     notify.addApiRequest(carrierInfo);
     axios({
             method: 'post',
             url: carrierInfo.url,
-            timeout: 10000,
+            timeout: timeout,
             data: carrierInfo.param
         })
         .then(res => {
@@ -58,7 +57,7 @@ handler.sub15 = ibuki.filterOn('axios-post:workbench-fex>api').subscribe(d => {
 handler.sub16 = ibuki.filterOn('axios-get:workbench>api').subscribe(d => {
     const carrierInfo = d.data;
     notify.addApiRequest(carrierInfo);
-    carrierInfo.config && (carrierInfo.config.timeout = 10000)
+    carrierInfo.config && (carrierInfo.config.timeout = timeout)
     axios.get(carrierInfo.url, carrierInfo.config)
         .then(res => {
             handleApiResponse(carrierInfo, res);

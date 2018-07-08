@@ -16,7 +16,7 @@ tps.processTps = (x) => {
             notify.pushError(err);
             notify.incrException(x.carrierName);
             const errorJson = notify.getErrorJson(err, x);
-            handler.buffer.next(errorJson);            
+            handler.buffer.next(errorJson);
         } else {
             let error = null;
             if (_.has(result, 'TrackResponse.TrackInfo.Error')) {
@@ -27,7 +27,7 @@ tps.processTps = (x) => {
                 const error = result.Error;
                 error.message = error.message + ' '.concat('TPS:', x.trackingNumber)
             }
-            
+
             if (error) {
                 notify.incrException(x.carrierName);
                 const errorJson = notify.getErrorJson(error, x);
@@ -79,6 +79,10 @@ function handleTps(x, result) {
         activityJson: mNodelist || null,
         unifiedStatus: statusDescription || 'No Status'
     }
-    handler.buffer.next(tpsJson);
+    if (notify.isSameStatus(x, tpsJson)) {
+        notify.addApiDrop(x);
+    } else {
+        handler.buffer.next(tpsJson);
+    }
 }
 module.exports = tps;

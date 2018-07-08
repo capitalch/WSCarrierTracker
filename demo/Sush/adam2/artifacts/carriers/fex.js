@@ -113,7 +113,7 @@ fex.processFex = (x) => {
             notify.incrException(x.carrierName);
             const errorJson = notify.getErrorJson(err, x);
             handler.buffer.next(errorJson);
-            ibuki.emit('app-error:any', handler.frameError(err, 'util', 'info', 3))
+            // ibuki.emit('app-error:any', handler.frameError(err, 'util', 'info', 3))
         } else {
             const notifications = result.TrackReply.Notifications;
             if ((notifications.Severity === 'ERROR') || (notifications.Severity === 'FAILURE')) {
@@ -125,7 +125,7 @@ fex.processFex = (x) => {
                 notify.incrException(x.carrierName);
                 const errorJson = notify.getErrorJson(error, x);
                 handler.buffer.next(errorJson);
-                ibuki.emit('app-error:any', handler.frameError(error, 'util', 'info', 4))
+                // ibuki.emit('app-error:any', handler.frameError(error, 'util', 'info', 4))
             } else {
                 // ibuki.emit('axios-post:fex>api', x);
                 // handleFex(x, result);
@@ -141,7 +141,8 @@ function checkMultiple(x, result) {
         const trackingNumberUniqueIdentifier = trackDetails[0].TrackingNumberUniqueIdentifier;
         x.param = x.param1.replace('$$$trackingUid', trackingNumberUniqueIdentifier);
         // notify.addApiRequest(x);
-        ibuki.emit('axios-post:workbench-fex>api', x); 
+        ibuki.emit('axios-post:workbench-fex>api', x);
+        // console.log('multiple:',x.rn);
     } else {
         handleFex(x, result);
     }
@@ -161,7 +162,7 @@ function handleFex(x, result) {
         returnEvent = null,
         rts = 0,
         rtsTrackingNo = '',
-        statusDescription = '';//trackDetails.StatusDescription;
+        statusDescription = ''; //trackDetails.StatusDescription;
     const checkExceptions = () => {
         // check damage
         const damageEvent = tools.getDamageEvent(events);
@@ -190,8 +191,8 @@ function handleFex(x, result) {
         const exception71Event = tools.getException71Event(events);
         exception71Event && (
             notify.incrException(x.carrierName),
-            
-            exception71Event.StatusExceptionDescription && (statusDescription = exception71Event.StatusExceptionDescription.substr(0,49)),            
+
+            exception71Event.StatusExceptionDescription && (statusDescription = exception71Event.StatusExceptionDescription.substr(0, 49)),
             exceptionStatus = 1,
             timeStamp = exception71Event.Timestamp
         );
@@ -234,8 +235,12 @@ function handleFex(x, result) {
         rn: x.rn,
         activityJson: events || null,
         unifiedStatus: statusCode ? fexStatusCodes[statusCode] || 'noStatus' : 'noStatus'
-    }   
-    handler.buffer.next(fexJson);
+    }
+    if (notify.isSameStatus(x, fexJson)) {
+        notify.addApiDrop(x);
+    } else {
+        handler.buffer.next(fexJson);
+    }
 }
 
 module.exports = fex;
