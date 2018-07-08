@@ -12,7 +12,7 @@ let verbose = settings.config.verbose;
 verbose = verbose || true;
 handler.buffer = new rx.Subject();
 handler.domainError = domain.create();
-const samplingrate = _.has(settings,'config.samplingRateInSec') ? settings.config.samplingRateInSec : 10
+const samplingrate = _.has(settings,'config.samplingRateInSec') ? settings.config.samplingRateInSec * 1000 : 5000
 const isIdle = () => {
     const apiStatus = notify.getApiStatus();
     let carriers = Object.keys(apiStatus);
@@ -35,7 +35,7 @@ const isIdle = () => {
 }
 
 handler.closeIfIdle = () => {
-    const myInterval = rx.interval(samplingrate * 1000);
+    const myInterval = rx.interval(samplingrate);
     handler.sub6 = myInterval.subscribe(() => {
         verbose && notify.showAllStatus();
         isIdle() && (

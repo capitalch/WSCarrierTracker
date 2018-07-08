@@ -10,7 +10,7 @@
         "mandrillApiKey": "r96zzCYUlKTLJ8e620HbKQ",
         "fromMail": "noreply@wineshippingalerts.com",
         "logDateTimeFormat": "YYYY-MM-DD HH:mm:ss",
-        "samplingRateInSec":20
+        "samplingRateInSec":7
     },
     "db": {
         "user": "sagarwal",
