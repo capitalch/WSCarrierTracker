@@ -7,6 +7,7 @@ const notify = require('../notify');
 // const db = require('../db'); //required
 
 const ups = {};
+
 const tools = {
     getUnifiedStatus: (status) => {
         const unifiedObj = {
@@ -84,7 +85,10 @@ const tools = {
     }
 }
 
-ups.processUps = (x) => {
+handler.sub20 = ibuki.filterOn('process-ups:api>ups')
+    .subscribe(d => processUps(d.data));
+
+const processUps = (x) => {
     parseString(x.response, {
         trim: true,
         explicitArray: false

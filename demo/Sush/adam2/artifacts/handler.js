@@ -62,6 +62,12 @@ const subs1 = ibuki.filterOn('mail-processed:email>handler').subscribe(() => {
 function cleanup(code) {
     notify.logInfo(notify.getJobRunStatus());
     notify.logInfo('cleaning up');
+    unsubscribe();
+    handler.pool && handler.pool.close();
+    process.exit(code);
+}
+
+function unsubscribe() {
     handler.sub0 && handler.sub0.unsubscribe();
     handler.sub1 && handler.sub1.unsubscribe();
     handler.sub2 && handler.sub2.unsubscribe();
@@ -80,8 +86,13 @@ function cleanup(code) {
     handler.sub15 && handler.sub15.unsubscribe();
     handler.sub16 && handler.sub16.unsubscribe();
     handler.sub17 && handler.sub17.unsubscribe();
-    handler.pool && handler.pool.close();
-    process.exit(code);
+    handler.sub18 && handler.sub18.unsubscribe();
+    unsubscribe1();
+}
+
+function unsubscribe1() {
+    handler.sub19 && handler.sub19.unsubscribe();
+    handler.sub19 && handler.sub19.unsubscribe();
 }
 
 handler.frameError = (error, location, severity, index) => {

@@ -14,10 +14,10 @@ const tps = require('./carriers/tps');
 
 let api = {};
 const carriermap = {
-    fex: (x) => ibuki.emit('process-fex', x),// fex.processFex(x),
-    ups: (x) => ups.processUps(x),
-    gso: (x) => gso.processGso(x),
-    tps: (x) => tps.processTps(x)
+    fex: (x) => ibuki.emit('process-fex:api>fex', x),// fex.processFex(x),
+    ups: (x) => ibuki.emit('process-ups:api>ups',x), //ups.processUps(x),
+    gso: (x) => ibuki.emit('process-gso:api>gso',x),// gso.processGso(x),
+    tps: (x) => ibuki.emit('process-tps:api>tps',x) //tps.processTps(x)
 };
 const timeout = _.has(settings, 'config.timeoutSec') ? settings.config.timeoutSec * 1000 : 5;
 

@@ -48,7 +48,10 @@ const tools = {
     }
 }
 
-gso.processGso = (x) => {
+handler.sub18 = ibuki.filterOn('process-gso:api>gso')
+    .subscribe(d => processGso(d.data));
+
+const processGso = (x) => {
     if (x.response.StatusCode === 200) {
         handleGso(x);
     } else {
