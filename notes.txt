@@ -5,20 +5,21 @@
                                                 9. Make Api calls asyncronous. Presently they are syncronous.
                                                 20. Provide timestamp in logging data
                                                 21. Check TPS error
-                                                2. Don't update DB if same status                                             
-5. Timeout handling of Piston and Queue
-                                                22. Provide maximum run interval of application                                                
-                                                
+                                                2. Don't update DB if same status 
+                                                22. Provide maximum run interval of application                                                                                                
                                                 12. Killing the application after fixed time.
+                                                7. Check how and why api queue value does not become zero at last.
+                                                8. Provide a mecanism to know the pipeline value Api responses --> database requests                                                                                  
+                                                19. No database saving for errors
+
+5. At Maximum api queue length stop the carrier api request
+6. At maximum number of errors stop carrier api query
+                                               
 15. Verbose true would not write progress report to log files. Only errors are reported.
 16. Responses having error information should be treated as errors.
 
 18. Identify the sub1, sub2,su3 etc. and map them correctly.
-6. logical testing with errors and exceptions etc.
-7. Check how and why api queue value does not become zero at last.
-                                                8. Provide a mecanism to know the pipeline value Api responses --> database requests
-9. ApiQue has value and app goes in infinite loop                                                
-
+                                                
 
 
 //Saby

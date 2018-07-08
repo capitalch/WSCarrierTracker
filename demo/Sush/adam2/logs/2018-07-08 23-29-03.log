@@ -1,0 +1,374 @@
+{"message":"New Job started at 2018-07-08 23:29:05","level":"info"}
+{"message":"fex Item Count: 10000","level":"info"}
+{"message":"fex ApiReq:220 apiRes:183 apiErr:0 apiQue:37 piston:25 statusDrop:0 toDb:104 dbReq:76 DbRes:76 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:220 apiRes:183 apiErr:0 apiQue:37 statusDrop:0 toDb:104 dbReq:76 dbRes:76 dbErr:0 dbQue:28 t:2018-07-08 23:29:23","level":"info"}
+{"message":"fex ApiReq:425 apiRes:370 apiErr:0 apiQue:55 piston:15 statusDrop:0 toDb:220 dbReq:192 DbRes:192 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:425 apiRes:370 apiErr:0 apiQue:55 statusDrop:0 toDb:220 dbReq:192 dbRes:192 dbErr:0 dbQue:28 t:2018-07-08 23:29:28","level":"info"}
+{"message":"fex ApiReq:633 apiRes:573 apiErr:0 apiQue:60 piston:15 statusDrop:0 toDb:364 dbReq:336 DbRes:336 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:633 apiRes:573 apiErr:0 apiQue:60 statusDrop:0 toDb:364 dbReq:336 dbRes:336 dbErr:0 dbQue:28 t:2018-07-08 23:29:33","level":"info"}
+{"message":"fex ApiReq:839 apiRes:789 apiErr:0 apiQue:50 piston:15 statusDrop:0 toDb:518 dbReq:490 DbRes:490 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:839 apiRes:789 apiErr:0 apiQue:50 statusDrop:0 toDb:518 dbReq:490 dbRes:490 dbErr:0 dbQue:28 t:2018-07-08 23:29:38","level":"info"}
+{"message":"fex ApiReq:1046 apiRes:999 apiErr:0 apiQue:47 piston:15 statusDrop:0 toDb:680 dbReq:653 DbRes:653 DbErr:0 dbQue:27","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:1046 apiRes:999 apiErr:0 apiQue:47 statusDrop:0 toDb:680 dbReq:653 dbRes:653 dbErr:0 dbQue:27 t:2018-07-08 23:29:43","level":"info"}
+{"message":"fex ApiReq:1256 apiRes:1204 apiErr:0 apiQue:52 piston:15 statusDrop:0 toDb:833 dbReq:805 DbRes:805 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:1256 apiRes:1204 apiErr:0 apiQue:52 statusDrop:0 toDb:833 dbReq:805 dbRes:805 dbErr:0 dbQue:28 t:2018-07-08 23:29:48","level":"info"}
+{"message":"fex ApiReq:1439 apiRes:1402 apiErr:0 apiQue:37 piston:25 statusDrop:0 toDb:984 dbReq:956 DbRes:956 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:1439 apiRes:1402 apiErr:0 apiQue:37 statusDrop:0 toDb:984 dbReq:956 dbRes:956 dbErr:0 dbQue:28 t:2018-07-08 23:29:53","level":"info"}
+{"message":"fex ApiReq:1676 apiRes:1626 apiErr:0 apiQue:50 piston:15 statusDrop:0 toDb:1141 dbReq:1113 DbRes:1113 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:1676 apiRes:1626 apiErr:0 apiQue:50 statusDrop:0 toDb:1141 dbReq:1113 dbRes:1113 dbErr:0 dbQue:28 t:2018-07-08 23:29:58","level":"info"}
+{"message":"fex ApiReq:1891 apiRes:1850 apiErr:0 apiQue:41 piston:25 statusDrop:0 toDb:1284 dbReq:1256 DbRes:1256 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:1891 apiRes:1850 apiErr:0 apiQue:41 statusDrop:0 toDb:1284 dbReq:1256 dbRes:1256 dbErr:0 dbQue:28 t:2018-07-08 23:30:03","level":"info"}
+{"message":"fex ApiReq:2101 apiRes:2052 apiErr:0 apiQue:49 piston:25 statusDrop:0 toDb:1436 dbReq:1408 DbRes:1408 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:2101 apiRes:2052 apiErr:0 apiQue:49 statusDrop:0 toDb:1436 dbReq:1408 dbRes:1408 dbErr:0 dbQue:28 t:2018-07-08 23:30:08","level":"info"}
+{"message":"fex ApiReq:2326 apiRes:2261 apiErr:0 apiQue:65 piston:15 statusDrop:0 toDb:1568 dbReq:1540 DbRes:1540 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:2326 apiRes:2261 apiErr:0 apiQue:65 statusDrop:0 toDb:1568 dbReq:1540 dbRes:1540 dbErr:0 dbQue:28 t:2018-07-08 23:30:13","level":"info"}
+{"message":"fex ApiReq:2531 apiRes:2478 apiErr:0 apiQue:53 piston:25 statusDrop:0 toDb:1689 dbReq:1661 DbRes:1661 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:2531 apiRes:2478 apiErr:0 apiQue:53 statusDrop:0 toDb:1689 dbReq:1661 dbRes:1661 dbErr:0 dbQue:28 t:2018-07-08 23:30:18","level":"info"}
+{"message":"fex ApiReq:2720 apiRes:2675 apiErr:0 apiQue:45 piston:15 statusDrop:0 toDb:1815 dbReq:1787 DbRes:1787 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:2720 apiRes:2675 apiErr:0 apiQue:45 statusDrop:0 toDb:1815 dbReq:1787 dbRes:1787 dbErr:0 dbQue:28 t:2018-07-08 23:30:23","level":"info"}
+{"message":"fex ApiReq:2949 apiRes:2901 apiErr:0 apiQue:48 piston:25 statusDrop:0 toDb:1948 dbReq:1920 DbRes:1920 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:2949 apiRes:2901 apiErr:0 apiQue:48 statusDrop:0 toDb:1948 dbReq:1920 dbRes:1920 dbErr:0 dbQue:28 t:2018-07-08 23:30:28","level":"info"}
+{"message":"fex ApiReq:3172 apiRes:3112 apiErr:0 apiQue:60 piston:15 statusDrop:0 toDb:2069 dbReq:2041 DbRes:2041 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:3172 apiRes:3112 apiErr:0 apiQue:60 statusDrop:0 toDb:2069 dbReq:2041 dbRes:2041 dbErr:0 dbQue:28 t:2018-07-08 23:30:33","level":"info"}
+{"message":"fex ApiReq:3384 apiRes:3322 apiErr:0 apiQue:62 piston:25 statusDrop:0 toDb:2182 dbReq:2154 DbRes:2154 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:3384 apiRes:3322 apiErr:0 apiQue:62 statusDrop:0 toDb:2182 dbReq:2154 dbRes:2154 dbErr:0 dbQue:28 t:2018-07-08 23:30:38","level":"info"}
+{"message":"fex ApiReq:3588 apiRes:3533 apiErr:0 apiQue:55 piston:25 statusDrop:0 toDb:2313 dbReq:2285 DbRes:2285 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:3588 apiRes:3533 apiErr:0 apiQue:55 statusDrop:0 toDb:2313 dbReq:2285 dbRes:2285 dbErr:0 dbQue:28 t:2018-07-08 23:30:43","level":"info"}
+{"message":"fex ApiReq:3785 apiRes:3735 apiErr:0 apiQue:50 piston:25 statusDrop:0 toDb:2446 dbReq:2418 DbRes:2418 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:3785 apiRes:3735 apiErr:0 apiQue:50 statusDrop:0 toDb:2446 dbReq:2418 dbRes:2418 dbErr:0 dbQue:28 t:2018-07-08 23:30:48","level":"info"}
+{"message":"fex ApiReq:3970 apiRes:3923 apiErr:0 apiQue:47 piston:25 statusDrop:0 toDb:2563 dbReq:2535 DbRes:2535 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:3970 apiRes:3923 apiErr:0 apiQue:47 statusDrop:0 toDb:2563 dbReq:2535 dbRes:2535 dbErr:0 dbQue:28 t:2018-07-08 23:30:53","level":"info"}
+{"message":"fex ApiReq:4160 apiRes:4106 apiErr:0 apiQue:54 piston:25 statusDrop:0 toDb:2687 dbReq:2659 DbRes:2659 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:4160 apiRes:4106 apiErr:0 apiQue:54 statusDrop:0 toDb:2687 dbReq:2659 dbRes:2659 dbErr:0 dbQue:28 t:2018-07-08 23:30:58","level":"info"}
+{"message":"fex ApiReq:4353 apiRes:4298 apiErr:0 apiQue:55 piston:35 statusDrop:0 toDb:2820 dbReq:2792 DbRes:2792 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:4353 apiRes:4298 apiErr:0 apiQue:55 statusDrop:0 toDb:2820 dbReq:2792 dbRes:2792 dbErr:0 dbQue:28 t:2018-07-08 23:31:03","level":"info"}
+{"message":"fex ApiReq:4521 apiRes:4477 apiErr:0 apiQue:44 piston:15 statusDrop:0 toDb:2947 dbReq:2919 DbRes:2919 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:4521 apiRes:4477 apiErr:0 apiQue:44 statusDrop:0 toDb:2947 dbReq:2919 dbRes:2919 dbErr:0 dbQue:28 t:2018-07-08 23:31:08","level":"info"}
+{"message":"fex ApiReq:4720 apiRes:4676 apiErr:0 apiQue:44 piston:15 statusDrop:0 toDb:3064 dbReq:3036 DbRes:3036 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:4720 apiRes:4676 apiErr:0 apiQue:44 statusDrop:0 toDb:3064 dbReq:3036 dbRes:3036 dbErr:0 dbQue:28 t:2018-07-08 23:31:13","level":"info"}
+{"message":"fex ApiReq:4934 apiRes:4884 apiErr:0 apiQue:50 piston:15 statusDrop:0 toDb:3190 dbReq:3162 DbRes:3162 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:4934 apiRes:4884 apiErr:0 apiQue:50 statusDrop:0 toDb:3190 dbReq:3162 dbRes:3162 dbErr:0 dbQue:28 t:2018-07-08 23:31:18","level":"info"}
+{"message":"fex ApiReq:5098 apiRes:5059 apiErr:0 apiQue:39 piston:35 statusDrop:0 toDb:3319 dbReq:3291 DbRes:3291 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:5098 apiRes:5059 apiErr:0 apiQue:39 statusDrop:0 toDb:3319 dbReq:3291 dbRes:3291 dbErr:0 dbQue:28 t:2018-07-08 23:31:23","level":"info"}
+{"message":"fex ApiReq:5283 apiRes:5236 apiErr:0 apiQue:47 piston:15 statusDrop:0 toDb:3438 dbReq:3410 DbRes:3410 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:5283 apiRes:5236 apiErr:0 apiQue:47 statusDrop:0 toDb:3438 dbReq:3410 dbRes:3410 dbErr:0 dbQue:28 t:2018-07-08 23:31:28","level":"info"}
+{"message":"fex ApiReq:5475 apiRes:5418 apiErr:0 apiQue:57 piston:25 statusDrop:0 toDb:3559 dbReq:3548 DbRes:3548 DbErr:0 dbQue:11","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:5475 apiRes:5418 apiErr:0 apiQue:57 statusDrop:0 toDb:3559 dbReq:3548 dbRes:3548 dbErr:0 dbQue:11 t:2018-07-08 23:31:33","level":"info"}
+{"message":"fex ApiReq:5683 apiRes:5615 apiErr:0 apiQue:68 piston:20 statusDrop:0 toDb:3685 dbReq:3670 DbRes:3670 DbErr:0 dbQue:15","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:5683 apiRes:5615 apiErr:0 apiQue:68 statusDrop:0 toDb:3685 dbReq:3670 dbRes:3670 dbErr:0 dbQue:15 t:2018-07-08 23:31:38","level":"info"}
+{"message":"fex ApiReq:5858 apiRes:5816 apiErr:0 apiQue:42 piston:20 statusDrop:0 toDb:3811 dbReq:3783 DbRes:3783 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:5858 apiRes:5816 apiErr:0 apiQue:42 statusDrop:0 toDb:3811 dbReq:3783 dbRes:3783 dbErr:0 dbQue:28 t:2018-07-08 23:31:43","level":"info"}
+{"message":"fex ApiReq:6078 apiRes:6023 apiErr:0 apiQue:55 piston:20 statusDrop:0 toDb:3934 dbReq:3906 DbRes:3906 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:6078 apiRes:6023 apiErr:0 apiQue:55 statusDrop:0 toDb:3934 dbReq:3906 dbRes:3906 dbErr:0 dbQue:28 t:2018-07-08 23:31:48","level":"info"}
+{"message":"fex ApiReq:6260 apiRes:6209 apiErr:0 apiQue:51 piston:20 statusDrop:0 toDb:4050 dbReq:4022 DbRes:4022 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:6260 apiRes:6209 apiErr:0 apiQue:51 statusDrop:0 toDb:4050 dbReq:4022 dbRes:4022 dbErr:0 dbQue:28 t:2018-07-08 23:31:53","level":"info"}
+{"message":"fex ApiReq:6455 apiRes:6411 apiErr:0 apiQue:44 piston:30 statusDrop:0 toDb:4198 dbReq:4170 DbRes:4170 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:6455 apiRes:6411 apiErr:0 apiQue:44 statusDrop:0 toDb:4198 dbReq:4170 dbRes:4170 dbErr:0 dbQue:28 t:2018-07-08 23:31:58","level":"info"}
+{"message":"fex ApiReq:6652 apiRes:6608 apiErr:0 apiQue:44 piston:20 statusDrop:0 toDb:4324 dbReq:4296 DbRes:4296 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:6652 apiRes:6608 apiErr:0 apiQue:44 statusDrop:0 toDb:4324 dbReq:4296 dbRes:4296 dbErr:0 dbQue:28 t:2018-07-08 23:32:03","level":"info"}
+{"message":"timeout of 10000ms exceeded. Carrier name:fex, Tracking number:415215347010","level":"info"}
+{"message":"fex ApiReq:6843 apiRes:6801 apiErr:1 apiQue:41 piston:20 statusDrop:0 toDb:4472 dbReq:4444 DbRes:4444 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:6843 apiRes:6801 apiErr:1 apiQue:41 statusDrop:0 toDb:4472 dbReq:4444 dbRes:4444 dbErr:0 dbQue:28 t:2018-07-08 23:32:08","level":"info"}
+{"message":"fex ApiReq:7048 apiRes:6998 apiErr:1 apiQue:49 piston:30 statusDrop:0 toDb:4617 dbReq:4601 DbRes:4601 DbErr:0 dbQue:16","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:7048 apiRes:6998 apiErr:1 apiQue:49 statusDrop:0 toDb:4617 dbReq:4601 dbRes:4601 dbErr:0 dbQue:16 t:2018-07-08 23:32:13","level":"info"}
+{"message":"fex ApiReq:7254 apiRes:7198 apiErr:1 apiQue:55 piston:20 statusDrop:0 toDb:4755 dbReq:4733 DbRes:4733 DbErr:0 dbQue:22","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:7254 apiRes:7198 apiErr:1 apiQue:55 statusDrop:0 toDb:4755 dbReq:4733 dbRes:4733 dbErr:0 dbQue:22 t:2018-07-08 23:32:18","level":"info"}
+{"message":"fex ApiReq:7442 apiRes:7386 apiErr:1 apiQue:55 piston:10 statusDrop:0 toDb:4900 dbReq:4872 DbRes:4872 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:7442 apiRes:7386 apiErr:1 apiQue:55 statusDrop:0 toDb:4900 dbReq:4872 dbRes:4872 dbErr:0 dbQue:28 t:2018-07-08 23:32:23","level":"info"}
+{"message":"fex ApiReq:7672 apiRes:7617 apiErr:1 apiQue:54 piston:10 statusDrop:0 toDb:5065 dbReq:5043 DbRes:5043 DbErr:0 dbQue:22","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:7672 apiRes:7617 apiErr:1 apiQue:54 statusDrop:0 toDb:5065 dbReq:5043 dbRes:5043 dbErr:0 dbQue:22 t:2018-07-08 23:32:28","level":"info"}
+{"message":"fex ApiReq:7915 apiRes:7858 apiErr:1 apiQue:56 piston:10 statusDrop:0 toDb:5238 dbReq:5210 DbRes:5210 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:7915 apiRes:7858 apiErr:1 apiQue:56 statusDrop:0 toDb:5238 dbReq:5210 dbRes:5210 dbErr:0 dbQue:28 t:2018-07-08 23:32:33","level":"info"}
+{"message":"fex ApiReq:8148 apiRes:8102 apiErr:1 apiQue:45 piston:30 statusDrop:0 toDb:5395 dbReq:5367 DbRes:5367 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:8148 apiRes:8102 apiErr:1 apiQue:45 statusDrop:0 toDb:5395 dbReq:5367 dbRes:5367 dbErr:0 dbQue:28 t:2018-07-08 23:32:38","level":"info"}
+{"message":"fex ApiReq:8353 apiRes:8312 apiErr:1 apiQue:40 piston:20 statusDrop:0 toDb:5556 dbReq:5528 DbRes:5528 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:8353 apiRes:8312 apiErr:1 apiQue:40 statusDrop:0 toDb:5556 dbReq:5528 dbRes:5528 dbErr:0 dbQue:28 t:2018-07-08 23:32:43","level":"info"}
+{"message":"fex ApiReq:8564 apiRes:8516 apiErr:1 apiQue:47 piston:20 statusDrop:0 toDb:5696 dbReq:5668 DbRes:5668 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:8564 apiRes:8516 apiErr:1 apiQue:47 statusDrop:0 toDb:5696 dbReq:5668 dbRes:5668 dbErr:0 dbQue:28 t:2018-07-08 23:32:48","level":"info"}
+{"message":"fex ApiReq:8763 apiRes:8720 apiErr:1 apiQue:42 piston:30 statusDrop:0 toDb:5841 dbReq:5813 DbRes:5813 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:8763 apiRes:8720 apiErr:1 apiQue:42 statusDrop:0 toDb:5841 dbReq:5813 dbRes:5813 dbErr:0 dbQue:28 t:2018-07-08 23:32:53","level":"info"}
+{"message":"fex ApiReq:8952 apiRes:8900 apiErr:1 apiQue:51 piston:30 statusDrop:0 toDb:5965 dbReq:5937 DbRes:5937 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:8952 apiRes:8900 apiErr:1 apiQue:51 statusDrop:0 toDb:5965 dbReq:5937 dbRes:5937 dbErr:0 dbQue:28 t:2018-07-08 23:32:58","level":"info"}
+{"message":"fex ApiReq:9133 apiRes:9086 apiErr:1 apiQue:46 piston:20 statusDrop:0 toDb:6094 dbReq:6066 DbRes:6066 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:9133 apiRes:9086 apiErr:1 apiQue:46 statusDrop:0 toDb:6094 dbReq:6066 dbRes:6066 dbErr:0 dbQue:28 t:2018-07-08 23:33:03","level":"info"}
+{"message":"fex ApiReq:9325 apiRes:9281 apiErr:1 apiQue:43 piston:20 statusDrop:0 toDb:6227 dbReq:6200 DbRes:6200 DbErr:0 dbQue:27","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:9325 apiRes:9281 apiErr:1 apiQue:43 statusDrop:0 toDb:6227 dbReq:6200 dbRes:6200 dbErr:0 dbQue:27 t:2018-07-08 23:33:08","level":"info"}
+{"message":"fex ApiReq:9510 apiRes:9455 apiErr:1 apiQue:54 piston:30 statusDrop:0 toDb:6365 dbReq:6337 DbRes:6337 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:9510 apiRes:9455 apiErr:1 apiQue:54 statusDrop:0 toDb:6365 dbReq:6337 dbRes:6337 dbErr:0 dbQue:28 t:2018-07-08 23:33:13","level":"info"}
+{"message":"fex ApiReq:9699 apiRes:9645 apiErr:1 apiQue:53 piston:20 statusDrop:0 toDb:6500 dbReq:6479 DbRes:6479 DbErr:0 dbQue:21","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:9699 apiRes:9645 apiErr:1 apiQue:53 statusDrop:0 toDb:6500 dbReq:6479 dbRes:6479 dbErr:0 dbQue:21 t:2018-07-08 23:33:18","level":"info"}
+{"message":"fex ApiReq:9857 apiRes:9816 apiErr:1 apiQue:40 piston:30 statusDrop:0 toDb:6636 dbReq:6608 DbRes:6608 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:9857 apiRes:9816 apiErr:1 apiQue:40 statusDrop:0 toDb:6636 dbReq:6608 dbRes:6608 dbErr:0 dbQue:28 t:2018-07-08 23:33:23","level":"info"}
+{"message":"fex ApiReq:10025 apiRes:10012 apiErr:1 apiQue:12 piston:10 statusDrop:0 toDb:6774 dbReq:6746 DbRes:6746 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:10025 apiRes:10012 apiErr:1 apiQue:12 statusDrop:0 toDb:6774 dbReq:6746 dbRes:6746 dbErr:0 dbQue:28 t:2018-07-08 23:33:28","level":"info"}
+{"message":"fex ApiReq:10025 apiRes:10024 apiErr:1 apiQue:0 piston:0 statusDrop:0 toDb:6921 dbReq:6893 DbRes:6893 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:10025 apiRes:10024 apiErr:1 apiQue:0 statusDrop:0 toDb:6921 dbReq:6893 dbRes:6893 dbErr:0 dbQue:28 t:2018-07-08 23:33:33","level":"info"}
+{"message":"fex ApiReq:10025 apiRes:10024 apiErr:1 apiQue:0 piston:0 statusDrop:0 toDb:7055 dbReq:7027 DbRes:7027 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:10025 apiRes:10024 apiErr:1 apiQue:0 statusDrop:0 toDb:7055 dbReq:7027 dbRes:7027 dbErr:0 dbQue:28 t:2018-07-08 23:33:38","level":"info"}
+{"message":"fex ApiReq:10025 apiRes:10024 apiErr:1 apiQue:0 piston:0 statusDrop:0 toDb:7218 dbReq:7190 DbRes:7190 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:10025 apiRes:10024 apiErr:1 apiQue:0 statusDrop:0 toDb:7218 dbReq:7190 dbRes:7190 dbErr:0 dbQue:28 t:2018-07-08 23:33:43","level":"info"}
+{"message":"fex ApiReq:10025 apiRes:10024 apiErr:1 apiQue:0 piston:0 statusDrop:0 toDb:7358 dbReq:7330 DbRes:7330 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:10025 apiRes:10024 apiErr:1 apiQue:0 statusDrop:0 toDb:7358 dbReq:7330 dbRes:7330 dbErr:0 dbQue:28 t:2018-07-08 23:33:48","level":"info"}
+{"message":"fex ApiReq:10025 apiRes:10024 apiErr:1 apiQue:0 piston:0 statusDrop:0 toDb:7492 dbReq:7464 DbRes:7464 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:10025 apiRes:10024 apiErr:1 apiQue:0 statusDrop:0 toDb:7492 dbReq:7464 dbRes:7464 dbErr:0 dbQue:28 t:2018-07-08 23:33:53","level":"info"}
+{"message":"fex ApiReq:10025 apiRes:10024 apiErr:1 apiQue:0 piston:0 statusDrop:0 toDb:7639 dbReq:7614 DbRes:7614 DbErr:0 dbQue:25","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:10025 apiRes:10024 apiErr:1 apiQue:0 statusDrop:0 toDb:7639 dbReq:7614 dbRes:7614 dbErr:0 dbQue:25 t:2018-07-08 23:33:58","level":"info"}
+{"message":"fex ApiReq:10025 apiRes:10024 apiErr:1 apiQue:0 piston:0 statusDrop:0 toDb:7787 dbReq:7759 DbRes:7759 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:10025 apiRes:10024 apiErr:1 apiQue:0 statusDrop:0 toDb:7787 dbReq:7759 dbRes:7759 dbErr:0 dbQue:28 t:2018-07-08 23:34:03","level":"info"}
+{"message":"fex ApiReq:10025 apiRes:10024 apiErr:1 apiQue:0 piston:0 statusDrop:0 toDb:7925 dbReq:7907 DbRes:7907 DbErr:0 dbQue:18","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:10025 apiRes:10024 apiErr:1 apiQue:0 statusDrop:0 toDb:7925 dbReq:7907 dbRes:7907 dbErr:0 dbQue:18 t:2018-07-08 23:34:08","level":"info"}
+{"message":"fex ApiReq:10025 apiRes:10024 apiErr:1 apiQue:0 piston:0 statusDrop:0 toDb:8074 dbReq:8046 DbRes:8046 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:10025 apiRes:10024 apiErr:1 apiQue:0 statusDrop:0 toDb:8074 dbReq:8046 dbRes:8046 dbErr:0 dbQue:28 t:2018-07-08 23:34:13","level":"info"}
+{"message":"fex ApiReq:10025 apiRes:10024 apiErr:1 apiQue:0 piston:0 statusDrop:0 toDb:8211 dbReq:8187 DbRes:8187 DbErr:0 dbQue:24","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:10025 apiRes:10024 apiErr:1 apiQue:0 statusDrop:0 toDb:8211 dbReq:8187 dbRes:8187 dbErr:0 dbQue:24 t:2018-07-08 23:34:18","level":"info"}
+{"message":"fex ApiReq:10025 apiRes:10024 apiErr:1 apiQue:0 piston:0 statusDrop:0 toDb:8348 dbReq:8320 DbRes:8320 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:10025 apiRes:10024 apiErr:1 apiQue:0 statusDrop:0 toDb:8348 dbReq:8320 dbRes:8320 dbErr:0 dbQue:28 t:2018-07-08 23:34:23","level":"info"}
+{"message":"fex ApiReq:10025 apiRes:10024 apiErr:1 apiQue:0 piston:0 statusDrop:0 toDb:8482 dbReq:8454 DbRes:8454 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:10025 apiRes:10024 apiErr:1 apiQue:0 statusDrop:0 toDb:8482 dbReq:8454 dbRes:8454 dbErr:0 dbQue:28 t:2018-07-08 23:34:28","level":"info"}
+{"message":"fex ApiReq:10025 apiRes:10024 apiErr:1 apiQue:0 piston:0 statusDrop:0 toDb:8616 dbReq:8588 DbRes:8588 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:10025 apiRes:10024 apiErr:1 apiQue:0 statusDrop:0 toDb:8616 dbReq:8588 dbRes:8588 dbErr:0 dbQue:28 t:2018-07-08 23:34:33","level":"info"}
+{"message":"fex ApiReq:10025 apiRes:10024 apiErr:1 apiQue:0 piston:0 statusDrop:0 toDb:8749 dbReq:8734 DbRes:8734 DbErr:0 dbQue:15","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:10025 apiRes:10024 apiErr:1 apiQue:0 statusDrop:0 toDb:8749 dbReq:8734 dbRes:8734 dbErr:0 dbQue:15 t:2018-07-08 23:34:38","level":"info"}
+{"message":"fex ApiReq:10025 apiRes:10024 apiErr:1 apiQue:0 piston:0 statusDrop:0 toDb:8879 dbReq:8868 DbRes:8868 DbErr:0 dbQue:11","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:10025 apiRes:10024 apiErr:1 apiQue:0 statusDrop:0 toDb:8879 dbReq:8868 dbRes:8868 dbErr:0 dbQue:11 t:2018-07-08 23:34:43","level":"info"}
+{"message":"fex ApiReq:10025 apiRes:10024 apiErr:1 apiQue:0 piston:0 statusDrop:0 toDb:9022 dbReq:8994 DbRes:8994 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:10025 apiRes:10024 apiErr:1 apiQue:0 statusDrop:0 toDb:9022 dbReq:8994 dbRes:8994 dbErr:0 dbQue:28 t:2018-07-08 23:34:48","level":"info"}
+{"message":"fex ApiReq:10025 apiRes:10024 apiErr:1 apiQue:0 piston:0 statusDrop:0 toDb:9159 dbReq:9131 DbRes:9131 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:10025 apiRes:10024 apiErr:1 apiQue:0 statusDrop:0 toDb:9159 dbReq:9131 dbRes:9131 dbErr:0 dbQue:28 t:2018-07-08 23:34:53","level":"info"}
+{"message":"fex ApiReq:10025 apiRes:10024 apiErr:1 apiQue:0 piston:0 statusDrop:0 toDb:9287 dbReq:9259 DbRes:9259 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:10025 apiRes:10024 apiErr:1 apiQue:0 statusDrop:0 toDb:9287 dbReq:9259 dbRes:9259 dbErr:0 dbQue:28 t:2018-07-08 23:34:58","level":"info"}
+{"message":"fex ApiReq:10025 apiRes:10024 apiErr:1 apiQue:0 piston:0 statusDrop:0 toDb:9412 dbReq:9384 DbRes:9384 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:10025 apiRes:10024 apiErr:1 apiQue:0 statusDrop:0 toDb:9412 dbReq:9384 dbRes:9384 dbErr:0 dbQue:28 t:2018-07-08 23:35:03","level":"info"}
+{"message":"fex ApiReq:10025 apiRes:10024 apiErr:1 apiQue:0 piston:0 statusDrop:0 toDb:9553 dbReq:9526 DbRes:9526 DbErr:0 dbQue:27","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:10025 apiRes:10024 apiErr:1 apiQue:0 statusDrop:0 toDb:9553 dbReq:9526 dbRes:9526 dbErr:0 dbQue:27 t:2018-07-08 23:35:08","level":"info"}
+{"message":"fex ApiReq:10025 apiRes:10024 apiErr:1 apiQue:0 piston:0 statusDrop:0 toDb:9687 dbReq:9659 DbRes:9659 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:10025 apiRes:10024 apiErr:1 apiQue:0 statusDrop:0 toDb:9687 dbReq:9659 dbRes:9659 dbErr:0 dbQue:28 t:2018-07-08 23:35:13","level":"info"}
+{"message":"fex ApiReq:10025 apiRes:10024 apiErr:1 apiQue:0 piston:0 statusDrop:0 toDb:9821 dbReq:9794 DbRes:9794 DbErr:0 dbQue:27","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:10025 apiRes:10024 apiErr:1 apiQue:0 statusDrop:0 toDb:9821 dbReq:9794 dbRes:9794 dbErr:0 dbQue:27 t:2018-07-08 23:35:18","level":"info"}
+{"message":"fex ApiReq:10025 apiRes:10024 apiErr:1 apiQue:0 piston:0 statusDrop:0 toDb:9965 dbReq:9952 DbRes:9952 DbErr:0 dbQue:13","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:10025 apiRes:10024 apiErr:1 apiQue:0 statusDrop:0 toDb:9965 dbReq:9952 dbRes:9952 dbErr:0 dbQue:13 t:2018-07-08 23:35:23","level":"info"}
+{"message":"fex ApiReq:10025 apiRes:10024 apiErr:1 apiQue:0 piston:0 statusDrop:0 toDb:10000 dbReq:10000 DbRes:10000 DbErr:0 dbQue:0","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:10025 apiRes:10024 apiErr:1 apiQue:0 statusDrop:0 toDb:10000 dbReq:10000 dbRes:10000 dbErr:0 dbQue:0 t:2018-07-08 23:35:28","level":"info"}
+{"message":"Mandrill mail sent","level":"info"}

@@ -79,8 +79,9 @@ function handleApiError(carrierInfo, err) {
     notify.pushError(err);
     notify.addApiError(carrierInfo);
     notify.incrException(carrierInfo.carrierName);
-    const errorJson = notify.getErrorJson(err, carrierInfo);
-    handler.buffer.next(errorJson);
+    // const errorJson = notify.getErrorJson(err, carrierInfo);
+    // handler.buffer.next(errorJson);
+    notify.addApiErrDrop(carrierInfo);
 }
 
 module.exports = api;

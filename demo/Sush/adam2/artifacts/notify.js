@@ -107,6 +107,9 @@ const notify = {
     addApiStatusDrop: (info) => {
         notifyData.apiStatus[info.carrierName].statusDrop++;
     },
+    addApiErrDrop:(info)=>{
+        notifyData.apiStatus[info.carrierName].errDrop++;
+    },
     addDbRequest: (carrierName) => {
         notifyData.dbStatus[carrierName].requests++;
     },
@@ -139,6 +142,7 @@ const notify = {
             apiErr: 0,
             apiQue: 0,
             statusDrop: 0,
+            errDrop:0,
             toDb: 0,
             dbReq: 0,
             dbRes: 0,
@@ -151,6 +155,7 @@ const notify = {
             allStatus.apiErr = allStatus.apiErr + notifyData.apiStatus[x].errors;
             allStatus.apiQue = allStatus.apiQue + notifyData.apiStatus[x].queue();
             allStatus.statusDrop = allStatus.statusDrop + notifyData.apiStatus[x].statusDrop;
+            allStatus.errDrop = allStatus.errDrop + notifyData.apiStatus[x].errDrop;
             allStatus.toDb = allStatus.toDb + notifyData.apiStatus[x].toDb;
             allStatus.dbReq = allStatus.dbReq + notifyData.dbStatus[x].requests;
             allStatus.dbRes = allStatus.dbRes + notifyData.dbStatus[x].responses;
@@ -162,6 +167,7 @@ const notify = {
                 ' apiQue:', notifyData.apiStatus[x].queue(),
                 ' piston:', notifyData.apiStatus[x].piston,
                 ' statusDrop:', notifyData.apiStatus[x].statusDrop,
+                ' errDrop:', notifyData.apiStatus[x].errDrop,
                 ' toDb:', notifyData.apiStatus[x].toDb,
                 ' dbReq:', notifyData.dbStatus[x].requests, ' DbRes:',
                 notifyData.dbStatus[x].responses, ' DbErr:', notifyData.dbStatus[x].errors,
@@ -176,6 +182,7 @@ const notify = {
             ' apiQue:', allStatus.apiQue,
             // ' Total Piston:' + notifyData.apiStatus[x].piston +
             ' statusDrop:', allStatus.statusDrop,
+            ' errDrop:', allStatus.errDrop,
             ' toDb:', allStatus.toDb,
             ' dbReq:', allStatus.dbReq,
             ' dbRes:', allStatus.dbRes,
@@ -194,6 +201,7 @@ const notify = {
             apiErr: 0,
             apiQue: 0,
             statusDrop: 0,
+            errDrop:0,
             toDb: 0,
             dbReq: 0,
             dbRes: 0,
@@ -209,6 +217,7 @@ const notify = {
             status.apiErr = status.apiErr + notifyData.apiStatus[x].errors;
             status.apiQue = status.apiQue + notifyData.apiStatus[x].queue();
             status.statusDrop = status.statusDrop + notifyData.apiStatus[x].statusDrop;
+            status.errDrop = status.errDrop + notifyData.apiStatus[x].errDrop;
             status.toDb = status.toDb + notifyData.apiStatus[x].toDb;
             status.dbReq = status.dbReq + notifyData.dbStatus[x].requests;
             status.dbRes = status.dbRes + notifyData.dbStatus[x].responses;
