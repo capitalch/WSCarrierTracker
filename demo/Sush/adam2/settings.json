@@ -10,9 +10,11 @@
         "mandrillApiKey": "r96zzCYUlKTLJ8e620HbKQ",
         "fromMail": "noreply@wineshippingalerts.com",
         "logDatetimeFormat": "YYYY-MM-DD HH:mm:ss",
-        "samplingRateInSec":10,
-        "appKillIntervalInHrs":2,
-        "maxPistonSizeInSec": 10
+        "samplingRateSec": 5,
+        "appKillIntervalHr": 2,
+        "maxCarrierQueueSize": 300,
+        "maxCarrierErrorCount": 100,
+        "maxDbErrorCount":100
     },
     "db": {
         "user": "sagarwal",
@@ -48,7 +50,7 @@
             "password": "easyship"
         },
         "gso": {
-            "pistonMillis": 10,
+            "pistonMillis": 20,
             "queue": 50,
             "tokenUrl": "https://api.gso.com/Rest/v1/token",
             "url": "https://api.gso.com/Rest/v1/TrackShipment",

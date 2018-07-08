@@ -4,11 +4,11 @@ const ibuki = require('./ibuki');
 const handler = require('./handler');
 const Q = require('q');
 const notify = require('./notify');
+const db = require('./db'); // needed
 const fex = require('./carriers/fex');
 const gso = require('./carriers/gso');
 const ups = require('./carriers/ups');
 const tps = require('./carriers/tps');
-// const db = require('./db'); // needed
 
 let api = {};
 const carriermap = {
@@ -38,9 +38,15 @@ api.getGsoTokenPromises = (info) => {
 //     api.axiosPost(d.data);
 // })
 
-handler.sub15 = ibuki.filterOn('axios-post:workbench-fex>api').subscribe(d=>{
+handler.sub15 = ibuki.filterOn('axios-post:workbench-fex>api').subscribe(d => {
     const carrierInfo = d.data;
-    axios.post(carrierInfo.url, carrierInfo.param)
+    notify.addApiRequest(carrierInfo);
+    axios({
+            method: 'post',
+            url: carrierInfo.url,
+            timeout: 10000,
+            data: carrierInfo.param
+        })
         .then(res => {
             handleApiResponse(carrierInfo, res);
         })
@@ -49,8 +55,10 @@ handler.sub15 = ibuki.filterOn('axios-post:workbench-fex>api').subscribe(d=>{
         });
 })
 
-handler.sub16 = ibuki.filterOn('axios-get:workbench>api').subscribe(d=>{
+handler.sub16 = ibuki.filterOn('axios-get:workbench>api').subscribe(d => {
     const carrierInfo = d.data;
+    notify.addApiRequest(carrierInfo);
+    carrierInfo.config && (carrierInfo.config.timeout = 10000)
     axios.get(carrierInfo.url, carrierInfo.config)
         .then(res => {
             handleApiResponse(carrierInfo, res);

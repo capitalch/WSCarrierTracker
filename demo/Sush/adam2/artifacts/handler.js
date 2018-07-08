@@ -12,7 +12,7 @@ let verbose = settings.config.verbose;
 verbose = verbose || true;
 handler.buffer = new rx.Subject();
 handler.domainError = domain.create();
-const samplingrate = _.has(settings,'config.samplingRateInSec') ? settings.config.samplingRateInSec * 1000 : 5000
+const samplingrate = _.has(settings,'config.samplingRateSec') ? settings.config.samplingRateSec * 1000 : 5000
 const isIdle = () => {
     const apiStatus = notify.getApiStatus();
     let carriers = Object.keys(apiStatus);
@@ -47,21 +47,16 @@ handler.closeIfIdle = () => {
 const subs = ibuki.filterOn('cleanup:db>handler').subscribe(() => {
     subs.unsubscribe();
     ibuki.emit('send-status-mail:handler>email');
-    // cleanup(0);
 });
 
 const subs1 = ibuki.filterOn('mail-processed:email>handler').subscribe(() => {
     subs1.unsubscribe();
     cleanup(0);
-    // process.exit(0);
 });
 
 function cleanup(code) {
-    // notify.showAllStatus();
     notify.logInfo(notify.getJobRunStatus());
     notify.logInfo('cleaning up');
-    // console.log(notify.getJobRunStatus());
-    // console.log('cleaning up');
     handler.sub0 && handler.sub0.unsubscribe();
     handler.sub1 && handler.sub1.unsubscribe();
     handler.sub2 && handler.sub2.unsubscribe();
@@ -90,8 +85,7 @@ handler.frameError = (error, location, severity, index) => {
     return (error);
 }
 
-process.on('exit', function (code) {
-    // console.log('Exiting program:Exit code:', code, ' Start time:', notify.getTime('start'), ' End time:', notify.getTime('end'), ' Duration (hh:mm:ss)', notify.getJobRunDuration());
+process.on('exit', function (code) {    
     notify.logInfo('Exiting program:Exit code:' +
         code +
         ' Start time:' +
@@ -101,17 +95,14 @@ process.on('exit', function (code) {
         ' Duration (hh:mm:ss)' +
         notify.getJobRunDuration()
     );
-    // notify.showAllErrors();
 });
 
 process.on('uncaughtException', function (err) {
-    // console.log('Uncaught exception:', err.stack || '');
     notify.logInfo('Uncaught exception: ' + err.stack || '');
     cleanup(101);
 });
 
 handler.domainError.on('error', function (err) {
-    // console.log('Domain exception:', err.stack || err || '');
     notify.logInfo('Domain exception: ' + err.stack || err || '');
     cleanup(102);
     //use telemetry to log error

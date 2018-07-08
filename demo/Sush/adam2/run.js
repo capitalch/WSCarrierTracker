@@ -2,7 +2,7 @@
 const ibuki = require('./artifacts/ibuki');
 const handler = require('./artifacts/handler');
 const notify = require('./artifacts/notify');
-const db = require('./artifacts/db');
+const db = require('./artifacts/db'); //needed
 // const research = require('./artifacts/research');
 
 

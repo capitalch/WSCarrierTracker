@@ -7,10 +7,6 @@ const _ = require('lodash');
 // let verbose = settings.config.verbose;
 // verbose = verbose || true;
 
-// let errors = [];
-// const apiStatus = {};
-// let notify = {};
-// notify.datetimeFormat = _.has(settings, 'config.logDateTimeFormat') ? settings.config.logDateTimeFormat : 'YYYY-MM-DD HH:mm:SS';
 const timing = {};
 const dbStatus1 = {
     dbRequests: 0,
@@ -70,7 +66,8 @@ const notify = {
     getCarrierStatus: () => notifyData.carrierStatus,
     initCarrier: (carrierName, infos) => {
         notifyData.apiStatus[carrierName].count = infos.length;
-        notifyData.apiStatus[carrierName].piston = settings.carriers[carrierName].piston || 10;
+        const prop = 'carriers.'.concat(carrierName,'.pistonMillis');
+        notifyData.apiStatus[carrierName].piston = _.has(settings,prop) ? settings.carriers[carrierName].pistonMillis || 10 : 10;
         logger.info(carrierName + ' Item Count: ' + notifyData.apiStatus[carrierName].count);
         // verbose && (console.log(carrierName, 'Item Count :', apiStatus[carrierName].count));
         return (true);

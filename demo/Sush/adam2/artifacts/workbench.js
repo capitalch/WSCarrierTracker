@@ -1,4 +1,5 @@
 'use strict';
+const _ = require('lodash');
 const ibuki = require('./ibuki');
 const handler = require('./handler');
 const settings = require('../settings.json');
@@ -85,11 +86,12 @@ handler.sub8 = ibuki.filterOn('process-carrier:self').subscribe(d => {
                 .concatMap(x => rx.of(x)
                     .pipe(operators
                         .delay(
-                            settings.config.autoPilotPiston ? (notify.getPiston(x.carrierName) || 10) : 10
+                            _.has(settings, 'config.autoPilotPiston') ? (notify.getPiston(x.carrierName) || 10) : 10
                         ))))
+        
         .subscribe(
             x => {
-                notify.addApiRequest(x);
+                // notify.addApiRequest(x);
                 if (x.method === 'axiosPost') {
                     ibuki.emit('axios-post:workbench-fex>api', x);
                 } else {

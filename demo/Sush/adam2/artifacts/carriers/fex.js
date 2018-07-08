@@ -140,7 +140,7 @@ function checkMultiple(x, result) {
     if (Array.isArray(trackDetails) && trackDetails.length > 0) {
         const trackingNumberUniqueIdentifier = trackDetails[0].TrackingNumberUniqueIdentifier;
         x.param = x.param1.replace('$$$trackingUid', trackingNumberUniqueIdentifier);
-        notify.addApiRequest(x);
+        // notify.addApiRequest(x);
         ibuki.emit('axios-post:workbench-fex>api', x); 
     } else {
         handleFex(x, result);
