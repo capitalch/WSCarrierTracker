@@ -80,3 +80,76 @@
 {"message":"timeout of 5000ms exceeded. Carrier name:fex, Tracking number:415215310251","level":"info"}
 {"message":"timeout of 5000ms exceeded. Carrier name:fex, Tracking number:415215311361","level":"info"}
 {"message":"timeout of 5000ms exceeded. Carrier name:fex, Tracking number:415215311269","level":"info"}
+{"message":"timeout of 5000ms exceeded. Carrier name:fex, Tracking number:415215313206","level":"info"}
+{"message":"fex ApiReq:2881 apiRes:2823 apiErr:16 apiQue:42 piston:35 statusDrop:495 toDb:1785 dbReq:1757 DbRes:1757 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:2881 apiRes:2823 apiErr:16 apiQue:42 statusDrop:495 toDb:1785 dbReq:1757 dbRes:1757 dbErr:0 dbQue:28 t:2018-07-08 23:11:48","level":"info"}
+{"message":"timeout of 5000ms exceeded. Carrier name:fex, Tracking number:415215312703","level":"info"}
+{"message":"timeout of 5000ms exceeded. Carrier name:fex, Tracking number:415215312552","level":"info"}
+{"message":"timeout of 5000ms exceeded. Carrier name:fex, Tracking number:415215311718","level":"info"}
+{"message":"timeout of 5000ms exceeded. Carrier name:fex, Tracking number:415215311773","level":"info"}
+{"message":"timeout of 5000ms exceeded. Carrier name:fex, Tracking number:415215311740","level":"info"}
+{"message":"timeout of 5000ms exceeded. Carrier name:fex, Tracking number:415215311979","level":"info"}
+{"message":"timeout of 5000ms exceeded. Carrier name:fex, Tracking number:415205508212","level":"info"}
+{"message":"timeout of 5000ms exceeded. Carrier name:fex, Tracking number:415215313640","level":"info"}
+{"message":"timeout of 5000ms exceeded. Carrier name:fex, Tracking number:415215313478","level":"info"}
+{"message":"fex ApiReq:3055 apiRes:2982 apiErr:25 apiQue:48 piston:15 statusDrop:495 toDb:1926 dbReq:1898 DbRes:1898 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:3055 apiRes:2982 apiErr:25 apiQue:48 statusDrop:495 toDb:1926 dbReq:1898 dbRes:1898 dbErr:0 dbQue:28 t:2018-07-08 23:11:53","level":"info"}
+{"message":"timeout of 5000ms exceeded. Carrier name:fex, Tracking number:415205508392","level":"info"}
+{"message":"timeout of 5000ms exceeded. Carrier name:fex, Tracking number:415205508337","level":"info"}
+{"message":"timeout of 5000ms exceeded. Carrier name:fex, Tracking number:415215313993","level":"info"}
+{"message":"fex ApiReq:3264 apiRes:3170 apiErr:28 apiQue:66 piston:15 statusDrop:495 toDb:2044 dbReq:2016 DbRes:2016 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:3264 apiRes:3170 apiErr:28 apiQue:66 statusDrop:495 toDb:2044 dbReq:2016 dbRes:2016 dbErr:0 dbQue:28 t:2018-07-08 23:11:58","level":"info"}
+{"message":"fex ApiReq:3483 apiRes:3404 apiErr:28 apiQue:51 piston:25 statusDrop:495 toDb:2158 dbReq:2130 DbRes:2130 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:3483 apiRes:3404 apiErr:28 apiQue:51 statusDrop:495 toDb:2158 dbReq:2130 dbRes:2130 dbErr:0 dbQue:28 t:2018-07-08 23:12:03","level":"info"}
+{"message":"fex ApiReq:3676 apiRes:3605 apiErr:28 apiQue:43 piston:25 statusDrop:495 toDb:2283 dbReq:2255 DbRes:2255 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:3676 apiRes:3605 apiErr:28 apiQue:43 statusDrop:495 toDb:2283 dbReq:2255 dbRes:2255 dbErr:0 dbQue:28 t:2018-07-08 23:12:08","level":"info"}
+{"message":"fex ApiReq:3822 apiRes:3760 apiErr:28 apiQue:34 piston:25 statusDrop:495 toDb:2390 dbReq:2362 DbRes:2362 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:3822 apiRes:3760 apiErr:28 apiQue:34 statusDrop:495 toDb:2390 dbReq:2362 dbRes:2362 dbErr:0 dbQue:28 t:2018-07-08 23:12:13","level":"info"}
+{"message":"fex ApiReq:4028 apiRes:3950 apiErr:28 apiQue:50 piston:15 statusDrop:495 toDb:2516 dbReq:2488 DbRes:2488 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:4028 apiRes:3950 apiErr:28 apiQue:50 statusDrop:495 toDb:2516 dbReq:2488 dbRes:2488 dbErr:0 dbQue:28 t:2018-07-08 23:12:18","level":"info"}
+{"message":"fex ApiReq:4232 apiRes:4160 apiErr:28 apiQue:44 piston:15 statusDrop:495 toDb:2645 dbReq:2617 DbRes:2617 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:4232 apiRes:4160 apiErr:28 apiQue:44 statusDrop:495 toDb:2645 dbReq:2617 dbRes:2617 dbErr:0 dbQue:28 t:2018-07-08 23:12:23","level":"info"}
+{"message":"fex ApiReq:4434 apiRes:4343 apiErr:28 apiQue:63 piston:15 statusDrop:495 toDb:2771 dbReq:2743 DbRes:2743 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:4434 apiRes:4343 apiErr:28 apiQue:63 statusDrop:495 toDb:2771 dbReq:2743 dbRes:2743 dbErr:0 dbQue:28 t:2018-07-08 23:12:28","level":"info"}
+{"message":"fex ApiReq:4630 apiRes:4553 apiErr:28 apiQue:49 piston:25 statusDrop:495 toDb:2892 dbReq:2864 DbRes:2864 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:4630 apiRes:4553 apiErr:28 apiQue:49 statusDrop:495 toDb:2892 dbReq:2864 dbRes:2864 dbErr:0 dbQue:28 t:2018-07-08 23:12:33","level":"info"}
+{"message":"fex ApiReq:4837 apiRes:4744 apiErr:28 apiQue:65 piston:25 statusDrop:495 toDb:3013 dbReq:2985 DbRes:2985 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:4837 apiRes:4744 apiErr:28 apiQue:65 statusDrop:495 toDb:3013 dbReq:2985 dbRes:2985 dbErr:0 dbQue:28 t:2018-07-08 23:12:38","level":"info"}
+{"message":"fex ApiReq:5023 apiRes:4944 apiErr:28 apiQue:51 piston:25 statusDrop:495 toDb:3137 dbReq:3109 DbRes:3109 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:5023 apiRes:4944 apiErr:28 apiQue:51 statusDrop:495 toDb:3137 dbReq:3109 dbRes:3109 dbErr:0 dbQue:28 t:2018-07-08 23:12:43","level":"info"}

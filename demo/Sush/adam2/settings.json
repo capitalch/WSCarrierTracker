@@ -15,7 +15,7 @@
         "maxCarrierQueueSize": 300,
         "maxCarrierErrorCount": 100,
         "maxDbErrorCount":100,
-        "timeoutSec":5
+        "timeoutSec":10
     },
     "db": {
         "user": "sagarwal",
