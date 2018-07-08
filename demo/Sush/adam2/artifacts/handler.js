@@ -32,8 +32,8 @@ const isIdle = () => {
         dbRequests = dbRequests + dbStatus[x].requests;
     });
     const ret = ((
-        (dbQueue === 0) && (toDb === dbRequests)) && 
-        ((apiQueue === 0) || notify.isSameApiQueueRepeat10()));
+        (dbQueue === 0) && (toDb === dbRequests)) &&
+        ((apiQueue === 0) || notify.isSameApiQueueRepeat10())); // To trap final apiQue not zero
     return (ret);
 }
 

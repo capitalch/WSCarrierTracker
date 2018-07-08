@@ -80,7 +80,7 @@ function handleTps(x, result) {
         unifiedStatus: statusDescription || 'No Status'
     }
     if (notify.isSameStatus(x, tpsJson)) {
-        notify.addApiDrop(x);
+        notify.addApiStatusDrop(x);
     } else {
         handler.buffer.next(tpsJson);
     }

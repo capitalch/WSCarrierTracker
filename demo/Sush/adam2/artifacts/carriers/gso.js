@@ -121,7 +121,7 @@ function handleGso(x) {
         unifiedStatus: gsoTemp.status ? tools.getUnifiedStatus(gsoTemp.status) : 'noStatus'
     }
     if (notify.isSameStatus(x, gsoJson)) {
-        notify.addApiDrop(x);
+        notify.addApiStatusDrop(x);
     } else {
         handler.buffer.next(gsoJson);
     }

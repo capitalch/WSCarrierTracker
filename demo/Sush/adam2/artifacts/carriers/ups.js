@@ -200,7 +200,7 @@ function handleUps(x, result) {
         unifiedStatus: statusCode ? tools.getUnifiedStatus(statusCode) || 'noStatus' : 'noStatus'
     };
     if (notify.isSameStatus(x, upsJson)) {
-        notify.addApiDrop(x);
+        notify.addApiStatusDrop(x);
     } else {
         handler.buffer.next(upsJson);
     }

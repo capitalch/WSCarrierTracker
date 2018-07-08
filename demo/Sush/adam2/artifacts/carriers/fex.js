@@ -237,7 +237,7 @@ function handleFex(x, result) {
         unifiedStatus: statusCode ? fexStatusCodes[statusCode] || 'noStatus' : 'noStatus'
     }
     if (notify.isSameStatus(x, fexJson)) {
-        notify.addApiDrop(x);
+        notify.addApiStatusDrop(x);
     } else {
         handler.buffer.next(fexJson);
     }

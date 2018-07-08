@@ -1,0 +1,82 @@
+{"message":"New Job started at 2018-07-08 23:10:27","level":"info"}
+{"message":"fex Item Count: 10000","level":"info"}
+{"message":"fex ApiReq:249 apiRes:179 apiErr:0 apiQue:70 piston:15 statusDrop:150 toDb:28 dbReq:25 DbRes:25 DbErr:0 dbQue:3","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:249 apiRes:179 apiErr:0 apiQue:70 statusDrop:150 toDb:28 dbReq:25 dbRes:25 dbErr:0 dbQue:3 t:2018-07-08 23:10:43","level":"info"}
+{"message":"fex ApiReq:450 apiRes:403 apiErr:0 apiQue:47 piston:15 statusDrop:310 toDb:92 dbReq:88 DbRes:88 DbErr:0 dbQue:4","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:450 apiRes:403 apiErr:0 apiQue:47 statusDrop:310 toDb:92 dbReq:88 dbRes:88 dbErr:0 dbQue:4 t:2018-07-08 23:10:48","level":"info"}
+{"message":"fex ApiReq:652 apiRes:604 apiErr:0 apiQue:48 piston:15 statusDrop:425 toDb:177 dbReq:176 DbRes:176 DbErr:0 dbQue:1","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:652 apiRes:604 apiErr:0 apiQue:48 statusDrop:425 toDb:177 dbReq:176 dbRes:176 dbErr:0 dbQue:1 t:2018-07-08 23:10:53","level":"info"}
+{"message":"fex ApiReq:859 apiRes:805 apiErr:0 apiQue:54 piston:15 statusDrop:493 toDb:310 dbReq:308 DbRes:308 DbErr:0 dbQue:2","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:859 apiRes:805 apiErr:0 apiQue:54 statusDrop:493 toDb:310 dbReq:308 dbRes:308 dbErr:0 dbQue:2 t:2018-07-08 23:10:58","level":"info"}
+{"message":"fex ApiReq:1048 apiRes:1002 apiErr:0 apiQue:46 piston:15 statusDrop:495 toDb:505 dbReq:497 DbRes:497 DbErr:0 dbQue:8","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:1048 apiRes:1002 apiErr:0 apiQue:46 statusDrop:495 toDb:505 dbReq:497 dbRes:497 dbErr:0 dbQue:8 t:2018-07-08 23:11:03","level":"info"}
+{"message":"fex ApiReq:1251 apiRes:1202 apiErr:0 apiQue:49 piston:15 statusDrop:495 toDb:677 dbReq:649 DbRes:649 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:1251 apiRes:1202 apiErr:0 apiQue:49 statusDrop:495 toDb:677 dbReq:649 dbRes:649 dbErr:0 dbQue:28 t:2018-07-08 23:11:08","level":"info"}
+{"message":"fex ApiReq:1470 apiRes:1409 apiErr:0 apiQue:61 piston:15 statusDrop:495 toDb:845 dbReq:817 DbRes:817 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:1470 apiRes:1409 apiErr:0 apiQue:61 statusDrop:495 toDb:845 dbReq:817 dbRes:817 dbErr:0 dbQue:28 t:2018-07-08 23:11:13","level":"info"}
+{"message":"fex ApiReq:1696 apiRes:1650 apiErr:0 apiQue:46 piston:25 statusDrop:495 toDb:1011 dbReq:983 DbRes:983 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:1696 apiRes:1650 apiErr:0 apiQue:46 statusDrop:495 toDb:1011 dbReq:983 dbRes:983 dbErr:0 dbQue:28 t:2018-07-08 23:11:18","level":"info"}
+{"message":"fex ApiReq:1929 apiRes:1880 apiErr:0 apiQue:49 piston:15 statusDrop:495 toDb:1141 dbReq:1117 DbRes:1117 DbErr:0 dbQue:24","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:1929 apiRes:1880 apiErr:0 apiQue:49 statusDrop:495 toDb:1141 dbReq:1117 dbRes:1117 dbErr:0 dbQue:24 t:2018-07-08 23:11:23","level":"info"}
+{"message":"fex ApiReq:2151 apiRes:2089 apiErr:0 apiQue:62 piston:15 statusDrop:495 toDb:1289 dbReq:1261 DbRes:1261 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:2151 apiRes:2089 apiErr:0 apiQue:62 statusDrop:495 toDb:1289 dbReq:1261 dbRes:1261 dbErr:0 dbQue:28 t:2018-07-08 23:11:28","level":"info"}
+{"message":"fex ApiReq:2362 apiRes:2308 apiErr:0 apiQue:54 piston:25 statusDrop:495 toDb:1418 dbReq:1390 DbRes:1390 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:2362 apiRes:2308 apiErr:0 apiQue:54 statusDrop:495 toDb:1418 dbReq:1390 dbRes:1390 dbErr:0 dbQue:28 t:2018-07-08 23:11:33","level":"info"}
+{"message":"timeout of 5000ms exceeded. Carrier name:fex, Tracking number:415215305642","level":"info"}
+{"message":"timeout of 5000ms exceeded. Carrier name:fex, Tracking number:415215307553","level":"info"}
+{"message":"timeout of 5000ms exceeded. Carrier name:fex, Tracking number:415215308527","level":"info"}
+{"message":"timeout of 5000ms exceeded. Carrier name:fex, Tracking number:415215309556","level":"info"}
+{"message":"timeout of 5000ms exceeded. Carrier name:fex, Tracking number:415215307060","level":"info"}
+{"message":"fex ApiReq:2521 apiRes:2479 apiErr:5 apiQue:37 piston:25 statusDrop:495 toDb:1543 dbReq:1515 DbRes:1515 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:2521 apiRes:2479 apiErr:5 apiQue:37 statusDrop:495 toDb:1543 dbReq:1515 dbRes:1515 dbErr:0 dbQue:28 t:2018-07-08 23:11:38","level":"info"}
+{"message":"timeout of 5000ms exceeded. Carrier name:fex, Tracking number:415215304750","level":"info"}
+{"message":"timeout of 5000ms exceeded. Carrier name:fex, Tracking number:415215304657","level":"info"}
+{"message":"timeout of 5000ms exceeded. Carrier name:fex, Tracking number:415215305035","level":"info"}
+{"message":"timeout of 5000ms exceeded. Carrier name:fex, Tracking number:415215306947","level":"info"}
+{"message":"timeout of 5000ms exceeded. Carrier name:fex, Tracking number:415215310300","level":"info"}
+{"message":"timeout of 5000ms exceeded. Carrier name:fex, Tracking number:415215310696","level":"info"}
+{"message":"timeout of 5000ms exceeded. Carrier name:fex, Tracking number:415215310608","level":"info"}
+{"message":"fex ApiReq:2690 apiRes:2635 apiErr:12 apiQue:43 piston:25 statusDrop:495 toDb:1674 dbReq:1646 DbRes:1646 DbErr:0 dbQue:28","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:2690 apiRes:2635 apiErr:12 apiQue:43 statusDrop:495 toDb:1674 dbReq:1646 dbRes:1646 dbErr:0 dbQue:28 t:2018-07-08 23:11:43","level":"info"}
+{"message":"timeout of 5000ms exceeded. Carrier name:fex, Tracking number:415215310251","level":"info"}
+{"message":"timeout of 5000ms exceeded. Carrier name:fex, Tracking number:415215311361","level":"info"}
+{"message":"timeout of 5000ms exceeded. Carrier name:fex, Tracking number:415215311269","level":"info"}

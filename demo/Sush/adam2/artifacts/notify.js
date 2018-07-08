@@ -10,9 +10,7 @@ const _ = require('lodash');
 // verbose = verbose || true;
 
 const timing = {};
-const apiQueueArray = new Array(10)
-    .fill(0)
-    .freeze();
+const apiQueueArray = new Array(10).fill(0);
 
 const notify = {
     getDatetimeFormat: () => {
@@ -106,8 +104,8 @@ const notify = {
     addApiToDb: (carrierName) => {
         notifyData.apiStatus[carrierName].toDb++;
     },
-    addApiDrop: (info) => {
-        notifyData.apiStatus[info.carrierName].drop++;
+    addApiStatusDrop: (info) => {
+        notifyData.apiStatus[info.carrierName].statusDrop++;
     },
     addDbRequest: (carrierName) => {
         notifyData.dbStatus[carrierName].requests++;
@@ -140,7 +138,7 @@ const notify = {
             apiRes: 0,
             apiErr: 0,
             apiQue: 0,
-            drop: 0,
+            statusDrop: 0,
             toDb: 0,
             dbReq: 0,
             dbRes: 0,
@@ -152,7 +150,7 @@ const notify = {
             allStatus.apiRes = allStatus.apiRes + notifyData.apiStatus[x].responses;
             allStatus.apiErr = allStatus.apiErr + notifyData.apiStatus[x].errors;
             allStatus.apiQue = allStatus.apiQue + notifyData.apiStatus[x].queue();
-            allStatus.drop = allStatus.drop + notifyData.apiStatus[x].drop;
+            allStatus.statusDrop = allStatus.statusDrop + notifyData.apiStatus[x].statusDrop;
             allStatus.toDb = allStatus.toDb + notifyData.apiStatus[x].toDb;
             allStatus.dbReq = allStatus.dbReq + notifyData.dbStatus[x].requests;
             allStatus.dbRes = allStatus.dbRes + notifyData.dbStatus[x].responses;
@@ -163,30 +161,30 @@ const notify = {
                 ' apiErr:', notifyData.apiStatus[x].errors,
                 ' apiQue:', notifyData.apiStatus[x].queue(),
                 ' piston:', notifyData.apiStatus[x].piston,
-                ' dbDrop:', notifyData.apiStatus[x].drop,
+                ' statusDrop:', notifyData.apiStatus[x].statusDrop,
                 ' toDb:', notifyData.apiStatus[x].toDb,
                 ' dbReq:', notifyData.dbStatus[x].requests, ' DbRes:',
                 notifyData.dbStatus[x].responses, ' DbErr:', notifyData.dbStatus[x].errors,
                 ' dbQue:' + notifyData.dbStatus[x].queue());
             notifyData.apiStatus[x] &&
-                // logger.info(s);
-                console.log(s);
+                logger.info(s);
+                // console.log(s);
         });
         const s1 = 'Total'.concat(' apiReq:', allStatus.apiReq,
             ' apiRes:', allStatus.apiRes,
             ' apiErr:', allStatus.apiErr,
             ' apiQue:', allStatus.apiQue,
             // ' Total Piston:' + notifyData.apiStatus[x].piston +
-            ' dbDrop:', allStatus.drop,
+            ' statusDrop:', allStatus.statusDrop,
             ' toDb:', allStatus.toDb,
             ' dbReq:', allStatus.dbReq,
             ' dbRes:', allStatus.dbRes,
             ' dbErr:', allStatus.dbErr,
             ' dbQue:', allStatus.dbQue,
-            ' time:', moment().format(notify.getDatetimeFormat())
+            ' t:', moment().format(notify.getDatetimeFormat())
         );
-        // logger.info(s1);
-        console.log(s1);
+        logger.info(s1);
+        // console.log(s1);
     },
     getJobRunStatus: () => {
         const carriers = Object.keys(notifyData.apiStatus);
@@ -195,7 +193,7 @@ const notify = {
             apiRes: 0,
             apiErr: 0,
             apiQue: 0,
-            dbDrop: 0,
+            statusDrop: 0,
             toDb: 0,
             dbReq: 0,
             dbRes: 0,
@@ -210,7 +208,7 @@ const notify = {
             status.apiRes = status.apiRes + notifyData.apiStatus[x].responses;
             status.apiErr = status.apiErr + notifyData.apiStatus[x].errors;
             status.apiQue = status.apiQue + notifyData.apiStatus[x].queue();
-            status.dbDrop = status.dbDrop + notifyData.apiStatus[x].drop;
+            status.statusDrop = status.statusDrop + notifyData.apiStatus[x].statusDrop;
             status.toDb = status.toDb + notifyData.apiStatus[x].toDb;
             status.dbReq = status.dbReq + notifyData.dbStatus[x].requests;
             status.dbRes = status.dbRes + notifyData.dbStatus[x].responses;
@@ -221,7 +219,7 @@ const notify = {
     },
     isSameApiQueueRepeat10: () => {
         const apiQue = notify.getJobRunStatus().apiQue;
-        apiQueueArray.push(apiQue);
+        apiQueueArray.push(apiQue); apiQueueArray.shift();
         const isSame = apiQueueArray.every(x => x === apiQue);
         return (isSame);
     },

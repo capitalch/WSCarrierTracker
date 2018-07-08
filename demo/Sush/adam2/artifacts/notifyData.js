@@ -85,7 +85,7 @@ notifyData.apiStatus = {
         count: 0,
         piston: 0,
         toDb:0,
-        drop:0
+        statusDrop:0
     },
     ups: {
         requests: 0,
@@ -98,7 +98,7 @@ notifyData.apiStatus = {
         count: 0,
         piston: 0,
         toDb:0,
-        drop:0
+        statusDrop:0
     },
     gso: {
         requests: 0,
@@ -111,7 +111,7 @@ notifyData.apiStatus = {
         count: 0,
         piston: 0,
         toDb:0,
-        drop:0
+        statusDrop:0
     },
     tps: {
         requests: 0,
@@ -124,7 +124,7 @@ notifyData.apiStatus = {
         count: 0,
         piston: 0,
         toDb:0,
-        drop:0
+        statusDrop:0
     }
 }
 

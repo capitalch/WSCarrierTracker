@@ -2,17 +2,22 @@
 const rx = require('rxjs');
 const _ = require('lodash');
 
-const obj = {
-    a: 1,
-    b: 2,
-    c: 3,
-    d: 4
-};
-var data = "do shash'owania";
-var crypto = require('crypto');
-const hash = crypto.createHash('md5')
-    .update(data)
-    .digest("hex");
+let a = new Array(10);
+a.push(1);a.shift();
+a.push(2);a.shift();
+console.log(a);
+
+// const obj = {
+//     a: 1,
+//     b: 2,
+//     c: 3,
+//     d: 4
+// };
+// var data = "do shash'owania";
+// var crypto = require('crypto');
+// const hash = crypto.createHash('md5')
+//     .update(data)
+//     .digest("hex");
 
 // const obj = {
 //     a: {
