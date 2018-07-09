@@ -1,6 +1,6 @@
 let sqlCommands = {
 	getInfos: `
-		SELECT top 10000 NO_ rn,[Shipping Agent Code] shippingAgentCode
+		SELECT top 70000 NO_ rn,[Shipping Agent Code] shippingAgentCode
 		, [External Tracking No_] trackingNumber
 		, status
 		, Status_Date statusDate
