@@ -10,15 +10,17 @@ const notify = require('./notify');
 
 let workbench = {};
 
-const appKill = _.has(settings,'config.appKillMin') ? settings.config.appKillMin * 60000 : 2 * 60 * 1000;
+const appKill = _.has(settings, 'config.appKillMin') ? settings.config.appKillMin * 60000 : 2 * 60 * 1000;
 const myInterval = rx.interval(appKill);
 const subs = myInterval.subscribe(() => {
     subs.unsubscribe();
     ibuki.emit('kill-process:any>handler');
 });
 
+const maxCarrierQueueSize = _.has(settings, 'config.maxCarrierQueueSize') ? settings.config.maxCarrierQueueSize : 1000;
+
 handler.sub1 = ibuki.filterOn('handle-big-object:db>workbench').subscribe(
-    d => {        
+    d => {
         let bigObject = d.data;
         const fex = bigObject
             .filter(x =>
@@ -72,46 +74,50 @@ handler.sub1 = ibuki.filterOn('handle-big-object:db>workbench').subscribe(
             });
         // notify module is used to notify errors and status
         (gso.length > 0) && (notify.initCarrier('gso', gso)) &&
-        (ibuki.emit('pre-process-gso-carrier:self', gso)); // Pre processing GSO object to get token information
+            (ibuki.emit('pre-process-gso-carrier:self', gso)); // Pre processing GSO object to get token information
         (fex.length > 0) && (notify.initCarrier('fex', fex)) &&
-        (ibuki.emit('process-carrier:self', fex));
+            (ibuki.emit('process-carrier:self', fex));
         (ups.length > 0) && (notify.initCarrier('ups', ups)) &&
-        (ibuki.emit('process-carrier:self', ups));
+            (ibuki.emit('process-carrier:self', ups));
         (tps.length > 0) && (notify.initCarrier('tps', tps)) &&
-        (ibuki.emit('process-carrier:self', tps));
+            (ibuki.emit('process-carrier:self', tps));
         handler.closeIfIdle();
-        bigObject = null;        
+        bigObject = null;
     }
 );
 handler.beforeCleanup(handler.sub1);
 
-handler.sub8 = ibuki.filterOn('process-carrier:self').subscribe(d => {    
+handler.sub8 = ibuki.filterOn('process-carrier:self').subscribe(d => {
     const carrierInfos = d.data;
     settings.config.autoPilotPiston && ibuki.emit('adjust-piston:self', carrierInfos[0].carrierName);
     handler.sub2 = rx.from(carrierInfos)
         .pipe(
             operators
-            .concatMap(x => rx.of(x)
-                .pipe(operators
-                    .delay(
-                        _.has(settings, 'config.autoPilotPiston') ? (notify.getPiston(x.carrierName) || 10) : 10
-                    ))))
+                .concatMap(x => rx.of(x)
+                    .pipe(operators
+                        .delay(
+                            (_.has(settings, 'config.autoPilotPiston') && settings.config.autoPilotPiston) ? (notify.getPiston(x.carrierName) || 10) : 10
+                        ))))
 
         .subscribe(
             x => {
                 // notify.addApiRequest(x);
-                if (x.method === 'axiosPost') {
-                    ibuki.emit('axios-post:workbench-fex>api', x);
+                if (notify.getApiQueue(x.carrierName) <= maxCarrierQueueSize) {
+                    if (x.method === 'axiosPost') {
+                        ibuki.emit('axios-post:workbench-fex>api', x);
+                    } else {
+                        ibuki.emit('axios-get:workbench>api', x)
+                    }
                 } else {
-                    ibuki.emit('axios-get:workbench>api', x)
+                    notify.logInfo(x.carrierName + ' :Maximum api queue size reached for carrier. Suspending further query for this carrier.');
                 }
                 // api[x.method](x);                
             }
-        );   
+        );
 });
 handler.beforeCleanup(handler.sub8);
 
-handler.sub9 = ibuki.filterOn('pre-process-gso-carrier:self').subscribe(d => {   
+handler.sub9 = ibuki.filterOn('pre-process-gso-carrier:self').subscribe(d => {
     //get GSO tokens for multiple accounts and store store token in each gso element
     const gso = d.data;
     const gsoConfig = settings.carriers.gso;
@@ -146,11 +152,11 @@ handler.sub9 = ibuki.filterOn('pre-process-gso-carrier:self').subscribe(d => {
 handler.beforeCleanup(handler.sub9);
 
 handler.sub10 = ibuki.filterOn('adjust-piston:self').subscribe(
-    d => {        
+    d => {
         const carrierName = d.data;
         const queueSettings = settings.carriers[carrierName].queue;
         const myInterval = rx.interval(500);
-        handler.sub11 = myInterval.subscribe(() => {            
+        handler.sub11 = myInterval.subscribe(() => {
             const queue = notify.getApiQueue(carrierName);
             if (queue > queueSettings) { //increase piston to reduce queue
                 notify.varyPiston(carrierName, 5);
