@@ -12,7 +12,7 @@
                                                 8. Provide a mecanism to know the pipeline value Api responses --> database requests                                                                                  
                                                 19. No database saving for errors
 
-5. At Maximum api queue length stop the carrier api request
+	5. At Maximum api queue length stop the carrier api request
 6. At maximum number of errors stop carrier api query
                                                
 15. Verbose true would not write progress report to log files. Only errors are reported.
@@ -25,11 +25,11 @@
 
 
 //Saby
-1. Find bug -Queue
-2. Git hub deployment in azure
-3. Prepare statement check
+				1. Find bug -Queue
+				2. Git hub deployment in azure
+				3. Prepare statement check
 4. Testing data
-5. Email function check and send mail to Sandip
+				5. Email function check and send mail to Sandip
 
 //Adam2 
                                     1. Complete TPS
