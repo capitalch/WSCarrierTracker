@@ -18,7 +18,7 @@ const subs = myInterval.subscribe(() => {
 });
 
 handler.sub1 = ibuki.filterOn('handle-big-object:db>workbench').subscribe(
-    d => {
+    d => {        
         let bigObject = d.data;
         const fex = bigObject
             .filter(x =>
@@ -80,11 +80,12 @@ handler.sub1 = ibuki.filterOn('handle-big-object:db>workbench').subscribe(
         (tps.length > 0) && (notify.initCarrier('tps', tps)) &&
         (ibuki.emit('process-carrier:self', tps));
         handler.closeIfIdle();
-        bigObject = null;
+        bigObject = null;        
     }
 );
+handler.beforeCleanup(handler.sub1);
 
-handler.sub8 = ibuki.filterOn('process-carrier:self').subscribe(d => {
+handler.sub8 = ibuki.filterOn('process-carrier:self').subscribe(d => {    
     const carrierInfos = d.data;
     settings.config.autoPilotPiston && ibuki.emit('adjust-piston:self', carrierInfos[0].carrierName);
     handler.sub2 = rx.from(carrierInfos)
@@ -106,10 +107,11 @@ handler.sub8 = ibuki.filterOn('process-carrier:self').subscribe(d => {
                 }
                 // api[x.method](x);                
             }
-        );
+        );   
 });
+handler.beforeCleanup(handler.sub8);
 
-handler.sub9 = ibuki.filterOn('pre-process-gso-carrier:self').subscribe(d => {
+handler.sub9 = ibuki.filterOn('pre-process-gso-carrier:self').subscribe(d => {   
     //get GSO tokens for multiple accounts and store store token in each gso element
     const gso = d.data;
     const gsoConfig = settings.carriers.gso;
@@ -141,13 +143,14 @@ handler.sub9 = ibuki.filterOn('pre-process-gso-carrier:self').subscribe(d => {
         // console.log(err);
     });
 });
+handler.beforeCleanup(handler.sub9);
 
 handler.sub10 = ibuki.filterOn('adjust-piston:self').subscribe(
-    d => {
+    d => {        
         const carrierName = d.data;
         const queueSettings = settings.carriers[carrierName].queue;
         const myInterval = rx.interval(500);
-        handler.sub11 = myInterval.subscribe(() => {
+        handler.sub11 = myInterval.subscribe(() => {            
             const queue = notify.getApiQueue(carrierName);
             if (queue > queueSettings) { //increase piston to reduce queue
                 notify.varyPiston(carrierName, 5);
@@ -155,7 +158,9 @@ handler.sub10 = ibuki.filterOn('adjust-piston:self').subscribe(
                 notify.varyPiston(carrierName, -5);
             }
         });
+        handler.beforeCleanup(handler.sub11);
     }
 )
+handler.beforeCleanup(handler.sub10);
 
 module.exports = workbench;

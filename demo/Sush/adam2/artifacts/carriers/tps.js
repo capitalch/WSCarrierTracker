@@ -10,6 +10,7 @@ const notify = require('../notify');
 const tps = {};
 handler.sub19 = ibuki.filterOn('process-tps:api>tps')
     .subscribe(d => processTps(d.data));
+handler.beforeCleanup(handler.sub19);
 
 const processTps = (x) => {
     parseString(x.response, {
@@ -28,7 +29,7 @@ const processTps = (x) => {
                 error = Error('TPS:' + x.trackingNumber + ' ' + errorNode.Description);
                 error.name = 'apiCallError';
             } else if (_.has(result, 'Error')) {
-                const error = result.Error;
+                error = result.Error;
                 error.message = error.message + ' '.concat('TPS:', x.trackingNumber)
             }
 
@@ -44,7 +45,8 @@ const processTps = (x) => {
 }
 
 function handleTps(x, result) {
-    const mNodelist = result.TrackResponse.TrackInfo.TrackSummary;
+    const isTrackSummary = _.has(result,'TrackResponse.TrackInfo.TrackSummary');
+    const mNodelist = isTrackSummary ? result.TrackResponse.TrackInfo.TrackSummary : null;
     let statusDescription = null;
     let statusDate = '',
         statusTime = '';

@@ -9,11 +9,12 @@ const notify = require('./notify');
 const email = require('./email');
 
 const handler = {};
+const subArray = [];
 let verbose = settings.config.verbose;
 verbose = verbose || true;
 handler.buffer = new rx.Subject();
 handler.domainError = domain.create();
-const samplingrate = _.has(settings, 'config.samplingRateSec') ? settings.config.samplingRateSec * 1000 : 5000
+const samplingRate = _.has(settings, 'config.samplingRateSec') ? settings.config.samplingRateSec * 1000 : 5000
 const isIdle = () => {
     const apiStatus = notify.getApiStatus();
     let carriers = Object.keys(apiStatus);
@@ -37,8 +38,13 @@ const isIdle = () => {
     return (ret);
 }
 
+handler.beforeCleanup = (x) => {
+    x && subArray.push(x);
+    // x && handler.sub0 && handler.sub0.add(x);
+}
+
 handler.closeIfIdle = () => {
-    const myInterval = rx.interval(samplingrate);
+    const myInterval = rx.interval(samplingRate);
     handler.sub6 = myInterval.subscribe(() => {
         verbose && notify.showAllStatus();
         isIdle() && (
@@ -62,37 +68,38 @@ const subs1 = ibuki.filterOn('mail-processed:email>handler').subscribe(() => {
 function cleanup(code) {
     notify.logInfo(notify.getJobRunStatus());
     notify.logInfo('cleaning up');
-    unsubscribe();
+    subArray.forEach(x=>x.unsubscribe());
+    // unsubscribe();
     handler.pool && handler.pool.close();
     process.exit(code);
 }
 
 function unsubscribe() {
-    handler.sub0 && handler.sub0.unsubscribe();
-    handler.sub1 && handler.sub1.unsubscribe();
-    handler.sub2 && handler.sub2.unsubscribe();
-    handler.sub3 && handler.sub3.unsubscribe();
-    handler.sub4 && handler.sub4.unsubscribe();
-    handler.sub5 && handler.sub5.unsubscribe();
-    handler.sub6 && handler.sub6.unsubscribe();
-    handler.sub7 && handler.sub7.unsubscribe();
-    handler.sub8 && handler.sub8.unsubscribe();
-    handler.sub9 && handler.sub9.unsubscribe();
-    handler.sub10 && handler.sub10.unsubscribe();
-    handler.sub11 && handler.sub11.unsubscribe();
-    handler.sub12 && handler.sub12.unsubscribe();
-    handler.sub13 && handler.sub13.unsubscribe();
-    handler.sub14 && handler.sub14.unsubscribe();
-    handler.sub15 && handler.sub15.unsubscribe();
-    handler.sub16 && handler.sub16.unsubscribe();
-    handler.sub17 && handler.sub17.unsubscribe();
-    handler.sub18 && handler.sub18.unsubscribe();
+    // handler.sub0 && handler.sub0.unsubscribe();
+    // handler.sub1 && handler.sub1.unsubscribe();
+    // handler.sub2 && handler.sub2.unsubscribe();
+    // handler.sub3 && handler.sub3.unsubscribe();
+    // handler.sub4 && handler.sub4.unsubscribe();
+    // handler.sub5 && handler.sub5.unsubscribe();
+    // handler.sub6 && handler.sub6.unsubscribe();
+    // handler.sub7 && handler.sub7.unsubscribe();
+    // handler.sub8 && handler.sub8.unsubscribe();
+    // handler.sub9 && handler.sub9.unsubscribe();
+    // handler.sub10 && handler.sub10.unsubscribe();
+    // handler.sub11 && handler.sub11.unsubscribe();
+    // handler.sub12 && handler.sub12.unsubscribe();
+    // handler.sub13 && handler.sub13.unsubscribe();
+    // handler.sub14 && handler.sub14.unsubscribe();
+    // handler.sub15 && handler.sub15.unsubscribe();
+    // handler.sub16 && handler.sub16.unsubscribe();
+    // handler.sub17 && handler.sub17.unsubscribe();
+    // handler.sub18 && handler.sub18.unsubscribe();
     unsubscribe1();
 }
 
 function unsubscribe1() {
-    handler.sub19 && handler.sub19.unsubscribe();
-    handler.sub19 && handler.sub19.unsubscribe();
+    // handler.sub19 && handler.sub19.unsubscribe();
+    // handler.sub19 && handler.sub19.unsubscribe();
 }
 
 handler.frameError = (error, location, severity, index) => {
@@ -133,6 +140,7 @@ handler.sub14 = ibuki.filterOn('app-error:any').subscribe(d => {
     }
     // Use telemetry to log error
 });
+handler.beforeCleanup(handler.sub14);
 
 const subs2 = ibuki.filterOn('kill-process:any>handler').subscribe(
     (d) => {

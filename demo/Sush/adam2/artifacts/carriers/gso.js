@@ -50,6 +50,7 @@ const tools = {
 
 handler.sub18 = ibuki.filterOn('process-gso:api>gso')
     .subscribe(d => processGso(d.data));
+handler.beforeCleanup(handler.sub18);
 
 const processGso = (x) => {
     if (x.response.StatusCode === 200) {

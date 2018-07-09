@@ -87,8 +87,10 @@ const tools = {
 
 handler.sub20 = ibuki.filterOn('process-ups:api>ups')
     .subscribe(d => processUps(d.data));
+handler.beforeCleanup(handler.sub20);
 
 const processUps = (x) => {
+
     parseString(x.response, {
         trim: true,
         explicitArray: false

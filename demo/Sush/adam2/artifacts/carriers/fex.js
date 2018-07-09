@@ -104,9 +104,10 @@ const tools = {
 }
 
 handler.sub17 = ibuki.filterOn('process-fex:api>fex')
-    .subscribe(d => processFex(d.data))
+    .subscribe(d => processFex(d.data));
+handler.beforeCleanup(handler.sub17);
 
-const processFex = (x) => {
+const processFex = (x) => {    
     parseString(x.response, {
         trim: true,
         explicitArray: false

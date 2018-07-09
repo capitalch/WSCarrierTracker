@@ -37,7 +37,7 @@ api.getGsoTokenPromises = (info) => {
     return (Q.allSettled(promises)); //Even if error is encountered in a promise still other promises are handled
 }
 
-handler.sub15 = ibuki.filterOn('axios-post:workbench-fex>api').subscribe(d => {
+handler.sub15 = ibuki.filterOn('axios-post:workbench-fex>api').subscribe(d => {    
     const carrierInfo = d.data;
     notify.addApiRequest(carrierInfo);
     axios({
@@ -53,8 +53,9 @@ handler.sub15 = ibuki.filterOn('axios-post:workbench-fex>api').subscribe(d => {
             handleApiError(carrierInfo, err);
         });
 })
+handler.beforeCleanup(handler.sub15);
 
-handler.sub16 = ibuki.filterOn('axios-get:workbench>api').subscribe(d => {
+handler.sub16 = ibuki.filterOn('axios-get:workbench>api').subscribe(d => {    
     const carrierInfo = d.data;
     notify.addApiRequest(carrierInfo);
     carrierInfo.config && (carrierInfo.config.timeout = timeout)
@@ -65,7 +66,8 @@ handler.sub16 = ibuki.filterOn('axios-get:workbench>api').subscribe(d => {
         .catch(err => {
             handleApiError(carrierInfo, err);
         });
-})
+});
+handler.beforeCleanup(handler.sub16);
 
 function handleApiResponse(carrierInfo, res) {
     carrierInfo.response = res.data;

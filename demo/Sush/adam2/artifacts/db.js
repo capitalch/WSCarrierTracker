@@ -68,7 +68,6 @@ const tools = {
             DAMAGE: json.damage || 0,
             DAMAGEMSG: json.damageMsg || '',
             No_: json.rn,
-
             rn: json.rn,
             TrackingNumber: json.trackingNumber,
             ShippingAgentCode: json.shippingAgentCode,
@@ -110,6 +109,7 @@ handler.sub0 = ibuki.filterOn('get-big-object:run>db').subscribe(() => {
         }
     );
 });
+handler.beforeCleanup(handler.sub0);
 
 const createPsRequests = () => {
     for (let i = 0; i < (settings.db.pool.max - 2); i++) {
@@ -134,15 +134,16 @@ const createPsRequests = () => {
 handler.sub5 = handler.buffer.subscribe(d => {
     disburse(d);
 });
+handler.beforeCleanup(handler.sub5);
 
 const disburse = (data) => {
     let ps = reqs.find((e) => e.isAvailable);
     if (ps) {
         ps.isAvailable = false;
         notify.addApiToDb(data.shippingAgentCode);
-        
+
         const psParamsObject = tools.getPsParamsObject(data);
-        
+
         ps.execute(psParamsObject, (err) => {
             notify.addDbRequest(data.shippingAgentCode);
             ps.isAvailable = true;
@@ -155,61 +156,25 @@ const disburse = (data) => {
         });
     } else {
         const myInterval = rx.interval(1000);
-        const subs = myInterval.subscribe(()=>{
+        const subs = myInterval.subscribe(() => {
             subs.unsubscribe();
             handler.buffer.next(data);
         });
     }
 }
 
-handler.sub12 = ibuki.filterOn('db-log:handler>db').subscribe(() => {
+handler.sub12 = ibuki.filterOn('db-log:handler>db').subscribe(() => {    
     const req1 = new sql.Request(handler.pool);
     tools.setLogInputParams(req1, notify.getJobRunStatus());
     const sqlCommand = sqlCommands.insertPackageLog;
-        req1.query(sqlCommand, (err) => {
-            req1.isAvailable = true;
-            if (err) {
-                notify.pushError(err);
-            }
-            ibuki.emit('cleanup:db>handler');
-        })
+    req1.query(sqlCommand, (err) => {
+        req1.isAvailable = true;
+        if (err) {
+            notify.pushError(err);
+        }
+        ibuki.emit('cleanup:db>handler');
+    })
 });
+handler.beforeCleanup(handler.sub12);
+
 module.exports = db;
-
-
-// const createRequests = () => {
-//     for (let i = 0; i < settings.db.pool.max; i++) {
-//         const req = new sql.Request(handler.pool);
-//         req.isAvailable = true;
-//         req.index = i;
-//         reqs.push(req);
-//     }
-// }
-
-// const disburse = (data) => {
-//     let req = reqs.find((e) => e.isAvailable);
-//     if (req) {
-//         req.isAvailable = false;
-//         req.multiple = true;
-//         // tools.setInputParams(req, data);
-//         notify.addDbRequest();
-//         const packageHistorySql = sqlCommands.insertPackageHistory;
-//         // let sqlCommandTest = 'update product set UnitPrice = UnitPrice + 1 where id = 1;';
-//         let sqlCommand = sqlCommands.updateInfoAndInsertInPackageHistory1;
-//         // .concat(data.activityJson ? `${packageHistorySql}` : '');
-
-//         req.query(sqlCommand, (err, result) => {
-//             req.isAvailable = true;
-//             if (err) {
-//                 notify.pushError(err);
-//                 notify.addDbError();
-//             } else {
-//                 notify.addDbResponse();
-//             }
-//         });
-//     } else {
-//         setTimeout(() => {
-//             disburse(data);
-//         }, 1000);
-//     }
-// }
