@@ -327,5 +327,42 @@ where No_ = 'CONT-000005331'
 ////// handler.js
 
  email.sendmail();
+ 
+ 
+ /////////////// Module and Submodule
+ Module Name		SubModule
+Run.JS		Notify.js
+		DB.js
+		handler
+		ibuki
+DB.js		workbench
+		notify
+		ibuki
+		handler
+		settings.json
+		sql-commands
+workbench		handler
+		settings.json
+		notify
+		api
+		ibuki
+api		fex
+		gso
+		ups
+		tps
+		handler
+		notify
+carriers files		db
+		notify
+		handler
+handler		email
+		DB [Through ibuki]
+		notify
+email		ibuki
+		notify
+		handler
+notify		logger
+		notifyData
+
 
            
