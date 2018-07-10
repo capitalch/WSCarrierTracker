@@ -1,12 +1,12 @@
 'use strict';
-const nodemailer = require('nodemailer');
+// const nodemailer = require('nodemailer');
 const ibuki = require('./ibuki');
 const notify = require('./notify');
 // const handler = require('./handler');
 const settings = require('../settings.json');
 const mandrill = require('mandrill-api/mandrill');
-const mandrillClient = new mandrill.Mandrill('r96zzCYUlKTLJ8e620HbKQ');
-// const mandrillClient = new mandrill.Mandrill(settings.config.mandrillApiKey);
+// const mandrillClient = new mandrill.Mandrill('r96zzCYUlKTLJ8e620HbKQ');
+const mandrillClient = new mandrill.Mandrill(settings.config.mandrillApiKey);
 
 const mailAddresses = settings.config.mailAddresses;
 
