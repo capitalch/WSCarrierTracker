@@ -1,7 +1,9 @@
 'use strict';
 const winston = require('winston');
 const moment = require('moment');
+const settings = require('../settings');
 
+const notProduction = !(settings.config && settings.config.production);
 const options = {
     file: {
         level: 'info',
@@ -21,12 +23,18 @@ const options = {
         colorize: true
     }
 };
+
+let transports = [new winston.transports.File(options.file)];
+(notProduction) && transports.push(new winston.transports.Console(options.console));
+
 const logger = winston.createLogger({
-    transports: [
-        new winston.transports.Console(options.console),
-        new winston.transports.File(options.file)
-    ]
+    transports: transports
 });
+// [
+//     // new winston.transports.Console(options.console),
+//     new winston.transports.File(options.file)
+// ]
+
 
 module.exports = logger;
 // logger.info('Hello again distributed logs');
