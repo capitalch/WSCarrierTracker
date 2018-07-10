@@ -1,13 +1,11 @@
 'use strict';
 const moment = require('moment');
-const crypto = require('crypto');
+const _ = require('lodash');
 const logger = require('./logger');
 const settings = require('../settings.json');
 const notifyData = require('./notifyData');
-const ibuki = require('./ibuki');
-const _ = require('lodash');
-// let verbose = settings.config.verbose;
-// verbose = verbose || true;
+// const ibuki = require('./ibuki');
+const verbose = _.has(settings, 'config.verbose') ? settings.config.verbose : true;
 
 const timing = {};
 const apiQueueArray = new Array(10).fill(0);
@@ -120,6 +118,7 @@ const notify = {
     addDbError: (carrierName) => {
         notifyData.dbStatus[carrierName].errors++;
     },
+    getDbErrors: (carrierName) => notifyData.dbStatus[carrierName].errors,
     incrDelivered: (carrierName) => {
         notifyData.carrierStatus[carrierName].delivered++;
     },
@@ -229,7 +228,8 @@ const notify = {
     },
     isSameApiQueueRepeat10: () => {
         const apiQue = notify.getJobRunStatus().apiQue;
-        apiQueueArray.push(apiQue); apiQueueArray.shift();
+        apiQueueArray.push(apiQue);
+        apiQueueArray.shift();
         const isSame = apiQueueArray.every(x => x === apiQue);
         return (isSame);
     },

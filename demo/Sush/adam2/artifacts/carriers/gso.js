@@ -57,13 +57,15 @@ const processGso = (x) => {
         handleGso(x);
     } else {
         notify.incrException(x.carrierName);
-        const error = handler.frameError({
-            message: x.response.StatusDescription,
-            name: 'apiCallError'
-        }, 'gso', 'info', 3);
+        const error = Error(x.response.StatusDescription);
+        error.name = 'apiCallError';        
+        // handler.frameError({
+        //     message: x.response.StatusDescription,
+        //     name: 'apiCallError'
+        // }, 'gso', 'info', 1);
         const errorJson = notify.getErrorJson(error, x);
         handler.buffer.next(errorJson);
-        ibuki.emit('app-error:any', error);
+        // ibuki.emit('app-error:any', error);
     }
 }
 

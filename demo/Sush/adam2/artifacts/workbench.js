@@ -17,7 +17,7 @@ const subs = myInterval.subscribe(() => {
     ibuki.emit('kill-process:any>handler');
 });
 
-const maxCarrierQueueSize = _.has(settings, 'config.maxCarrierQueueSize') ? settings.config.maxCarrierQueueSize : 1000;
+const maxCarrierApiQueueSize = _.has(settings, 'config.maxCarrierApiQueueSize') ? settings.config.maxCarrierApiQueueSize : 1000;
 const maxCarrierApiErrorCount = _.has(settings, 'config.maxCarrierApiErrorCount') ? settings.config.maxCarrierApiErrorCount : 1000;
 handler.sub1 = ibuki.filterOn('handle-big-object:db>workbench').subscribe(
     d => {
@@ -74,18 +74,26 @@ handler.sub1 = ibuki.filterOn('handle-big-object:db>workbench').subscribe(
             });
         // notify module is used to notify errors and status
         (gso.length > 0) && (notify.initCarrier('gso', gso)) &&
-            (ibuki.emit('pre-process-gso-carrier:self', gso)); // Pre processing GSO object to get token information
+        (ibuki.emit('pre-process-gso-carrier:self', gso)); // Pre processing GSO object to get token information
         (fex.length > 0) && (notify.initCarrier('fex', fex)) &&
-            (ibuki.emit('process-carrier:self', fex));
+        (ibuki.emit('process-carrier:self', fex));
         (ups.length > 0) && (notify.initCarrier('ups', ups)) &&
-            (ibuki.emit('process-carrier:self', ups));
+        (ibuki.emit('process-carrier:self', ups));
         (tps.length > 0) && (notify.initCarrier('tps', tps)) &&
-            (ibuki.emit('process-carrier:self', tps));
+        (ibuki.emit('process-carrier:self', tps));
         handler.closeIfIdle();
         bigObject = null;
     }
 );
 handler.beforeCleanup(handler.sub1);
+
+function callAxios(x) {
+    if (x.method === 'axiosPost') {
+        ibuki.emit('axios-post:workbench-fex>api', x);
+    } else {
+        ibuki.emit('axios-get:workbench>api', x)
+    }
+}
 
 handler.sub8 = ibuki.filterOn('process-carrier:self').subscribe(d => {
     const carrierInfos = d.data;
@@ -93,26 +101,22 @@ handler.sub8 = ibuki.filterOn('process-carrier:self').subscribe(d => {
     handler.sub2 = rx.from(carrierInfos)
         .pipe(
             operators
-                .concatMap(x => rx.of(x)
-                    .pipe(operators
-                        .delay(
-                            (_.has(settings, 'config.autoPilotPiston') && settings.config.autoPilotPiston) ? (notify.getPiston(x.carrierName) || 10) : 10
-                        ))))
+            .concatMap(x => rx.of(x)
+                .pipe(operators
+                    .delay(
+                        (_.has(settings, 'config.autoPilotPiston') && settings.config.autoPilotPiston) ? (notify.getPiston(x.carrierName) || 10) : 10
+                    ))))
 
         .subscribe(
             x => {
                 // notify.addApiRequest(x);
-                if ((notify.getApiQueue(x.carrierName) <= maxCarrierQueueSize)
-                    && (notify.getApiError(x) <= maxCarrierApiErrorCount)) {
-                    if (x.method === 'axiosPost') {
-                        ibuki.emit('axios-post:workbench-fex>api', x);
-                    } else {
-                        ibuki.emit('axios-get:workbench>api', x)
-                    }
+                if (notify.getApiError(x) >= maxCarrierApiErrorCount) {
+                    notify.logInfo(x.carrierName + ' :Maximum carrier api error count reached. Suspending further query for this carrier.');
+                } else if (notify.getApiQueue(x.carrierName) >= maxCarrierApiQueueSize) {
+                    notify.logInfo(x.carrierName + ' :Maximum carrier api queue size reached. Suspending further query for this carrier.');
                 } else {
-                    notify.logInfo(x.carrierName + ' :Maximum api queue size reached for carrier. Suspending further query for this carrier.');
-                }
-                // api[x.method](x);                
+                    callAxios(x);
+                }           
             }
         );
 });

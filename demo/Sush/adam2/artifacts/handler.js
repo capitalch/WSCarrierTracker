@@ -68,7 +68,7 @@ const subs1 = ibuki.filterOn('mail-processed:email>handler').subscribe(() => {
 
 function cleanup(code) {
     notify.logInfo(notify.getJobRunStatus());
-    notify.logInfo('cleaning up...');
+    notify.logInfo('cleaning up');
     subArray.forEach(x => x.unsubscribe());
     handler.pool && handler.pool.close();
     setTimeout(() => {
@@ -76,12 +76,12 @@ function cleanup(code) {
     }, 3000);
 }
 
-handler.frameError = (error, location, severity, index) => {
-    error.location = location;
-    error.severity = severity;
-    error.index = index;
-    return (error);
-}
+// handler.frameError = (error, location, severity, index) => {
+//     error.location = location;
+//     error.severity = severity;
+//     error.index = index;
+//     return (error);
+// }
 
 process.on('exit', function (code) {
     notify.logInfo('Exiting program: exit code: ' +
@@ -90,7 +90,7 @@ process.on('exit', function (code) {
         notify.getTime('start') +
         ' End time:' +
         notify.getTime('end') +
-        ' Duration (hh:mm:ss)' +
+        ' Duration (hh:mm:ss) ' +
         notify.getJobRunDuration()
     );
 });
@@ -108,7 +108,7 @@ handler.domainError.on('error', function (err) {
 
 handler.sub14 = ibuki.filterOn('app-error:any').subscribe(d => {
     const err = d.data;
-    if (err.severity === 'fatal') {
+    if (err.severity && (err.severity === 'fatal')) {
         notify.logInfo(err.stack);
         cleanup(100);
     }

@@ -1,5 +1,6 @@
 'use strict';
 const sql = require('mssql');
+const _ = require('lodash');
 // const moment = require('moment');
 const rx = require('rxjs');
 const ibuki = require('./ibuki');
@@ -11,6 +12,7 @@ const workbench = require('./workbench');
 
 let db = {};
 let reqs = [];
+const maxDbErrorCount = _.has(settings, 'config.maxDbErrorCount') ? settings.config.maxDbErrorCount : 100;
 const tools = {
     // setInputParams: (req, json) => {
     //     req.input('Status', sql.VarChar, json.status || 'No Status');
@@ -93,18 +95,18 @@ handler.sub0 = ibuki.filterOn('get-big-object:run>db').subscribe(() => {
         err => {
             if (err) {
                 notify.pushError(err);
-                ibuki.emit('app-error:any', handler.frameError(err, 'db', 'fatal', 1));
+                ibuki.emit('app-error:any', (err.severity = 'fatal') && err);
             } else {
                 const req1 = new sql.Request(handler.pool);
                 req1.query(sqlCommands.getInfos, (err, result) => {
                     if (err) {
                         notify.pushError(err);
-                        ibuki.emit('app-error:any', handler.frameError(err, 'db', 'fatal', 2));
+                        ibuki.emit('app-error:any', (err.severity = 'fatal') && err);
                     } else {
+                        createPsRequests();
                         ibuki.emit('handle-big-object:db>workbench', result.recordset);
                     }
                 });
-                createPsRequests();
             }
         }
     );
@@ -150,6 +152,9 @@ const disburse = (data) => {
             if (err) {
                 notify.pushError(err);
                 notify.addDbError(data.shippingAgentCode);
+                if (notify.getDbErrors() >= maxDbErrorCount) {
+                    ibuki.emit('app-error:any', (err.severity = 'fatal') && err);
+                }
             } else {
                 notify.addDbResponse(data.shippingAgentCode);
             }
@@ -163,7 +168,7 @@ const disburse = (data) => {
     }
 }
 
-handler.sub12 = ibuki.filterOn('db-log:handler>db').subscribe(() => {    
+handler.sub12 = ibuki.filterOn('db-log:handler>db').subscribe(() => {
     const req1 = new sql.Request(handler.pool);
     tools.setLogInputParams(req1, notify.getJobRunStatus());
     const sqlCommand = sqlCommands.insertPackageLog;

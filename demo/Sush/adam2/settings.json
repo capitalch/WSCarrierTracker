@@ -12,10 +12,10 @@
         "logDatetimeFormat": "YYYY-MM-DD HH:mm:ss",
         "samplingRateSec": 5,
         "appKillMin": 120,
-        "maxCarrierQueueSize": 300,
+        "maxCarrierApiQueueSize": 300,
         "maxCarrierApiErrorCount": 100,
-        "maxDbErrorCount":100,
-        "timeoutSec":15
+        "maxDbErrorCount": 100,
+        "timeoutSec": 15
     },
     "db": {
         "user": "sagarwal",
@@ -69,6 +69,16 @@
                     "accountNumber": "60278",
                     "userName": "Wineshipping",
                     "password": "WS60278"
+                },
+                {
+                    "accountNumber": "58187",
+                    "userName": "wineshipping2",
+                    "password": "adioscjs"
+                },
+                {
+                    "accountNumber": "54139",
+                    "userName": "wineshippingllc",
+                    "password": "54139"
                 }
             ]
         },

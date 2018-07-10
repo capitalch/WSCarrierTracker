@@ -64,7 +64,7 @@ handler.sub16 = ibuki.filterOn('axios-get:workbench>api').subscribe(d => {
             handleApiResponse(carrierInfo, res);
         })
         .catch(err => {
-            handleApiError(carrierInfo, err);
+            handleApiError(err, carrierInfo);
         });
 });
 handler.beforeCleanup(handler.sub16);
@@ -75,7 +75,7 @@ function handleApiResponse(carrierInfo, res) {
     carriermap[carrierInfo.carrierName](carrierInfo);
 }
 
-function handleApiError(carrierInfo, err) {
+function handleApiError(err, carrierInfo) {
     err.message = err.message.concat('. ', 'Carrier name:', carrierInfo.carrierName, ', Tracking number:', carrierInfo.trackingNumber);
     err.name = 'apiCallError';
     notify.pushError(err);

@@ -123,8 +123,7 @@ const processFex = (x) => {
                 const error = Error('Fex:' + x.trackingNumber + ' ' + notifications.LocalizedMessage);
                 notify.incrException(x.carrierName);
                 const errorJson = notify.getErrorJson(error, x);
-                handler.buffer.next(errorJson);
-                // ibuki.emit('app-error:any', handler.frameError(error, 'util', 'info', 4))
+                handler.buffer.next(errorJson);                
             } else {
                 checkMultiple(x, result);
             }

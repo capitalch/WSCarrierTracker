@@ -100,7 +100,7 @@ const processUps = (x) => {
             const errorJson = notify.getErrorJson(err);
             handler.buffer.next(errorJson);
             notify.incrException(x.carrierName);
-            ibuki.emit('app-error:any', handler.frameError(err, 'ups', 'info', 6));
+            // ibuki.emit('app-error:any', handler.frameError(err, 'ups', 'info', 2));
         } else {
             const response = result.TrackResponse.Response;
             if (response.ResponseStatusCode === '0') {
@@ -109,7 +109,7 @@ const processUps = (x) => {
                 const error = Error('UPS:' + x.trackingNumber + ' ' + errorDescription);
                 const errorJson = notify.getErrorJson(error, x);
                 handler.buffer.next(errorJson);
-                ibuki.emit('app-error:any', handler.frameError(error, 'ups', 'info', 7));
+                // ibuki.emit('app-error:any', handler.frameError(error, 'ups', 'info', 3));
             } else {
                 handleUps(x, result);
             }
