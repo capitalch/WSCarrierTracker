@@ -30,11 +30,11 @@ let transports = [new winston.transports.File(options.file)];
 const logger = winston.createLogger({
     transports: transports
 });
-// [
-//     // new winston.transports.Console(options.console),
-//     new winston.transports.File(options.file)
-// ]
-
 
 module.exports = logger;
-// logger.info('Hello again distributed logs');
+
+//deprecated
+// [
+//     new winston.transports.Console(options.console),
+//     new winston.transports.File(options.file)
+// ]
