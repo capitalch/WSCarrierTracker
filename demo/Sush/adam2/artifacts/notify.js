@@ -101,13 +101,14 @@ const notify = {
         notifyData.apiStatus[info.carrierName].errors++;
         // verbose && notify.showStatus(info);
     },
+    getApiError: (info) => notifyData.apiStatus[info.carrierName].errors,
     addApiToDb: (carrierName) => {
         notifyData.apiStatus[carrierName].toDb++;
     },
     addApiStatusDrop: (info) => {
         notifyData.apiStatus[info.carrierName].statusDrop++;
     },
-    addApiErrDrop:(info)=>{
+    addApiErrDrop: (info) => {
         notifyData.apiStatus[info.carrierName].errDrop++;
     },
     addDbRequest: (carrierName) => {
@@ -142,7 +143,7 @@ const notify = {
             apiErr: 0,
             apiQue: 0,
             statusDrop: 0,
-            errDrop:0,
+            errDrop: 0,
             toDb: 0,
             dbReq: 0,
             dbRes: 0,
@@ -174,7 +175,7 @@ const notify = {
                 ' dbQue:' + notifyData.dbStatus[x].queue());
             notifyData.apiStatus[x] &&
                 logger.info(s);
-                // console.log(s);
+            // console.log(s);
         });
         const s1 = 'Total'.concat(' apiReq:', allStatus.apiReq,
             ' apiRes:', allStatus.apiRes,
@@ -201,7 +202,7 @@ const notify = {
             apiErr: 0,
             apiQue: 0,
             statusDrop: 0,
-            errDrop:0,
+            errDrop: 0,
             toDb: 0,
             dbReq: 0,
             dbRes: 0,
@@ -239,12 +240,3 @@ const notify = {
 }
 
 module.exports = notify;
-
-// const dbStatus1 = {
-//     dbRequests: 0,
-//     dbResponses: 0,
-//     dbErrors: 0,
-//     dbQueue: () => {
-//         return (dbStatus1.dbRequests - dbStatus1.dbResponses - dbStatus1.dbErrors);
-//     }
-// };

@@ -13,7 +13,7 @@
         "samplingRateSec": 5,
         "appKillMin": 120,
         "maxCarrierQueueSize": 300,
-        "maxCarrierErrorCount": 100,
+        "maxCarrierApiErrorCount": 100,
         "maxDbErrorCount":100,
         "timeoutSec":15
     },

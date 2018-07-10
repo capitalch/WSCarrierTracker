@@ -18,7 +18,7 @@ const subs = myInterval.subscribe(() => {
 });
 
 const maxCarrierQueueSize = _.has(settings, 'config.maxCarrierQueueSize') ? settings.config.maxCarrierQueueSize : 1000;
-
+const maxCarrierApiErrorCount = _.has(settings, 'config.maxCarrierApiErrorCount') ? settings.config.maxCarrierApiErrorCount : 1000;
 handler.sub1 = ibuki.filterOn('handle-big-object:db>workbench').subscribe(
     d => {
         let bigObject = d.data;
@@ -102,7 +102,8 @@ handler.sub8 = ibuki.filterOn('process-carrier:self').subscribe(d => {
         .subscribe(
             x => {
                 // notify.addApiRequest(x);
-                if (notify.getApiQueue(x.carrierName) <= maxCarrierQueueSize) {
+                if ((notify.getApiQueue(x.carrierName) <= maxCarrierQueueSize)
+                    && (notify.getApiError(x) <= maxCarrierApiErrorCount)) {
                     if (x.method === 'axiosPost') {
                         ibuki.emit('axios-post:workbench-fex>api', x);
                     } else {
