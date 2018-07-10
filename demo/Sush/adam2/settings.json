@@ -1,7 +1,7 @@
 {
     "config": {
         "verbose": true,
-        "production": true,
+        "production": false,
         "autoPilotPiston": true,
         "mailAddresses": [{
             "email": "sagarwal@netwoven.com",
