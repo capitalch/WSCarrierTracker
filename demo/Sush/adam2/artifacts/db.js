@@ -94,13 +94,13 @@ handler.sub0 = ibuki.filterOn('get-big-object:run>db').subscribe(() => {
     handler.pool.connect(
         err => {
             if (err) {
-                notify.pushError(err);
+                // notify.pushError(err);
                 ibuki.emit('app-error:any', (err.severity = 'fatal') && err);
             } else {
                 const req1 = new sql.Request(handler.pool);
                 req1.query(sqlCommands.getInfos, (err, result) => {
                     if (err) {
-                        notify.pushError(err);
+                        // notify.pushError(err);
                         ibuki.emit('app-error:any', (err.severity = 'fatal') && err);
                     } else {
                         createPsRequests();
@@ -124,7 +124,8 @@ const createPsRequests = () => {
         ps.index = i;
         ps.prepare(sqlCommand, (err) => {
             if (err) {
-                notify.pushError(err);
+                // notify.pushError(err);
+                ibuki.emit('app-error:any', (err.severity = 'fatal') && err);
             } else {
                 ps.multiple = true;
                 reqs.push(ps);
@@ -150,9 +151,10 @@ const disburse = (data) => {
             notify.addDbRequest(data.shippingAgentCode);
             ps.isAvailable = true;
             if (err) {
-                notify.pushError(err);
-                notify.addDbError(data.shippingAgentCode);
-                if (notify.getDbErrors() >= maxDbErrorCount) {
+                // notify.pushError(err);
+                notify.addDbError(data.shippingAgentCode);                
+                if (notify.getDbErrors(data.shippingAgentCode) >= maxDbErrorCount) {
+                    err.message = 'Max db error count exceeded than allowed limit.'.concat(err.message);
                     ibuki.emit('app-error:any', (err.severity = 'fatal') && err);
                 }
             } else {

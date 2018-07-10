@@ -4,8 +4,6 @@ const ibuki = require('../ibuki');
 const handler = require('../handler');
 const parseString = require('xml2js').parseString;
 const notify = require('../notify');
-// const db = require('../db'); //required
-// const api = require('../api');
 const fex = {};
 const tools = {
     fexStatusCodes: () => {
@@ -107,23 +105,27 @@ handler.sub17 = ibuki.filterOn('process-fex:api>fex')
     .subscribe(d => processFex(d.data));
 handler.beforeCleanup(handler.sub17);
 
-const processFex = (x) => {    
-    parseString(x.response, {
+const processFex = (x) => {
+    parseString(x.response , {
         trim: true,
         explicitArray: false
     }, function (err, result) {
         if (err) {
+            err.message = x.carrierName.concat(' Tracking number:', x.trackingNumber, ' parse error for response:', err.message);
             notify.pushError(err);
-            notify.incrException(x.carrierName);
-            const errorJson = notify.getErrorJson(err, x);
-            handler.buffer.next(errorJson);
+            notify.addApiErrDrop(x);
+            // notify.incrException(x.carrierName);
+
+            // const errorJson = notify.getErrorJson(err, x);
+            // handler.buffer.next(errorJson);
         } else {
             const notifications = result.TrackReply.Notifications;
             if ((notifications.Severity === 'ERROR') || (notifications.Severity === 'FAILURE')) {
-                const error = Error('Fex:' + x.trackingNumber + ' ' + notifications.LocalizedMessage);
-                notify.incrException(x.carrierName);
-                const errorJson = notify.getErrorJson(error, x);
-                handler.buffer.next(errorJson);                
+                const err = Error('Fex:' + x.trackingNumber + ' ' + notifications.LocalizedMessage);
+                handler.handleCarrierError(err,x);
+                // notify.incrException(x.carrierName);
+                // const errorJson = notify.getErrorJson(error, x);
+                // handler.buffer.next(errorJson);
             } else {
                 checkMultiple(x, result);
             }
@@ -156,7 +158,7 @@ function handleFex(x, result) {
         returnEvent = null,
         rts = 0,
         rtsTrackingNo = '',
-        statusDescription = ''; //trackDetails.StatusDescription;
+        statusDescription = trackDetails.StatusDescription;
     const checkExceptions = () => {
         // check damage
         const damageEvent = tools.getDamageEvent(events);
@@ -179,13 +181,12 @@ function handleFex(x, result) {
             statusDescription = "Package returned to shipper: ".concat(rtsTrackingNo), //carrierStatusMessage
             returnEvent = tools.getReturnEvent(events),
             timeStamp = returnEvent && returnEvent.Timestamp ? returnEvent.Timestamp : timeStamp,
-            statusCode = returnEvent.StatusExceptionCode
+            statusCode = returnEvent && returnEvent.StatusExceptionCode
         );
         //check exception 71
         const exception71Event = tools.getException71Event(events);
         exception71Event && (
             notify.incrException(x.carrierName),
-
             exception71Event.StatusExceptionDescription && (statusDescription = exception71Event.StatusExceptionDescription.substr(0, 49)),
             exceptionStatus = 1,
             timeStamp = exception71Event.Timestamp

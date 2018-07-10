@@ -11,8 +11,8 @@ const logger = require('./logger');
 
 const handler = {};
 const subArray = [];
-let verbose = settings.config.verbose;
-verbose = verbose || true;
+// let verbose = settings.config.verbose;
+// verbose = verbose || true;
 handler.buffer = new rx.Subject();
 handler.domainError = domain.create();
 const samplingRate = _.has(settings, 'config.samplingRateSec') ? settings.config.samplingRateSec * 1000 : 5000
@@ -35,7 +35,7 @@ const isIdle = () => {
         dbRequests = dbRequests + dbStatus[x].requests;
     });
     const ret = ((
-        (dbQueue === 0) && (toDb === dbRequests)) &&
+            (dbQueue === 0) && (toDb === dbRequests)) &&
         ((apiQueue === 0) || notify.isSameApiQueueRepeat10())); // To trap final apiQue not zero
     return (ret);
 }
@@ -44,10 +44,21 @@ handler.beforeCleanup = (x) => {
     x && subArray.push(x);
 }
 
+handler.handleCarrierError = (err, x) => {
+    notify.pushError(err);
+    notify.incrException(x.carrierName);
+    const errorJson = notify.getErrorJson(err, x);
+    if (notify.isSameStatus(x, errorJson)) {
+        notify.addApiStatusDrop(x);
+    } else {
+        handler.buffer.next(errorJson);
+    }
+}
+
 handler.closeIfIdle = () => {
     const myInterval = rx.interval(samplingRate);
     handler.sub6 = myInterval.subscribe(() => {
-        verbose && notify.showAllStatus();
+        notify.showAllStatus();
         isIdle() && (
             notify.setTime('end'),
             ibuki.emit('db-log:handler>db'),

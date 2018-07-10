@@ -56,16 +56,12 @@ const processGso = (x) => {
     if (x.response.StatusCode === 200) {
         handleGso(x);
     } else {
-        notify.incrException(x.carrierName);
-        const error = Error(x.response.StatusDescription);
-        error.name = 'apiCallError';        
-        // handler.frameError({
-        //     message: x.response.StatusDescription,
-        //     name: 'apiCallError'
-        // }, 'gso', 'info', 1);
-        const errorJson = notify.getErrorJson(error, x);
-        handler.buffer.next(errorJson);
-        // ibuki.emit('app-error:any', error);
+        // notify.incrException(x.carrierName);
+        let err = Error('GSO'.concat(' Tracking number:', x.trackingNumber, ' ', x.response.StatusDescription));
+        err.name = 'apiCallError';
+        handler.handleCarrierError(err, x);
+        // const errorJson = notify.getErrorJson(err, x);
+        // handler.buffer.next(errorJson);
     }
 }
 
@@ -101,9 +97,10 @@ function handleGso(x) {
     } else {
         gsoTemp.exceptionStatus = 1;
         notify.incrException(x.carrierName);
+        gsoTemp.status = status;
     }
 
-    gsoTemp.rts = tools.getRts();
+    gsoTemp.rts = tools.getRts(transitNotes);
     gsoTemp.rts && (notify.incrReturn(x.carrierName));
     const gsoJson = {
         status: gsoTemp.status || 'No Status',

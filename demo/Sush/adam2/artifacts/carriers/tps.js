@@ -18,10 +18,12 @@ const processTps = (x) => {
         explicitArray: false
     }, function (err, result) {
         if (err) {
+            err.message = x.carrierName.concat(' Tracking number:', x.trackingNumber, ' parse error for response:', err.message);
             notify.pushError(err);
-            notify.incrException(x.carrierName);
-            const errorJson = notify.getErrorJson(err, x);
-            handler.buffer.next(errorJson);
+            notify.addApiErrDrop(x);
+            // notify.incrException(x.carrierName);
+            // const errorJson = notify.getErrorJson(err, x);
+            // handler.buffer.next(errorJson);
         } else {
             let error = null;
             if (_.has(result, 'TrackResponse.TrackInfo.Error')) {
@@ -34,9 +36,10 @@ const processTps = (x) => {
             }
 
             if (error) {
-                notify.incrException(x.carrierName);
-                const errorJson = notify.getErrorJson(error, x);
-                handler.buffer.next(errorJson);
+                handler.handleCarrierError(error,x);
+                // notify.incrException(x.carrierName);
+                // const errorJson = notify.getErrorJson(error, x);
+                // handler.buffer.next(errorJson);
             } else {
                 handleTps(x, result);
             }

@@ -82,6 +82,17 @@ const tools = {
             timeFormated = time ? moment(time, 'HHmmss').format("h:mm A") : '';
         }
         return timeFormated;
+    },
+    setXException: (activities, upsTemp) => {
+        let activity = null;
+        if (activities) {
+            if (Array.isArray(activities)) {
+                activity = activities.find(
+                    x => x.Status.StatusType.Code === 'X');
+            }
+        }
+        upsTemp.carrierStatusMessage = activity && activity.Status.StatusType.Description;
+        upsTemp.exceptionStatus = 1;
     }
 }
 
@@ -90,26 +101,27 @@ handler.sub20 = ibuki.filterOn('process-ups:api>ups')
 handler.beforeCleanup(handler.sub20);
 
 const processUps = (x) => {
-
     parseString(x.response, {
         trim: true,
         explicitArray: false
     }, function (err, result) {
         if (err) {
+            err.message = x.carrierName.concat(' Tracking number:', x.trackingNumber, ' parse error for response:', err.message);
             notify.pushError(err);
-            const errorJson = notify.getErrorJson(err);
-            handler.buffer.next(errorJson);
-            notify.incrException(x.carrierName);
-            // ibuki.emit('app-error:any', handler.frameError(err, 'ups', 'info', 2));
+            notify.addApiErrDrop(x);
+            // notify.pushError(err);
+            // const errorJson = notify.getErrorJson(err);
+            // handler.buffer.next(errorJson);
+            // notify.incrException(x.carrierName);            
         } else {
             const response = result.TrackResponse.Response;
             if (response.ResponseStatusCode === '0') {
-                const errorDescription = response.Error.ErrorDescription;
-                notify.incrException(x.carrierName);
+                const errorDescription = response.Error.ErrorDescription;                
                 const error = Error('UPS:' + x.trackingNumber + ' ' + errorDescription);
-                const errorJson = notify.getErrorJson(error, x);
-                handler.buffer.next(errorJson);
-                // ibuki.emit('app-error:any', handler.frameError(error, 'ups', 'info', 3));
+                handler.handleCarrierError(error, x);
+                // const errorJson = notify.getErrorJson(error, x);
+                // handler.buffer.next(errorJson);
+                // notify.incrException(x.carrierName);      
             } else {
                 handleUps(x, result);
             }
@@ -182,7 +194,7 @@ function handleUps(x, result) {
             notify.incrNotDelivered(x.carrierName);
             upsTemp.status = 'No Status';
     }
-
+    tools.setXException(activities, upsTemp);
     const upsJson = {
         status: upsTemp.status || 'No Status',
         statusDate: upsTemp.statusDate || '',

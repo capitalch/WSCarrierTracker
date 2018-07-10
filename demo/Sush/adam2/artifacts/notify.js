@@ -5,7 +5,7 @@ const logger = require('./logger');
 const settings = require('../settings.json');
 const notifyData = require('./notifyData');
 // const ibuki = require('./ibuki');
-const verbose = _.has(settings, 'config.verbose') ? settings.config.verbose : true;
+// const verbose = _.has(settings, 'config.verbose') ? settings.config.verbose : true;
 
 const timing = {};
 const apiQueueArray = new Array(10).fill(0);

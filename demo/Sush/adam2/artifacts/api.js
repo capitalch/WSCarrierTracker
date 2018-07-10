@@ -76,7 +76,7 @@ function handleApiResponse(carrierInfo, res) {
 }
 
 function handleApiError(err, carrierInfo) {
-    err.message = err.message.concat('. ', 'Carrier name:', carrierInfo.carrierName, ', Tracking number:', carrierInfo.trackingNumber);
+    err.message = err.message && err.message.concat('. ', 'Carrier name:', carrierInfo.carrierName, ', Tracking number:', carrierInfo.trackingNumber);
     err.name = 'apiCallError';
     notify.pushError(err);
     notify.addApiError(carrierInfo);
