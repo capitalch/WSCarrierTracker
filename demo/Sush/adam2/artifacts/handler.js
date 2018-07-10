@@ -7,6 +7,7 @@ const ibuki = require('./ibuki');
 const settings = require('../settings.json');
 const notify = require('./notify');
 const email = require('./email');
+const logger = require('./logger');
 
 const handler = {};
 const subArray = [];
@@ -15,6 +16,7 @@ verbose = verbose || true;
 handler.buffer = new rx.Subject();
 handler.domainError = domain.create();
 const samplingRate = _.has(settings, 'config.samplingRateSec') ? settings.config.samplingRateSec * 1000 : 5000
+
 const isIdle = () => {
     const apiStatus = notify.getApiStatus();
     let carriers = Object.keys(apiStatus);
@@ -40,7 +42,6 @@ const isIdle = () => {
 
 handler.beforeCleanup = (x) => {
     x && subArray.push(x);
-    // x && handler.sub0 && handler.sub0.add(x);
 }
 
 handler.closeIfIdle = () => {
@@ -61,16 +62,18 @@ const subs = ibuki.filterOn('cleanup:db>handler').subscribe(() => {
 });
 
 const subs1 = ibuki.filterOn('mail-processed:email>handler').subscribe(() => {
-    subs1.unsubscribe();
     cleanup(0);
+    subs1.unsubscribe();
 });
 
 function cleanup(code) {
     notify.logInfo(notify.getJobRunStatus());
-    notify.logInfo('cleaning up');
-    subArray.forEach(x=>x.unsubscribe());
+    notify.logInfo('cleaning up...');
+    subArray.forEach(x => x.unsubscribe());
     handler.pool && handler.pool.close();
-    process.exit(code);
+    setTimeout(() => {
+        process.exit(code); // wait until logger is flushed
+    }, 3000);
 }
 
 handler.frameError = (error, location, severity, index) => {
@@ -81,7 +84,7 @@ handler.frameError = (error, location, severity, index) => {
 }
 
 process.on('exit', function (code) {
-    notify.logInfo('Exiting program:Exit code:' +
+    notify.logInfo('Exiting program: exit code: ' +
         code +
         ' Start time:' +
         notify.getTime('start') +
@@ -124,3 +127,12 @@ const subs2 = ibuki.filterOn('kill-process:any>handler').subscribe(
 )
 
 module.exports = handler;
+
+//deprecated
+
+// logger.end();
+// logger.on('finish', () => {
+//     console.log('end');
+//     process.exit(0);
+// }
+// )

@@ -1,0 +1,10 @@
+{"message":"New Job started at 2018-07-10 09:07:59","level":"info"}
+{"message":"gso Item Count: 33","level":"info"}
+{"message":"fex Item Count: 5","level":"info"}
+{"message":"ups Item Count: 62","level":"info"}
+{"message":"fex ApiReq:5 apiRes:5 apiErr:0 apiQue:0 piston:0 statusDrop:5 errDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"ups ApiReq:62 apiRes:62 apiErr:0 apiQue:0 piston:0 statusDrop:0 errDrop:0 toDb:62 dbReq:62 DbRes:62 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:33 apiRes:33 apiErr:0 apiQue:0 piston:0 statusDrop:33 errDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 errDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:100 apiRes:100 apiErr:0 apiQue:0 statusDrop:38 errDrop:0 toDb:62 dbReq:62 dbRes:62 dbErr:0 dbQue:0 t:2018-07-10 09:08:06","level":"info"}
+{"message":"Mandrill mail sent","level":"info"}

@@ -2,7 +2,7 @@
 const nodemailer = require('nodemailer');
 const ibuki = require('./ibuki');
 const notify = require('./notify');
-const handler = require('./handler');
+// const handler = require('./handler');
 const settings = require('../settings.json');
 const mandrill = require('mandrill-api/mandrill');
 const mandrillClient = new mandrill.Mandrill('r96zzCYUlKTLJ8e620HbKQ');
@@ -66,7 +66,7 @@ const subs = ibuki.filterOn('send-status-mail:handler>email').subscribe(() => {
     var async = false;
     mandrillClient.messages.send({ "message": message, "async": async }, function (result) {
         // console.log(result);
-        notify.logInfo('Mandrill mail sent');
+        notify.logInfo('Status mail is sent');
         ibuki.emit('mail-processed:email>handler');
     }, function (e) {
         // Mandrill returns the error as an object with name and message keys

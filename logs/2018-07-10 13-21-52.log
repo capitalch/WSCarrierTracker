@@ -1,0 +1,11 @@
+{"message":"New Job started at 2018-07-10 13:21:52","level":"info"}
+{"message":"fex Item Count: 1","level":"info"}
+{"message":"fex ApiReq:1 apiRes:1 apiErr:0 apiQue:0 piston:0 statusDrop:1 errDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"ups ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 errDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"gso ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 errDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"tps ApiReq:0 apiRes:0 apiErr:0 apiQue:0 piston:0 statusDrop:0 errDrop:0 toDb:0 dbReq:0 DbRes:0 DbErr:0 dbQue:0","level":"info"}
+{"message":"Total apiReq:1 apiRes:1 apiErr:0 apiQue:0 statusDrop:1 errDrop:0 toDb:0 dbReq:0 dbRes:0 dbErr:0 dbQue:0 t:2018-07-10 13:22:00","level":"info"}
+{"message":"Status mail is sent","level":"info"}
+{"message":{"apiReq":1,"apiRes":1,"apiErr":0,"apiQue":0,"statusDrop":1,"errDrop":0,"toDb":0,"dbReq":0,"dbRes":0,"dbErr":0,"dbQue":0,"startTime":"2018-07-10 13:21:52","endTime":"2018-07-10 13:22:00","duration":"00:00:07"},"level":"info"}
+{"message":"cleaning up...","level":"info"}
+{"message":"Exiting program: exit code: 0 Start time:2018-07-10 13:21:52 End time:2018-07-10 13:22:00 Duration (hh:mm:ss)00:00:07","level":"info"}
