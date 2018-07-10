@@ -18,13 +18,13 @@
 3. At maximum number of errors stop carrier api query
 4. Verbose true would not write progress report to log files. Only errors are reported.
 5. Responses having error information should be treated as errors.     
-7. Database CarrierLogs, do not insert when json is null.
+7. S: Database CarrierLogs, do not insert when json is null.
                                                 8. Log files do not have entries after 'Mandrill email sent'.
-9. Add additional user accouts for GSO as provided by John.
+9. S: Add additional user accouts for GSO as provided by John.
 10. GSO 400 error take care.
-11. Optimize db working with the memory footprint.
-12. Check Module interdependebility.
-13. Ravi mail for estimated delivery time         
+11. S: Optimize db working with the memory footprint.
+12. S: Check Module interdependebility.
+13. S: Ravi mail for estimated delivery time         
                                                 
 
 
