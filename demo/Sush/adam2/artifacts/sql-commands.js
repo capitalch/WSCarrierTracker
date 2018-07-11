@@ -1,6 +1,6 @@
 let sqlCommands = {
 	getInfos: `
-		SELECT top 10000 NO_ rn,[Shipping Agent Code] shippingAgentCode
+		SELECT NO_ rn,[Shipping Agent Code] shippingAgentCode
 		, [External Tracking No_] trackingNumber
 		, status
 		, Status_Date statusDate
@@ -19,7 +19,7 @@ let sqlCommands = {
 				NOT [Status] = 'Package returned to shipper' and 
 				--NOT [Status] = 'Delivered' and 
 				NOT [Status] = 'Returned' and			
-				[Shipping Agent Code] in ( 'fex') 
+				[Shipping Agent Code] in ( 'UPS') 
 				AND NOT [External Tracking No_] = ''
 				order by NO_
 			`,

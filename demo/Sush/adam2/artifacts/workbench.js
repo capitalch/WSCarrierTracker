@@ -109,11 +109,10 @@ handler.sub8 = ibuki.filterOn('process-carrier:self').subscribe(d => {
 
         .subscribe(
             x => {
-                // notify.addApiRequest(x);
                 if (notify.getApiError(x) >= maxCarrierApiErrorCount) {
-                    notify.logInfo(x.carrierName + ' :Maximum carrier api error count reached. Suspending further query for this carrier.');
+                    notify.logInfo(x.carrierName.concat(':', x.trackingNumber, ':Maximum carrier api error count reached.'));
                 } else if (notify.getApiQueue(x.carrierName) >= maxCarrierApiQueueSize) {
-                    notify.logInfo(x.carrierName + ' :Maximum carrier api queue size reached. Suspending further query for this carrier.');
+                    notify.logInfo(x.carrierName.concat(':', x.trackingNumber, ':Maximum carrier api queue size reached.'));
                 } else {
                     callAxios(x);
                 }           

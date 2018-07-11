@@ -23,8 +23,8 @@
                                                 9. S: Add additional user accouts for GSO as provided by John.
                                                 10. GSO 400 error take care.
                                                 13. S: Ravi mail for estimated delivery time
-10. 
-11. S: Optimize db working with the memory footprint.
+
+                                                11. S: Optimize db working with the memory footprint.
 12. S: Check Module interdependebility.
                                                 
                                                 

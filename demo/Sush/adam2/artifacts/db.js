@@ -13,6 +13,7 @@ const workbench = require('./workbench');
 let db = {};
 let reqs = [];
 const maxDbErrorCount = _.has(settings, 'config.maxDbErrorCount') ? settings.config.maxDbErrorCount : 100;
+let psParamsObject = null;
 const tools = {
     // setInputParams: (req, json) => {
     //     req.input('Status', sql.VarChar, json.status || 'No Status');
@@ -139,13 +140,14 @@ handler.sub5 = handler.buffer.subscribe(d => {
 });
 handler.beforeCleanup(handler.sub5);
 
+const myInterval = rx.interval(1000);
 const disburse = (data) => {
     let ps = reqs.find((e) => e.isAvailable);
     if (ps) {
         ps.isAvailable = false;
         notify.addApiToDb(data.shippingAgentCode);
 
-        const psParamsObject = tools.getPsParamsObject(data);
+        psParamsObject = tools.getPsParamsObject(data);
 
         ps.execute(psParamsObject, (err) => {
             notify.addDbRequest(data.shippingAgentCode);
@@ -162,7 +164,6 @@ const disburse = (data) => {
             }
         });
     } else {
-        const myInterval = rx.interval(1000);
         const subs = myInterval.subscribe(() => {
             subs.unsubscribe();
             handler.buffer.next(data);
