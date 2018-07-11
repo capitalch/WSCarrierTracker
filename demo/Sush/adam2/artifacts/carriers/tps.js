@@ -18,7 +18,7 @@ const processTps = (x) => {
         explicitArray: false
     }, function (err, result) {
         if (err) {
-            err.message = x.carrierName.concat(' Tracking number:', x.trackingNumber, ' parse error for response:', err.message);
+            err.message = x.carrierName.concat(' Tracking number:', x.trackingNumber, ' parse error for response:', err.message || '');
             notify.pushError(err);
             notify.addApiErrDrop(x);
             // notify.incrException(x.carrierName);
@@ -28,11 +28,11 @@ const processTps = (x) => {
             let error = null;
             if (_.has(result, 'TrackResponse.TrackInfo.Error')) {
                 const errorNode = result.TrackResponse.TrackInfo.Error;
-                error = Error('TPS:' + x.trackingNumber + ' ' + errorNode.Description);
+                error = Error('TPS:' + x.trackingNumber + ' ' + errorNode.Description || '');
                 error.name = 'apiCallError';
             } else if (_.has(result, 'Error')) {
                 error = result.Error;
-                error.message = (error.message || '').concat(' TPS:', x.trackingNumber)
+                error.message = 'TPS:'.concat(x.trackingNumber,' ',(error.message || ''));
             }
 
             if (error) {

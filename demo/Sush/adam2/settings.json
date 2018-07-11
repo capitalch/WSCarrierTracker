@@ -35,7 +35,7 @@
     "carriers": {
         "fex": {
             "pistonMillis": 10,
-            "queue": 50,
+            "queue": 10,
             "url": "https://gateway.fedex.com:443/xml",
             "method": "",
             "key": "JfSbK7tkzfRBMf8G",

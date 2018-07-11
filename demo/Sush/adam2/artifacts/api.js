@@ -50,7 +50,7 @@ handler.sub15 = ibuki.filterOn('axios-post:workbench-fex>api').subscribe(d => {
             handleApiResponse(carrierInfo, res);
         })
         .catch(err => {
-            handleApiError(carrierInfo, err);
+            handleApiError(err, carrierInfo);
         });
 })
 handler.beforeCleanup(handler.sub15);
@@ -76,7 +76,8 @@ function handleApiResponse(carrierInfo, res) {
 }
 
 function handleApiError(err, carrierInfo) {
-    err.message = err.message && err.message.concat('. ', 'Carrier name:', carrierInfo.carrierName, ', Tracking number:', carrierInfo.trackingNumber);
+    // err.message = err.message && err.message.concat('. ', 'Carrier name:', carrierInfo.carrierName, ', Tracking number:', carrierInfo.trackingNumber);
+    err.message = carrierInfo.carrierName.toUpperCase().concat(':',carrierInfo.trackingNumber, ' error:', err.message || '');
     err.name = 'apiCallError';
     notify.pushError(err);
     notify.addApiError(carrierInfo);

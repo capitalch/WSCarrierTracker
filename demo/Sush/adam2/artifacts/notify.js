@@ -173,8 +173,8 @@ const notify = {
                 notifyData.dbStatus[x].responses, ' DbErr:', notifyData.dbStatus[x].errors,
                 ' dbQue:' + notifyData.dbStatus[x].queue());
             notifyData.apiStatus[x] &&
-                logger.info(s);
-            // console.log(s);
+                // logger.info(s);
+                console.log(s);
         });
         const s1 = 'Total'.concat(' apiReq:', allStatus.apiReq,
             ' apiRes:', allStatus.apiRes,
@@ -190,8 +190,8 @@ const notify = {
             ' dbQue:', allStatus.dbQue,
             ' t:', moment().format(notify.getDatetimeFormat())
         );
-        logger.info(s1);
-        // console.log(s1);
+        // logger.info(s1);
+        console.log(s1);
     },
     getJobRunStatus: () => {
         const carriers = Object.keys(notifyData.apiStatus);
@@ -234,7 +234,13 @@ const notify = {
         return (isSame);
     },
     pushError: (x) => {
-        logger.info(x.message);
+        // logger.info(x.message);
+        if (x) {
+            console.log(x.message);            
+        } else {
+            console.log('Error has no message');
+        }
+
     },
     logInfo: (x) => logger.info(x)
 }

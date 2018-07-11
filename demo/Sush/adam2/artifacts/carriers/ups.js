@@ -117,7 +117,7 @@ const processUps = (x) => {
             const response = result.TrackResponse.Response;
             if (response.ResponseStatusCode === '0') {
                 const errorDescription = response.Error.ErrorDescription;                
-                const error = Error('UPS:' + x.trackingNumber + ' ' + errorDescription);
+                const error = Error('UPS:' + x.trackingNumber + ' ' + errorDescription || '');
                 handler.handleCarrierError(error, x);
                 // const errorJson = notify.getErrorJson(error, x);
                 // handler.buffer.next(errorJson);
