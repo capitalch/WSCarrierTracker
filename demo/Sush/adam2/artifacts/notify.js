@@ -169,8 +169,8 @@ const notify = {
                 ' statusDrop:', notifyData.apiStatus[x].statusDrop,
                 ' errDrop:', notifyData.apiStatus[x].errDrop,
                 ' toDb:', notifyData.apiStatus[x].toDb,
-                ' dbReq:', notifyData.dbStatus[x].requests, ' DbRes:',
-                notifyData.dbStatus[x].responses, ' DbErr:', notifyData.dbStatus[x].errors,
+                ' dbReq:', notifyData.dbStatus[x].requests, ' dbRes:',
+                notifyData.dbStatus[x].responses, ' dbErr:', notifyData.dbStatus[x].errors,
                 ' dbQue:' + notifyData.dbStatus[x].queue());
             notifyData.apiStatus[x] &&
                 logger.info(s);

@@ -2,7 +2,6 @@
 var ibuki = {};
 const rx = require('rxjs');
 const operators = require('rxjs/operators');
-
 const subject = new rx.Subject();
 const hotSubject = new rx.BehaviorSubject();
 
@@ -28,6 +27,4 @@ ibuki.hotEmit = (id, options) => {
 ibuki.hotFilterOn = (id) => {
     return (hotSubject.pipe(operators.filter(d => (d.id === id))));
 }
-
-
 module.exports = ibuki;
