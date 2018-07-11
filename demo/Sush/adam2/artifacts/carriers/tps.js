@@ -32,7 +32,7 @@ const processTps = (x) => {
                 error.name = 'apiCallError';
             } else if (_.has(result, 'Error')) {
                 error = result.Error;
-                error.message = error.message + ' '.concat('TPS:', x.trackingNumber)
+                error.message = (error.message || '').concat(' TPS:', x.trackingNumber)
             }
 
             if (error) {
