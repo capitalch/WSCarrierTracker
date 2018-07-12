@@ -56,9 +56,3 @@ let sqlCommands = {
 
 module.exports = sqlCommands;
 //, 'UPS', 'FEX', 'GSO', 'TMC', 'FCC', 'TPS'
-
-/*
-
-		--
-
-*/

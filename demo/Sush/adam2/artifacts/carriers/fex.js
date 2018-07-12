@@ -8,21 +8,21 @@ const fex = {};
 const tools = {
     fexStatusCodes: () => {
         return ({
-            AF: 'orderProcessed',
-            AR: 'orderProcessed',
-            CA: 'exception',
-            DE: 'exception',
-            DL: 'delivered',
-            DP: 'inTransit',
-            HA: 'inTransit',
-            HP: 'inTransit',
-            IT: 'inTransit',
-            OC: 'inTransit',
-            OD: 'inTransit',
-            PU: 'PickedUp',
-            RR: 'inTransit',
-            RS: 'returned',
-            HL: 'readyForPickup'
+            AF: 'Order processed',
+            AR: 'Order processed',
+            CA: 'Exception',
+            DE: 'Exception',
+            DL: 'Delivered',
+            DP: 'In transit',
+            HA: 'In transit',
+            HP: 'In transit',
+            IT: 'In transit',
+            OC: 'In transit',
+            OD: 'In transit',
+            PU: 'Picked Up',
+            RR: 'In transit',
+            RS: 'Returned',
+            HL: 'Ready For Pickup'
         });
     },
     timeStamp: (events) => {
@@ -114,18 +114,11 @@ const processFex = (x) => {
             err.message = x.carrierName.concat(' Tracking number:', x.trackingNumber, ' parse error for response:', err.message);
             notify.pushError(err);
             notify.addApiErrDrop(x);
-            // notify.incrException(x.carrierName);
-
-            // const errorJson = notify.getErrorJson(err, x);
-            // handler.buffer.next(errorJson);
         } else {
             const notifications = result.TrackReply.Notifications;
             if ((notifications.Severity === 'ERROR') || (notifications.Severity === 'FAILURE')) {
                 const err = Error('Fex:' + x.trackingNumber + ' ' + notifications.LocalizedMessage);
                 handler.handleCarrierError(err,x);
-                // notify.incrException(x.carrierName);
-                // const errorJson = notify.getErrorJson(error, x);
-                // handler.buffer.next(errorJson);
             } else {
                 checkMultiple(x, result);
             }
@@ -207,9 +200,9 @@ function handleFex(x, result) {
     const mDate = mTimeStamp ? mTimeStamp.format("MMM. DD, YYYY") : '';
     const mTime = mTimeStamp ? mTimeStamp.format("h:mm A") : '';
     const fexJson = {
-        status: statusCode ? fexStatusCodes[statusCode] || 'noStatus' : 'noStatus', //statusDescription || 'No Status',
-        statusDate: mDate, //from timeStamp
-        statusTime: mTime, //from timestamp
+        status: statusCode ? fexStatusCodes[statusCode] || 'noStatus' : 'noStatus',
+        statusDate: mDate,
+        statusTime: mTime,
 
         estimatedDeliveryDate: trackDetails.estimatedDeliveryDate || '1900-01-01',
         carrierStatusCode: statusCode || '',

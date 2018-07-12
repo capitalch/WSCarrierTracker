@@ -14,10 +14,10 @@ const tps = require('./carriers/tps');
 
 let api = {};
 const carriermap = {
-    fex: (x) => ibuki.emit('process-fex:api>fex', x),// fex.processFex(x),
-    ups: (x) => ibuki.emit('process-ups:api>ups',x), //ups.processUps(x),
-    gso: (x) => ibuki.emit('process-gso:api>gso',x),// gso.processGso(x),
-    tps: (x) => ibuki.emit('process-tps:api>tps',x) //tps.processTps(x)
+    fex: (x) => ibuki.emit('process-fex:api>fex', x),
+    ups: (x) => ibuki.emit('process-ups:api>ups',x),
+    gso: (x) => ibuki.emit('process-gso:api>gso',x),
+    tps: (x) => ibuki.emit('process-tps:api>tps',x)
 };
 const timeout = _.has(settings, 'config.timeoutSec') ? settings.config.timeoutSec * 1000 : 5;
 
@@ -76,14 +76,11 @@ function handleApiResponse(carrierInfo, res) {
 }
 
 function handleApiError(err, carrierInfo) {
-    // err.message = err.message && err.message.concat('. ', 'Carrier name:', carrierInfo.carrierName, ', Tracking number:', carrierInfo.trackingNumber);
     err.message = carrierInfo.carrierName.toUpperCase().concat(':',carrierInfo.trackingNumber, ' error:', err.message || '');
     err.name = 'apiCallError';
     notify.pushError(err);
     notify.addApiError(carrierInfo);
     notify.incrException(carrierInfo.carrierName);
-    // const errorJson = notify.getErrorJson(err, carrierInfo);
-    // handler.buffer.next(errorJson);
     notify.addApiErrDrop(carrierInfo);
 }
 

@@ -87,13 +87,6 @@ function cleanup(code) {
     }, 3000);
 }
 
-// handler.frameError = (error, location, severity, index) => {
-//     error.location = location;
-//     error.severity = severity;
-//     error.index = index;
-//     return (error);
-// }
-
 process.on('exit', function (code) {
     notify.logInfo('Exiting program: exit code: ' +
         code +
@@ -138,12 +131,3 @@ const subs2 = ibuki.filterOn('kill-process:any>handler').subscribe(
 )
 
 module.exports = handler;
-
-//deprecated
-
-// logger.end();
-// logger.on('finish', () => {
-//     console.log('end');
-//     process.exit(0);
-// }
-// )

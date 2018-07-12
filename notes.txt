@@ -1,59 +1,4 @@
-//Weekend
-                                                1. Saby's correction integrate
-                                                4. Memory footprint optimization
-                                                11. Logging strategies such as timestamp or file size etc
-                                                9. Make Api calls asyncronous. Presently they are syncronous.
-                                                20. Provide timestamp in logging data
-                                                21. Check TPS error
-                                                2. Don't update DB if same status 
-                                                22. Provide maximum run interval of application                                                                                                
-                                                12. Killing the application after fixed time.
-                                                7. Check how and why api queue value does not become zero at last.
-                                                8. Provide a mecanism to know the pipeline value Api responses --> database requests                                                                                  
-                                                19. No database saving for errors
-                                                18. Identify the sub1, sub2,su3 etc. and map them correctly.
-                                                19. call carriers async
-                                                1. Saby's new correction integrate
-                                                2. At Maximum api queue length stop the carrier api request
-                                                3. At maximum number of errors stop carrier api query
-                                                4. Verbose true would not write progress report to log files. Only errors are reported.
-                                                5. Responses having error information should be treated as errors.     
-                                                7. S: Database CarrierLogs, do not insert when json is null.
-                                                8. Log files do not have entries after 'Mandrill email sent'.
-                                                9. S: Add additional user accouts for GSO as provided by John.
-                                                10. GSO 400 error take care.
-                                                13. S: Ravi mail for estimated delivery time
-
-                                                11. S: Optimize db working with the memory footprint.
-12. S: Check Module interdependebility.
-                                                
-                                                
-
-
-//Saby
-				1. Find bug -Queue
-				2. Git hub deployment in azure
-				3. Prepare statement check
-4. Testing data
-				5. Email function check and send mail to Sandip
-
-//Adam2 
-                                    1. Complete TPS
-                                    2. Implement Saby correction
-3. Insert in package log table before exit. Provide start, end time and exit log code.
-4. Fire email report. Mandril.
-5. Check and implement all api errors 
-      to be treated as exceptions updated to DB as exceptionStatus as 1
-6. Check all errors not tracking number specific errors go to error array
-7. Azure log errors from error array
-            8. Debug why sometimes app is not closing generously
-5. Testing with special data
-                                          6. Status update every 2 seconds while checking idle
-7. Deployment scripts
-8. Issues
-      Handle database connection errors
-      Api Queue < 0
-      
+//
 
 GSO Delivery Status, options are:
 IN TRANSIT                              inTransit
@@ -128,9 +73,6 @@ If AccountNo = "50308" Then
             userinfo.UserName = "VintageLogistics"
             userinfo.Password = "VL50874"
         End If
-
-
-https://api.gso.com/Rest/v1/token
 
 USPS error:
 
@@ -327,12 +269,6 @@ set Status = '',
 	SignedForByName = '',
 	ExceptionStatus= ''
 where No_ = 'CONT-000005331'
-
-
-
-////// handler.js
-
- email.sendmail();
  
  
  /////////////// Module and Submodule

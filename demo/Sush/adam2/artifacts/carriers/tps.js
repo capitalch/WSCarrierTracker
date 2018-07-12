@@ -1,11 +1,9 @@
 'use strict';
 const _ = require('lodash');
 const ibuki = require('../ibuki');
-// const ibuki = require('../ibuki');
 const handler = require('../handler');
 const parseString = require('xml2js').parseString;
 const notify = require('../notify');
-// const db = require('../db'); //required
 
 const tps = {};
 handler.sub19 = ibuki.filterOn('process-tps:api>tps')
@@ -21,9 +19,6 @@ const processTps = (x) => {
             err.message = x.carrierName.concat(' Tracking number:', x.trackingNumber, ' parse error for response:', err.message || '');
             notify.pushError(err);
             notify.addApiErrDrop(x);
-            // notify.incrException(x.carrierName);
-            // const errorJson = notify.getErrorJson(err, x);
-            // handler.buffer.next(errorJson);
         } else {
             let error = null;
             if (_.has(result, 'TrackResponse.TrackInfo.Error')) {
@@ -37,9 +32,6 @@ const processTps = (x) => {
 
             if (error) {
                 handler.handleCarrierError(error,x);
-                // notify.incrException(x.carrierName);
-                // const errorJson = notify.getErrorJson(error, x);
-                // handler.buffer.next(errorJson);
             } else {
                 handleTps(x, result);
             }

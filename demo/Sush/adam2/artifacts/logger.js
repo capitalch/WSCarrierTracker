@@ -7,7 +7,6 @@ const notProduction = !(settings.config && settings.config.production);
 const options = {
     file: {
         level: 'info',
-        // filename: './logs/app.log',
         filename: './logs/' + moment().format('YYYY-MM-DD HH-mm-ss') + '.log',
         handleExceptions: true,
         json: true,
@@ -32,9 +31,3 @@ const logger = winston.createLogger({
 });
 
 module.exports = logger;
-
-//deprecated
-// [
-//     new winston.transports.Console(options.console),
-//     new winston.transports.File(options.file)
-// ]

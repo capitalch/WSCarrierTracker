@@ -15,27 +15,6 @@ let reqs = [];
 const maxDbErrorCount = _.has(settings, 'config.maxDbErrorCount') ? settings.config.maxDbErrorCount : 100;
 let psParamsObject = null;
 const tools = {
-    // setInputParams: (req, json) => {
-    //     req.input('Status', sql.VarChar, json.status || 'No Status');
-    //     req.input('Status_date', sql.VarChar, json.statusDate || '');
-    //     req.input('Status_Time', sql.VarChar, json.statusTime || '');
-    //     req.input('EstimatedDeliveryDate', sql.DateTime, json.estimatedDeliveryDate ? new Date(json.estimatedDeliveryDate) : new Date('1900-01-01'));
-    //     req.input('CarrierStatusCode', sql.VarChar, json.carrierStatusCode || '');
-    //     req.input('CarrierStatusMessage', sql.VarChar, json.carrierStatusMessage || 'No Status');
-    //     req.input('SignedForByName', sql.VarChar, json.signedForByName || '');
-    //     req.input('ExceptionStatus', sql.Int, json.exceptionStatus || 0);
-    //     req.input('RTS', sql.Int, json.rts || 0);
-    //     req.input('RTSTrackingNo', sql.VarChar, json.rtsTrackingNo || '');
-    //     req.input('DAMAGE', sql.Int, json.damage || 0);
-    //     req.input('DAMAGEMSG', sql.VarChar, json.damageMsg || '');
-    //     req.input('No_', sql.VarChar, json.rn);
-    //     if (json.activityJson) {
-    //         req.input('rn', sql.VarChar, json.rn);
-    //         req.input('TrackingNumber', sql.VarChar, json.trackingNumber);
-    //         req.input('ShippingAgentCode', sql.VarChar, json.shippingAgentCode);
-    //         req.input('ActivityJson', sql.VarChar, JSON.stringify(json.activityJson));
-    //     }
-    // },
     setPsInputTypes: (ps) => {
         ps.input('Status', sql.VarChar);
         ps.input('Status_date', sql.VarChar);
@@ -95,13 +74,11 @@ handler.sub0 = ibuki.filterOn('get-big-object:run>db').subscribe(() => {
     handler.pool.connect(
         err => {
             if (err) {
-                // notify.pushError(err);
                 ibuki.emit('app-error:any', (err.severity = 'fatal') && err);
             } else {
                 const req1 = new sql.Request(handler.pool);
                 req1.query(sqlCommands.getInfos, (err, result) => {
                     if (err) {
-                        // notify.pushError(err);
                         ibuki.emit('app-error:any', (err.severity = 'fatal') && err);
                     } else {
                         createPsRequests();
@@ -125,7 +102,6 @@ const createPsRequests = () => {
         ps.index = i;
         ps.prepare(sqlCommand, (err) => {
             if (err) {
-                // notify.pushError(err);
                 ibuki.emit('app-error:any', (err.severity = 'fatal') && err);
             } else {
                 ps.multiple = true;
@@ -153,7 +129,6 @@ const disburse = (data) => {
             notify.addDbRequest(data.shippingAgentCode);
             ps.isAvailable = true;
             if (err) {
-                // notify.pushError(err);
                 notify.addDbError(data.shippingAgentCode);                
                 if (notify.getDbErrors(data.shippingAgentCode) >= maxDbErrorCount) {
                     err.message = 'Max db error count exceeded than allowed limit.'.concat(err.message);

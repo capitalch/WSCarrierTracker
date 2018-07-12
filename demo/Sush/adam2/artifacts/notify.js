@@ -4,7 +4,6 @@ const _ = require('lodash');
 const logger = require('./logger');
 const settings = require('../settings.json');
 const notifyData = require('./notifyData');
-// const ibuki = require('./ibuki');
 // const verbose = _.has(settings, 'config.verbose') ? settings.config.verbose : true;
 
 const timing = {};

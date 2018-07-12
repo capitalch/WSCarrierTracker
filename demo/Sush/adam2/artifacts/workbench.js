@@ -150,7 +150,6 @@ handler.sub9 = ibuki.filterOn('pre-process-gso-carrier:self').subscribe(d => {
         ibuki.emit('process-carrier:self', gso);
     }).catch(err => {
         notify.pushError(err);
-        // console.log(err);
     });
 });
 handler.beforeCleanup(handler.sub9);

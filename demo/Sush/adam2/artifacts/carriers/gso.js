@@ -3,7 +3,6 @@ const moment = require('moment');
 const ibuki = require('../ibuki');
 const handler = require('../handler');
 const notify = require('../notify');
-// const db = require('../db'); //required
 const gso = {};
 const tools = {
     getUnifiedStatus: (status) => {
@@ -56,12 +55,9 @@ const processGso = (x) => {
     if (x.response.StatusCode === 200) {
         handleGso(x);
     } else {
-        // notify.incrException(x.carrierName);
         let err = Error('GSO'.concat(' Tracking number:', x.trackingNumber, ' ', x.response.StatusDescription));
         err.name = 'apiCallError';
         handler.handleCarrierError(err, x);
-        // const errorJson = notify.getErrorJson(err, x);
-        // handler.buffer.next(errorJson);
     }
 }
 
@@ -107,7 +103,7 @@ function handleGso(x) {
         statusDate: gsoTemp.statusDate || '',
         statusTime: gsoTemp.statusTime || '',
         estimatedDeliveryDate: gsoTemp.estimatedDeliveryDate || '1900-01-01',
-        carrierStatusCode: '', //gsoTemp.status || 'No Status'
+        carrierStatusCode: '',
         carrierStatusMessage: gsoTemp.lastComments || '',
         signedForByName: gsoTemp.signedBy || '',
 

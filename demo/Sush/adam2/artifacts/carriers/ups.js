@@ -4,7 +4,6 @@ const ibuki = require('../ibuki');
 const handler = require('../handler');
 const parseString = require('xml2js').parseString;
 const notify = require('../notify');
-// const db = require('../db'); //required
 
 const ups = {};
 
@@ -91,8 +90,9 @@ const tools = {
                     x => x.Status.StatusType.Code === 'X');
             }
         }
-        upsTemp.carrierStatusMessage = activity && activity.Status.StatusType.Description;
-        upsTemp.exceptionStatus = 1;
+        activity && (
+            upsTemp.carrierStatusMessage = activity.Status.StatusType.Description,
+            upsTemp.exceptionStatus = 1)
     }
 }
 
@@ -108,20 +108,13 @@ const processUps = (x) => {
         if (err) {
             err.message = x.carrierName.concat(' Tracking number:', x.trackingNumber, ' parse error for response:', err.message);
             notify.pushError(err);
-            notify.addApiErrDrop(x);
-            // notify.pushError(err);
-            // const errorJson = notify.getErrorJson(err);
-            // handler.buffer.next(errorJson);
-            // notify.incrException(x.carrierName);            
+            notify.addApiErrDrop(x);        
         } else {
             const response = result.TrackResponse.Response;
             if (response.ResponseStatusCode === '0') {
-                const errorDescription = response.Error.ErrorDescription;                
+                const errorDescription = response.Error.ErrorDescription;
                 const error = Error('UPS:' + x.trackingNumber + ' ' + errorDescription || '');
-                handler.handleCarrierError(error, x);
-                // const errorJson = notify.getErrorJson(error, x);
-                // handler.buffer.next(errorJson);
-                // notify.incrException(x.carrierName);      
+                handler.handleCarrierError(error, x);  
             } else {
                 handleUps(x, result);
             }
