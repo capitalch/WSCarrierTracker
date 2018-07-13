@@ -108,13 +108,13 @@ const processUps = (x) => {
         if (err) {
             err.message = x.carrierName.concat(' Tracking number:', x.trackingNumber, ' parse error for response:', err.message);
             notify.pushError(err);
-            notify.addApiErrDrop(x);        
+            notify.addApiErrDrop(x);
         } else {
             const response = result.TrackResponse.Response;
             if (response.ResponseStatusCode === '0') {
                 const errorDescription = response.Error.ErrorDescription;
                 const error = Error('UPS:' + x.trackingNumber + ' ' + errorDescription || '');
-                handler.handleCarrierError(error, x);  
+                handler.handleCarrierError(error, x);
             } else {
                 handleUps(x, result);
             }
@@ -123,13 +123,15 @@ const processUps = (x) => {
 }
 
 function handleUps(x, result) {
-    const upsTemp = {};
+    const upsTemp = {
+        rts: 0,
+        damage: 0
+    };
     const activities = result.TrackResponse.Shipment.Package.Activity;
     upsTemp.exceptionStatus = 0;
-
     //damage
     const damageActivity = tools.getDamageActivity(activities);
-    upsTemp.damage = 0;
+    // upsTemp.damage = 0;
     damageActivity && (
         upsTemp.damage = 1,
         upsTemp.exceptionStatus = 1,
@@ -137,17 +139,15 @@ function handleUps(x, result) {
         notify.incrDamage(x.carrierName),
         upsTemp.damageMsg = damageActivity.Status.StatusType.Description
     )
-
     //rts
     const rtsActivity = tools.getRtsActivity(activities);
-    upsTemp.rts = 0;
+    // upsTemp.rts = 0;
     rtsActivity && (
         upsTemp.exceptionStatus = 1,
         notify.incrReturn(x.carrierName),
         notify.incrException(x.carrierName),
         upsTemp.rts = 1
     )
-
     const startActivity = tools.getFirstActivity(activities);
     const statusCode = startActivity && startActivity.Status.StatusType.Code;
     upsTemp.carrierStatusCode = statusCode;
@@ -210,6 +210,7 @@ function handleUps(x, result) {
         activityJson: activities || null,
         unifiedStatus: statusCode ? tools.getUnifiedStatus(statusCode) || 'noStatus' : 'noStatus'
     };
+    upsTemp.exceptionStatus && (notify.addException(x.trackingNumber, upsTemp.status));
     if (notify.isSameStatus(x, upsJson)) {
         notify.addApiStatusDrop(x);
     } else {

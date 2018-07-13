@@ -3,14 +3,15 @@ const ibuki = require('./ibuki');
 const notify = require('./notify');
 const settings = require('../settings.json');
 const mandrill = require('mandrill-api/mandrill');
-// const mandrillClient = new mandrill.Mandrill('r96zzCYUlKTLJ8e620HbKQ');
 const mandrillClient = new mandrill.Mandrill(settings.config.mandrillApiKey);
 
 const mailAddresses = settings.config.mailAddresses;
 
 function getMailBody() {
     const carrierStatus = notify.getCarrierStatus();
+    const exceptions = notify.getExceptions();
     let s = '';
+    let exceptionBody = '';
     Object.keys(carrierStatus).forEach((key) => {
         s = s + `<tr>
         <td>${key}</td>
@@ -21,6 +22,12 @@ function getMailBody() {
         <td>${carrierStatus[key].exception}</td>
     </tr>`;
     });
+    if (exceptions && exceptions.length > 0) {
+        exceptionBody = 'Exception packages where Detected.  Below are the packages:<br/>';
+        exceptions.forEach((element) => {
+            exceptionBody = exceptionBody + element.trackingNumber + "-" + element.status + '<br/>';
+        })
+    }
     const emailBody = `
     <style>
         table {
@@ -46,6 +53,7 @@ function getMailBody() {
                 <td>Exception</td>
             </tr>${s}
         </table>
+        <div> ${exceptionBody}</div>
     </div>`;
     return (emailBody);
 }
@@ -61,7 +69,10 @@ const subs = ibuki.filterOn('send-status-mail:handler>email').subscribe(() => {
         "important": false
     };
     var async = false;
-    mandrillClient.messages.send({ "message": message, "async": async }, function (result) {
+    mandrillClient.messages.send({
+        "message": message,
+        "async": async
+    }, function (result) {
         notify.logInfo('Status mail is sent');
         ibuki.emit('mail-processed:email>handler');
     }, function (e) {

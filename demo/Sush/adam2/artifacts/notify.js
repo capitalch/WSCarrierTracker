@@ -98,6 +98,10 @@ const notify = {
         notifyData.apiStatus[info.carrierName].errors++;
         // verbose && notify.showStatus(info);
     },
+    addException: (trackingNumber, status) => {
+        notifyData.exceptions.push({ "trackingNumber": trackingNumber, "status": status });
+    },
+    getExceptions: () => notifyData.exceptions,
     getApiError: (info) => notifyData.apiStatus[info.carrierName].errors,
     addApiToDb: (carrierName) => {
         notifyData.apiStatus[carrierName].toDb++;

@@ -14,17 +14,17 @@ let sqlCommands = {
 		, RTSTrackingNo rtsTrackingNo
 		, DAMAGE damage
 		, DAMAGEMSG damageMsg
-		FROM [Wineshipping$PackageinfoNew] 
+		FROM [Wineshipping$Package Info] 
 		WHERE 
 				NOT [Status] = 'Package returned to shipper' and 
-				--NOT [Status] = 'Delivered' and 
-				NOT [Status] = 'Returned' and			
-				[Shipping Agent Code] in ( 'UPS', 'FEX', 'GSO', 'TMC', 'FCC', 'TPS') 
-				AND NOT [External Tracking No_] = ''
+				NOT [Status] = 'Delivered' and 
+				NOT [Status] = 'Returned' and	
+				[Shipping Agent Code] in ('GSO') 
+				AND not [External Tracking No_] = ''
 				order by NO_
 			`,
 	updateInfoAndInsertInPackageHistory: `
-		update Wineshipping$PackageInfoNew
+		update [Wineshipping$Package Info] 
 		set Status= @Status,
 		Status_Time = @Status_Time,
 		Status_Date= @Status_Date,

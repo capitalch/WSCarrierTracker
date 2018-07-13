@@ -195,7 +195,7 @@ function handleFex(x, result) {
     } else {
         notify.incrException(x.carrierName);
     }
-
+    
     const mTimeStamp = timeStamp ? moment(timeStamp) : null;
     const mDate = mTimeStamp ? mTimeStamp.format("MMM. DD, YYYY") : '';
     const mTime = mTimeStamp ? mTimeStamp.format("h:mm A") : '';
@@ -220,7 +220,8 @@ function handleFex(x, result) {
         rn: x.rn,
         activityJson: events || null,
         unifiedStatus: statusCode ? fexStatusCodes[statusCode] || 'noStatus' : 'noStatus'
-    }
+    };
+    (exceptionStatus === 1) && (notify.addException(x.trackingNumber,fexJson.status));
     if (notify.isSameStatus(x, fexJson)) {
         notify.addApiStatusDrop(x);
     } else {
