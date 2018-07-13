@@ -36,10 +36,10 @@ const tools = {
         let activity = null;
         if (activities) {
             if (Array.isArray(activities)) {
-                activities.find(
+                activity = activities.find(
                     x => {
                         let desc = x.Status.StatusType.Description;
-                        return desc && desc.toLowerCase().includes('damage')
+                        return desc && desc.toLowerCase().includes('returned')
                     });
             }
         }
@@ -93,6 +93,17 @@ const tools = {
         activity && (
             upsTemp.carrierStatusMessage = activity.Status.StatusType.Description,
             upsTemp.exceptionStatus = 1)
+    },
+    getEstimatedDeliveryDate: (packageResp) => {
+        let estimatedDelDate = null;
+        if (packageResp) {
+            let date = packageResp.ScheduledDeliveryDate;
+            date = date || packageResp.RescheduledDeliveryDate;
+            if (date) {
+                estimatedDelDate = date ? moment(date, 'YYYYMMDD').format("YYYY-MM-DD") : '';
+            }
+        }
+        return estimatedDelDate || '1900-01-01';
     }
 }
 
@@ -127,6 +138,7 @@ function handleUps(x, result) {
         rts: 0,
         damage: 0
     };
+    upsTemp.estimatedDeliveryDate = tools.getEstimatedDeliveryDate(result.TrackResponse.Shipment.Package);
     const activities = result.TrackResponse.Shipment.Package.Activity;
     upsTemp.exceptionStatus = 0;
     //damage
@@ -210,7 +222,7 @@ function handleUps(x, result) {
         activityJson: activities || null,
         unifiedStatus: statusCode ? tools.getUnifiedStatus(statusCode) || 'noStatus' : 'noStatus'
     };
-    upsTemp.exceptionStatus && (notify.addException(x.trackingNumber, upsTemp.status));
+    // upsTemp.exceptionStatus && (notify.addException(x.trackingNumber, upsTemp.status));
     if (notify.isSameStatus(x, upsJson)) {
         notify.addApiStatusDrop(x);
     } else {

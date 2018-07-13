@@ -80,17 +80,22 @@ function handleGso(x) {
     if (status.includes('DELIVERED')) {
         notify.incrDelivered(x.carrierName);
         gsoTemp.status = 'Delivered';
-    } else if (status.includes('IN TRANSIT')) {
+    } else if (status.includes('TRANSIT')) {
         notify.incrNotDelivered(x.carrierName);
         gsoTemp.status = 'In Transit';
-    } else if (status.includes('DELAYED')) {
-        gsoTemp.status = 'Delayed';
-        notify.incrNotDelivered(x.carrierName);
         const delExcep = tools.getDelException(transitNotes);
         if (delExcep) {
             gsoTemp.exceptionStatus = 1;
             notify.incrException(x.carrierName);
-        }        
+        } 
+    } else if (status.includes('DELAYED')) {
+        gsoTemp.status = 'Delayed';
+        notify.incrNotDelivered(x.carrierName);
+        // const delExcep = tools.getDelException(transitNotes);
+        // if (delExcep) {
+        //     gsoTemp.exceptionStatus = 1;
+        //     notify.incrException(x.carrierName);
+        // }        
     } else {
         gsoTemp.exceptionStatus = 1;
         notify.incrException(x.carrierName);

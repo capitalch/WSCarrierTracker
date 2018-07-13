@@ -1,5 +1,5 @@
 const notifyData = {};
-notifyData.exceptions =[];
+// notifyData.exceptions =[];
 notifyData.carrierStatus = {
     fex: {
         delivered: 0,

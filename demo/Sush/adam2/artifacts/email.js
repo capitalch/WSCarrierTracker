@@ -9,9 +9,9 @@ const mailAddresses = settings.config.mailAddresses;
 
 function getMailBody() {
     const carrierStatus = notify.getCarrierStatus();
-    const exceptions = notify.getExceptions();
+    // const exceptions = notify.getExceptions();
     let s = '';
-    let exceptionBody = '';
+    // let exceptionBody = '';
     Object.keys(carrierStatus).forEach((key) => {
         s = s + `<tr>
         <td>${key}</td>
@@ -22,12 +22,12 @@ function getMailBody() {
         <td>${carrierStatus[key].exception}</td>
     </tr>`;
     });
-    if (exceptions && exceptions.length > 0) {
-        exceptionBody = 'Exception packages where Detected.  Below are the packages:<br/>';
-        exceptions.forEach((element) => {
-            exceptionBody = exceptionBody + element.trackingNumber + "-" + element.status + '<br/>';
-        })
-    }
+    // if (exceptions && exceptions.length > 0) {
+    //     exceptionBody = 'Exception packages where Detected.  Below are the packages:<br/>';
+    //     exceptions.forEach((element) => {
+    //         exceptionBody = exceptionBody + element.trackingNumber + "-" + element.status + '<br/>';
+    //     })
+    // }
     const emailBody = `
     <style>
         table {
@@ -52,9 +52,9 @@ function getMailBody() {
                 <td>Damage</td>
                 <td>Exception</td>
             </tr>${s}
-        </table>
-        <div> ${exceptionBody}</div>
+        </table>        
     </div>`;
+    // <div> ${exceptionBody}</div>
     return (emailBody);
 }
 
