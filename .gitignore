@@ -15,6 +15,9 @@ dot-net/
 #settings
 *.json
 
+#logs
+*.log
+
 # IDEs and editors
 /.idea
 .project

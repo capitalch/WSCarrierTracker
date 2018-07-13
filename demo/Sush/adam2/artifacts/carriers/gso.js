@@ -36,7 +36,7 @@ const tools = {
         }
         return (rts);
     },
-    getException: (transitNotes) => {
+    getDelException: (transitNotes) => {
         let note = null;
         if (transitNotes && Array.isArray(transitNotes)) {
             note = transitNotes.find((x) =>
@@ -86,10 +86,11 @@ function handleGso(x) {
     } else if (status.includes('DELAYED')) {
         gsoTemp.status = 'Delayed';
         notify.incrNotDelivered(x.carrierName);
-        if (gsoTemp.lastComments.toUpperCase().includes('DEL ATTEMPTED')) {
+        const delExcep = tools.getDelException(transitNotes);
+        if (delExcep) {
             gsoTemp.exceptionStatus = 1;
             notify.incrException(x.carrierName);
-        }
+        }        
     } else {
         gsoTemp.exceptionStatus = 1;
         notify.incrException(x.carrierName);
