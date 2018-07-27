@@ -1,3 +1,15 @@
+/****** Object:  Table [dbo].[PackageHistory]    Script Date: 27-07-2018 17:47:34 ******/
+
+DROP TABLE IF EXISTS [dbo].[PackageHistory]
+
+
+/****** Object:  Table [dbo].[PackageHistory]    Script Date: 27-07-2018 17:47:34 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
 CREATE TABLE [dbo].[PackageHistory](
 	[rn] [varchar](50) NOT NULL,
 	[TrackingNumber] [varchar](50) NOT NULL,
@@ -21,7 +33,7 @@ ALTER TABLE [dbo].[PackageHistory] ADD  CONSTRAINT [DF_Wineshipping$PackageHisto
 GO
 
 ALTER TABLE [dbo].[PackageHistory] ADD  CONSTRAINT [DF_Wineshipping$PackageHistory_isProcessed]  DEFAULT ((0)) FOR [IsProcessed]
-GOs
+GO
 
 
 CREATE NONCLUSTERED INDEX [IX_PackageHistory_IsProcessed] ON [dbo].[PackageHistory]
@@ -81,7 +93,7 @@ CREATE NONCLUSTERED INDEX [idxActivityDetailsrn] ON [dbo].[ActivityDetails]
 GO
 
 
-ALTER procedure [dbo].[sp_UpdateOrInsert] 
+create procedure [dbo].[sp_UpdateOrInsert] 
 @activityJson nvarchar(max),
 @rn varchar(50),
 @trackingNumber varchar(50),

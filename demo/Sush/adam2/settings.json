@@ -4,8 +4,8 @@
         "production": false,
         "autoPilotPiston": true,
         "mailAddresses": [{
-            "email": "sbal@netwoven.com",
-            "name": "Sabyasachi Bal",
+            "email": "sagarwal@netwoven.com",
+            "name": "Sushant Agrawal",
             "type": "to"
         }],
         "mandrillApiKey": "r96zzCYUlKTLJ8e620HbKQ",
@@ -19,10 +19,10 @@
         "timeoutSec": 15
     },
     "db": {
-        "user": "nwuser",
-        "password": "user123%",
-        "server": "nwazdb01.database.windows.net",
-        "database": "PackageTracker2",
+        "user": "wsportaladmin",
+        "password": "KK34^URT23jP",
+        "server": "wsazdbtst01.database.windows.net,1433",
+        "database": "tracking_test",
         "options": {
             "encrypt": true
         },

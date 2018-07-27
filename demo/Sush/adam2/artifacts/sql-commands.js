@@ -47,11 +47,6 @@ let sqlCommands = {
 		if @activityJson <> 'null'
 			exec sp_UpdateOrInsert  @activityJson,@rn,@trackingNumber,@shippingAgentCode
 	`,
-	insertPackageHistory1: `
-	if @activityJson <> 'null'
-	insert into PackageHistory(rn, TrackingNumber, ShippingAgentCode, ActivityJson,IsProcessed)
-	values (@rn, @trackingNumber, @shippingAgentCode,@activityJson, 0);
-	`,
 	insertPackageLog: `
 	insert into packageLog(ApiRequests, ApiResponses, ApiErrors, DbRequests, DbResponses, DbErrors, StartTime, EndTime, Duration)
 		values(@ApiRequests, @ApiResponses, @ApiErrors, @DbRequests, @DbResponses, @DbErrors, @StartTime, @EndTime, @Duration);

@@ -1,0 +1,33 @@
+{
+    "config": {
+        "verbose": true,
+        "production": false,
+        "logDatetimeFormat": "YYYY-MM-DD HH:mm:ss",
+        "samplingRateSec": 20,
+        "appKillMin": 120,
+        "maxDbErrorCount": 1000,
+        "timeoutSec": 15
+    },
+    "db": {
+        "user": "wsportaladmin",
+        "password": "KK34^URT23jP",
+        "server": "wsazdbtst01.database.windows.net,1433",
+        "database": "tracking_test",
+        "connectionTimeout": 300000,
+        "requestTimeout": 300000,
+        "options": {
+            "encrypt": true
+        },
+        "pool": {
+            "max": 30,
+            "min": 0,
+            "idleTimeoutMillis": 30000
+        }
+    },
+    "carriers": {
+        "fex": {},
+        "ups": {},
+        "gso": {},
+        "tps": {}
+    }
+}
