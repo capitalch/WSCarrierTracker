@@ -59,7 +59,7 @@ handler.sub8 = ibuki.filterOn('process-carrier:self').subscribe(d => {
             operators
                 .concatMap(x => rx.of(x)
                     .pipe(operators
-                        .delay(60))))
+                        .delay(30))))
         .subscribe(
             x => {
                 handleCarrierInfo(x);
