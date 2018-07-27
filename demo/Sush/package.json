@@ -18,7 +18,8 @@
     "mssql": "^4.1.0",
     "q": "^1.5.1",
     "rxjs": "^6.2.0",
-    "xml2js": "^0.4.19"
+    "xml2js": "^0.4.19",
+    "mandrill-api": "^1.0.45"
   },
   "devDependencies": {
     "jslint": "^0.12.0"
