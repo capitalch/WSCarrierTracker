@@ -215,8 +215,8 @@ function handleUps(x, result) {
         rtsTrackingNo: '',
         damage: upsTemp.damage,
         damageMsg: upsTemp.damageMsg || '',
-
-        shippingAgentCode: x.carrierName,
+        carrierName:x.carrierName,
+        shippingAgentCode: x.shippingAgentCode,
         trackingNumber: x.trackingNumber,
         rn: x.rn,
         activityJson: activities || null,

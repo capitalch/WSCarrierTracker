@@ -122,7 +122,6 @@ handler.sub8 = ibuki.filterOn('process-carrier:self').subscribe(d => {
 handler.beforeCleanup(handler.sub8);
 
 handler.sub9 = ibuki.filterOn('pre-process-gso-carrier:self').subscribe(d => {
-    //get GSO tokens for multiple accounts and store store token in each gso element
     const gso = d.data;
     const gsoConfig = settings.carriers.gso;
     const gsoAccounts = gsoConfig.accounts;

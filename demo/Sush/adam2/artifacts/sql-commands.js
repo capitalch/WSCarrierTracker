@@ -1,27 +1,31 @@
 let sqlCommands = {
 	getInfos: `
-		SELECT top 1000 NO_ rn,[Shipping Agent Code] shippingAgentCode
-		, [External Tracking No_] trackingNumber
-		, status
-		, Status_Date statusDate
-		, Status_Time statusTime
-		, EstimatedDeliveryDate estimatedDeliveryDate
-		, CarrierStatusCode carrierStatusCode
-		, CarrierStatusMessage carrierStatusMessage
-		, SignedForByName signedForByName
-		, ExceptionStatus exceptionStatus
-		, RTS rts
-		, RTSTrackingNo rtsTrackingNo
-		, DAMAGE damage
-		, DAMAGEMSG damageMsg
-		FROM [Wineshipping$Package Info] 
-		WHERE 
-				NOT [Status] = 'Package returned to shipper' and 
-				NOT [Status] = 'Delivered' and 
-				NOT [Status] = 'Returned' and	
-				[Shipping Agent Code] in ('GSO') 
-				AND not [External Tracking No_] = ''
-				order by NO_
+	SELECT NO_ rn,[Shipping Agent Code] shippingAgentCode
+	, [External Tracking No_] trackingNumber
+	, status
+	, Status_Date statusDate
+	, Status_Time statusTime
+	, EstimatedDeliveryDate estimatedDeliveryDate
+	, CarrierStatusCode carrierStatusCode
+	, CarrierStatusMessage carrierStatusMessage
+	, SignedForByName signedForByName
+	, ExceptionStatus exceptionStatus
+	, RTS rts
+	, RTSTrackingNo rtsTrackingNo
+	, DAMAGE damage
+	, DAMAGEMSG damageMsg
+	FROM [Wineshipping$Package Info] 
+   WHERE 
+   [Shipment Date] BETWEEN dateadd(mm,-4,getdate()) and getdate() 
+   and [Status] NOT IN ('Package returned to shipper', 'Delivered', 'Returned') 
+   and [Shipping Agent Code] in ('UPS', 'FEX', 'GSO', 'TMC', 'FCC', 'TPS')  
+   and NOT [CarrierStatusCode] IN ('VP','TU','UP') and    [DAMAGE] = 0  
+   and    NOT [CarrierStatusMessage] like '%EXPIRED-UNABLE TO RESOLVE EXCEPTION'  
+   and    NOT [CarrierStatusMessage] like '%PACKAGE COULD NOT BE LOCATED FOR INTERCEPT' 
+   and    NOT [External Tracking No_] = ''  
+   and    NOT ([RTS] = 1 AND [Shipping Agent Code] = 'FEX') 
+   and ([StatusUpdated] >= dateadd(ww,-3,getdate()) OR [StatusUpdated] = '1900-01-01 00:00:00.000')
+			order by NO_
 			`,
 	updateInfoAndInsertInPackageHistory: `
 		update [Wineshipping$Package Info] 
@@ -41,12 +45,12 @@ let sqlCommands = {
 	`,
 	insertPackageHistory: `
 		if @activityJson <> 'null'
-			insert into PackageHistory(rn, TrackingNumber, ShippingAgentCode, 
-				ActivityJson, 
-				IsDeleted)
-			values (@rn, @trackingNumber, @shippingAgentCode
-				,@activityJson
-				, 0);
+			exec sp_UpdateOrInsert  @activityJson,@rn,@trackingNumber,@shippingAgentCode
+	`,
+	insertPackageHistory1: `
+	if @activityJson <> 'null'
+	insert into PackageHistory(rn, TrackingNumber, ShippingAgentCode, ActivityJson,IsProcessed)
+	values (@rn, @trackingNumber, @shippingAgentCode,@activityJson, 0);
 	`,
 	insertPackageLog: `
 	insert into packageLog(ApiRequests, ApiResponses, ApiErrors, DbRequests, DbResponses, DbErrors, StartTime, EndTime, Duration)

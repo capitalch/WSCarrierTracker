@@ -112,14 +112,13 @@ function handleGso(x) {
         carrierStatusCode: '',
         carrierStatusMessage: gsoTemp.lastComments || '',
         signedForByName: gsoTemp.signedBy || '',
-
+        carrierName:x.carrierName,
         exceptionStatus: gsoTemp.exceptionStatus || 0,
         rts: gsoTemp.rts,
         rtsTrackingNo: '',
         damage: 0,
         damageMsg: '',
-
-        shippingAgentCode: x.carrierName,
+        shippingAgentCode: x.shippingAgentCode,
         trackingNumber: x.trackingNumber,
         rn: x.rn,
         activityJson: transitNotes || null,

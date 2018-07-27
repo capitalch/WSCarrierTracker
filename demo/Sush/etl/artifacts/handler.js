@@ -6,13 +6,9 @@ const rx = require('rxjs');
 const ibuki = require('./ibuki');
 const settings = require('../settings.json');
 const notify = require('./notify');
-// const email = require('./email');
-// const logger = require('./logger');
 
 const handler = {};
 const subArray = [];
-// let verbose = settings.config.verbose;
-// verbose = verbose || true;
 handler.buffer = new rx.Subject();
 handler.domainError = domain.create();
 const samplingRate = _.has(settings, 'config.samplingRateSec') ? settings.config.samplingRateSec * 1000 : 5000
@@ -23,7 +19,6 @@ const isIdle = () => {
     let apiQueue = 0;
     let toDb = 0;
     carriers.forEach(x => {
-        apiQueue = apiQueue + apiStatus[x].queue();
         toDb = toDb + apiStatus[x].toDb;
     });
     let dbQueue = 0;
@@ -37,23 +32,23 @@ const isIdle = () => {
     const ret = ((
             (dbQueue === 0) && (toDb === dbRequests)) &&
         ((apiQueue === 0) || notify.isSameApiQueueRepeat10())); // To trap final apiQue not zero
-    return (ret);
+   return (ret);
 }
 
 handler.beforeCleanup = (x) => {
     x && subArray.push(x);
 }
 
-handler.handleCarrierError = (err, x) => {
-    notify.pushError(err);
-    notify.incrException(x.carrierName);
-    const errorJson = notify.getErrorJson(err, x);
-    if (notify.isSameStatus(x, errorJson)) {
-        notify.addApiStatusDrop(x);
-    } else {
-        handler.buffer.next(errorJson);
-    }
-}
+// handler.handleCarrierError = (err, x) => {
+//     notify.pushError(err);
+//     notify.incrException(x.carrierName);
+//     const errorJson = notify.getErrorJson(err, x);
+//     if (notify.isSameStatus(x, errorJson)) {
+//         notify.addApiStatusDrop(x);
+//     } else {
+//         handler.buffer.next(errorJson);
+//     }
+// }
 
 handler.closeIfIdle = () => {
     const myInterval = rx.interval(samplingRate);
@@ -61,21 +56,11 @@ handler.closeIfIdle = () => {
         notify.showAllStatus();
         isIdle() && (
             notify.setTime('end'),
-            ibuki.emit('db-log:handler>db'),
-            handler.sub6.unsubscribe()
+            handler.sub6.unsubscribe(),
+            cleanup(0)
         )
     });
 }
-
-const subs = ibuki.filterOn('cleanup:db>handler').subscribe(() => {
-    subs.unsubscribe();
-    ibuki.emit('send-status-mail:handler>email');
-});
-
-const subs1 = ibuki.filterOn('mail-processed:email>handler').subscribe(() => {
-    cleanup(0);
-    subs1.unsubscribe();
-});
 
 function cleanup(code) {
     notify.logInfo(notify.getJobRunStatus());
@@ -122,7 +107,6 @@ handler.beforeCleanup(handler.sub14);
 
 const subs2 = ibuki.filterOn('kill-process:any>handler').subscribe(
     (d) => {
-        // const s = moment().format(notify.getDatetimeFormat());
         notify.setTime('end');
         notify.logInfo('Killing the process at:'.concat(moment().format(notify.getDatetimeFormat())));
         subs2.unsubscribe();

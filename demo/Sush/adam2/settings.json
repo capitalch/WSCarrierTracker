@@ -4,8 +4,8 @@
         "production": false,
         "autoPilotPiston": true,
         "mailAddresses": [{
-            "email": "sagarwal@netwoven.com",
-            "name": "Sushant Agrawal",
+            "email": "sbal@netwoven.com",
+            "name": "Sabyasachi Bal",
             "type": "to"
         }],
         "mandrillApiKey": "r96zzCYUlKTLJ8e620HbKQ",
@@ -14,15 +14,15 @@
         "samplingRateSec": 5,
         "appKillMin": 120,
         "maxCarrierApiQueueSize": 300,
-        "maxCarrierApiErrorCount": 300,
-        "maxDbErrorCount": 100,
+        "maxCarrierApiErrorCount": 500,
+        "maxDbErrorCount": 500,
         "timeoutSec": 15
     },
     "db": {
-        "user": "sagarwal",
-        "password": "su$hant123",
-        "server": "wineshipping.database.windows.net",
-        "database": "WSCarrierTracker",
+        "user": "nwuser",
+        "password": "user123%",
+        "server": "nwazdb01.database.windows.net",
+        "database": "PackageTracker2",
         "options": {
             "encrypt": true
         },

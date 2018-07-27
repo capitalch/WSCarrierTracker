@@ -60,7 +60,7 @@ const notify = {
             rtsTrackingNo: '',
             damage: 0,
             damageMsg: '',
-
+            carrierName:info.carrierName,
             shippingAgentCode: info.carrierName,
             trackingNumber: info.trackingNumber,
             rn: info.rn,

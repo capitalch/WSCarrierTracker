@@ -71,10 +71,12 @@ function handleTps(x, result) {
         signedForByName: '',
         exceptionStatus: '',
         rts: 0,
+
         rtsTrackingNo: 0,
         damage: '',
         damageMsg: '',
-        shippingAgentCode: x.carrierName,
+        carrierName:x.carrierName,
+        shippingAgentCode: x.shippingAgentCode,
         trackingNumber: x.trackingNumber,
         rn: x.rn,
         activityJson: mNodelist || null,

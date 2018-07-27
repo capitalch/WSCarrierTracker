@@ -121,21 +121,21 @@ const disburse = (data) => {
     let ps = reqs.find((e) => e.isAvailable);
     if (ps) {
         ps.isAvailable = false;
-        notify.addApiToDb(data.shippingAgentCode);
+        notify.addApiToDb(data.carrierName);
 
         psParamsObject = tools.getPsParamsObject(data);
 
         ps.execute(psParamsObject, (err) => {
-            notify.addDbRequest(data.shippingAgentCode);
+            notify.addDbRequest(data.carrierName);
             ps.isAvailable = true;
             if (err) {
-                notify.addDbError(data.shippingAgentCode);                
-                if (notify.getDbErrors(data.shippingAgentCode) >= maxDbErrorCount) {
+                notify.addDbError(data.carrierName);                
+                if (notify.getDbErrors(data.carrierName) >= maxDbErrorCount) {
                     err.message = 'Max db error count exceeded than allowed limit.'.concat(err.message);
                     ibuki.emit('app-error:any', (err.severity = 'fatal') && err);
                 }
             } else {
-                notify.addDbResponse(data.shippingAgentCode);
+                notify.addDbResponse(data.carrierName);
             }
         });
     } else {

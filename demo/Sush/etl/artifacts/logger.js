@@ -10,9 +10,6 @@ const options = {
         filename: './logs/' + moment().format('YYYY-MM-DD HH-mm-ss') + '.log',
         handleExceptions: true,
         json: true,
-        //   maxsize: 5242880, // 5MB
-        // maxsize: 5120,
-        // maxFiles: 5,
         colorize: false
     },
     console: {

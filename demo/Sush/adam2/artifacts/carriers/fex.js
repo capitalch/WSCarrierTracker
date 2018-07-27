@@ -214,14 +214,13 @@ function handleFex(x, result) {
         rtsTrackingNo: rtsTrackingNo,
         damage: damage,
         damageMsg: damageMsg,
-
-        shippingAgentCode: x.carrierName,
+        carrierName:x.carrierName,
+        shippingAgentCode: x.shippingAgentCode,
         trackingNumber: x.trackingNumber,
         rn: x.rn,
         activityJson: events || null,
         unifiedStatus: statusCode ? fexStatusCodes[statusCode] || 'noStatus' : 'noStatus'
     };
-    (exceptionStatus === 1) && (notify.addException(x.trackingNumber,fexJson.status));
     if (notify.isSameStatus(x, fexJson)) {
         notify.addApiStatusDrop(x);
     } else {
