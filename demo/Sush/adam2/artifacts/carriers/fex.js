@@ -22,7 +22,13 @@ const tools = {
             PU: 'Picked Up',
             RR: 'In transit',
             RS: 'Returned',
-            HL: 'Ready For Pickup'
+            HL: 'Ready For Pickup',
+            FD: 'In transit',
+            AS: 'In transit',
+            CC: 'In transit',
+            SF: 'In transit',
+            CD: 'In transit'
+
         });
     },
     timeStamp: (events) => {
@@ -106,7 +112,7 @@ handler.sub17 = ibuki.filterOn('process-fex:api>fex')
 handler.beforeCleanup(handler.sub17);
 
 const processFex = (x) => {
-    parseString(x.response , {
+    parseString(x.response, {
         trim: true,
         explicitArray: false
     }, function (err, result) {
@@ -118,7 +124,7 @@ const processFex = (x) => {
             const notifications = result.TrackReply.Notifications;
             if ((notifications.Severity === 'ERROR') || (notifications.Severity === 'FAILURE')) {
                 const err = Error('Fex:' + x.trackingNumber + ' ' + notifications.LocalizedMessage);
-                handler.handleCarrierError(err,x);
+                handler.handleCarrierError(err, x);
             } else {
                 checkMultiple(x, result);
             }
@@ -174,7 +180,7 @@ function handleFex(x, result) {
             statusDescription = "Package returned to shipper: ".concat(rtsTrackingNo), //carrierStatusMessage
             returnEvent = tools.getReturnEvent(events),
             timeStamp = returnEvent && returnEvent.Timestamp ? returnEvent.Timestamp : timeStamp,
-            statusCode = returnEvent && returnEvent.StatusExceptionCode
+            statusCode = returnEvent && returnEvent.EventType
         );
         //check exception 71
         const exception71Event = tools.getException71Event(events);
@@ -195,7 +201,7 @@ function handleFex(x, result) {
     } else {
         notify.incrException(x.carrierName);
     }
-    
+
     const mTimeStamp = timeStamp ? moment(timeStamp) : null;
     const mDate = mTimeStamp ? mTimeStamp.format("MMM. DD, YYYY") : '';
     const mTime = mTimeStamp ? mTimeStamp.format("h:mm A") : '';
@@ -204,7 +210,7 @@ function handleFex(x, result) {
         statusDate: mDate,
         statusTime: mTime,
 
-        estimatedDeliveryDate: trackDetails.estimatedDeliveryDate || '1900-01-01',
+        estimatedDeliveryDate: trackDetails.estimatedDeliveryDate || trackDetails.EstimatedDeliveryTimestamp || '1900-01-01',
         carrierStatusCode: statusCode || '',
         carrierStatusMessage: statusDescription || 'No Status',
         signedForByName: trackDetails.DeliverySignatureName || '',
@@ -214,7 +220,7 @@ function handleFex(x, result) {
         rtsTrackingNo: rtsTrackingNo,
         damage: damage,
         damageMsg: damageMsg,
-        carrierName:x.carrierName,
+        carrierName: x.carrierName,
         shippingAgentCode: x.shippingAgentCode,
         trackingNumber: x.trackingNumber,
         rn: x.rn,

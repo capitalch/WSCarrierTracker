@@ -17,8 +17,8 @@ let sqlCommands = {
 	FROM [Wineshipping$Package Info] 
    WHERE 
    [Shipment Date] BETWEEN dateadd(mm,-4,getdate()) and getdate() 
-   and [Status] NOT IN ('Package returned to shipper', 'Delivered', 'Returned') 
-   and [Shipping Agent Code] in ('UPS', 'FEX', 'GSO', 'TMC', 'FCC', 'TPS')  
+   and [Status] NOT IN ('Package returned to shipper', 'Delivered', 'Returned')
+   and [Shipping Agent Code] in ('UPS', 'FEX', 'GSO', 'TMC', 'FCC', 'TPS') 
    and NOT [CarrierStatusCode] IN ('VP','TU','UP') and    [DAMAGE] = 0  
    and    NOT [CarrierStatusMessage] like '%EXPIRED-UNABLE TO RESOLVE EXCEPTION'  
    and    NOT [CarrierStatusMessage] like '%PACKAGE COULD NOT BE LOCATED FOR INTERCEPT' 
@@ -40,7 +40,8 @@ let sqlCommands = {
 		RTS = @RTS,
 		RTSTrackingNo = @RTSTrackingNo,
 		DAMAGE = @DAMAGE,
-		DAMAGEMSG = @DAMAGEMSG
+		DAMAGEMSG = @DAMAGEMSG,
+		[StatusUpdated] = getdate()
 		where No_ = @No_;
 	`,
 	insertPackageHistory: `

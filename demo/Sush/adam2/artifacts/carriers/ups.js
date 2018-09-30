@@ -205,7 +205,7 @@ function handleUps(x, result) {
         statusDate: upsTemp.statusDate || '',
         statusTime: upsTemp.statusTime || '',
 
-        estimatedDeliveryDate: '1900-01-01',
+        estimatedDeliveryDate: upsTemp.estimatedDeliveryDate||'1900-01-01',
         carrierStatusCode: upsTemp.statusCode || '',
         carrierStatusMessage: upsTemp.carrierStatusMessage || 'No Status',
         signedForByName: upsTemp.deliverySignatureName || '',
